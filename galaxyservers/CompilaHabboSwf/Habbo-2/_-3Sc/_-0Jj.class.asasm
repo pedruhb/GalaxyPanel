@@ -1,0 +1,238 @@
+class
+ refid "_-3Sc:_-0Jj"
+ instance QName(PackageNamespace("_-3Sc"), "_-0Jj")
+  extends QName(PackageNamespace("_-3Sc"), "FurnitureLogic")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4Op")
+  iinit
+   refid "_-3Sc:_-0Jj/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     pushscope
+
+     debugline           18
+     getlocal0
+     constructsuper      0
+
+     debugline           19
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "getEventTypes") flag OVERRIDE
+   method
+    refid "_-3Sc:_-0Jj/getEventTypes"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           12
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 13
+      debugline           13
+      getlex              QName(PackageNamespace("_-4mE"), "_-1EW")
+      getproperty         QName(PackageNamespace(""), "_-63S")
+      newarray            1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           14
+      findpropstrict      QName(ProtectedNamespace("_-dZ"), "_-02U")
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "getEventTypes"), 0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-dZ"), "_-02U"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "mouseEvent") flag OVERRIDE
+   method
+    refid "_-3Sc:_-0Jj/mouseEvent"
+    param QName(PackageNamespace("_-3CZ"), "_-034")
+    param QName(PackageNamespace("_-453"), "_-0kz")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           26
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 26
+      debug               1, "k", 1, 26
+      debugline           28
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L16
+
+      pop
+      getlocal2
+      pushnull
+      equals
+L16:
+      iffalse             L19
+
+      returnvoid
+
+      debugline           30
+L19:
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      ifne                L23
+
+      returnvoid
+
+L23:
+      jump                L40
+
+L24:
+      label
+      debugline           35
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "useObject"), 0
+
+      debugline           36
+      jump                L57
+
+L30:
+      label
+      debugline           40
+      getlocal0
+      getlocal1
+      getlocal2
+      callsupervoid       QName(PackageNamespace(""), "mouseEvent"), 2
+      debugline           41
+      jump                L57
+
+      jump                L57
+
+      debugline           32
+L40:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal3
+
+      debugline           34
+      getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+      getproperty         QName(PackageNamespace(""), "DOUBLE_CLICK")
+      getlocal3
+      ifstrictne          L50
+
+      pushbyte            0
+      jump                L54
+
+L50:
+      jump                L53
+
+      pushbyte            1
+      jump                L54
+
+L53:
+      pushbyte            1
+L54:
+      kill                3
+      lookupswitch        L30, [L24, L30]
+
+      debugline           43
+L57:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "useObject") flag OVERRIDE
+   method
+    refid "_-3Sc:_-0Jj/useObject"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           45
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal1
+
+      debugline           47
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L19
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      equals
+      not
+L19:
+      iffalse             L34
+
+      debug               1, "k", 0, 48
+      debugline           48
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-1EW")
+      getlex              QName(PackageNamespace("_-4mE"), "_-1EW")
+      getproperty         QName(PackageNamespace(""), "_-63S")
+      getlex              QName(PackageNamespace(""), "object")
+      constructprop       QName(PackageNamespace("_-4mE"), "_-1EW"), 2
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal1
+
+      debugline           49
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      getlocal1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           51
+L34:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3Sc:_-0Jj/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

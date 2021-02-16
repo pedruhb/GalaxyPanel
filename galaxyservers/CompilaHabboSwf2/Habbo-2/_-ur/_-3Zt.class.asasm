@@ -1,0 +1,128 @@
+class
+ refid "_-ur:_-3Zt"
+ instance QName(PackageNamespace("_-ur"), "_-3Zt")
+  extends QName(PackageNamespace("_-ur"), "CatalogWidget")
+  implements Multiname("_-0su", [PackageNamespace("_-ur")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0w2")
+  iinit
+   refid "_-ur:_-3Zt/iinit"
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           13
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 13
+     debugline           15
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           16
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-ur:_-3Zt/init"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      debugline           20
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L12
+
+      debugline           21
+      pushfalse
+      returnvalue
+
+      debugline           24
+L12:
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushstring          "warning_text"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushstring          ""
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           25
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "_-3QM")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0w2", "_-ur:_-3Zt"), "_-5LX")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           27
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0w2", "_-ur:_-3Zt"), "_-5LX")
+   method
+    refid "_-ur:_-3Zt/_-5LX"
+    param QName(PackageNamespace("_-09G"), "_-3fw")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 30
+      debugline           31
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushstring          "warning_text"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "text")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           32
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ur:_-3Zt/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,411 @@
+class
+ refid "_-2x4:EffectsModel"
+ instance QName(PackageNamespace("_-2x4"), "EffectsModel")
+  extends QName(PackageNamespace("_-2g1"), "CategoryBaseModel")
+  implements Multiname("_-2ww", [PackageNamespace("_-2g1")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1cw")
+  iinit
+   refid "_-2x4:EffectsModel/iinit"
+   param QName(PackageNamespace("_-5Z7"), "HabboAvatarEditor")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           21
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 21
+     debugline           18
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     initproperty        QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-4Kv")
+
+     debugline           22
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           23
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-4Kv") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait slot QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-4Fr") type QName(PackageNamespace("_-2x4"), "EffectsParamView") end
+  trait method QName(ProtectedNamespace("_-1cw"), "init") flag OVERRIDE
+   method
+    refid "_-2x4:EffectsModel/_-1cw:init"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           25
+      getlocal0
+      pushscope
+
+      debugline           26
+      getlocal0
+      callsupervoid       QName(ProtectedNamespace("_-5HG"), "init"), 0
+      debugline           29
+      findproperty        QName(ProtectedNamespace("_-5HG"), "_-1Qx")
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-5HG"), "_-1Qx")
+
+      debugline           31
+      getlex              QName(ProtectedNamespace("_-5HG"), "_-0q1")
+      iftrue              L39
+
+      debugline           32
+      findproperty        QName(ProtectedNamespace("_-5HG"), "_-0q1")
+      findpropstrict      QName(PackageNamespace("_-2x4"), "_-0QF")
+      getlocal0
+      constructprop       QName(PackageNamespace("_-2x4"), "_-0QF"), 1
+      initproperty        QName(ProtectedNamespace("_-5HG"), "_-0q1")
+
+      debugline           33
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-2x4"), "EffectsParamView")
+      getlocal0
+      getlex              QName(PackageNamespace(""), "controller")
+      getproperty         QName(PackageNamespace(""), "manager")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      getlex              QName(PackageNamespace(""), "controller")
+      getproperty         QName(PackageNamespace(""), "manager")
+      getproperty         QName(PackageNamespace(""), "assets")
+      constructprop       QName(PackageNamespace("_-2x4"), "EffectsParamView"), 3
+      initproperty        QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-4Fr")
+
+      debugline           34
+      getlex              QName(ProtectedNamespace("_-5HG"), "_-0q1")
+      iffalse             L39
+
+      debugline           35
+      getlex              QName(ProtectedNamespace("_-5HG"), "_-0q1")
+      callpropvoid        QName(Namespace("_-1cA"), "init"), 0
+
+      debugline           38
+L39:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "effects")
+   method
+    refid "_-2x4:EffectsModel/effects/getter"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debugline           41
+      getlex              QName(PackageNamespace(""), "controller")
+      getproperty         QName(PackageNamespace(""), "manager")
+      getproperty         QName(PackageNamespace(""), "inventory")
+      pushnull
+      ifne                L14
+
+      debugline           42
+      newarray            0
+      returnvalue
+
+      debugline           44
+L14:
+      getlex              QName(PackageNamespace(""), "controller")
+      getproperty         QName(PackageNamespace(""), "manager")
+      getproperty         QName(PackageNamespace(""), "inventory")
+      callproperty        Multiname("getAvatarEffects", [PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), PackageNamespace(""), PackageNamespace("_-2x4"), PrivateNamespace("EffectsModel.as$3952", "_-2x4:EffectsModel#1"), PackageInternalNs("_-2x4"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1cw"), StaticProtectedNs("_-1cw"), StaticProtectedNs("_-5HG")]), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "selectPart") flag OVERRIDE
+   method
+    refid "_-2x4:EffectsModel/selectPart"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      pushundefined
+      coerce_a
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5Z7"), "_-382")
+      setlocal            5
+
+      debug               1, "k", 0, 47
+      debug               1, "k", 1, 47
+      debug               1, "k", 2, 49
+      debugline           48
+      getlocal0
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-4Kv")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), PackageNamespace(""), PackageNamespace("_-2x4"), PrivateNamespace("EffectsModel.as$3952", "_-2x4:EffectsModel#1"), PackageInternalNs("_-2x4"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1cw"), StaticProtectedNs("_-1cw"), StaticProtectedNs("_-5HG")])
+      pushfalse
+      callpropvoid        QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-5U2"), 3
+
+      debugline           49
+      getlex              QName(PackageNamespace(""), "controller")
+      getproperty         QName(PackageNamespace(""), "figureData")
+      getproperty         QName(PackageNamespace(""), "avatarEffectType")
+      convert_i
+      setlocal3
+
+      debugline           52
+      getlocal2
+      pushbyte            255
+      equals
+      dup
+      iffalse             L39
+
+      pop
+      getlocal3
+      pushbyte            255
+      equals
+      not
+L39:
+      iffalse             L88
+
+      debug               1, "k", 3, 54
+      debugline           53
+      findpropstrict      QName(PackageNamespace("_-2x4"), "_-0QF")
+      getlex              QName(ProtectedNamespace("_-5HG"), "_-0q1")
+      callproperty        QName(PackageNamespace("_-2x4"), "_-0QF"), 1
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "_-3TD"), 1
+      convert_i
+      setlocal2
+
+      debugline           54
+      pushbyte            0
+      setlocal            6
+
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "effects")
+      coerce_a
+      setlocal            7
+
+      jump                L82
+
+L57:
+      label
+      getlocal            7
+      getlocal            6
+      nextvalue
+      coerce_a
+      setlocal            4
+
+      debugline           55
+      getlocal            4
+      getproperty         Multiname("type", [PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), PackageNamespace(""), PackageNamespace("_-2x4"), PrivateNamespace("EffectsModel.as$3952", "_-2x4:EffectsModel#1"), PackageInternalNs("_-2x4"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1cw"), StaticProtectedNs("_-1cw"), StaticProtectedNs("_-5HG")])
+      getlocal3
+      ifne                L82
+
+      debug               1, "k", 4, 56
+      debugline           56
+      findpropstrict      QName(PackageNamespace("_-5Z7"), "_-382")
+      getlocal            4
+      callproperty        QName(PackageNamespace("_-5Z7"), "_-382"), 1
+      coerce              QName(PackageNamespace("_-5Z7"), "_-382")
+      setlocal            5
+
+      debugline           57
+      getlocal            5
+      pushtrue
+      setproperty         QName(Namespace("_-3w2"), "_-4fH")
+
+      debugline           58
+      jump                L84
+
+      debugline           54
+L82:
+      hasnext2            7, 6
+      iftrue              L57
+
+L84:
+      kill                7
+      kill                6
+      jump                L138
+
+      debugline           61
+L88:
+      getlocal2
+      pushbyte            255
+      equals
+      dup
+      iffalse             L97
+
+      pop
+      getlocal3
+      pushbyte            255
+      equals
+L97:
+      dup
+      iftrue              L103
+
+      pop
+      getlocal2
+      pushbyte            0
+      equals
+L103:
+      iffalse             L119
+
+      debugline           62
+      pushbyte            0
+      setlocal2
+
+      debugline           63
+      getlex              QName(PackageNamespace(""), "controller")
+      pushbyte            255
+      callpropvoid        QName(PackageNamespace(""), "setAvatarEffectType"), 1
+
+      debugline           64
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-4Fr")
+      pushnull
+      callpropvoid        QName(PackageNamespace(""), "_-2tT"), 1
+
+      jump                L138
+
+      debug               1, "k", 4, 66
+      debugline           66
+L119:
+      findpropstrict      QName(PackageNamespace("_-5Z7"), "_-382")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "effects")
+      getlocal2
+      decrement
+      getproperty         MultinameL([PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), PackageNamespace(""), PackageNamespace("_-2x4"), PrivateNamespace("EffectsModel.as$3952", "_-2x4:EffectsModel#1"), PackageInternalNs("_-2x4"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1cw"), StaticProtectedNs("_-1cw"), StaticProtectedNs("_-5HG")])
+      callproperty        QName(PackageNamespace("_-5Z7"), "_-382"), 1
+      coerce              QName(PackageNamespace("_-5Z7"), "_-382")
+      setlocal            5
+
+      debugline           67
+      getlocal            5
+      pushtrue
+      setproperty         QName(Namespace("_-3w2"), "_-4fH")
+
+      debugline           68
+      getlex              QName(PackageNamespace(""), "controller")
+      getlocal            5
+      getproperty         QName(Namespace("_-3w2"), "type")
+      callpropvoid        QName(PackageNamespace(""), "setAvatarEffectType"), 1
+
+      debugline           70
+L138:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-4Kv")
+      getlocal1
+      getlocal2
+      setproperty         MultinameL([PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), PackageNamespace(""), PackageNamespace("_-2x4"), PrivateNamespace("EffectsModel.as$3952", "_-2x4:EffectsModel#1"), PackageInternalNs("_-2x4"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1cw"), StaticProtectedNs("_-1cw"), StaticProtectedNs("_-5HG")])
+
+      debugline           71
+      getlocal0
+      getlocal1
+      getlocal2
+      pushtrue
+      callpropvoid        QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-5U2"), 3
+
+      debugline           72
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-4Fr")
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "_-2tT"), 1
+
+      debugline           73
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1cw", "_-2x4:EffectsModel#0"), "_-5U2")
+   method
+    refid "_-2x4:EffectsModel/_-5U2"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 75
+      debug               1, "k", 1, 75
+      debug               1, "k", 2, 75
+      debugline           76
+      findpropstrict      QName(PackageNamespace("_-2x4"), "_-0QF")
+      getlex              QName(ProtectedNamespace("_-5HG"), "_-0q1")
+      callproperty        QName(PackageNamespace("_-2x4"), "_-0QF"), 1
+      getlocal1
+      getlocal2
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "_-5WZ"), 3
+
+      debugline           77
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2x4:EffectsModel/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 17
+    findproperty        QName(PackageNamespace(""), "_-4uP")
+    pushstring          "effects"
+    initproperty        QName(PackageNamespace(""), "_-4uP")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-4uP") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("effects") end
+end ; class

@@ -1,0 +1,358 @@
+class
+ refid "_-0fu:_-Au"
+ instance QName(PackageNamespace("_-0fu"), "_-Au")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1zu")
+  iinit
+   refid "_-0fu:_-Au/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           43
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-0fu:_-Au/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-5dn") flag FINAL dispid 3
+  method
+   refid "_-0fu:_-Au/_-5dn"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           9
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 9
+     jump                L21
+
+L6:
+     label
+     pushstring          "newnavigator_doormode_doorbell_small"
+     debugline           12
+     returnvalue
+
+L10:
+     label
+     pushstring          "newnavigator_doormode_password_small"
+     debugline           14
+     returnvalue
+
+L14:
+     label
+     pushstring          "newnavigator_doormode_invisible_small"
+     debugline           16
+     returnvalue
+
+L18:
+     label
+     jump                L50
+
+     debugline           10
+L21:
+     getlocal1
+     setlocal2
+
+     debugline           11
+     getlex              QName(PackageNamespace("_-08u"), "RoomSettingsData")
+     getproperty         QName(PackageNamespace(""), "_-5sH")
+     getlocal2
+     ifstrictne          L31
+
+     pushbyte            0
+     jump                L48
+
+     debugline           13
+L31:
+     getlex              QName(PackageNamespace("_-08u"), "RoomSettingsData")
+     getproperty         QName(PackageNamespace(""), "_-6fg")
+     getlocal2
+     ifstrictne          L38
+
+     pushbyte            1
+     jump                L48
+
+     debugline           15
+L38:
+     getlex              QName(PackageNamespace("_-08u"), "RoomSettingsData")
+     getproperty         QName(PackageNamespace(""), "_-5mT")
+     getlocal2
+     ifstrictne          L44
+
+     pushbyte            2
+     jump                L48
+
+L44:
+     jump                L47
+
+     pushbyte            3
+     jump                L48
+
+L47:
+     pushbyte            3
+L48:
+     kill                2
+     lookupswitch        L18, [L6, L10, L14, L18]
+
+L50:
+     pushstring          ""
+     debugline           18
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-2SJ") flag FINAL dispid 4
+  method
+   refid "_-0fu:_-Au/_-2SJ"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "uint")
+   returns QName(PackageNamespace(""), "uint")
+   body
+    maxstack 5
+    localcount 13
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           21
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 21
+     debug               1, "k", 1, 21
+     debug               1, "k", 2, 25
+     debug               1, "k", 3, 26
+     debug               1, "k", 4, 27
+     debug               1, "k", 5, 28
+     debug               1, "k", 6, 29
+     debug               1, "k", 7, 30
+     debug               1, "k", 8, 31
+     debug               1, "k", 9, 32
+     debug               1, "k", 10, 33
+     debug               1, "k", 11, 34
+     debugline           22
+     getlocal1
+     pushbyte            255
+     ifne                L24
+
+     debugline           23
+     getlocal2
+     returnvalue
+
+     debugline           25
+L24:
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     pushint             16711680
+     getlocal2
+     bitand
+     pushbyte            16
+     rshift
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     pushshort           255
+     divide
+     convert_d
+     setlocal3
+
+     debugline           26
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     pushint             65280
+     getlocal2
+     bitand
+     pushbyte            8
+     rshift
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     pushshort           255
+     divide
+     convert_d
+     setlocal            4
+
+     debugline           27
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     pushshort           255
+     getlocal2
+     bitand
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     pushshort           255
+     divide
+     convert_d
+     setlocal            5
+
+     debugline           28
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     pushint             16711680
+     getlocal1
+     bitand
+     pushbyte            16
+     rshift
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     pushshort           255
+     divide
+     convert_d
+     setlocal            6
+
+     debugline           29
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     pushint             65280
+     getlocal1
+     bitand
+     pushbyte            8
+     rshift
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     pushshort           255
+     divide
+     convert_d
+     setlocal            7
+
+     debugline           30
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     pushshort           255
+     getlocal1
+     bitand
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     pushshort           255
+     divide
+     convert_d
+     setlocal            8
+
+     debugline           31
+     getlocal3
+     getlex              QName(PackageNamespace(""), "Math")
+     pushbyte            1
+     getlocal            6
+     pushdouble          1.5
+     multiply
+     callproperty        QName(PackageNamespace(""), "min"), 2
+     multiply
+     convert_d
+     setlocal            9
+
+     debugline           32
+     getlocal            4
+     getlex              QName(PackageNamespace(""), "Math")
+     pushbyte            1
+     getlocal            7
+     pushdouble          1.5
+     multiply
+     callproperty        QName(PackageNamespace(""), "min"), 2
+     multiply
+     convert_d
+     setlocal            10
+
+     debugline           33
+     getlocal            5
+     getlex              QName(PackageNamespace(""), "Math")
+     pushbyte            1
+     getlocal            8
+     pushdouble          1.5
+     multiply
+     callproperty        QName(PackageNamespace(""), "min"), 2
+     multiply
+     convert_d
+     setlocal            11
+
+     debugline           34
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     getlocal            9
+     pushshort           255
+     multiply
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     pushbyte            16
+     lshift
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     getlocal            10
+     pushshort           255
+     multiply
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     pushbyte            8
+     lshift
+     add
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     getlocal            11
+     pushshort           255
+     multiply
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     add
+     pushdouble          4278190080
+     add
+     convert_u
+     setlocal            12
+
+     debugline           35
+     getlocal            12
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-59P") flag FINAL dispid 5
+  method
+   refid "_-0fu:_-Au/_-59P"
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           38
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 38
+     pushstring          "newnavigator_icon_fav_"
+     debugline           39
+     getlocal1
+     iffalse             L12
+
+     pushstring          "yes"
+     coerce_a
+     jump                L14
+
+L12:
+     pushstring          "no"
+     coerce_a
+L14:
+     add
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

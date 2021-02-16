@@ -1,0 +1,443 @@
+class
+ refid "_-2bw:MeMenuSettingsMenuView"
+ instance QName(PackageNamespace("_-2bw"), "MeMenuSettingsMenuView")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-0OM", [PackageNamespace("_-2bw")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-57Q")
+  iinit
+   refid "_-2bw:MeMenuSettingsMenuView/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           26
+     getlocal0
+     pushscope
+
+     debugline           26
+     getlocal0
+     constructsuper      0
+
+     debugline           27
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD") type QName(PackageNamespace("_-2bw"), "MeMenuWidget") end
+  trait slot QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait method QName(PackageNamespace(""), "init")
+   method
+    refid "_-2bw:MeMenuSettingsMenuView/init"
+    param QName(PackageNamespace("_-2bw"), "MeMenuWidget")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 34
+      debug               1, "k", 1, 34
+      debugline           35
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD")
+
+      debugline           36
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "createWindow"), 1
+
+      debugline           37
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-2bw:MeMenuSettingsMenuView/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debugline           43
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD")
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+      iffalse             L21
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           46
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+
+      debugline           48
+L21:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "window")
+   method
+    refid "_-2bw:MeMenuSettingsMenuView/window/getter"
+    returns QName(PackageNamespace("_-X3"), "IWindowContainer")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debugline           51
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "createWindow")
+   method
+    refid "_-2bw:MeMenuSettingsMenuView/createWindow"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           58
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 58
+      debug               1, "k", 1, 59
+      debugline           59
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "assets")
+      pushstring          "memenu_settings_menu"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "XmlAsset")
+      setlocal2
+
+      debugline           60
+      getlocal2
+      iffalse             L33
+
+      debugline           61
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+
+      debugline           63
+L33:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+      pushnull
+      ifne                L43
+
+      debugline           64
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Failed to construct settings window from XML!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           66
+L43:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+      getlocal1
+      setproperty         QName(Namespace("_-6q"), "name")
+
+      debugline           67
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-36q")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           69
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      not
+      dup
+      iftrue              L68
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "config")
+      pushstring          "has.identity"
+      callproperty        QName(Namespace("_-37g"), "getProperty"), 1
+      pushstring          "1"
+      equals
+      not
+L68:
+      iffalse             L77
+
+      debugline           70
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+      pushstring          "character_settings"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callpropvoid        QName(Namespace("_-6q"), "disable"), 0
+
+      jump                L84
+
+      debugline           72
+L77:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+      pushstring          "identity_text"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           75
+L84:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-Fi")
+      pushstring          "chat_settings"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           76
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-36q")
+   method
+    refid "_-2bw:MeMenuSettingsMenuView/_-36q"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           82
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 82
+      debug               1, "k", 1, 82
+      debugline           84
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifeq                L13
+
+      returnvoid
+
+L13:
+      jump                L54
+
+L14:
+      label
+      debugline           89
+      getlex              QName(PackageNamespace("_-2-E"), "_-0jA")
+      callpropvoid        QName(PackageNamespace(""), "openAvatars"), 0
+
+      debugline           90
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD")
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           91
+      jump                L88
+
+L24:
+      label
+      debugline           94
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD")
+      getlex              QName(PackageNamespace("_-2bw"), "MeMenuWidget")
+      getproperty         QName(PackageNamespace(""), "_-2K7")
+      callpropvoid        QName(PackageNamespace(""), "_-2mn"), 1
+
+      debugline           95
+      jump                L88
+
+L33:
+      label
+      debugline           98
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD")
+      getlex              QName(PackageNamespace("_-2bw"), "MeMenuWidget")
+      getproperty         QName(PackageNamespace(""), "_-6XH")
+      callpropvoid        QName(PackageNamespace(""), "_-2mn"), 1
+
+      debugline           99
+      jump                L88
+
+L42:
+      label
+      debugline           102
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-57Q", "_-2bw:MeMenuSettingsMenuView"), "_-5dD")
+      getlex              QName(PackageNamespace("_-2bw"), "MeMenuWidget")
+      getproperty         QName(PackageNamespace(""), "_-4tR")
+      callpropvoid        QName(PackageNamespace(""), "_-2mn"), 1
+
+      debugline           103
+      jump                L88
+
+L51:
+      label
+      jump                L88
+
+      debugline           86
+L54:
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "name")
+      setlocal3
+
+      pushstring          "character_settings"
+      debugline           88
+      getlocal3
+      ifstrictne          L63
+
+      pushbyte            0
+      jump                L85
+
+L63:
+      pushstring          "sound_settings"
+      debugline           93
+      getlocal3
+      ifstrictne          L69
+
+      pushbyte            1
+      jump                L85
+
+L69:
+      pushstring          "chat_settings"
+      debugline           97
+      getlocal3
+      ifstrictne          L75
+
+      pushbyte            2
+      jump                L85
+
+L75:
+      pushstring          "back"
+      debugline           101
+      getlocal3
+      ifstrictne          L81
+
+      pushbyte            3
+      jump                L85
+
+L81:
+      jump                L84
+
+      pushbyte            4
+      jump                L85
+
+L84:
+      pushbyte            4
+L85:
+      kill                3
+      lookupswitch        L51, [L14, L24, L33, L42, L51]
+
+      debugline           105
+L88:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-25Q")
+   method
+    refid "_-2bw:MeMenuSettingsMenuView/_-25Q"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           107
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 107
+      debug               1, "k", 1, 107
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2bw:MeMenuSettingsMenuView/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

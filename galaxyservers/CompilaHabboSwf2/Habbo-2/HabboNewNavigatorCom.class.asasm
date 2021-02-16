@@ -1,0 +1,83 @@
+class
+ refid "HabboNewNavigatorCom"
+ instance QName(PackageNamespace(""), "HabboNewNavigatorCom")
+  extends QName(PackageNamespace("mx.core"), "SimpleApplication")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("HabboNewNavigatorCom")
+  iinit
+   refid "HabboNewNavigatorCom/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 11
+    maxscopedepth 12
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           35
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "HabboNewNavigatorCom/cinit"
+  body
+   maxstack 4
+   localcount 1
+   initscopedepth 10
+   maxscopedepth 11
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 15
+    findproperty        QName(PackageNamespace(""), "manifest")
+    getlex              QName(PackageNamespace(""), "_-1IE")
+    setproperty         QName(PackageNamespace(""), "manifest")
+
+    debug               1, "k", 1, 18
+    findproperty        QName(PackageNamespace(""), "navigator_frame_2_xml")
+    getlex              QName(PackageNamespace(""), "_-Vk")
+    setproperty         QName(PackageNamespace(""), "navigator_frame_2_xml")
+
+    debug               1, "k", 2, 21
+    findproperty        QName(PackageNamespace(""), "room_info_popup_bubble_xml")
+    getlex              QName(PackageNamespace(""), "_-18d")
+    setproperty         QName(PackageNamespace(""), "room_info_popup_bubble_xml")
+
+    debug               1, "k", 3, 24
+    findproperty        QName(PackageNamespace(""), "property_xml")
+    getlex              QName(PackageNamespace(""), "_-0pF")
+    setproperty         QName(PackageNamespace(""), "property_xml")
+
+    debug               1, "k", 4, 27
+    findproperty        QName(PackageNamespace(""), "tag_xml")
+    getlex              QName(PackageNamespace(""), "_-kO")
+    setproperty         QName(PackageNamespace(""), "tag_xml")
+
+    debug               1, "k", 5, 30
+    findproperty        QName(PackageNamespace(""), "requiredClasses")
+    findpropstrict      QName(PackageNamespace(""), "Array")
+    getlex              QName(PackageNamespace("com.sulake.bootstrap"), "HabboNewNavigatorBootstrap")
+    getlex              QName(PackageNamespace("com.sulake.iid"), "IIDHabboNewNavigator")
+    constructprop       QName(PackageNamespace(""), "Array"), 2
+    setproperty         QName(PackageNamespace(""), "requiredClasses")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "manifest") slotid 1 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "navigator_frame_2_xml") slotid 2 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "room_info_popup_bubble_xml") slotid 3 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "property_xml") slotid 4 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "tag_xml") slotid 5 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "requiredClasses") slotid 6 type QName(PackageNamespace(""), "Array") end
+end ; class

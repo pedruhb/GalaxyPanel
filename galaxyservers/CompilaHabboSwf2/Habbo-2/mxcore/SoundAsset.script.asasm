@@ -1,0 +1,41 @@
+script ; 431
+ sinit
+  refid "mx.core:SoundAsset.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           77
+    findpropstrict      Multiname("SoundAsset", [PackageNamespace("mx.core")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "EventDispatcher")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.media"), "Sound")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.media"), "Sound")
+    newclass            "mx.core:SoundAsset"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace("mx.core"), "SoundAsset")
+
+    debugfile           "k"
+    debugline           12
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("mx.core"), "SoundAsset")
+  #include "SoundAsset.class.asasm"
+ end ; trait
+end ; script

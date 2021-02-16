@@ -1,0 +1,254 @@
+class
+ refid "_-5m1:_-5pF"
+ instance QName(PackageNamespace("_-5m1"), "_-5pF")
+  extends QName(PackageNamespace("_-5m1"), "FurniThumbnailRendererBase")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-BU")
+  iinit
+   refid "_-5m1:_-5pF/iinit"
+   param QName(PackageNamespace("_-JR"), "CraftingFurnitureItem")
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   param QName(PackageNamespace("_-3n-"), "CraftingWidget")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debug               1, "k", 1, 15
+     debug               1, "k", 2, 15
+     debugline           16
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           17
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-BU", "_-5m1:_-5pF"), "_-4Nn") type QName(PackageNamespace(""), "int") end
+  trait method QName(ProtectedNamespace("_-BU"), "onTriggered") flag OVERRIDE
+   method
+    refid "_-5m1:_-5pF/_-BU:onTriggered"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      debugline           20
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-5dD")
+      not
+      dup
+      iftrue              L13
+
+      pop
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "craftingInProgress")
+      convert_b
+L13:
+      dup
+      iftrue              L19
+
+      pop
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "inventoryDirty")
+      convert_b
+L19:
+      iffalse             L23
+
+      debugline           21
+      returnvoid
+
+      debugline           24
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BU", "_-5m1:_-5pF"), "_-4Nn")
+      pushbyte            0
+      ifne                L36
+
+      debugline           25
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-5dD")
+      getlex              QName(PackageNamespace("_-JR"), "_-4Hu")
+      getproperty         QName(PackageNamespace(""), "_-c8")
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-1rJ")
+      callpropvoid        QName(PackageNamespace(""), "setInfoState"), 2
+
+      debugline           26
+      returnvoid
+
+      debugline           29
+L36:
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "inSecretRecipeMode")
+      iffalse             L45
+
+      debugline           30
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "mixerCtrl")
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "removeListItem"), 1
+
+      debugline           32
+L45:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "returnItemToInventory")
+   method
+    refid "_-5m1:_-5pF/returnItemToInventory"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      debugline           35
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BU", "_-5m1:_-5pF"), "_-4Nn")
+      pushbyte            0
+      ifeq                L15
+
+      debugline           36
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-4T6")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BU", "_-5m1:_-5pF"), "_-4Nn")
+      callpropvoid        QName(PackageNamespace(""), "returnItemToInventory"), 1
+
+      debugline           39
+L15:
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           40
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "updateItemCount") flag OVERRIDE
+   method
+    refid "_-5m1:_-5pF/updateItemCount"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debugline           43
+      findpropstrict      QName(ProtectedNamespace("_-1Pl"), "_-4OR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BU", "_-5m1:_-5pF"), "_-4Nn")
+      pushbyte            0
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-1Pl"), "_-4OR"), 1
+
+      debugline           44
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-0I2")
+   method
+    refid "_-5m1:_-5pF/_-0I2/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debugline           47
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-BU", "_-5m1:_-5pF"), "_-4Nn")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "_-0I2")
+   method
+    refid "_-5m1:_-5pF/_-0I2/setter"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 50
+      debugline           51
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-BU", "_-5m1:_-5pF"), "_-4Nn")
+
+      debugline           53
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "updateItemCount"), 0
+
+      debugline           54
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5m1:_-5pF/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,944 @@
+class
+ refid "_-07U:_-Zx"
+ instance QName(PackageNamespace("_-07U"), "_-Zx")
+  extends QName(PackageNamespace("_-1dC"), "EventDispatcherWrapper")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4D3")
+  iinit
+   refid "_-07U:_-Zx/iinit"
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   optional False()
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           26
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 26
+     debugline           17
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     initproperty        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+
+     debugline           18
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     initproperty        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+
+     debugline           28
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-1ep")
+
+     debugline           29
+     getlocal0
+     constructsuper      0
+
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "length")
+   method
+    refid "_-07U:_-Zx/length/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           12
+      getlocal0
+      pushscope
+
+      debugline           13
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+      getproperty         QName(PackageNamespace(""), "length")
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-1ep") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR") type QName(PackageNamespace(""), "Array") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-07U:_-Zx/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal1
+
+      debugline           37
+      getlex              QName(PackageNamespace(""), "disposed")
+      iftrue              L67
+
+      debug               1, "k", 0, 39
+      debugline           41
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+      coerce_a
+      setlocal3
+
+      jump                L29
+
+L19:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal1
+
+      debugline           42
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           41
+L29:
+      hasnext2            3, 2
+      iftrue              L19
+
+      kill                3
+      kill                2
+      debugline           44
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+      coerce_a
+      setlocal3
+
+      jump                L51
+
+L41:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal1
+
+      debugline           45
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           44
+L51:
+      hasnext2            3, 2
+      iftrue              L41
+
+      kill                3
+      kill                2
+      debugline           48
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+
+      debugline           49
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+
+      debugline           50
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           52
+L67:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "push")
+   method
+    refid "_-07U:_-Zx/push"
+    param QName(PackageNamespace("_-07U"), "LibraryLoader")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           58
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 58
+      debugline           60
+      getlex              QName(PackageNamespace(""), "disposed")
+      not
+      dup
+      iffalse             L16
+
+      pop
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "url")
+      callproperty        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-5lu"), 1
+      not
+L16:
+      dup
+      iffalse             L24
+
+      pop
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "url")
+      callproperty        QName(PackageNamespace(""), "_-6Tr"), 1
+      not
+L24:
+      iffalse             L72
+
+      debugline           61
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "paused")
+      iffalse             L36
+
+      debugline           62
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      jump                L41
+
+      debugline           64
+L36:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           66
+L41:
+      getlocal1
+      getlex              QName(PackageNamespace("_-07U"), "_-2H8")
+      getproperty         QName(PackageNamespace(""), "LIBRARY_LOADER_EVENT_COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-5B5")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           67
+      getlocal1
+      getlex              QName(PackageNamespace("_-07U"), "_-2H8")
+      getproperty         QName(PackageNamespace(""), "LIBRARY_LOADER_EVENT_PROGRESS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-6IY")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           68
+      getlocal1
+      getlex              QName(PackageNamespace("_-07U"), "_-2H8")
+      getproperty         QName(PackageNamespace(""), "LIBRARY_LOADER_EVENT_DISPOSE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-23i")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           69
+      getlocal1
+      getlex              QName(PackageNamespace("_-07U"), "_-2H8")
+      getproperty         QName(PackageNamespace(""), "LIBRARY_LOADER_EVENT_ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-22J")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           70
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "next"), 0
+
+      debugline           72
+L72:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "next")
+   method
+    refid "_-07U:_-Zx/next"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           78
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal1
+
+      debugline           80
+      getlex              QName(PackageNamespace(""), "disposed")
+      iftrue              L43
+
+      jump                L28
+
+L11:
+      label
+      debug               1, "k", 0, 82
+      debugline           82
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "shift"), 0
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal1
+
+      debugline           83
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           84
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "resume"), 0
+
+      debugline           81
+L28:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlex              QName(StaticProtectedNs("_-4D3"), "_-2MU")
+      lessthan
+      dup
+      iffalse             L41
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      greaterthan
+L41:
+      iftrue              L11
+
+      debugline           87
+L43:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-5B5")
+   method
+    refid "_-07U:_-Zx/_-5B5"
+    param QName(PackageNamespace("_-07U"), "_-2H8")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 94
+      debug               1, "k", 1, 96
+      debugline           96
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      astypelate
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal2
+
+      debugline           97
+      getlocal2
+      iffalse             L21
+
+      debugline           98
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-0q8"), 1
+
+      debugline           100
+L21:
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "next"), 0
+
+      debugline           101
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-6IY")
+   method
+    refid "_-07U:_-Zx/_-6IY"
+    param QName(PackageNamespace("_-07U"), "_-2H8")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           107
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 107
+      debug               1, "k", 1, 109
+      debugline           109
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      astypelate
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal2
+
+      debugline           110
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-23i")
+   method
+    refid "_-07U:_-Zx/_-23i"
+    param QName(PackageNamespace("_-07U"), "_-2H8")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           116
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 116
+      debug               1, "k", 1, 118
+      debugline           118
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      astypelate
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal2
+
+      debugline           119
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-0q8"), 1
+
+      debugline           120
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "next"), 0
+
+      debugline           121
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-22J")
+   method
+    refid "_-07U:_-Zx/_-22J"
+    param QName(PackageNamespace("_-07U"), "_-2H8")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           127
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 127
+      debug               1, "k", 1, 129
+      debugline           129
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      astypelate
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal2
+
+      debugline           131
+      getlocal2
+      iffalse             L21
+
+      debugline           135
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-0q8"), 1
+
+      debugline           137
+L21:
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "next"), 0
+
+      debugline           138
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-0q8")
+   method
+    refid "_-07U:_-Zx/_-0q8"
+    param QName(PackageNamespace("_-07U"), "LibraryLoader")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           144
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 144
+      getscopeobject      1
+      pushbyte            0
+      setslot             2
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 144
+      debugline           146
+      getscopeobject      1
+      getslot             1
+      getlex              QName(PackageNamespace("_-07U"), "_-2H8")
+      getproperty         QName(PackageNamespace(""), "LIBRARY_LOADER_EVENT_COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-5B5")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           147
+      getscopeobject      1
+      getslot             1
+      getlex              QName(PackageNamespace("_-07U"), "_-2H8")
+      getproperty         QName(PackageNamespace(""), "LIBRARY_LOADER_EVENT_PROGRESS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-6IY")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           148
+      getscopeobject      1
+      getslot             1
+      getlex              QName(PackageNamespace("_-07U"), "_-2H8")
+      getproperty         QName(PackageNamespace(""), "LIBRARY_LOADER_EVENT_DISPOSE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-23i")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           149
+      getscopeobject      1
+      getslot             1
+      getlex              QName(PackageNamespace("_-07U"), "_-2H8")
+      getproperty         QName(PackageNamespace(""), "LIBRARY_LOADER_EVENT_ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-22J")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           155
+L49:
+      getscopeobject      1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+      getscopeobject      1
+      getslot             1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setslot             2
+
+      debugline           156
+      getscopeobject      1
+      getslot             2
+      pushbyte            255
+      ifngt               L70
+
+      debugline           157
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+      getscopeobject      1
+      getslot             2
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           160
+L70:
+      getscopeobject      1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+      getscopeobject      1
+      getslot             1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setslot             2
+
+      debugline           161
+      getscopeobject      1
+      getslot             2
+      pushbyte            255
+      ifngt               L91
+
+      debugline           162
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+      getscopeobject      1
+      getslot             2
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           165
+L91:
+      jump                L107
+
+L92:
+      getlocal0
+      pushscope
+
+      getlocal2
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           168
+      popscope
+      kill                3
+      debugline           172
+L107:
+      returnvoid
+     end ; code
+     try from L49 to L91 target L92 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+     trait slot QName(PackageInternalNs("_-07U"), "loader") slotid 1 type QName(PackageNamespace("_-07U"), "LibraryLoader") end
+     trait slot QName(PackageInternalNs("_-07U"), "index") slotid 2 type QName(PackageNamespace(""), "int") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-5lu")
+   method
+    refid "_-07U:_-Zx/_-5lu"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "Boolean")
+    flag HAS_OPTIONAL
+    optional True()
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           178
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal3
+
+      debug               1, "k", 0, 178
+      debug               1, "k", 1, 178
+      debugline           180
+      getlex              QName(PackageNamespace(""), "disposed")
+      iftrue              L76
+
+      debug               1, "k", 2, 188
+      debugline           184
+      getlocal2
+      convert_b
+      dup
+      iffalse             L24
+
+      pop
+      getlocal1
+      pushstring          "?"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+L24:
+      iffalse             L35
+
+      debugline           185
+      getlocal1
+      pushbyte            0
+      getlocal1
+      pushstring          "?"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+      coerce_s
+      setlocal1
+
+      debugline           188
+L35:
+      pushbyte            0
+      setlocal            4
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-21-")
+      coerce_a
+      setlocal            5
+
+      jump                L71
+
+L42:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal3
+
+      debugline           192
+      getlocal2
+      iffalse             L63
+
+      debugline           193
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "url")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            0
+      ifne                L61
+
+      debugline           194
+      pushtrue
+      returnvalue
+
+L61:
+      jump                L71
+
+      debugline           196
+L63:
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "url")
+      getlocal1
+      ifne                L71
+
+      debugline           197
+      pushtrue
+      returnvalue
+
+      debugline           188
+L71:
+      hasnext2            5, 4
+      iftrue              L42
+
+      kill                5
+      kill                4
+      debugline           201
+L76:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6Tr")
+   method
+    refid "_-07U:_-Zx/_-6Tr"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("_-07U"), "LibraryLoader")
+    flag HAS_OPTIONAL
+    optional True()
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           210
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal3
+
+      debug               1, "k", 0, 210
+      debug               1, "k", 1, 210
+      debugline           212
+      getlex              QName(PackageNamespace(""), "disposed")
+      iftrue              L76
+
+      debug               1, "k", 2, 220
+      debugline           216
+      getlocal2
+      convert_b
+      dup
+      iffalse             L24
+
+      pop
+      getlocal1
+      pushstring          "?"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+L24:
+      iffalse             L35
+
+      debugline           217
+      getlocal1
+      pushbyte            0
+      getlocal1
+      pushstring          "?"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+      coerce_s
+      setlocal1
+
+      debugline           220
+L35:
+      pushbyte            0
+      setlocal            4
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D3", "_-07U:_-Zx"), "_-4KR")
+      coerce_a
+      setlocal            5
+
+      jump                L71
+
+L42:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace("_-07U"), "LibraryLoader")
+      setlocal3
+
+      debugline           224
+      getlocal2
+      iffalse             L63
+
+      debugline           225
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "url")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            0
+      ifne                L61
+
+      debugline           226
+      getlocal3
+      returnvalue
+
+L61:
+      jump                L71
+
+      debugline           228
+L63:
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "url")
+      getlocal1
+      ifne                L71
+
+      debugline           229
+      getlocal3
+      returnvalue
+
+      debugline           220
+L71:
+      hasnext2            5, 4
+      iftrue              L42
+
+      kill                5
+      kill                4
+      debugline           233
+L76:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-07U:_-Zx/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 20
+    findproperty        QName(StaticProtectedNs("_-4D3"), "_-2MU")
+    pushbyte            4
+    initproperty        QName(StaticProtectedNs("_-4D3"), "_-2MU")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(StaticProtectedNs("_-4D3"), "_-2MU") slotid 1 type QName(PackageNamespace(""), "int") value Integer(4) end
+end ; class

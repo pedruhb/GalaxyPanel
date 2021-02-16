@@ -1,0 +1,283 @@
+class
+ refid "_-1Bv:_-5uz"
+ instance QName(PackageNamespace("_-1Bv"), "_-5uz")
+  extends QName(PackageNamespace("_-1Bv"), "_-1Gt")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4QN")
+  iinit
+   refid "_-1Bv:_-5uz/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("_-X3"), "WindowContext")
+   param QName(PackageNamespace("flash.geom"), "Rectangle")
+   param QName(PackageNamespace("_-X3"), "IWindow")
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   optional Integer(0)
+   body
+    maxstack 12
+    localcount 12
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           23
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 23
+     debug               1, "k", 1, 23
+     debug               1, "k", 2, 23
+     debug               1, "k", 3, 23
+     debug               1, "k", 4, 23
+     debug               1, "k", 5, 23
+     debug               1, "k", 6, 23
+     debug               1, "k", 7, 23
+     debug               1, "k", 8, 23
+     debug               1, "k", 9, 23
+     debug               1, "k", 10, 23
+     debugline           37
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal            6
+     getlocal            7
+     getlocal            8
+     getlocal            9
+     getlocal            10
+     getlocal            11
+     constructsuper      11
+
+     debugline           38
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-4QN"), "_-3yX") type QName(PackageNamespace("_-X3"), "IWindow") end
+  trait method QName(PackageNamespace(""), "update") flag OVERRIDE
+   method
+    refid "_-1Bv:_-5uz/update"
+    param QName(PackageNamespace("_-X3"), "WindowController")
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 41
+      debug               1, "k", 1, 41
+      debugline           43
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-Qu")
+      ifne                L20
+
+      debugline           44
+      getlocal0
+      getlocal1
+      getlex              QName(PackageNamespace("_-X3"), "IWindow")
+      astypelate
+      callpropvoid        QName(PackageNamespace(""), "_-a8"), 1
+
+      jump                L29
+
+      debugline           46
+L20:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-3B6")
+      ifne                L29
+
+      debugline           47
+      pushtrue
+      returnvalue
+
+      debugline           50
+L29:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(PackageNamespace(""), "update"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5f")
+   method
+    refid "_-1Bv:_-5uz/_-5f"
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           57
+      getlocal0
+      pushscope
+
+      debugline           59
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4QN"), "_-3yX")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-a8")
+   method
+    refid "_-1Bv:_-5uz/_-a8"
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           67
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 67
+      debug               1, "k", 1, 79
+      debugline           71
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "parent")
+      getlocal0
+      ifeq                L37
+
+      jump                L35
+
+L12:
+      label
+      debugline           73
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "parent")
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal1
+
+      debugline           74
+      getlocal1
+      pushnull
+      ifne                L28
+
+      debugline           75
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Window passed to activator is not a child!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           76
+L28:
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "parent")
+      getlocal0
+      ifne                L35
+
+      debugline           77
+      jump                L37
+
+      debugline           72
+L35:
+      jump                L12
+
+      debugline           79
+L37:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4QN"), "_-3yX")
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           81
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4QN"), "_-3yX")
+      getlocal1
+      ifeq                L78
+
+      debugline           88
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4QN"), "_-3yX")
+      pushnull
+      ifeq                L61
+
+      debugline           89
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4QN"), "_-3yX")
+      getproperty         QName(Namespace("_-2W2"), "disposed")
+      iftrue              L61
+
+      debugline           90
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4QN"), "_-3yX")
+      callpropvoid        QName(Namespace("_-6q"), "deactivate"), 0
+
+      debugline           92
+L61:
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-4QN"), "_-3yX")
+
+      debugline           96
+      findpropstrict      QName(PackageNamespace(""), "getChildIndex")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getChildIndex"), 1
+      getlex              QName(PackageNamespace(""), "numChildren")
+      decrement
+      ifeq                L78
+
+      debugline           97
+      findpropstrict      QName(PackageNamespace(""), "setChildIndex")
+      getlocal1
+      getlex              QName(PackageNamespace(""), "numChildren")
+      decrement
+      callpropvoid        QName(PackageNamespace(""), "setChildIndex"), 2
+
+      debugline           99
+L78:
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Bv:_-5uz/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

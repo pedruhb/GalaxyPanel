@@ -1,0 +1,373 @@
+class
+ refid "_-5IW:Hex"
+ instance QName(PackageNamespace("_-5IW"), "Hex")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-25-")
+  iinit
+   refid "_-5IW:Hex/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           79
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-5IW:Hex/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-0aR") flag FINAL dispid 3
+  method
+   refid "_-5IW:Hex/_-0aR"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace("flash.utils"), "ByteArray")
+   body
+    maxstack 6
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           22
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 22
+     debug               1, "k", 1, 24
+     debug               1, "k", 2, 26
+     debugline           23
+     getlocal1
+     getlex              QName(PackageNamespace(""), "RegExp")
+     pushstring          "^0x|\\s|:"
+     pushstring          "gm"
+     construct           2
+     pushstring          ""
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+     coerce_s
+     setlocal1
+
+     debugline           24
+     findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+     constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+     coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+     setlocal2
+
+     debugline           25
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            1
+     bitand
+     pushbyte            1
+     ifne                L35
+
+     pushstring          "0"
+     getlocal1
+     add
+     coerce_s
+     setlocal1
+
+     debugline           26
+L35:
+     pushbyte            0
+     convert_u
+     setlocal3
+
+     jump                L59
+
+L39:
+     label
+     debugline           27
+     getlocal2
+     getlocal3
+     pushbyte            2
+     divide
+     findpropstrict      QName(PackageNamespace(""), "parseInt")
+     getlocal1
+     getlocal3
+     pushbyte            2
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+     pushbyte            16
+     callproperty        QName(PackageNamespace(""), "parseInt"), 2
+     setproperty         MultinameL([PrivateNamespace("_-25-", "_-5IW:Hex#1"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Hex.as$4133", "_-5IW:Hex#0"), PackageNamespace("_-5IW"), PackageInternalNs("_-5IW"), ProtectedNamespace("_-25-"), StaticProtectedNs("_-25-")])
+
+     debugline           26
+     getlocal3
+     pushbyte            2
+     add
+     convert_u
+     setlocal3
+
+L59:
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L39
+
+     debugline           29
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-3x6") flag FINAL dispid 4
+  method
+   refid "_-5IW:Hex/_-3x6"
+   param QName(PackageNamespace("flash.utils"), "ByteArray")
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional False()
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           35
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 35
+     debug               1, "k", 1, 35
+     debug               1, "k", 2, 36
+     debug               1, "k", 3, 37
+     pushstring          ""
+     debugline           36
+     coerce_s
+     setlocal3
+
+     debugline           37
+     pushbyte            0
+     convert_u
+     setlocal            4
+
+     jump                L51
+
+L17:
+     label
+     debugline           38
+     getlocal3
+     pushstring          "0"
+     getlocal1
+     getlocal            4
+     getproperty         MultinameL([PrivateNamespace("_-25-", "_-5IW:Hex#1"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Hex.as$4133", "_-5IW:Hex#0"), PackageNamespace("_-5IW"), PackageInternalNs("_-5IW"), ProtectedNamespace("_-25-"), StaticProtectedNs("_-25-")])
+     pushbyte            16
+     callproperty        Multiname("toString", [PrivateNamespace("_-25-", "_-5IW:Hex#1"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Hex.as$4133", "_-5IW:Hex#0"), PackageNamespace("_-5IW"), PackageInternalNs("_-5IW"), ProtectedNamespace("_-25-"), StaticProtectedNs("_-25-")]), 1
+     add
+     pushbyte            254
+     pushbyte            2
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+     add
+     coerce_s
+     setlocal3
+
+     debugline           39
+     getlocal2
+     iffalse             L47
+
+     debugline           40
+     getlocal            4
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     decrement
+     ifnlt               L47
+
+     getlocal3
+     pushstring          ":"
+     add
+     setlocal3
+
+     debugline           37
+L47:
+     getlocal            4
+     increment
+     convert_u
+     setlocal            4
+
+L51:
+     getlocal            4
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L17
+
+     debugline           43
+     getlocal3
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "toString") flag FINAL dispid 5
+  method
+   refid "_-5IW:Hex/toString"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("utf-8")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           49
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 49
+     debug               1, "k", 1, 49
+     debug               1, "k", 2, 50
+     debugline           50
+     findpropstrict      QName(PackageNamespace(""), "_-0aR")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "_-0aR"), 1
+     coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+     setlocal3
+
+     debugline           51
+     getlocal3
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "length")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "readMultiByte"), 2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-3IW") flag FINAL dispid 6
+  method
+   refid "_-5IW:Hex/_-3IW"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           57
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 57
+     debugline           58
+     findpropstrict      QName(PackageNamespace(""), "toString")
+     getlocal1
+     pushstring          "iso-8859-1"
+     callproperty        QName(PackageNamespace(""), "toString"), 2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-6AR") flag FINAL dispid 7
+  method
+   refid "_-5IW:Hex/_-6AR"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional False()
+   optional Utf8("utf-8")
+   body
+    maxstack 3
+    localcount 5
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           64
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 64
+     debug               1, "k", 1, 64
+     debug               1, "k", 2, 64
+     debug               1, "k", 3, 65
+     debugline           65
+     findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+     constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+     coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+     setlocal            4
+
+     debugline           66
+     getlocal            4
+     getlocal1
+     getlocal3
+     callpropvoid        QName(PackageNamespace(""), "writeMultiByte"), 2
+
+     debugline           67
+     findpropstrict      QName(PackageNamespace(""), "_-3x6")
+     getlocal            4
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "_-3x6"), 2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-31a") flag FINAL dispid 8
+  method
+   refid "_-5IW:Hex/_-31a"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional False()
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           73
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 73
+     debug               1, "k", 1, 73
+     debugline           74
+     findpropstrict      QName(PackageNamespace(""), "_-6AR")
+     getlocal1
+     getlocal2
+     pushstring          "iso-8859-1"
+     callproperty        QName(PackageNamespace(""), "_-6AR"), 3
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

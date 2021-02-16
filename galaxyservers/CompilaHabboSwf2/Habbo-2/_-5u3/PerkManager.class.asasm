@@ -1,0 +1,392 @@
+class
+ refid "_-5u3:PerkManager"
+ instance QName(PackageNamespace("_-5u3"), "PerkManager")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1Q2")
+  iinit
+   refid "_-5u3:PerkManager/iinit"
+   param QName(PackageNamespace("_-5u3"), "SessionDataManager")
+   body
+    maxstack 4
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           16
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 16
+     debugline           14
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     initproperty        QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2")
+
+     debugline           16
+     getlocal0
+     constructsuper      0
+
+     debugline           17
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-6Lc")
+
+     debugline           18
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-6Lc")
+     getproperty         QName(PackageNamespace(""), "communication")
+     iffalse             L34
+
+     debugline           19
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-6Lc")
+     getproperty         QName(PackageNamespace(""), "communication")
+     findpropstrict      QName(PackageNamespace("_-1zU"), "_-5GA")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-Im")
+     constructprop       QName(PackageNamespace("_-1zU"), "_-5GA"), 1
+     callproperty        QName(Namespace("_-mI"), "addHabboConnectionMessageEvent"), 1
+     initproperty        QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-09d")
+
+     debugline           21
+L34:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-14K") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-6Lc") type QName(PackageNamespace("_-5u3"), "SessionDataManager") end
+  trait slot QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-09d") type QName(PackageNamespace("_-6Wd"), "_-0v5") end
+  trait slot QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-5u3:PerkManager/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      debugline           24
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-6Lc")
+      pushnull
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5u3:PerkManager/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           27
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal1
+
+      debugline           28
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "disposed")
+      iffalse             L14
+
+      debugline           29
+      returnvoid
+
+      debugline           31
+L14:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2")
+      iffalse             L48
+
+      debug               1, "k", 0, 32
+      debugline           32
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2")
+      coerce_a
+      setlocal3
+
+      jump                L39
+
+L26:
+      label
+      getlocal3
+      getlocal2
+      nextname
+      coerce_s
+      setlocal1
+
+      debugline           33
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2")
+      getlocal1
+      deleteproperty      MultinameL([PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), PackageNamespace(""), PackageNamespace("_-5u3"), PrivateNamespace("PerkManager.as$3745", "_-5u3:PerkManager#1"), PackageInternalNs("_-5u3"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Q2"), StaticProtectedNs("_-1Q2")])
+      pop
+      debugline           32
+L39:
+      hasnext2            3, 2
+      iftrue              L26
+
+      kill                3
+      kill                2
+      debugline           35
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2")
+
+      debugline           37
+L48:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-6Lc")
+      getproperty         QName(PackageNamespace(""), "communication")
+      iffalse             L60
+
+      debugline           38
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-6Lc")
+      getproperty         QName(PackageNamespace(""), "communication")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-09d")
+      callpropvoid        QName(Namespace("_-mI"), "_-9f"), 1
+
+      debugline           40
+L60:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-09d")
+
+      debugline           41
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-6Lc")
+
+      debugline           42
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-3HW")
+   method
+    refid "_-5u3:PerkManager/_-3HW/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-14K")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isPerkAllowed")
+   method
+    refid "_-5u3:PerkManager/isPerkAllowed"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 48
+      debugline           49
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2")
+      in
+      dup
+      iffalse             L19
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), PackageNamespace(""), PackageNamespace("_-5u3"), PrivateNamespace("PerkManager.as$3745", "_-5u3:PerkManager#1"), PackageInternalNs("_-5u3"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Q2"), StaticProtectedNs("_-1Q2")])
+      getproperty         Multiname("isAllowed", [PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), PackageNamespace(""), PackageNamespace("_-5u3"), PrivateNamespace("PerkManager.as$3745", "_-5u3:PerkManager#1"), PackageInternalNs("_-5u3"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Q2"), StaticProtectedNs("_-1Q2")])
+      convert_b
+L19:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4s3")
+   method
+    refid "_-5u3:PerkManager/_-4s3"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           52
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 52
+      debug               1, "k", 1, 53
+      debugline           53
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), PackageNamespace(""), PackageNamespace("_-5u3"), PrivateNamespace("PerkManager.as$3745", "_-5u3:PerkManager#1"), PackageInternalNs("_-5u3"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Q2"), StaticProtectedNs("_-1Q2")])
+      coerce              QName(PackageNamespace("_-3EC"), "_-6Dk")
+      setlocal2
+
+      debugline           54
+      getlocal2
+      pushnull
+      ifeq                L21
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "errorMessage")
+      coerce_s
+      jump                L22
+
+L21:
+      pushstring          ""
+L22:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-Im")
+   method
+    refid "_-5u3:PerkManager/_-Im"
+    param QName(PackageNamespace("_-1zU"), "_-5GA")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           57
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3EC"), "_-6Dk")
+      setlocal2
+
+      debug               1, "k", 0, 57
+      debug               1, "k", 1, 58
+      debugline           58
+      pushbyte            0
+      setlocal3
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-6g5"), 0
+      callproperty        QName(PackageNamespace(""), "_-09J"), 0
+      coerce_a
+      setlocal            4
+
+      jump                L32
+
+L18:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-3EC"), "_-6Dk")
+      setlocal2
+
+      debugline           59
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-0D2")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "code")
+      getlocal2
+      setproperty         MultinameL([PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), PackageNamespace(""), PackageNamespace("_-5u3"), PrivateNamespace("PerkManager.as$3745", "_-5u3:PerkManager#1"), PackageInternalNs("_-5u3"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Q2"), StaticProtectedNs("_-1Q2")])
+
+      debugline           58
+L32:
+      hasnext2            4, 3
+      iftrue              L18
+
+      kill                4
+      kill                3
+      debugline           61
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-14K")
+
+      debugline           62
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Q2", "_-5u3:PerkManager#0"), "_-6Lc")
+      getproperty         QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-3mB"), "_-6My")
+      constructprop       QName(PackageNamespace("_-3mB"), "_-6My"), 0
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           63
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5u3:PerkManager/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

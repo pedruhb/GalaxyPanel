@@ -1,0 +1,109 @@
+class
+ refid "_-5m1:_-6ZF"
+ instance QName(PackageNamespace("_-5m1"), "_-6ZF")
+  extends QName(PackageNamespace("_-5m1"), "FurniThumbnailRendererBase")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1ri")
+  iinit
+   refid "_-5m1:_-6ZF/iinit"
+   param QName(PackageNamespace("_-JR"), "CraftingFurnitureItem")
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   param QName(PackageNamespace("_-3n-"), "CraftingWidget")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 12
+     debug               1, "k", 1, 12
+     debug               1, "k", 2, 12
+     debugline           13
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           15
+     findpropstrict      QName(ProtectedNamespace("_-1Pl"), "_-39X")
+     callpropvoid        QName(ProtectedNamespace("_-1Pl"), "_-39X"), 0
+
+     debugline           16
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("_-1ri"), "onTriggered") flag OVERRIDE
+   method
+    refid "_-5m1:_-6ZF/_-1ri:onTriggered"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      debugline           19
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-5dD")
+      not
+      dup
+      iftrue              L12
+
+      pop
+      getlex              QName(PackageNamespace(""), "content")
+      not
+L12:
+      dup
+      iftrue              L18
+
+      pop
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "craftingInProgress")
+      convert_b
+L18:
+      iffalse             L22
+
+      debugline           20
+      returnvoid
+
+      debugline           23
+L22:
+      getlex              QName(ProtectedNamespace("_-1Pl"), "_-5dD")
+      getlex              QName(PackageNamespace(""), "content")
+      callpropvoid        QName(PackageNamespace(""), "showCraftableProduct"), 1
+
+      debugline           24
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5m1:_-6ZF/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

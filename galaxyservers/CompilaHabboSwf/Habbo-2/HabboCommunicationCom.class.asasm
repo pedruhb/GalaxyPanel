@@ -1,0 +1,59 @@
+class
+ refid "HabboCommunicationCom"
+ instance QName(PackageNamespace(""), "HabboCommunicationCom")
+  extends QName(PackageNamespace("mx.core"), "SimpleApplication")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("HabboCommunicationCom")
+  iinit
+   refid "HabboCommunicationCom/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 11
+    maxscopedepth 12
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "HabboCommunicationCom/cinit"
+  body
+   maxstack 4
+   localcount 1
+   initscopedepth 10
+   maxscopedepth 11
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 13
+    findproperty        QName(PackageNamespace(""), "requiredClasses")
+    findpropstrict      QName(PackageNamespace(""), "Array")
+    getlex              QName(PackageNamespace("com.sulake.bootstrap"), "HabboCommunicationManagerBootstrap")
+    getlex              QName(PackageNamespace("com.sulake.iid"), "IIDHabboCommunicationManager")
+    constructprop       QName(PackageNamespace(""), "Array"), 2
+    setproperty         QName(PackageNamespace(""), "requiredClasses")
+
+    debug               1, "k", 1, 19
+    findproperty        QName(PackageNamespace(""), "manifest")
+    getlex              QName(PackageNamespace(""), "_-5WV")
+    setproperty         QName(PackageNamespace(""), "manifest")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "requiredClasses") slotid 1 type QName(PackageNamespace(""), "Array") end
+ trait slot QName(PackageNamespace(""), "manifest") slotid 2 type QName(PackageNamespace(""), "Class") end
+end ; class

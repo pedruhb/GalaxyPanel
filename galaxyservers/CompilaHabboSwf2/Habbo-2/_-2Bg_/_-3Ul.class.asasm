@@ -1,0 +1,339 @@
+class
+ refid "_-2Bg:_-3Ul"
+ instance QName(PackageNamespace("_-2Bg"), "_-3Ul")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-vx")
+  iinit
+   refid "_-2Bg:_-3Ul/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           67
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-2Bg:_-3Ul/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 29
+    findproperty        QName(PackageNamespace(""), "_-5t3")
+    pushbyte            1
+    initproperty        QName(PackageNamespace(""), "_-5t3")
+
+    debug               1, "k", 1, 30
+    findproperty        QName(PackageNamespace(""), "_-11W")
+    pushbyte            2
+    initproperty        QName(PackageNamespace(""), "_-11W")
+
+    debug               1, "k", 2, 31
+    findproperty        QName(PackageNamespace(""), "_-5UP")
+    pushbyte            3
+    initproperty        QName(PackageNamespace(""), "_-5UP")
+
+    debug               1, "k", 3, 32
+    findproperty        QName(PackageNamespace(""), "_-2GE")
+    pushbyte            4
+    initproperty        QName(PackageNamespace(""), "_-2GE")
+
+    debug               1, "k", 4, 33
+    findproperty        QName(PackageNamespace(""), "_-2Et")
+    pushbyte            5
+    initproperty        QName(PackageNamespace(""), "_-2Et")
+
+    debug               1, "k", 5, 34
+    findproperty        QName(PackageNamespace(""), "_-0Uv")
+    pushbyte            6
+    initproperty        QName(PackageNamespace(""), "_-0Uv")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-5t3") slotid 1 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "_-11W") slotid 2 type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "_-5UP") slotid 3 type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "_-2GE") slotid 4 type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "_-2Et") slotid 5 type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PackageNamespace(""), "_-0Uv") slotid 6 type QName(PackageNamespace(""), "int") value Integer(6) end
+ trait method QName(PackageNamespace(""), "_-5mB") flag FINAL dispid 3
+  method
+   refid "_-2Bg:_-3Ul/_-5mB"
+   param QName(PackageNamespace("_-lv"), "StreamSequence")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace("_-0fF"), "ProvidersConfigGroup")
+   param QName(PackageNamespace("_-0fF"), "ProvidersConfigGroup")
+   returns QName(PackageNamespace("_-2Bg"), "_-2k")
+   flag HAS_OPTIONAL
+   optional Integer(1)
+   optional Null()
+   optional Null()
+   body
+    maxstack 4
+    localcount 6
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           36
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 36
+     debug               1, "k", 1, 36
+     debug               1, "k", 2, 36
+     debug               1, "k", 3, 36
+     jump                L28
+
+L9:
+     label
+     debugline           39
+     findpropstrict      QName(PackageNamespace("_-3Rb"), "SMILPlaylist")
+     getlocal1
+     getlocal3
+     getlocal            4
+     constructprop       QName(PackageNamespace("_-3Rb"), "SMILPlaylist"), 3
+     returnvalue
+
+L17:
+     label
+     debugline           41
+     findpropstrict      QName(PackageNamespace("_-4xv"), "MediaRSSPlaylist")
+     getlocal1
+     getlocal3
+     getlocal            4
+     constructprop       QName(PackageNamespace("_-4xv"), "MediaRSSPlaylist"), 3
+     returnvalue
+
+L25:
+     label
+     jump                L49
+
+     debugline           37
+L28:
+     getlocal2
+     setlocal            5
+
+     debugline           38
+     getlex              QName(PackageNamespace(""), "_-2GE")
+     getlocal            5
+     ifstrictne          L37
+
+     pushbyte            0
+     jump                L46
+
+     debugline           40
+L37:
+     getlex              QName(PackageNamespace(""), "_-2Et")
+     getlocal            5
+     ifstrictne          L42
+
+     pushbyte            1
+     jump                L46
+
+L42:
+     jump                L45
+
+     pushbyte            2
+     jump                L46
+
+L45:
+     pushbyte            2
+L46:
+     kill                5
+     lookupswitch        L25, [L9, L17, L25]
+
+     debugline           43
+L49:
+     findpropstrict      QName(PackageNamespace("_-2Bg"), "DefaultPlaylist")
+     getlocal1
+     getlocal3
+     getlocal            4
+     constructprop       QName(PackageNamespace("_-2Bg"), "DefaultPlaylist"), 3
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-3YJ") flag FINAL dispid 4
+  method
+   refid "_-2Bg:_-3Ul/_-3YJ"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace("_-2Bg"), "_-2k")
+   flag HAS_OPTIONAL
+   optional Integer(1)
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           46
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 46
+     jump                L19
+
+L6:
+     label
+     debugline           49
+     findpropstrict      QName(PackageNamespace("_-3Rb"), "SMILPlaylist")
+     constructprop       QName(PackageNamespace("_-3Rb"), "SMILPlaylist"), 0
+     returnvalue
+
+L11:
+     label
+     debugline           51
+     findpropstrict      QName(PackageNamespace("_-4xv"), "MediaRSSPlaylist")
+     constructprop       QName(PackageNamespace("_-4xv"), "MediaRSSPlaylist"), 0
+     returnvalue
+
+L16:
+     label
+     jump                L40
+
+     debugline           47
+L19:
+     getlocal1
+     setlocal2
+
+     debugline           48
+     getlex              QName(PackageNamespace(""), "_-2GE")
+     getlocal2
+     ifstrictne          L28
+
+     pushbyte            0
+     jump                L37
+
+     debugline           50
+L28:
+     getlex              QName(PackageNamespace(""), "_-2Et")
+     getlocal2
+     ifstrictne          L33
+
+     pushbyte            1
+     jump                L37
+
+L33:
+     jump                L36
+
+     pushbyte            2
+     jump                L37
+
+L36:
+     pushbyte            2
+L37:
+     kill                2
+     lookupswitch        L16, [L6, L11, L16]
+
+     debugline           53
+L40:
+     findpropstrict      QName(PackageNamespace("_-2Bg"), "DefaultPlaylist")
+     constructprop       QName(PackageNamespace("_-2Bg"), "DefaultPlaylist"), 0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "getType") flag FINAL dispid 5
+  method
+   refid "_-2Bg:_-3Ul/getType"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "int")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           56
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 56
+     jump                L17
+
+L6:
+     label
+     debugline           59
+     getlex              QName(PackageNamespace(""), "_-2GE")
+     returnvalue
+
+L10:
+     label
+     debugline           61
+     getlex              QName(PackageNamespace(""), "_-2Et")
+     returnvalue
+
+L14:
+     label
+     jump                L39
+
+     debugline           57
+L17:
+     getlocal1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toUpperCase"), 0
+     setlocal2
+
+     pushstring          "SMIL"
+     debugline           58
+     getlocal2
+     ifstrictne          L26
+
+     pushbyte            0
+     jump                L36
+
+L26:
+     pushstring          "MRSS"
+     debugline           60
+     getlocal2
+     ifstrictne          L32
+
+     pushbyte            1
+     jump                L36
+
+L32:
+     jump                L35
+
+     pushbyte            2
+     jump                L36
+
+L35:
+     pushbyte            2
+L36:
+     kill                2
+     lookupswitch        L14, [L6, L10, L14]
+
+     debugline           63
+L39:
+     getlex              QName(PackageNamespace(""), "_-5t3")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

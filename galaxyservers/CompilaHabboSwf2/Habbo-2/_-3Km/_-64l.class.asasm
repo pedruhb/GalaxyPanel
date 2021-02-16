@@ -1,0 +1,168 @@
+class
+ refid "_-3Km:_-64l"
+ instance QName(PackageNamespace("_-3Km"), "_-64l")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4yf")
+  iinit
+   refid "_-3Km:_-64l/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           24
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-3Km:_-64l/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-3ER") flag FINAL dispid 3
+  method
+   refid "_-3Km:_-64l/_-3ER"
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 10
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           8
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 8
+     debug               1, "k", 1, 9
+     debug               1, "k", 2, 10
+     debug               1, "k", 3, 11
+     debug               1, "k", 4, 12
+     debug               1, "k", 5, 13
+     debug               1, "k", 6, 15
+     debug               1, "k", 7, 16
+     debug               1, "k", 8, 17
+     debugline           9
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "floor"), 1
+     convert_u
+     setlocal2
+
+     debugline           10
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     pushshort           3600
+     divide
+     callproperty        QName(PackageNamespace(""), "floor"), 1
+     convert_u
+     setlocal3
+
+     debugline           11
+     getlocal3
+     pushshort           3600
+     multiply
+     convert_i
+     setlocal            4
+
+     debugline           12
+     getlocal2
+     getlocal            4
+     subtract
+     pushbyte            60
+     divide
+     convert_u
+     setlocal            5
+
+     debugline           13
+     getlocal2
+     getlocal            4
+     subtract
+     getlocal            5
+     pushbyte            60
+     multiply
+     subtract
+     convert_u
+     setlocal            6
+
+     debugline           15
+     getlocal3
+     pushstring          ":"
+     add
+     setlocal            7
+
+     debugline           16
+     getlocal            5
+     pushbyte            10
+     lessthan
+     iffalse             L64
+
+     pushstring          "0"
+     coerce_a
+     jump                L66
+
+L64:
+     pushstring          ""
+     coerce_a
+L66:
+     getlocal            5
+     add
+     pushstring          ":"
+     add
+     setlocal            8
+
+     debugline           17
+     getlocal            6
+     pushbyte            10
+     lessthan
+     iffalse             L79
+
+     pushstring          "0"
+     coerce_a
+     jump                L81
+
+L79:
+     pushstring          ""
+     coerce_a
+L81:
+     getlocal            6
+     add
+     coerce_s
+     setlocal            9
+
+     debugline           19
+     getlocal            7
+     getlocal            8
+     add
+     getlocal            9
+     add
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

@@ -1,0 +1,37 @@
+script ; 430
+ sinit
+  refid "_-1M6:Profiler.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           13
+    findpropstrict      Multiname("Profiler", [PackageInternalNs("_-1M6")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-1M6"), "Component")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-1M6"), "Component")
+    newclass            "_-1M6:Profiler"
+    popscope
+    popscope
+    initproperty        QName(PackageInternalNs("_-1M6"), "Profiler")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageInternalNs("_-1M6"), "Profiler")
+  #include "Profiler.class.asasm"
+ end ; trait
+end ; script

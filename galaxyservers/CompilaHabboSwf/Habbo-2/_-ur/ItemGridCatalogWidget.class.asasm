@@ -1,0 +1,2154 @@
+class
+ refid "_-ur:ItemGridCatalogWidget"
+ instance QName(PackageNamespace("_-ur"), "ItemGridCatalogWidget")
+  extends QName(PackageNamespace("_-ur"), "CatalogWidget")
+  implements Multiname("_-0su", [PackageNamespace("_-ur")])
+  implements Multiname("_-2UX", [PackageNamespace("_-k3")])
+  implements Multiname("_-Vi", [PackageNamespace("_-k3")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4h4")
+  iinit
+   refid "_-ur:ItemGridCatalogWidget/iinit"
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   param QName(PackageNamespace("_-5u3"), "_-12s")
+   param QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           54
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 54
+     debug               1, "k", 1, 54
+     debug               1, "k", 2, 54
+     debugline           185
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     initproperty        QName(PackageNamespace(""), "_-4sx")
+
+     debugline           55
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           56
+     getlocal0
+     getlocal2
+     initproperty        QName(ProtectedNamespace("_-4h4"), "_-5cc")
+
+     debugline           57
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-rb")
+
+     debugline           58
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-4h4"), "_-0kc") type QName(PackageNamespace("_-1Bv"), "IItemGridWindow") end
+  trait slot QName(ProtectedNamespace("_-4h4"), "_-4rN") type QName(PackageNamespace(""), "XML") end
+  trait slot QName(ProtectedNamespace("_-4h4"), "_-1c4") type QName(PackageNamespace(""), "XML") end
+  trait slot QName(ProtectedNamespace("_-4h4"), "_-WG") type QName(PackageNamespace(""), "XML") end
+  trait slot QName(ProtectedNamespace("_-4h4"), "_-6NF") type QName(PackageNamespace("_-k3"), "_-6Mk") end
+  trait slot QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-27d") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(ProtectedNamespace("_-4h4"), "_-3Nb") type QName(PackageNamespace("flash.utils"), "Timer") end
+  trait slot QName(ProtectedNamespace("_-4h4"), "_-4lJ") type QName(PackageNamespace(""), "Boolean") value True() end
+  trait slot QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-4RD") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(ProtectedNamespace("_-4h4"), "_-5cc") type QName(PackageNamespace("_-5u3"), "_-12s") end
+  trait slot QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-5C1") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait slot QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_selectedGuildColor1") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_selectedGuildColor2") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-3nx") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-rb") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-ur:ItemGridCatalogWidget/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           64
+      getlocal0
+      pushscope
+
+      debugline           65
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-3Nb")
+      pushnull
+      ifeq                L26
+
+      debugline           66
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-3Nb")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           67
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-3Nb")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-3U7")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           68
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-3Nb")
+
+      debugline           70
+L26:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-0kc")
+      pushnull
+      ifeq                L39
+
+      debugline           71
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-0kc")
+      callpropvoid        QName(Namespace("_-5Ga"), "destroyGridItems"), 0
+
+      debugline           73
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-0kc")
+
+      debugline           75
+L39:
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-4rN")
+
+      debugline           76
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-1c4")
+
+      debugline           77
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-WG")
+
+      debugline           78
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-6NF")
+
+      debugline           79
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           80
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-ur:ItemGridCatalogWidget/init"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           85
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 92
+      debug               1, "k", 1, 103
+      debugline           86
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L14
+
+      debugline           87
+      pushfalse
+      returnvalue
+
+      debugline           90
+L14:
+      findpropstrict      QName(ProtectedNamespace("_-5qb"), "_-4lH")
+      getlex              QName(PackageNamespace("_-ur"), "_-2Zm")
+      getproperty         QName(PackageNamespace(""), "_-ov")
+      callpropvoid        QName(ProtectedNamespace("_-5qb"), "_-4lH"), 1
+
+      debugline           92
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "tags")
+      pushstring          "FIXED"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+      setlocal1
+
+      debugline           94
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushstring          "itemGrid"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IItemGridWindow")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-0kc")
+
+      debugline           95
+      getlocal1
+      iftrue              L52
+
+      debugline           96
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushbyte            0
+      callproperty        QName(Namespace("_-3si"), "getChildAt"), 1
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "width")
+      setproperty         QName(Namespace("_-6q"), "width")
+
+      debugline           97
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushbyte            0
+      callproperty        QName(Namespace("_-3si"), "getChildAt"), 1
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "height")
+      setproperty         QName(Namespace("_-6q"), "height")
+
+      debugline           100
+L52:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-0kc")
+      pushbyte            0
+      setproperty         QName(Namespace("_-5Ga"), "_-5mx")
+
+      debugline           103
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      pushstring          "gridItem"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "XmlAsset")
+      setlocal2
+
+      debugline           104
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-4rN")
+
+      debugline           106
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      pushstring          "grid_item_with_price_single"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "XmlAsset")
+      setlocal2
+
+      debugline           107
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-WG")
+
+      debugline           109
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      pushstring          "grid_item_with_price_multi"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "XmlAsset")
+      setlocal2
+
+      debugline           110
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-1c4")
+
+      debugline           111
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-4h4"), "_-4tP"), 0
+
+      debugline           114
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-4lJ")
+      iffalse             L137
+
+      debugline           116
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
+      pushbyte            25
+      constructprop       QName(PackageNamespace("flash.utils"), "Timer"), 1
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-3Nb")
+
+      debugline           117
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-3Nb")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-3U7")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           118
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-3Nb")
+      callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+      jump                L140
+
+      debugline           122
+L137:
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-4h4"), "_-3U7"), 0
+
+      debugline           125
+L140:
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "GUILD_SELECTED")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-0GJ")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           126
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "COLOUR_INDEX")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-20Y")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           127
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "select")
+   method
+    refid "_-ur:ItemGridCatalogWidget/select"
+    param QName(PackageNamespace("_-k3"), "_-6Mk")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           134
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 134
+      debug               1, "k", 1, 134
+      debug               1, "k", 2, 142
+      debug               1, "k", 3, 149
+      debugline           135
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-6NF")
+      pushnull
+      ifeq                L18
+
+      debugline           136
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-6NF")
+      callpropvoid        QName(Namespace("_-4jw"), "deactivate"), 0
+
+      debugline           139
+L18:
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-4h4"), "_-6NF")
+
+      debugline           140
+      getlocal1
+      callpropvoid        QName(Namespace("_-4jw"), "activate"), 0
+
+      debugline           141
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-6NF")
+      getproperty         QName(Namespace("_-4jw"), "view")
+      iffalse             L47
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-6NF")
+      getproperty         QName(Namespace("_-4jw"), "view")
+      pushstring          "border_outline"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-rb")
+      getlex              QName(PackageNamespace("_-23E"), "_-2jp")
+      getproperty         QName(PackageNamespace(""), "NORMAL")
+      equals
+      iffalse             L43
+
+      pushint             6538729
+      convert_u
+      jump                L45
+
+L43:
+      pushint             16758076
+      convert_u
+L45:
+      setproperty         QName(Namespace("_-6q"), "color")
+
+      debugline           142
+L47:
+      getlocal1
+      getlex              QName(PackageNamespace("_-k3"), "ProductContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-k3"), "ProductContainer")
+      setlocal3
+
+      debugline           143
+      getlocal3
+      iftrue              L57
+
+      returnvoid
+
+      debugline           145
+L57:
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "isLazy")
+      iffalse             L63
+
+      debugline           146
+      returnvoid
+
+      debugline           149
+L63:
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "offer")
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal            4
+
+      debugline           150
+      getlocal            4
+      pushnull
+      ifeq                L100
+
+      debugline           151
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-6Lx")
+      getlocal            4
+      constructprop       QName(PackageNamespace("_-09G"), "_-6Lx"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           152
+      getlocal            4
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      convert_b
+      dup
+      iffalse             L90
+
+      pop
+      getlocal            4
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-4ZW")
+      getlex              QName(PackageNamespace("_-23E"), "_-1Dk")
+      getproperty         QName(PackageNamespace(""), "_-0ps")
+      equals
+L90:
+      iffalse             L100
+
+      debugline           154
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-1BD")
+      getlocal            4
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-0YI")
+      constructprop       QName(PackageNamespace("_-09G"), "_-1BD"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           159
+L100:
+      getlocal2
+      iffalse             L114
+
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-Jb")
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-6hu"), 0
+      pushstring          "ctlg_clr_27x22_1"
+      pushstring          "ctlg_clr_27x22_2"
+      pushstring          "ctlg_clr_27x22_3"
+      getlocal0
+      callproperty        QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-47m"), 0
+      constructprop       QName(PackageNamespace("_-09G"), "_-Jb"), 5
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           161
+L114:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-51l")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-51l"
+    param QName(PackageNamespace("_-k3"), "_-6Mk")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           163
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 163
+      debug               1, "k", 1, 164
+      debugline           164
+      getlocal1
+      getlex              QName(PackageNamespace("_-k3"), "ProductContainer")
+      astypelate
+      getproperty         QName(PackageNamespace(""), "offer")
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debugline           165
+      getlocal2
+      pushnull
+      ifeq                L33
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-5cc")
+      getproperty         QName(Namespace("_-0wj"), "clubLevel")
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "clubLevel")
+      ifnge               L33
+
+      debugline           166
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getlex              QName(PackageNamespace("_-47b"), "HabboCatalog")
+      astypelate
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "_-3fG"), 2
+
+      debugline           168
+L33:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-51X")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-51X"
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           171
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 171
+      debug               1, "k", 1, 171
+      debugline           172
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L12
+
+      debugline           173
+      returnvoid
+
+      debugline           175
+L12:
+      getlocal1
+      iffalse             L22
+
+      debugline           176
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-1vY")
+      pushfalse
+      getlocal2
+      constructprop       QName(PackageNamespace("_-09G"), "_-1vY"), 2
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           178
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6Ac")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-6Ac"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           180
+      getlocal0
+      pushscope
+
+      debugline           182
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PackageNamespace(""), "_-4sx") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait slot QName(PackageNamespace(""), "_-0IT") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait method QName(ProtectedNamespace("_-4h4"), "_-4tP")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-4h4:_-4tP"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 12
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           196
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal3
+
+      pushbyte            0
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal            5
+
+      pushbyte            0
+      convert_u
+      setlocal            6
+
+      pushbyte            0
+      convert_u
+      setlocal            7
+
+      debug               1, "k", 0, 200
+      debug               1, "k", 1, 201
+      debug               1, "k", 2, 202
+      debug               1, "k", 3, 203
+      debug               1, "k", 4, 204
+      debugline           200
+      newarray            0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           201
+      getlex              Multiname("Vector", [PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb"), PackageNamespace("__AS3__.vec")])
+      getlex              QName(PackageNamespace("_-47b"), "_-37l")
+      applytype           1
+      construct           0
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-47b"), "_-37l")>)
+      setlocal2
+
+      debugline           205
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "layoutCode")
+      pushstring          "default_3x3_color_grouping"
+      ifne                L193
+
+      debugline           207
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-7Q")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
+
+      debugline           208
+      pushbyte            0
+      setlocal            8
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            9
+
+      jump                L181
+
+L53:
+      label
+      getlocal            9
+      getlocal            8
+      nextvalue
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal            5
+
+      debug               1, "k", 5, 217
+      debugline           210
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      not
+      dup
+      iftrue              L72
+
+      pop
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "isColorable")
+      not
+L72:
+      iffalse             L80
+
+      debugline           211
+      getlocal2
+      getlocal            5
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           212
+      jump                L181
+
+      debugline           214
+L80:
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-6YS")
+      pushstring          "*"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+      coerce_s
+      setlocal3
+
+      debugline           215
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-6YS")
+      pushstring          "*"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      convert_i
+      setlocal            4
+
+      debugline           216
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4sx")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+      iftrue              L115
+
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4sx")
+      getlocal3
+      newarray            0
+      setproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+
+      debugline           218
+L115:
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-0GQ")
+      iffalse             L167
+
+      debug               1, "k", 6, 221
+      debugline           222
+      pushbyte            0
+      setlocal            10
+
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-0GQ")
+      coerce_a
+      setlocal            11
+
+      jump                L145
+
+L131:
+      label
+      getlocal            11
+      getlocal            10
+      nextvalue
+      convert_u
+      setlocal            6
+
+      debugline           223
+      getlocal            6
+      pushint             16777215
+      ifeq                L145
+
+      getlocal            6
+      convert_u
+      setlocal            7
+
+      debugline           222
+L145:
+      hasnext2            11, 10
+      iftrue              L131
+
+      kill                11
+      kill                10
+      debugline           225
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4sx")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+      getlocal            7
+      callproperty        Multiname("indexOf", [PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")]), 1
+      pushbyte            255
+      ifne                L167
+
+      debugline           226
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4sx")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+      getlocal            4
+      getlocal            7
+      setproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+
+      debugline           229
+L167:
+      getlocal1
+      getlocal3
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifne                L181
+
+      debugline           231
+      getlocal2
+      getlocal            5
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           232
+      getlocal1
+      getlocal3
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           208
+L181:
+      hasnext2            9, 8
+      iftrue              L53
+
+      kill                9
+      kill                8
+      debugline           235
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-X7")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
+
+      jump                L198
+
+      debugline           239
+L193:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-47b"), "_-37l")>)
+      setlocal2
+
+      debugline           242
+L198:
+      pushbyte            0
+      setlocal            8
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            9
+
+      jump                L260
+
+L205:
+      label
+      getlocal            9
+      getlocal            8
+      nextvalue
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal            5
+
+      debugline           243
+      getlocal0
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getlocal2
+      getlocal            5
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-4h4"), "_-Pr"), 2
+
+      debugline           244
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getlocal0
+      setproperty         QName(Namespace("_-4jw"), "grid")
+
+      debugline           245
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "_-2M4")
+      getlex              QName(PackageNamespace("_-k3"), "Offer")
+      getproperty         QName(PackageNamespace(""), "_-we")
+      ifne                L260
+
+      debugline           246
+      getlocal0
+      dup
+      setlocal            10
+
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-27d")
+      increment_i
+      setlocal            11
+
+      getlocal            10
+      getlocal            11
+      setproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-27d")
+
+      kill                11
+      kill                10
+      debugline           247
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "productContainer")
+      getlex              QName(PackageNamespace("_-k3"), "_-4mU")
+      istypelate
+      iffalse             L260
+
+      debugline           248
+      getlocal            5
+      getproperty         QName(Namespace("_-6Vz"), "productContainer")
+      getlex              QName(PackageNamespace("_-k3"), "_-4mU")
+      astypelate
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-27d")
+      callpropvoid        QName(PackageNamespace(""), "_-6iQ"), 1
+
+      debugline           242
+L260:
+      hasnext2            9, 8
+      iftrue              L205
+
+      kill                9
+      kill                8
+      debugline           252
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-7Q")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-7Q"
+    param QName(PackageNamespace("_-47b"), "_-37l")
+    param QName(PackageNamespace("_-47b"), "_-37l")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           254
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 254
+      debug               1, "k", 1, 254
+      debugline           255
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-4mq")
+      not
+      dup
+      iftrue              L20
+
+      pop
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-4mq")
+      not
+L20:
+      iffalse             L24
+
+      pushbyte            1
+      returnvalue
+
+      debugline           257
+L24:
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-4mq")
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-4mq")
+      ifngt               L36
+
+      pushbyte            1
+      returnvalue
+
+      debugline           259
+L36:
+      getlocal1
+      getlocal2
+      ifne                L42
+
+      pushbyte            0
+      returnvalue
+
+      debugline           261
+L42:
+      pushbyte            255
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-X7")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-X7"
+    param QName(PackageNamespace("_-47b"), "_-37l")
+    param QName(PackageNamespace("_-47b"), "_-37l")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           264
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 264
+      debug               1, "k", 1, 264
+      debugline           265
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-31i")
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-31i")
+      ifngt               L19
+
+      pushbyte            1
+      returnvalue
+
+      debugline           267
+L19:
+      getlocal1
+      getlocal2
+      ifne                L25
+
+      pushbyte            0
+      returnvalue
+
+      debugline           269
+L25:
+      pushbyte            255
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4h4"), "_-48e")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-4h4:_-48e"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           272
+      getlocal0
+      pushscope
+
+      debugline           274
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-3Nb")
+      pushnull
+      ifeq                L14
+
+      debugline           275
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-3Nb")
+      callpropvoid        QName(PackageNamespace(""), "reset"), 0
+
+      debugline           277
+L14:
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-4RD")
+
+      debugline           278
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4h4"), "_-3U7")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-4h4:_-3U7"
+    param QName(PackageNamespace("flash.events"), "TimerEvent")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 2
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           280
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal            4
+
+      debug               1, "k", 0, 280
+      debug               1, "k", 1, 287
+      debugline           281
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L17
+
+      debugline           282
+      returnvoid
+
+      debugline           284
+L17:
+      getlocal1
+      pushnull
+      ifeq                L21
+
+      debugline           287
+L21:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_i
+      setlocal2
+
+      debugline           288
+      getlocal2
+      pushbyte            0
+      ifngt               L95
+
+      debug               1, "k", 2, 289
+      debugline           289
+      pushbyte            0
+      setlocal3
+
+      jump                L91
+
+L35:
+      label
+      debugline           290
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-4RD")
+      pushbyte            0
+      greaterequals
+      dup
+      iffalse             L48
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-4RD")
+      getlocal2
+      lessthan
+L48:
+      iffalse             L68
+
+      debug               1, "k", 3, 291
+      debugline           291
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-4RD")
+      getproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal            4
+
+      debugline           292
+      getlocal0
+      getlocal            4
+      callpropvoid        QName(ProtectedNamespace("_-4h4"), "_-3RB"), 1
+
+      debugline           293
+      getlocal            4
+      getproperty         QName(Namespace("_-6Vz"), "productContainer")
+      getlocal0
+      setproperty         QName(Namespace("_-3GZ"), "grid")
+
+      debugline           295
+L68:
+      getlocal0
+      dup
+      setlocal            5
+
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-4RD")
+      increment_i
+      setlocal            6
+
+      getlocal            5
+      getlocal            6
+      setproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-4RD")
+
+      kill                6
+      kill                5
+      debugline           296
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-4RD")
+      getlocal2
+      ifnge               L90
+
+      debugline           297
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-4h4"), "_-48e"), 0
+
+      debugline           298
+      jump                L95
+
+      debugline           289
+L90:
+      inclocal_i          3
+L91:
+      getlocal3
+      pushbyte            3
+      iflt                L35
+
+      debugline           302
+L95:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4h4"), "_-Pr")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-4h4:_-Pr"
+    param QName(PackageNamespace("_-k3"), "_-6Mk")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional True()
+    body
+     maxstack 3
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           308
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal3
+
+      debug               1, "k", 0, 308
+      debug               1, "k", 1, 308
+      debug               1, "k", 2, 311
+      debug               1, "k", 3, 312
+      debug               1, "k", 4, 313
+      debug               1, "k", 5, 323
+      debugline           312
+      getlocal1
+      getlex              QName(PackageNamespace("_-k3"), "_-cy")
+      astypelate
+      coerce              QName(PackageNamespace("_-k3"), "_-cy")
+      setlocal            4
+
+      debugline           313
+      getlocal            4
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L32
+
+      pop
+      getlocal            4
+      getproperty         QName(Namespace("_-3GZ"), "offer")
+      pushnull
+      equals
+      not
+L32:
+      dup
+      iffalse             L48
+
+      pop
+      getlocal            4
+      getproperty         QName(Namespace("_-3GZ"), "offer")
+      getproperty         QName(Namespace("_-6Vz"), "priceInCredits")
+      pushbyte            0
+      greaterthan
+      dup
+      iftrue              L48
+
+      pop
+      getlocal            4
+      getproperty         QName(Namespace("_-3GZ"), "offer")
+      getproperty         QName(Namespace("_-6Vz"), "_-5In")
+      pushbyte            0
+      greaterthan
+L48:
+      convert_b
+      setlocal            5
+
+      debugline           314
+      getlocal            5
+      convert_b
+      dup
+      iffalse             L62
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-rb")
+      getlex              QName(PackageNamespace("_-23E"), "_-2jp")
+      getproperty         QName(PackageNamespace(""), "BUILDER")
+      equals
+      not
+L62:
+      iffalse             L100
+
+      debugline           315
+      getlocal            4
+      getproperty         QName(Namespace("_-3GZ"), "offer")
+      coerce_a
+      convert_b
+      dup
+      iffalse             L78
+
+      pop
+      getlocal            4
+      getproperty         QName(Namespace("_-3GZ"), "offer")
+      getproperty         QName(Namespace("_-6Vz"), "priceInCredits")
+      pushbyte            0
+      greaterthan
+      coerce_a
+      convert_b
+L78:
+      dup
+      iffalse             L86
+
+      pop
+      getlocal            4
+      getproperty         QName(Namespace("_-3GZ"), "offer")
+      getproperty         QName(Namespace("_-6Vz"), "_-5In")
+      pushbyte            0
+      greaterthan
+L86:
+      iffalse             L94
+
+      debugline           316
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-1c4")
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal3
+
+      jump                L98
+
+      debugline           318
+L94:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-WG")
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal3
+
+L98:
+      jump                L105
+
+      debugline           321
+L100:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-4rN")
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal3
+
+      debugline           323
+L105:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "windowManager")
+      getlocal3
+      callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            6
+
+      debugline           324
+      getlocal2
+      iffalse             L123
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-0kc")
+      getlocal            6
+      callpropvoid        QName(Namespace("_-5Ga"), "_-3kr"), 1
+
+      debugline           325
+L123:
+      getlocal1
+      getlocal            6
+      setproperty         QName(Namespace("_-4jw"), "view")
+
+      debugline           327
+      getlocal            4
+      getlex              QName(PackageNamespace("_-k3"), "ProductContainer")
+      istypelate
+      iffalse             L142
+
+      debugline           328
+      getlocal            4
+      getlex              QName(PackageNamespace("_-k3"), "ProductContainer")
+      astypelate
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getlex              QName(PackageNamespace("_-47b"), "HabboCatalog")
+      astypelate
+      callpropvoid        QName(PackageNamespace(""), "_-2pT"), 1
+
+      debugline           330
+L142:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4h4"), "_-3RB")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-4h4:_-3RB"
+    param QName(PackageNamespace("_-47b"), "_-37l")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           332
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1KZ"), "_-5hX")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-22X"), "StringArrayStuffData")
+      setlocal            4
+
+      debug               1, "k", 0, 332
+      debugline           333
+      getlocal1
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L25
+
+      pop
+      getlocal1
+      getproperty         QName(Namespace("_-2W2"), "disposed")
+      not
+L25:
+      iffalse             L91
+
+      debug               1, "k", 1, 334
+      debugline           334
+      pushnull
+      coerce              QName(PackageNamespace("_-1KZ"), "_-5hX")
+      setlocal2
+
+      debugline           336
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-5C1")
+      getlex              QName(PackageNamespace("_-09G"), "_-1nW")
+      getproperty         QName(PackageNamespace(""), "_-64y")
+      ifeq                L83
+
+      debug               1, "k", 2, 337
+      debug               1, "k", 3, 344
+      debugline           337
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      debugline           338
+      getlocal3
+      pushstring          "0"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           339
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-5C1")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           340
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-3nx")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           341
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_selectedGuildColor1")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           342
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_selectedGuildColor2")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           344
+      findpropstrict      QName(PackageNamespace("_-22X"), "StringArrayStuffData")
+      constructprop       QName(PackageNamespace("_-22X"), "StringArrayStuffData"), 0
+      coerce              QName(PackageNamespace("_-22X"), "StringArrayStuffData")
+      setlocal            4
+
+      debugline           345
+      getlocal            4
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "_-Ev"), 1
+
+      debugline           346
+      getlocal            4
+      coerce              QName(PackageNamespace("_-1KZ"), "_-5hX")
+      setlocal2
+
+      debugline           349
+L83:
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "productContainer")
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "roomEngine")
+      getlocal2
+      callpropvoid        QName(Namespace("_-3GZ"), "initProductIcon"), 2
+
+      debugline           351
+L91:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-0GJ")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-0GJ"
+    param QName(PackageNamespace("_-09G"), "_-1nW")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           357
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debug               1, "k", 0, 357
+      debug               1, "k", 1, 368
+      debugline           358
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L15
+
+      debugline           359
+      returnvoid
+
+      debugline           362
+L15:
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-3-t")
+      initproperty        QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-5C1")
+
+      debugline           363
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "color1")
+      initproperty        QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_selectedGuildColor1")
+
+      debugline           364
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "color2")
+      initproperty        QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_selectedGuildColor2")
+
+      debugline           365
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-0TC")
+      initproperty        QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-3nx")
+
+      debugline           367
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-0kc")
+      callpropvoid        QName(Namespace("_-5Ga"), "destroyGridItems"), 0
+
+      debugline           368
+      pushbyte            0
+      setlocal3
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            4
+
+      jump                L67
+
+L46:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debugline           369
+      getlocal0
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      callpropvoid        QName(ProtectedNamespace("_-4h4"), "_-Pr"), 1
+
+      debugline           370
+      getlocal0
+      getlocal2
+      callpropvoid        QName(ProtectedNamespace("_-4h4"), "_-3RB"), 1
+
+      debugline           371
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "productContainer")
+      getlocal0
+      setproperty         QName(Namespace("_-3GZ"), "grid")
+
+      debugline           368
+L67:
+      hasnext2            4, 3
+      iftrue              L46
+
+      kill                4
+      kill                3
+      debugline           373
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-5KA")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-5KA"
+    param QName(PackageNamespace("_-47b"), "_-37l")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           375
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 375
+      debugline           377
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-0kc")
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getproperty         QName(Namespace("_-4jw"), "view")
+      callproperty        QName(Namespace("_-5Ga"), "_-2AI"), 1
+      pushbyte            0
+      ifnge               L22
+
+      debugline           379
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-0kc")
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getproperty         QName(Namespace("_-4jw"), "view")
+      callpropvoid        QName(Namespace("_-5Ga"), "_-3GR"), 1
+
+      debugline           382
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-20Y")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-20Y"
+    param QName(PackageNamespace("_-09G"), "_-1Fn")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           384
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal3
+
+      pushbyte            0
+      setlocal            4
+
+      debug               1, "k", 0, 384
+      debug               1, "k", 1, 386
+      debug               1, "k", 2, 387
+      debug               1, "k", 3, 388
+      debug               1, "k", 4, 397
+      debugline           390
+      pushbyte            0
+      setlocal            6
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            7
+
+      jump                L41
+
+L25:
+      label
+      getlocal            7
+      getlocal            6
+      nextvalue
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal3
+
+      debugline           391
+      getlocal3
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-6NF")
+      ifne                L41
+
+      getlocal3
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debugline           390
+L41:
+      hasnext2            7, 6
+      iftrue              L25
+
+      kill                7
+      kill                6
+      debugline           393
+      getlocal2
+      not
+      dup
+      iftrue              L55
+
+      pop
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "isColorable")
+      not
+L55:
+      iffalse             L58
+
+      returnvoid
+
+      debugline           395
+L58:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-0kc")
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getproperty         QName(Namespace("_-4jw"), "view")
+      callproperty        QName(Namespace("_-5Ga"), "_-2AI"), 1
+      convert_i
+      setlocal            4
+
+      debugline           396
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-5KA"), 1
+
+      debugline           397
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-6YS")
+      pushstring          "*"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+      pushstring          "*"
+      add
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "index")
+      pushbyte            1
+      add
+      add
+      coerce_s
+      setlocal            5
+
+      debugline           399
+      pushbyte            0
+      setlocal            6
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            7
+
+      jump                L129
+
+L96:
+      label
+      getlocal            7
+      getlocal            6
+      nextvalue
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal3
+
+      debugline           401
+      getlocal3
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-6YS")
+      getlocal            5
+      ifne                L129
+
+      debugline           402
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-0kc")
+      getlocal3
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getproperty         QName(Namespace("_-4jw"), "view")
+      getlocal            4
+      callpropvoid        QName(Namespace("_-5Ga"), "_-CG"), 2
+
+      debugline           403
+      getlocal0
+      getlocal3
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      pushfalse
+      callpropvoid        QName(PackageNamespace(""), "select"), 2
+
+      debugline           404
+      getlocal3
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getlocal0
+      setproperty         QName(Namespace("_-4jw"), "grid")
+
+      debugline           399
+L129:
+      hasnext2            7, 6
+      iftrue              L96
+
+      kill                7
+      kill                6
+      debugline           409
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-0HE") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait method QName(PackageNamespace(""), "_-6hu")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-6hu"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           447
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debug               1, "k", 0, 448
+      debug               1, "k", 1, 449
+      debugline           449
+      pushbyte            0
+      setlocal3
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            4
+
+      jump                L36
+
+L20:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debugline           450
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-6NF")
+      ifne                L36
+
+      getlocal2
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal1
+
+      debugline           449
+L36:
+      hasnext2            4, 3
+      iftrue              L20
+
+      kill                4
+      kill                3
+      debugline           453
+      getlocal1
+      not
+      dup
+      iftrue              L50
+
+      pop
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "isColorable")
+      not
+L50:
+      iffalse             L54
+
+      newarray            0
+      returnvalue
+
+      debugline           455
+L54:
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4sx")
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-6YS")
+      pushstring          "*"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+      getproperty         MultinameL([PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), PackageNamespace(""), ProtectedNamespace("_-4h4"), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ItemGridCatalogWidget.as$3447", "_-ur:ItemGridCatalogWidget#1"), PackageInternalNs("_-ur"), StaticProtectedNs("_-4h4"), StaticProtectedNs("_-5qb")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4h4", "_-ur:ItemGridCatalogWidget#0"), "_-47m")
+   method
+    refid "_-ur:ItemGridCatalogWidget/_-47m"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           459
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debug               1, "k", 0, 461
+      debug               1, "k", 1, 462
+      debugline           462
+      pushbyte            0
+      setlocal3
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            4
+
+      jump                L36
+
+L20:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debugline           463
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "gridItem")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4h4"), "_-6NF")
+      ifne                L36
+
+      getlocal2
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal1
+
+      debugline           462
+L36:
+      hasnext2            4, 3
+      iftrue              L20
+
+      kill                4
+      kill                3
+      debugline           466
+      getlocal1
+      not
+      dup
+      iftrue              L50
+
+      pop
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "isColorable")
+      not
+L50:
+      iffalse             L54
+
+      pushbyte            0
+      returnvalue
+
+      debugline           468
+L54:
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "_-1rJ")
+      getproperty         QName(Namespace("_-0jx"), "_-4mq")
+      decrement
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ur:ItemGridCatalogWidget/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

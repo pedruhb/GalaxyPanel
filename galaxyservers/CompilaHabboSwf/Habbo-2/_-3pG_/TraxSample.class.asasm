@@ -1,0 +1,2287 @@
+class
+ refid "_-3pG:TraxSample"
+ instance QName(PackageNamespace("_-3pG"), "TraxSample")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0Kg")
+  iinit
+   refid "_-3pG:TraxSample/iinit"
+   param QName(PackageNamespace("flash.utils"), "ByteArray")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("sample_44khz")
+   optional Utf8("sample_16bit")
+   body
+    maxstack 4
+    localcount 18
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           48
+     getlocal0
+     pushscope
+
+     pushnan
+     setlocal            12
+
+     pushbyte            0
+     setlocal            13
+
+     pushbyte            0
+     setlocal            14
+
+     pushnan
+     setlocal            15
+
+     pushnan
+     setlocal            16
+
+     debug               1, "k", 0, 48
+     debug               1, "k", 1, 48
+     debug               1, "k", 2, 48
+     debug               1, "k", 3, 48
+     debugline           32
+     getlocal0
+     newarray            0
+     initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-4es")
+
+     debugline           48
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 4, 51
+     debug               1, "k", 5, 76
+     debug               1, "k", 6, 78
+     debug               1, "k", 7, 83
+     debug               1, "k", 8, 87
+     debug               1, "k", 9, 88
+     debug               1, "k", 10, 89
+     debugline           49
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3GO")
+
+     debugline           51
+     pushint             65536
+     setlocal            5
+
+     jump                L63
+
+L40:
+     label
+     debugline           54
+     getlocal0
+     pushbyte            2
+     initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+
+     debugline           55
+     jump                L83
+
+L47:
+     label
+     debugline           57
+     getlocal0
+     pushbyte            4
+     initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+
+     debugline           58
+     jump                L83
+
+L54:
+     label
+     debugline           60
+     getlocal0
+     pushbyte            1
+     initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+
+     debugline           61
+     jump                L83
+
+     jump                L83
+
+     debugline           52
+L63:
+     getlocal3
+     setlocal            17
+
+     debugline           53
+     getlex              QName(PackageNamespace(""), "SAMPLE_FREQUENCY_22KHZ")
+     getlocal            17
+     ifstrictne          L72
+
+     pushbyte            0
+     jump                L81
+
+     debugline           56
+L72:
+     getlex              QName(PackageNamespace(""), "SAMPLE_FREQUENCY_11KHZ")
+     getlocal            17
+     ifstrictne          L77
+
+     pushbyte            1
+     jump                L81
+
+L77:
+     jump                L80
+
+     pushbyte            2
+     jump                L81
+
+L80:
+     pushbyte            2
+L81:
+     kill                17
+     lookupswitch        L54, [L40, L47, L54]
+
+L83:
+     jump                L106
+
+L84:
+     label
+     debugline           66
+     getlocal0
+     pushbyte            4
+     initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+
+     debugline           67
+     pushshort           256
+     setlocal            5
+
+     debugline           68
+     jump                L121
+
+L94:
+     label
+     debugline           71
+     getlocal0
+     pushbyte            2
+     initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+
+     debugline           72
+     pushint             65536
+     setlocal            5
+
+     debugline           73
+     jump                L121
+
+     jump                L121
+
+     debugline           64
+L106:
+     getlocal            4
+     setlocal            17
+
+     debugline           65
+     getlex              QName(PackageNamespace(""), "SAMPLE_SCALE_8BIT")
+     getlocal            17
+     ifstrictne          L114
+
+     pushbyte            0
+     jump                L118
+
+L114:
+     jump                L117
+
+     pushbyte            1
+     jump                L118
+
+L117:
+     pushbyte            1
+L118:
+     kill                17
+     lookupswitch        L94, [L84, L94]
+
+     debugline           76
+L121:
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+     multiply
+     convert_i
+     setlocal            6
+
+     debugline           78
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            8
+     divide
+     convert_i
+     setlocal            7
+
+     debugline           79
+     findpropstrict      QName(PackageNamespace(""), "int")
+     getlocal            7
+     getlocal            6
+     divide
+     callproperty        QName(PackageNamespace(""), "int"), 1
+     getlocal            6
+     multiply
+     convert_i
+     setlocal            7
+
+     debugline           82
+     getlocal0
+     getlex              Multiname("Vector", [PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace(""), "int")
+     applytype           1
+     getlocal            7
+     getlocal            6
+     divide
+     pushtrue
+     construct           2
+     initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+
+     debugline           83
+     pushbyte            1
+     findpropstrict      QName(PackageNamespace(""), "Number")
+     getlocal            5
+     callproperty        QName(PackageNamespace(""), "Number"), 1
+     pushbyte            2
+     divide
+     divide
+     convert_d
+     setlocal            8
+
+     debugline           86
+     getlocal1
+     pushbyte            0
+     setproperty         QName(PackageNamespace(""), "position")
+
+     debugline           87
+     pushbyte            0
+     setlocal            9
+
+     debugline           88
+     getlocal            7
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+     divide
+     convert_i
+     setlocal            10
+
+     debugline           89
+     pushbyte            0
+     setlocal            11
+
+     jump                L320
+
+L184:
+     label
+     debug               1, "k", 11, 92
+     debug               1, "k", 12, 95
+     debug               1, "k", 13, 109
+     debugline           92
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "readFloat"), 0
+     convert_d
+     setlocal            12
+
+     debugline           93
+     getlocal1
+     callpropvoid        QName(PackageNamespace(""), "readFloat"), 0
+
+     debugline           95
+     pushbyte            2
+     setlocal            13
+
+     jump                L234
+
+L200:
+     label
+     debug               1, "k", 14, 96
+     debug               1, "k", 15, 99
+     debugline           96
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "readFloat"), 0
+     convert_d
+     setlocal            15
+
+     debugline           97
+     getlocal1
+     callpropvoid        QName(PackageNamespace(""), "readFloat"), 0
+
+     debugline           99
+     findpropstrict      QName(PackageNamespace(""), "Number")
+     getlocal            13
+     callproperty        QName(PackageNamespace(""), "Number"), 1
+     convert_d
+     setlocal            16
+
+     debugline           100
+     getlocal            12
+     getlocal            16
+     decrement
+     multiply
+     getlocal            16
+     divide
+     findpropstrict      QName(PackageNamespace(""), "Number")
+     getlocal            15
+     callproperty        QName(PackageNamespace(""), "Number"), 1
+     getlocal            16
+     divide
+     add
+     convert_d
+     setlocal            12
+
+     debugline           95
+     inclocal_i          13
+L234:
+     getlocal            13
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+     ifle                L200
+
+     debugline           104
+     getlocal            11
+     getlocal            10
+     decrement
+     getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-l5")
+     subtract
+     ifnge               L259
+
+     debugline           105
+     getlocal            12
+     getlocal            10
+     getlocal            11
+     subtract
+     decrement
+     findpropstrict      QName(PackageNamespace(""), "Number")
+     getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-l5")
+     callproperty        QName(PackageNamespace(""), "Number"), 1
+     divide
+     multiply
+     convert_d
+     setlocal            12
+
+     debugline           109
+L259:
+     getlocal            12
+     pushbyte            1
+     add
+     getlocal            8
+     divide
+     convert_i
+     setlocal            14
+
+     debugline           110
+     getlocal            14
+     pushbyte            0
+     ifnlt               L275
+
+     debugline           111
+     pushbyte            0
+     setlocal            14
+
+     jump                L284
+
+     debugline           112
+L275:
+     getlocal            14
+     getlocal            5
+     ifnge               L284
+
+     debugline           113
+     getlocal            5
+     decrement
+     convert_i
+     setlocal            14
+
+     debugline           116
+L284:
+     getlocal            9
+     getlocal            5
+     multiply
+     convert_i
+     setlocal            9
+
+     debugline           117
+     getlocal            9
+     getlocal            14
+     add
+     convert_i
+     setlocal            9
+
+     debugline           119
+     getlocal            11
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+     modulo
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+     decrement
+     ifne                L319
+
+     debugline           120
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+     findpropstrict      QName(PackageNamespace(""), "int")
+     getlocal            11
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+     divide
+     callproperty        QName(PackageNamespace(""), "int"), 1
+     getlocal            9
+     setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+     debugline           121
+     pushbyte            0
+     setlocal            9
+
+     debugline           89
+L319:
+     inclocal_i          11
+L320:
+     getlocal            11
+     getlocal            10
+     iflt                L184
+
+     debugline           124
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) value Null() end
+  trait slot QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3GO") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH") type QName(PackageNamespace(""), "int") value Integer(2) end
+  trait slot QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k") type QName(PackageNamespace(""), "int") value Integer(1) end
+  trait slot QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-4es") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-iy") type QName(PackageNamespace(""), "uint") end
+  trait getter QName(PackageNamespace(""), "id")
+   method
+    refid "_-3pG:TraxSample/id/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3GO")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "length")
+   method
+    refid "_-3pG:TraxSample/length/getter"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      multiply
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      multiply
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-0AA")
+   method
+    refid "_-3pG:TraxSample/_-0AA/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-4es")
+      getproperty         QName(PackageNamespace(""), "length")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-5-G")
+   method
+    refid "_-3pG:TraxSample/_-5-G/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           38
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-iy")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-3pG:TraxSample/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-3pG:TraxSample/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           129
+      getlocal0
+      pushscope
+
+      debugline           130
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_disposed")
+      iftrue              L17
+
+      debugline           131
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+
+      debugline           132
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-4es")
+
+      debugline           134
+L17:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4cy")
+   method
+    refid "_-3pG:TraxSample/_-4cy"
+    param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>)
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 4
+     localcount 15
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           143
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            8
+
+      pushbyte            0
+      setlocal            9
+
+      pushbyte            0
+      setlocal            10
+
+      debug               1, "k", 0, 143
+      debug               1, "k", 1, 143
+      debug               1, "k", 2, 143
+      debug               1, "k", 3, 143
+      debug               1, "k", 4, 147
+      debug               1, "k", 5, 164
+      debug               1, "k", 6, 165
+      debug               1, "k", 7, 177
+      debugline           145
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L29
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      pushnull
+      equals
+L29:
+      iffalse             L33
+
+      getlocal            4
+      returnvalue
+
+      debugline           147
+L33:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      multiply
+      convert_i
+      setlocal            5
+
+      debugline           150
+      getlocal            4
+      getlocal            5
+      divide
+      convert_i
+      setlocal            4
+
+      debugline           153
+      getlocal2
+      pushbyte            0
+      ifnlt               L60
+
+      debugline           154
+      getlocal3
+      getlocal2
+      add
+      convert_i
+      setlocal3
+
+      debugline           155
+      pushbyte            0
+      setlocal2
+
+      debugline           159
+L60:
+      getlocal3
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal2
+      subtract
+      ifngt               L74
+
+      debugline           160
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal2
+      subtract
+      convert_i
+      setlocal3
+
+      debugline           164
+L74:
+      getlocal3
+      getlocal            5
+      divide
+      convert_i
+      setlocal            6
+
+      debugline           165
+      pushbyte            0
+      setlocal            7
+
+      debugline           167
+      getlocal            6
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal            4
+      subtract
+      ifngt               L125
+
+      debugline           168
+      getlocal            6
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal            4
+      subtract
+      subtract
+      getlocal            5
+      multiply
+      convert_i
+      setlocal            7
+
+      debugline           169
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal            4
+      subtract
+      convert_i
+      setlocal            6
+
+      debugline           172
+      getlocal            7
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal2
+      subtract
+      ifngt               L125
+
+      debugline           173
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal2
+      subtract
+      convert_i
+      setlocal            7
+
+      debugline           180
+L125:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      pushbyte            1
+      ifne                L286
+
+      debugline           181
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      pushbyte            2
+      ifne                L187
+
+      jump                L179
+
+L135:
+      label
+      debugline           183
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getlocal            4
+      dup
+      increment_i
+      setlocal            4
+
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      convert_i
+      setlocal            8
+
+      debugline           184
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal            8
+      pushbyte            16
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+      subtract
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      debugline           185
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            12
+
+      getlocal            8
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+      subtract
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                12
+      kill                11
+      debugline           182
+L179:
+      getlocal            6
+      dup
+      decrement_i
+      setlocal            6
+
+      pushbyte            0
+      ifgt                L135
+
+      jump                L284
+
+      debugline           187
+L187:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      pushbyte            4
+      ifne                L284
+
+      jump                L278
+
+L192:
+      label
+      debugline           189
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getlocal            4
+      dup
+      increment_i
+      setlocal            4
+
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      convert_i
+      setlocal            8
+
+      debugline           190
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal            8
+      pushbyte            24
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      debugline           191
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            12
+
+      getlocal            8
+      pushbyte            16
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      debugline           192
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            13
+
+      getlocal            8
+      pushbyte            8
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      debugline           193
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            14
+
+      getlocal            8
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                14
+      kill                13
+      kill                12
+      kill                11
+      debugline           188
+L278:
+      getlocal            6
+      dup
+      decrement_i
+      setlocal            6
+
+      pushbyte            0
+      ifgt                L192
+
+L284:
+      jump                L557
+
+      debugline           196
+L286:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      pushbyte            2
+      ifnge               L557
+
+      debug               1, "k", 8, 197
+      debug               1, "k", 9, 198
+      debugline           197
+      pushbyte            0
+      setlocal            9
+
+      debugline           198
+      pushbyte            0
+      setlocal            10
+
+      debugline           199
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      pushbyte            2
+      ifne                L392
+
+      jump                L384
+
+L304:
+      label
+      debugline           201
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getlocal            4
+      dup
+      increment_i
+      setlocal            4
+
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      convert_i
+      setlocal            8
+
+      debugline           202
+      getlocal            8
+      pushbyte            16
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+      subtract
+      convert_i
+      setlocal            10
+
+      debugline           203
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            9
+
+      jump                L347
+
+L331:
+      label
+      debugline           204
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal            10
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                11
+      debugline           203
+      getlocal            9
+      decrement_i
+      setlocal            9
+
+L347:
+      getlocal            9
+      pushbyte            0
+      ifgt                L331
+
+      debugline           207
+      getlocal            8
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+      subtract
+      convert_i
+      setlocal            10
+
+      debugline           208
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            9
+
+      jump                L380
+
+L364:
+      label
+      debugline           209
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal            10
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                11
+      debugline           208
+      getlocal            9
+      decrement_i
+      setlocal            9
+
+L380:
+      getlocal            9
+      pushbyte            0
+      ifgt                L364
+
+      debugline           200
+L384:
+      getlocal            6
+      dup
+      decrement_i
+      setlocal            6
+
+      pushbyte            0
+      ifgt                L304
+
+      jump                L557
+
+      debugline           212
+L392:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      pushbyte            4
+      ifne                L557
+
+      jump                L551
+
+L397:
+      label
+      debugline           214
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getlocal            4
+      dup
+      increment_i
+      setlocal            4
+
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      convert_i
+      setlocal            8
+
+      debugline           215
+      getlocal            8
+      pushbyte            24
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setlocal            10
+
+      debugline           216
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            9
+
+      jump                L441
+
+L425:
+      label
+      debugline           217
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal            10
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                11
+      debugline           216
+      getlocal            9
+      decrement_i
+      setlocal            9
+
+L441:
+      getlocal            9
+      pushbyte            0
+      ifgt                L425
+
+      debugline           220
+      getlocal            8
+      pushbyte            16
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setlocal            10
+
+      debugline           221
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            9
+
+      jump                L477
+
+L461:
+      label
+      debugline           222
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal            10
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                11
+      debugline           221
+      getlocal            9
+      decrement_i
+      setlocal            9
+
+L477:
+      getlocal            9
+      pushbyte            0
+      ifgt                L461
+
+      debugline           225
+      getlocal            8
+      pushbyte            8
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setlocal            10
+
+      debugline           226
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            9
+
+      jump                L513
+
+L497:
+      label
+      debugline           227
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal            10
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                11
+      debugline           226
+      getlocal            9
+      decrement_i
+      setlocal            9
+
+L513:
+      getlocal            9
+      pushbyte            0
+      ifgt                L497
+
+      debugline           230
+      getlocal            8
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setlocal            10
+
+      debugline           231
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            9
+
+      jump                L547
+
+L531:
+      label
+      debugline           232
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal            10
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                11
+      debugline           231
+      getlocal            9
+      decrement_i
+      setlocal            9
+
+L547:
+      getlocal            9
+      pushbyte            0
+      ifgt                L531
+
+      debugline           213
+L551:
+      getlocal            6
+      dup
+      decrement_i
+      setlocal            6
+
+      pushbyte            0
+      ifgt                L397
+
+L557:
+      jump                L571
+
+L558:
+      label
+      debugline           241
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      pushbyte            0
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                11
+      debugline           240
+L571:
+      getlocal            7
+      dup
+      decrement_i
+      setlocal            7
+
+      pushbyte            0
+      ifgt                L558
+
+      debugline           245
+      getlocal            4
+      getlocal            5
+      multiply
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3DI")
+   method
+    refid "_-3pG:TraxSample/_-3DI"
+    param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>)
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 5
+     localcount 14
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           255
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            7
+
+      pushbyte            0
+      setlocal            8
+
+      pushbyte            0
+      setlocal            9
+
+      debug               1, "k", 0, 255
+      debug               1, "k", 1, 255
+      debug               1, "k", 2, 255
+      debug               1, "k", 3, 255
+      debug               1, "k", 4, 259
+      debug               1, "k", 5, 276
+      debug               1, "k", 6, 281
+      debugline           257
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L28
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      pushnull
+      equals
+L28:
+      iffalse             L32
+
+      getlocal            4
+      returnvalue
+
+      debugline           259
+L32:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      multiply
+      convert_i
+      setlocal            5
+
+      debugline           262
+      getlocal            4
+      getlocal            5
+      divide
+      convert_i
+      setlocal            4
+
+      debugline           265
+      getlocal2
+      pushbyte            0
+      ifnlt               L59
+
+      debugline           266
+      getlocal3
+      getlocal2
+      add
+      convert_i
+      setlocal3
+
+      debugline           267
+      pushbyte            0
+      setlocal2
+
+      debugline           271
+L59:
+      getlocal3
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal2
+      subtract
+      ifngt               L73
+
+      debugline           272
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal2
+      subtract
+      convert_i
+      setlocal3
+
+      debugline           276
+L73:
+      getlocal3
+      getlocal            5
+      divide
+      convert_i
+      setlocal            6
+
+      debugline           277
+      getlocal            6
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal            4
+      subtract
+      ifngt               L95
+
+      debugline           278
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal            4
+      subtract
+      convert_i
+      setlocal            6
+
+      debugline           284
+L95:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      pushbyte            1
+      ifne                L280
+
+      debugline           285
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      pushbyte            2
+      ifne                L165
+
+      jump                L157
+
+L105:
+      label
+      debugline           287
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getlocal            4
+      dup
+      increment_i
+      setlocal            4
+
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      convert_i
+      setlocal            7
+
+      debugline           288
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            10
+
+      getlocal1
+      getlocal            10
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            7
+      pushbyte            16
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+      subtract
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      debugline           289
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal1
+      getlocal            11
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            7
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+      subtract
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                11
+      kill                10
+      debugline           286
+L157:
+      getlocal            6
+      dup
+      decrement_i
+      setlocal            6
+
+      pushbyte            0
+      ifgt                L105
+
+      jump                L278
+
+      debugline           291
+L165:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      pushbyte            4
+      ifne                L278
+
+      jump                L272
+
+L170:
+      label
+      debugline           293
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getlocal            4
+      dup
+      increment_i
+      setlocal            4
+
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      convert_i
+      setlocal            7
+
+      debugline           294
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            10
+
+      getlocal1
+      getlocal            10
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            7
+      pushbyte            24
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      debugline           295
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            11
+
+      getlocal1
+      getlocal            11
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            7
+      pushbyte            16
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      debugline           296
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            12
+
+      getlocal1
+      getlocal            12
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            7
+      pushbyte            8
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      debugline           297
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            13
+
+      getlocal1
+      getlocal            13
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            7
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                13
+      kill                12
+      kill                11
+      kill                10
+      debugline           292
+L272:
+      getlocal            6
+      dup
+      decrement_i
+      setlocal            6
+
+      pushbyte            0
+      ifgt                L170
+
+L278:
+      jump                L576
+
+      debugline           300
+L280:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      pushbyte            2
+      ifnge               L576
+
+      debug               1, "k", 7, 301
+      debug               1, "k", 8, 302
+      debugline           301
+      pushbyte            0
+      setlocal            8
+
+      debugline           302
+      pushbyte            0
+      setlocal            9
+
+      debugline           303
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      pushbyte            2
+      ifne                L394
+
+      jump                L386
+
+L298:
+      label
+      debugline           305
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getlocal            4
+      dup
+      increment_i
+      setlocal            4
+
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      convert_i
+      setlocal            7
+
+      debugline           306
+      getlocal            7
+      pushbyte            16
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+      subtract
+      convert_i
+      setlocal            9
+
+      debugline           307
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            8
+
+      jump                L345
+
+L325:
+      label
+      debugline           308
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            10
+
+      getlocal1
+      getlocal            10
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            9
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                10
+      debugline           307
+      getlocal            8
+      decrement_i
+      setlocal            8
+
+L345:
+      getlocal            8
+      pushbyte            0
+      ifgt                L325
+
+      debugline           311
+      getlocal            7
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+      subtract
+      convert_i
+      setlocal            9
+
+      debugline           312
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            8
+
+      jump                L382
+
+L362:
+      label
+      debugline           313
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            10
+
+      getlocal1
+      getlocal            10
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            9
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                10
+      debugline           312
+      getlocal            8
+      decrement_i
+      setlocal            8
+
+L382:
+      getlocal            8
+      pushbyte            0
+      ifgt                L362
+
+      debugline           304
+L386:
+      getlocal            6
+      dup
+      decrement_i
+      setlocal            6
+
+      pushbyte            0
+      ifgt                L298
+
+      jump                L576
+
+      debugline           316
+L394:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-6FH")
+      pushbyte            4
+      ifne                L576
+
+      jump                L569
+
+L399:
+      label
+      debugline           318
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-3Bt")
+      getlocal            4
+      dup
+      increment_i
+      setlocal            4
+
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      convert_i
+      setlocal            7
+
+      debugline           320
+      getlocal            7
+      pushbyte            24
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setlocal            9
+
+      debugline           321
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            8
+
+      jump                L447
+
+L427:
+      label
+      debugline           322
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            10
+
+      getlocal1
+      getlocal            10
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            9
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                10
+      debugline           321
+      getlocal            8
+      decrement_i
+      setlocal            8
+
+L447:
+      getlocal            8
+      pushbyte            0
+      ifgt                L427
+
+      debugline           325
+      getlocal            7
+      pushbyte            16
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setlocal            9
+
+      debugline           326
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            8
+
+      jump                L487
+
+L467:
+      label
+      debugline           327
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            10
+
+      getlocal1
+      getlocal            10
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            9
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                10
+      debugline           326
+      getlocal            8
+      decrement_i
+      setlocal            8
+
+L487:
+      getlocal            8
+      pushbyte            0
+      ifgt                L467
+
+      debugline           330
+      getlocal            7
+      pushbyte            8
+      rshift
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setlocal            9
+
+      debugline           331
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            8
+
+      jump                L527
+
+L507:
+      label
+      debugline           332
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            10
+
+      getlocal1
+      getlocal            10
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            9
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                10
+      debugline           331
+      getlocal            8
+      decrement_i
+      setlocal            8
+
+L527:
+      getlocal            8
+      pushbyte            0
+      ifgt                L507
+
+      debugline           335
+      getlocal            7
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+      bitand
+      getlex              QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+      subtract
+      pushbyte            8
+      lshift
+      setlocal            9
+
+      debugline           336
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-11k")
+      convert_i
+      setlocal            8
+
+      jump                L565
+
+L545:
+      label
+      debugline           337
+      getlocal1
+      getlocal2
+      dup
+      increment_i
+      setlocal2
+
+      dup
+      setlocal            10
+
+      getlocal1
+      getlocal            10
+      getproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+      getlocal            9
+      add
+      setproperty         MultinameL([PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), PackageNamespace(""), PrivateNamespace("TraxSample.as$3541", "_-3pG:TraxSample#1"), PackageNamespace("_-3pG"), PackageInternalNs("_-3pG"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Kg"), StaticProtectedNs("_-0Kg")])
+
+      kill                10
+      debugline           336
+      getlocal            8
+      decrement_i
+      setlocal            8
+
+L565:
+      getlocal            8
+      pushbyte            0
+      ifgt                L545
+
+      debugline           317
+L569:
+      getlocal            6
+      dup
+      decrement_i
+      setlocal            6
+
+      pushbyte            0
+      ifgt                L399
+
+      debugline           344
+L576:
+      getlocal            4
+      getlocal            5
+      multiply
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5UM")
+   method
+    refid "_-3pG:TraxSample/_-5UM"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           351
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 351
+      debug               1, "k", 1, 351
+      debugline           352
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-4es")
+      pushnull
+      ifne                L13
+
+      returnvoid
+
+      debugline           353
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-4es")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifne                L25
+
+      debugline           354
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-4es")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           356
+L25:
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-iy")
+
+      debugline           357
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-31-")
+   method
+    refid "_-3pG:TraxSample/_-31-"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           359
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 359
+      debugline           360
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-4es")
+      pushnull
+      ifne                L13
+
+      pushfalse
+      returnvalue
+
+      debugline           361
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-4es")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3pG:TraxSample/cinit"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 9
+    findproperty        QName(PackageNamespace(""), "SAMPLE_FREQUENCY_44KHZ")
+    pushstring          "sample_44khz"
+    initproperty        QName(PackageNamespace(""), "SAMPLE_FREQUENCY_44KHZ")
+
+    debug               1, "k", 1, 10
+    findproperty        QName(PackageNamespace(""), "SAMPLE_FREQUENCY_22KHZ")
+    pushstring          "sample_22khz"
+    initproperty        QName(PackageNamespace(""), "SAMPLE_FREQUENCY_22KHZ")
+
+    debug               1, "k", 2, 11
+    findproperty        QName(PackageNamespace(""), "SAMPLE_FREQUENCY_11KHZ")
+    pushstring          "sample_11khz"
+    initproperty        QName(PackageNamespace(""), "SAMPLE_FREQUENCY_11KHZ")
+
+    debug               1, "k", 3, 13
+    findproperty        QName(PackageNamespace(""), "SAMPLE_SCALE_16BIT")
+    pushstring          "sample_16bit"
+    initproperty        QName(PackageNamespace(""), "SAMPLE_SCALE_16BIT")
+
+    debug               1, "k", 4, 14
+    findproperty        QName(PackageNamespace(""), "SAMPLE_SCALE_8BIT")
+    pushstring          "sample_8bit"
+    initproperty        QName(PackageNamespace(""), "SAMPLE_SCALE_8BIT")
+
+    debug               1, "k", 5, 16
+    findproperty        QName(PackageNamespace(""), "_-6T7")
+    pushbyte            1
+    pushint             32768
+    divide
+    initproperty        QName(PackageNamespace(""), "_-6T7")
+
+    debug               1, "k", 6, 17
+    findproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-l5")
+    pushbyte            32
+    initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-l5")
+
+    debug               1, "k", 7, 19
+    findproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+    pushshort           255
+    initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT")
+
+    debug               1, "k", 8, 20
+    findproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+    pushint             65535
+    initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT")
+
+    debug               1, "k", 9, 21
+    findproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+    pushbyte            127
+    initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT")
+
+    debug               1, "k", 10, 22
+    findproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+    pushshort           32767
+    initproperty        QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "SAMPLE_FREQUENCY_44KHZ") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("sample_44khz") end
+ trait const QName(PackageNamespace(""), "SAMPLE_FREQUENCY_22KHZ") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("sample_22khz") end
+ trait const QName(PackageNamespace(""), "SAMPLE_FREQUENCY_11KHZ") slotid 3 type QName(PackageNamespace(""), "String") value Utf8("sample_11khz") end
+ trait const QName(PackageNamespace(""), "SAMPLE_SCALE_16BIT") slotid 4 type QName(PackageNamespace(""), "String") value Utf8("sample_16bit") end
+ trait const QName(PackageNamespace(""), "SAMPLE_SCALE_8BIT") slotid 5 type QName(PackageNamespace(""), "String") value Utf8("sample_8bit") end
+ trait const QName(PackageNamespace(""), "_-6T7") slotid 6 type QName(PackageNamespace(""), "Number") value Double(3.0517578125e-05) end
+ trait const QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "_-l5") slotid 7 type QName(PackageNamespace(""), "int") value Integer(32) end
+ trait const QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_8BIT") slotid 8 type QName(PackageNamespace(""), "int") value Integer(255) end
+ trait const QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "MASK_16BIT") slotid 9 type QName(PackageNamespace(""), "int") value Integer(65535) end
+ trait const QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_8BIT") slotid 10 type QName(PackageNamespace(""), "int") value Integer(127) end
+ trait const QName(PrivateNamespace("_-0Kg", "_-3pG:TraxSample#0"), "OFFSET_16BIT") slotid 11 type QName(PackageNamespace(""), "int") value Integer(32767) end
+end ; class

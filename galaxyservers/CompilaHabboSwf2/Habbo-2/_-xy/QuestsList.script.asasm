@@ -1,0 +1,33 @@
+script ; 5082
+ sinit
+  refid "_-xy:QuestsList.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           23
+    findpropstrict      Multiname("QuestsList", [PackageNamespace("_-xy")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-xy:QuestsList"
+    popscope
+    initproperty        QName(PackageNamespace("_-xy"), "QuestsList")
+
+    debugfile           "k"
+    debugline           2
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-xy"), "QuestsList")
+  #include "QuestsList.class.asasm"
+ end ; trait
+end ; script

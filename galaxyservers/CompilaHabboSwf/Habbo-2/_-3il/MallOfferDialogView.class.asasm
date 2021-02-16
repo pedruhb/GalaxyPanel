@@ -1,0 +1,361 @@
+class
+ refid "_-3il:MallOfferDialogView"
+ instance QName(PackageNamespace("_-3il"), "MallOfferDialogView")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-48i")
+  iinit
+   refid "_-3il:MallOfferDialogView/iinit"
+   param QName(PackageNamespace("_-3il"), "_-Jl")
+   param QName(PackageNamespace("_-38t"), "HabboMallOffer")
+   body
+    maxstack 6
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           19
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce_s
+     setlocal3
+
+     debug               1, "k", 0, 19
+     debug               1, "k", 1, 19
+     debugline           19
+     getlocal0
+     constructsuper      0
+
+     debugline           20
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3bJ")
+
+     debugline           21
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3Lb")
+
+     debugline           23
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3bJ")
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getproperty         QName(PackageNamespace(""), "windowManager")
+     findpropstrict      QName(PackageNamespace(""), "XML")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3bJ")
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getproperty         QName(PackageNamespace(""), "assets")
+     pushstring          "targeted_offer_habbomall_xml"
+     callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+     getproperty         QName(Namespace("_-6i0"), "content")
+     callproperty        QName(PackageNamespace(""), "XML"), 1
+     callproperty        Multiname("buildFromXML", [PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), PackageNamespace(""), PrivateNamespace("MallOfferDialogView.as$3269", "_-3il:MallOfferDialogView#1"), PackageNamespace("_-3il"), PackageInternalNs("_-3il"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-48i"), StaticProtectedNs("_-48i")]), 1
+     callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+     initproperty        QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi")
+
+     debugline           24
+     findpropstrict      QName(PackageNamespace("_-1Bv"), "IFrameWindow")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi")
+     callproperty        QName(PackageNamespace("_-1Bv"), "IFrameWindow"), 1
+     getproperty         QName(Namespace("_-jF"), "title")
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3Lb")
+     getproperty         QName(PackageNamespace(""), "title")
+     callproperty        QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "getLocalization"), 1
+     setproperty         QName(Namespace("_-6D5"), "text")
+
+     debugline           25
+     findpropstrict      QName(PackageNamespace("_-1Bv"), "ITextWindow")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi")
+     pushstring          "txt_title"
+     callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+     callproperty        QName(PackageNamespace("_-1Bv"), "ITextWindow"), 1
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3Lb")
+     getproperty         QName(PackageNamespace(""), "title")
+     callproperty        QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "getLocalization"), 1
+     setproperty         QName(Namespace("_-3oN"), "text")
+
+     debugline           28
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "imageUrl")
+     convert_b
+     dup
+     iffalse             L76
+
+     pop
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "imageUrl")
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            0
+     greaterthan
+L76:
+     iffalse             L101
+
+     debug               1, "k", 2, 29
+     debugline           29
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3bJ")
+     getproperty         QName(PackageNamespace(""), "catalog")
+     getlex              QName(PackageNamespace("_-1M6"), "_-4Mc")
+     astypelate
+     pushstring          "image.library.url"
+     callproperty        QName(Namespace("_-37g"), "getProperty"), 1
+     coerce_s
+     setlocal3
+
+     debugline           30
+     findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi")
+     pushstring          "bmp_illustration"
+     callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+     callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+     getlocal3
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "imageUrl")
+     add
+     setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+     debugline           33
+L101:
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-H")
+     setproperty         QName(Namespace("_-6q"), "procedure")
+
+     debugline           34
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi")
+     callpropvoid        QName(Namespace("_-6q"), "center"), 0
+
+     debugline           35
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3bJ") type QName(PackageNamespace("_-3il"), "_-Jl") end
+  trait slot QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3Lb") type QName(PackageNamespace("_-38t"), "HabboMallOffer") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-3il:MallOfferDialogView/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debugline           38
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi")
+      pushnull
+      ifeq                L18
+
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           40
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-Fi")
+
+      debugline           42
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-H")
+   method
+    refid "_-3il:MallOfferDialogView/_-H"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 44
+      debug               1, "k", 1, 44
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3bJ")
+      not
+      dup
+      iftrue              L16
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3Lb")
+      not
+L16:
+      iffalse             L19
+
+      returnvoid
+
+      debugline           47
+L19:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "DOWN")
+      ifne                L68
+
+      jump                L46
+
+L25:
+      label
+      debugline           50
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3bJ")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3Lb")
+      callpropvoid        QName(PackageNamespace(""), "_-5RQ"), 1
+
+      debugline           51
+      jump                L68
+
+L34:
+      label
+      debugline           53
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3bJ")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3Lb")
+      callpropvoid        QName(PackageNamespace(""), "_-3nw"), 1
+
+      debugline           54
+      jump                L68
+
+L43:
+      label
+      jump                L68
+
+      debugline           48
+L46:
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "name")
+      setlocal3
+
+      pushstring          "header_button_close"
+      debugline           49
+      getlocal3
+      ifstrictne          L55
+
+      pushbyte            0
+      jump                L65
+
+L55:
+      pushstring          "btn_buy"
+      debugline           52
+      getlocal3
+      ifstrictne          L61
+
+      pushbyte            1
+      jump                L65
+
+L61:
+      jump                L64
+
+      pushbyte            2
+      jump                L65
+
+L64:
+      pushbyte            2
+L65:
+      kill                3
+      lookupswitch        L43, [L25, L34, L43]
+
+      debugline           57
+L68:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "getLocalization")
+   method
+    refid "_-3il:MallOfferDialogView/getLocalization"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           59
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 59
+      debug               1, "k", 1, 59
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), "_-3bJ")
+      getproperty         QName(PackageNamespace(""), "catalog")
+      getproperty         QName(PackageNamespace(""), "localization")
+      getlocal1
+      getlocal2
+      dup
+      iftrue              L17
+
+      pop
+      getlocal1
+L17:
+      callproperty        Multiname("getLocalization", [PrivateNamespace("_-48i", "_-3il:MallOfferDialogView#0"), PackageNamespace(""), PrivateNamespace("MallOfferDialogView.as$3269", "_-3il:MallOfferDialogView#1"), PackageNamespace("_-3il"), PackageInternalNs("_-3il"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-48i"), StaticProtectedNs("_-48i")]), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3il:MallOfferDialogView/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

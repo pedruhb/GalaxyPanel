@@ -1,0 +1,224 @@
+class
+ refid "_-6Pz:_-46Y"
+ instance QName(PackageNamespace("_-6Pz"), "_-46Y")
+  extends QName(PackageNamespace("_-6Pz"), "_-9M")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-ga")
+  iinit
+   refid "_-6Pz:_-46Y/iinit"
+   param QName(PackageNamespace("_-12d"), "_-5NC")
+   param QName(PackageNamespace("_-5u3"), "_-0qx")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           19
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 19
+     debug               1, "k", 1, 19
+     debugline           21
+     getlocal0
+     getlocal1
+     getlocal2
+     constructsuper      2
+
+     debugline           23
+     getlocal1
+     pushnull
+     ifne                L17
+
+     returnvoid
+
+     debugline           24
+L17:
+     getlocal1
+     findpropstrict      QName(PackageNamespace("_-0YH"), "_-35Z")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-ga", "_-6Pz:_-46Y"), "_-407")
+     constructprop       QName(PackageNamespace("_-0YH"), "_-35Z"), 1
+     callpropvoid        QName(Namespace("_-6NY"), "addMessageEvent"), 1
+
+     debugline           25
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PrivateNamespace("_-ga", "_-6Pz:_-46Y"), "_-407")
+   method
+    refid "_-6Pz:_-46Y/_-407"
+    param QName(PackageNamespace("_-6Wd"), "_-0v5")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           31
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-0YH"), "_-AL")
+      setlocal            7
+
+      debug               1, "k", 0, 31
+      debug               1, "k", 1, 33
+      debug               1, "k", 2, 37
+      debug               1, "k", 3, 40
+      debug               1, "k", 4, 45
+      debug               1, "k", 5, 50
+      debugline           33
+      getlocal1
+      getlex              QName(PackageNamespace("_-0YH"), "_-35Z")
+      astypelate
+      coerce              QName(PackageNamespace("_-0YH"), "_-35Z")
+      setlocal2
+
+      debugline           34
+      getlocal2
+      pushnull
+      equals
+      dup
+      iftrue              L30
+
+      pop
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-6g5"), 0
+      pushnull
+      equals
+L30:
+      iffalse             L33
+
+      returnvoid
+
+      debugline           37
+L33:
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-6g5"), 0
+      coerce              QName(PackageNamespace("_-6LD"), "RoomDimmerPresetsMessageParser")
+      setlocal3
+
+      debugline           40
+      getlex              QName(PackageNamespace(""), "listener")
+      getlex              QName(PackageNamespace(""), "_-244")
+      callproperty        QName(Namespace("_-0ht"), "getSession"), 1
+      coerce              QName(PackageNamespace("_-5u3"), "_-26U")
+      setlocal            4
+
+      debugline           41
+      getlocal            4
+      pushnull
+      ifne                L50
+
+      debugline           42
+      returnvoid
+
+      debugline           45
+L50:
+      findpropstrict      QName(PackageNamespace("_-3mB"), "RoomSessionDimmerPresetsEvent")
+      getlex              QName(PackageNamespace("_-3mB"), "RoomSessionDimmerPresetsEvent")
+      getproperty         QName(PackageNamespace(""), "_-nS")
+      getlocal            4
+      constructprop       QName(PackageNamespace("_-3mB"), "RoomSessionDimmerPresetsEvent"), 2
+      coerce              QName(PackageNamespace("_-3mB"), "RoomSessionDimmerPresetsEvent")
+      setlocal            5
+
+      debugline           47
+      getlocal            5
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "_-1rx")
+      setproperty         QName(PackageNamespace(""), "_-1rx")
+
+      debugline           50
+      pushbyte            0
+      setlocal            6
+
+      jump                L91
+
+L66:
+      label
+      debug               1, "k", 6, 51
+      debugline           51
+      getlocal3
+      getlocal            6
+      callproperty        QName(PackageNamespace(""), "_-5lD"), 1
+      coerce              QName(PackageNamespace("_-0YH"), "_-AL")
+      setlocal            7
+
+      debugline           52
+      getlocal            7
+      pushnull
+      ifeq                L90
+
+      debugline           53
+      getlocal            5
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "id")
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "type")
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "color")
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "_-dm")
+      callpropvoid        QName(PackageNamespace(""), "_-2JB"), 4
+
+      debugline           50
+L90:
+      inclocal_i          6
+L91:
+      getlocal            6
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "_-2Gk")
+      iflt                L66
+
+      debugline           57
+      getlex              QName(PackageNamespace(""), "listener")
+      convert_b
+      dup
+      iffalse             L104
+
+      pop
+      getlex              QName(PackageNamespace(""), "listener")
+      getproperty         QName(Namespace("_-0ht"), "events")
+      convert_b
+L104:
+      iffalse             L111
+
+      debugline           58
+      getlex              QName(PackageNamespace(""), "listener")
+      getproperty         QName(Namespace("_-0ht"), "events")
+      getlocal            5
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           60
+L111:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-6Pz:_-46Y/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

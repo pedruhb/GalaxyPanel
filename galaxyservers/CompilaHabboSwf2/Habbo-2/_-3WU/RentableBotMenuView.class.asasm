@@ -1,0 +1,1514 @@
+class
+ refid "_-3WU:RentableBotMenuView"
+ instance QName(PackageNamespace("_-3WU"), "RentableBotMenuView")
+  extends QName(PackageNamespace("_-3WU"), "_-1Oo")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-Me")
+  iinit
+   refid "_-3WU:RentableBotMenuView/iinit"
+   param QName(PackageNamespace("_-3WU"), "AvatarInfoWidget")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debugline           28
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           29
+     findproperty        QName(ProtectedNamespace("_-33h"), "_-3jK")
+     pushfalse
+     initproperty        QName(ProtectedNamespace("_-33h"), "_-3jK")
+
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-Me"), "_-4T6") type QName(PackageNamespace("_-3WU"), "_-3P5") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-3WU:RentableBotMenuView/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      debugline           33
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      iffalse             L20
+
+      debugline           34
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-35v")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5Ve")
+      callpropvoid        QName(Namespace("_-6q"), "removeEventListener"), 2
+
+      debugline           35
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-6Nl")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5Ve")
+      callpropvoid        QName(Namespace("_-6q"), "removeEventListener"), 2
+
+      debugline           37
+L20:
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-Me"), "_-4T6")
+
+      debugline           38
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           39
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-Me"), "_-4E")
+   method
+    refid "_-3WU:RentableBotMenuView/_-Me:_-4E"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 13
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3EW"), "_-4kQ")
+      setlocal            7
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            9
+
+      pushbyte            0
+      setlocal            10
+
+      debug               1, "k", 0, 53
+      debug               1, "k", 1, 58
+      debug               1, "k", 2, 59
+      debug               1, "k", 3, 64
+      debug               1, "k", 4, 65
+      debug               1, "k", 5, 69
+      debug               1, "k", 6, 91
+      debugline           49
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      not
+      dup
+      iftrue              L31
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      not
+L31:
+      iffalse             L35
+
+      debugline           50
+      returnvoid
+
+      debugline           53
+L35:
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      pushstring          "buttons"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      setlocal1
+
+      debugline           54
+      getlocal1
+      iftrue              L48
+
+      debugline           55
+      returnvoid
+
+      debugline           58
+L48:
+      getlex              QName(ProtectedNamespace("_-n0"), "_-1qz")
+      pushstring          "link_template"
+      callproperty        QName(Namespace("_-0Pj"), "getListItemByName"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal2
+
+      debugline           59
+      getlex              QName(ProtectedNamespace("_-n0"), "_-1qz")
+      pushstring          "nux_proceed_1"
+      callproperty        QName(Namespace("_-0Pj"), "getListItemByName"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal3
+
+      debugline           61
+      getlocal1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "buttonEventProc")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           62
+      getlocal1
+      pushfalse
+      setproperty         QName(Namespace("_-0Pj"), "autoArrangeItems")
+
+      debugline           64
+      getlocal1
+      getproperty         QName(Namespace("_-0Pj"), "numListItems")
+      convert_i
+      setlocal            4
+
+      debugline           65
+      pushbyte            0
+      setlocal            5
+
+      jump                L90
+
+L81:
+      label
+      debugline           66
+      getlocal1
+      getlocal            5
+      callproperty        QName(Namespace("_-0Pj"), "getListItemAt"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           65
+      inclocal_i          5
+L90:
+      getlocal            5
+      getlocal            4
+      iflt                L81
+
+      debugline           69
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-aH")
+      convert_b
+      dup
+      iftrue              L105
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5cZ")
+      convert_b
+L105:
+      convert_b
+      setlocal            6
+
+      debugline           70
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "pick"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      iftrue              L117
+
+      getlocal            6
+      convert_b
+      jump                L130
+
+L117:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-5oE")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      dup
+      iffalse             L130
+
+      pop
+      getlocal            6
+      convert_b
+L130:
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           71
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      iffalse             L246
+
+      debugline           72
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "donate_to_all"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-4AC")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           73
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "donate_to_user"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-62t")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           74
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-aH")
+      iffalse             L233
+
+      debugline           75
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "change_bot_name"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-5qV")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           76
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "dress_up"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-6Ub")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           77
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "random_walk"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-0SG")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           78
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "setup_chat"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-51w")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           79
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "dance"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-VG")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           81
+L233:
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "nux_take_tour"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-5Lf")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-3MG")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           91
+L246:
+      pushbyte            0
+      setlocal            11
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "_-1na")
+      coerce_a
+      setlocal            12
+
+      jump                L458
+
+L254:
+      label
+      getlocal            12
+      getlocal            11
+      nextvalue
+      coerce              QName(PackageNamespace("_-3EW"), "_-4kQ")
+      setlocal            7
+
+      debug               1, "k", 7, 92
+      debug               1, "k", 8, 93
+      debugline           94
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-3wt")
+      ifne                L312
+
+      debugline           95
+      getlocal2
+      callproperty        QName(Namespace("_-6q"), "clone"), 0
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            9
+
+      debugline           96
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "data")
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            8
+
+      debugline           97
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            2
+      ifne                L312
+
+      debugline           98
+      getlocal            9
+      pushstring          "label"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            8
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")])
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           99
+      getlocal            9
+      pushstring          ":link "
+      getlocal            8
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")])
+      add
+      setproperty         QName(Namespace("_-6q"), "name")
+
+      debugline           100
+      getlocal            9
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           101
+      getlocal1
+      getlocal            9
+      callpropvoid        QName(Namespace("_-0Pj"), "addListItem"), 1
+
+      debugline           104
+L312:
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-qx")
+      ifne                L409
+
+      debugline           105
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "data")
+      pushstring          ""
+      ifne                L329
+
+      debugline           106
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "nux_proceed_1"
+      pushtrue
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      jump                L409
+
+      debugline           108
+L329:
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "data")
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            8
+
+      debugline           109
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            2
+      ifne                L409
+
+      debug               1, "k", 9, 110
+      debugline           110
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            8
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            10
+
+      debugline           111
+      getlocal            10
+      pushbyte            1
+      ifne                L372
+
+      debugline           112
+      findpropstrict      QName(ProtectedNamespace("_-n0"), "_-7n")
+      pushstring          "nux_proceed_1"
+      pushtrue
+      callpropvoid        QName(ProtectedNamespace("_-n0"), "_-7n"), 2
+
+      debugline           113
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlocal1
+      pushstring          "nux_proceed_1"
+      callproperty        QName(Namespace("_-0Pj"), "getListItemByName"), 1
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      pushstring          "label"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            8
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")])
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      jump                L409
+
+      debugline           116
+L372:
+      getlocal3
+      callproperty        QName(Namespace("_-6q"), "clone"), 0
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            9
+
+      debugline           117
+      getlocal            9
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           118
+      getlocal            9
+      pushstring          "nux_proceed_"
+      getlocal            10
+      add
+      setproperty         QName(Namespace("_-6q"), "name")
+
+      debugline           119
+      getlocal            9
+      pushstring          "label"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            8
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")])
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           120
+      getlocal1
+      getlocal            9
+      getlocal1
+      getlocal1
+      pushstring          "nux_proceed_1"
+      callproperty        QName(Namespace("_-0Pj"), "getListItemByName"), 1
+      callproperty        QName(Namespace("_-0Pj"), "_-38I"), 1
+      getlocal            10
+      add
+      decrement
+      callpropvoid        QName(Namespace("_-0Pj"), "_-0cE"), 2
+
+      debugline           125
+L409:
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-6Y3")
+      ifne                L458
+
+      debugline           126
+      getlocal2
+      callproperty        QName(Namespace("_-6q"), "clone"), 0
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            9
+
+      debugline           127
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "data")
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            8
+
+      debugline           128
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            2
+      ifne                L458
+
+      debugline           129
+      getlocal            9
+      pushstring          "label"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            8
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")])
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           130
+      getlocal            9
+      pushstring          ":link navigator/search/"
+      getlocal            8
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")])
+      add
+      setproperty         QName(Namespace("_-6q"), "name")
+
+      debugline           131
+      getlocal            9
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           132
+      getlocal1
+      getlocal            9
+      callpropvoid        QName(Namespace("_-0Pj"), "addListItem"), 1
+
+      debugline           91
+L458:
+      hasnext2            12, 11
+      iftrue              L254
+
+      kill                12
+      kill                11
+      debugline           137
+      getlocal1
+      pushtrue
+      setproperty         QName(Namespace("_-0Pj"), "autoArrangeItems")
+
+      debugline           138
+      getlocal1
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           140
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-Me"), "updateWindow") flag OVERRIDE
+   method
+    refid "_-3WU:RentableBotMenuView/_-Me:updateWindow"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           142
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal1
+
+      debugline           144
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5dD")
+      not
+      dup
+      iftrue              L16
+
+      pop
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5dD")
+      getproperty         QName(Namespace("_-4Ga"), "assets")
+      not
+L16:
+      dup
+      iftrue              L22
+
+      pop
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5dD")
+      getproperty         QName(Namespace("_-4Ga"), "windowManager")
+      not
+L22:
+      iffalse             L26
+
+      debugline           145
+      returnvoid
+
+      debugline           148
+L26:
+      getlex              QName(StaticProtectedNs("_-33h"), "_-qX")
+      iffalse             L35
+
+      debugline           149
+      findproperty        QName(ProtectedNamespace("_-33h"), "activeView")
+      findpropstrict      QName(ProtectedNamespace("_-33h"), "_-6Zn")
+      callproperty        QName(ProtectedNamespace("_-33h"), "_-6Zn"), 0
+      initproperty        QName(ProtectedNamespace("_-33h"), "activeView")
+
+      jump                L132
+
+      debugline           151
+L35:
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      iftrue              L102
+
+      debug               1, "k", 0, 152
+      debugline           152
+      findpropstrict      QName(PackageNamespace("_-eg"), "XmlAsset")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5dD")
+      getproperty         QName(Namespace("_-4Ga"), "assets")
+      pushstring          "avatar_menu_widget"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      callproperty        QName(PackageNamespace("_-eg"), "XmlAsset"), 1
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal1
+
+      debugline           153
+      findproperty        QName(ProtectedNamespace("_-33h"), "_-Fi")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5dD")
+      getproperty         QName(Namespace("_-4Ga"), "windowManager")
+      getlocal1
+      pushbyte            0
+      callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 2
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-33h"), "_-Fi")
+
+      debugline           154
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      iftrue              L66
+
+      debugline           155
+      returnvoid
+
+      debugline           158
+L66:
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-35v")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5Ve")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           159
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-6Nl")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5Ve")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           161
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      pushstring          "minimize"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-36X")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           162
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      pushstring          "minimize"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-35v")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-xP")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           163
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      pushstring          "minimize"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-6Nl")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-xP")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           166
+L102:
+      findproperty        QName(ProtectedNamespace("_-n0"), "_-1qz")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      pushstring          "buttons"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-n0"), "_-1qz")
+
+      debugline           167
+      getlex              QName(ProtectedNamespace("_-n0"), "_-1qz")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "buttonEventProc")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           169
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      pushstring          "name"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(ProtectedNamespace("_-23a"), "_-6VX")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           170
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           171
+      findproperty        QName(ProtectedNamespace("_-33h"), "activeView")
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      initproperty        QName(ProtectedNamespace("_-33h"), "activeView")
+
+      debugline           173
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-Me"), "_-4E"), 0
+
+      debugline           177
+L132:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-Me"), "buttonEventProc") flag OVERRIDE
+   method
+    refid "_-3WU:RentableBotMenuView/_-Me:buttonEventProc"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 9
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           179
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      setlocal            5
+
+      pushnull
+      coerce_s
+      setlocal            6
+
+      pushnull
+      coerce_s
+      setlocal            7
+
+      debug               1, "k", 0, 179
+      debug               1, "k", 1, 179
+      debug               1, "k", 2, 188
+      debug               1, "k", 3, 189
+      debugline           181
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L26
+
+      debugline           182
+      returnvoid
+
+      debugline           184
+L26:
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      not
+      dup
+      iftrue              L34
+
+      pop
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      getproperty         QName(Namespace("_-2W2"), "disposed")
+      convert_b
+L34:
+      iffalse             L38
+
+      debugline           185
+      returnvoid
+
+      debugline           188
+L38:
+      pushfalse
+      setlocal3
+
+      debugline           191
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L438
+
+      debugline           193
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "name")
+      pushstring          "button"
+      ifne                L434
+
+      debug               1, "k", 4, 194
+      debugline           194
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      setlocal            5
+
+      jump                L295
+
+L57:
+      label
+      debugline           198
+      pushtrue
+      setlocal3
+
+      debugline           199
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "connection")
+      findpropstrict      QName(PackageNamespace("_-3wx"), "_-2PA")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      constructprop       QName(PackageNamespace("_-3wx"), "_-2PA"), 1
+      callpropvoid        Multiname("send", [PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")]), 1
+
+      debugline           200
+      jump                L360
+
+L75:
+      label
+      debugline           202
+      pushtrue
+      setlocal3
+
+      debugline           203
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+      constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 0
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      setlocal            5
+
+      debugline           204
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      getlocal            5
+      callpropvoid        QName(Namespace("_-6q"), "getGlobalRectangle"), 1
+
+      debugline           205
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "width")
+      pushbyte            2
+      divide
+      add
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "height")
+      add
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            4
+
+      debugline           206
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-51w")
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "_-4aT"), 3
+
+      debugline           207
+      jump                L360
+
+L117:
+      label
+      debugline           209
+      pushtrue
+      setlocal3
+
+      debugline           210
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "connection")
+      findpropstrict      QName(PackageNamespace("_-0-c"), "_-63Z")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-0SG")
+      pushstring          ""
+      constructprop       QName(PackageNamespace("_-0-c"), "_-63Z"), 3
+      callpropvoid        Multiname("send", [PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")]), 1
+
+      debugline           211
+      jump                L360
+
+L138:
+      label
+      debugline           213
+      pushtrue
+      setlocal3
+
+      debugline           214
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "connection")
+      findpropstrict      QName(PackageNamespace("_-0-c"), "_-63Z")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-6Ub")
+      pushstring          ""
+      constructprop       QName(PackageNamespace("_-0-c"), "_-63Z"), 3
+      callpropvoid        Multiname("send", [PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")]), 1
+
+      debugline           215
+      jump                L360
+
+L159:
+      label
+      debugline           217
+      pushtrue
+      setlocal3
+
+      debugline           218
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "connection")
+      findpropstrict      QName(PackageNamespace("_-0-c"), "_-63Z")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-VG")
+      pushstring          ""
+      constructprop       QName(PackageNamespace("_-0-c"), "_-63Z"), 3
+      callpropvoid        Multiname("send", [PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")]), 1
+
+      debugline           219
+      jump                L360
+
+L180:
+      label
+      debugline           221
+      pushtrue
+      setlocal3
+
+      debugline           222
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "connection")
+      findpropstrict      QName(PackageNamespace("_-0-c"), "_-63Z")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-4AC")
+      pushstring          ""
+      constructprop       QName(PackageNamespace("_-0-c"), "_-63Z"), 3
+      callpropvoid        Multiname("send", [PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")]), 1
+
+      debugline           223
+      jump                L360
+
+L201:
+      label
+      debugline           225
+      pushtrue
+      setlocal3
+
+      debugline           226
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "connection")
+      findpropstrict      QName(PackageNamespace("_-0-c"), "_-63Z")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-62t")
+      pushstring          ""
+      constructprop       QName(PackageNamespace("_-0-c"), "_-63Z"), 3
+      callpropvoid        Multiname("send", [PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")]), 1
+
+      debugline           227
+      jump                L360
+
+L222:
+      label
+      debugline           229
+      pushtrue
+      setlocal3
+
+      debugline           230
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "component")
+      getproperty         QName(PackageNamespace(""), "context")
+      pushstring          "help/tour"
+      callpropvoid        QName(Namespace("_-s9"), "createLinkEvent"), 1
+
+      debugline           231
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "connection")
+      findpropstrict      QName(PackageNamespace("_-0-c"), "_-63Z")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-3MG")
+      pushstring          ""
+      constructprop       QName(PackageNamespace("_-0-c"), "_-63Z"), 3
+      callpropvoid        Multiname("send", [PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")]), 1
+
+      debugline           232
+      jump                L360
+
+L250:
+      label
+      debugline           256
+      pushtrue
+      setlocal3
+
+      debugline           257
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+      constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 0
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      setlocal            5
+
+      debugline           258
+      getlex              QName(ProtectedNamespace("_-33h"), "_-Fi")
+      getlocal            5
+      callpropvoid        QName(Namespace("_-6q"), "getGlobalRectangle"), 1
+
+      debugline           259
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "width")
+      pushbyte            2
+      divide
+      add
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "height")
+      add
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            4
+
+      debugline           260
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-5qV")
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "_-4aT"), 3
+
+      debugline           261
+      jump                L360
+
+L292:
+      label
+      jump                L360
+
+      debugline           195
+L295:
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "parent")
+      getproperty         QName(Namespace("_-6q"), "name")
+      setlocal            8
+
+      pushstring          "pick"
+      debugline           197
+      getlocal            8
+      ifstrictne          L305
+
+      pushbyte            0
+      jump                L357
+
+L305:
+      pushstring          "setup_chat"
+      debugline           201
+      getlocal            8
+      ifstrictne          L311
+
+      pushbyte            1
+      jump                L357
+
+L311:
+      pushstring          "random_walk"
+      debugline           208
+      getlocal            8
+      ifstrictne          L317
+
+      pushbyte            2
+      jump                L357
+
+L317:
+      pushstring          "dress_up"
+      debugline           212
+      getlocal            8
+      ifstrictne          L323
+
+      pushbyte            3
+      jump                L357
+
+L323:
+      pushstring          "dance"
+      debugline           216
+      getlocal            8
+      ifstrictne          L329
+
+      pushbyte            4
+      jump                L357
+
+L329:
+      pushstring          "donate_to_all"
+      debugline           220
+      getlocal            8
+      ifstrictne          L335
+
+      pushbyte            5
+      jump                L357
+
+L335:
+      pushstring          "donate_to_user"
+      debugline           224
+      getlocal            8
+      ifstrictne          L341
+
+      pushbyte            6
+      jump                L357
+
+L341:
+      pushstring          "nux_take_tour"
+      debugline           228
+      getlocal            8
+      ifstrictne          L347
+
+      pushbyte            7
+      jump                L357
+
+L347:
+      pushstring          "change_bot_name"
+      debugline           255
+      getlocal            8
+      ifstrictne          L353
+
+      pushbyte            8
+      jump                L357
+
+L353:
+      jump                L356
+
+      pushbyte            9
+      jump                L357
+
+L356:
+      pushbyte            9
+L357:
+      kill                8
+      lookupswitch        L292, [L57, L75, L117, L138, L159, L180, L201, L222, L250, L292]
+
+      debugline           263
+L360:
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "parent")
+      getproperty         QName(Namespace("_-6q"), "name")
+      pushstring          ":link "
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifeq                L393
+
+      debug               1, "k", 5, 264
+      debugline           264
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "parent")
+      getproperty         QName(Namespace("_-6q"), "name")
+      pushbyte            6
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "parent")
+      getproperty         QName(Namespace("_-6q"), "name")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            6
+      subtract
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+      coerce_s
+      setlocal            6
+
+      debugline           265
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "component")
+      getproperty         QName(PackageNamespace(""), "context")
+      getlocal            6
+      callpropvoid        QName(Namespace("_-s9"), "createLinkEvent"), 1
+
+      debugline           266
+      pushtrue
+      setlocal3
+
+      debugline           268
+L393:
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "parent")
+      getproperty         QName(Namespace("_-6q"), "name")
+      pushstring          "nux_proceed_"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifeq                L434
+
+      debug               1, "k", 6, 269
+      debugline           269
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "parent")
+      getproperty         QName(Namespace("_-6q"), "name")
+      pushbyte            12
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "parent")
+      getproperty         QName(Namespace("_-6q"), "name")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            12
+      subtract
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+      coerce_s
+      setlocal            7
+
+      debugline           270
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "connection")
+      findpropstrict      QName(PackageNamespace("_-0-c"), "_-63Z")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "id")
+      getlex              QName(PackageNamespace("_-6ci"), "_-6SY")
+      getproperty         QName(PackageNamespace(""), "_-qx")
+      getlocal            7
+      constructprop       QName(PackageNamespace("_-0-c"), "_-63Z"), 3
+      callpropvoid        Multiname("send", [PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), ProtectedNamespace("_-Me"), PackageNamespace("_-3WU"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RentableBotMenuView.as$4852", "_-3WU:RentableBotMenuView/_-Me"), PackageInternalNs("_-3WU"), StaticProtectedNs("_-Me"), StaticProtectedNs("_-23a"), StaticProtectedNs("_-n0"), StaticProtectedNs("_-33h")]), 1
+
+      debugline           271
+      pushtrue
+      setlocal3
+
+      debugline           275
+L434:
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-Me"), "_-4E"), 0
+
+      jump                L443
+
+      debugline           278
+L438:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsupervoid       QName(ProtectedNamespace("_-n0"), "buttonEventProc"), 2
+      debugline           281
+L443:
+      getlocal3
+      iffalse             L451
+
+      debugline           282
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5dD")
+      getlocal0
+      pushfalse
+      callpropvoid        QName(Namespace("_-4Ga"), "removeView"), 2
+
+      debugline           284
+L451:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-Me", "_-3WU:RentableBotMenuView"), "widget")
+   method
+    refid "_-3WU:RentableBotMenuView/widget/getter"
+    returns QName(PackageNamespace("_-3WU"), "AvatarInfoWidget")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           286
+      getlocal0
+      pushscope
+
+      debugline           287
+      getlex              QName(ProtectedNamespace("_-33h"), "_-5dD")
+      getlex              QName(PackageNamespace("_-3WU"), "AvatarInfoWidget")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3WU:RentableBotMenuView/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "setup") flag FINAL dispid 3
+  method
+   refid "_-3WU:RentableBotMenuView/setup"
+   param QName(PackageNamespace("_-3WU"), "RentableBotMenuView")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace("_-3WU"), "_-3P5")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 7
+    localcount 7
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           41
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 41
+     debug               1, "k", 1, 41
+     debug               1, "k", 2, 41
+     debug               1, "k", 3, 41
+     debug               1, "k", 4, 41
+     debug               1, "k", 5, 41
+     debugline           43
+     getlocal1
+     getlocal            6
+     setproperty         QName(ProtectedNamespace("_-Me"), "_-4T6")
+
+     debugline           44
+     getlex              QName(PackageNamespace("_-3WU"), "_-1Oo")
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     pushfalse
+     callpropvoid        QName(PackageNamespace(""), "setup"), 6
+
+     debugline           45
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

@@ -1,0 +1,70 @@
+class
+ refid "HabboCommunicationDemoCom"
+ instance QName(PackageNamespace(""), "HabboCommunicationDemoCom")
+  extends QName(PackageNamespace("mx.core"), "SimpleApplication")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("HabboCommunicationDemoCom")
+  iinit
+   refid "HabboCommunicationDemoCom/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 11
+    maxscopedepth 12
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           26
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "HabboCommunicationDemoCom/cinit"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 10
+   maxscopedepth 11
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 13
+    findproperty        QName(PackageNamespace(""), "manifest")
+    getlex              QName(PackageNamespace(""), "_-6Mt")
+    setproperty         QName(PackageNamespace(""), "manifest")
+
+    debug               1, "k", 1, 16
+    findproperty        QName(PackageNamespace(""), "login_window")
+    getlex              QName(PackageNamespace(""), "_-5sB")
+    setproperty         QName(PackageNamespace(""), "login_window")
+
+    debug               1, "k", 2, 19
+    findproperty        QName(PackageNamespace(""), "login_environment_list_item")
+    getlex              QName(PackageNamespace(""), "_-5mu")
+    setproperty         QName(PackageNamespace(""), "login_environment_list_item")
+
+    debug               1, "k", 3, 22
+    findproperty        QName(PackageNamespace(""), "requiredClasses")
+    findpropstrict      QName(PackageNamespace(""), "Array")
+    getlex              QName(PackageNamespace("com.sulake.bootstrap"), "HabboCommunicationDemoBootstrap")
+    constructprop       QName(PackageNamespace(""), "Array"), 1
+    setproperty         QName(PackageNamespace(""), "requiredClasses")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "manifest") slotid 1 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "login_window") slotid 2 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "login_environment_list_item") slotid 3 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "requiredClasses") slotid 4 type QName(PackageNamespace(""), "Array") end
+end ; class

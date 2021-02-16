@@ -1,0 +1,170 @@
+class
+ refid "_-ur:_-35p"
+ instance QName(PackageNamespace("_-ur"), "_-35p")
+  extends QName(PackageNamespace("_-ur"), "CatalogWidget")
+  implements Multiname("_-0su", [PackageNamespace("_-ur")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3yh")
+  iinit
+   refid "_-ur:_-35p/iinit"
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           13
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 13
+     debugline           14
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           15
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-3yh", "_-ur:_-35p"), "_button")
+     iffalse             L22
+
+     debugline           16
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-3yh", "_-ur:_-35p"), "_button")
+     getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+     getproperty         QName(PackageNamespace(""), "CLICK")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-3yh", "_-ur:_-35p"), "_-Yn")
+     callpropvoid        QName(Namespace("_-6q"), "removeEventListener"), 2
+
+     debugline           18
+L22:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-3yh", "_-ur:_-35p"), "_button") type QName(PackageNamespace("_-1Bv"), "IButtonWindow") end
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-ur:_-35p/init"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      debugline           21
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L12
+
+      debugline           22
+      pushfalse
+      returnvalue
+
+      debugline           24
+L12:
+      getlocal0
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "start_guild_purchase"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IButtonWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3yh", "_-ur:_-35p"), "_button")
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3yh", "_-ur:_-35p"), "_button")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3yh", "_-ur:_-35p"), "_-Yn")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           26
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3yh", "_-ur:_-35p"), "_-Yn")
+   method
+    refid "_-ur:_-35p/_-Yn"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 29
+      debugline           30
+      getlex              QName(PackageNamespace("_-1OR"), "HabboTracking")
+      callproperty        QName(PackageNamespace(""), "getInstance"), 0
+      pushnull
+      ifeq                L17
+
+      debugline           31
+      getlex              QName(PackageNamespace("_-1OR"), "HabboTracking")
+      callproperty        QName(PackageNamespace(""), "getInstance"), 0
+      pushstring          "groupPurchase"
+      pushstring          "catalogBuyClicked"
+      callpropvoid        QName(PackageNamespace(""), "trackGoogle"), 2
+
+      debugline           33
+L17:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "connection")
+      findpropstrict      QName(PackageNamespace("_-1yG"), "_-5SL")
+      constructprop       QName(PackageNamespace("_-1yG"), "_-5SL"), 0
+      callpropvoid        QName(Namespace("_-6NY"), "send"), 1
+
+      debugline           34
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getlex              QName(PackageNamespace("_-23E"), "_-2jp")
+      getproperty         QName(PackageNamespace(""), "NORMAL")
+      callpropvoid        QName(Namespace("_-5AO"), "toggleCatalog"), 1
+
+      debugline           35
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ur:_-35p/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

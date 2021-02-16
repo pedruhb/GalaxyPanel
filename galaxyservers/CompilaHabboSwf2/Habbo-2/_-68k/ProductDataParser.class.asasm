@@ -1,0 +1,702 @@
+class
+ refid "_-68k:ProductDataParser"
+ instance QName(PackageNamespace("_-68k"), "ProductDataParser")
+  extends QName(PackageNamespace("_-1dC"), "EventDispatcherWrapper")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6jv")
+  iinit
+   refid "_-68k:ProductDataParser/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("flash.utils"), "Dictionary")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debug               1, "k", 1, 27
+     debugline           27
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 2, 32
+     debugline           29
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-0zK")
+
+     debugline           30
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-eg"), "AssetLibrary")
+     pushstring          "ProductDataParserAssetLib"
+     constructprop       QName(PackageNamespace("_-eg"), "AssetLibrary"), 1
+     initproperty        QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-lZ")
+
+     debugline           32
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-lZ")
+     getlocal1
+     findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+     getlocal1
+     constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+     pushstring          "text/plain"
+     callproperty        QName(PackageNamespace(""), "loadAssetFromFile"), 3
+     coerce              QName(PackageNamespace("_-eg"), "_-2YV")
+     setlocal3
+
+     debugline           33
+     getlocal3
+     getlex              QName(PackageNamespace("_-ll"), "AssetLoaderEvent")
+     getproperty         QName(PackageNamespace(""), "_-50U")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-00F")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           34
+     getlocal3
+     getlex              QName(PackageNamespace("_-ll"), "AssetLoaderEvent")
+     getproperty         QName(PackageNamespace(""), "_-1tR")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-6VG")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           35
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-0zK") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait slot QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-lZ") type QName(PackageNamespace("_-eg"), "AssetLibrary") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-68k:ProductDataParser/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debugline           38
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-lZ")
+      iffalse             L20
+
+      debugline           40
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-lZ")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           41
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-lZ")
+
+      debugline           43
+L20:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-0zK")
+
+      debugline           44
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-00F")
+   method
+    refid "_-68k:ProductDataParser/_-00F"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 51
+      debug               1, "k", 1, 52
+      debug               1, "k", 2, 56
+      debugline           52
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-eg"), "_-2YV")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "_-2YV")
+      setlocal2
+
+      debugline           53
+      getlocal2
+      pushnull
+      ifne                L20
+
+      returnvoid
+
+      debugline           54
+L20:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-2hU")
+      pushnull
+      equals
+      dup
+      iftrue              L32
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-2hU")
+      getproperty         QName(Namespace("_-5Ry"), "content")
+      pushnull
+      equals
+L32:
+      iffalse             L35
+
+      returnvoid
+
+      debugline           56
+L35:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-2hU")
+      getproperty         QName(Namespace("_-5Ry"), "content")
+      getlex              QName(PackageNamespace(""), "String")
+      astypelate
+      coerce_s
+      setlocal3
+
+      debugline           57
+      getlocal3
+      pushbyte            0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+      pushstring          "<"
+      ifne                L54
+
+      debugline           58
+      getlocal0
+      getlocal3
+      callpropvoid        QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-1I1"), 1
+
+      jump                L58
+
+      debugline           60
+L54:
+      getlocal0
+      getlocal3
+      callpropvoid        QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-0NE"), 1
+
+      debugline           62
+L58:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-1I1")
+   method
+    refid "_-68k:ProductDataParser/_-1I1"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 6
+     localcount 5
+     initscopedepth 6
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           64
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 64
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setslot             3
+
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setslot             4
+
+      getscopeobject      1
+      pushnull
+      coerce_s
+      setslot             5
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 64
+      debugline           66
+L26:
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace(""), "XML")
+      getscopeobject      1
+      getslot             1
+      constructprop       QName(PackageNamespace(""), "XML"), 1
+      coerce              QName(PackageNamespace(""), "XML")
+      setslot             4
+
+      debugline           67
+L34:
+      jump                L59
+
+L35:
+      getlocal0
+      pushscope
+
+      getlocal2
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           68
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      pushstring          "XML Product data was malformed: "
+      getscopeobject      1
+      getslot             1
+      add
+      pushtrue
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      getproperty         QName(PackageNamespace(""), "_-4Di")
+      callpropvoid        QName(PackageNamespace(""), "error"), 3
+
+      popscope
+      kill                3
+      debugline           70
+L59:
+      getscopeobject      1
+      getslot             4
+      pushnull
+      ifne                L65
+
+      returnvoid
+
+      debugline           72
+L65:
+      getscopeobject      1
+      getscopeobject      1
+      getslot             4
+      getproperty         Multiname("product", [PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ProductDataParser.as$3707", "_-68k:ProductDataParser#1"), PackageNamespace("_-68k"), PackageInternalNs("_-68k"), ProtectedNamespace("_-6jv"), StaticProtectedNs("_-6jv"), StaticProtectedNs("_-5bF")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setslot             2
+
+      debugline           73
+      pushbyte            0
+      setlocal3
+
+      getscopeobject      1
+      getslot             2
+      coerce_a
+      setlocal            4
+
+      jump                L110
+
+L79:
+      label
+      getscopeobject      1
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace(""), "XML")
+      setslot             3
+
+      debugline           74
+      getscopeobject      1
+      getscopeobject      1
+      getslot             3
+      getproperty         MultinameA("code", [PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ProductDataParser.as$3707", "_-68k:ProductDataParser#1"), PackageNamespace("_-68k"), PackageInternalNs("_-68k"), ProtectedNamespace("_-6jv"), StaticProtectedNs("_-6jv"), StaticProtectedNs("_-5bF")])
+      coerce_s
+      setslot             5
+
+      debugline           75
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-0zK")
+      getscopeobject      1
+      getslot             5
+      findpropstrict      QName(PackageNamespace("_-68k"), "_-4zt")
+      getscopeobject      1
+      getslot             5
+      getscopeobject      1
+      getslot             3
+      getproperty         Multiname("name", [PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ProductDataParser.as$3707", "_-68k:ProductDataParser#1"), PackageNamespace("_-68k"), PackageInternalNs("_-68k"), ProtectedNamespace("_-6jv"), StaticProtectedNs("_-6jv"), StaticProtectedNs("_-5bF")])
+      getscopeobject      1
+      getslot             3
+      getproperty         Multiname("description", [PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ProductDataParser.as$3707", "_-68k:ProductDataParser#1"), PackageNamespace("_-68k"), PackageInternalNs("_-68k"), ProtectedNamespace("_-6jv"), StaticProtectedNs("_-6jv"), StaticProtectedNs("_-5bF")])
+      constructprop       QName(PackageNamespace("_-68k"), "_-4zt"), 3
+      setproperty         MultinameL([PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ProductDataParser.as$3707", "_-68k:ProductDataParser#1"), PackageNamespace("_-68k"), PackageInternalNs("_-68k"), ProtectedNamespace("_-6jv"), StaticProtectedNs("_-6jv"), StaticProtectedNs("_-5bF")])
+
+      debugline           73
+L110:
+      hasnext2            4, 3
+      iftrue              L79
+
+      kill                4
+      kill                3
+      debugline           77
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace(""), "_-14A")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           78
+      returnvoid
+     end ; code
+     try from L26 to L34 target L35 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+     trait slot QName(PackageInternalNs("_-68k"), "data") slotid 1 type QName(PackageNamespace(""), "String") end
+     trait slot QName(PackageInternalNs("_-68k"), "products") slotid 2 type QName(PackageNamespace(""), "XMLList") end
+     trait slot QName(PackageInternalNs("_-68k"), "itemXml") slotid 3 type QName(PackageNamespace(""), "XML") end
+     trait slot QName(PackageInternalNs("_-68k"), "xmlData") slotid 4 type QName(PackageNamespace(""), "XML") end
+     trait slot QName(PackageInternalNs("_-68k"), "code") slotid 5 type QName(PackageNamespace(""), "String") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-0NE")
+   method
+    refid "_-68k:ProductDataParser/_-0NE"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 20
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           80
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            9
+
+      pushnull
+      coerce_s
+      setlocal            10
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            11
+
+      pushnull
+      coerce_s
+      setlocal            12
+
+      pushnull
+      coerce_s
+      setlocal            13
+
+      pushnull
+      coerce_s
+      setlocal            14
+
+      pushnull
+      coerce              QName(PackageNamespace("_-68k"), "_-4zt")
+      setlocal            15
+
+      debug               1, "k", 0, 80
+      debug               1, "k", 1, 81
+      debug               1, "k", 2, 83
+      debug               1, "k", 3, 84
+      debug               1, "k", 4, 85
+      debug               1, "k", 5, 90
+      debug               1, "k", 6, 91
+      debug               1, "k", 7, 92
+      debugline           81
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           83
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\n\\r{1,}|\\n{1,}|\\r{1,}"
+      pushstring          "mg"
+      construct           2
+      coerce              QName(PackageNamespace(""), "RegExp")
+      setlocal3
+
+      debugline           84
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "^\\s+|\\s+$"
+      pushstring          "g"
+      construct           2
+      coerce              QName(PackageNamespace(""), "RegExp")
+      setlocal            4
+
+      debugline           85
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\[+?((.)*?)\\]"
+      pushstring          "g"
+      construct           2
+      coerce              QName(PackageNamespace(""), "RegExp")
+      setlocal            5
+
+      debugline           88
+      getlocal1
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\"{1,}"
+      pushstring          "mg"
+      construct           2
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal1
+
+      debugline           90
+      getlocal1
+      getlocal3
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            6
+
+      debugline           91
+      pushbyte            0
+      setlocal            7
+
+      debugline           92
+      pushbyte            0
+      setlocal            16
+
+      getlocal            6
+      coerce_a
+      setlocal            17
+
+      jump                L184
+
+L88:
+      label
+      getlocal            17
+      getlocal            16
+      nextvalue
+      coerce_s
+      setlocal            8
+
+      debug               1, "k", 8, 94
+      debug               1, "k", 9, 97
+      debugline           94
+      getlocal            8
+      getlocal            5
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "match"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            9
+
+      debugline           97
+      pushbyte            0
+      setlocal            18
+
+      getlocal            9
+      coerce_a
+      setlocal            19
+
+      jump                L177
+
+L109:
+      label
+      getlocal            19
+      getlocal            18
+      nextvalue
+      coerce_s
+      setlocal            10
+
+      debug               1, "k", 10, 104
+      debug               1, "k", 11, 107
+      debug               1, "k", 12, 108
+      debug               1, "k", 13, 109
+      debug               1, "k", 14, 111
+      debugline           100
+      getlocal            10
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\[{1,}"
+      pushstring          "mg"
+      construct           2
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            10
+
+      debugline           101
+      getlocal            10
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\]{1,}"
+      pushstring          "mg"
+      construct           2
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal            10
+
+      debugline           104
+      getlocal            10
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            11
+
+      debugline           107
+      getlocal            11
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "shift"), 0
+      coerce_s
+      setlocal            12
+
+      debugline           108
+      getlocal            11
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "shift"), 0
+      coerce_s
+      setlocal            13
+
+      debugline           109
+      getlocal            11
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
+      coerce_s
+      setlocal            14
+
+      debugline           111
+      findpropstrict      QName(PackageNamespace("_-68k"), "_-4zt")
+      getlocal            12
+      getlocal            13
+      getlocal            14
+      constructprop       QName(PackageNamespace("_-68k"), "_-4zt"), 3
+      coerce              QName(PackageNamespace("_-68k"), "_-4zt")
+      setlocal            15
+
+      debugline           112
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-0zK")
+      getlocal            12
+      getlocal            15
+      setproperty         MultinameL([PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ProductDataParser.as$3707", "_-68k:ProductDataParser#1"), PackageNamespace("_-68k"), PackageInternalNs("_-68k"), ProtectedNamespace("_-6jv"), StaticProtectedNs("_-6jv"), StaticProtectedNs("_-5bF")])
+
+      debugline           97
+L177:
+      hasnext2            19, 18
+      iftrue              L109
+
+      kill                19
+      kill                18
+      debugline           115
+      inclocal_i          7
+      debugline           92
+L184:
+      hasnext2            17, 16
+      iftrue              L88
+
+      kill                17
+      kill                16
+      debugline           119
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace(""), "_-14A")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           120
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6jv", "_-68k:ProductDataParser#0"), "_-6VG")
+   method
+    refid "_-68k:ProductDataParser/_-6VG"
+    param QName(PackageNamespace("_-ll"), "AssetLoaderEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           122
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 122
+      debugline           124
+      getlex              QName(PackageNamespace("_-2-E"), "_-0jA")
+      pushstring          "productdata download error "
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "status")
+      add
+      callpropvoid        QName(PackageNamespace(""), "logEventLog"), 1
+
+      debugline           125
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      pushstring          "Could not download productdata"
+      pushtrue
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      getproperty         QName(PackageNamespace(""), "_-4Di")
+      callpropvoid        QName(PackageNamespace(""), "error"), 3
+
+      debugline           126
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-68k:ProductDataParser/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 23
+    findproperty        QName(PackageNamespace(""), "_-14A")
+    pushstring          "PDP_product_data_ready"
+    initproperty        QName(PackageNamespace(""), "_-14A")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-14A") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("PDP_product_data_ready") end
+end ; class

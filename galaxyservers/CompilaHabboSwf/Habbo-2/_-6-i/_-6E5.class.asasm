@@ -1,0 +1,140 @@
+class
+ refid "_-6-i:_-6E5"
+ instance QName(PackageNamespace("_-6-i"), "_-6E5")
+  extends QName(PackageNamespace("_-177"), "AdServerConfig")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1-T")
+  iinit
+   refid "_-6-i:_-6E5/iinit"
+   param QName(PackageNamespace(""), "Object")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           28
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 28
+     debugline           29
+     getlocal0
+     pushtrue
+     initproperty        QName(PackageNamespace(""), "oneAdPerRequest")
+
+     debugline           30
+     getlocal0
+     pushtrue
+     initproperty        QName(PackageNamespace(""), "forceImpressionServing")
+
+     debugline           31
+     getlocal0
+     pushstring          "AdTech"
+     getlocal1
+     constructsuper      2
+
+     debugline           32
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(ProtectedNamespace("_-1-T"), "defaultTemplate") flag OVERRIDE
+   method
+    refid "_-6-i:_-6E5/_-1-T:defaultTemplate/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      pushstring          "__api-address__/__zone__/__nondynamic__;alias=__alias____aliaspostfix__;key=__key__;__key-value__;__cookie-name__=__cookie-value__;grp=__group__;misc=__random-number__"
+      debugline           50
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-1-T"), "defaultCustomProperties") flag OVERRIDE
+   method
+    refid "_-6-i:_-6E5/_-1-T:defaultCustomProperties/getter"
+    returns QName(PackageNamespace("_-177"), "CustomProperties")
+    body
+     maxstack 17
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      debugline           54
+      findpropstrict      QName(PackageNamespace("_-177"), "CustomProperties")
+      pushstring          "nondynamic"
+      debugline           56
+      convert_s
+      pushstring          "noperf=1;cc=2;header=yes;cookie=yes;adct=204"
+      pushstring          "alias"
+      debugline           57
+      convert_s
+      pushstring          ""
+      pushstring          "aliaspostfix"
+      debugline           58
+      convert_s
+      pushstring          ""
+      pushstring          "key"
+      debugline           59
+      convert_s
+      pushstring          "key1+key2"
+      pushstring          "key-value"
+      debugline           60
+      convert_s
+      pushstring          ""
+      pushstring          "cookie-name"
+      debugline           61
+      convert_s
+      pushstring          ""
+      pushstring          "cookie-value"
+      debugline           62
+      convert_s
+      pushstring          ""
+      pushstring          "group"
+      debugline           63
+      convert_s
+      pushstring          "[group]"
+      newobject           8
+      constructprop       QName(PackageNamespace("_-177"), "CustomProperties"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-6-i:_-6E5/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

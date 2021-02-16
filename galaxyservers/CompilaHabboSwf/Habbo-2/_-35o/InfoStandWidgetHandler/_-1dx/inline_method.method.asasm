@@ -1,0 +1,79 @@
+method
+ refid "_-35o:InfoStandWidgetHandler/_-1dx/inline_method"
+ param QName(PackageNamespace("_-51c"), "_-5Ck")
+ param QName(PackageNamespace("_-08u"), "_-5OM")
+ returns QName(PackageNamespace(""), "Boolean")
+ body
+  maxstack 2
+  localcount 4
+  initscopedepth 5
+  maxscopedepth 5
+  code
+   debug               1, "k", 0, 975
+   debug               1, "k", 1, 975
+   jump                L23
+
+L3:
+   label
+   debugfile           "k"
+   debugline           978
+   pushtrue
+   returnvalue
+
+L8:
+   label
+   debugline           980
+   findpropstrict      QName(PrivateNamespace("_-4ww", "_-35o:InfoStandWidgetHandler#0"), "_-yS")
+   getlocal1
+   callproperty        QName(PrivateNamespace("_-4ww", "_-35o:InfoStandWidgetHandler#0"), "_-yS"), 1
+   returnvalue
+
+L14:
+   label
+   debugline           982
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "_-ER")
+   getlex              QName(PackageNamespace("_-1N4"), "_-6Zc")
+   getproperty         QName(PackageNamespace(""), "_-0BZ")
+   greaterequals
+   returnvalue
+
+   debugline           976
+L23:
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "_-ZQ")
+   setlocal3
+
+   debugline           977
+   getlex              QName(PackageNamespace("_-08u"), "_-5OM")
+   getproperty         QName(PackageNamespace(""), "_-02s")
+   getlocal3
+   ifstrictne          L34
+
+   pushbyte            0
+   jump                L44
+
+   debugline           979
+L34:
+   getlex              QName(PackageNamespace("_-08u"), "_-5OM")
+   getproperty         QName(PackageNamespace(""), "_-0rN")
+   getlocal3
+   ifstrictne          L40
+
+   pushbyte            1
+   jump                L44
+
+L40:
+   jump                L43
+
+   pushbyte            2
+   jump                L44
+
+L43:
+   pushbyte            2
+L44:
+   kill                3
+   lookupswitch        L14, [L3, L8, L14]
+  end ; code
+ end ; body
+end ; method

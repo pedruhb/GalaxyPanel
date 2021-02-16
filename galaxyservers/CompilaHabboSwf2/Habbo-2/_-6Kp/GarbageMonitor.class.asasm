@@ -1,0 +1,265 @@
+class
+ refid "_-6Kp:GarbageMonitor"
+ instance QName(PackageNamespace("_-6Kp"), "GarbageMonitor")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3DU")
+  iinit
+   refid "_-6Kp:GarbageMonitor/iinit"
+   body
+    maxstack 3
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debugline           12
+     getlocal0
+     constructsuper      0
+
+     debugline           14
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     pushtrue
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 1
+     initproperty        QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_-rV")
+
+     debugline           15
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-6Kp:GarbageMonitor/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      pushundefined
+      coerce_a
+      setlocal1
+
+      debugline           22
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_disposed")
+      iftrue              L46
+
+      debug               1, "k", 0, 24
+      debugline           24
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_-rV")
+      coerce_a
+      setlocal3
+
+      jump                L33
+
+L20:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce_a
+      setlocal1
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_-rV")
+      getlocal1
+      deleteproperty      MultinameL([PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), PrivateNamespace("GarbageMonitor.as$2196", "_-6Kp:GarbageMonitor#1"), PackageNamespace(""), PackageNamespace("_-6Kp"), PackageInternalNs("_-6Kp"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-3DU"), StaticProtectedNs("_-3DU")])
+      pop
+      debugline           24
+L33:
+      hasnext2            3, 2
+      iftrue              L20
+
+      kill                3
+      kill                2
+      debugline           27
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_-rV")
+
+      debugline           28
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_disposed")
+
+      debugline           30
+L46:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "insert")
+   method
+    refid "_-6Kp:GarbageMonitor/insert"
+    param QName(PackageNamespace(""), "Object")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 37
+      debug               1, "k", 1, 37
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_-rV")
+      getlocal1
+      getlocal2
+      pushnull
+      equals
+      iffalse             L18
+
+      getlocal1
+      callproperty        Multiname("toString", [PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), PrivateNamespace("GarbageMonitor.as$2196", "_-6Kp:GarbageMonitor#1"), PackageNamespace(""), PackageNamespace("_-6Kp"), PackageInternalNs("_-6Kp"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-3DU"), StaticProtectedNs("_-3DU")]), 0
+      coerce_a
+      jump                L20
+
+L18:
+      getlocal2
+      coerce_a
+L20:
+      setproperty         MultinameL([PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), PrivateNamespace("GarbageMonitor.as$2196", "_-6Kp:GarbageMonitor#1"), PackageNamespace(""), PackageNamespace("_-6Kp"), PackageInternalNs("_-6Kp"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-3DU"), StaticProtectedNs("_-3DU")])
+
+      debugline           40
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-6Kp:GarbageMonitor/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait getter QName(PackageNamespace(""), "list")
+   method
+    refid "_-6Kp:GarbageMonitor/list/getter"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      pushundefined
+      coerce_a
+      setlocal2
+
+      debug               1, "k", 0, 50
+      debug               1, "k", 1, 52
+      debugline           50
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           52
+      pushbyte            0
+      setlocal3
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_-rV")
+      coerce_a
+      setlocal            4
+
+      jump                L33
+
+L22:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce_a
+      setlocal2
+
+      debugline           53
+      getlocal1
+      getlocal2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           52
+L33:
+      hasnext2            4, 3
+      iftrue              L22
+
+      kill                4
+      kill                3
+      debugline           56
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-3DU", "_-6Kp:GarbageMonitor#0"), "_-rV") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+ end ; instance
+ cinit
+  refid "_-6Kp:GarbageMonitor/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

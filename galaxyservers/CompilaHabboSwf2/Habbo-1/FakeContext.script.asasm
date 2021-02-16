@@ -1,0 +1,33 @@
+script ; 41
+ sinit
+  refid "FakeContext.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           27
+    findpropstrict      Multiname("FakeContext", [PackageNamespace("")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "FakeContext"
+    popscope
+    initproperty        QName(PackageNamespace(""), "FakeContext")
+
+    debugfile           "k"
+    debugline           25
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "FakeContext")
+  #include "FakeContext.class.asasm"
+ end ; trait
+end ; script

@@ -1,0 +1,33 @@
+script ; 3213
+ sinit
+  refid "_-xy:Twinkle.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           7
+    findpropstrict      Multiname("Twinkle", [PackageNamespace("_-xy")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-xy:Twinkle"
+    popscope
+    initproperty        QName(PackageNamespace("_-xy"), "Twinkle")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-xy"), "Twinkle")
+  #include "Twinkle.class.asasm"
+ end ; trait
+end ; script

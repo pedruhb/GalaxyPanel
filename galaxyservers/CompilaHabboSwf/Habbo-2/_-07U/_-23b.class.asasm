@@ -1,0 +1,107 @@
+class
+ refid "_-07U:_-23b"
+ instance QName(PackageNamespace("_-07U"), "_-23b")
+  extends QName(PackageNamespace("_-07U"), "Map")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4n6")
+  iinit
+   refid "_-07U:_-23b/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(Namespace("http://www.adobe.com/2006/actionscript/flash/proxy"), "setProperty") flag OVERRIDE
+   method
+    refid "_-07U:_-23b/http://www.adobe.com/2006/actionscript/flash/proxy:setProperty"
+    param null
+    param null
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           9
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 9
+      debug               1, "k", 1, 9
+      debugline           11
+      findpropstrict      QName(PackageNamespace(""), "_-1vD")
+      getlocal1
+      getlex              QName(PackageNamespace(""), "QName")
+      istypelate
+      iffalse             L18
+
+      findpropstrict      QName(PackageNamespace(""), "QName")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "QName"), 1
+      getproperty         QName(PackageNamespace(""), "localName")
+      coerce_a
+      jump                L20
+
+L18:
+      getlocal1
+      coerce_a
+L20:
+      callproperty        QName(PackageNamespace(""), "_-1vD"), 1
+      iffalse             L34
+
+      debugline           12
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Trying to overwrite value in SingleWriteMap - key: "
+      getlocal1
+      add
+      pushstring          ", value: "
+      add
+      getlocal2
+      add
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           15
+L34:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsupervoid       QName(Namespace("http://www.adobe.com/2006/actionscript/flash/proxy"), "setProperty"), 2
+      debugline           16
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-07U:_-23b/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

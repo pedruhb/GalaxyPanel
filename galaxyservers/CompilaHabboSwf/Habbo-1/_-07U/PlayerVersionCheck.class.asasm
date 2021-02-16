@@ -1,0 +1,257 @@
+class
+ refid "_-07U:PlayerVersionCheck"
+ instance QName(PackageNamespace("_-07U"), "PlayerVersionCheck")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6Uj")
+  iinit
+   refid "_-07U:PlayerVersionCheck/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           66
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-07U:PlayerVersionCheck/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 10
+    debug               1, "k", 1, 11
+    debug               1, "k", 2, 12
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-2xf") slotid 1 type QName(PackageNamespace(""), "int") end
+ trait slot QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-2uW") slotid 2 type QName(PackageNamespace(""), "int") end
+ trait slot QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-3jl") slotid 3 type QName(PackageNamespace(""), "Boolean") end
+ trait method QName(PackageNamespace(""), "_-27n") flag FINAL dispid 3
+  method
+   refid "_-07U:PlayerVersionCheck/_-27n"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 20
+     debug               1, "k", 1, 20
+     debugline           21
+     getlocal1
+     getlex              QName(PackageNamespace("_-07U"), "PlayerVersionCheck")
+     getproperty         QName(PackageNamespace(""), "_-1A1")
+     ifnlt               L15
+
+     debugline           22
+     pushtrue
+     returnvalue
+
+     debugline           23
+L15:
+     getlocal1
+     getlex              QName(PackageNamespace("_-07U"), "PlayerVersionCheck")
+     getproperty         QName(PackageNamespace(""), "_-1A1")
+     equals
+     dup
+     iffalse             L26
+
+     pop
+     getlocal2
+     getlex              QName(PackageNamespace("_-07U"), "PlayerVersionCheck")
+     getproperty         QName(PackageNamespace(""), "_-4V7")
+     lessequals
+L26:
+     iffalse             L31
+
+     debugline           24
+     pushtrue
+     returnvalue
+
+     debugline           26
+L31:
+     pushfalse
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait getter QName(PackageNamespace(""), "_-1A1") flag FINAL dispid 4
+  method
+   refid "_-07U:PlayerVersionCheck/_-1A1/getter"
+   returns QName(PackageNamespace(""), "int")
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           32
+     getlocal0
+     pushscope
+
+     debugline           33
+     findpropstrict      QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-5Tg")
+     callpropvoid        QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-5Tg"), 0
+
+     debugline           34
+     getlex              QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-2xf")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait getter QName(PackageNamespace(""), "_-4V7") flag FINAL dispid 5
+  method
+   refid "_-07U:PlayerVersionCheck/_-4V7/getter"
+   returns QName(PackageNamespace(""), "int")
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           40
+     getlocal0
+     pushscope
+
+     debugline           41
+     findpropstrict      QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-5Tg")
+     callpropvoid        QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-5Tg"), 0
+
+     debugline           42
+     getlex              QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-2uW")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-5Tg") flag FINAL dispid 6
+  method
+   refid "_-07U:PlayerVersionCheck/_-5Tg"
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           50
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 53
+     debug               1, "k", 1, 54
+     debug               1, "k", 2, 55
+     debugline           51
+     getlex              QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-3jl")
+     iffalse             L12
+
+     returnvoid
+
+     debugline           53
+L12:
+     getlex              QName(PackageNamespace("flash.system"), "Capabilities")
+     getproperty         QName(PackageNamespace(""), "version")
+     pushstring          " "
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal1
+
+     debugline           54
+     getlocal1
+     pushbyte            1
+     getproperty         MultinameL([PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), PackageNamespace("_-07U"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("PlayerVersionCheck.as$557", "_-07U:PlayerVersionCheck/_-5Tg"), PackageInternalNs("_-07U"), ProtectedNamespace("_-6Uj"), StaticProtectedNs("_-6Uj")])
+     pushstring          ","
+     callproperty        Multiname("split", [PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), PackageNamespace("_-07U"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("PlayerVersionCheck.as$557", "_-07U:PlayerVersionCheck/_-5Tg"), PackageInternalNs("_-07U"), ProtectedNamespace("_-6Uj"), StaticProtectedNs("_-6Uj")]), 1
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal2
+
+     debugline           55
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     convert_i
+     setlocal3
+
+     debugline           57
+     findproperty        QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-2xf")
+     getlocal3
+     pushbyte            1
+     ifnge               L43
+
+     findpropstrict      QName(PackageNamespace(""), "parseInt")
+     getlocal2
+     pushbyte            0
+     getproperty         MultinameL([PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), PackageNamespace("_-07U"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("PlayerVersionCheck.as$557", "_-07U:PlayerVersionCheck/_-5Tg"), PackageInternalNs("_-07U"), ProtectedNamespace("_-6Uj"), StaticProtectedNs("_-6Uj")])
+     callproperty        QName(PackageNamespace(""), "parseInt"), 1
+     convert_i
+     jump                L44
+
+L43:
+     pushbyte            0
+L44:
+     setproperty         QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-2xf")
+
+     debugline           58
+     findproperty        QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-2uW")
+     getlocal3
+     pushbyte            2
+     ifnge               L57
+
+     findpropstrict      QName(PackageNamespace(""), "parseInt")
+     getlocal2
+     pushbyte            1
+     getproperty         MultinameL([PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), PackageNamespace("_-07U"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("PlayerVersionCheck.as$557", "_-07U:PlayerVersionCheck/_-5Tg"), PackageInternalNs("_-07U"), ProtectedNamespace("_-6Uj"), StaticProtectedNs("_-6Uj")])
+     callproperty        QName(PackageNamespace(""), "parseInt"), 1
+     convert_i
+     jump                L58
+
+L57:
+     pushbyte            0
+L58:
+     setproperty         QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-2uW")
+
+     debugline           60
+     findproperty        QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-3jl")
+     pushtrue
+     setproperty         QName(PrivateNamespace("_-6Uj", "_-07U:PlayerVersionCheck"), "_-3jl")
+
+     debugline           62
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

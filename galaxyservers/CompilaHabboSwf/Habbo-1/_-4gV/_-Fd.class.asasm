@@ -1,0 +1,316 @@
+class
+ refid "_-4gV:_-Fd"
+ instance QName(PackageNamespace("_-4gV"), "_-Fd")
+  extends QName(PackageNamespace("_-4gV"), "_-2FP")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6hl")
+  iinit
+   refid "_-4gV:_-Fd/iinit"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional Integer(16777215)
+   body
+    maxstack 7
+    localcount 5
+    initscopedepth 10
+    maxscopedepth 11
+    code
+     debugfile           "k"
+     debugline           23
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 23
+     debug               1, "k", 1, 23
+     debug               1, "k", 2, 23
+     debug               1, "k", 3, 23
+     debugline           25
+     getlocal0
+     pushstring          ""
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+     getlocal1
+     getlocal2
+     pushbyte            50
+     pushbyte            53
+     constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 4
+     pushfalse
+     getlocal3
+     getlocal            4
+     constructsuper      5
+
+     debugline           26
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_icon") type QName(PackageNamespace("flash.display"), "BitmapData") end
+  trait method QName(PackageNamespace(""), "_-16N")
+   method
+    refid "_-4gV:_-Fd/_-16N"
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 28
+      debug               1, "k", 1, 30
+      debugline           29
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_icon")
+
+      debugline           30
+      findpropstrict      QName(PackageNamespace("flash.display"), "Bitmap")
+      getlocal1
+      constructprop       QName(PackageNamespace("flash.display"), "Bitmap"), 1
+      coerce              QName(PackageNamespace("flash.display"), "Bitmap")
+      setlocal2
+
+      debugline           31
+      getlocal2
+      getlex              QName(PackageNamespace(""), "width")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "width")
+      subtract
+      pushbyte            2
+      divide
+      setproperty         QName(PackageNamespace(""), "x")
+
+      debugline           32
+      getlocal2
+      getlex              QName(PackageNamespace(""), "height")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "height")
+      subtract
+      pushbyte            2
+      divide
+      setproperty         QName(PackageNamespace(""), "y")
+
+      debugline           33
+      findpropstrict      QName(PackageNamespace(""), "addChild")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      debugline           34
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6hl"), "onAddedToStage") flag OVERRIDE
+   method
+    refid "_-4gV:_-Fd/_-6hl:onAddedToStage"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 36
+      debugline           37
+      getlocal0
+      getlocal1
+      callsupervoid       QName(ProtectedNamespace("_-4s9"), "onAddedToStage"), 1
+      debugline           38
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_icon")
+      iffalse             L19
+
+      debugline           39
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_icon")
+      callpropvoid        QName(PackageNamespace(""), "_-16N"), 1
+
+      debugline           41
+L19:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-6hl"), "defaultBackground") flag OVERRIDE
+   method
+    refid "_-4gV:_-Fd/_-6hl:defaultBackground/getter"
+    returns QName(PackageNamespace("flash.display"), "DisplayObject")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debugline           44
+      findpropstrict      QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-3L8")
+      constructprop       QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-3L8"), 0
+      getlex              QName(PackageNamespace("flash.display"), "Bitmap")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-6hl"), "pressedBackground") flag OVERRIDE
+   method
+    refid "_-4gV:_-Fd/_-6hl:pressedBackground/getter"
+    returns QName(PackageNamespace("flash.display"), "DisplayObject")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      debugline           48
+      findpropstrict      QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-4ii")
+      constructprop       QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-4ii"), 0
+      getlex              QName(PackageNamespace("flash.display"), "Bitmap")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-6hl"), "inactiveBackground") flag OVERRIDE
+   method
+    refid "_-4gV:_-Fd/_-6hl:inactiveBackground/getter"
+    returns QName(PackageNamespace("flash.display"), "DisplayObject")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      debugline           52
+      findpropstrict      QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-3L8")
+      constructprop       QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-3L8"), 0
+      getlex              QName(PackageNamespace("flash.display"), "Bitmap")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-6hl"), "rolloverBackground") flag OVERRIDE
+   method
+    refid "_-4gV:_-Fd/_-6hl:rolloverBackground/getter"
+    returns QName(PackageNamespace("flash.display"), "DisplayObject")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      debugline           56
+      findpropstrict      QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-27X")
+      constructprop       QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-27X"), 0
+      getlex              QName(PackageNamespace("flash.display"), "Bitmap")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-6hl"), "currentlyActive") flag OVERRIDE
+   method
+    refid "_-4gV:_-Fd/_-6hl:currentlyActive/getter"
+    returns QName(PackageNamespace("flash.display"), "DisplayObject")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           59
+      getlocal0
+      pushscope
+
+      debugline           60
+      findpropstrict      QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-2AA")
+      constructprop       QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-2AA"), 0
+      getlex              QName(PackageNamespace("flash.display"), "Bitmap")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4gV:_-Fd/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 9
+   maxscopedepth 10
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 10
+    findproperty        QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-3L8")
+    getlex              QName(PackageNamespace("_-4gV"), "_-3Bb")
+    initproperty        QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-3L8")
+
+    debug               1, "k", 1, 13
+    findproperty        QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-4ii")
+    getlex              QName(PackageNamespace("_-4gV"), "_-4By")
+    initproperty        QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-4ii")
+
+    debug               1, "k", 2, 16
+    findproperty        QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-27X")
+    getlex              QName(PackageNamespace("_-4gV"), "_-0aa")
+    initproperty        QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-27X")
+
+    debug               1, "k", 3, 19
+    findproperty        QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-2AA")
+    getlex              QName(PackageNamespace("_-4gV"), "_-0-u")
+    initproperty        QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-2AA")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-3L8") slotid 1 type QName(PackageNamespace(""), "Class") end
+ trait const QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-4ii") slotid 2 type QName(PackageNamespace(""), "Class") end
+ trait const QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-27X") slotid 3 type QName(PackageNamespace(""), "Class") end
+ trait const QName(PrivateNamespace("_-6hl", "_-4gV:_-Fd"), "_-2AA") slotid 4 type QName(PackageNamespace(""), "Class") end
+end ; class

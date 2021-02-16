@@ -1,0 +1,350 @@
+class
+ refid "_-0u3:RoomAdListCtrl"
+ instance QName(PackageNamespace("_-0u3"), "RoomAdListCtrl")
+  extends QName(PackageNamespace("_-0u3"), "GuestRoomListCtrl")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6Mp")
+  iinit
+   refid "_-0u3:RoomAdListCtrl/iinit"
+   param QName(PackageNamespace("_-2i1"), "HabboNavigator")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           16
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 16
+     debug               1, "k", 1, 16
+     debug               1, "k", 2, 16
+     debugline           17
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           18
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("_-6Mp"), "getListEntry") flag OVERRIDE
+   method
+    refid "_-0u3:RoomAdListCtrl/_-6Mp:getListEntry"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-X3"), "IWindowContainer")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 20
+      debug               1, "k", 1, 21
+      debugline           21
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlex              QName(ProtectedNamespace("_-40g"), "_-1on")
+      pushstring          "grs_room_ads_details_phase_one"
+      callproperty        QName(PackageNamespace(""), "getXmlWindow"), 1
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal2
+
+      debugline           23
+      getlocal2
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "background")
+
+      debugline           24
+      getlocal2
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-1oN")
+      getlex              QName(ProtectedNamespace("_-40g"), "_-6fZ")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           25
+      getlocal2
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-35v")
+      getlex              QName(ProtectedNamespace("_-40g"), "onMouseOver")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           26
+      getlocal2
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "_-6Nl")
+      getlex              QName(ProtectedNamespace("_-40g"), "onMouseOut")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           27
+      getlocal2
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6Mp"), "onMouseClick")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           29
+      getlocal2
+      getlex              QName(PackageNamespace("_-00s"), "_-6GL")
+      getproperty         QName(PackageNamespace(""), "_-53K")
+      pushtrue
+      callpropvoid        QName(Namespace("_-6q"), "setParamFlag"), 2
+
+      debugline           30
+      getlocal2
+      getlex              QName(PackageNamespace("_-00s"), "_-6GL")
+      getproperty         QName(PackageNamespace(""), "_-50l")
+      pushtrue
+      callpropvoid        QName(Namespace("_-6q"), "setParamFlag"), 2
+
+      debugline           31
+      getlocal2
+      findpropstrict      QName(ProtectedNamespace("_-40g"), "getBgColor")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-40g"), "getBgColor"), 1
+      setproperty         QName(Namespace("_-6q"), "color")
+
+      debugline           32
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "tags")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           34
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6Mp"), "refreshEntryDetails") flag OVERRIDE
+   method
+    refid "_-0u3:RoomAdListCtrl/_-6Mp:refreshEntryDetails"
+    param QName(PackageNamespace("_-X3"), "IWindowContainer")
+    param QName(PackageNamespace("_-Ce"), "_-0AJ")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 37
+      debug               1, "k", 1, 37
+      debug               1, "k", 2, 39
+      debugline           38
+      getlocal1
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           39
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      getlocal1
+      pushstring          "adname"
+      callproperty        QName(Namespace("_-3si"), "getChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ITextWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal3
+
+      debugline           40
+      getlocal3
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           41
+      getlex              QName(PackageNamespace("_-2i1"), "_-4B6")
+      getlocal3
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-61g")
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "width")
+      callpropvoid        QName(PackageNamespace(""), "_-JJ"), 3
+
+      debugline           43
+      getlex              QName(ProtectedNamespace("_-40g"), "_-1on")
+      getlocal1
+      pushstring          "doormode_doorbell_small"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-1Oj")
+      getlex              QName(PackageNamespace("_-Ce"), "_-4G4")
+      getproperty         QName(PackageNamespace(""), "_-5sH")
+      equals
+      pushnull
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "refreshButton"), 5
+
+      debugline           44
+      getlex              QName(ProtectedNamespace("_-40g"), "_-1on")
+      getlocal1
+      pushstring          "doormode_password_small"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-1Oj")
+      getlex              QName(PackageNamespace("_-Ce"), "_-4G4")
+      getproperty         QName(PackageNamespace(""), "_-6fg")
+      equals
+      pushnull
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "refreshButton"), 5
+
+      debugline           45
+      getlex              QName(ProtectedNamespace("_-40g"), "_-1on")
+      getlocal1
+      pushstring          "doormode_invisible_small"
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-1Oj")
+      getlex              QName(PackageNamespace("_-Ce"), "_-4G4")
+      getproperty         QName(PackageNamespace(""), "_-5mT")
+      equals
+      pushnull
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "refreshButton"), 5
+
+      debugline           47
+      getlex              QName(ProtectedNamespace("_-40g"), "_-2oq")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-1QU")
+      getlocal1
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "userCount")
+      pushstring          "${navigator.usercounttooltip.users}"
+      pushshort           308
+      pushbyte            2
+      callpropvoid        QName(PackageNamespace(""), "refreshUserCount"), 6
+
+      debugline           48
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6Mp", "_-0u3:RoomAdListCtrl#0"), "_-0jD")
+   method
+    refid "_-0u3:RoomAdListCtrl/_-0jD"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-Ce"), "_-0AJ")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 50
+      debugline           51
+      findpropstrict      QName(PackageNamespace(""), "getRooms")
+      callproperty        QName(PackageNamespace(""), "getRooms"), 0
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-6Mp", "_-0u3:RoomAdListCtrl#0"), PackageNamespace(""), ProtectedNamespace("_-6Mp"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RoomAdListCtrl.as$2211", "_-0u3:RoomAdListCtrl#1"), PackageNamespace("_-0u3"), PackageInternalNs("_-0u3"), StaticProtectedNs("_-6Mp"), StaticProtectedNs("_-40g")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6Mp"), "onMouseClick") flag OVERRIDE
+   method
+    refid "_-0u3:RoomAdListCtrl/_-6Mp:onMouseClick"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           54
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 54
+      debug               1, "k", 1, 57
+      debug               1, "k", 2, 58
+      debug               1, "k", 3, 59
+      debugline           57
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           58
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "tags")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-6Mp", "_-0u3:RoomAdListCtrl#0"), PackageNamespace(""), ProtectedNamespace("_-6Mp"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("RoomAdListCtrl.as$2211", "_-0u3:RoomAdListCtrl#1"), PackageNamespace("_-0u3"), PackageInternalNs("_-0u3"), StaticProtectedNs("_-6Mp"), StaticProtectedNs("_-40g")])
+      convert_i
+      setlocal3
+
+      debugline           59
+      getlocal0
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-6Mp", "_-0u3:RoomAdListCtrl#0"), "_-0jD"), 1
+      coerce              QName(PackageNamespace("_-Ce"), "_-0AJ")
+      setlocal            4
+
+      debugline           61
+      getlex              QName(ProtectedNamespace("_-40g"), "_-1on")
+      iffalse             L41
+
+      debugline           62
+      getlex              QName(ProtectedNamespace("_-40g"), "_-1on")
+      findpropstrict      QName(PackageNamespace("_-1sV"), "_-2YC")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "flatId")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "_-61g")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "_-0eH")
+      constructprop       QName(PackageNamespace("_-1sV"), "_-2YC"), 3
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+      debugline           66
+L41:
+      getlocal0
+      getlocal1
+      callsupervoid       QName(ProtectedNamespace("_-40g"), "onMouseClick"), 1
+      debugline           68
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-0u3:RoomAdListCtrl/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

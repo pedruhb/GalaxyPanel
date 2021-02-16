@@ -1,0 +1,137 @@
+class
+ refid "_-3Sc:_-6h7"
+ instance QName(PackageNamespace("_-3Sc"), "_-6h7")
+  extends QName(PackageNamespace("_-3Sc"), "_-3Vm")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2QX")
+  iinit
+   refid "_-3Sc:_-6h7/iinit"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 8
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           9
+     getlocal0
+     pushscope
+
+     debugline           10
+     getlocal0
+     constructsuper      0
+
+     debugline           11
+     findproperty        QName(ProtectedNamespace("_-2ig"), "_-02w")
+     pushtrue
+     initproperty        QName(ProtectedNamespace("_-2ig"), "_-02w")
+
+     debugline           13
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("_-2QX"), "getAdClickUrl") flag OVERRIDE
+   method
+    refid "_-3Sc:_-6h7/_-2QX:getAdClickUrl"
+    param QName(PackageNamespace("_-1JH"), "_-3Ek")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           15
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 15
+      debugline           16
+      getlocal1
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-5fy")
+      callproperty        QName(Namespace("_-65g"), "getString"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2QX"), "handleAdClick") flag OVERRIDE
+   method
+    refid "_-3Sc:_-6h7/_-2QX:handleAdClick"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 19
+      debug               1, "k", 1, 19
+      debug               1, "k", 2, 19
+      debugline           20
+      getlocal3
+      pushstring          "http"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            0
+      ifne                L19
+
+      debugline           21
+      getlex              QName(PackageNamespace("_-2-E"), "_-0jA")
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "_-0FI"), 1
+
+      jump                L33
+
+      debugline           23
+L19:
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      pushnull
+      ifeq                L33
+
+      debugline           24
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-m9")
+      getlex              QName(PackageNamespace("_-4mE"), "_-m9")
+      getproperty         QName(PackageNamespace(""), "_-Pv")
+      getlex              QName(PackageNamespace(""), "object")
+      pushstring          ""
+      getlocal3
+      constructprop       QName(PackageNamespace("_-4mE"), "_-m9"), 4
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           27
+L33:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3Sc:_-6h7/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 7
+   maxscopedepth 8
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

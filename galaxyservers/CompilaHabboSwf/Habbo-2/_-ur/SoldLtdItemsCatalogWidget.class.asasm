@@ -1,0 +1,367 @@
+class
+ refid "_-ur:SoldLtdItemsCatalogWidget"
+ instance QName(PackageNamespace("_-ur"), "SoldLtdItemsCatalogWidget")
+  extends QName(PackageNamespace("_-ur"), "CatalogWidget")
+  implements Multiname("_-0su", [PackageNamespace("_-ur")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-tP")
+  iinit
+   refid "_-ur:SoldLtdItemsCatalogWidget/iinit"
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   param QName(PackageNamespace("_-47b"), "HabboCatalog")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           21
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 21
+     debug               1, "k", 1, 21
+     debugline           22
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           23
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-tP", "_-ur:SoldLtdItemsCatalogWidget"), "_-2--")
+
+     debugline           24
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-tP", "_-ur:SoldLtdItemsCatalogWidget"), "_-2--") type QName(PackageNamespace("_-47b"), "HabboCatalog") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-ur:SoldLtdItemsCatalogWidget/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           26
+      getlocal0
+      pushscope
+
+      debugline           27
+      getlex              QName(PackageNamespace(""), "disposed")
+      iftrue              L18
+
+      debugline           28
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "SELECT_PRODUCT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-tP", "_-ur:SoldLtdItemsCatalogWidget"), "_-5nb")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           29
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           31
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-ur:SoldLtdItemsCatalogWidget/init"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L12
+
+      debugline           35
+      pushfalse
+      returnvalue
+
+      debugline           37
+L12:
+      findpropstrict      QName(ProtectedNamespace("_-5qb"), "_-4lH")
+      getlex              QName(PackageNamespace("_-ur"), "_-2Zm")
+      getproperty         QName(PackageNamespace(""), "_-0hL")
+      callpropvoid        QName(ProtectedNamespace("_-5qb"), "_-4lH"), 1
+
+      debugline           38
+      getlex              QName(PackageNamespace(""), "window")
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           39
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "SELECT_PRODUCT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-tP", "_-ur:SoldLtdItemsCatalogWidget"), "_-5nb")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           40
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-tP", "_-ur:SoldLtdItemsCatalogWidget"), "_-5nb")
+   method
+    refid "_-ur:SoldLtdItemsCatalogWidget/_-5nb"
+    param QName(PackageNamespace("_-09G"), "_-6Lx")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-pD"), "_-QF")>)
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-pD"), "_-QF")
+      setlocal3
+
+      debug               1, "k", 0, 43
+      debugline           44
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L22
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "offer")
+      pushnull
+      equals
+L22:
+      dup
+      iftrue              L30
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "offer")
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      pushnull
+      equals
+L30:
+      iffalse             L34
+
+      debugline           45
+      returnvoid
+
+      debugline           49
+L34:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "mode")
+      getlex              QName(PackageNamespace("_-k3"), "CatalogPage")
+      getproperty         QName(PackageNamespace(""), "_-4Zz")
+      ifne                L103
+
+      debug               1, "k", 1, 50
+      debug               1, "k", 2, 55
+      debugline           50
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-tP", "_-ur:SoldLtdItemsCatalogWidget"), "_-2--")
+      getproperty         QName(PackageNamespace(""), "_-5od")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "offer")
+      getproperty         QName(Namespace("_-6Vz"), "_-2Az")
+      callproperty        QName(Namespace("_-4qK"), "_-53C"), 1
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-pD"), "_-QF")>)
+      setlocal2
+
+      debugline           51
+      getlocal2
+      iftrue              L63
+
+      findpropstrict      Multiname("Vector", [PackageNamespace("__AS3__.vec")])
+      getproperty         Multiname("Vector", [PrivateNamespace("_-tP", "_-ur:SoldLtdItemsCatalogWidget"), PackageNamespace(""), PackageNamespace("_-ur"), PackageNamespace("__AS3__.vec"), PrivateNamespace("SoldLtdItemsCatalogWidget.as$3433", "_-ur:SoldLtdItemsCatalogWidget/_-5nb"), PackageInternalNs("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-tP"), StaticProtectedNs("_-tP"), StaticProtectedNs("_-5qb")])
+      getlex              QName(PackageNamespace("_-pD"), "_-QF")
+      applytype           1
+      pushbyte            0
+      construct           1
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-pD"), "_-QF")>)
+      setlocal2
+
+      debugline           55
+L63:
+      pushbyte            0
+      setlocal            4
+
+      getlocal2
+      coerce_a
+      setlocal            5
+
+      jump                L98
+
+L69:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace("_-pD"), "_-QF")
+      setlocal3
+
+      debugline           56
+      getlocal3
+      getproperty         QName(Namespace("_-2gB"), "pageName")
+      getlex              QName(PackageNamespace("_-23E"), "_-6ja")
+      getproperty         QName(PackageNamespace(""), "_-0FF")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifngt               L98
+
+      debugline           57
+      getlex              QName(PackageNamespace(""), "window")
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           58
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-0B-")
+      getlex              QName(PackageNamespace("_-ur"), "_-2Zm")
+      getproperty         QName(PackageNamespace(""), "PURCHASE")
+      pushfalse
+      constructprop       QName(PackageNamespace("_-09G"), "_-0B-"), 2
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           59
+      returnvoid
+
+      debugline           55
+L98:
+      hasnext2            5, 4
+      iftrue              L69
+
+      kill                5
+      kill                4
+      debugline           65
+L103:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "layoutCode")
+      pushstring          "sold_ltd_items"
+      ifne                L122
+
+      debugline           66
+      getlex              QName(PackageNamespace(""), "window")
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           67
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-0B-")
+      getlex              QName(PackageNamespace("_-ur"), "_-2Zm")
+      getproperty         QName(PackageNamespace(""), "PURCHASE")
+      pushfalse
+      constructprop       QName(PackageNamespace("_-09G"), "_-0B-"), 2
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           68
+      returnvoid
+
+      debugline           71
+L122:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "offer")
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "isUniqueLimitedItem")
+      convert_b
+      dup
+      iffalse             L136
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "offer")
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "uniqueLimitedItemsLeft")
+      pushbyte            0
+      equals
+L136:
+      iffalse             L151
+
+      debugline           72
+      getlex              QName(PackageNamespace(""), "window")
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           73
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-0B-")
+      getlex              QName(PackageNamespace("_-ur"), "_-2Zm")
+      getproperty         QName(PackageNamespace(""), "PURCHASE")
+      pushfalse
+      constructprop       QName(PackageNamespace("_-09G"), "_-0B-"), 2
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      jump                L163
+
+      debugline           75
+L151:
+      getlex              QName(PackageNamespace(""), "window")
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           76
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-0B-")
+      getlex              QName(PackageNamespace("_-ur"), "_-2Zm")
+      getproperty         QName(PackageNamespace(""), "PURCHASE")
+      pushtrue
+      constructprop       QName(PackageNamespace("_-09G"), "_-0B-"), 2
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           78
+L163:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ur:SoldLtdItemsCatalogWidget/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

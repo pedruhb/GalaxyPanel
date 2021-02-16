@@ -1,0 +1,128 @@
+class
+ refid "_-5Sp:ActivePartSet"
+ instance QName(PackageNamespace("_-5Sp"), "ActivePartSet")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1jj")
+  iinit
+   refid "_-5Sp:ActivePartSet/iinit"
+   param QName(PackageNamespace(""), "XML")
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           11
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "XML")
+     setlocal2
+
+     debug               1, "k", 0, 11
+     debugline           11
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 1, 15
+     debugline           12
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "String")
+     getlocal1
+     getproperty         MultinameA("id", [PrivateNamespace("_-1jj", "_-5Sp:ActivePartSet"), PackageNamespace(""), PrivateNamespace("ActivePartSet.as$623", "_-5Sp:ActivePartSet/iinit"), PackageNamespace("_-5Sp"), PackageInternalNs("_-5Sp"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1jj"), StaticProtectedNs("_-1jj")])
+     callproperty        QName(PackageNamespace(""), "String"), 1
+     initproperty        QName(PrivateNamespace("_-1jj", "_-5Sp:ActivePartSet"), "_-3GO")
+
+     debugline           13
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     initproperty        QName(PrivateNamespace("_-1jj", "_-5Sp:ActivePartSet"), "_-0we")
+
+     debugline           15
+     pushbyte            0
+     setlocal3
+
+     getlocal1
+     getproperty         Multiname("activePart", [PrivateNamespace("_-1jj", "_-5Sp:ActivePartSet"), PackageNamespace(""), PrivateNamespace("ActivePartSet.as$623", "_-5Sp:ActivePartSet/iinit"), PackageNamespace("_-5Sp"), PackageInternalNs("_-5Sp"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1jj"), StaticProtectedNs("_-1jj")])
+     coerce_a
+     setlocal            4
+
+     jump                L48
+
+L32:
+     label
+     getlocal            4
+     getlocal3
+     nextvalue
+     coerce              QName(PackageNamespace(""), "XML")
+     setlocal2
+
+     debugline           16
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-1jj", "_-5Sp:ActivePartSet"), "_-0we")
+     findpropstrict      QName(PackageNamespace(""), "String")
+     getlocal2
+     pushstring          "set-type"
+     getproperty         MultinameLA([PackageInternalNs("_-5Sp")])
+     callproperty        QName(PackageNamespace(""), "String"), 1
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           15
+L48:
+     hasnext2            4, 3
+     iftrue              L32
+
+     kill                4
+     kill                3
+     debugline           18
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1jj", "_-5Sp:ActivePartSet"), "_-3GO") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-1jj", "_-5Sp:ActivePartSet"), "_-0we") type QName(PackageNamespace(""), "Array") end
+  trait getter QName(PackageNamespace(""), "_-3bX")
+   method
+    refid "_-5Sp:ActivePartSet/_-3bX/getter"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           24
+      getlocal0
+      pushscope
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1jj", "_-5Sp:ActivePartSet"), "_-0we")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5Sp:ActivePartSet/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

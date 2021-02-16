@@ -1,0 +1,33 @@
+script ; 5086
+ sinit
+  refid "_-xy:ProgressBar.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           8
+    findpropstrict      Multiname("ProgressBar", [PackageNamespace("_-xy")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-xy:ProgressBar"
+    popscope
+    initproperty        QName(PackageNamespace("_-xy"), "ProgressBar")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-xy"), "ProgressBar")
+  #include "ProgressBar.class.asasm"
+ end ; trait
+end ; script

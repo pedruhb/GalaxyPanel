@@ -1,0 +1,33 @@
+script ; 4517
+ sinit
+  refid "_-R:FurniView.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           43
+    findpropstrict      Multiname("FurniView", [PackageNamespace("_-R")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-R:FurniView"
+    popscope
+    initproperty        QName(PackageNamespace("_-R"), "FurniView")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-R"), "FurniView")
+  #include "FurniView.class.asasm"
+ end ; trait
+end ; script

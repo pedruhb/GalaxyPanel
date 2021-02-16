@@ -1,0 +1,260 @@
+class
+ refid "_-1h0:CoreCommunicationManager"
+ instance QName(PackageNamespace("_-1h0"), "CoreCommunicationManager")
+  extends QName(PackageNamespace("_-1M6"), "Component")
+  implements Multiname("_-1N", [PackageNamespace("_-1h0")])
+  implements Multiname("_-wE", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2hH")
+  iinit
+   refid "_-1h0:CoreCommunicationManager/iinit"
+   param QName(PackageNamespace("_-1M6"), "_-6ka")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional Integer(0)
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           16
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 16
+     debug               1, "k", 1, 16
+     debugline           17
+     getlocal0
+     getlocal1
+     getlocal2
+     constructsuper      2
+
+     debugline           18
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     initproperty        QName(PrivateNamespace("_-2hH", "_-1h0:CoreCommunicationManager"), "_-3FW")
+
+     debugline           20
+     findpropstrict      QName(PackageNamespace(""), "registerUpdateReceiver")
+     getlocal0
+     pushbyte            0
+     callpropvoid        QName(PackageNamespace(""), "registerUpdateReceiver"), 2
+
+     debugline           21
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2hH", "_-1h0:CoreCommunicationManager"), "_-3FW") type QName(PackageNamespace(""), "Array") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-1h0:CoreCommunicationManager/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-12d"), "_-5NC")
+      setlocal1
+
+      debug               1, "k", 0, 26
+      debugline           24
+      findpropstrict      QName(PackageNamespace(""), "removeUpdateReceiver")
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "removeUpdateReceiver"), 1
+
+      debugline           26
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2hH", "_-1h0:CoreCommunicationManager"), "_-3FW")
+      coerce_a
+      setlocal3
+
+      jump                L30
+
+L20:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-12d"), "_-5NC")
+      setlocal1
+
+      debugline           27
+      getlocal1
+      callpropvoid        QName(Namespace("_-6NY"), "dispose"), 0
+
+      debugline           26
+L30:
+      hasnext2            3, 2
+      iftrue              L20
+
+      kill                3
+      kill                2
+      debugline           29
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2hH", "_-1h0:CoreCommunicationManager"), "_-3FW")
+
+      debugline           31
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           32
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1o3")
+   method
+    refid "_-1h0:CoreCommunicationManager/_-1o3"
+    param QName(PackageNamespace("_-12d"), "_-19a")
+    returns QName(PackageNamespace("_-12d"), "_-5NC")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 34
+      debug               1, "k", 1, 35
+      debugline           35
+      findpropstrict      QName(PackageNamespace("_-12d"), "SocketConnection")
+      getlocal0
+      getlocal1
+      constructprop       QName(PackageNamespace("_-12d"), "SocketConnection"), 2
+      coerce              QName(PackageNamespace("_-12d"), "_-5NC")
+      setlocal2
+
+      debugline           36
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2hH", "_-1h0:CoreCommunicationManager"), "_-3FW")
+      getlocal2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           37
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-1h0:CoreCommunicationManager/update"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-12d"), "_-5NC")
+      setlocal3
+
+      debug               1, "k", 0, 44
+      debug               1, "k", 1, 45
+      debugline           45
+      pushbyte            0
+      setlocal2
+
+      jump                L43
+
+L13:
+      label
+      debug               1, "k", 2, 46
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2hH", "_-1h0:CoreCommunicationManager"), "_-3FW")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-2hH", "_-1h0:CoreCommunicationManager"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("CoreCommunicationManager.as$3802", "_-1h0:CoreCommunicationManager/update"), PackageNamespace("_-1h0"), PackageInternalNs("_-1h0"), ProtectedNamespace("_-2hH"), StaticProtectedNs("_-2hH"), StaticProtectedNs("_-6iR")])
+      coerce              QName(PackageNamespace("_-12d"), "_-5NC")
+      setlocal3
+
+      debugline           47
+      getlocal3
+      callpropvoid        QName(Namespace("_-6NY"), "_-0v4"), 0
+
+      debugline           48
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L30
+
+      returnvoid
+
+      debugline           49
+L30:
+      getlocal3
+      getproperty         QName(Namespace("_-6NY"), "disposed")
+      iffalse             L41
+
+      debugline           50
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2hH", "_-1h0:CoreCommunicationManager"), "_-3FW")
+      getlocal2
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      jump                L43
+
+      debugline           53
+L41:
+      inclocal_i          2
+      debugline           45
+L43:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2hH", "_-1h0:CoreCommunicationManager"), "_-3FW")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L13
+
+      debugline           56
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1h0:CoreCommunicationManager/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

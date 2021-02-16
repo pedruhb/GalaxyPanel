@@ -1,0 +1,246 @@
+class
+ refid "_-yA:_-662"
+ instance QName(PackageNamespace("_-yA"), "_-662")
+  extends QName(PackageNamespace("_-yA"), "_-2gS")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3v9")
+  iinit
+   refid "_-yA:_-662/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("flash")
+   optional Null()
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           28
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 28
+     debug               1, "k", 1, 28
+     debugline           29
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           30
+     findproperty        QName(ProtectedNamespace("_-ay"), "_-2ZN")
+     getlocal2
+     pushnull
+     ifeq                L18
+
+     getlocal2
+     coerce_s
+     jump                L20
+
+L18:
+     pushnull
+     coerce_s
+L20:
+     initproperty        QName(ProtectedNamespace("_-ay"), "_-2ZN")
+
+     debugline           31
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("_-3v9"), "_-6D4")
+   method
+    refid "_-yA:_-662/_-3v9:_-6D4"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      debug               1, "k", 0, 33
+      debug               1, "k", 1, 33
+      debug               1, "k", 2, 33
+      debug               1, "k", 3, 34
+      debugline           35
+      getlocal2
+      pushbyte            255
+      greaterthan
+      dup
+      iffalse             L21
+
+      pop
+      getlocal3
+      pushbyte            255
+      greaterthan
+L21:
+      iffalse             L56
+
+      debugline           36
+      findpropstrict      QName(ProtectedNamespace("_-ay"), "replace")
+      getlex              QName(ProtectedNamespace("_-ay"), "_-2ZN")
+      pushnull
+      ifne                L29
+
+      pushstring          "<iframe src='_code_' hspace=0 vspace=0 frameborder=0 marginheight=0 marginwidth=0 scrolling=no width=_width_ height=_height_><p>Your browser does not support iframes.</p></iframe>"
+      jump                L31
+
+L29:
+      getlex              QName(ProtectedNamespace("_-ay"), "_-2ZN")
+      coerce_s
+L31:
+      pushstring          "code"
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-ay"), "replace"), 3
+      coerce_s
+      setlocal            4
+
+      debugline           37
+      findpropstrict      QName(ProtectedNamespace("_-ay"), "replace")
+      getlocal            4
+      pushstring          "width"
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      callproperty        QName(ProtectedNamespace("_-ay"), "replace"), 3
+      coerce_s
+      setlocal            4
+
+      debugline           38
+      findpropstrict      QName(ProtectedNamespace("_-ay"), "replace")
+      getlocal            4
+      pushstring          "height"
+      getlocal3
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      callproperty        QName(ProtectedNamespace("_-ay"), "replace"), 3
+      coerce_s
+      setlocal            4
+
+      jump                L70
+
+      debugline           41
+L56:
+      findpropstrict      QName(ProtectedNamespace("_-ay"), "replace")
+      getlex              QName(ProtectedNamespace("_-ay"), "_-2ZN")
+      pushnull
+      ifne                L62
+
+      pushstring          "<iframe src='_code_' hspace=0 vspace=0 frameborder=0 marginheight=0 marginwidth=0 scrolling=no><p>Your browser does not support iframes.</p></iframe>"
+      jump                L64
+
+L62:
+      getlex              QName(ProtectedNamespace("_-ay"), "_-2ZN")
+      coerce_s
+L64:
+      pushstring          "code"
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-ay"), "replace"), 3
+      coerce_s
+      setlocal            4
+
+      debugline           43
+L70:
+      getlocal            4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getContent") flag OVERRIDE
+   method
+    refid "_-yA:_-662/getContent"
+    param QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 46
+      debugline           47
+      getlocal1
+      pushnull
+      ifeq                L37
+
+      debugline           48
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-60i"), 0
+      iffalse             L18
+
+      debugline           49
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "codeBlock")
+      returnvalue
+
+      debugline           52
+L18:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "url")
+      pushnull
+      ifeq                L33
+
+      debugline           53
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "url")
+      getproperty         QName(PackageNamespace(""), "url")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      callproperty        QName(ProtectedNamespace("_-3v9"), "_-6D4"), 3
+      returnvalue
+
+L33:
+      pushstring          ""
+      debugline           55
+      returnvalue
+
+      jump                L39
+
+L37:
+      pushstring          "Non-linear video ad not available"
+      debugline           58
+L39:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-yA:_-662/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

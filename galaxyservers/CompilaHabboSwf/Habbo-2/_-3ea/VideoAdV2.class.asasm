@@ -1,0 +1,458 @@
+class
+ refid "_-3ea:VideoAdV2"
+ instance QName(PackageNamespace("_-3ea"), "VideoAdV2")
+  extends QName(PackageNamespace("_-3ea"), "VideoAd")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5Mv")
+  iinit
+   refid "_-3ea:VideoAdV2/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           28
+     getlocal0
+     pushscope
+
+     debugline           29
+     getlocal0
+     constructsuper      0
+
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-5Mv"), "_-3iy") type QName(PackageNamespace(""), "String") end
+  trait getter QName(PackageNamespace(""), "_-5yn")
+   method
+    refid "_-3ea:VideoAdV2/_-5yn/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      debugline           33
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5Mv"), "_-3iy")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "_-5yn")
+   method
+    refid "_-3ea:VideoAdV2/_-5yn/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 36
+      debugline           37
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-5Mv"), "_-3iy")
+
+      debugline           38
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "injectAllTrackingData") flag OVERRIDE
+   method
+    refid "_-3ea:VideoAdV2/injectAllTrackingData"
+    param QName(PackageNamespace("_-3ea"), "VideoAd")
+    returns QName(PackageNamespace("_-3ea"), "VideoAd")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal2
+
+      debug               1, "k", 0, 43
+      debugline           47
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-19n")
+      callpropvoid        QName(PackageNamespace(""), "addImpressions"), 1
+
+      debugline           48
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-5SC")
+      callpropvoid        QName(PackageNamespace(""), "addTrackingEventItems"), 1
+
+      debugline           49
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      pushnull
+      ifeq                L59
+
+      debugline           50
+      getlocal1
+      getlex              QName(PackageNamespace("_-3ea"), "VideoAdV2")
+      istypelate
+      iffalse             L44
+
+      debugline           52
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "linearVideoAd")
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      getproperty         QName(PackageNamespace(""), "trackingEvents")
+      callpropvoid        QName(PackageNamespace(""), "addTrackingEventItems"), 1
+
+      debugline           53
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "linearVideoAd")
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      getproperty         QName(PackageNamespace(""), "clickTracking")
+      callpropvoid        QName(PackageNamespace(""), "addClickTrackingItems"), 1
+
+      debugline           54
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "linearVideoAd")
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      getproperty         QName(PackageNamespace(""), "customClicks")
+      callpropvoid        QName(PackageNamespace(""), "addCustomClickTrackingItems"), 1
+
+      jump                L59
+
+      debugline           59
+L44:
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      getproperty         QName(PackageNamespace(""), "trackingEvents")
+      callpropvoid        QName(PackageNamespace(""), "addTrackingEventItems"), 1
+
+      debugline           60
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      getproperty         QName(PackageNamespace(""), "clickTracking")
+      callpropvoid        QName(PackageNamespace(""), "addClickTrackingItems"), 1
+
+      debugline           61
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      getproperty         QName(PackageNamespace(""), "customClicks")
+      callpropvoid        QName(PackageNamespace(""), "addCustomClickTrackingItems"), 1
+
+      debugline           64
+L59:
+      findpropstrict      QName(PackageNamespace(""), "hasNonLinearAds")
+      callproperty        QName(PackageNamespace(""), "hasNonLinearAds"), 0
+      iffalse             L91
+
+      debug               1, "k", 1, 65
+      debugline           65
+      pushbyte            0
+      setlocal2
+
+      jump                L86
+
+L67:
+      label
+      debugline           66
+      getlocal2
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAds")
+      getproperty         QName(PackageNamespace(""), "length")
+      ifnlt               L85
+
+      debugline           68
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAds")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-5Mv", "_-3ea:VideoAdV2#1"), ProtectedNamespace("_-5Mv"), PackageNamespace(""), PackageNamespace("_-3ea"), PrivateNamespace("VideoAdV2.as$4946", "_-3ea:VideoAdV2#0"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5Mv"), StaticProtectedNs("_-6S9"), StaticProtectedNs("_-1bs")])
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-5vK")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-5Mv", "_-3ea:VideoAdV2#1"), ProtectedNamespace("_-5Mv"), PackageNamespace(""), PackageNamespace("_-3ea"), PrivateNamespace("VideoAdV2.as$4946", "_-3ea:VideoAdV2#0"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5Mv"), StaticProtectedNs("_-6S9"), StaticProtectedNs("_-1bs")])
+      getproperty         Multiname("trackingEvents", [PrivateNamespace("_-5Mv", "_-3ea:VideoAdV2#1"), ProtectedNamespace("_-5Mv"), PackageNamespace(""), PackageNamespace("_-3ea"), PrivateNamespace("VideoAdV2.as$4946", "_-3ea:VideoAdV2#0"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5Mv"), StaticProtectedNs("_-6S9"), StaticProtectedNs("_-1bs")])
+      callpropvoid        Multiname("addTrackingEventItems", [PrivateNamespace("_-5Mv", "_-3ea:VideoAdV2#1"), ProtectedNamespace("_-5Mv"), PackageNamespace(""), PackageNamespace("_-3ea"), PrivateNamespace("VideoAdV2.as$4946", "_-3ea:VideoAdV2#0"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5Mv"), StaticProtectedNs("_-6S9"), StaticProtectedNs("_-1bs")]), 1
+
+      debugline           65
+L85:
+      inclocal_i          2
+L86:
+      getlocal2
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-5vK")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L67
+
+      debugline           72
+L91:
+      findpropstrict      QName(PackageNamespace(""), "hasCompanionAds")
+      callproperty        QName(PackageNamespace(""), "hasCompanionAds"), 0
+      iffalse             L95
+
+      debugline           76
+L95:
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-58a")
+   method
+    refid "_-3ea:VideoAdV2/_-58a"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           79
+      getlocal0
+      pushscope
+
+      debugline           80
+      findpropstrict      QName(PackageNamespace(""), "hasLinearAd")
+      callproperty        QName(PackageNamespace(""), "hasLinearAd"), 0
+      iffalse             L13
+
+      debugline           81
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      callproperty        QName(PackageNamespace(""), "hasTrackingEvents"), 0
+      returnvalue
+
+      debugline           83
+L13:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "trackingEvents") flag OVERRIDE
+   method
+    refid "_-3ea:VideoAdV2/trackingEvents/getter"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           86
+      getlocal0
+      pushscope
+
+      debugline           87
+      findpropstrict      QName(PackageNamespace(""), "isLinear")
+      callproperty        QName(PackageNamespace(""), "isLinear"), 0
+      iffalse             L13
+
+      debugline           88
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      getproperty         QName(PackageNamespace(""), "trackingEvents")
+      returnvalue
+
+      debugline           90
+L13:
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4nT")
+   method
+    refid "_-3ea:VideoAdV2/_-4nT"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           93
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal1
+
+      debugline           94
+      findpropstrict      QName(PackageNamespace(""), "hasNonLinearAds")
+      callproperty        QName(PackageNamespace(""), "hasNonLinearAds"), 0
+      iffalse             L32
+
+      debug               1, "k", 0, 95
+      debugline           95
+      pushbyte            0
+      setlocal1
+
+      jump                L27
+
+L15:
+      label
+      debugline           96
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-5vK")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-5Mv", "_-3ea:VideoAdV2#1"), ProtectedNamespace("_-5Mv"), PackageNamespace(""), PackageNamespace("_-3ea"), PrivateNamespace("VideoAdV2.as$4946", "_-3ea:VideoAdV2#0"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5Mv"), StaticProtectedNs("_-6S9"), StaticProtectedNs("_-1bs")])
+      callproperty        Multiname("hasTrackingEvents", [PrivateNamespace("_-5Mv", "_-3ea:VideoAdV2#1"), ProtectedNamespace("_-5Mv"), PackageNamespace(""), PackageNamespace("_-3ea"), PrivateNamespace("VideoAdV2.as$4946", "_-3ea:VideoAdV2#0"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5Mv"), StaticProtectedNs("_-6S9"), StaticProtectedNs("_-1bs")]), 0
+      iffalse             L26
+
+      debugline           97
+      pushtrue
+      returnvalue
+
+      debugline           95
+L26:
+      inclocal_i          1
+L27:
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-5vK")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L15
+
+      debugline           101
+L32:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "hasTrackingEvents") flag OVERRIDE
+   method
+    refid "_-3ea:VideoAdV2/hasTrackingEvents"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           104
+      getlocal0
+      pushscope
+
+      debugline           105
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-58a"), 0
+      convert_b
+      dup
+      iftrue              L14
+
+      pop
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-4nT"), 0
+      convert_b
+L14:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-5Mv"), "_triggerTrackingEvent") flag OVERRIDE
+   method
+    refid "_-3ea:VideoAdV2/_-5Mv:_triggerTrackingEvent"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           108
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 108
+      debug               1, "k", 1, 108
+      debugline           109
+      findpropstrict      QName(PackageNamespace(""), "isLinear")
+      callproperty        QName(PackageNamespace(""), "isLinear"), 0
+      iffalse             L21
+
+      debugline           110
+      getlex              QName(ProtectedNamespace("_-6S9"), "_-1gx")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "triggerTrackingEvent"), 1
+
+      debugline           111
+      getlocal0
+      getlocal1
+      getlocal2
+      callsupervoid       QName(ProtectedNamespace("_-6S9"), "_triggerTrackingEvent"), 2
+      jump                L32
+
+      debugline           113
+L21:
+      findpropstrict      QName(PackageNamespace(""), "isNonLinear")
+      callproperty        QName(PackageNamespace(""), "isNonLinear"), 0
+      iffalse             L26
+
+      jump                L32
+
+      debugline           116
+L26:
+      findpropstrict      QName(PackageNamespace(""), "_-6Ah")
+      callproperty        QName(PackageNamespace(""), "_-6Ah"), 0
+      iffalse             L32
+
+      jump                L32
+
+      debugline           120
+      debugline           122
+L32:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3ea:VideoAdV2/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

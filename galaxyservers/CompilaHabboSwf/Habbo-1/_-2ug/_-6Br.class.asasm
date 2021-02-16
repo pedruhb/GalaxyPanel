@@ -1,0 +1,165 @@
+class
+ refid "_-2ug:_-6Br"
+ instance QName(PackageNamespace("_-2ug"), "_-6Br")
+  extends QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-8P")
+  iinit
+   refid "_-2ug:_-6Br/iinit"
+   param QName(PackageNamespace("_-1M6"), "_-wE")
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           25
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 25
+     debug               1, "k", 1, 29
+     debugline           27
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-8P"), "_receiver")
+
+     debugline           29
+     findpropstrict      QName(PackageNamespace("flash.utils"), "getQualifiedClassName")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-8P"), "_receiver")
+     callproperty        QName(PackageNamespace("flash.utils"), "getQualifiedClassName"), 1
+     coerce_s
+     setlocal2
+
+     debugline           31
+     getlocal0
+     getlocal2
+     getlocal2
+     pushstring          ":"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "lastIndexOf"), 1
+     pushbyte            1
+     add
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+     constructsuper      1
+
+     debugline           32
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "receiver")
+   method
+    refid "_-2ug:_-6Br/receiver/getter"
+    returns QName(PackageNamespace("_-1M6"), "_-wE")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           16
+      getlocal0
+      pushscope
+
+      debugline           17
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-8P"), "_receiver")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(ProtectedNamespace("_-8P"), "_receiver") type QName(PackageNamespace("_-1M6"), "_-wE") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-2ug:_-6Br/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debugline           39
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-8P"), "_receiver")
+
+      debugline           40
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           41
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-2ug:_-6Br/update"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 43
+      debugline           45
+      getlex              QName(PackageNamespace(""), "paused")
+      iftrue              L20
+
+      debugline           46
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "start"), 0
+      debugline           47
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-8P"), "_receiver")
+      getlocal1
+      callpropvoid        QName(Namespace("_-4JZ"), "update"), 1
+
+      debugline           48
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "stop"), 0
+      debugline           50
+L20:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2ug:_-6Br/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

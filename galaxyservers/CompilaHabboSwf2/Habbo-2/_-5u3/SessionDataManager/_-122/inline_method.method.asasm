@@ -1,0 +1,36 @@
+method
+ refid "_-5u3:SessionDataManager/_-122/inline_method"
+ param QName(PackageNamespace("_-5Fj"), "_-2e")
+ param QName(PackageNamespace("_-CA"), "WindowEvent")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 2
+  localcount 3
+  initscopedepth 6
+  maxscopedepth 6
+  code
+   debug               1, "k", 0, 880
+   debug               1, "k", 1, 880
+   debugfile           "k"
+   debugline           881
+   getlocal1
+   callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+   debugline           882
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "type")
+   getlex              QName(PackageNamespace("_-CA"), "WindowEvent")
+   getproperty         QName(PackageNamespace(""), "_-3Ew")
+   ifne                L17
+
+   debugline           883
+   findpropstrict      QName(PackageNamespace(""), "sendSpecialCommandMessage")
+   pushstring          ":pickallbc"
+   callpropvoid        QName(PackageNamespace(""), "sendSpecialCommandMessage"), 1
+
+   debugline           885
+L17:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

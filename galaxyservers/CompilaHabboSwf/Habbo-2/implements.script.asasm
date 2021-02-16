@@ -1,0 +1,37 @@
+script ; 817
+ sinit
+  refid "implements.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("implements", [PackageNamespace("")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.text"), "Font")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "FontAsset")
+    pushscope
+
+    getlex              QName(PackageNamespace("mx.core"), "FontAsset")
+    newclass            "implements"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "implements")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "implements")
+  #include "implements.class.asasm"
+ end ; trait
+end ; script

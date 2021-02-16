@@ -1,0 +1,1014 @@
+class
+ refid "_-03l:VimeoPlayer"
+ instance QName(PackageNamespace("_-03l"), "VimeoPlayer")
+  extends QName(PackageNamespace("flash.display"), "Sprite")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2fN")
+  iinit
+   refid "_-03l:VimeoPlayer/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_OPTIONAL
+   optional Utf8("10")
+   optional Integer(2)
+   body
+    maxstack 6
+    localcount 12
+    initscopedepth 9
+    maxscopedepth 10
+    code
+     debugfile           "k"
+     debugline           44
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 44
+     debug               1, "k", 1, 44
+     debug               1, "k", 2, 44
+     debug               1, "k", 3, 44
+     debug               1, "k", 4, 44
+     debug               1, "k", 5, 44
+     debugline           34
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.display"), "Sprite")
+     constructprop       QName(PackageNamespace("flash.display"), "Sprite"), 0
+     initproperty        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "container")
+
+     debugline           36
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.display"), "Sprite")
+     constructprop       QName(PackageNamespace("flash.display"), "Sprite"), 0
+     initproperty        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1Fk")
+
+     debugline           42
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
+     pushshort           200
+     constructprop       QName(PackageNamespace("flash.utils"), "Timer"), 1
+     initproperty        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2As")
+
+     debugline           44
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 6, 50
+     debug               1, "k", 7, 65
+     debug               1, "k", 8, 67
+     debug               1, "k", 9, 69
+     debugline           45
+     getlocal0
+     getlocal3
+     getlocal            4
+     callpropvoid        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1b4"), 2
+
+     debugline           47
+     getlex              QName(PackageNamespace("flash.system"), "Security")
+     pushstring          "vimeo.com"
+     callpropvoid        QName(PackageNamespace(""), "allowDomain"), 1
+
+     debugline           48
+     getlex              QName(PackageNamespace("flash.system"), "Security")
+     pushstring          "api.vimeo.com"
+     callpropvoid        QName(PackageNamespace(""), "allowDomain"), 1
+
+     pushstring          "&js_api=1"
+     debugline           50
+     coerce_s
+     setlocal            7
+
+     debugline           51
+     getlocal0
+     getlocal            6
+     initproperty        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-6bi")
+
+     debugline           54
+     getlocal            5
+     pushstring          "9"
+     ifeq                L85
+
+     jump                L69
+
+L59:
+     label
+     pushstring          "&api=1"
+     debugline           57
+     coerce_s
+     setlocal            7
+
+     debugline           58
+     jump                L83
+
+L66:
+     label
+     jump                L83
+
+     debugline           55
+L69:
+     getlocal            6
+     setlocal            11
+
+     debugline           56
+     pushbyte            2
+     getlocal            11
+     ifstrictne          L77
+
+     pushbyte            0
+     jump                L81
+
+L77:
+     jump                L80
+
+     pushbyte            1
+     jump                L81
+
+L80:
+     pushbyte            1
+L81:
+     kill                11
+     lookupswitch        L66, [L59, L66]
+
+L83:
+     jump                L89
+
+     debugline           62
+L85:
+     getlocal0
+     pushbyte            1
+     initproperty        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-6bi")
+
+     debugline           65
+L89:
+     findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+     pushstring          "http://api.vimeo.com/moogaloop_api.swf?oauth_key="
+     getlocal1
+     add
+     pushstring          "&clip_id="
+     add
+     getlocal2
+     add
+     pushstring          "&width="
+     add
+     getlocal3
+     add
+     pushstring          "&height="
+     add
+     getlocal            4
+     add
+     pushstring          "&fullscreen=0&fp_version="
+     add
+     getlocal            5
+     add
+     getlocal            7
+     add
+     pushstring          "&cache_buster="
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     callproperty        QName(PackageNamespace(""), "random"), 0
+     pushshort           1000
+     multiply
+     add
+     constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+     coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+     setlocal            8
+
+     debugline           67
+     findpropstrict      QName(PackageNamespace("flash.system"), "LoaderContext")
+     pushtrue
+     constructprop       QName(PackageNamespace("flash.system"), "LoaderContext"), 1
+     coerce              QName(PackageNamespace("flash.system"), "LoaderContext")
+     setlocal            9
+
+     debugline           69
+     findpropstrict      QName(PackageNamespace("flash.display"), "Loader")
+     constructprop       QName(PackageNamespace("flash.display"), "Loader"), 0
+     coerce              QName(PackageNamespace("flash.display"), "Loader")
+     setlocal            10
+
+     debugline           70
+     getlocal            10
+     getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "COMPLETE")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "onComplete")
+     pushfalse
+     pushbyte            0
+     pushtrue
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+     debugline           71
+     getlocal            10
+     getlocal            8
+     getlocal            9
+     callpropvoid        QName(PackageNamespace(""), "load"), 2
+
+     debugline           73
+     getlocal0
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "ADDED_TO_STAGE")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4dh")
+     pushfalse
+     pushbyte            0
+     pushtrue
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+     debugline           74
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "container") type QName(PackageNamespace("flash.display"), "Sprite") end
+  trait slot QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng") type QName(PackageNamespace(""), "Object") value False() end
+  trait slot QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1Fk") type QName(PackageNamespace("flash.display"), "Sprite") end
+  trait slot QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-3lE") type QName(PackageNamespace(""), "int") value Integer(400) end
+  trait slot QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-14k") type QName(PackageNamespace(""), "int") value Integer(300) end
+  trait slot QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-6bi") type QName(PackageNamespace(""), "int") value Integer(2) end
+  trait slot QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2As") type QName(PackageNamespace("flash.utils"), "Timer") end
+  trait method QName(PackageNamespace(""), "destroy")
+   method
+    refid "_-03l:VimeoPlayer/destroy"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           76
+      getlocal0
+      pushscope
+
+      debugline           77
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      pushnull
+      ifne                L12
+
+      debugline           78
+      returnvoid
+
+      debugline           82
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      pushstring          "destroy"
+      getproperty         MultinameL([PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace(""), "undefined")
+      ifeq                L23
+
+      debugline           83
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      callpropvoid        Multiname("destroy", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+
+      debugline           85
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "container")
+      findpropstrict      QName(PackageNamespace("flash.display"), "DisplayObject")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      callproperty        QName(PackageNamespace("flash.display"), "DisplayObject"), 1
+      callproperty        QName(PackageNamespace(""), "contains"), 1
+      iffalse             L39
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "container")
+      findpropstrict      QName(PackageNamespace("flash.display"), "DisplayObject")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      callproperty        QName(PackageNamespace("flash.display"), "DisplayObject"), 1
+      callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+      debugline           86
+L39:
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1Fk")
+      callproperty        QName(PackageNamespace(""), "contains"), 1
+      iffalse             L49
+
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1Fk")
+      callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+      debugline           87
+L49:
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "container")
+      callproperty        QName(PackageNamespace(""), "contains"), 1
+      iffalse             L59
+
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "container")
+      callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+      debugline           89
+L59:
+      getlex              QName(PackageNamespace(""), "stage")
+      getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+      getproperty         QName(PackageNamespace(""), "MOUSE_MOVE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "mouseMove")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           90
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1b4")
+   method
+    refid "_-03l:VimeoPlayer/_-1b4"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           92
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 92
+      debug               1, "k", 1, 92
+      debugline           93
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-3lE")
+
+      debugline           94
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-14k")
+
+      debugline           95
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "onComplete")
+   method
+    refid "_-03l:VimeoPlayer/onComplete"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           97
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 97
+      debugline           99
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "container")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "currentTarget")
+      getproperty         Multiname("loader", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getproperty         Multiname("content", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      debugline           100
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "currentTarget")
+      getproperty         Multiname("loader", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getproperty         Multiname("content", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      initproperty        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+
+      debugline           103
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1Fk")
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      debugline           104
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "container")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1Fk")
+      setproperty         QName(PackageNamespace(""), "mask")
+
+      debugline           105
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "container")
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      debugline           107
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-0SJ"), 0
+
+      debugline           109
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2As")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2mh")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           110
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2As")
+      callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+      debugline           111
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2mh")
+   method
+    refid "_-03l:VimeoPlayer/_-2mh"
+    param QName(PackageNamespace("flash.events"), "TimerEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           116
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 116
+      debugline           117
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      getproperty         Multiname("player_loaded", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      iffalse             L47
+
+      debugline           119
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2As")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           120
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2As")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2mh")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           123
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      callpropvoid        Multiname("disableMouseMove", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+
+      debugline           124
+      getlex              QName(PackageNamespace(""), "stage")
+      iffalse             L40
+
+      debugline           125
+      getlex              QName(PackageNamespace(""), "stage")
+      getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+      getproperty         QName(PackageNamespace(""), "MOUSE_MOVE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "mouseMove")
+      pushfalse
+      pushbyte            0
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+      debugline           128
+L40:
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           130
+L47:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "mouseMove")
+   method
+    refid "_-03l:VimeoPlayer/mouseMove"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           135
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal3
+
+      debug               1, "k", 0, 135
+      debug               1, "k", 1, 136
+      debugline           136
+      getlocal1
+      getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+      astypelate
+      coerce              QName(PackageNamespace("flash.events"), "MouseEvent")
+      setlocal2
+
+      debugline           137
+      getlocal2
+      pushnull
+      ifne                L22
+
+      debugline           138
+      returnvoid
+
+      debugline           140
+L22:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      convert_b
+      dup
+      iffalse             L32
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      getproperty         Multiname("player_loaded", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      convert_b
+L32:
+      iffalse             L95
+
+      debug               1, "k", 2, 141
+      debugline           141
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "parent")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "y")
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callproperty        QName(PackageNamespace(""), "localToGlobal"), 1
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal3
+
+      debugline           142
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "stageX")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "x")
+      greaterequals
+      dup
+      iffalse             L63
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "stageX")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-3lE")
+      add
+      lessequals
+L63:
+      dup
+      iffalse             L72
+
+      pop
+      debugline           143
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "stageY")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "y")
+      greaterequals
+L72:
+      dup
+      iffalse             L83
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "stageY")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-14k")
+      add
+      lessequals
+L83:
+      iffalse             L91
+
+      debugline           144
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      getlocal2
+      callpropvoid        Multiname("mouseMove", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 1
+
+      jump                L95
+
+      debugline           147
+L91:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      callpropvoid        Multiname("mouseOut", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+
+      debugline           150
+L95:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-0SJ")
+   method
+    refid "_-03l:VimeoPlayer/_-0SJ"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 13
+     code
+      debugfile           "k"
+      debugline           152
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 152
+      debugline           153
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1Fk")
+      getproperty         QName(PackageNamespace(""), "graphics")
+      dup
+      setlocal2
+
+      pushwith
+      debugline           154
+      findpropstrict      Multiname("beginFill", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      pushbyte            0
+      pushbyte            1
+      callpropvoid        Multiname("beginFill", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 2
+
+      debugline           155
+      findpropstrict      Multiname("drawRect", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              Multiname("container", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getproperty         Multiname("x", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              Multiname("container", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getproperty         Multiname("y", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              Multiname("_-3lE", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              Multiname("_-14k", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      callpropvoid        Multiname("drawRect", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 4
+
+      debugline           156
+      findpropstrict      Multiname("endFill", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      callpropvoid        Multiname("endFill", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+
+      popscope
+      kill                2
+      debugline           158
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "play")
+   method
+    refid "_-03l:VimeoPlayer/play"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           160
+      getlocal0
+      pushscope
+
+      debugline           161
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      callpropvoid        Multiname("play", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+
+      debugline           162
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "pause")
+   method
+    refid "_-03l:VimeoPlayer/pause"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           164
+      getlocal0
+      pushscope
+
+      debugline           165
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      callpropvoid        Multiname("pause", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+
+      debugline           166
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4qi")
+   method
+    refid "_-03l:VimeoPlayer/_-4qi"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           171
+      getlocal0
+      pushscope
+
+      debugline           172
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      getproperty         Multiname("duration", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-NP")
+   method
+    refid "_-03l:VimeoPlayer/_-NP"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           178
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 178
+      debugline           179
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      getlocal1
+      callpropvoid        Multiname("seek", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 1
+
+      debugline           180
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1vX")
+   method
+    refid "_-03l:VimeoPlayer/_-1vX"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           185
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 185
+      debugline           186
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      findpropstrict      QName(PackageNamespace(""), "uint")
+      pushstring          "0x"
+      getlocal1
+      add
+      callproperty        QName(PackageNamespace(""), "uint"), 1
+      setproperty         Multiname("color", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+      debugline           187
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "loadVideo")
+   method
+    refid "_-03l:VimeoPlayer/loadVideo"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           192
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 192
+      debugline           193
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      getlocal1
+      callpropvoid        Multiname("loadVideo", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 1
+
+      debugline           194
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "setSize")
+   method
+    refid "_-03l:VimeoPlayer/setSize"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           196
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 196
+      debug               1, "k", 1, 196
+      debugline           197
+      getlocal0
+      getlocal1
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-1b4"), 2
+
+      debugline           198
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4ng")
+      getlocal1
+      getlocal2
+      callpropvoid        Multiname("setSize", [PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), PackageNamespace(""), PrivateNamespace("VimeoPlayer.as$4883", "_-03l:VimeoPlayer#1"), PackageNamespace("_-03l"), PackageInternalNs("_-03l"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2fN"), StaticProtectedNs("_-2fN"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 2
+
+      debugline           199
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-0SJ"), 0
+
+      debugline           200
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-4dh")
+   method
+    refid "_-03l:VimeoPlayer/_-4dh"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           204
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 204
+      debugline           205
+      getlex              QName(PackageNamespace(""), "stage")
+      getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+      getproperty         QName(PackageNamespace(""), "MOUSE_MOVE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "mouseMove")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           206
+      getlocal0
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "REMOVED_FROM_STAGE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2W3")
+      pushfalse
+      pushbyte            0
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+      debugline           207
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2W3")
+   method
+    refid "_-03l:VimeoPlayer/_-2W3"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           209
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 209
+      debugline           210
+      getlex              QName(PackageNamespace(""), "stage")
+      getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+      getproperty         QName(PackageNamespace(""), "MOUSE_MOVE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "mouseMove")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           211
+      getlocal0
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "REMOVED_FROM_STAGE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2fN", "_-03l:VimeoPlayer#0"), "_-2W3")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           212
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-03l:VimeoPlayer/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 8
+   maxscopedepth 9
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

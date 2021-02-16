@@ -1,0 +1,69 @@
+method
+ refid "_-35o:FurnitureRoomLinkHandler/_-6Ov/inline_method"
+ param QName(PackageNamespace("_-5Fj"), "_-4Wk")
+ param QName(PackageNamespace("_-CA"), "WindowEvent")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 3
+  initscopedepth 5
+  maxscopedepth 5
+  code
+   debug               1, "k", 0, 68
+   debug               1, "k", 1, 68
+   debugfile           "k"
+   debugline           70
+   getlex              QName(PrivateNamespace("_-3CY", "_-35o:FurnitureRoomLinkHandler"), "_container")
+   getproperty         QName(Namespace("_-6cm"), "roomEngine")
+   pushnull
+   equals
+   not
+   dup
+   iffalse             L17
+
+   pop
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "type")
+   getlex              QName(PackageNamespace("_-CA"), "WindowEvent")
+   getproperty         QName(PackageNamespace(""), "_-3Ew")
+   equals
+L17:
+   iffalse             L42
+
+   debugline           71
+   getlex              QName(PrivateNamespace("_-3CY", "_-35o:FurnitureRoomLinkHandler"), "_-6B3")
+   pushnull
+   equals
+   not
+   dup
+   iffalse             L30
+
+   pop
+   getlex              QName(PrivateNamespace("_-3CY", "_-35o:FurnitureRoomLinkHandler"), "_-6B3")
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   greaterthan
+L30:
+   iffalse             L42
+
+   debugline           72
+   getlex              QName(PrivateNamespace("_-3CY", "_-35o:FurnitureRoomLinkHandler"), "_container")
+   getproperty         QName(Namespace("_-6cm"), "roomEngine")
+   getlex              QName(PackageNamespace("_-1M6"), "Component")
+   astypelate
+   getproperty         QName(PackageNamespace(""), "context")
+   pushstring          "navigator/goto/"
+   getlex              QName(PrivateNamespace("_-3CY", "_-35o:FurnitureRoomLinkHandler"), "_-6B3")
+   add
+   callpropvoid        QName(Namespace("_-s9"), "createLinkEvent"), 1
+
+   debugline           76
+L42:
+   getlocal1
+   callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+   debugline           77
+   returnvoid
+  end ; code
+ end ; body
+end ; method

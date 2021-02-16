@@ -1,0 +1,295 @@
+class
+ refid "_-2-E:_-1q"
+ instance QName(PackageNamespace("_-2-E"), "_-1q")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2e4")
+  iinit
+   refid "_-2-E:_-1q/iinit"
+   param QName(PackageNamespace("_-1Bv"), "ITextFieldWindow")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           16
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 16
+     debug               1, "k", 1, 16
+     debugline           16
+     getlocal0
+     constructsuper      0
+
+     debugline           17
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+
+     debugline           18
+     getlocal2
+     pushnull
+     ifeq                L31
+
+     debugline           19
+     getlocal0
+     pushtrue
+     initproperty        QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-04H")
+
+     debugline           20
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-6Jq")
+
+     debugline           21
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+     getlocal2
+     setproperty         QName(Namespace("_-3oN"), "text")
+
+     debugline           23
+L31:
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+     getlex              QName(PackageNamespace("_-CA"), "WindowEvent")
+     getproperty         QName(PackageNamespace(""), "_-8E")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-3jn")
+     callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+     debugline           24
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi") type QName(PackageNamespace("_-1Bv"), "ITextFieldWindow") end
+  trait slot QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-04H") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-6Jq") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-2-E:_-1q/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           26
+      getlocal0
+      pushscope
+
+      debugline           27
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+      iffalse             L17
+
+      debugline           28
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           29
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+
+      debugline           31
+L17:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0uH")
+   method
+    refid "_-2-E:_-1q/_-0uH"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debugline           37
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-6Jq")
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           38
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-04H")
+
+      debugline           39
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getText")
+   method
+    refid "_-2-E:_-1q/getText"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-04H")
+      iffalse             L10
+
+      pushstring          ""
+      jump                L14
+
+L10:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+      getproperty         QName(Namespace("_-3oN"), "text")
+      coerce_s
+L14:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5av")
+   method
+    refid "_-2-E:_-1q/_-5av"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           52
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 52
+      debugline           53
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-04H")
+
+      debugline           54
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+      getlocal1
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           55
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "input")
+   method
+    refid "_-2-E:_-1q/input/getter"
+    returns QName(PackageNamespace("_-1Bv"), "ITextFieldWindow")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           57
+      getlocal0
+      pushscope
+
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-3jn")
+   method
+    refid "_-2-E:_-1q/_-3jn"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 61
+      debugline           62
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-04H")
+      iftrue              L12
+
+      debugline           63
+      returnvoid
+
+      debugline           65
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-2Zi")
+      pushstring          ""
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           66
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-2e4", "_-2-E:_-1q"), "_-04H")
+
+      debugline           67
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2-E:_-1q/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

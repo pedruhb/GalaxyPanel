@@ -1,0 +1,466 @@
+class
+ refid "_-3wF:_-4Ng"
+ instance QName(PackageNamespace("_-3wF"), "_-4Ng")
+  extends QName(PackageNamespace("_-3wF"), "_-No")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-Uj")
+  iinit
+   refid "_-3wF:_-4Ng/iinit"
+   param QName(PackageNamespace("_-5yk"), "_-3JI")
+   param QName(PackageNamespace("_-01n"), "_-8m")
+   param QName(PackageNamespace("_-eg"), "_-6Pl")
+   param QName(PackageNamespace("_-647"), "_-6kP")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   body
+    maxstack 5
+    localcount 5
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 20
+     debug               1, "k", 1, 20
+     debug               1, "k", 2, 20
+     debug               1, "k", 3, 20
+     debugline           21
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     constructsuper      4
+
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait const QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-0fR") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait const QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-0xM") type QName(PackageNamespace(""), "int") value Integer(1) end
+  trait slot QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-") type QName(PackageNamespace("_-3wF"), "ChooserView") end
+  trait getter QName(PackageNamespace(""), "state") flag OVERRIDE
+   method
+    refid "_-3wF:_-4Ng/state/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           25
+      getlocal0
+      pushscope
+
+      debugline           26
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L17
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+      callproperty        QName(PackageNamespace(""), "isOpen"), 0
+      convert_b
+L17:
+      iffalse             L23
+
+      debugline           27
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-0xM")
+      returnvalue
+
+      debugline           29
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-0fR")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initialize") flag OVERRIDE
+   method
+    refid "_-3wF:_-4Ng/initialize"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Integer(0)
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5RN"), "_-634")
+      setlocal2
+
+      debug               1, "k", 0, 33
+      debugline           34
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "initialize"), 1
+      debugline           35
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-0xM")
+      ifne                L30
+
+      debug               1, "k", 1, 36
+      debugline           36
+      findpropstrict      QName(PackageNamespace("_-5RN"), "_-634")
+      getlex              QName(PackageNamespace("_-5RN"), "_-634")
+      getproperty         QName(PackageNamespace(""), "_-5oM")
+      constructprop       QName(PackageNamespace("_-5RN"), "_-634"), 1
+      coerce              QName(PackageNamespace("_-5RN"), "_-634")
+      setlocal2
+
+      debugline           37
+      getlex              QName(PackageNamespace(""), "messageListener")
+      getlocal2
+      callpropvoid        QName(Namespace("_-0E7"), "processWidgetMessage"), 1
+
+      debugline           39
+L30:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-3wF:_-4Ng/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debugline           42
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+      pushnull
+      ifeq                L18
+
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           44
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+
+      debugline           46
+L18:
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           47
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "registerUpdateEvents") flag OVERRIDE
+   method
+    refid "_-3wF:_-4Ng/registerUpdateEvents"
+    param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 49
+      debugline           50
+      getlocal1
+      pushnull
+      ifne                L12
+
+      debugline           51
+      returnvoid
+
+      debugline           53
+L12:
+      getlocal1
+      getlex              QName(PackageNamespace("_-51c"), "_-qp")
+      getproperty         QName(PackageNamespace(""), "_-203")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-53E")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           54
+      getlocal1
+      getlex              QName(PackageNamespace("_-51c"), "_-3nX")
+      getproperty         QName(PackageNamespace(""), "_-i7")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-1ie")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           55
+      getlocal1
+      getlex              QName(PackageNamespace("_-51c"), "_-3nX")
+      getproperty         QName(PackageNamespace(""), "_-2bj")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-1ie")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           56
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "registerUpdateEvents"), 1
+      debugline           57
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "unregisterUpdateEvents") flag OVERRIDE
+   method
+    refid "_-3wF:_-4Ng/unregisterUpdateEvents"
+    param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           59
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 59
+      debugline           60
+      getlocal1
+      pushnull
+      ifne                L12
+
+      debugline           61
+      returnvoid
+
+      debugline           63
+L12:
+      getlocal1
+      getlex              QName(PackageNamespace("_-51c"), "_-qp")
+      getproperty         QName(PackageNamespace(""), "_-203")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-53E")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           64
+      getlocal1
+      getlex              QName(PackageNamespace("_-51c"), "_-3nX")
+      getproperty         QName(PackageNamespace(""), "_-i7")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-1ie")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           65
+      getlocal1
+      getlex              QName(PackageNamespace("_-51c"), "_-3nX")
+      getproperty         QName(PackageNamespace(""), "_-2bj")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-1ie")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           66
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-53E")
+   method
+    refid "_-3wF:_-4Ng/_-53E"
+    param QName(PackageNamespace("_-51c"), "_-qp")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           68
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 68
+      debugline           70
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L16
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "items")
+      pushnull
+      equals
+L16:
+      iffalse             L20
+
+      debugline           71
+      returnvoid
+
+      debugline           74
+L20:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+      pushnull
+      ifne                L32
+
+      debugline           75
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-3wF"), "ChooserView")
+      getlocal0
+      pushstring          "${widget.chooser.user.title}"
+      constructprop       QName(PackageNamespace("_-3wF"), "ChooserView"), 2
+      initproperty        QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+
+      debugline           77
+L32:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "items")
+      pushfalse
+      callpropvoid        QName(PackageNamespace(""), "populate"), 2
+
+      debugline           78
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-1ie")
+   method
+    refid "_-3wF:_-4Ng/_-1ie"
+    param QName(PackageNamespace("_-51c"), "_-3nX")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           80
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 80
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 80
+      debugline           81
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+      pushnull
+      equals
+      dup
+      iftrue              L25
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Uj", "_-3wF:_-4Ng"), "_-64-")
+      callproperty        QName(PackageNamespace(""), "isOpen"), 0
+      not
+L25:
+      iffalse             L29
+
+      debugline           82
+      returnvoid
+
+      debugline           85
+L29:
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
+      pushbyte            100
+      pushbyte            1
+      constructprop       QName(PackageNamespace("flash.utils"), "Timer"), 2
+      coerce              QName(PackageNamespace("flash.utils"), "Timer")
+      setslot             2
+
+      debugline           86
+      getscopeobject      1
+      getslot             2
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      newfunction         "_-3wF:_-4Ng/_-1ie/inline_method"
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugfile           "k"
+      debugline           93
+      getscopeobject      1
+      getslot             2
+      callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+      debugline           94
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs("_-3wF"), "event") slotid 1 type QName(PackageNamespace("_-51c"), "_-3nX") end
+     trait slot QName(PackageInternalNs("_-3wF"), "delayedAction") slotid 2 type QName(PackageNamespace("flash.utils"), "Timer") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3wF:_-4Ng/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

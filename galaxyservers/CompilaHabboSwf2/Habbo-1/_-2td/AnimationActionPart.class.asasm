@@ -1,0 +1,161 @@
+class
+ refid "_-2td:AnimationActionPart"
+ instance QName(PackageNamespace("_-2td"), "AnimationActionPart")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2c7")
+  iinit
+   refid "_-2td:AnimationActionPart/iinit"
+   param QName(PackageNamespace(""), "XML")
+   body
+    maxstack 4
+    localcount 6
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           10
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "XML")
+     setlocal2
+
+     pushbyte            0
+     setlocal3
+
+     debug               1, "k", 0, 10
+     debugline           10
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 1, 13
+     debugline           11
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     initproperty        QName(PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), "_-Fb")
+
+     debugline           13
+     pushbyte            0
+     setlocal            4
+
+     getlocal1
+     getproperty         Multiname("frame", [PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), PackageNamespace(""), PrivateNamespace("AnimationActionPart.as$588", "_-2td:AnimationActionPart/iinit"), PackageNamespace("_-2td"), PackageInternalNs("_-2td"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2c7"), StaticProtectedNs("_-2c7")])
+     coerce_a
+     setlocal            5
+
+     jump                L74
+
+L27:
+     label
+     getlocal            5
+     getlocal            4
+     nextvalue
+     coerce              QName(PackageNamespace(""), "XML")
+     setlocal2
+
+     debug               1, "k", 2, 15
+     debugline           14
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), "_-Fb")
+     findpropstrict      QName(PackageNamespace("_-2td"), "AnimationFrame")
+     getlocal2
+     constructprop       QName(PackageNamespace("_-2td"), "AnimationFrame"), 1
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           15
+     findpropstrict      QName(PackageNamespace(""), "parseInt")
+     getlocal2
+     getproperty         MultinameA("repeats", [PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), PackageNamespace(""), PrivateNamespace("AnimationActionPart.as$588", "_-2td:AnimationActionPart/iinit"), PackageNamespace("_-2td"), PackageInternalNs("_-2td"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2c7"), StaticProtectedNs("_-2c7")])
+     callproperty        QName(PackageNamespace(""), "parseInt"), 1
+     convert_i
+     setlocal3
+
+     debugline           16
+     getlocal3
+     pushbyte            1
+     ifngt               L74
+
+     jump                L66
+
+L53:
+     label
+     debugline           18
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), "_-Fb")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), "_-Fb")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), "_-Fb")
+     getproperty         QName(PackageNamespace(""), "length")
+     decrement
+     getproperty         MultinameL([PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), PackageNamespace(""), PrivateNamespace("AnimationActionPart.as$588", "_-2td:AnimationActionPart/iinit"), PackageNamespace("_-2td"), PackageInternalNs("_-2td"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2c7"), StaticProtectedNs("_-2c7")])
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           17
+L66:
+     getlocal3
+     decrement_i
+     dup
+     convert_i
+     setlocal3
+
+     pushbyte            0
+     ifgt                L53
+
+     debugline           13
+L74:
+     hasnext2            5, 4
+     iftrue              L27
+
+     kill                5
+     kill                4
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), "_-Fb") type QName(PackageNamespace(""), "Array") end
+  trait getter QName(PackageNamespace(""), "frames")
+   method
+    refid "_-2td:AnimationActionPart/frames/getter"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           24
+      getlocal0
+      pushscope
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2c7", "_-2td:AnimationActionPart"), "_-Fb")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2td:AnimationActionPart/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

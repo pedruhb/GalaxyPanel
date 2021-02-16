@@ -1,0 +1,774 @@
+class
+ refid "_-1Ta:GraphicsUtils"
+ instance QName(PackageNamespace("_-1Ta"), "GraphicsUtils")
+  extends QName(PackageNamespace("_-4cF"), "Debuggable")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6kc")
+  iinit
+   refid "_-1Ta:GraphicsUtils/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           135
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-1Ta:GraphicsUtils/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-4ll") flag FINAL dispid 3
+  method
+   refid "_-1Ta:GraphicsUtils/_-4ll"
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "uint")
+   returns QName(PackageNamespace("flash.text"), "TextField")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Integer(12)
+   optional False()
+   optional Integer(16777215)
+   body
+    maxstack 7
+    localcount 12
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           40
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            8
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            9
+
+     pushnan
+     setlocal            10
+
+     pushnan
+     setlocal            11
+
+     debug               1, "k", 0, 40
+     debug               1, "k", 1, 40
+     debug               1, "k", 2, 40
+     debug               1, "k", 3, 40
+     debug               1, "k", 4, 40
+     debug               1, "k", 5, 41
+     debug               1, "k", 6, 42
+     debugline           41
+     findpropstrict      QName(PackageNamespace("flash.text"), "TextField")
+     constructprop       QName(PackageNamespace("flash.text"), "TextField"), 0
+     coerce              QName(PackageNamespace("flash.text"), "TextField")
+     setlocal            6
+
+     debugline           42
+     findpropstrict      QName(PackageNamespace("flash.text"), "TextFormat")
+     constructprop       QName(PackageNamespace("flash.text"), "TextFormat"), 0
+     coerce              QName(PackageNamespace("flash.text"), "TextFormat")
+     setlocal            7
+
+     debugline           43
+     getlocal            6
+     getlex              QName(PackageNamespace("flash.display"), "BlendMode")
+     getproperty         QName(PackageNamespace(""), "LAYER")
+     setproperty         QName(PackageNamespace(""), "blendMode")
+
+     debugline           44
+     getlocal2
+     pushnull
+     ifeq                L51
+
+     debugline           45
+     getlocal            7
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "font")
+
+     debugline           46
+     getlocal            6
+     getlex              QName(PackageNamespace("flash.text"), "AntiAliasType")
+     getproperty         QName(PackageNamespace(""), "ADVANCED")
+     setproperty         QName(PackageNamespace(""), "antiAliasType")
+
+     jump                L150
+
+     debugline           49
+L51:
+     getlex              QName(PackageNamespace("flash.system"), "Capabilities")
+     getproperty         QName(PackageNamespace(""), "os")
+     pushstring          "Windows"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     ifne                L141
+
+     debug               1, "k", 7, 50
+     debug               1, "k", 8, 51
+     debug               1, "k", 9, 53
+     pushstring          "Lucida Grande"
+     pushstring          "Lucida Sans Unicode"
+     pushstring          "Bitstream Vera"
+     pushstring          "Verdana"
+     pushstring          "Arial"
+     pushstring          "_sans"
+     pushstring          "_serif"
+     debugline           50
+     newarray            7
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            8
+
+     debugline           51
+     getlex              QName(PackageNamespace("flash.text"), "Font")
+     pushtrue
+     callproperty        QName(PackageNamespace(""), "enumerateFonts"), 1
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            9
+
+     debugline           52
+     getlocal            7
+     pushstring          "_sans"
+     setproperty         QName(PackageNamespace(""), "font")
+
+     debugline           53
+     pushbyte            0
+     convert_d
+     setlocal            10
+
+     jump                L135
+
+L86:
+     label
+     debug               1, "k", 10, 54
+     debugline           54
+     pushbyte            0
+     convert_d
+     setlocal            11
+
+     jump                L126
+
+L93:
+     label
+     debugline           55
+     findpropstrict      QName(PackageNamespace("flash.text"), "Font")
+     getlocal            9
+     getlocal            11
+     getproperty         MultinameL([PrivateNamespace("_-6kc", "_-1Ta:GraphicsUtils"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("GraphicsUtils.as$5035", "_-1Ta:GraphicsUtils/_-4ll"), PackageNamespace("_-1Ta"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-6kc"), StaticProtectedNs("_-6kc"), StaticProtectedNs("_-1bs")])
+     callproperty        QName(PackageNamespace("flash.text"), "Font"), 1
+     getproperty         QName(PackageNamespace(""), "fontName")
+     getlocal            8
+     getlocal            10
+     getproperty         MultinameL([PrivateNamespace("_-6kc", "_-1Ta:GraphicsUtils"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("GraphicsUtils.as$5035", "_-1Ta:GraphicsUtils/_-4ll"), PackageNamespace("_-1Ta"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-6kc"), StaticProtectedNs("_-6kc"), StaticProtectedNs("_-1bs")])
+     ifne                L122
+
+     debugline           56
+     getlocal            7
+     getlocal            8
+     getlocal            10
+     getproperty         MultinameL([PrivateNamespace("_-6kc", "_-1Ta:GraphicsUtils"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("GraphicsUtils.as$5035", "_-1Ta:GraphicsUtils/_-4ll"), PackageNamespace("_-1Ta"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-6kc"), StaticProtectedNs("_-6kc"), StaticProtectedNs("_-1bs")])
+     setproperty         QName(PackageNamespace(""), "font")
+
+     debugline           57
+     getlocal            9
+     getproperty         QName(PackageNamespace(""), "length")
+     convert_d
+     setlocal            11
+
+     debugline           58
+     getlocal            8
+     getproperty         QName(PackageNamespace(""), "length")
+     convert_d
+     setlocal            10
+
+     debugline           54
+L122:
+     getlocal            11
+     increment
+     convert_d
+     setlocal            11
+
+L126:
+     getlocal            11
+     getlocal            9
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L93
+
+     debugline           53
+     getlocal            10
+     increment
+     convert_d
+     setlocal            10
+
+L135:
+     getlocal            10
+     getlocal            8
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L86
+
+     jump                L150
+
+     debugline           64
+L141:
+     getlocal            7
+     pushstring          "Lucida Grande, Lucida Sans Unicode, Bitstream Vera, Verdana, Arial, _sans, _serif"
+     setproperty         QName(PackageNamespace(""), "font")
+
+     debugline           65
+     getlocal            6
+     getlex              QName(PackageNamespace("flash.text"), "AntiAliasType")
+     getproperty         QName(PackageNamespace(""), "ADVANCED")
+     setproperty         QName(PackageNamespace(""), "antiAliasType")
+
+     debugline           68
+L150:
+     getlocal            7
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "size")
+
+     debugline           69
+     getlocal            7
+     getlocal            5
+     setproperty         QName(PackageNamespace(""), "color")
+
+     debugline           70
+     getlocal            7
+     getlocal            4
+     setproperty         QName(PackageNamespace(""), "bold")
+
+     debugline           71
+     getlocal            6
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "embedFonts")
+
+     debugline           72
+     getlocal            6
+     getlocal            7
+     setproperty         QName(PackageNamespace(""), "defaultTextFormat")
+
+     debugline           73
+     getlocal            6
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "beginGradientFill") flag FINAL dispid 4
+  method
+   refid "_-1Ta:GraphicsUtils/beginGradientFill"
+   param QName(PackageNamespace("flash.display"), "Graphics")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_OPTIONAL
+   optional Integer(1)
+   body
+    maxstack 7
+    localcount 9
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           76
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 76
+     debug               1, "k", 1, 76
+     debug               1, "k", 2, 76
+     debug               1, "k", 3, 76
+     debug               1, "k", 4, 76
+     debug               1, "k", 5, 76
+     debug               1, "k", 6, 77
+     debug               1, "k", 7, 78
+     debugline           77
+     getlocal            4
+     getlocal            5
+     getlocal            4
+     newarray            3
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            7
+
+     debugline           78
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Matrix")
+     constructprop       QName(PackageNamespace("flash.geom"), "Matrix"), 0
+     coerce              QName(PackageNamespace("flash.geom"), "Matrix")
+     setlocal            8
+
+     debugline           79
+     getlocal            8
+     getlocal2
+     getlocal3
+     getlex              QName(PackageNamespace(""), "Math")
+     getproperty         QName(PackageNamespace(""), "PI")
+     pushbyte            2
+     divide
+     callpropvoid        QName(PackageNamespace(""), "createGradientBox"), 3
+
+     debugline           80
+     getlocal1
+     getlex              QName(PackageNamespace("flash.display"), "GradientType")
+     getproperty         QName(PackageNamespace(""), "LINEAR")
+     getlocal            7
+     getlocal            6
+     getlocal            6
+     getlocal            6
+     newarray            3
+     pushbyte            0
+     pushshort           128
+     pushshort           255
+     newarray            3
+     getlocal            8
+     callpropvoid        QName(PackageNamespace(""), "beginGradientFill"), 5
+
+     debugline           81
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-6DC") flag FINAL dispid 5
+  method
+   refid "_-1Ta:GraphicsUtils/_-6DC"
+   param QName(PackageNamespace("flash.display"), "Graphics")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Array")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 6
+    localcount 10
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           83
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 83
+     debug               1, "k", 1, 83
+     debug               1, "k", 2, 83
+     debug               1, "k", 3, 83
+     debug               1, "k", 4, 83
+     debug               1, "k", 5, 84
+     debug               1, "k", 6, 86
+     debug               1, "k", 7, 87
+     debug               1, "k", 8, 88
+     debugline           84
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Matrix")
+     constructprop       QName(PackageNamespace("flash.geom"), "Matrix"), 0
+     coerce              QName(PackageNamespace("flash.geom"), "Matrix")
+     setlocal            6
+
+     debugline           85
+     getlocal            6
+     getlocal2
+     getlocal3
+     getlex              QName(PackageNamespace(""), "Math")
+     getproperty         QName(PackageNamespace(""), "PI")
+     pushbyte            2
+     divide
+     callpropvoid        QName(PackageNamespace(""), "createGradientBox"), 3
+
+     debugline           86
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            7
+
+     debugline           87
+     pushshort           255
+     getlocal            4
+     getproperty         QName(PackageNamespace(""), "length")
+     decrement
+     divide
+     convert_i
+     setlocal            8
+
+     debugline           88
+     pushbyte            0
+     convert_d
+     setlocal            9
+
+     jump                L57
+
+L45:
+     label
+     debugline           89
+     getlocal            7
+     getlocal            9
+     getlocal            8
+     multiply
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           88
+     getlocal            9
+     increment
+     convert_d
+     setlocal            9
+
+L57:
+     getlocal            9
+     getlocal            4
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L45
+
+     debugline           91
+     getlocal1
+     getlex              QName(PackageNamespace("flash.display"), "GradientType")
+     getproperty         QName(PackageNamespace(""), "LINEAR")
+     getlocal            4
+     getlocal            5
+     getlocal            7
+     getlocal            6
+     callpropvoid        QName(PackageNamespace(""), "beginGradientFill"), 5
+
+     debugline           92
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "drawRoundRectangle") flag FINAL dispid 6
+  method
+   refid "_-1Ta:GraphicsUtils/drawRoundRectangle"
+   param QName(PackageNamespace("flash.display"), "Graphics")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 7
+    localcount 7
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           94
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 94
+     debug               1, "k", 1, 94
+     debug               1, "k", 2, 94
+     debug               1, "k", 3, 94
+     debug               1, "k", 4, 94
+     debug               1, "k", 5, 94
+     debugline           95
+     getlocal            6
+     pushbyte            0
+     ifngt               L25
+
+     debugline           96
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal            6
+     getlocal            6
+     callpropvoid        QName(PackageNamespace(""), "drawRoundRect"), 6
+
+     jump                L32
+
+     debugline           99
+L25:
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     callpropvoid        QName(PackageNamespace(""), "drawRect"), 4
+
+     debugline           101
+L32:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-2Kt") flag FINAL dispid 7
+  method
+   refid "_-1Ta:GraphicsUtils/_-2Kt"
+   param QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_OPTIONAL
+   optional Integer(0)
+   optional Integer(0)
+   body
+    maxstack 7
+    localcount 8
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           103
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 103
+     debug               1, "k", 1, 103
+     debug               1, "k", 2, 103
+     debug               1, "k", 3, 103
+     debug               1, "k", 4, 103
+     debug               1, "k", 5, 103
+     debug               1, "k", 6, 105
+     debugline           104
+     findpropstrict      QName(PackageNamespace(""), "_-NH")
+     getlocal1
+     callpropvoid        QName(PackageNamespace(""), "_-NH"), 1
+
+     debugline           105
+     findpropstrict      QName(PackageNamespace("flash.display"), "Shape")
+     constructprop       QName(PackageNamespace("flash.display"), "Shape"), 0
+     coerce              QName(PackageNamespace("flash.display"), "Shape")
+     setlocal            7
+
+     debugline           106
+     getlocal            7
+     pushstring          "_gradient"
+     setproperty         QName(PackageNamespace(""), "name")
+
+     debugline           107
+     getlocal1
+     getlocal            7
+     getlocal2
+     callpropvoid        QName(PackageNamespace(""), "addChildAt"), 2
+
+     debugline           108
+     getlocal            7
+     getproperty         QName(PackageNamespace(""), "graphics")
+     callpropvoid        QName(PackageNamespace(""), "clear"), 0
+
+     debugline           109
+     findpropstrict      QName(PrivateNamespace("_-6kc", "_-1Ta:GraphicsUtils"), "beginFill")
+     getlocal            7
+     getproperty         QName(PackageNamespace(""), "graphics")
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "width")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "height")
+     callpropvoid        QName(PrivateNamespace("_-6kc", "_-1Ta:GraphicsUtils"), "beginFill"), 4
+
+     debugline           110
+     getglobalscope
+     getslot             1
+     getlocal            7
+     getproperty         QName(PackageNamespace(""), "graphics")
+     getlocal            5
+     getlocal            6
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "width")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "height")
+     getlocal            4
+     callpropvoid        QName(PackageNamespace(""), "drawRoundRectangle"), 6
+
+     debugline           111
+     getlocal            7
+     getproperty         QName(PackageNamespace(""), "graphics")
+     callpropvoid        QName(PackageNamespace(""), "endFill"), 0
+
+     debugline           112
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-NH") flag FINAL dispid 8
+  method
+   refid "_-1Ta:GraphicsUtils/_-NH"
+   param QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           114
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 114
+     debug               1, "k", 1, 115
+     debugline           115
+     getlocal1
+     pushstring          "_gradient"
+     callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+     coerce              QName(PackageNamespace("flash.display"), "DisplayObject")
+     setlocal2
+
+     debugline           116
+     getlocal2
+     iffalse             L20
+
+     debugline           117
+     getlocal1
+     getlocal2
+     callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+     debugline           119
+L20:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PrivateNamespace("_-6kc", "_-1Ta:GraphicsUtils"), "beginFill") flag FINAL dispid 9
+  method
+   refid "_-1Ta:GraphicsUtils/beginFill"
+   param QName(PackageNamespace("flash.display"), "Graphics")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 6
+    localcount 7
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           121
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 121
+     debug               1, "k", 1, 121
+     debug               1, "k", 2, 121
+     debug               1, "k", 3, 121
+     debug               1, "k", 4, 122
+     debug               1, "k", 5, 123
+     debugline           122
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            5
+
+     debugline           123
+     pushbyte            0
+     convert_d
+     setlocal            6
+
+     jump                L30
+
+L20:
+     label
+     debugline           124
+     getlocal            5
+     pushint             16777215
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           123
+     getlocal            6
+     increment
+     convert_d
+     setlocal            6
+
+L30:
+     getlocal            6
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L20
+
+     debugline           126
+     findpropstrict      QName(PackageNamespace(""), "_-6DC")
+     getlocal1
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal2
+     callpropvoid        QName(PackageNamespace(""), "_-6DC"), 5
+
+     debugline           127
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-3Mn") flag FINAL dispid 10
+  method
+   refid "_-1Ta:GraphicsUtils/_-3Mn"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "uint")
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           129
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 129
+     debug               1, "k", 1, 130
+     debugline           130
+     findpropstrict      QName(PackageNamespace(""), "RegExp")
+     getlex              QName(PackageNamespace(""), "RegExp")
+     pushstring          "#"
+     pushstring          "g"
+     construct           2
+     constructprop       QName(PackageNamespace(""), "RegExp"), 1
+     coerce              QName(PackageNamespace(""), "RegExp")
+     setlocal2
+
+     debugline           131
+     findpropstrict      QName(PackageNamespace(""), "uint")
+     findpropstrict      QName(PackageNamespace(""), "String")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "String"), 1
+     getlocal2
+     pushstring          "0x"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+     callproperty        QName(PackageNamespace(""), "uint"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

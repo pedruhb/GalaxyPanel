@@ -1,0 +1,59 @@
+class
+ refid "HabboTrackingLib"
+ instance QName(PackageNamespace(""), "HabboTrackingLib")
+  extends QName(PackageNamespace("mx.core"), "SimpleApplication")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("HabboTrackingLib")
+  iinit
+   refid "HabboTrackingLib/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 11
+    maxscopedepth 12
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "HabboTrackingLib/cinit"
+  body
+   maxstack 4
+   localcount 1
+   initscopedepth 10
+   maxscopedepth 11
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 14
+    findproperty        QName(PackageNamespace(""), "manifest")
+    getlex              QName(PackageNamespace(""), "_-LQ")
+    setproperty         QName(PackageNamespace(""), "manifest")
+
+    debug               1, "k", 1, 17
+    findproperty        QName(PackageNamespace(""), "requiredClasses")
+    findpropstrict      QName(PackageNamespace(""), "Array")
+    getlex              QName(PackageNamespace("com.sulake.bootstrap"), "HabboTrackingBootstrap")
+    getlex              QName(PackageNamespace("com.sulake.iid"), "IIDHabboTracking")
+    constructprop       QName(PackageNamespace(""), "Array"), 2
+    setproperty         QName(PackageNamespace(""), "requiredClasses")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "manifest") slotid 1 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "requiredClasses") slotid 2 type QName(PackageNamespace(""), "Array") end
+end ; class

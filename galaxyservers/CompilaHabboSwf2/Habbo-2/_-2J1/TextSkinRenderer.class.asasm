@@ -1,0 +1,434 @@
+class
+ refid "_-2J1:TextSkinRenderer"
+ instance QName(PackageNamespace("_-2J1"), "TextSkinRenderer")
+  extends QName(PackageNamespace("_-2J1"), "SkinRenderer")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1Bn")
+  iinit
+   refid "_-2J1:TextSkinRenderer/iinit"
+   param QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           30
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 30
+     debugline           32
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           34
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Matrix")
+     constructprop       QName(PackageNamespace("flash.geom"), "Matrix"), 0
+     initproperty        QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+
+     debugline           35
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-1Bn"), "_-3pE") type QName(PackageNamespace("flash.geom"), "Matrix") end
+  trait method QName(PackageNamespace(""), "parse") flag OVERRIDE
+   method
+    refid "_-2J1:TextSkinRenderer/parse"
+    param QName(PackageNamespace("_-eg"), "_-4ct")
+    param QName(PackageNamespace(""), "XMLList")
+    param QName(PackageNamespace("_-eg"), "_-6Pl")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 44
+      debug               1, "k", 1, 44
+      debug               1, "k", 2, 44
+      debug               1, "k", 3, 46
+      debugline           46
+      getlocal1
+      getproperty         QName(Namespace("_-6i0"), "content")
+      callproperty        Multiname("toString", [PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), ProtectedNamespace("_-1Bn"), PackageNamespace(""), PrivateNamespace("TextSkinRenderer.as$2809", "_-2J1:TextSkinRenderer#1"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-1Bn"), StaticProtectedNs("_-0tU")]), 0
+      coerce_s
+      setlocal            4
+
+      debugline           48
+      getlex              QName(PackageNamespace("_-4qf"), "TextStyleManager")
+      getlex              QName(PackageNamespace("_-4qf"), "TextStyleManager")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "parseCSS"), 1
+      callpropvoid        QName(PackageNamespace(""), "_-2hd"), 1
+
+      debugline           49
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "draw") flag OVERRIDE
+   method
+    refid "_-2J1:TextSkinRenderer/draw"
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    param QName(PackageNamespace("flash.geom"), "Rectangle")
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 12
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           59
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4qf"), "_-55x")
+      setlocal            6
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            7
+
+      pushnull
+      coerce_s
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.text"), "TextField")
+      setlocal            9
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "ColorTransform")
+      setlocal            10
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal            11
+
+      debug               1, "k", 0, 59
+      debug               1, "k", 1, 59
+      debug               1, "k", 2, 59
+      debug               1, "k", 3, 59
+      debug               1, "k", 4, 59
+      debugline           61
+      getlocal2
+      pushnull
+      ifeq                L236
+
+      debug               1, "k", 5, 63
+      debug               1, "k", 6, 64
+      debug               1, "k", 7, 65
+      debug               1, "k", 8, 66
+      debug               1, "k", 9, 98
+      debugline           63
+      findpropstrict      QName(PackageNamespace("_-4qf"), "_-55x")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-4qf"), "_-55x"), 1
+      coerce              QName(PackageNamespace("_-4qf"), "_-55x")
+      setlocal            6
+
+      debugline           64
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ITextWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            7
+
+      debugline           65
+      getlocal            7
+      getproperty         QName(Namespace("_-3oN"), "autoSize")
+      coerce_s
+      setlocal            8
+
+      debugline           66
+      getlocal            6
+      getproperty         QName(Namespace("_-58Y"), "textField")
+      coerce              QName(PackageNamespace("flash.text"), "TextField")
+      setlocal            9
+
+      debugline           70
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlocal            6
+      getproperty         QName(Namespace("_-58Y"), "margins")
+      getproperty         QName(Namespace("_-6KA"), "left")
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      debugline           71
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlocal            6
+      getproperty         QName(Namespace("_-58Y"), "margins")
+      getproperty         QName(Namespace("_-6KA"), "top")
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      debugline           73
+      getlocal            8
+      getlex              QName(PackageNamespace("flash.text"), "TextFieldAutoSize")
+      getproperty         QName(PackageNamespace(""), "RIGHT")
+      ifne                L90
+
+      debugline           74
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "width")
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "width")
+      subtract
+      callproperty        QName(PackageNamespace(""), "floor"), 1
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      jump                L110
+
+      debugline           76
+L90:
+      getlocal            8
+      getlex              QName(PackageNamespace("flash.text"), "TextFieldAutoSize")
+      getproperty         QName(PackageNamespace(""), "CENTER")
+      ifne                L110
+
+      debugline           77
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "width")
+      pushbyte            2
+      divide
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "width")
+      pushbyte            2
+      divide
+      subtract
+      callproperty        QName(PackageNamespace(""), "floor"), 1
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      debugline           82
+L110:
+      findpropstrict      QName(PackageNamespace(""), "uint")
+      getlocal            7
+      getproperty         QName(Namespace("_-3oN"), "etchingColor")
+      callproperty        QName(PackageNamespace(""), "uint"), 1
+      pushdouble          4278190080
+      bitand
+      pushbyte            0
+      ifeq                L217
+
+      debug               1, "k", 10, 88
+      debugline           83
+      getlex              QName(PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), "_-2Pu")
+      getlocal            7
+      getproperty         QName(Namespace("_-3oN"), "etchingColor")
+      pushbyte            16
+      rshift
+      pushshort           255
+      bitand
+      setproperty         QName(PackageNamespace(""), "redOffset")
+
+      debugline           84
+      getlex              QName(PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), "_-2Pu")
+      getlocal            7
+      getproperty         QName(Namespace("_-3oN"), "etchingColor")
+      pushbyte            8
+      rshift
+      pushshort           255
+      bitand
+      setproperty         QName(PackageNamespace(""), "greenOffset")
+
+      debugline           85
+      getlex              QName(PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), "_-2Pu")
+      getlocal            7
+      getproperty         QName(Namespace("_-3oN"), "etchingColor")
+      pushshort           255
+      bitand
+      setproperty         QName(PackageNamespace(""), "blueOffset")
+
+      debugline           86
+      getlex              QName(PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), "_-2Pu")
+      getlocal            7
+      getproperty         QName(Namespace("_-3oN"), "etchingColor")
+      pushbyte            24
+      rshift
+      pushshort           255
+      bitand
+      pushshort           255
+      divide
+      setproperty         QName(PackageNamespace(""), "alphaMultiplier")
+
+      debugline           88
+      getlex              QName(StaticProtectedNs("_-0tU"), "_-4u4")
+      getlocal            7
+      getproperty         QName(Namespace("_-3oN"), "etchingPosition")
+      getproperty         MultinameL([PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), ProtectedNamespace("_-1Bn"), PackageNamespace(""), PrivateNamespace("TextSkinRenderer.as$2809", "_-2J1:TextSkinRenderer#1"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-1Bn"), StaticProtectedNs("_-0tU")])
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal            11
+
+      debugline           89
+      getlocal            11
+      pushnull
+      ifeq                L217
+
+      debugline           90
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "tx")
+      getlocal            11
+      getproperty         Multiname("x", [PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), ProtectedNamespace("_-1Bn"), PackageNamespace(""), PrivateNamespace("TextSkinRenderer.as$2809", "_-2J1:TextSkinRenderer#1"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-1Bn"), StaticProtectedNs("_-0tU")])
+      add
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      debugline           91
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "ty")
+      getlocal            11
+      getproperty         Multiname("y", [PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), ProtectedNamespace("_-1Bn"), PackageNamespace(""), PrivateNamespace("TextSkinRenderer.as$2809", "_-2J1:TextSkinRenderer#1"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-1Bn"), StaticProtectedNs("_-0tU")])
+      add
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      debugline           92
+      getlocal2
+      getlocal            9
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlex              QName(PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), "_-2Pu")
+      pushnull
+      pushnull
+      pushfalse
+      callpropvoid        QName(PackageNamespace(""), "draw"), 6
+
+      debugline           93
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "tx")
+      getlocal            11
+      getproperty         Multiname("x", [PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), ProtectedNamespace("_-1Bn"), PackageNamespace(""), PrivateNamespace("TextSkinRenderer.as$2809", "_-2J1:TextSkinRenderer#1"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-1Bn"), StaticProtectedNs("_-0tU")])
+      subtract
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      debugline           94
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "ty")
+      getlocal            11
+      getproperty         Multiname("y", [PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), ProtectedNamespace("_-1Bn"), PackageNamespace(""), PrivateNamespace("TextSkinRenderer.as$2809", "_-2J1:TextSkinRenderer#1"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-1Bn"), StaticProtectedNs("_-0tU")])
+      subtract
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      debugline           99
+L217:
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "_-XH")
+      iffalse             L226
+
+      debugline           100
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "_-XH")
+      coerce              QName(PackageNamespace("flash.geom"), "ColorTransform")
+      setlocal            10
+
+      debugline           103
+L226:
+      getlocal2
+      getlocal            9
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1Bn"), "_-3pE")
+      getlocal            10
+      pushnull
+      pushnull
+      pushfalse
+      callpropvoid        QName(PackageNamespace(""), "draw"), 6
+
+      debugline           105
+L236:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isStateDrawable") flag OVERRIDE
+   method
+    refid "_-2J1:TextSkinRenderer/isStateDrawable"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           111
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 111
+      debugline           113
+      getlocal1
+      pushbyte            0
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2J1:TextSkinRenderer/cinit"
+  body
+   maxstack 10
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 24
+    findproperty        QName(PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), "_-2Pu")
+    findpropstrict      QName(PackageNamespace("flash.geom"), "ColorTransform")
+    pushbyte            0
+    dup
+    dup
+    pushbyte            1
+    pushshort           255
+    pushshort           255
+    pushshort           255
+    pushbyte            0
+    constructprop       QName(PackageNamespace("flash.geom"), "ColorTransform"), 8
+    initproperty        QName(PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), "_-2Pu")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-1Bn", "_-2J1:TextSkinRenderer#0"), "_-2Pu") slotid 1 type QName(PackageNamespace("flash.geom"), "ColorTransform") end
+end ; class

@@ -1,0 +1,124 @@
+class
+ refid "_-4qf:_-2p5"
+ instance QName(PackageNamespace("_-4qf"), "_-2p5")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3cV")
+  iinit
+   refid "_-4qf:_-2p5/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           25
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "color") type QName(PackageNamespace(""), "uint") value Integer(16777215) end
+  trait slot QName(PackageNamespace(""), "background") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PackageNamespace(""), "blend") type QName(PackageNamespace(""), "Number") value Double(1) end
+  trait slot QName(PackageNamespace(""), "_-5c0") type QName(PackageNamespace(""), "uint") value Integer(10) end
+  trait slot QName(PackageNamespace(""), "width_min") type QName(PackageNamespace(""), "int") value Integer(-2147483648) end
+  trait slot QName(PackageNamespace(""), "width_max") type QName(PackageNamespace(""), "int") value Integer(2147483647) end
+  trait slot QName(PackageNamespace(""), "height_min") type QName(PackageNamespace(""), "int") value Integer(-2147483648) end
+  trait slot QName(PackageNamespace(""), "height_max") type QName(PackageNamespace(""), "int") value Integer(2147483647) end
+  trait method QName(PackageNamespace(""), "_-0aN")
+   method
+    refid "_-4qf:_-2p5/_-0aN"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           16
+      getlocal0
+      pushscope
+
+      debugline           17
+      getlex              QName(PackageNamespace(""), "_-1Kz")
+      convert_b
+      dup
+      iffalse             L43
+
+      pop
+      debugline           18
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "width_min")
+      getlex              QName(PackageNamespace(""), "int")
+      getproperty         QName(PackageNamespace(""), "MIN_VALUE")
+      greaterthan
+      dup
+      iftrue              L25
+
+      pop
+      debugline           19
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "height_min")
+      getlex              QName(PackageNamespace(""), "int")
+      getproperty         QName(PackageNamespace(""), "MIN_VALUE")
+      greaterthan
+L25:
+      dup
+      iftrue              L34
+
+      pop
+      debugline           20
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "width_max")
+      getlex              QName(PackageNamespace(""), "int")
+      getproperty         QName(PackageNamespace(""), "MAX_VALUE")
+      lessthan
+L34:
+      dup
+      iftrue              L43
+
+      pop
+      debugline           21
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "height_max")
+      getlex              QName(PackageNamespace(""), "int")
+      getproperty         QName(PackageNamespace(""), "MAX_VALUE")
+      lessthan
+L43:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4qf:_-2p5/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 5
+    findproperty        QName(PackageNamespace(""), "_-1Kz")
+    pushtrue
+    setproperty         QName(PackageNamespace(""), "_-1Kz")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "_-1Kz") slotid 1 type QName(PackageNamespace(""), "Boolean") value True() end
+end ; class

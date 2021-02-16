@@ -1,0 +1,353 @@
+class
+ refid "_-5Fj:LimitedItemOverlayNumberBitmapGenerator"
+ instance QName(PackageNamespace("_-5Fj"), "LimitedItemOverlayNumberBitmapGenerator")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0FP")
+  iinit
+   refid "_-5Fj:LimitedItemOverlayNumberBitmapGenerator/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           59
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-5Fj:LimitedItemOverlayNumberBitmapGenerator/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 15
+    findproperty        QName(PrivateNamespace("_-0FP", "_-5Fj:LimitedItemOverlayNumberBitmapGenerator"), "_-5m5")
+    pushstring          "unique_item_number_glyph_"
+    initproperty        QName(PrivateNamespace("_-0FP", "_-5Fj:LimitedItemOverlayNumberBitmapGenerator"), "_-5m5")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-0FP", "_-5Fj:LimitedItemOverlayNumberBitmapGenerator"), "_-5m5") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("unique_item_number_glyph_") end
+ trait method QName(PackageNamespace(""), "_-3kf") flag FINAL dispid 3
+  method
+   refid "_-5Fj:LimitedItemOverlayNumberBitmapGenerator/_-3kf"
+   param QName(PackageNamespace("_-eg"), "_-6Pl")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace("flash.display"), "BitmapData")
+   body
+    maxstack 5
+    localcount 15
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     setlocal            12
+
+     pushbyte            0
+     setlocal            14
+
+     debug               1, "k", 0, 17
+     debug               1, "k", 1, 17
+     debug               1, "k", 2, 17
+     debug               1, "k", 3, 17
+     debug               1, "k", 4, 18
+     debug               1, "k", 5, 20
+     debug               1, "k", 6, 21
+     debug               1, "k", 7, 22
+     debug               1, "k", 8, 23
+     debug               1, "k", 9, 25
+     debug               1, "k", 10, 26
+     debug               1, "k", 11, 27
+     debug               1, "k", 12, 48
+     debug               1, "k", 13, 49
+     debugline           18
+     findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+     getlocal3
+     getlocal            4
+     pushtrue
+     pushbyte            0
+     constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+     coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+     setlocal            5
+
+     debugline           20
+     getlocal2
+     pushbyte            10
+     modulo
+     convert_i
+     setlocal            6
+
+     debugline           21
+     getlocal2
+     pushbyte            10
+     divide
+     pushbyte            10
+     modulo
+     convert_i
+     setlocal            7
+
+     debugline           22
+     getlocal2
+     pushbyte            100
+     divide
+     pushbyte            10
+     modulo
+     convert_i
+     setlocal            8
+
+     debugline           23
+     getlocal2
+     pushshort           1000
+     divide
+     pushbyte            10
+     modulo
+     convert_i
+     setlocal            9
+
+     debugline           25
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            10
+
+     debugline           26
+     pushbyte            0
+     setlocal            11
+
+     debugline           28
+     getlocal            9
+     pushbyte            0
+     ifngt               L97
+
+     debugline           29
+     findpropstrict      QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     getlocal1
+     getlex              QName(PrivateNamespace("_-0FP", "_-5Fj:LimitedItemOverlayNumberBitmapGenerator"), "_-5m5")
+     getlocal            9
+     add
+     callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+     callproperty        QName(PackageNamespace("_-eg"), "BitmapDataAsset"), 1
+     coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     setlocal            12
+
+     debugline           30
+     getlocal            10
+     getlocal            12
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           31
+     getlocal            11
+     getlocal            12
+     getproperty         QName(PackageNamespace(""), "rectangle")
+     getproperty         QName(PackageNamespace(""), "width")
+     add
+     convert_i
+     setlocal            11
+
+     debugline           33
+L97:
+     getlocal            9
+     pushbyte            0
+     greaterthan
+     dup
+     iftrue              L106
+
+     pop
+     getlocal            8
+     pushbyte            0
+     greaterthan
+L106:
+     iffalse             L130
+
+     debugline           34
+     findpropstrict      QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     getlocal1
+     getlex              QName(PrivateNamespace("_-0FP", "_-5Fj:LimitedItemOverlayNumberBitmapGenerator"), "_-5m5")
+     getlocal            8
+     add
+     callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+     callproperty        QName(PackageNamespace("_-eg"), "BitmapDataAsset"), 1
+     coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     setlocal            12
+
+     debugline           35
+     getlocal            10
+     getlocal            12
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           36
+     getlocal            11
+     getlocal            12
+     getproperty         QName(PackageNamespace(""), "rectangle")
+     getproperty         QName(PackageNamespace(""), "width")
+     add
+     convert_i
+     setlocal            11
+
+     debugline           38
+L130:
+     getlocal            9
+     pushbyte            0
+     greaterthan
+     dup
+     iftrue              L139
+
+     pop
+     getlocal            8
+     pushbyte            0
+     greaterthan
+L139:
+     dup
+     iftrue              L145
+
+     pop
+     getlocal            7
+     pushbyte            0
+     greaterthan
+L145:
+     iffalse             L169
+
+     debugline           39
+     findpropstrict      QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     getlocal1
+     getlex              QName(PrivateNamespace("_-0FP", "_-5Fj:LimitedItemOverlayNumberBitmapGenerator"), "_-5m5")
+     getlocal            7
+     add
+     callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+     callproperty        QName(PackageNamespace("_-eg"), "BitmapDataAsset"), 1
+     coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     setlocal            12
+
+     debugline           40
+     getlocal            10
+     getlocal            12
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           41
+     getlocal            11
+     getlocal            12
+     getproperty         QName(PackageNamespace(""), "rectangle")
+     getproperty         QName(PackageNamespace(""), "width")
+     add
+     convert_i
+     setlocal            11
+
+     debugline           43
+L169:
+     findpropstrict      QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     getlocal1
+     getlex              QName(PrivateNamespace("_-0FP", "_-5Fj:LimitedItemOverlayNumberBitmapGenerator"), "_-5m5")
+     getlocal            6
+     add
+     callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+     callproperty        QName(PackageNamespace("_-eg"), "BitmapDataAsset"), 1
+     coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     setlocal            12
+
+     debugline           44
+     getlocal            10
+     getlocal            12
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           45
+     getlocal            11
+     getlocal            12
+     getproperty         QName(PackageNamespace(""), "rectangle")
+     getproperty         QName(PackageNamespace(""), "width")
+     add
+     convert_i
+     setlocal            11
+
+     debugline           46
+     getlocal            11
+     decrement
+     convert_i
+     setlocal            11
+
+     debugline           48
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+     getlocal3
+     getlocal            11
+     subtract
+     pushbyte            2
+     divide
+     pushbyte            0
+     constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+     coerce              QName(PackageNamespace("flash.geom"), "Point")
+     setlocal            13
+
+     jump                L235
+
+L207:
+     label
+     debugline           50
+     getlocal            10
+     getlocal            14
+     getproperty         MultinameL([PrivateNamespace("_-0FP", "_-5Fj:LimitedItemOverlayNumberBitmapGenerator"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("LimitedItemOverlayNumberBitmapGenerator.as$3225", "_-5Fj:LimitedItemOverlayNumberBitmapGenerator/_-3kf"), PackageNamespace("_-5Fj"), PackageInternalNs("_-5Fj"), ProtectedNamespace("_-0FP"), StaticProtectedNs("_-0FP")])
+     coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     setlocal            12
+
+     debugline           51
+     getlocal            5
+     findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+     getlocal            12
+     getproperty         QName(PackageNamespace(""), "content")
+     callproperty        QName(PackageNamespace("flash.display"), "BitmapData"), 1
+     getlocal            12
+     getproperty         QName(PackageNamespace(""), "rectangle")
+     getlocal            13
+     callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+     debugline           52
+     getlocal            13
+     getlocal            13
+     getproperty         QName(PackageNamespace(""), "x")
+     getlocal            12
+     getproperty         QName(PackageNamespace(""), "rectangle")
+     getproperty         QName(PackageNamespace(""), "width")
+     add
+     setproperty         QName(PackageNamespace(""), "x")
+
+     debugline           49
+     inclocal_i          14
+L235:
+     getlocal            14
+     getlocal            10
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L207
+
+     debugline           55
+     getlocal            5
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

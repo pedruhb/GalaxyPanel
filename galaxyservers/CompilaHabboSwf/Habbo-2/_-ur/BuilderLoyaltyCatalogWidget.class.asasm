@@ -1,0 +1,261 @@
+class
+ refid "_-ur:BuilderLoyaltyCatalogWidget"
+ instance QName(PackageNamespace("_-ur"), "BuilderLoyaltyCatalogWidget")
+  extends QName(PackageNamespace("_-ur"), "CatalogWidget")
+  implements Multiname("_-0su", [PackageNamespace("_-ur")])
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1Zp")
+  iinit
+   refid "_-ur:BuilderLoyaltyCatalogWidget/iinit"
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   param QName(PackageNamespace("_-47b"), "HabboCatalog")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           14
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 14
+     debug               1, "k", 1, 14
+     debugline           15
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           16
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-1Zp", "_-ur:BuilderLoyaltyCatalogWidget"), "_-2--")
+
+     debugline           17
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1Zp", "_-ur:BuilderLoyaltyCatalogWidget"), "_-2--") type QName(PackageNamespace("_-47b"), "HabboCatalog") end
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-ur:BuilderLoyaltyCatalogWidget/init"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            5
+
+      debug               1, "k", 0, 25
+      debug               1, "k", 1, 26
+      debug               1, "k", 2, 27
+      debug               1, "k", 3, 28
+      debugline           20
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L22
+
+      debugline           21
+      pushfalse
+      returnvalue
+
+      debugline           24
+L22:
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Zp", "_-ur:BuilderLoyaltyCatalogWidget"), "_-12r")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           25
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushstring          "loyalty_list"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      setlocal1
+
+      debugline           26
+      getlocal1
+      pushbyte            0
+      callproperty        QName(Namespace("_-0Pj"), "_-3Rt"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           27
+      pushbyte            0
+      setlocal3
+
+      debugline           28
+      pushbyte            0
+      setlocal            6
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            7
+
+      jump                L103
+
+L51:
+      label
+      getlocal            7
+      getlocal            6
+      nextvalue
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal            4
+
+      debug               1, "k", 4, 29
+      debugline           29
+      getlocal2
+      callproperty        QName(Namespace("_-6q"), "clone"), 0
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            5
+
+      debugline           30
+      getlocal            5
+      pushstring          "item_header"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            4
+      getproperty         QName(Namespace("_-6Vz"), "_-5Cj")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           31
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Zp", "_-ur:BuilderLoyaltyCatalogWidget"), "_-2--")
+      getproperty         QName(PackageNamespace(""), "utils")
+      getlocal            5
+      pushstring          "item_cost_box"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "_-3sC"), 2
+
+      debugline           32
+      getlocal            5
+      pushstring          "item_buy"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            4
+      getproperty         QName(Namespace("_-6Vz"), "_-5H2")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           33
+      getlocal            5
+      pushstring          "item_buy"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal3
+      setproperty         QName(Namespace("_-6q"), "id")
+
+      debugline           34
+      inclocal_i          3
+      debugline           35
+      getlocal1
+      getlocal            5
+      callpropvoid        QName(Namespace("_-0Pj"), "addListItem"), 1
+
+      debugline           28
+L103:
+      hasnext2            7, 6
+      iftrue              L51
+
+      kill                7
+      kill                6
+      debugline           37
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1Zp", "_-ur:BuilderLoyaltyCatalogWidget"), "_-12r")
+   method
+    refid "_-ur:BuilderLoyaltyCatalogWidget/_-12r"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 40
+      debug               1, "k", 1, 40
+      debugline           41
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifeq                L15
+
+      debugline           42
+      returnvoid
+
+      debugline           45
+L15:
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "name")
+      pushstring          "item_buy"
+      ifne                L31
+
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1Zp", "_-ur:BuilderLoyaltyCatalogWidget"), "_-2--")
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "id")
+      getproperty         MultinameL([PrivateNamespace("_-1Zp", "_-ur:BuilderLoyaltyCatalogWidget"), PackageNamespace(""), PrivateNamespace("BuilderLoyaltyCatalogWidget.as$3401", "_-ur:BuilderLoyaltyCatalogWidget/_-12r"), PackageNamespace("_-ur"), PackageInternalNs("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1Zp"), StaticProtectedNs("_-1Zp"), StaticProtectedNs("_-5qb")])
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "pageId")
+      callpropvoid        QName(PackageNamespace(""), "_-6B-"), 2
+
+      debugline           48
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ur:BuilderLoyaltyCatalogWidget/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

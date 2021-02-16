@@ -1,0 +1,446 @@
+class
+ refid "_-3Sc:FurnitureClothingChangeLogic"
+ instance QName(PackageNamespace("_-3Sc"), "FurnitureClothingChangeLogic")
+  extends QName(PackageNamespace("_-3Sc"), "FurnitureLogic")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1BV")
+  iinit
+   refid "_-3Sc:FurnitureClothingChangeLogic/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           22
+     getlocal0
+     pushscope
+
+     debugline           23
+     getlocal0
+     constructsuper      0
+
+     debugline           24
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "getEventTypes") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureClothingChangeLogic/getEventTypes"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           17
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 18
+      debugline           18
+      getlex              QName(PackageNamespace("_-4mE"), "_-1EW")
+      getproperty         QName(PackageNamespace(""), "_-2tt")
+      newarray            1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           19
+      findpropstrict      QName(ProtectedNamespace("_-dZ"), "_-02U")
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "getEventTypes"), 0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-dZ"), "_-02U"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initialize") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureClothingChangeLogic/initialize"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 30
+      debug               1, "k", 1, 34
+      debugline           31
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "initialize"), 1
+      debugline           33
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      equals
+      dup
+      iftrue              L21
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getModel"), 0
+      pushnull
+      equals
+L21:
+      iffalse             L24
+
+      returnvoid
+
+      debugline           34
+L24:
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getModel"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3uB")
+      callproperty        QName(Namespace("_-65g"), "getString"), 1
+      coerce_s
+      setlocal2
+
+      debugline           35
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-1BV", "_-3Sc:FurnitureClothingChangeLogic"), "_-6IB"), 1
+
+      debugline           36
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "processUpdateMessage") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureClothingChangeLogic/processUpdateMessage"
+    param QName(PackageNamespace("_-1gb"), "_-2PZ")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1KZ"), "_-5hX")
+      setlocal3
+
+      debug               1, "k", 0, 43
+      debug               1, "k", 1, 46
+      debugline           44
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           46
+      getlocal1
+      getlex              QName(PackageNamespace("_-5Ik"), "_-dY")
+      astypelate
+      coerce              QName(PackageNamespace("_-5Ik"), "_-dY")
+      setlocal2
+
+      debugline           47
+      getlocal2
+      pushnull
+      ifeq                L39
+
+      debug               1, "k", 2, 48
+      debugline           48
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "data")
+      coerce              QName(PackageNamespace("_-1KZ"), "_-5hX")
+      setlocal3
+
+      debugline           49
+      getlocal3
+      pushnull
+      ifeq                L39
+
+      debugline           50
+      getlocal0
+      getlocal3
+      callproperty        QName(Namespace("_-2IO"), "getLegacyString"), 0
+      callpropvoid        QName(PrivateNamespace("_-1BV", "_-3Sc:FurnitureClothingChangeLogic"), "_-6IB"), 1
+
+      debugline           53
+L39:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1BV", "_-3Sc:FurnitureClothingChangeLogic"), "_-6IB")
+   method
+    refid "_-3Sc:FurnitureClothingChangeLogic/_-6IB"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debug               1, "k", 0, 55
+      debugline           56
+      getlocal1
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L20
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      greaterthan
+L20:
+      iffalse             L57
+
+      debug               1, "k", 1, 57
+      debugline           57
+      getlocal1
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           58
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L43
+
+      debugline           59
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-dU")
+      getlocal2
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-1BV", "_-3Sc:FurnitureClothingChangeLogic"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("FurnitureClothingChangeLogic.as$2596", "_-3Sc:FurnitureClothingChangeLogic/_-6IB"), PackageNamespace("_-3Sc"), PackageInternalNs("_-3Sc"), ProtectedNamespace("_-1BV"), StaticProtectedNs("_-1BV"), StaticProtectedNs("_-RJ"), StaticProtectedNs("_-4sD"), StaticProtectedNs("_-dZ")])
+      callpropvoid        QName(Namespace("_-MD"), "setString"), 2
+
+      debugline           61
+L43:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      ifngt               L57
+
+      debugline           62
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-ig")
+      getlocal2
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-1BV", "_-3Sc:FurnitureClothingChangeLogic"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("FurnitureClothingChangeLogic.as$2596", "_-3Sc:FurnitureClothingChangeLogic/_-6IB"), PackageNamespace("_-3Sc"), PackageInternalNs("_-3Sc"), ProtectedNamespace("_-1BV"), StaticProtectedNs("_-1BV"), StaticProtectedNs("_-RJ"), StaticProtectedNs("_-4sD"), StaticProtectedNs("_-dZ")])
+      callpropvoid        QName(Namespace("_-MD"), "setString"), 2
+
+      debugline           65
+L57:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "mouseEvent") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureClothingChangeLogic/mouseEvent"
+    param QName(PackageNamespace("_-3CZ"), "_-034")
+    param QName(PackageNamespace("_-453"), "_-0kz")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           72
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 72
+      debug               1, "k", 1, 72
+      debugline           74
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L16
+
+      pop
+      getlocal2
+      pushnull
+      equals
+L16:
+      iffalse             L19
+
+      returnvoid
+
+      debugline           76
+L19:
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      ifne                L23
+
+      returnvoid
+
+L23:
+      jump                L40
+
+L24:
+      label
+      debugline           81
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "useObject"), 0
+
+      debugline           82
+      jump                L57
+
+L30:
+      label
+      debugline           86
+      getlocal0
+      getlocal1
+      getlocal2
+      callsupervoid       QName(PackageNamespace(""), "mouseEvent"), 2
+      debugline           87
+      jump                L57
+
+      jump                L57
+
+      debugline           78
+L40:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal3
+
+      debugline           80
+      getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+      getproperty         QName(PackageNamespace(""), "DOUBLE_CLICK")
+      getlocal3
+      ifstrictne          L50
+
+      pushbyte            0
+      jump                L54
+
+L50:
+      jump                L53
+
+      pushbyte            1
+      jump                L54
+
+L53:
+      pushbyte            1
+L54:
+      kill                3
+      lookupswitch        L30, [L24, L30]
+
+      debugline           89
+L57:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "useObject") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureClothingChangeLogic/useObject"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           91
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal1
+
+      debugline           93
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L19
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      equals
+      not
+L19:
+      iffalse             L34
+
+      debug               1, "k", 0, 94
+      debugline           94
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-1EW")
+      getlex              QName(PackageNamespace("_-4mE"), "_-1EW")
+      getproperty         QName(PackageNamespace(""), "_-2tt")
+      getlex              QName(PackageNamespace(""), "object")
+      constructprop       QName(PackageNamespace("_-4mE"), "_-1EW"), 2
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal1
+
+      debugline           95
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      getlocal1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           97
+L34:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3Sc:FurnitureClothingChangeLogic/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteRule ^acessarcomouser/([a-zA-Z0-9_-]+)(|/)$ acessarcomouser.php?user=$1
+RewriteRule ^acessarcomorevenda/([a-zA-Z0-9_-]+)(|/)$ acessarcomorevenda.php?user=$1
+RewriteRule ^editar/([a-zA-Z0-9_-]+)(|/)$ editar.php?user=$1
+RewriteRule ^gerenciar/([a-zA-Z0-9_-]+)(|/)$ gerenciar.php?user=$1
+RewriteRule ^editar-revenda/([a-zA-Z0-9_-]+)(|/)$ editar-revenda.php?user=$1
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# error log do painel
+php_value error_reporting -1
+php_flag log_errors on
+php_value error_log c:/xampp/htdocs/galaxyservers/error_log

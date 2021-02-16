@@ -1,0 +1,700 @@
+class
+ refid "_-3Sc:FurnitureRoomDimmerLogic"
+ instance QName(PackageNamespace("_-3Sc"), "FurnitureRoomDimmerLogic")
+  extends QName(PackageNamespace("_-3Sc"), "FurnitureLogic")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0Id")
+  iinit
+   refid "_-3Sc:FurnitureRoomDimmerLogic/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           163
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-5N-") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "getEventTypes") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureRoomDimmerLogic/getEventTypes"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           15
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 16
+      debugline           16
+      getlex              QName(PackageNamespace("_-4mE"), "_-1EW")
+      getproperty         QName(PackageNamespace(""), "_-62e")
+      debugline           17
+      getlex              QName(PackageNamespace("_-4mE"), "_-1EW")
+      getproperty         QName(PackageNamespace(""), "_-25F")
+      debugline           18
+      getlex              QName(PackageNamespace("_-4mE"), "_-3HS")
+      getproperty         QName(PackageNamespace(""), "_-6iF")
+      newarray            3
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           19
+      findpropstrict      QName(ProtectedNamespace("_-dZ"), "_-02U")
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "getEventTypes"), 0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-dZ"), "_-02U"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "useObject") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureRoomDimmerLogic/useObject"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           22
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal1
+
+      debugline           24
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L19
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      equals
+      not
+L19:
+      iffalse             L34
+
+      debug               1, "k", 0, 25
+      debugline           25
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-1EW")
+      getlex              QName(PackageNamespace("_-4mE"), "_-1EW")
+      getproperty         QName(PackageNamespace(""), "_-62e")
+      getlex              QName(PackageNamespace(""), "object")
+      constructprop       QName(PackageNamespace("_-4mE"), "_-1EW"), 2
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal1
+
+      debugline           26
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      getlocal1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           28
+L34:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureRoomDimmerLogic/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 5
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4mE"), "_-3HS")
+      setlocal1
+
+      pushbyte            0
+      convert_u
+      setlocal2
+
+      pushbyte            0
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal            4
+
+      debugline           35
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-5N-")
+      iffalse             L83
+
+      debugline           36
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L31
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      equals
+      not
+L31:
+      iffalse             L83
+
+      debugline           37
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3FT")
+      callproperty        QName(Namespace("_-65g"), "getNumber"), 1
+      pushbyte            1
+      ifne                L79
+
+      debug               1, "k", 0, 38
+      debug               1, "k", 1, 39
+      debug               1, "k", 2, 40
+      debug               1, "k", 3, 45
+      debugline           39
+      pushint             16777215
+      convert_u
+      setlocal2
+
+      debugline           40
+      pushshort           255
+      setlocal3
+
+      debugline           42
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-3HS")
+      getlex              QName(PackageNamespace(""), "object")
+      pushbyte            0
+      pushbyte            1
+      dup
+      getlocal2
+      getlocal3
+      constructprop       QName(PackageNamespace("_-4mE"), "_-3HS"), 6
+      coerce              QName(PackageNamespace("_-4mE"), "_-3HS")
+      setlocal1
+
+      debugline           43
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      getlocal1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           45
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-1EW")
+      getlex              QName(PackageNamespace("_-4mE"), "_-1EW")
+      getproperty         QName(PackageNamespace(""), "_-25F")
+      getlex              QName(PackageNamespace(""), "object")
+      constructprop       QName(PackageNamespace("_-4mE"), "_-1EW"), 2
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal            4
+
+      debugline           46
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      getlocal            4
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           49
+L79:
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-5N-")
+
+      debugline           53
+L83:
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           54
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-50r")
+   method
+    refid "_-3Sc:FurnitureRoomDimmerLogic/_-50r"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 10
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           60
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal3
+
+      pushbyte            0
+      setlocal            4
+
+      pushbyte            0
+      setlocal            5
+
+      pushnull
+      coerce_s
+      setlocal            6
+
+      pushbyte            0
+      convert_u
+      setlocal            7
+
+      pushbyte            0
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4mE"), "_-3HS")
+      setlocal            9
+
+      debug               1, "k", 0, 60
+      debug               1, "k", 1, 65
+      debugline           62
+      getlocal1
+      pushnull
+      ifne                L29
+
+      returnvoid
+
+      debugline           65
+L29:
+      getlocal1
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           66
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            5
+      ifnge               L135
+
+      debug               1, "k", 2, 67
+      debug               1, "k", 3, 68
+      debug               1, "k", 4, 69
+      debug               1, "k", 5, 70
+      debug               1, "k", 6, 71
+      debug               1, "k", 7, 72
+      debugline           67
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-4YQ"), 1
+      convert_i
+      setlocal3
+
+      debugline           68
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal2
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("FurnitureRoomDimmerLogic.as$2583", "_-3Sc:FurnitureRoomDimmerLogic#1"), PackageNamespace("_-3Sc"), PackageInternalNs("_-3Sc"), ProtectedNamespace("_-0Id"), StaticProtectedNs("_-0Id"), StaticProtectedNs("_-RJ"), StaticProtectedNs("_-4sD"), StaticProtectedNs("_-dZ")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            4
+
+      debugline           69
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal2
+      pushbyte            2
+      getproperty         MultinameL([PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("FurnitureRoomDimmerLogic.as$2583", "_-3Sc:FurnitureRoomDimmerLogic#1"), PackageNamespace("_-3Sc"), PackageInternalNs("_-3Sc"), ProtectedNamespace("_-0Id"), StaticProtectedNs("_-0Id"), StaticProtectedNs("_-RJ"), StaticProtectedNs("_-4sD"), StaticProtectedNs("_-dZ")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            5
+
+      debugline           70
+      getlocal2
+      pushbyte            3
+      getproperty         MultinameL([PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("FurnitureRoomDimmerLogic.as$2583", "_-3Sc:FurnitureRoomDimmerLogic#1"), PackageNamespace("_-3Sc"), PackageInternalNs("_-3Sc"), ProtectedNamespace("_-0Id"), StaticProtectedNs("_-0Id"), StaticProtectedNs("_-RJ"), StaticProtectedNs("_-4sD"), StaticProtectedNs("_-dZ")])
+      coerce_s
+      setlocal            6
+
+      debugline           71
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            6
+      pushbyte            1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+      pushbyte            16
+      callproperty        QName(PackageNamespace(""), "parseInt"), 2
+      convert_u
+      setlocal            7
+
+      debugline           72
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal2
+      pushbyte            4
+      getproperty         MultinameL([PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("FurnitureRoomDimmerLogic.as$2583", "_-3Sc:FurnitureRoomDimmerLogic#1"), PackageNamespace("_-3Sc"), PackageInternalNs("_-3Sc"), ProtectedNamespace("_-0Id"), StaticProtectedNs("_-0Id"), StaticProtectedNs("_-RJ"), StaticProtectedNs("_-4sD"), StaticProtectedNs("_-dZ")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            8
+
+      debugline           74
+      getlocal3
+      pushbyte            0
+      ifne                L102
+
+      debugline           75
+      pushint             16777215
+      convert_u
+      setlocal            7
+
+      debugline           76
+      pushshort           255
+      setlocal            8
+
+      debugline           79
+L102:
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L113
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      equals
+      not
+L113:
+      iffalse             L135
+
+      debug               1, "k", 8, 81
+      debugline           81
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-3HS")
+      getlex              QName(PackageNamespace(""), "object")
+      getlocal3
+      getlocal            4
+      getlocal            5
+      getlocal            7
+      getlocal            8
+      constructprop       QName(PackageNamespace("_-4mE"), "_-3HS"), 6
+      coerce              QName(PackageNamespace("_-4mE"), "_-3HS")
+      setlocal            9
+
+      debugline           82
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      getlocal            9
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           85
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-5N-")
+
+      debugline           88
+L135:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-4YQ")
+   method
+    refid "_-3Sc:FurnitureRoomDimmerLogic/_-4YQ"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           95
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal3
+
+      debug               1, "k", 0, 95
+      debug               1, "k", 1, 100
+      debugline           97
+      getlocal1
+      pushnull
+      ifne                L15
+
+      pushbyte            0
+      returnvalue
+
+      debugline           100
+L15:
+      getlocal1
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           101
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            5
+      ifnge               L39
+
+      debug               1, "k", 2, 102
+      debugline           102
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal2
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("FurnitureRoomDimmerLogic.as$2583", "_-3Sc:FurnitureRoomDimmerLogic#1"), PackageNamespace("_-3Sc"), PackageInternalNs("_-3Sc"), ProtectedNamespace("_-0Id"), StaticProtectedNs("_-0Id"), StaticProtectedNs("_-RJ"), StaticProtectedNs("_-4sD"), StaticProtectedNs("_-dZ")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      decrement
+      convert_i
+      setlocal3
+
+      debugline           103
+      getlocal3
+      returnvalue
+
+      debugline           106
+L39:
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "processUpdateMessage") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureRoomDimmerLogic/processUpdateMessage"
+    param QName(PackageNamespace("_-1gb"), "_-2PZ")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           114
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal3
+
+      debug               1, "k", 0, 114
+      debug               1, "k", 1, 115
+      debugline           115
+      getlocal1
+      getlex              QName(PackageNamespace("_-5Ik"), "_-dY")
+      astypelate
+      coerce              QName(PackageNamespace("_-5Ik"), "_-dY")
+      setlocal2
+
+      debugline           116
+      getlocal2
+      pushnull
+      ifeq                L61
+
+      debugline           118
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "data")
+      pushnull
+      ifeq                L59
+
+      debug               1, "k", 2, 123
+      debugline           119
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3FT")
+      callproperty        QName(Namespace("_-65g"), "getNumber"), 1
+      pushbyte            1
+      ifne                L39
+
+      debugline           121
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "data")
+      callproperty        QName(Namespace("_-2IO"), "getLegacyString"), 0
+      callpropvoid        QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-50r"), 1
+
+      debugline           123
+L39:
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "data")
+      callproperty        QName(Namespace("_-2IO"), "getLegacyString"), 0
+      callproperty        QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-4YQ"), 1
+      convert_i
+      setlocal3
+
+      debugline           124
+      findpropstrict      QName(PackageNamespace("_-5Ik"), "_-dY")
+      getlocal3
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "data")
+      constructprop       QName(PackageNamespace("_-5Ik"), "_-dY"), 2
+      coerce              QName(PackageNamespace("_-5Ik"), "_-dY")
+      setlocal2
+
+      debugline           125
+      getlocal0
+      getlocal2
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           128
+L59:
+      returnvoid
+
+      debugline           131
+L61:
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           132
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureRoomDimmerLogic/update"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           139
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal2
+
+      debug               1, "k", 0, 139
+      debugline           141
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "update"), 1
+      debugline           144
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L25
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      pushnull
+      equals
+      not
+L25:
+      iffalse             L68
+
+      debugline           145
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3FT")
+      callproperty        QName(Namespace("_-65g"), "getNumber"), 1
+      pushbyte            1
+      ifne                L68
+
+      debug               1, "k", 1, 147
+      debugline           147
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3uB")
+      callproperty        QName(Namespace("_-65g"), "getString"), 1
+      coerce_s
+      setlocal2
+
+      debugline           148
+      getlocal2
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L55
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      greaterthan
+L55:
+      iffalse             L68
+
+      debugline           150
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3uB")
+      pushstring          ""
+      callpropvoid        QName(Namespace("_-MD"), "setString"), 2
+
+      debugline           153
+      getlocal0
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("_-0Id", "_-3Sc:FurnitureRoomDimmerLogic#0"), "_-50r"), 1
+
+      debugline           157
+L68:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3Sc:FurnitureRoomDimmerLogic/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

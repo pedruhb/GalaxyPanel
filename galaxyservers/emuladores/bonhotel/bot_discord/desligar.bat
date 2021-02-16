@@ -1,0 +1,1 @@
+cd c:/xampp/htdocs/galaxyservers/emuladores/bonhotel/bot_discord/ && forever stop index.js

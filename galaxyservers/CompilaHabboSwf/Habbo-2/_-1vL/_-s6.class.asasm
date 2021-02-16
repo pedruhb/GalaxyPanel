@@ -1,0 +1,139 @@
+class
+ refid "_-1vL:_-s6"
+ instance QName(PackageNamespace("_-1vL"), "_-s6")
+  extends QName(PackageNamespace("_-177"), "AdServerConfig")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0g")
+  iinit
+   refid "_-1vL:_-s6/iinit"
+   param QName(PackageNamespace(""), "Object")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debugline           28
+     getlocal0
+     pushtrue
+     initproperty        QName(PackageNamespace(""), "oneAdPerRequest")
+
+     debugline           29
+     getlocal0
+     pushstring          "Lightningcast"
+     getlocal1
+     constructsuper      2
+
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(ProtectedNamespace("_-0g"), "defaultTemplate") flag OVERRIDE
+   method
+    refid "_-1vL:_-s6/_-0g:defaultTemplate/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      pushstring          "__api-address__?ver=__ver__&nwid=__nwid__&content=__content__&level=__level__&format=__format__&uid=__uid__&regions=__regions__&crlen=__crlen__&resp=__resp__"
+      debugline           37
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-0g"), "defaultCustomProperties") flag OVERRIDE
+   method
+    refid "_-1vL:_-s6/_-0g:defaultCustomProperties/getter"
+    returns QName(PackageNamespace("_-177"), "CustomProperties")
+    body
+     maxstack 19
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debugline           41
+      findpropstrict      QName(PackageNamespace("_-177"), "CustomProperties")
+      pushstring          "api-address"
+      debugline           43
+      convert_s
+      pushstring          "http://web.lightningcast.net/servlets/getPlaylist"
+      pushstring          "version"
+      debugline           44
+      convert_s
+      pushstring          "2.0"
+      pushstring          "nwid"
+      debugline           45
+      convert_s
+      pushstring          ""
+      pushstring          "level"
+      debugline           46
+      convert_s
+      pushstring          ""
+      pushstring          "format"
+      debugline           47
+      convert_s
+      pushstring          ""
+      pushstring          "uid"
+      debugline           48
+      convert_s
+      pushstring          ""
+      pushstring          "regions"
+      debugline           49
+      convert_s
+      pushstring          ""
+      pushstring          "crlen"
+      debugline           50
+      convert_s
+      pushstring          "t"
+      pushstring          "resp"
+      debugline           51
+      convert_s
+      pushstring          "VAST"
+      newobject           9
+      constructprop       QName(PackageNamespace("_-177"), "CustomProperties"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1vL:_-s6/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

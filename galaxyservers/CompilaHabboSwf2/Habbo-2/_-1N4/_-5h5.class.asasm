@@ -1,0 +1,154 @@
+class
+ refid "_-1N4:_-5h5"
+ instance QName(PackageNamespace("_-1N4"), "_-5h5")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-V1")
+  iinit
+   refid "_-1N4:_-5h5/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           28
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-1N4:_-5h5/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 10
+    findproperty        QName(PackageNamespace(""), "_-1xn")
+    pushbyte            0
+    initproperty        QName(PackageNamespace(""), "_-1xn")
+
+    debug               1, "k", 1, 11
+    findproperty        QName(PackageNamespace(""), "_-3pU")
+    pushbyte            1
+    initproperty        QName(PackageNamespace(""), "_-3pU")
+
+    debug               1, "k", 2, 12
+    findproperty        QName(PackageNamespace(""), "_-5mK")
+    pushbyte            2
+    initproperty        QName(PackageNamespace(""), "_-5mK")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-1xn") slotid 1 type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "_-3pU") slotid 2 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "_-5mK") slotid 3 type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait method QName(PackageNamespace(""), "_-1qN") flag FINAL dispid 3
+  method
+   refid "_-1N4:_-5h5/_-1qN"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           14
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 14
+     jump                L21
+
+L6:
+     label
+     pushstring          "${trading.mode.free}"
+     debugline           17
+     returnvalue
+
+L10:
+     label
+     pushstring          "${trading.mode.controller}"
+     debugline           19
+     returnvalue
+
+L14:
+     label
+     pushstring          "${trading.mode.not.allowed}"
+     debugline           21
+     returnvalue
+
+L18:
+     label
+     jump                L47
+
+     debugline           15
+L21:
+     getlocal1
+     setlocal2
+
+     debugline           16
+     getlex              QName(PackageNamespace(""), "_-5mK")
+     getlocal2
+     ifstrictne          L30
+
+     pushbyte            0
+     jump                L45
+
+     debugline           18
+L30:
+     getlex              QName(PackageNamespace(""), "_-3pU")
+     getlocal2
+     ifstrictne          L36
+
+     pushbyte            1
+     jump                L45
+
+     debugline           20
+L36:
+     getlex              QName(PackageNamespace(""), "_-1xn")
+     getlocal2
+     ifstrictne          L41
+
+     pushbyte            2
+     jump                L45
+
+L41:
+     jump                L44
+
+     pushbyte            3
+     jump                L45
+
+L44:
+     pushbyte            3
+L45:
+     kill                2
+     lookupswitch        L18, [L6, L10, L14, L18]
+
+L47:
+     pushstring          ""
+     debugline           23
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

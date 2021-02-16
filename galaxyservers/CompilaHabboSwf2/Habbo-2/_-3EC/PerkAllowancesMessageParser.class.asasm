@@ -1,0 +1,296 @@
+class
+ refid "_-3EC:PerkAllowancesMessageParser"
+ instance QName(PackageNamespace("_-3EC"), "PerkAllowancesMessageParser")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-1SB", [PackageNamespace("_-6Wd")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-256")
+  iinit
+   refid "_-3EC:PerkAllowancesMessageParser/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           10
+     getlocal0
+     pushscope
+
+     debugline           10
+     getlocal0
+     constructsuper      0
+
+     debugline           11
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-256", "_-3EC:PerkAllowancesMessageParser"), "_-0D2") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-3EC"), "_-6Dk")>) end
+  trait method QName(PackageNamespace(""), "flush")
+   method
+    refid "_-3EC:PerkAllowancesMessageParser/flush"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           13
+      getlocal0
+      pushscope
+
+      debugline           14
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-256", "_-3EC:PerkAllowancesMessageParser"), "_-0D2")
+
+      debugline           15
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "parse")
+   method
+    refid "_-3EC:PerkAllowancesMessageParser/parse"
+    param QName(PackageNamespace("_-6Wd"), "_-5nh")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3EC"), "_-6Dk")
+      setlocal            4
+
+      debug               1, "k", 0, 18
+      debug               1, "k", 1, 21
+      debug               1, "k", 2, 22
+      debugline           19
+      getlocal0
+      getlex              Multiname("Vector", [PrivateNamespace("_-256", "_-3EC:PerkAllowancesMessageParser"), PackageNamespace(""), PackageNamespace("_-3EC"), PrivateNamespace("PerkAllowancesMessageParser.as$2319", "_-3EC:PerkAllowancesMessageParser/parse"), PackageInternalNs("_-3EC"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-256"), StaticProtectedNs("_-256"), PackageNamespace("__AS3__.vec")])
+      getlex              QName(PackageNamespace("_-3EC"), "_-6Dk")
+      applytype           1
+      construct           0
+      initproperty        QName(PrivateNamespace("_-256", "_-3EC:PerkAllowancesMessageParser"), "_-0D2")
+
+      debugline           21
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "_-1u3"), 0
+      convert_i
+      setlocal2
+
+      debugline           22
+      pushbyte            0
+      setlocal3
+
+      jump                L55
+
+L26:
+      label
+      debug               1, "k", 3, 23
+      debugline           23
+      findpropstrict      QName(PackageNamespace("_-3EC"), "_-6Dk")
+      constructprop       QName(PackageNamespace("_-3EC"), "_-6Dk"), 0
+      coerce              QName(PackageNamespace("_-3EC"), "_-6Dk")
+      setlocal            4
+
+      debugline           24
+      getlocal            4
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "readString"), 0
+      setproperty         QName(PackageNamespace(""), "code")
+
+      debugline           25
+      getlocal            4
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "readString"), 0
+      setproperty         QName(PackageNamespace(""), "errorMessage")
+
+      debugline           26
+      getlocal            4
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "readBoolean"), 0
+      setproperty         QName(PackageNamespace(""), "isAllowed")
+
+      debugline           27
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-256", "_-3EC:PerkAllowancesMessageParser"), "_-0D2")
+      getlocal            4
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           22
+      inclocal_i          3
+L55:
+      getlocal3
+      getlocal2
+      iflt                L26
+
+      debugline           29
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-09J")
+   method
+    refid "_-3EC:PerkAllowancesMessageParser/_-09J"
+    returns TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-3EC"), "_-6Dk")>)
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      debugline           33
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-256", "_-3EC:PerkAllowancesMessageParser"), "_-0D2")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isPerkAllowed")
+   method
+    refid "_-3EC:PerkAllowancesMessageParser/isPerkAllowed"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 36
+      debug               1, "k", 1, 37
+      debugline           37
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-3vV"), 1
+      coerce              QName(PackageNamespace("_-3EC"), "_-6Dk")
+      setlocal2
+
+      debugline           38
+      getlocal2
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L23
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "isAllowed")
+      convert_b
+L23:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3vV")
+   method
+    refid "_-3EC:PerkAllowancesMessageParser/_-3vV"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-3EC"), "_-6Dk")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3EC"), "_-6Dk")
+      setlocal2
+
+      debug               1, "k", 0, 41
+      debug               1, "k", 1, 42
+      debugline           42
+      pushbyte            0
+      setlocal3
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-256", "_-3EC:PerkAllowancesMessageParser"), "_-0D2")
+      coerce_a
+      setlocal            4
+
+      jump                L32
+
+L17:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-3EC"), "_-6Dk")
+      setlocal2
+
+      debugline           43
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "code")
+      getlocal1
+      ifne                L32
+
+      debugline           44
+      getlocal2
+      returnvalue
+
+      debugline           42
+L32:
+      hasnext2            4, 3
+      iftrue              L17
+
+      kill                4
+      kill                3
+      debugline           47
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3EC:PerkAllowancesMessageParser/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

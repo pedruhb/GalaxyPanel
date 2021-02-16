@@ -1,0 +1,103 @@
+class
+ refid "adobe.serialization.json:JSON"
+ instance QName(PackageNamespace("adobe.serialization.json"), "JSON")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag FINAL
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("adobe.serialization.json:JSON")
+  iinit
+   refid "adobe.serialization.json:JSON/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "/home/continuous-habbo/hudson-slave/workspace/HABBO-make-flash-RC/fcf/ExternalUtils/source;adobe/serialization/json;JSON.as"
+     debugline           87
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "adobe.serialization.json:JSON/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "encode") flag FINAL dispid 3
+  method
+   refid "adobe.serialization.json:JSON/encode"
+   param QName(PackageNamespace(""), "Object")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "/home/continuous-habbo/hudson-slave/workspace/HABBO-make-flash-RC/fcf/ExternalUtils/source;adobe/serialization/json;JSON.as"
+     debugline           59
+     getlocal0
+     pushscope
+
+     debug               1, "o", 0, 59
+     debugline           61
+     findpropstrict      QName(PackageNamespace("adobe.serialization.json"), "JSONEncoder")
+     getlocal1
+     constructprop       QName(PackageNamespace("adobe.serialization.json"), "JSONEncoder"), 1
+     callproperty        QName(PackageNamespace(""), "getString"), 0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "decode") flag FINAL dispid 4
+  method
+   refid "adobe.serialization.json:JSON/decode"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   optional True()
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "/home/continuous-habbo/hudson-slave/workspace/HABBO-make-flash-RC/fcf/ExternalUtils/source;adobe/serialization/json;JSON.as"
+     debugline           79
+     getlocal0
+     pushscope
+
+     debug               1, "s", 0, 79
+     debug               1, "strict", 1, 79
+     debugline           81
+     findpropstrict      QName(PackageNamespace("adobe.serialization.json"), "JSONDecoder")
+     getlocal1
+     getlocal2
+     constructprop       QName(PackageNamespace("adobe.serialization.json"), "JSONDecoder"), 2
+     callproperty        QName(PackageNamespace(""), "getValue"), 0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

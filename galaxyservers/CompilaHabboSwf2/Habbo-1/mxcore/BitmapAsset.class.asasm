@@ -1,0 +1,2020 @@
+class
+ refid "mx.core:BitmapAsset"
+ instance QName(PackageNamespace("mx.core"), "BitmapAsset")
+  extends QName(PackageNamespace("mx.core"), "FlexBitmap")
+  implements Multiname("IFlexAsset", [PackageNamespace("mx.core")])
+  implements Multiname("IFlexDisplayObject", [PackageNamespace("mx.core")])
+  implements Multiname("ILayoutDirectionElement", [PackageNamespace("mx.core")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("mx.core:BitmapAsset")
+  iinit
+   refid "mx.core:BitmapAsset/iinit"
+   param QName(PackageNamespace("flash.display"), "BitmapData")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Utf8("auto")
+   optional False()
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 8
+    maxscopedepth 9
+    code
+     debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+     debugline           127
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace("flash.system"), "ApplicationDomain")
+     setlocal            4
+
+     debug               1, "bitmapData", 0, 127
+     debug               1, "pixelSnapping", 1, 127
+     debug               1, "smoothing", 2, 127
+     debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+     debugline           131
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           133
+     getlex              QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "FlexVersionClass")
+     pushnull
+     ifne                L41
+
+     debug               1, "appDomain", 3, 135
+     debugline           135
+     getlex              QName(PackageNamespace("flash.system"), "ApplicationDomain")
+     getproperty         QName(PackageNamespace(""), "currentDomain")
+     coerce              QName(PackageNamespace("flash.system"), "ApplicationDomain")
+     setlocal            4
+
+     debugline           136
+     getlocal            4
+     pushstring          "mx.core::FlexVersion"
+     callproperty        QName(PackageNamespace(""), "hasDefinition"), 1
+     iffalse             L41
+
+     debugline           137
+     findproperty        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "FlexVersionClass")
+     findpropstrict      QName(PackageNamespace(""), "Class")
+     getlocal            4
+     pushstring          "mx.core::FlexVersion"
+     callproperty        QName(PackageNamespace(""), "getDefinition"), 1
+     callproperty        QName(PackageNamespace(""), "Class"), 1
+     setproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "FlexVersionClass")
+
+     debugline           140
+L41:
+     getlex              QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "FlexVersionClass")
+     convert_b
+     dup
+     iffalse             L53
+
+     pop
+     getlex              QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "FlexVersionClass")
+     pushstring          "compatibilityVersion"
+     getproperty         MultinameL([PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), PackageNamespace(""), PrivateNamespace("BitmapAsset.as$466", "mx.core:BitmapAsset#1"), PackageNamespace("mx.core"), PackageInternalNs("mx.core"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("mx.core:BitmapAsset"), StaticProtectedNs("mx.core:BitmapAsset"), StaticProtectedNs("mx.core:FlexBitmap"), StaticProtectedNs("flash.display:Bitmap"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+     getlex              QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "FlexVersionClass")
+     pushstring          "VERSION_4_0"
+     getproperty         MultinameL([PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), PackageNamespace(""), PrivateNamespace("BitmapAsset.as$466", "mx.core:BitmapAsset#1"), PackageNamespace("mx.core"), PackageInternalNs("mx.core"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("mx.core:BitmapAsset"), StaticProtectedNs("mx.core:BitmapAsset"), StaticProtectedNs("mx.core:FlexBitmap"), StaticProtectedNs("flash.display:Bitmap"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+     greaterequals
+L53:
+     iffalse             L62
+
+     debugline           141
+     getlocal0
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "ADDED")
+     getlocal0
+     getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "addedHandler")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           142
+L62:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeaturesClass") type QName(PackageNamespace(""), "Class") end
+  trait slot QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures") type QName(PackageNamespace("mx.core"), "IAssetLayoutFeatures") end
+  trait getter QName(PackageNamespace(""), "x") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/x/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           168
+      getlocal0
+      pushscope
+
+      debugline           172
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "x")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutX")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "x") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/x/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           178
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 178
+      debugline           180
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal1
+      ifne                L13
+
+      debugline           181
+      returnvoid
+
+      debugline           183
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           185
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "x")
+
+      jump                L31
+
+      debugline           189
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutX")
+
+      debugline           190
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           192
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "y") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/y/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           201
+      getlocal0
+      pushscope
+
+      debugline           203
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "y")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutY")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "y") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/y/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           209
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 209
+      debugline           211
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal1
+      ifne                L13
+
+      debugline           212
+      returnvoid
+
+      debugline           214
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           216
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "y")
+
+      jump                L31
+
+      debugline           220
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutY")
+
+      debugline           221
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           223
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "z") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/z/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           232
+      getlocal0
+      pushscope
+
+      debugline           234
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "z")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutZ")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "z") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/z/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           240
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 240
+      debugline           242
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "z")
+      getlocal1
+      ifne                L13
+
+      debugline           243
+      returnvoid
+
+      debugline           245
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           247
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "z")
+
+      jump                L31
+
+      debugline           251
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutZ")
+
+      debugline           252
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           254
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "width") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/width/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           263
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal1
+
+      debug               1, "p", 0, 269
+      debugline           265
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L18
+
+      debugline           266
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "width")
+      returnvalue
+
+      debugline           270
+L18:
+      getlex              QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "MatrixUtilClass")
+      pushnull
+      ifeq                L40
+
+      debugline           271
+      getlex              QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "MatrixUtilClass")
+      dup
+      setlocal2
+
+      pushstring          "transformSize"
+      getproperty         MultinameL([PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), PackageNamespace(""), PrivateNamespace("BitmapAsset.as$466", "mx.core:BitmapAsset#1"), PackageNamespace("mx.core"), PackageInternalNs("mx.core"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("mx.core:BitmapAsset"), StaticProtectedNs("mx.core:BitmapAsset"), StaticProtectedNs("mx.core:FlexBitmap"), StaticProtectedNs("flash.display:Bitmap"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutWidth")
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_height")
+      getlex              QName(PackageNamespace(""), "transform")
+      getproperty         QName(PackageNamespace(""), "matrix")
+      call                3
+      kill                2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal1
+
+      debugline           273
+L40:
+      getlocal1
+      iffalse             L46
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "x")
+      convert_d
+      jump                L49
+
+L46:
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "width")
+      convert_d
+L49:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "width") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/width/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           279
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 279
+      debugline           281
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal1
+      ifne                L13
+
+      debugline           282
+      returnvoid
+
+      debugline           284
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           286
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "width")
+
+      jump                L47
+
+      debugline           290
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutWidth")
+
+      debugline           294
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "measuredWidth")
+      pushbyte            0
+      ifeq                L40
+
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "measuredWidth")
+      divide
+      convert_d
+      jump                L42
+
+L40:
+      pushbyte            0
+      convert_d
+L42:
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleX")
+
+      debugline           295
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           297
+L47:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_height") type QName(PackageNamespace(""), "Number") end
+  trait getter QName(PackageNamespace(""), "height") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/height/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           308
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal1
+
+      debug               1, "p", 0, 315
+      debugline           311
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L18
+
+      debugline           312
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "height")
+      returnvalue
+
+      debugline           316
+L18:
+      getlex              QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "MatrixUtilClass")
+      pushnull
+      ifeq                L40
+
+      debugline           317
+      getlex              QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "MatrixUtilClass")
+      dup
+      setlocal2
+
+      pushstring          "transformSize"
+      getproperty         MultinameL([PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), PackageNamespace(""), PrivateNamespace("BitmapAsset.as$466", "mx.core:BitmapAsset#1"), PackageNamespace("mx.core"), PackageInternalNs("mx.core"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("mx.core:BitmapAsset"), StaticProtectedNs("mx.core:BitmapAsset"), StaticProtectedNs("mx.core:FlexBitmap"), StaticProtectedNs("flash.display:Bitmap"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutWidth")
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_height")
+      getlex              QName(PackageNamespace(""), "transform")
+      getproperty         QName(PackageNamespace(""), "matrix")
+      call                3
+      kill                2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal1
+
+      debugline           319
+L40:
+      getlocal1
+      iffalse             L46
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "y")
+      convert_d
+      jump                L49
+
+L46:
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "height")
+      convert_d
+L49:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "height") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/height/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           325
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 325
+      debugline           327
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "height")
+      getlocal1
+      ifne                L13
+
+      debugline           328
+      returnvoid
+
+      debugline           330
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           332
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "height")
+
+      jump                L46
+
+      debugline           336
+L23:
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_height")
+
+      debugline           340
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "measuredHeight")
+      pushbyte            0
+      ifeq                L39
+
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "measuredHeight")
+      divide
+      convert_d
+      jump                L41
+
+L39:
+      pushbyte            0
+      convert_d
+L41:
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleY")
+
+      debugline           341
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           343
+L46:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "rotationX") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/rotationX/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           352
+      getlocal0
+      pushscope
+
+      debugline           354
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "rotationX")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationX")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "rotationX") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/rotationX/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           360
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 360
+      debugline           362
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "rotationX")
+      getlocal1
+      ifne                L13
+
+      debugline           363
+      returnvoid
+
+      debugline           365
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           367
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "rotationX")
+
+      jump                L31
+
+      debugline           371
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationX")
+
+      debugline           372
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           374
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "rotationY") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/rotationY/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           378
+      getlocal0
+      pushscope
+
+      debugline           380
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "rotationY")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationY")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "rotationY") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/rotationY/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           386
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 386
+      debugline           388
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "rotationY")
+      getlocal1
+      ifne                L13
+
+      debugline           389
+      returnvoid
+
+      debugline           391
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           393
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "rotationY")
+
+      jump                L31
+
+      debugline           397
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationY")
+
+      debugline           398
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           400
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "rotationZ") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/rotationZ/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           405
+      getlocal0
+      pushscope
+
+      debugline           407
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "rotationZ")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationZ")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "rotationZ") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/rotationZ/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           413
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 413
+      debugline           415
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "rotationZ")
+      getlocal1
+      ifne                L13
+
+      debugline           416
+      returnvoid
+
+      debugline           418
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           420
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "rotationZ")
+
+      jump                L31
+
+      debugline           424
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationZ")
+
+      debugline           425
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           427
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "rotation") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/rotation/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           432
+      getlocal0
+      pushscope
+
+      debugline           434
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "rotation")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationZ")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "rotation") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/rotation/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           440
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 440
+      debugline           442
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "rotation")
+      getlocal1
+      ifne                L13
+
+      debugline           443
+      returnvoid
+
+      debugline           445
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           447
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "rotation")
+
+      jump                L31
+
+      debugline           451
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationZ")
+
+      debugline           452
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           454
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "scaleX") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/scaleX/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           463
+      getlocal0
+      pushscope
+
+      debugline           465
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "scaleX")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleX")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "scaleX") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/scaleX/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           471
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 471
+      debugline           473
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "scaleX")
+      getlocal1
+      ifne                L13
+
+      debugline           474
+      returnvoid
+
+      debugline           476
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           478
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "scaleX")
+
+      jump                L41
+
+      debugline           482
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleX")
+
+      debugline           483
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "abs"), 1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "measuredWidth")
+      multiply
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutWidth")
+
+      debugline           484
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           486
+L41:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "scaleY") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/scaleY/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           495
+      getlocal0
+      pushscope
+
+      debugline           497
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "scaleY")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleY")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "scaleY") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/scaleY/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           503
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 503
+      debugline           505
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "scaleY")
+      getlocal1
+      ifne                L13
+
+      debugline           506
+      returnvoid
+
+      debugline           508
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           510
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "scaleY")
+
+      jump                L40
+
+      debugline           514
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleY")
+
+      debugline           515
+      getlocal0
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "abs"), 1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "measuredHeight")
+      multiply
+      initproperty        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_height")
+
+      debugline           516
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           518
+L40:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "scaleZ") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/scaleZ/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           527
+      getlocal0
+      pushscope
+
+      debugline           529
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L13
+
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "scaleZ")
+      convert_d
+      jump                L17
+
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleZ")
+      convert_d
+L17:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "scaleZ") flag OVERRIDE
+   method
+    refid "mx.core:BitmapAsset/scaleZ/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           535
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 535
+      debugline           537
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "scaleZ")
+      getlocal1
+      ifne                L13
+
+      debugline           538
+      returnvoid
+
+      debugline           540
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifne                L23
+
+      debugline           542
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "scaleZ")
+
+      jump                L31
+
+      debugline           546
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal1
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleZ")
+
+      debugline           547
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           549
+L31:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_layoutDirection") type QName(PackageNamespace(""), "String") value Utf8("ltr") end
+  trait getter QName(PackageNamespace(""), "layoutDirection")
+   method
+    refid "mx.core:BitmapAsset/layoutDirection/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           575
+      getlocal0
+      pushscope
+
+      debugline           577
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_layoutDirection")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "layoutDirection")
+   method
+    refid "mx.core:BitmapAsset/layoutDirection/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           580
+      getlocal0
+      pushscope
+
+      debug               1, "value", 0, 580
+      debugline           582
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_layoutDirection")
+      ifne                L13
+
+      debugline           583
+      returnvoid
+
+      debugline           585
+L13:
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_layoutDirection")
+
+      debugline           586
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "invalidateLayoutDirection"), 0
+
+      debugline           587
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "measuredHeight")
+   method
+    refid "mx.core:BitmapAsset/measuredHeight/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           601
+      getlocal0
+      pushscope
+
+      debugline           603
+      getlex              QName(PackageNamespace(""), "bitmapData")
+      iffalse             L12
+
+      debugline           604
+      getlex              QName(PackageNamespace(""), "bitmapData")
+      getproperty         QName(PackageNamespace(""), "height")
+      returnvalue
+
+      debugline           606
+L12:
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "measuredWidth")
+   method
+    refid "mx.core:BitmapAsset/measuredWidth/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           621
+      getlocal0
+      pushscope
+
+      debugline           623
+      getlex              QName(PackageNamespace(""), "bitmapData")
+      iffalse             L12
+
+      debugline           624
+      getlex              QName(PackageNamespace(""), "bitmapData")
+      getproperty         QName(PackageNamespace(""), "width")
+      returnvalue
+
+      debugline           626
+L12:
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "invalidateLayoutDirection")
+   method
+    refid "mx.core:BitmapAsset/invalidateLayoutDirection"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           643
+      getlocal0
+      pushscope
+
+      pushfalse
+      setlocal2
+
+      debug               1, "p", 0, 645
+      debugline           645
+      getlex              QName(PackageNamespace(""), "parent")
+      coerce              QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+      setlocal1
+
+      jump                L108
+
+L12:
+      label
+      debugline           651
+      getlocal1
+      getlex              QName(PackageNamespace("mx.core"), "ILayoutDirectionElement")
+      istypelate
+      iffalse             L103
+
+      debug               1, "mirror", 1, 654
+      debugline           654
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_layoutDirection")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L36
+
+      pop
+      debugline           655
+      findpropstrict      QName(PackageNamespace("mx.core"), "ILayoutDirectionElement")
+      getlocal1
+      callproperty        QName(PackageNamespace("mx.core"), "ILayoutDirectionElement"), 1
+      getproperty         QName(Namespace("mx.core:ILayoutDirectionElement"), "layoutDirection")
+      pushnull
+      equals
+      not
+L36:
+      dup
+      iffalse             L48
+
+      pop
+      debugline           656
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_layoutDirection")
+      findpropstrict      QName(PackageNamespace("mx.core"), "ILayoutDirectionElement")
+      getlocal1
+      callproperty        QName(PackageNamespace("mx.core"), "ILayoutDirectionElement"), 1
+      getproperty         QName(Namespace("mx.core:ILayoutDirectionElement"), "layoutDirection")
+      equals
+      not
+L48:
+      convert_b
+      setlocal2
+
+      debugline           660
+      getlocal2
+      convert_b
+      dup
+      iffalse             L60
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      equals
+L60:
+      iffalse             L79
+
+      debugline           662
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "initAdvancedLayoutFeatures"), 0
+
+      debugline           663
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifeq                L77
+
+      debugline           665
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal2
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "mirror")
+
+      debugline           666
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+L77:
+      jump                L101
+
+      debugline           669
+L79:
+      getlocal2
+      not
+      dup
+      iffalse             L87
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      convert_b
+L87:
+      iffalse             L101
+
+      debugline           673
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getlocal2
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "mirror")
+
+      debugline           674
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix"), 0
+
+      debugline           675
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+
+      debugline           678
+L101:
+      jump                L111
+
+      debugline           681
+L103:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "parent")
+      coerce              QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+      setlocal1
+
+      debugline           649
+L108:
+      getlocal1
+      iftrue              L12
+
+      debugline           683
+L111:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "move")
+   method
+    refid "mx.core:BitmapAsset/move"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           693
+      getlocal0
+      pushscope
+
+      debug               1, "x", 0, 693
+      debug               1, "y", 1, 693
+      debugline           695
+      getlocal0
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "x")
+
+      debugline           696
+      getlocal0
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "y")
+
+      debugline           697
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "setActualSize")
+   method
+    refid "mx.core:BitmapAsset/setActualSize"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           707
+      getlocal0
+      pushscope
+
+      debug               1, "newWidth", 0, 707
+      debug               1, "newHeight", 1, 707
+      debugline           709
+      getlocal0
+      getlocal1
+      initproperty        QName(PackageNamespace(""), "width")
+
+      debugline           710
+      getlocal0
+      getlocal2
+      initproperty        QName(PackageNamespace(""), "height")
+
+      debugline           711
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "addedHandler")
+   method
+    refid "mx.core:BitmapAsset/addedHandler"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           716
+      getlocal0
+      pushscope
+
+      debug               1, "event", 0, 716
+      debugline           718
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "invalidateLayoutDirection"), 0
+
+      debugline           719
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "initAdvancedLayoutFeatures")
+   method
+    refid "mx.core:BitmapAsset/initAdvancedLayoutFeatures"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           725
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.system"), "ApplicationDomain")
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("mx.core"), "IAssetLayoutFeatures")
+      setlocal2
+
+      debugline           728
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeaturesClass")
+      pushnull
+      ifne                L52
+
+      debug               1, "appDomain", 0, 730
+      debugline           730
+      getlex              QName(PackageNamespace("flash.system"), "ApplicationDomain")
+      getproperty         QName(PackageNamespace(""), "currentDomain")
+      coerce              QName(PackageNamespace("flash.system"), "ApplicationDomain")
+      setlocal1
+
+      debugline           732
+      getlocal1
+      pushstring          "mx.core::AdvancedLayoutFeatures"
+      callproperty        QName(PackageNamespace(""), "hasDefinition"), 1
+      iffalse             L35
+
+      debugline           733
+      getlocal0
+      findpropstrict      QName(PackageNamespace(""), "Class")
+      getlocal1
+      pushstring          "mx.core::AdvancedLayoutFeatures"
+      callproperty        QName(PackageNamespace(""), "getDefinition"), 1
+      callproperty        QName(PackageNamespace(""), "Class"), 1
+      initproperty        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeaturesClass")
+
+      debugline           736
+L35:
+      getlex              QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "MatrixUtilClass")
+      pushnull
+      ifne                L52
+
+      debugline           738
+      getlocal1
+      pushstring          "mx.utils::MatrixUtil"
+      callproperty        QName(PackageNamespace(""), "hasDefinition"), 1
+      iffalse             L52
+
+      debugline           739
+      findproperty        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "MatrixUtilClass")
+      findpropstrict      QName(PackageNamespace(""), "Class")
+      getlocal1
+      pushstring          "mx.utils::MatrixUtil"
+      callproperty        QName(PackageNamespace(""), "getDefinition"), 1
+      callproperty        QName(PackageNamespace(""), "Class"), 1
+      setproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "MatrixUtilClass")
+
+      debugline           743
+L52:
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeaturesClass")
+      pushnull
+      ifeq                L122
+
+      debug               1, "features", 1, 745
+      debugline           745
+      getlocal0
+      constructprop       QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeaturesClass"), 0
+      coerce              QName(PackageNamespace("mx.core"), "IAssetLayoutFeatures")
+      setlocal2
+
+      debugline           747
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "scaleX")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleX")
+
+      debugline           748
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "scaleY")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleY")
+
+      debugline           749
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "scaleZ")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutScaleZ")
+
+      debugline           750
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "rotationX")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationX")
+
+      debugline           751
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "rotationY")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationY")
+
+      debugline           752
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "rotation")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutRotationZ")
+
+      debugline           753
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "x")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutX")
+
+      debugline           754
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "y")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutY")
+
+      debugline           755
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "z")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutZ")
+
+      debugline           756
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "width")
+      setproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "layoutWidth")
+
+      debugline           757
+      getlocal0
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "height")
+      initproperty        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "_height")
+
+      debugline           758
+      getlocal0
+      getlocal2
+      initproperty        QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+
+      debugline           760
+L122:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "validateTransformMatrix")
+   method
+    refid "mx.core:BitmapAsset/validateTransformMatrix"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;BitmapAsset.as"
+      debugline           767
+      getlocal0
+      pushscope
+
+      debugline           769
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      pushnull
+      ifeq                L30
+
+      debugline           771
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "is3D")
+      iffalse             L23
+
+      debugline           772
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "transform")
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "computedMatrix3D")
+      setproperty         QName(PackageNamespace(""), "matrix3D")
+
+      jump                L30
+
+      debugline           774
+L23:
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "transform")
+      getlocal0
+      getproperty         QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "layoutFeatures")
+      getproperty         QName(Namespace("mx.core:IAssetLayoutFeatures"), "computedMatrix")
+      setproperty         QName(PackageNamespace(""), "matrix")
+
+      debugline           776
+L30:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "mx.core:BitmapAsset/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 7
+   maxscopedepth 8
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "VERSION", 0, 16
+    findproperty        QName(Namespace("http://www.adobe.com/2006/flex/mx/internal"), "VERSION")
+    pushstring          "4.6.0.23201"
+    initproperty        QName(Namespace("http://www.adobe.com/2006/flex/mx/internal"), "VERSION")
+
+    debug               1, "FlexVersionClass", 1, 103
+    debug               1, "MatrixUtilClass", 2, 104
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(Namespace("http://www.adobe.com/2006/flex/mx/internal"), "VERSION") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("4.6.0.23201") end
+ trait slot QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "FlexVersionClass") slotid 2 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PrivateNamespace("mx.core:BitmapAsset", "mx.core:BitmapAsset#0"), "MatrixUtilClass") slotid 3 type QName(PackageNamespace(""), "Class") end
+end ; class

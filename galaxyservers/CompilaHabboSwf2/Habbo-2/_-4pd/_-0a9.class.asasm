@@ -1,0 +1,304 @@
+class
+ refid "_-4pd:_-0a9"
+ instance QName(PackageNamespace("_-4pd"), "_-0a9")
+  extends QName(PackageNamespace("flash.display"), "BitmapData")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-10T")
+  iinit
+   refid "_-4pd:_-0a9/iinit"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional True()
+   optional Integer(0)
+   body
+    maxstack 5
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           22
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 22
+     debug               1, "k", 1, 22
+     debug               1, "k", 2, 22
+     debug               1, "k", 3, 22
+     debugline           23
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     constructsuper      4
+
+     debugline           24
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-WB") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait getter QName(PackageNamespace(""), "_-2c-")
+   method
+    refid "_-4pd:_-0a9/_-2c-/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-WB")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-4pd:_-0a9/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5-C")
+   method
+    refid "_-4pd:_-0a9/_-5-C"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           26
+      getlocal0
+      pushscope
+
+      getlocal0
+      dup
+      setlocal1
+
+      getproperty         QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-WB")
+      increment_i
+      setlocal2
+
+      getlocal1
+      getlocal2
+      setproperty         QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-WB")
+
+      kill                2
+      kill                1
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-4pd:_-0a9/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      debugline           29
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_disposed")
+      iffalse             L10
+
+      returnvoid
+
+      debugline           30
+L10:
+      getlocal0
+      dup
+      setlocal1
+
+      getproperty         QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-WB")
+      decrement_i
+      dup
+      setlocal2
+
+      getlocal1
+      getlocal2
+      setproperty         QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-WB")
+
+      kill                2
+      kill                1
+      pushbyte            0
+      ifnle               L32
+
+      debugline           31
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           32
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_disposed")
+
+      debugline           34
+L32:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "clone") flag OVERRIDE
+   method
+    refid "_-4pd:_-0a9/clone"
+    returns QName(PackageNamespace("flash.display"), "BitmapData")
+    flag NEED_ACTIVATION
+    body
+     maxstack 7
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 36
+      debugline           37
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace("_-4pd"), "_-0a9")
+      setslot             1
+
+      debugline           39
+L15:
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("_-4pd"), "_-0a9")
+      getlex              QName(PackageNamespace(""), "width")
+      getlex              QName(PackageNamespace(""), "height")
+      pushtrue
+      pushint             16777215
+      constructprop       QName(PackageNamespace("_-4pd"), "_-0a9"), 4
+      coerce              QName(PackageNamespace("_-4pd"), "_-0a9")
+      setslot             1
+
+      debugline           40
+      getscopeobject      1
+      getslot             1
+      getlocal0
+      getlex              QName(PackageNamespace(""), "rect")
+      getlex              QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-0Kx")
+      pushnull
+      pushnull
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 6
+
+      debugline           41
+L35:
+      jump                L60
+
+L36:
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           42
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("_-4pd"), "_-0a9")
+      pushbyte            1
+      dup
+      pushtrue
+      pushint             16777215
+      constructprop       QName(PackageNamespace("_-4pd"), "_-0a9"), 4
+      coerce              QName(PackageNamespace("_-4pd"), "_-0a9")
+      setslot             1
+
+      popscope
+      kill                2
+      debugline           44
+L60:
+      getscopeobject      1
+      getslot             1
+      returnvalue
+     end ; code
+     try from L15 to L35 target L36 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+     trait slot QName(PackageInternalNs("_-4pd"), "data") slotid 1 type QName(PackageNamespace("_-4pd"), "_-0a9") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4pd:_-0a9/cinit"
+  body
+   maxstack 4
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 13
+    findproperty        QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-0Kx")
+    findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+    pushbyte            0
+    dup
+    constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+    initproperty        QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-0Kx")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-10T", "_-4pd:_-0a9"), "_-0Kx") slotid 1 type QName(PackageNamespace("flash.geom"), "Point") end
+end ; class

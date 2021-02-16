@@ -1,0 +1,111 @@
+class
+ refid "_-4sl:_-2Uc"
+ instance QName(PackageNamespace("_-4sl"), "_-2Uc")
+  extends QName(PackageNamespace("_-4sl"), "_-1A")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5E8")
+  iinit
+   refid "_-4sl:_-2Uc/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 9
+    maxscopedepth 10
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           21
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("_-5E8"), "getThumbnailURL") flag OVERRIDE
+   method
+    refid "_-4sl:_-2Uc/_-5E8:getThumbnailURL"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           10
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 11
+      debug               1, "k", 1, 12
+      debug               1, "k", 2, 13
+      debugline           11
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getModel"), 0
+      coerce              QName(PackageNamespace("_-1JH"), "_-4Bx")
+      setlocal1
+
+      debugline           12
+      getlocal1
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3uB")
+      callproperty        QName(Namespace("_-65g"), "_-65O"), 1
+      coerce              QName(PackageNamespace("_-07U"), "Map")
+      setlocal2
+
+      debugline           13
+      getlocal1
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-1Sb")
+      callproperty        QName(Namespace("_-65g"), "getString"), 1
+      coerce_s
+      setlocal3
+
+      debugline           14
+      getlocal3
+      pushnull
+      ifne                L34
+
+      debugline           15
+      pushnull
+      returnvalue
+
+      debugline           17
+L34:
+      getlocal3
+      getlocal2
+      getlex              QName(StaticProtectedNs("_-5E8"), "_-4Ug")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4sl:_-2Uc/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 8
+   maxscopedepth 9
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 8
+    findproperty        QName(StaticProtectedNs("_-5E8"), "_-4Ug")
+    pushstring          "THUMBNAIL_URL"
+    initproperty        QName(StaticProtectedNs("_-5E8"), "_-4Ug")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(StaticProtectedNs("_-5E8"), "_-4Ug") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("THUMBNAIL_URL") end
+end ; class

@@ -1,0 +1,1242 @@
+class
+ refid "_-ur:ColourGridCatalogWidget"
+ instance QName(PackageNamespace("_-ur"), "ColourGridCatalogWidget")
+  extends QName(PackageNamespace("_-ur"), "CatalogWidget")
+  implements Multiname("_-0su", [PackageNamespace("_-ur")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3uc")
+  iinit
+   refid "_-ur:ColourGridCatalogWidget/iinit"
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           39
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 39
+     debugline           40
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           41
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-3qa") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn") type QName(PackageNamespace("_-1Bv"), "IItemGridWindow") end
+  trait slot QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-ja") type QName(PackageNamespace(""), "XML") end
+  trait slot QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "class") type QName(PackageNamespace("flash.display"), "BitmapData") end
+  trait slot QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-2BD") type QName(PackageNamespace("flash.display"), "BitmapData") end
+  trait slot QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4vD") type QName(PackageNamespace("flash.display"), "BitmapData") end
+  trait slot QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6NF") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-ur:ColourGridCatalogWidget/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debugline           47
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      getproperty         QName(Namespace("_-2W2"), "disposed")
+      iftrue              L18
+
+      debugline           48
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      callpropvoid        QName(Namespace("_-5Ga"), "destroyGridItems"), 0
+
+      debugline           49
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           51
+L18:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+
+      debugline           53
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-ja")
+
+      debugline           54
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6NF")
+
+      debugline           55
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "COLOUR_ARRAY")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-0yb")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           56
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "MULTI_COLOUR_ARRAY")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4dT")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           57
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           58
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-ur:ColourGridCatalogWidget/init"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           63
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 69
+      debug               1, "k", 1, 78
+      debugline           64
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L14
+
+      debugline           65
+      pushfalse
+      returnvalue
+
+      debugline           67
+L14:
+      findpropstrict      QName(ProtectedNamespace("_-5qb"), "_-4lH")
+      getlex              QName(PackageNamespace("_-ur"), "_-2Zm")
+      getproperty         QName(PackageNamespace(""), "_-6f5")
+      callpropvoid        QName(ProtectedNamespace("_-5qb"), "_-4lH"), 1
+
+      debugline           69
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "tags")
+      pushstring          "FIXED"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+      setlocal1
+
+      debugline           70
+      getlocal1
+      iftrue              L44
+
+      debugline           71
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushbyte            0
+      callproperty        QName(Namespace("_-3si"), "getChildAt"), 1
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "width")
+      setproperty         QName(Namespace("_-6q"), "width")
+
+      debugline           72
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushbyte            0
+      callproperty        QName(Namespace("_-3si"), "getChildAt"), 1
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "height")
+      setproperty         QName(Namespace("_-6q"), "height")
+
+      debugline           75
+L44:
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushstring          "colourGrid"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IItemGridWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+
+      debugline           76
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6q"), "width")
+      setproperty         QName(Namespace("_-6q"), "width")
+
+      debugline           77
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6q"), "height")
+      setproperty         QName(Namespace("_-6q"), "height")
+
+      debugline           78
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      pushstring          "color_chooser_cell"
+      callproperty        Multiname("getAssetByName", [PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")]), 1
+      getlex              QName(PackageNamespace("_-eg"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "XmlAsset")
+      setlocal2
+
+      debugline           79
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-ja")
+
+      debugline           81
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "COLOUR_ARRAY")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-0yb")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           82
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "MULTI_COLOUR_ARRAY")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4dT")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           83
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-0yb")
+   method
+    refid "_-ur:ColourGridCatalogWidget/_-0yb"
+    param QName(PackageNamespace("_-09G"), "_-Jb")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           90
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            5
+
+      debug               1, "k", 0, 90
+      debug               1, "k", 1, 92
+      debug               1, "k", 2, 97
+      debug               1, "k", 3, 100
+      debug               1, "k", 4, 103
+      debugline           91
+      getlocal0
+      newarray            0
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-3qa")
+
+      debugline           92
+      pushbyte            0
+      setlocal            6
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-0GQ")
+      coerce_a
+      setlocal            7
+
+      jump                L45
+
+L32:
+      label
+      getlocal            7
+      getlocal            6
+      nextvalue
+      convert_i
+      setlocal2
+
+      debugline           93
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-3qa")
+      getlocal2
+      newarray            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           92
+L45:
+      hasnext2            7, 6
+      iftrue              L32
+
+      kill                7
+      kill                6
+      debugline           97
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-6jE")
+      callproperty        Multiname("getAssetByName", [PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")]), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal3
+
+      debugline           98
+      getlocal0
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "class")
+
+      debugline           100
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-3nK")
+      callproperty        Multiname("getAssetByName", [PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")]), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            4
+
+      debugline           101
+      getlocal0
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-2BD")
+
+      debugline           103
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-43a")
+      callproperty        Multiname("getAssetByName", [PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")]), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            5
+
+      debugline           104
+      getlocal0
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4vD")
+
+      debugline           106
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6fD"), 0
+
+      debugline           107
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "index")
+      callproperty        QName(Namespace("_-5Ga"), "_-IX"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      callpropvoid        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "select"), 1
+
+      debugline           108
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4dT")
+   method
+    refid "_-ur:ColourGridCatalogWidget/_-4dT"
+    param QName(PackageNamespace("_-09G"), "_-0Qy")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           114
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            5
+
+      debug               1, "k", 0, 114
+      debug               1, "k", 1, 116
+      debug               1, "k", 2, 121
+      debug               1, "k", 3, 124
+      debug               1, "k", 4, 127
+      debugline           115
+      getlocal0
+      newarray            0
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-3qa")
+
+      debugline           116
+      pushbyte            0
+      setlocal            6
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-0GQ")
+      coerce_a
+      setlocal            7
+
+      jump                L46
+
+L33:
+      label
+      getlocal            7
+      getlocal            6
+      nextvalue
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           117
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-3qa")
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           116
+L46:
+      hasnext2            7, 6
+      iftrue              L33
+
+      kill                7
+      kill                6
+      debugline           121
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-6jE")
+      callproperty        Multiname("getAssetByName", [PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")]), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal3
+
+      debugline           122
+      getlocal0
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "class")
+
+      debugline           124
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-3nK")
+      callproperty        Multiname("getAssetByName", [PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")]), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            4
+
+      debugline           125
+      getlocal0
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-2BD")
+
+      debugline           127
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-43a")
+      callproperty        Multiname("getAssetByName", [PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")]), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            5
+
+      debugline           128
+      getlocal0
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4vD")
+
+      debugline           130
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6fD"), 0
+
+      debugline           131
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      pushbyte            0
+      callproperty        QName(Namespace("_-5Ga"), "_-IX"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      callpropvoid        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "select"), 1
+
+      debugline           132
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "select")
+   method
+    refid "_-ur:ColourGridCatalogWidget/select"
+    param QName(PackageNamespace("_-X3"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           138
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debug               1, "k", 0, 138
+      debug               1, "k", 1, 140
+      debugline           139
+      getlex              QName(PackageNamespace(""), "_-1Hb")
+      pushstring          "[ColourGridCatalogWidget] Select: "
+      getlocal1
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           142
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6NF")
+      pushnull
+      ifeq                L36
+
+      debugline           143
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6NF")
+      pushstring          "chosen"
+      callproperty        QName(Namespace("_-3si"), "getChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           145
+      getlocal2
+      pushnull
+      ifeq                L36
+
+      debugline           146
+      getlocal2
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           149
+L36:
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6NF")
+
+      debugline           151
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6NF")
+      pushnull
+      ifeq                L52
+
+      debugline           152
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6NF")
+      pushstring          "chosen"
+      callproperty        QName(Namespace("_-3si"), "getChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           155
+L52:
+      getlocal2
+      pushnull
+      ifeq                L60
+
+      debugline           156
+      getlocal2
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           158
+L60:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6fD")
+   method
+    refid "_-ur:ColourGridCatalogWidget/_-6fD"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 16
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           166
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      setlocal            5
+
+      pushbyte            0
+      convert_u
+      setlocal            6
+
+      pushbyte            0
+      convert_u
+      setlocal            7
+
+      pushbyte            0
+      convert_u
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            9
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            10
+
+      pushbyte            0
+      setlocal            11
+
+      pushbyte            0
+      setlocal            12
+
+      pushbyte            0
+      setlocal            13
+
+      debug               1, "k", 0, 171
+      debugline           167
+      getlex              QName(PackageNamespace(""), "_-1Hb")
+      pushstring          "[ColourGridCatalogWidget] Display colors: "
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-3qa")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      getproperty         QName(Namespace("_-5Ga"), "numGridItems")
+      newarray            2
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           168
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      callpropvoid        QName(Namespace("_-5Ga"), "destroyGridItems"), 0
+
+      debugline           169
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-6NF")
+
+      debugline           171
+      pushbyte            0
+      setlocal            14
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-3qa")
+      coerce_a
+      setlocal            15
+
+      jump                L432
+
+L69:
+      label
+      getlocal            15
+      getlocal            14
+      nextvalue
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           172
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L432
+
+      debug               1, "k", 1, 173
+      debug               1, "k", 2, 183
+      debug               1, "k", 3, 189
+      debug               1, "k", 4, 230
+      debugline           173
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "windowManager")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-ja")
+      callproperty        Multiname("buildFromXML", [PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")]), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal2
+
+      debugline           174
+      getlocal2
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "onClick")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           175
+      getlocal2
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "background")
+
+      debugline           176
+      getlocal2
+      pushdouble          4294967295
+      setproperty         QName(Namespace("_-6q"), "color")
+
+      debugline           178
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "class")
+      getproperty         QName(PackageNamespace(""), "width")
+      setproperty         QName(Namespace("_-6q"), "width")
+
+      debugline           179
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "class")
+      getproperty         QName(PackageNamespace(""), "height")
+      setproperty         QName(Namespace("_-6q"), "height")
+
+      debugline           181
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      getlocal2
+      callpropvoid        QName(Namespace("_-5Ga"), "_-3kr"), 1
+
+      debugline           183
+      getlocal2
+      pushstring          "BG_BORDER"
+      callproperty        QName(Namespace("_-3si"), "findChildByTag"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      setlocal3
+
+      debugline           185
+      getlocal3
+      pushnull
+      ifeq                L167
+
+      debugline           186
+      getlocal3
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "class")
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "class")
+      getproperty         QName(PackageNamespace(""), "height")
+      pushtrue
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      setproperty         QName(Namespace("_-5Rl"), "bitmap")
+
+      debugline           187
+      getlocal3
+      getproperty         QName(Namespace("_-5Rl"), "bitmap")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "class")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "class")
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      debugline           189
+L167:
+      getlocal2
+      pushstring          "COLOR_IMAGE"
+      callproperty        QName(Namespace("_-3si"), "findChildByTag"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      setlocal            4
+
+      debugline           190
+      getlocal            4
+      pushnull
+      ifeq                L387
+
+      debug               1, "k", 5, 193
+      debug               1, "k", 6, 194
+      debug               1, "k", 7, 195
+      debug               1, "k", 8, 197
+      debug               1, "k", 9, 198
+      debug               1, "k", 10, 199
+      debugline           191
+      getlocal            4
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-2BD")
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-2BD")
+      getproperty         QName(PackageNamespace(""), "height")
+      pushtrue
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      setproperty         QName(Namespace("_-5Rl"), "bitmap")
+
+      debugline           193
+      pushshort           255
+      convert_u
+      setlocal            6
+
+      debugline           194
+      pushshort           255
+      convert_u
+      setlocal            7
+
+      debugline           195
+      pushshort           255
+      convert_u
+      setlocal            8
+
+      debugline           197
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            9
+
+      debugline           198
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            10
+
+      debugline           199
+      getlocal1
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")])
+      convert_i
+      setlocal            11
+
+      debugline           201
+      getlocal            11
+      pushbyte            0
+      ifnge               L252
+
+      debugline           202
+      getlocal            11
+      pushbyte            16
+      rshift
+      pushshort           255
+      bitand
+      convert_u
+      setlocal            6
+
+      debugline           203
+      getlocal            11
+      pushbyte            8
+      rshift
+      pushshort           255
+      bitand
+      convert_u
+      setlocal            7
+
+      debugline           204
+      getlocal            11
+      pushbyte            0
+      rshift
+      pushshort           255
+      bitand
+      convert_u
+      setlocal            8
+
+      debugline           207
+L252:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-2BD")
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            9
+
+      debugline           208
+      getlocal            9
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "ColorTransform")
+      getlocal            6
+      pushshort           255
+      divide
+      getlocal            7
+      pushshort           255
+      divide
+      getlocal            8
+      pushshort           255
+      divide
+      constructprop       QName(PackageNamespace("flash.geom"), "ColorTransform"), 3
+      callpropvoid        QName(PackageNamespace(""), "colorTransform"), 2
+
+      debugline           209
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      ifngt               L336
+
+      debug               1, "k", 11, 210
+      debugline           210
+      getlocal1
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), PackageNamespace(""), PackageNamespace("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ColourGridCatalogWidget.as$3448", "_-ur:ColourGridCatalogWidget#1"), PackageInternalNs("_-ur"), ProtectedNamespace("_-3uc"), StaticProtectedNs("_-3uc"), StaticProtectedNs("_-5qb")])
+      convert_i
+      setlocal            12
+
+      debugline           211
+      getlocal            12
+      pushbyte            0
+      ifnge               L314
+
+      debugline           212
+      getlocal            12
+      pushbyte            16
+      rshift
+      pushshort           255
+      bitand
+      convert_u
+      setlocal            6
+
+      debugline           213
+      getlocal            12
+      pushbyte            8
+      rshift
+      pushshort           255
+      bitand
+      convert_u
+      setlocal            7
+
+      debugline           214
+      getlocal            12
+      pushbyte            0
+      rshift
+      pushshort           255
+      bitand
+      convert_u
+      setlocal            8
+
+      debugline           217
+L314:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-2BD")
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            10
+
+      debugline           218
+      getlocal            10
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "ColorTransform")
+      getlocal            6
+      pushshort           255
+      divide
+      getlocal            7
+      pushshort           255
+      divide
+      getlocal            8
+      pushshort           255
+      divide
+      constructprop       QName(PackageNamespace("flash.geom"), "ColorTransform"), 3
+      callpropvoid        QName(PackageNamespace(""), "colorTransform"), 2
+
+      debugline           221
+L336:
+      getlocal            4
+      getproperty         QName(Namespace("_-5Rl"), "bitmap")
+      getlocal            9
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      debugline           222
+      getlocal            9
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           223
+      getlocal            10
+      pushnull
+      ifeq                L387
+
+      debug               1, "k", 12, 224
+      debugline           224
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "width")
+      pushbyte            2
+      divide
+      convert_i
+      setlocal            13
+
+      debugline           225
+      getlocal            4
+      getproperty         QName(Namespace("_-5Rl"), "bitmap")
+      getlocal            10
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+      getlocal            13
+      pushbyte            0
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal            13
+      subtract
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "height")
+      constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 4
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "width")
+      pushbyte            2
+      divide
+      pushbyte            0
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 3
+
+      debugline           226
+      getlocal            10
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           230
+L387:
+      getlocal2
+      pushstring          "COLOR_CHOSEN"
+      callproperty        QName(Namespace("_-3si"), "findChildByTag"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      setlocal            5
+
+      debugline           232
+      getlocal            5
+      pushnull
+      ifeq                L432
+
+      debugline           233
+      getlocal            5
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4vD")
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4vD")
+      getproperty         QName(PackageNamespace(""), "height")
+      pushtrue
+      pushint             16777215
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      setproperty         QName(Namespace("_-5Rl"), "bitmap")
+
+      debugline           234
+      getlocal            5
+      getproperty         QName(Namespace("_-5Rl"), "bitmap")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4vD")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-4vD")
+      getproperty         QName(PackageNamespace(""), "rect")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      pushnull
+      pushnull
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 6
+
+      debugline           235
+      getlocal            5
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           171
+L432:
+      hasnext2            15, 14
+      iftrue              L69
+
+      kill                15
+      kill                14
+      debugline           240
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "onClick")
+   method
+    refid "_-ur:ColourGridCatalogWidget/onClick"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           246
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 246
+      debug               1, "k", 1, 248
+      debugline           247
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      callpropvoid        QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "select"), 1
+
+      debugline           248
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3uc", "_-ur:ColourGridCatalogWidget#0"), "_-5tn")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-X3"), "IWindow")
+      astypelate
+      callproperty        QName(Namespace("_-5Ga"), "_-2AI"), 1
+      convert_i
+      setlocal2
+
+      debugline           249
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-1Fn")
+      getlocal2
+      constructprop       QName(PackageNamespace("_-09G"), "_-1Fn"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           250
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ur:ColourGridCatalogWidget/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

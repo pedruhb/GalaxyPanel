@@ -1,0 +1,560 @@
+class
+ refid "_-35a:CraftingMixerController"
+ instance QName(PackageNamespace("_-35a"), "CraftingMixerController")
+  extends QName(PackageNamespace("_-35a"), "_-1At")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-023")
+  iinit
+   refid "_-35a:CraftingMixerController/iinit"
+   param QName(PackageNamespace("_-3n-"), "CraftingWidget")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           18
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 18
+     debugline           19
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           21
+     getlocal0
+     findpropstrict      Multiname("Vector", [PackageNamespace("__AS3__.vec")])
+     getproperty         Multiname("Vector", [PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), PackageNamespace("__AS3__.vec"), PrivateNamespace("CraftingMixerController.as$4841", "_-35a:CraftingMixerController#1"), PackageNamespace(""), PackageNamespace("_-35a"), PackageInternalNs("_-35a"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3n-"), ProtectedNamespace("_-023"), StaticProtectedNs("_-023"), StaticProtectedNs("_-2UD")])
+     getlex              QName(PackageNamespace("_-5m1"), "_-5pF")
+     applytype           1
+     pushbyte            0
+     construct           1
+     initproperty        QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-5m1"), "_-5pF")>) end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-35a:CraftingMixerController/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           24
+      getlocal0
+      pushscope
+
+      debugline           25
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-2zj"), 0
+
+      debugline           27
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           28
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2zj")
+   method
+    refid "_-35a:CraftingMixerController/_-2zj"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5m1"), "_-5pF")
+      setlocal2
+
+      debug               1, "k", 0, 31
+      debugline           31
+      pushbyte            0
+      setlocal1
+
+      jump                L29
+
+L12:
+      label
+      debug               1, "k", 1, 32
+      debugline           32
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), PrivateNamespace("CraftingMixerController.as$4841", "_-35a:CraftingMixerController#1"), PackageNamespace(""), PackageNamespace("_-35a"), PackageInternalNs("_-35a"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3n-"), ProtectedNamespace("_-023"), StaticProtectedNs("_-023"), StaticProtectedNs("_-2UD")])
+      coerce              QName(PackageNamespace("_-5m1"), "_-5pF")
+      setlocal2
+
+      debugline           33
+      getlocal2
+      iffalse             L28
+
+      debugline           34
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "returnItemToInventory"), 0
+
+      debugline           31
+L28:
+      inclocal_i          1
+L29:
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L12
+
+      debugline           38
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "length")
+
+      debugline           40
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+      iffalse             L48
+
+      debugline           41
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+      callpropvoid        QName(Namespace("_-5Ga"), "destroyGridItems"), 0
+
+      debugline           44
+L48:
+      getlex              QName(ProtectedNamespace("_-2UD"), "_-5dD")
+      convert_b
+      dup
+      iffalse             L56
+
+      pop
+      getlex              QName(ProtectedNamespace("_-2UD"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "inventoryCtrl")
+      convert_b
+L56:
+      iffalse             L62
+
+      debugline           45
+      getlex              QName(ProtectedNamespace("_-2UD"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "inventoryCtrl")
+      callpropvoid        QName(PackageNamespace(""), "updateItemCounts"), 0
+
+      debugline           47
+L62:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "clearItems")
+   method
+    refid "_-35a:CraftingMixerController/clearItems"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      debugline           50
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-2zj"), 0
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+      iffalse             L16
+
+      debugline           53
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+      callpropvoid        QName(Namespace("_-5Ga"), "destroyGridItems"), 0
+
+      debugline           55
+L16:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "canAdd")
+   method
+    refid "_-35a:CraftingMixerController/canAdd"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           57
+      getlocal0
+      pushscope
+
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlex              QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-1Dp")
+      lessthan
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "addItemToMixer")
+   method
+    refid "_-35a:CraftingMixerController/addItemToMixer"
+    param QName(PackageNamespace("_-JR"), "CraftingFurnitureItem")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 61
+      debug               1, "k", 1, 61
+      debug               1, "k", 2, 64
+      debug               1, "k", 3, 65
+      debugline           62
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+      iftrue              L15
+
+      pushfalse
+      returnvalue
+
+      debugline           64
+L15:
+      findpropstrict      QName(PackageNamespace(""), "getItemTemplate")
+      callproperty        QName(PackageNamespace(""), "getItemTemplate"), 0
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal3
+
+      debugline           65
+      findpropstrict      QName(PackageNamespace("_-5m1"), "_-5pF")
+      getlocal1
+      getlocal3
+      callproperty        QName(Namespace("_-6q"), "clone"), 0
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      getlex              QName(ProtectedNamespace("_-2UD"), "_-5dD")
+      constructprop       QName(PackageNamespace("_-5m1"), "_-5pF"), 3
+      coerce              QName(PackageNamespace("_-5m1"), "_-5pF")
+      setlocal            4
+
+      debugline           66
+      getlocal            4
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "_-0I2")
+
+      debugline           68
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "window")
+      callpropvoid        QName(Namespace("_-5Ga"), "_-3kr"), 1
+
+      debugline           70
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      getlocal            4
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           72
+      getlex              QName(ProtectedNamespace("_-2UD"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "inSecretRecipeMode")
+      iffalse             L55
+
+      debugline           73
+      getlex              QName(ProtectedNamespace("_-2UD"), "_-5dD")
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-6Fo"), 0
+      callpropvoid        QName(PackageNamespace(""), "mixerContentChanged"), 1
+
+      debugline           76
+L55:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "removeListItem")
+   method
+    refid "_-35a:CraftingMixerController/removeListItem"
+    param QName(PackageNamespace("_-5m1"), "_-5pF")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           79
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5m1"), "_-5pF")
+      setlocal3
+
+      debug               1, "k", 0, 79
+      debug               1, "k", 1, 82
+      debugline           80
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+      iftrue              L15
+
+      returnvoid
+
+      debugline           82
+L15:
+      pushbyte            0
+      setlocal2
+
+      jump                L67
+
+L18:
+      label
+      debug               1, "k", 2, 83
+      debugline           83
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), PrivateNamespace("CraftingMixerController.as$4841", "_-35a:CraftingMixerController#1"), PackageNamespace(""), PackageNamespace("_-35a"), PackageInternalNs("_-35a"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3n-"), ProtectedNamespace("_-023"), StaticProtectedNs("_-023"), StaticProtectedNs("_-2UD")])
+      coerce              QName(PackageNamespace("_-5m1"), "_-5pF")
+      setlocal3
+
+      debugline           84
+      getlocal3
+      getlocal1
+      ifne                L66
+
+      debugline           85
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      getlocal2
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           87
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "window")
+      iffalse             L52
+
+      debugline           88
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "window")
+      callpropvoid        QName(Namespace("_-5Ga"), "_-3GR"), 1
+
+      debugline           89
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+      callpropvoid        QName(Namespace("_-5Ga"), "_-0kV"), 0
+
+      debugline           92
+L52:
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "returnItemToInventory"), 0
+
+      debugline           93
+      getlex              QName(ProtectedNamespace("_-2UD"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "inventoryCtrl")
+      callpropvoid        QName(PackageNamespace(""), "updateItemCounts"), 0
+
+      debugline           94
+      getlex              QName(ProtectedNamespace("_-2UD"), "_-5dD")
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-6Fo"), 0
+      callpropvoid        QName(PackageNamespace(""), "mixerContentChanged"), 1
+
+      debugline           95
+      returnvoid
+
+      debugline           82
+L66:
+      inclocal_i          2
+L67:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L18
+
+      debugline           98
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6Fo")
+   method
+    refid "_-35a:CraftingMixerController/_-6Fo"
+    returns TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>)
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           100
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5m1"), "_-5pF")
+      setlocal3
+
+      debug               1, "k", 0, 101
+      debug               1, "k", 1, 102
+      debugline           101
+      findpropstrict      Multiname("Vector", [PackageNamespace("__AS3__.vec")])
+      getproperty         Multiname("Vector", [PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), PackageNamespace("__AS3__.vec"), PrivateNamespace("CraftingMixerController.as$4841", "_-35a:CraftingMixerController#1"), PackageNamespace(""), PackageNamespace("_-35a"), PackageInternalNs("_-35a"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3n-"), ProtectedNamespace("_-023"), StaticProtectedNs("_-023"), StaticProtectedNs("_-2UD")])
+      getlex              QName(PackageNamespace(""), "int")
+      applytype           1
+      pushbyte            0
+      construct           1
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>)
+      setlocal1
+
+      debugline           102
+      pushbyte            0
+      setlocal2
+
+      jump                L41
+
+L22:
+      label
+      debug               1, "k", 2, 103
+      debugline           103
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), PrivateNamespace("CraftingMixerController.as$4841", "_-35a:CraftingMixerController#1"), PackageNamespace(""), PackageNamespace("_-35a"), PackageInternalNs("_-35a"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-3n-"), ProtectedNamespace("_-023"), StaticProtectedNs("_-023"), StaticProtectedNs("_-2UD")])
+      coerce              QName(PackageNamespace("_-5m1"), "_-5pF")
+      setlocal3
+
+      debugline           104
+      getlocal3
+      iffalse             L40
+
+      debugline           105
+      getlocal1
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "_-0I2")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           102
+L40:
+      inclocal_i          2
+L41:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-2Cn")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L22
+
+      debugline           109
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "container")
+   method
+    refid "_-35a:CraftingMixerController/container/getter"
+    returns QName(PackageNamespace("_-1Bv"), "IItemGridWindow")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           112
+      getlocal0
+      pushscope
+
+      debugline           113
+      getlex              QName(PackageNamespace(""), "mainWindow")
+      iffalse             L14
+
+      getlex              QName(PackageNamespace(""), "mainWindow")
+      pushstring          "itemgrid_mixer"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IItemGridWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IItemGridWindow")
+      jump                L16
+
+L14:
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "IItemGridWindow")
+L16:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-35a:CraftingMixerController/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 14
+    findproperty        QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-1Dp")
+    pushbyte            10
+    initproperty        QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-1Dp")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-023", "_-35a:CraftingMixerController#0"), "_-1Dp") slotid 1 type QName(PackageNamespace(""), "int") value Integer(10) end
+end ; class

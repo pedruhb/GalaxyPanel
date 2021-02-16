@@ -1,0 +1,419 @@
+class
+ refid "_-6S5:_-82"
+ instance QName(PackageNamespace("_-6S5"), "_-82")
+  extends QName(PackageNamespace("_-6S5"), "Icon")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2st")
+  iinit
+   refid "_-6S5:_-82/iinit"
+   param QName(PackageNamespace("_-eg"), "_-6Pl")
+   param QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           22
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 22
+     debug               1, "k", 1, 22
+     debugline           24
+     getlocal0
+     constructsuper      0
+
+     debugline           26
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_assets")
+
+     debugline           27
+     findproperty        QName(ProtectedNamespace("_-27k"), "alignment")
+     getlex              QName(StaticProtectedNs("_-27k"), "_-6Mz")
+     getlex              QName(StaticProtectedNs("_-27k"), "_-6Zb")
+     bitor
+     initproperty        QName(ProtectedNamespace("_-27k"), "alignment")
+
+     debugline           28
+     findproperty        QName(ProtectedNamespace("_-27k"), "image")
+     getlocal1
+     pushstring          "icon_friendlist_png"
+     callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+     getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+     astypelate
+     initproperty        QName(ProtectedNamespace("_-27k"), "image")
+
+     debugline           29
+     findproperty        QName(ProtectedNamespace("_-27k"), "canvas")
+     getlocal2
+     initproperty        QName(ProtectedNamespace("_-27k"), "canvas")
+
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_assets") type QName(PackageNamespace("_-eg"), "_-6Pl") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-6S5:_-82/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      debugline           37
+      getlex              QName(PackageNamespace(""), "disposed")
+      iftrue              L15
+
+      debugline           38
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_assets")
+
+      debugline           39
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           41
+L15:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "notify") flag OVERRIDE
+   method
+    refid "_-6S5:_-82/notify"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 47
+      debugline           49
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "notify"), 1
+      debugline           50
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "enable"), 1
+
+      debugline           52
+      findpropstrict      QName(ProtectedNamespace("_-27k"), "_-63T")
+      getlocal1
+      convert_b
+      dup
+      iftrue              L22
+
+      pop
+      getlex              QName(ProtectedNamespace("_-27k"), "_hover")
+      convert_b
+L22:
+      getlex              QName(ProtectedNamespace("_-27k"), "_hover")
+      iffalse             L27
+
+      getlex              QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-6Gj")
+      convert_i
+      jump                L29
+
+L27:
+      getlex              QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-1t6")
+      convert_i
+L29:
+      callpropvoid        QName(ProtectedNamespace("_-27k"), "_-63T"), 2
+
+      debugline           53
+      getlex              QName(ProtectedNamespace("_-27k"), "_-4m")
+      not
+      dup
+      iffalse             L38
+
+      pop
+      getlex              QName(ProtectedNamespace("_-27k"), "_hover")
+      not
+L38:
+      iffalse             L49
+
+      debugline           54
+      findproperty        QName(ProtectedNamespace("_-27k"), "image")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_assets")
+      pushstring          "icon_friendlist_png"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-27k"), "image")
+
+      debugline           56
+L49:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "hover") flag OVERRIDE
+   method
+    refid "_-6S5:_-82/hover"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 62
+      debugline           64
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "hover"), 1
+      debugline           65
+      findpropstrict      QName(ProtectedNamespace("_-27k"), "_-63T")
+      getlocal1
+      convert_b
+      dup
+      iftrue              L18
+
+      pop
+      getlex              QName(ProtectedNamespace("_-27k"), "_-4m")
+      convert_b
+L18:
+      getlex              QName(ProtectedNamespace("_-27k"), "_hover")
+      iffalse             L23
+
+      getlex              QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-6Gj")
+      convert_i
+      jump                L25
+
+L23:
+      getlex              QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-1t6")
+      convert_i
+L25:
+      callpropvoid        QName(ProtectedNamespace("_-27k"), "_-63T"), 2
+
+      debugline           66
+      getlex              QName(ProtectedNamespace("_-27k"), "_-4m")
+      not
+      dup
+      iffalse             L34
+
+      pop
+      getlex              QName(ProtectedNamespace("_-27k"), "_hover")
+      not
+L34:
+      iffalse             L45
+
+      debugline           67
+      findproperty        QName(ProtectedNamespace("_-27k"), "image")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_assets")
+      pushstring          "icon_friendlist_png"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-27k"), "image")
+
+      debugline           69
+L45:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "enable") flag OVERRIDE
+   method
+    refid "_-6S5:_-82/enable"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 75
+      debugline           77
+      getlex              QName(ProtectedNamespace("_-27k"), "canvas")
+      getlex              QName(PackageNamespace(""), "disabled")
+      iffalse             L12
+
+      pushdouble          0.5
+      convert_d
+      jump                L14
+
+L12:
+      pushbyte            1
+      convert_d
+L14:
+      setproperty         QName(Namespace("_-6q"), "blend")
+
+      debugline           78
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-2st"), "onTimerEvent") flag OVERRIDE
+   method
+    refid "_-6S5:_-82/_-2st:onTimerEvent"
+    param QName(PackageNamespace("flash.events"), "TimerEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           84
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 84
+      debugline           86
+      getlex              QName(ProtectedNamespace("_-27k"), "_hover")
+      iffalse             L40
+
+      debugline           87
+      findproperty        QName(ProtectedNamespace("_-27k"), "_frame")
+      findpropstrict      QName(ProtectedNamespace("_-27k"), "_frame")
+      dup
+      setlocal2
+
+      getproperty         QName(ProtectedNamespace("_-27k"), "_frame")
+      increment_i
+      dup
+      setlocal3
+
+      getlocal2
+      getlocal3
+      setproperty         QName(ProtectedNamespace("_-27k"), "_frame")
+
+      kill                3
+      kill                2
+      pushbyte            4
+      modulo
+      initproperty        QName(ProtectedNamespace("_-27k"), "_frame")
+
+      debugline           88
+      findproperty        QName(ProtectedNamespace("_-27k"), "image")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_assets")
+      pushstring          "icon_friendlist_hover_"
+      getlex              QName(ProtectedNamespace("_-27k"), "_frame")
+      add
+      pushstring          "_png"
+      add
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-27k"), "image")
+
+      jump                L73
+
+      debugline           90
+L40:
+      getlex              QName(ProtectedNamespace("_-27k"), "_-4m")
+      iffalse             L73
+
+      debugline           91
+      findproperty        QName(ProtectedNamespace("_-27k"), "_frame")
+      findpropstrict      QName(ProtectedNamespace("_-27k"), "_frame")
+      dup
+      setlocal2
+
+      getproperty         QName(ProtectedNamespace("_-27k"), "_frame")
+      increment_i
+      dup
+      setlocal3
+
+      getlocal2
+      getlocal3
+      setproperty         QName(ProtectedNamespace("_-27k"), "_frame")
+
+      kill                3
+      kill                2
+      pushbyte            2
+      modulo
+      initproperty        QName(ProtectedNamespace("_-27k"), "_frame")
+
+      debugline           92
+      findproperty        QName(ProtectedNamespace("_-27k"), "image")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_assets")
+      pushstring          "icon_friendlist_notify_"
+      getlex              QName(ProtectedNamespace("_-27k"), "_frame")
+      add
+      pushstring          "_png"
+      add
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-27k"), "image")
+
+      debugline           94
+L73:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-6S5:_-82/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 14
+    findproperty        QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-6Gj")
+    pushshort           200
+    initproperty        QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-6Gj")
+
+    debug               1, "k", 1, 15
+    findproperty        QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-1t6")
+    pushshort           500
+    initproperty        QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-1t6")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-6Gj") slotid 1 type QName(PackageNamespace(""), "int") value Integer(200) end
+ trait const QName(PrivateNamespace("_-2st", "_-6S5:_-82"), "_-1t6") slotid 2 type QName(PackageNamespace(""), "int") value Integer(500) end
+end ; class

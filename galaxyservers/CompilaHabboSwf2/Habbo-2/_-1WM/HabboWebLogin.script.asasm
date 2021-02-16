@@ -1,0 +1,37 @@
+script ; 3200
+ sinit
+  refid "_-1WM:HabboWebLogin.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           15
+    findpropstrict      Multiname("HabboWebLogin", [PackageNamespace("_-1WM")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-1dC"), "EventDispatcherWrapper")
+    pushscope
+
+    getlex              QName(PackageNamespace("_-1dC"), "EventDispatcherWrapper")
+    newclass            "_-1WM:HabboWebLogin"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace("_-1WM"), "HabboWebLogin")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-1WM"), "HabboWebLogin")
+  #include "HabboWebLogin.class.asasm"
+ end ; trait
+end ; script

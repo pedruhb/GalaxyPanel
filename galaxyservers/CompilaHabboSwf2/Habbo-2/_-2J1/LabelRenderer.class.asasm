@@ -1,0 +1,530 @@
+class
+ refid "_-2J1:LabelRenderer"
+ instance QName(PackageNamespace("_-2J1"), "LabelRenderer")
+  extends QName(PackageNamespace("_-2J1"), "SkinRenderer")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-li")
+  iinit
+   refid "_-2J1:LabelRenderer/iinit"
+   param QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           29
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 29
+     debugline           31
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           32
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Matrix")
+     constructprop       QName(PackageNamespace("flash.geom"), "Matrix"), 0
+     initproperty        QName(ProtectedNamespace("_-li"), "_-3pE")
+
+     debugline           33
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-li"), "_-3pE") type QName(PackageNamespace("flash.geom"), "Matrix") end
+  trait slot QName(ProtectedNamespace("_-li"), "_-6AG") type QName(PackageNamespace("_-4qf"), "TextStyle") end
+  trait slot QName(ProtectedNamespace("_-li"), "_-5fK") type QName(PackageNamespace("flash.text"), "TextField") end
+  trait method QName(PackageNamespace(""), "draw") flag OVERRIDE
+   method
+    refid "_-2J1:LabelRenderer/draw"
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    param QName(PackageNamespace("flash.geom"), "Rectangle")
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 11
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "TextLabelController")
+      setlocal            6
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4qf"), "TextStyle")
+      setlocal            7
+
+      pushbyte            0
+      convert_u
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "ColorTransform")
+      setlocal            9
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal            10
+
+      debug               1, "k", 0, 43
+      debug               1, "k", 1, 43
+      debug               1, "k", 2, 43
+      debug               1, "k", 3, 43
+      debug               1, "k", 4, 43
+      debugline           45
+      getlocal2
+      pushnull
+      ifeq                L349
+
+      debug               1, "k", 5, 47
+      debug               1, "k", 6, 48
+      debug               1, "k", 7, 64
+      debug               1, "k", 8, 97
+      debugline           47
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "TextLabelController")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-1Bv"), "TextLabelController"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "TextLabelController")
+      setlocal            6
+
+      debugline           48
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "textStyle")
+      coerce              QName(PackageNamespace("_-4qf"), "TextStyle")
+      setlocal            7
+
+      debugline           50
+      getlocal            7
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-6AG")
+      ifeq                L59
+
+      debugline           51
+      getlocal0
+      getlex              QName(PackageNamespace("_-4qf"), "TextFieldCache")
+      getlocal            7
+      callproperty        QName(PackageNamespace(""), "_-5yF"), 1
+      initproperty        QName(ProtectedNamespace("_-li"), "_-5fK")
+
+      debugline           52
+      getlocal0
+      getlocal            7
+      initproperty        QName(ProtectedNamespace("_-li"), "_-6AG")
+
+      debugline           57
+L59:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "_-47t")
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      debugline           58
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "_-5Nl")
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      debugline           62
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-5fK")
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "text")
+      setproperty         QName(PackageNamespace(""), "text")
+
+      debugline           64
+      findpropstrict      QName(PackageNamespace(""), "uint")
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "color")
+      callproperty        QName(PackageNamespace(""), "uint"), 1
+      convert_u
+      setlocal            8
+
+      debugline           65
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-5fK")
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "_-H5")
+      iffalse             L93
+
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "textColor")
+      convert_u
+      jump                L95
+
+L93:
+      getlocal            8
+      convert_u
+L95:
+      setproperty         QName(PackageNamespace(""), "textColor")
+
+      debugline           67
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "vertical")
+      iffalse             L131
+
+      debugline           68
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "a")
+
+      debugline           69
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      pushbyte            255
+      setproperty         QName(PackageNamespace(""), "b")
+
+      debugline           70
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      pushbyte            1
+      setproperty         QName(PackageNamespace(""), "c")
+
+      debugline           71
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "d")
+
+      debugline           72
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "ty")
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "height")
+      add
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      debugline           75
+L131:
+      findpropstrict      QName(PackageNamespace(""), "uint")
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "etchingColor")
+      callproperty        QName(PackageNamespace(""), "uint"), 1
+      pushdouble          4278190080
+      bitand
+      pushbyte            0
+      ifeq                L290
+
+      debug               1, "k", 9, 80
+      debugline           76
+      getlex              QName(PrivateNamespace("_-li", "_-2J1:LabelRenderer"), "_-2Pu")
+      findpropstrict      QName(PackageNamespace(""), "uint")
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "etchingColor")
+      callproperty        QName(PackageNamespace(""), "uint"), 1
+      pushbyte            16
+      rshift
+      pushshort           255
+      bitand
+      setproperty         QName(PackageNamespace(""), "redOffset")
+
+      debugline           77
+      getlex              QName(PrivateNamespace("_-li", "_-2J1:LabelRenderer"), "_-2Pu")
+      findpropstrict      QName(PackageNamespace(""), "uint")
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "etchingColor")
+      callproperty        QName(PackageNamespace(""), "uint"), 1
+      pushbyte            8
+      rshift
+      pushshort           255
+      bitand
+      setproperty         QName(PackageNamespace(""), "greenOffset")
+
+      debugline           78
+      getlex              QName(PrivateNamespace("_-li", "_-2J1:LabelRenderer"), "_-2Pu")
+      findpropstrict      QName(PackageNamespace(""), "uint")
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "etchingColor")
+      callproperty        QName(PackageNamespace(""), "uint"), 1
+      pushshort           255
+      bitand
+      setproperty         QName(PackageNamespace(""), "blueOffset")
+
+      debugline           80
+      getlex              QName(StaticProtectedNs("_-0tU"), "_-4u4")
+      getlocal            7
+      getproperty         QName(PackageNamespace(""), "etchingPosition")
+      getproperty         MultinameL([PrivateNamespace("_-li", "_-2J1:LabelRenderer"), ProtectedNamespace("_-li"), PackageNamespace(""), StaticProtectedNs("_-0tU"), PrivateNamespace("LabelRenderer.as$2805", "_-2J1:LabelRenderer/draw"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-li")])
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal            10
+
+      debugline           81
+      getlocal            10
+      pushnull
+      ifeq                L290
+
+      debugline           82
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "vertical")
+      iffalse             L239
+
+      debugline           83
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "tx")
+      getlocal            10
+      getproperty         Multiname("y", [PrivateNamespace("_-li", "_-2J1:LabelRenderer"), ProtectedNamespace("_-li"), PackageNamespace(""), StaticProtectedNs("_-0tU"), PrivateNamespace("LabelRenderer.as$2805", "_-2J1:LabelRenderer/draw"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-li")])
+      add
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      debugline           84
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "ty")
+      getlocal            10
+      getproperty         Multiname("x", [PrivateNamespace("_-li", "_-2J1:LabelRenderer"), ProtectedNamespace("_-li"), PackageNamespace(""), StaticProtectedNs("_-0tU"), PrivateNamespace("LabelRenderer.as$2805", "_-2J1:LabelRenderer/draw"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-li")])
+      subtract
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      debugline           85
+      getlocal2
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-5fK")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlex              QName(PrivateNamespace("_-li", "_-2J1:LabelRenderer"), "_-2Pu")
+      pushnull
+      pushnull
+      pushfalse
+      callpropvoid        QName(PackageNamespace(""), "draw"), 6
+
+      debugline           86
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "tx")
+      getlocal            10
+      getproperty         Multiname("y", [PrivateNamespace("_-li", "_-2J1:LabelRenderer"), ProtectedNamespace("_-li"), PackageNamespace(""), StaticProtectedNs("_-0tU"), PrivateNamespace("LabelRenderer.as$2805", "_-2J1:LabelRenderer/draw"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-li")])
+      subtract
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      debugline           87
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "ty")
+      getlocal            10
+      getproperty         Multiname("x", [PrivateNamespace("_-li", "_-2J1:LabelRenderer"), ProtectedNamespace("_-li"), PackageNamespace(""), StaticProtectedNs("_-0tU"), PrivateNamespace("LabelRenderer.as$2805", "_-2J1:LabelRenderer/draw"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-li")])
+      add
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      jump                L290
+
+      debugline           89
+L239:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "tx")
+      getlocal            10
+      getproperty         Multiname("x", [PrivateNamespace("_-li", "_-2J1:LabelRenderer"), ProtectedNamespace("_-li"), PackageNamespace(""), StaticProtectedNs("_-0tU"), PrivateNamespace("LabelRenderer.as$2805", "_-2J1:LabelRenderer/draw"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-li")])
+      add
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      debugline           90
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "ty")
+      getlocal            10
+      getproperty         Multiname("y", [PrivateNamespace("_-li", "_-2J1:LabelRenderer"), ProtectedNamespace("_-li"), PackageNamespace(""), StaticProtectedNs("_-0tU"), PrivateNamespace("LabelRenderer.as$2805", "_-2J1:LabelRenderer/draw"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-li")])
+      add
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      debugline           91
+      getlocal2
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-5fK")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlex              QName(PrivateNamespace("_-li", "_-2J1:LabelRenderer"), "_-2Pu")
+      pushnull
+      pushnull
+      pushfalse
+      callpropvoid        QName(PackageNamespace(""), "draw"), 6
+
+      debugline           92
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "tx")
+      getlocal            10
+      getproperty         Multiname("x", [PrivateNamespace("_-li", "_-2J1:LabelRenderer"), ProtectedNamespace("_-li"), PackageNamespace(""), StaticProtectedNs("_-0tU"), PrivateNamespace("LabelRenderer.as$2805", "_-2J1:LabelRenderer/draw"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-li")])
+      subtract
+      setproperty         QName(PackageNamespace(""), "tx")
+
+      debugline           93
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "ty")
+      getlocal            10
+      getproperty         Multiname("y", [PrivateNamespace("_-li", "_-2J1:LabelRenderer"), ProtectedNamespace("_-li"), PackageNamespace(""), StaticProtectedNs("_-0tU"), PrivateNamespace("LabelRenderer.as$2805", "_-2J1:LabelRenderer/draw"), PackageNamespace("_-2J1"), PackageInternalNs("_-2J1"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-li")])
+      subtract
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      debugline           98
+L290:
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "_-XH")
+      iffalse             L299
+
+      debugline           99
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "_-XH")
+      coerce              QName(PackageNamespace("flash.geom"), "ColorTransform")
+      setlocal            9
+
+      debugline           102
+L299:
+      getlocal2
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-5fK")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal            9
+      pushnull
+      pushnull
+      pushfalse
+      callpropvoid        QName(PackageNamespace(""), "draw"), 6
+
+      debugline           104
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "vertical")
+      iffalse             L344
+
+      debugline           105
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      pushbyte            1
+      setproperty         QName(PackageNamespace(""), "a")
+
+      debugline           106
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "b")
+
+      debugline           107
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "c")
+
+      debugline           108
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      pushbyte            1
+      setproperty         QName(PackageNamespace(""), "d")
+
+      debugline           109
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-3pE")
+      getproperty         QName(PackageNamespace(""), "ty")
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "height")
+      subtract
+      setproperty         QName(PackageNamespace(""), "ty")
+
+      debugline           114
+L344:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-li"), "_-5fK")
+      getlocal            8
+      setproperty         QName(PackageNamespace(""), "textColor")
+
+      debugline           116
+L349:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isStateDrawable") flag OVERRIDE
+   method
+    refid "_-2J1:LabelRenderer/isStateDrawable"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           122
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 122
+      debugline           124
+      getlocal1
+      pushbyte            0
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2J1:LabelRenderer/cinit"
+  body
+   maxstack 10
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 23
+    findproperty        QName(PrivateNamespace("_-li", "_-2J1:LabelRenderer"), "_-2Pu")
+    findpropstrict      QName(PackageNamespace("flash.geom"), "ColorTransform")
+    pushbyte            0
+    dup
+    dup
+    pushbyte            1
+    pushshort           255
+    pushshort           255
+    pushshort           255
+    pushbyte            0
+    constructprop       QName(PackageNamespace("flash.geom"), "ColorTransform"), 8
+    initproperty        QName(PrivateNamespace("_-li", "_-2J1:LabelRenderer"), "_-2Pu")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-li", "_-2J1:LabelRenderer"), "_-2Pu") slotid 1 type QName(PackageNamespace("flash.geom"), "ColorTransform") end
+end ; class

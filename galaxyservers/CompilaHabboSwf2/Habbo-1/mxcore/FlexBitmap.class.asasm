@@ -1,0 +1,120 @@
+class
+ refid "mx.core:FlexBitmap"
+ instance QName(PackageNamespace("mx.core"), "FlexBitmap")
+  extends QName(PackageNamespace("flash.display"), "Bitmap")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("mx.core:FlexBitmap")
+  iinit
+   refid "mx.core:FlexBitmap/iinit"
+   param QName(PackageNamespace("flash.display"), "BitmapData")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Utf8("auto")
+   optional False()
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 7
+    maxscopedepth 10
+    code
+     debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;FlexBitmap.as"
+     debugline           66
+     getlocal0
+     pushscope
+
+     debug               1, "bitmapData", 0, 66
+     debug               1, "pixelSnapping", 1, 66
+     debug               1, "smoothing", 2, 66
+     debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;FlexBitmap.as"
+     debugline           70
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           74
+L15:
+     findproperty        QName(PackageNamespace(""), "name")
+     getlex              QName(PackageNamespace("mx.utils"), "NameUtil")
+     getlocal0
+     callproperty        QName(PackageNamespace(""), "createUniqueName"), 1
+     initproperty        QName(PackageNamespace(""), "name")
+
+     debugline           76
+L21:
+     jump                L34
+
+L22:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal            4
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                4
+     debugline           89
+L34:
+     returnvoid
+    end ; code
+    try from L15 to L21 target L22 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "toString") flag OVERRIDE
+   method
+    refid "mx.core:FlexBitmap/toString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "E:\\dev\\4.y\\frameworks\\projects\\framework\\src;mx\\core;FlexBitmap.as"
+      debugline           116
+      getlocal0
+      pushscope
+
+      debugline           118
+      getlex              QName(PackageNamespace("mx.utils"), "NameUtil")
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "displayObjectToString"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "mx.core:FlexBitmap/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "VERSION", 0, 18
+    findproperty        QName(Namespace("http://www.adobe.com/2006/flex/mx/internal"), "VERSION")
+    pushstring          "4.6.0.23201"
+    initproperty        QName(Namespace("http://www.adobe.com/2006/flex/mx/internal"), "VERSION")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(Namespace("http://www.adobe.com/2006/flex/mx/internal"), "VERSION") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("4.6.0.23201") end
+end ; class

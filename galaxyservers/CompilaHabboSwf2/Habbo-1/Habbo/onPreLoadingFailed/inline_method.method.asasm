@@ -1,0 +1,44 @@
+method
+ refid "Habbo/onPreLoadingFailed/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 5
+  localcount 1
+  initscopedepth 11
+  maxscopedepth 11
+  code
+   debugfile           "k"
+   debugline           218
+   findpropstrict      QName(PackageNamespace(""), "trackLoginStep")
+   getlex              QName(PackageNamespace(""), "_-5Vm")
+   getproperty         QName(PackageNamespace(""), "_-42v")
+   callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+   debugline           219
+   findpropstrict      QName(PackageNamespace(""), "reportCrash")
+   pushstring          "IO error in main swf preloading: "
+   debugline           219
+   getlex              QName(PackageInternalNs(""), "event")
+   getproperty         QName(PackageNamespace(""), "text")
+   add
+   pushstring          " / URL: "
+   add
+   getlex              QName(PackageNamespace(""), "root")
+   getproperty         QName(PackageNamespace(""), "loaderInfo")
+   getproperty         QName(PackageNamespace(""), "loaderURL")
+   add
+   pushstring          " / HTTP status: "
+   debugline           220
+   add
+   getlex              QName(PrivateNamespace("Habbo", "Habbo#0"), "_httpStatus")
+   add
+   getlex              QName(PackageNamespace(""), "ERROR_CATEGORY_FINALIZE_PRELOADING")
+   pushtrue
+   pushnull
+   callpropvoid        QName(PackageNamespace(""), "reportCrash"), 4
+
+   debugline           221
+   returnvoid
+  end ; code
+ end ; body
+end ; method

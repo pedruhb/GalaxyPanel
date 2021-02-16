@@ -1,0 +1,836 @@
+class
+ refid "_-1Mw:OverlayView"
+ instance QName(PackageNamespace("_-1Mw"), "OverlayView")
+  extends QName(PackageNamespace("_-0F1"), "RegionView")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-vJ")
+  iinit
+   refid "_-1Mw:OverlayView/iinit"
+   param QName(PackageNamespace("_-97"), "RegionController")
+   param QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+   param QName(PackageNamespace("_-1Ta"), "_-4EG")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 10
+    maxscopedepth 11
+    code
+     debugfile           "k"
+     debugline           43
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 43
+     debug               1, "k", 1, 43
+     debug               1, "k", 2, 43
+     debugline           44
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           45
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-vJ"), "_-3KX") type QName(PackageNamespace("_-29W"), "AdSlot") value Null() end
+  trait slot QName(ProtectedNamespace("_-vJ"), "_-55k") value Null() end
+  trait slot QName(ProtectedNamespace("_-vJ"), "_-1Qa") type QName(PackageNamespace("_-0fF"), "VPAIDConfig") value Null() end
+  trait slot QName(ProtectedNamespace("_-vJ"), "_-5HL") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(ProtectedNamespace("_-vJ"), "_-5EF") type QName(PackageNamespace(""), "Number") value Integer(-1) end
+  trait slot QName(ProtectedNamespace("_-vJ"), "_-Hg") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(ProtectedNamespace("_-vJ"), "_-0cM") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait setter QName(PackageNamespace(""), "_-6Ui")
+   method
+    refid "_-1Mw:OverlayView/_-6Ui/setter"
+    param QName(PackageNamespace("_-29W"), "AdSlot")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 47
+      debugline           48
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-vJ"), "_-3KX")
+
+      debugline           49
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-6Ui")
+   method
+    refid "_-1Mw:OverlayView/_-6Ui/getter"
+    returns QName(PackageNamespace("_-29W"), "AdSlot")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      debugline           52
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-3KX")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0gR")
+   method
+    refid "_-1Mw:OverlayView/_-0gR"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      debugline           56
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-vJ"), "_-3KX")
+
+      debugline           57
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "setHeight") flag OVERRIDE
+   method
+    refid "_-1Mw:OverlayView/setHeight"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           59
+      getlocal0
+      pushscope
+
+      pushnan
+      setlocal1
+
+      debugline           60
+      getlex              QName(PackageNamespace(""), "expanded")
+      convert_b
+      dup
+      iffalse             L15
+
+      pop
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      callproperty        QName(PackageNamespace(""), "hasExpandedSizing"), 0
+      convert_b
+L15:
+      iffalse             L26
+
+      debugline           62
+      findproperty        QName(PackageNamespace(""), "height")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "expandedHeight")
+      initproperty        QName(PackageNamespace(""), "height")
+
+      debugline           63
+      pushtrue
+      returnvalue
+
+      debug               1, "k", 0, 66
+      debugline           66
+L26:
+      getlex              QName(PackageNamespace(""), "height")
+      convert_d
+      setlocal1
+
+      debugline           67
+      getlex              QName(PackageNamespace(""), "expanded")
+      pushfalse
+      equals
+      dup
+      iffalse             L41
+
+      pop
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-0Hw")
+      getproperty         QName(PackageNamespace(""), "displayMode")
+      callproperty        QName(PackageNamespace(""), "hasMinimizedHeightBasedOnYPosForDisplayMode"), 1
+      convert_b
+L41:
+      iffalse             L55
+
+      debugline           68
+      findproperty        QName(PackageNamespace(""), "height")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-0Hw")
+      callproperty        QName(PackageNamespace(""), "calculateMinimizedHeight"), 1
+      initproperty        QName(PackageNamespace(""), "height")
+
+      debugline           70
+      getlex              QName(PackageNamespace(""), "height")
+      getlocal1
+      equals
+      not
+      returnvalue
+
+      debugline           72
+L55:
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "height")
+      getlex              QName(PackageNamespace(""), "String")
+      istypelate
+      iffalse             L82
+
+      debugline           73
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "height")
+      callproperty        Multiname("toUpperCase", [PrivateNamespace("_-vJ", "_-1Mw:OverlayView#1"), ProtectedNamespace("_-vJ"), PackageNamespace(""), PrivateNamespace("OverlayView.as$5017", "_-1Mw:OverlayView#0"), PackageNamespace("_-1Mw"), PackageInternalNs("_-1Mw"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-vJ"), StaticProtectedNs("_-jT"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+      pushstring          "BOTTOM-MARGIN-ADJUSTED"
+      callproperty        Multiname("indexOf", [PrivateNamespace("_-vJ", "_-1Mw:OverlayView#1"), ProtectedNamespace("_-vJ"), PackageNamespace(""), PrivateNamespace("OverlayView.as$5017", "_-1Mw:OverlayView#0"), PackageNamespace("_-1Mw"), PackageInternalNs("_-1Mw"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-vJ"), StaticProtectedNs("_-jT"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 1
+      pushbyte            255
+      ifngt               L82
+
+      debugline           75
+      findproperty        QName(PackageNamespace(""), "height")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-0Hw")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "useOverrideMargin")
+      callproperty        QName(PackageNamespace(""), "getMarginAdjustedHeight"), 1
+      initproperty        QName(PackageNamespace(""), "height")
+
+      debugline           77
+      getlex              QName(PackageNamespace(""), "height")
+      getlocal1
+      equals
+      not
+      returnvalue
+
+      debugline           80
+L82:
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "setHeight"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "setVerticalAlignment") flag OVERRIDE
+   method
+    refid "_-1Mw:OverlayView/setVerticalAlignment"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           84
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal1
+
+      pushnan
+      setlocal2
+
+      pushnan
+      setlocal3
+
+      pushfalse
+      setlocal            4
+
+      debugline           85
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignPosition")
+      getlex              QName(PackageNamespace(""), "String")
+      istypelate
+      dup
+      iffalse             L25
+
+      pop
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignPosition")
+      pushnull
+      equals
+      not
+L25:
+      iffalse             L136
+
+      debug               1, "k", 0, 86
+      debug               1, "k", 1, 87
+      debug               1, "k", 2, 88
+      debug               1, "k", 3, 89
+      debugline           86
+      getlex              QName(ProtectedNamespace("_-jT"), "_-0Hw")
+      getproperty         QName(PackageNamespace(""), "displayHeight")
+      getlex              QName(PackageNamespace(""), "scaleY")
+      multiply
+      convert_i
+      setlocal1
+
+      debugline           87
+      getlex              QName(PackageNamespace(""), "y")
+      convert_d
+      setlocal2
+
+      debugline           88
+      getlex              QName(ProtectedNamespace("_-jT"), "_-0Hw")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "useOverrideMargin")
+      callproperty        QName(PackageNamespace(""), "getActiveMargin"), 1
+      convert_d
+      setlocal3
+
+      debugline           89
+      pushfalse
+      setlocal            4
+
+      debugline           90
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignPosition")
+      pushstring          "TOP"
+      ifne                L68
+
+      debugline           91
+      findproperty        QName(PackageNamespace(""), "y")
+      pushbyte            0
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignOffset")
+      add
+      initproperty        QName(PackageNamespace(""), "y")
+
+      debugline           92
+      pushtrue
+      setlocal            4
+
+      jump                L127
+
+      debugline           94
+L68:
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignPosition")
+      pushstring          "BOTTOM"
+      ifne                L88
+
+      debugline           95
+      findproperty        QName(PackageNamespace(""), "y")
+      getlocal1
+      getlex              QName(PackageNamespace(""), "height")
+      subtract
+      getlocal3
+      subtract
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignOffset")
+      add
+      initproperty        QName(PackageNamespace(""), "y")
+
+      debugline           96
+      pushtrue
+      setlocal            4
+
+      jump                L127
+
+      debugline           98
+L88:
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignPosition")
+      pushstring          "CENTER"
+      ifne                L110
+
+      debugline           99
+      findproperty        QName(PackageNamespace(""), "y")
+      getlocal1
+      getlex              QName(PackageNamespace(""), "height")
+      subtract
+      getlocal3
+      subtract
+      pushbyte            2
+      divide
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignOffset")
+      add
+      initproperty        QName(PackageNamespace(""), "y")
+
+      debugline           100
+      pushtrue
+      setlocal            4
+
+      jump                L127
+
+      debugline           103
+L110:
+      findproperty        QName(PackageNamespace(""), "y")
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignPosition")
+      constructprop       QName(PackageNamespace(""), "Number"), 1
+      initproperty        QName(PackageNamespace(""), "y")
+
+      debugline           104
+      findproperty        QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "y")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "verticalAlignOffset")
+      add
+      initproperty        QName(PackageNamespace(""), "y")
+
+      debugline           105
+      pushtrue
+      setlocal            4
+
+      debugline           107
+L127:
+      getlocal            4
+      iffalse             L136
+
+      debugline           109
+      getlex              QName(PackageNamespace(""), "y")
+      getlocal2
+      equals
+      not
+      returnvalue
+
+      debugline           112
+L136:
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "setVerticalAlignment"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "resize") flag OVERRIDE
+   method
+    refid "_-1Mw:OverlayView/resize"
+    param QName(PackageNamespace("_-1Ta"), "_-4EG")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           115
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 115
+      debugline           116
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "resize"), 1
+      debugline           117
+      getlex              QName(ProtectedNamespace("_-jT"), "_-0Hw")
+      pushnull
+      ifeq                L38
+
+      debugline           118
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L26
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      getlex              QName(PackageNamespace("_-3ea"), "_-6Yg")
+      istypelate
+L26:
+      iffalse             L38
+
+      debugline           119
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "width")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "height")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-0Hw")
+      getproperty         QName(PackageNamespace(""), "displayMode")
+      callpropvoid        Multiname("resize", [PrivateNamespace("_-vJ", "_-1Mw:OverlayView#1"), ProtectedNamespace("_-vJ"), PackageNamespace(""), PrivateNamespace("OverlayView.as$5017", "_-1Mw:OverlayView#0"), PackageNamespace("_-1Mw"), PackageInternalNs("_-1Mw"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-vJ"), StaticProtectedNs("_-jT"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 3
+
+      debugline           122
+L38:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-vJ"), "onFlashContentLoaded") flag OVERRIDE
+   method
+    refid "_-1Mw:OverlayView/_-vJ:onFlashContentLoaded"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           124
+      getlocal0
+      pushscope
+
+      debugline           125
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      pushnull
+      ifeq                L78
+
+      debugline           126
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      callproperty        Multiname("isInteractive", [PrivateNamespace("_-vJ", "_-1Mw:OverlayView#1"), ProtectedNamespace("_-vJ"), PackageNamespace(""), PrivateNamespace("OverlayView.as$5017", "_-1Mw:OverlayView#0"), PackageNamespace("_-1Mw"), PackageInternalNs("_-1Mw"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-vJ"), StaticProtectedNs("_-jT"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+      iffalse             L78
+
+      debugline           127
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      findpropstrict      QName(PackageNamespace("_-1Mw"), "VPAIDWrapper")
+      getlex              QName(ProtectedNamespace("_-jT"), "_-64d")
+      getproperty         QName(PackageNamespace(""), "content")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-5HL")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-5EF")
+      constructprop       QName(PackageNamespace("_-1Mw"), "VPAIDWrapper"), 3
+      callproperty        Multiname("registerAsVPAID", [PrivateNamespace("_-vJ", "_-1Mw:OverlayView#1"), ProtectedNamespace("_-vJ"), PackageNamespace(""), PrivateNamespace("OverlayView.as$5017", "_-1Mw:OverlayView#0"), PackageNamespace("_-1Mw"), PackageInternalNs("_-1Mw"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-vJ"), StaticProtectedNs("_-jT"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 1
+      iffalse             L78
+
+      debugline           128
+      findpropstrict      QName(PackageNamespace(""), "show")
+      callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+      debugline           129
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      debugline           130
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "width")
+      debugline           131
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "height")
+      debugline           132
+      getlex              QName(ProtectedNamespace("_-jT"), "_-0Hw")
+      pushnull
+      ifeq                L47
+
+      getlex              QName(ProtectedNamespace("_-jT"), "_-0Hw")
+      getproperty         QName(PackageNamespace(""), "displayMode")
+      coerce_a
+      jump                L51
+
+L47:
+      getlex              QName(PackageNamespace("_-1Ta"), "_-4EG")
+      getproperty         QName(PackageNamespace(""), "_-2so")
+      coerce_a
+      debugline           133
+L51:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-1Qa")
+      pushnull
+      ifeq                L60
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-1Qa")
+      getproperty         QName(PackageNamespace(""), "supplyReferrer")
+      coerce_a
+      jump                L63
+
+L60:
+      pushfalse
+      coerce_a
+      debugline           134
+L63:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-1Qa")
+      pushnull
+      ifeq                L72
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-1Qa")
+      getproperty         QName(PackageNamespace(""), "referrer")
+      coerce_a
+      jump                L74
+
+L72:
+      pushnull
+      coerce_a
+L74:
+      callpropvoid        Multiname("startVPAID", [PrivateNamespace("_-vJ", "_-1Mw:OverlayView#1"), ProtectedNamespace("_-vJ"), PackageNamespace(""), PrivateNamespace("OverlayView.as$5017", "_-1Mw:OverlayView#0"), PackageNamespace("_-1Mw"), PackageInternalNs("_-1Mw"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-vJ"), StaticProtectedNs("_-jT"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 5
+
+      jump                L78
+
+      debugline           138
+      debugline           142
+L78:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5rv")
+   method
+    refid "_-1Mw:OverlayView/_-5rv"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           144
+      getlocal0
+      pushscope
+
+      debugline           145
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      pushnull
+      ifeq                L18
+
+      debugline           146
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      callpropvoid        Multiname("unload", [PrivateNamespace("_-vJ", "_-1Mw:OverlayView#1"), ProtectedNamespace("_-vJ"), PackageNamespace(""), PrivateNamespace("OverlayView.as$5017", "_-1Mw:OverlayView#0"), PackageNamespace("_-1Mw"), PackageInternalNs("_-1Mw"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-vJ"), StaticProtectedNs("_-jT"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+
+      debugline           147
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-vJ"), "_-55k")
+
+      debugline           149
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2lP")
+   method
+    refid "_-1Mw:OverlayView/_-2lP"
+    param QName(PackageNamespace("_-0F1"), "_-Rm")
+    param QName(PackageNamespace("_-0fF"), "VPAIDConfig")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional False()
+    optional False()
+    optional False()
+    optional False()
+    optional Integer(-1)
+    body
+     maxstack 4
+     localcount 9
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           151
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 151
+      debug               1, "k", 1, 151
+      debug               1, "k", 2, 151
+      debug               1, "k", 3, 151
+      debug               1, "k", 4, 151
+      debug               1, "k", 5, 151
+      debug               1, "k", 6, 151
+      debug               1, "k", 7, 151
+      debugline           152
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-vJ"), "_-55k")
+
+      debugline           153
+      getlocal0
+      getlocal2
+      initproperty        QName(ProtectedNamespace("_-vJ"), "_-1Qa")
+
+      debugline           154
+      getlocal0
+      getlocal            5
+      initproperty        QName(ProtectedNamespace("_-vJ"), "_-5HL")
+
+      debugline           155
+      getlocal0
+      getlocal            8
+      initproperty        QName(ProtectedNamespace("_-vJ"), "_-5EF")
+
+      debugline           156
+      getlocal0
+      getlocal            6
+      initproperty        QName(ProtectedNamespace("_-vJ"), "_-Hg")
+
+      debugline           157
+      getlocal0
+      getlocal            7
+      initproperty        QName(ProtectedNamespace("_-vJ"), "_-0cM")
+
+      debugline           158
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      callproperty        Multiname("isInteractive", [PrivateNamespace("_-vJ", "_-1Mw:OverlayView#1"), ProtectedNamespace("_-vJ"), PackageNamespace(""), PrivateNamespace("OverlayView.as$5017", "_-1Mw:OverlayView#0"), PackageNamespace("_-1Mw"), PackageInternalNs("_-1Mw"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-vJ"), StaticProtectedNs("_-jT"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+      iffalse             L62
+
+      debugline           159
+      findproperty        QName(PackageNamespace(""), "scalable")
+      getlocal            7
+      iffalse             L49
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "enableLinearScaling")
+      convert_b
+      jump                L52
+
+L49:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "enableNonLinearScaling")
+      convert_b
+L52:
+      initproperty        QName(PackageNamespace(""), "scalable")
+
+      debugline           161
+      findpropstrict      QName(PackageNamespace(""), "_-6OM")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      getlocal3
+      pushfalse
+      callpropvoid        QName(PackageNamespace(""), "_-6OM"), 3
+
+      jump                L69
+
+      debugline           165
+L62:
+      findpropstrict      QName(PackageNamespace(""), "_-6OM")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-vJ"), "_-55k")
+      getlocal3
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "_-6OM"), 3
+
+      debugline           167
+L69:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5X6")
+   method
+    refid "_-1Mw:OverlayView/_-5X6"
+    param QName(PackageNamespace("_-3ea"), "_-6eg")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 9
+     localcount 6
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           169
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 169
+      debug               1, "k", 1, 169
+      debug               1, "k", 2, 169
+      debug               1, "k", 3, 169
+      debug               1, "k", 4, 169
+      debugline           170
+      getlocal1
+      pushnull
+      ifeq                L37
+
+      debugline           171
+      findpropstrict      QName(ProtectedNamespace("_-jT"), "_-0kU")
+      debugline           172
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-6OW")
+      debugline           173
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      debugline           174
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      debugline           175
+      getlocal2
+      debugline           176
+      getlocal3
+      debugline           177
+      getlocal            4
+      debugline           178
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "maintainAspectRatio")
+      debugline           179
+      getlocal            5
+      callpropvoid        QName(ProtectedNamespace("_-jT"), "_-0kU"), 8
+
+      debugline           182
+L37:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Mw:OverlayView/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 9
+   maxscopedepth 10
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

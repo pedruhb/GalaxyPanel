@@ -1,0 +1,596 @@
+class
+ refid "_-01n:ResourceManager"
+ instance QName(PackageNamespace("_-01n"), "ResourceManager")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-2OY", [PackageNamespace("_-eg")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-Ra")
+  iinit
+   refid "_-01n:ResourceManager/iinit"
+   param QName(PackageNamespace("_-01n"), "HabboWindowManagerComponent")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           16
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 16
+     debugline           14
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     initproperty        QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-2p3")
+
+     debugline           16
+     getlocal0
+     constructsuper      0
+
+     debugline           17
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+
+     debugline           18
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_disposed") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC") type QName(PackageNamespace("_-01n"), "HabboWindowManagerComponent") end
+  trait slot QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-2p3") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-01n:ResourceManager/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      debugline           21
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_disposed")
+      iftrue              L17
+
+      debugline           22
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+
+      debugline           23
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_disposed")
+
+      debugline           25
+L17:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-01n:ResourceManager/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           27
+      getlocal0
+      pushscope
+
+      debugline           28
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "retrieveAsset")
+   method
+    refid "_-01n:ResourceManager/retrieveAsset"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace("_-eg"), "_-2H1")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           31
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "_-2YV")
+      setlocal            5
+
+      debug               1, "k", 0, 31
+      debug               1, "k", 1, 31
+      debug               1, "k", 2, 36
+      debug               1, "k", 3, 41
+      debugline           32
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L22
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      equals
+L22:
+      iffalse             L26
+
+      debugline           33
+      returnvoid
+
+      debugline           36
+L26:
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-6Xx"), 1
+      coerce_s
+      setlocal3
+
+      debugline           37
+      getlocal3
+      pushnull
+      ifne                L38
+
+      debugline           38
+      returnvoid
+
+      debugline           41
+L38:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+      getproperty         QName(PackageNamespace(""), "assets")
+      getlocal3
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      coerce              QName(PackageNamespace("_-eg"), "_-4ct")
+      setlocal            4
+
+      debugline           42
+      getlocal            4
+      pushnull
+      ifne                L123
+
+      debugline           43
+      getlocal3
+      pushbyte            0
+      pushbyte            7
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+      pushstring          "http://"
+      equals
+      dup
+      iftrue              L65
+
+      pop
+      getlocal3
+      pushbyte            0
+      pushbyte            8
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+      pushstring          "https://"
+      equals
+L65:
+      iffalse             L121
+
+      debug               1, "k", 4, 44
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+      getproperty         QName(PackageNamespace(""), "assets")
+      getlocal3
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal3
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      callproperty        QName(Namespace("_-0LM"), "loadAssetFromFile"), 2
+      coerce              QName(PackageNamespace("_-eg"), "_-2YV")
+      setlocal            5
+
+      debugline           45
+      getlocal            5
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L89
+
+      pop
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "disposed")
+      not
+L89:
+      iffalse             L121
+
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-2p3")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), PackageNamespace("_-01n"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ResourceManager.as$2203", "_-01n:ResourceManager#1"), PackageInternalNs("_-01n"), ProtectedNamespace("_-Ra"), StaticProtectedNs("_-Ra")])
+      pushnull
+      ifne                L104
+
+      debugline           47
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-2p3")
+      getlocal3
+      newarray            0
+      setproperty         MultinameL([PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), PackageNamespace("_-01n"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ResourceManager.as$2203", "_-01n:ResourceManager#1"), PackageInternalNs("_-01n"), ProtectedNamespace("_-Ra"), StaticProtectedNs("_-Ra")])
+
+      debugline           49
+L104:
+      getlocal2
+      pushnull
+      ifeq                L115
+
+      debugline           50
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-2p3")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), PackageNamespace("_-01n"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ResourceManager.as$2203", "_-01n:ResourceManager#1"), PackageInternalNs("_-01n"), ProtectedNamespace("_-Ra"), StaticProtectedNs("_-Ra")])
+      getlocal2
+      callpropvoid        Multiname("push", [PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), PackageNamespace("_-01n"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ResourceManager.as$2203", "_-01n:ResourceManager#1"), PackageInternalNs("_-01n"), ProtectedNamespace("_-Ra"), StaticProtectedNs("_-Ra")]), 1
+
+      debugline           52
+L115:
+      getlocal            5
+      getlex              QName(PackageNamespace("_-ll"), "AssetLoaderEvent")
+      getproperty         QName(PackageNamespace(""), "_-50U")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5qh")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+L121:
+      jump                L132
+
+      debugline           56
+L123:
+      getlocal2
+      pushnull
+      ifeq                L132
+
+      debugline           57
+      getlocal2
+      getlocal            4
+      getlocal3
+      callpropvoid        QName(Namespace("_-2Hw"), "_-4z0"), 2
+
+      debugline           60
+L132:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5qh")
+   method
+    refid "_-01n:ResourceManager/_-5qh"
+    param QName(PackageNamespace("_-ll"), "AssetLoaderEvent")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 7
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "_-2H1")
+      setlocal            4
+
+      debug               1, "k", 0, 62
+      debug               1, "k", 1, 67
+      debug               1, "k", 2, 72
+      debug               1, "k", 3, 73
+      debugline           63
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_disposed")
+      iffalse             L18
+
+      debugline           64
+      returnvoid
+
+      debugline           67
+L18:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-eg"), "_-2YV")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "_-2YV")
+      setlocal2
+
+      debugline           68
+      getlocal2
+      pushnull
+      equals
+      dup
+      iftrue              L38
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-2p3")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "assetName")
+      getproperty         MultinameL([PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), PackageNamespace("_-01n"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ResourceManager.as$2203", "_-01n:ResourceManager#1"), PackageInternalNs("_-01n"), ProtectedNamespace("_-Ra"), StaticProtectedNs("_-Ra")])
+      pushnull
+      equals
+L38:
+      iffalse             L42
+
+      debugline           69
+      returnvoid
+
+      debugline           72
+L42:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+      getproperty         QName(PackageNamespace(""), "assets")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "assetName")
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      coerce              QName(PackageNamespace("_-eg"), "_-4ct")
+      setlocal3
+
+      debugline           73
+      pushbyte            0
+      setlocal            5
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-2p3")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "assetName")
+      getproperty         MultinameL([PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), PackageNamespace("_-01n"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ResourceManager.as$2203", "_-01n:ResourceManager#1"), PackageInternalNs("_-01n"), ProtectedNamespace("_-Ra"), StaticProtectedNs("_-Ra")])
+      coerce_a
+      setlocal            6
+
+      jump                L86
+
+L61:
+      label
+      getlocal            6
+      getlocal            5
+      nextvalue
+      coerce              QName(PackageNamespace("_-eg"), "_-2H1")
+      setlocal            4
+
+      debugline           74
+      getlocal            4
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L78
+
+      pop
+      getlocal            4
+      getproperty         QName(Namespace("_-2W2"), "disposed")
+      not
+L78:
+      iffalse             L86
+
+      debugline           75
+      getlocal            4
+      getlocal3
+      getlocal3
+      getproperty         QName(Namespace("_-6i0"), "url")
+      callpropvoid        QName(Namespace("_-2Hw"), "_-4z0"), 2
+
+      debugline           73
+L86:
+      hasnext2            6, 5
+      iftrue              L61
+
+      kill                6
+      kill                5
+      debugline           79
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-2p3")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "assetName")
+      deleteproperty      MultinameL([PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), PackageNamespace("_-01n"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ResourceManager.as$2203", "_-01n:ResourceManager#1"), PackageInternalNs("_-01n"), ProtectedNamespace("_-Ra"), StaticProtectedNs("_-Ra")])
+      pop
+      debugline           80
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isSameAsset")
+   method
+    refid "_-01n:ResourceManager/isSameAsset"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           82
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 82
+      debug               1, "k", 1, 82
+      debugline           83
+      getlocal2
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-6Xx"), 1
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-6Xx")
+   method
+    refid "_-01n:ResourceManager/_-6Xx"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           86
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 86
+      debugline           87
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "interpolate"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0FZ")
+   method
+    refid "_-01n:ResourceManager/_-0FZ"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Class")
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace("_-eg"), "_-4ct")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           90
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 90
+      debug               1, "k", 1, 90
+      debug               1, "k", 2, 90
+      debug               1, "k", 3, 91
+      debugline           91
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+      getproperty         QName(PackageNamespace(""), "assets")
+      getlocal2
+      callproperty        QName(Namespace("_-0LM"), "getAssetTypeDeclarationByClass"), 1
+      construct           1
+      coerce              QName(PackageNamespace("_-eg"), "_-4ct")
+      setlocal            4
+
+      debugline           92
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+      getproperty         QName(PackageNamespace(""), "assets")
+      getlocal1
+      getlocal            4
+      callpropvoid        QName(Namespace("_-0LM"), "setAsset"), 2
+
+      debugline           93
+      getlocal            4
+      getlocal3
+      callpropvoid        QName(Namespace("_-6i0"), "_-4M4"), 1
+
+      debugline           94
+      getlocal            4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "removeAsset")
+   method
+    refid "_-01n:ResourceManager/removeAsset"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           97
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 97
+      debug               1, "k", 1, 98
+      debugline           98
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-6Xx"), 1
+      coerce_s
+      setlocal2
+
+      debugline           99
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+      getproperty         QName(PackageNamespace(""), "assets")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Ra", "_-01n:ResourceManager#0"), "_-5OC")
+      getproperty         QName(PackageNamespace(""), "assets")
+      getlocal2
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      callpropvoid        QName(Namespace("_-0LM"), "removeAsset"), 1
+
+      debugline           100
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-01n:ResourceManager/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

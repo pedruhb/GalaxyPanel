@@ -1,0 +1,403 @@
+class
+ refid "_-3XM:WallAdRasterizer"
+ instance QName(PackageNamespace("_-3XM"), "WallAdRasterizer")
+  extends QName(PackageNamespace("_-3XM"), "WallRasterizer")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6Hk")
+  iinit
+   refid "_-3XM:WallAdRasterizer/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           19
+     getlocal0
+     pushscope
+
+     debugline           20
+     getlocal0
+     constructsuper      0
+
+     debugline           21
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "getTextureIdentifier") flag OVERRIDE
+   method
+    refid "_-3XM:WallAdRasterizer/getTextureIdentifier"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace("_-453"), "_-19A")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 23
+      debug               1, "k", 1, 23
+      debugline           24
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6Hk"), "initializePlanes") flag OVERRIDE
+   method
+    refid "_-3XM:WallAdRasterizer/_-6Hk:initializePlanes"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 36
+      debugline           33
+      getlex              QName(ProtectedNamespace("_-2DH"), "data")
+      pushnull
+      ifne                L11
+
+      returnvoid
+
+      debugline           36
+L11:
+      getlex              QName(ProtectedNamespace("_-2DH"), "data")
+      getproperty         Multiname("wallAds", [PrivateNamespace("_-6Hk", "_-3XM:WallAdRasterizer/_-6Hk#1"), PackageNamespace(""), PrivateNamespace("WallAdRasterizer.as$6057", "_-3XM:WallAdRasterizer/_-6Hk#0"), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-6Hk"), StaticProtectedNs("_-6Hk"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal1
+
+      debugline           37
+      getlocal1
+      callproperty        Multiname("length", [PrivateNamespace("_-6Hk", "_-3XM:WallAdRasterizer/_-6Hk#1"), PackageNamespace(""), PrivateNamespace("WallAdRasterizer.as$6057", "_-3XM:WallAdRasterizer/_-6Hk#0"), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-6Hk"), StaticProtectedNs("_-6Hk"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")]), 0
+      pushbyte            0
+      ifngt               L27
+
+      debugline           38
+      getlocal0
+      getlocal1
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-6Hk", "_-3XM:WallAdRasterizer/_-6Hk#1"), PackageNamespace(""), PrivateNamespace("WallAdRasterizer.as$6057", "_-3XM:WallAdRasterizer/_-6Hk#0"), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-6Hk"), StaticProtectedNs("_-6Hk"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      callpropvoid        QName(ProtectedNamespace("_-6Hk"), "parseWalls"), 1
+
+      debugline           40
+L27:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6Hk"), "parseWalls") flag OVERRIDE
+   method
+    refid "_-3XM:WallAdRasterizer/_-6Hk:parseWalls"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 8
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            4
+
+      pushnull
+      coerce_s
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            6
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3XM"), "_-2xw")
+      setlocal            7
+
+      debug               1, "k", 0, 46
+      debug               1, "k", 1, 52
+      debug               1, "k", 2, 53
+      debugline           49
+      getlocal1
+      pushnull
+      ifne                L25
+
+      returnvoid
+
+      debugline           52
+L25:
+      getlocal1
+      getproperty         Multiname("wallAd", [PrivateNamespace("_-6Hk", "_-3XM:WallAdRasterizer/_-6Hk#1"), PackageNamespace(""), PrivateNamespace("WallAdRasterizer.as$6057", "_-3XM:WallAdRasterizer/_-6Hk#0"), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-6Hk"), StaticProtectedNs("_-6Hk"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal2
+
+      debugline           53
+      pushbyte            0
+      setlocal3
+
+      jump                L88
+
+L33:
+      label
+      debug               1, "k", 3, 54
+      debugline           54
+      getlocal2
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-6Hk", "_-3XM:WallAdRasterizer/_-6Hk#1"), PackageNamespace(""), PrivateNamespace("WallAdRasterizer.as$6057", "_-3XM:WallAdRasterizer/_-6Hk#0"), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-6Hk"), StaticProtectedNs("_-6Hk"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            4
+
+      debugline           55
+      getlex              QName(PackageNamespace("_-453"), "XMLValidator")
+      getlocal            4
+      pushstring          "id"
+      newarray            1
+      callproperty        QName(PackageNamespace(""), "_-2f9"), 2
+      iffalse             L87
+
+      debug               1, "k", 4, 57
+      debug               1, "k", 5, 58
+      debug               1, "k", 6, 61
+      debugline           57
+      getlocal            4
+      getproperty         MultinameA("id", [PrivateNamespace("_-6Hk", "_-3XM:WallAdRasterizer/_-6Hk#1"), PackageNamespace(""), PrivateNamespace("WallAdRasterizer.as$6057", "_-3XM:WallAdRasterizer/_-6Hk#0"), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-6Hk"), StaticProtectedNs("_-6Hk"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce_s
+      setlocal            5
+
+      debugline           58
+      getlocal            4
+      getproperty         Multiname("visualization", [PrivateNamespace("_-6Hk", "_-3XM:WallAdRasterizer/_-6Hk#1"), PackageNamespace(""), PrivateNamespace("WallAdRasterizer.as$6057", "_-3XM:WallAdRasterizer/_-6Hk#0"), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-6Hk"), StaticProtectedNs("_-6Hk"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            6
+
+      debugline           61
+      findpropstrict      QName(PackageNamespace("_-3XM"), "_-2xw")
+      constructprop       QName(PackageNamespace("_-3XM"), "_-2xw"), 0
+      coerce              QName(PackageNamespace("_-3XM"), "_-2xw")
+      setlocal            7
+
+      debugline           64
+      findpropstrict      QName(ProtectedNamespace("_-2DH"), "_-2I7")
+      getlocal            7
+      getlocal            6
+      callpropvoid        QName(ProtectedNamespace("_-2DH"), "_-2I7"), 2
+
+      debugline           67
+      findpropstrict      QName(ProtectedNamespace("_-2DH"), "_-0B9")
+      getlocal            5
+      callproperty        QName(ProtectedNamespace("_-2DH"), "_-0B9"), 1
+      pushnull
+      ifne                L84
+
+      debugline           68
+      findpropstrict      QName(ProtectedNamespace("_-2DH"), "_-3ak")
+      getlocal            5
+      getlocal            7
+      callpropvoid        QName(ProtectedNamespace("_-2DH"), "_-3ak"), 2
+
+      jump                L87
+
+      debugline           70
+L84:
+      getlocal            7
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           53
+L87:
+      inclocal_i          3
+L88:
+      getlocal3
+      getlocal2
+      callproperty        Multiname("length", [PrivateNamespace("_-6Hk", "_-3XM:WallAdRasterizer/_-6Hk#1"), PackageNamespace(""), PrivateNamespace("WallAdRasterizer.as$6057", "_-3XM:WallAdRasterizer/_-6Hk#0"), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-6Hk"), StaticProtectedNs("_-6Hk"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")]), 0
+      iflt                L33
+
+      debugline           74
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "render") flag OVERRIDE
+   method
+    refid "_-3XM:WallAdRasterizer/render"
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace("_-453"), "_-19A")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-1IT"), "_-2bx")
+    flag HAS_OPTIONAL
+    optional Integer(0)
+    optional Integer(0)
+    optional Integer(0)
+    optional Integer(0)
+    optional Integer(0)
+    body
+     maxstack 7
+     localcount 16
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 94
+      debug               1, "k", 1, 94
+      debug               1, "k", 2, 94
+      debug               1, "k", 3, 94
+      debug               1, "k", 4, 94
+      debug               1, "k", 5, 94
+      debug               1, "k", 6, 94
+      debug               1, "k", 7, 94
+      debug               1, "k", 8, 94
+      debug               1, "k", 9, 94
+      debug               1, "k", 10, 94
+      debug               1, "k", 11, 94
+      debug               1, "k", 12, 98
+      debug               1, "k", 13, 111
+      debug               1, "k", 14, 118
+      debugline           98
+      findpropstrict      QName(ProtectedNamespace("_-2DH"), "_-0B9")
+      getlocal2
+      callproperty        QName(ProtectedNamespace("_-2DH"), "_-0B9"), 1
+      getlex              QName(PackageNamespace("_-3XM"), "_-2xw")
+      astypelate
+      coerce              QName(PackageNamespace("_-3XM"), "_-2xw")
+      setlocal            13
+
+      debugline           99
+      getlocal            13
+      pushnull
+      ifne                L40
+
+      debugline           101
+      findpropstrict      QName(ProtectedNamespace("_-2DH"), "_-0B9")
+      getlex              QName(StaticProtectedNs("_-2DH"), "_-3nE")
+      callproperty        QName(ProtectedNamespace("_-2DH"), "_-0B9"), 1
+      getlex              QName(PackageNamespace("_-3XM"), "_-2xw")
+      astypelate
+      coerce              QName(PackageNamespace("_-3XM"), "_-2xw")
+      setlocal            13
+
+      debugline           104
+L40:
+      getlocal            13
+      pushnull
+      ifne                L46
+
+      pushnull
+      returnvalue
+
+      debugline           107
+L46:
+      getlocal1
+      pushnull
+      ifeq                L56
+
+      debugline           108
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "rect")
+      pushint             16777215
+      callpropvoid        QName(PackageNamespace(""), "fillRect"), 2
+
+      debugline           111
+L56:
+      getlocal            13
+      getlocal1
+      getlocal3
+      getlocal            4
+      getlocal            5
+      getlocal            6
+      getlocal            7
+      callproperty        QName(PackageNamespace(""), "render"), 6
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            14
+
+      debugline           112
+      getlocal            14
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L78
+
+      pop
+      getlocal            14
+      getlocal1
+      equals
+      not
+L78:
+      iffalse             L85
+
+      debugline           114
+      getlocal            14
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            14
+
+      debugline           118
+L85:
+      findpropstrict      QName(PackageNamespace("_-1IT"), "_-2bx")
+      getlocal            14
+      pushbyte            255
+      constructprop       QName(PackageNamespace("_-1IT"), "_-2bx"), 2
+      coerce              QName(PackageNamespace("_-1IT"), "_-2bx")
+      setlocal            15
+
+      debugline           119
+      getlocal            15
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3XM:WallAdRasterizer/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

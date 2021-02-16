@@ -1,0 +1,176 @@
+class
+ refid "_-CA:_-117"
+ instance QName(PackageNamespace("_-CA"), "_-117")
+  extends QName(PackageNamespace("_-CA"), "WindowEvent")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5G3")
+  iinit
+   refid "_-CA:_-117/iinit"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           35
+     getlocal0
+     pushscope
+
+     debugline           35
+     getlocal0
+     constructsuper      0
+
+     debugline           37
+     findproperty        QName(ProtectedNamespace("_-4yh"), "_-1E7")
+     getlex              QName(PackageNamespace(""), "_-bB")
+     initproperty        QName(ProtectedNamespace("_-4yh"), "_-1E7")
+
+     debugline           38
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "clone") flag OVERRIDE
+   method
+    refid "_-CA:_-117/clone"
+    returns QName(PackageNamespace("_-CA"), "WindowEvent")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debugline           46
+      findpropstrict      QName(PackageNamespace(""), "_-6Qa")
+      getlex              QName(PackageNamespace(""), "window")
+      callproperty        QName(PackageNamespace(""), "_-6Qa"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "toString") flag OVERRIDE
+   method
+    refid "_-CA:_-117/toString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      pushstring          "WindowDisposeEvent { type: "
+      debugline           55
+      getlex              QName(ProtectedNamespace("_-4yh"), "_-1E7")
+      add
+      pushstring          " window: "
+      add
+      getlex              QName(ProtectedNamespace("_-4yh"), "_-Fi")
+      add
+      pushstring          " }"
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-CA:_-117/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 9
+    findproperty        QName(PackageNamespace(""), "_-bB")
+    pushstring          "WINDOW_DISPOSE_EVENT"
+    initproperty        QName(PackageNamespace(""), "_-bB")
+
+    debug               1, "k", 1, 13
+    findproperty        QName(PrivateNamespace("_-5G3", "_-CA:_-117"), "_-1Yg")
+    newarray            0
+    initproperty        QName(PrivateNamespace("_-5G3", "_-CA:_-117"), "_-1Yg")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-bB") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("WINDOW_DISPOSE_EVENT") end
+ trait const QName(PrivateNamespace("_-5G3", "_-CA:_-117"), "_-1Yg") slotid 2 type QName(PackageNamespace(""), "Array") end
+ trait method QName(PackageNamespace(""), "_-6Qa") flag FINAL dispid 3
+  method
+   refid "_-CA:_-117/_-6Qa"
+   param QName(PackageNamespace("_-X3"), "IWindow")
+   returns QName(PackageNamespace("_-CA"), "_-117")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 20
+     debug               1, "k", 1, 22
+     debugline           22
+     getlex              QName(PrivateNamespace("_-5G3", "_-CA:_-117"), "_-1Yg")
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            0
+     ifngt               L15
+
+     getlex              QName(PrivateNamespace("_-5G3", "_-CA:_-117"), "_-1Yg")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "pop"), 0
+     coerce              QName(PackageNamespace("_-CA"), "_-117")
+     jump                L18
+
+L15:
+     getlocal0
+     construct           0
+     coerce              QName(PackageNamespace("_-CA"), "_-117")
+L18:
+     coerce              QName(PackageNamespace("_-CA"), "_-117")
+     setlocal2
+
+     debugline           24
+     getlocal2
+     getlocal1
+     setproperty         QName(ProtectedNamespace("_-4yh"), "_-Fi")
+
+     debugline           25
+     getlocal2
+     pushfalse
+     setproperty         QName(ProtectedNamespace("_-4yh"), "_-1FW")
+
+     debugline           26
+     getlocal2
+     getlex              QName(PrivateNamespace("_-5G3", "_-CA:_-117"), "_-1Yg")
+     setproperty         QName(ProtectedNamespace("_-4yh"), "_-2yt")
+
+     debugline           29
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

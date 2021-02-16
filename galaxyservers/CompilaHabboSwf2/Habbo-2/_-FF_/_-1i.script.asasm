@@ -1,0 +1,33 @@
+script ; 4462
+ sinit
+  refid "_-FF:_-1i.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           7
+    findpropstrict      Multiname("_-1i", [PackageNamespace("_-FF")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-FF:_-1i"
+    popscope
+    initproperty        QName(PackageNamespace("_-FF"), "_-1i")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-FF"), "_-1i")
+  #include "_-1i.class.asasm"
+ end ; trait
+end ; script

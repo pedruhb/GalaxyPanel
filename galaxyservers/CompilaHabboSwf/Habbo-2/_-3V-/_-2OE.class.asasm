@@ -1,0 +1,202 @@
+class
+ refid "_-3V-:_-2OE"
+ instance QName(PackageNamespace("_-3V-"), "_-2OE")
+  extends QName(PackageNamespace("_-3V-"), "_-5nA")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-WE")
+  iinit
+   refid "_-3V-:_-2OE/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("_-0F1"), "RegionView")
+   param QName(PackageNamespace("_-1fP"), "CloseButtonConfig")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   body
+    maxstack 5
+    localcount 4
+    initscopedepth 10
+    maxscopedepth 11
+    code
+     debugfile           "k"
+     debugline           36
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 36
+     debug               1, "k", 1, 36
+     debug               1, "k", 2, 36
+     debugline           37
+     getlocal3
+     pushnull
+     ifeq                L17
+
+     debugline           38
+     getlocal0
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "color")
+     initproperty        QName(ProtectedNamespace("_-WE"), "_color")
+
+     debugline           40
+L17:
+     getlocal0
+     getlocal1
+     getlocal2
+     pushbyte            5
+     dup
+     constructsuper      4
+
+     debugline           41
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-WE"), "_color") type QName(PackageNamespace(""), "String") value Utf8("#FFFFFF") end
+  trait method QName(ProtectedNamespace("_-WE"), "drawButton") flag OVERRIDE
+   method
+    refid "_-3V-:_-2OE/_-WE:drawButton"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 48
+      debugline           44
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "graphics")
+      callpropvoid        QName(PackageNamespace(""), "clear"), 0
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "graphics")
+      pushbyte            0
+      dup
+      callpropvoid        QName(PackageNamespace(""), "beginFill"), 2
+
+      debugline           46
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "graphics")
+      pushbyte            0
+      dup
+      pushbyte            10
+      callpropvoid        QName(PackageNamespace(""), "drawCircle"), 3
+
+      debugline           47
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "graphics")
+      callpropvoid        QName(PackageNamespace(""), "endFill"), 0
+
+      debugline           48
+      getlex              QName(PackageNamespace("_-1Ta"), "GraphicsUtils")
+      pushfalse
+      pushnull
+      pushbyte            14
+      pushtrue
+      getlex              QName(PackageNamespace("_-1Ta"), "GraphicsUtils")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-WE"), "_color")
+      callproperty        QName(PackageNamespace(""), "_-3Mn"), 1
+      callproperty        QName(PackageNamespace(""), "_-4ll"), 5
+      coerce              QName(PackageNamespace("flash.text"), "TextField")
+      setlocal1
+
+      debugline           49
+      getlocal1
+      getlex              QName(PackageNamespace("flash.display"), "BlendMode")
+      getproperty         QName(PackageNamespace(""), "LAYER")
+      setproperty         QName(PackageNamespace(""), "blendMode")
+
+      debugline           50
+      getlocal1
+      getlex              QName(PackageNamespace("flash.text"), "TextFieldAutoSize")
+      getproperty         QName(PackageNamespace(""), "CENTER")
+      setproperty         QName(PackageNamespace(""), "autoSize")
+
+      debugline           51
+      getlocal1
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "wordWrap")
+
+      debugline           52
+      getlocal1
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "multiline")
+
+      debugline           53
+      getlocal1
+      getlex              QName(PackageNamespace("flash.text"), "AntiAliasType")
+      getproperty         QName(PackageNamespace(""), "ADVANCED")
+      setproperty         QName(PackageNamespace(""), "antiAliasType")
+
+      debugline           54
+      getlocal1
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "condenseWhite")
+
+      debugline           55
+      getlocal1
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "mouseEnabled")
+
+      debugline           56
+      getlocal1
+      pushstring          "+"
+      setproperty         QName(PackageNamespace(""), "text")
+
+      debugline           57
+      getlocal1
+      pushbyte            247
+      setproperty         QName(PackageNamespace(""), "x")
+
+      debugline           58
+      getlocal1
+      pushbyte            246
+      setproperty         QName(PackageNamespace(""), "y")
+
+      debugline           59
+      getlocal1
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "selectable")
+
+      debugline           60
+      getlocal1
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "mouseEnabled")
+
+      debugline           61
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      debugline           62
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3V-:_-2OE/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 9
+   maxscopedepth 10
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

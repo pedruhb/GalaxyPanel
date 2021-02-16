@@ -1,0 +1,263 @@
+class
+ refid "_-07U:ErrorReportStorage"
+ instance QName(PackageNamespace("_-07U"), "ErrorReportStorage")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3hp")
+  iinit
+   refid "_-07U:ErrorReportStorage/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           46
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-07U:ErrorReportStorage/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 5
+    findproperty        QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-5d6")
+    findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+    constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+    setproperty         QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-5d6")
+
+    debug               1, "k", 1, 6
+    findproperty        QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-4mn")
+    findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+    constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+    setproperty         QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-4mn")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-5d6") slotid 1 type QName(PackageNamespace("_-07U"), "Map") end
+ trait slot QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-4mn") slotid 2 type QName(PackageNamespace("_-07U"), "Map") end
+ trait method QName(PackageNamespace(""), "_-5jo") flag FINAL dispid 3
+  method
+   refid "_-07U:ErrorReportStorage/_-5jo"
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           8
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 9
+     debug               1, "k", 1, 10
+     pushstring          ""
+     debugline           9
+     coerce_s
+     setlocal1
+
+     debugline           10
+     pushbyte            0
+     setlocal2
+
+     jump                L38
+
+L14:
+     label
+     debugline           11
+     getlocal2
+     pushbyte            0
+     ifne                L27
+
+     debugline           12
+     getlex              QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-4mn")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "_-17N"), 1
+     coerce_s
+     setlocal1
+
+     jump                L37
+
+     debugline           14
+L27:
+     getlocal1
+     pushstring          " ** "
+     add
+     getlex              QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-4mn")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "_-17N"), 1
+     add
+     coerce_s
+     setlocal1
+
+     debugline           10
+L37:
+     inclocal_i          2
+L38:
+     getlocal2
+     getlex              QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-4mn")
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L14
+
+     debugline           19
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     pushshort           400
+     ifngt               L57
+
+     debugline           20
+     getlocal1
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     pushshort           400
+     subtract
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+     coerce_s
+     setlocal1
+
+     debugline           23
+L57:
+     getlocal1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-5M8") flag FINAL dispid 4
+  method
+   refid "_-07U:ErrorReportStorage/_-5M8"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           26
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 26
+     debug               1, "k", 1, 26
+     debugline           28
+     getlex              QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-4mn")
+     getlocal1
+     callpropvoid        QName(PackageNamespace(""), "remove"), 1
+
+     debugline           29
+     getlex              QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-4mn")
+     getlocal1
+     getlocal2
+     callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-4Ia") flag FINAL dispid 5
+  method
+   refid "_-07U:ErrorReportStorage/_-4Ia"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           32
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 32
+     debug               1, "k", 1, 32
+     debugline           33
+     getlex              QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-5d6")
+     getlocal1
+     getlocal2
+     setproperty         MultinameL([PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), PackageNamespace("_-07U"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ErrorReportStorage.as$75", "_-07U:ErrorReportStorage#1"), PackageInternalNs("_-07U"), ProtectedNamespace("_-3hp"), StaticProtectedNs("_-3hp")])
+
+     debugline           34
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-51F") flag FINAL dispid 6
+  method
+   refid "_-07U:ErrorReportStorage/_-51F"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           36
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 36
+     debugline           37
+     getlex              QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-5d6")
+     getlocal1
+     getproperty         MultinameL([PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), PackageNamespace("_-07U"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("ErrorReportStorage.as$75", "_-07U:ErrorReportStorage#1"), PackageInternalNs("_-07U"), ProtectedNamespace("_-3hp"), StaticProtectedNs("_-3hp")])
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-0M6") flag FINAL dispid 7
+  method
+   refid "_-07U:ErrorReportStorage/_-0M6"
+   returns QName(PackageNamespace(""), "Array")
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           40
+     getlocal0
+     pushscope
+
+     debugline           41
+     getlex              QName(PrivateNamespace("_-3hp", "_-07U:ErrorReportStorage#0"), "_-5d6")
+     callproperty        QName(PackageNamespace(""), "_-6av"), 0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

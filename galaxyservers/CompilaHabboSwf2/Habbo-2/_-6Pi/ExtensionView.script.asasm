@@ -1,0 +1,33 @@
+script ; 3423
+ sinit
+  refid "_-6Pi:ExtensionView.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           23
+    findpropstrict      Multiname("ExtensionView", [PackageNamespace("_-6Pi")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-6Pi:ExtensionView"
+    popscope
+    initproperty        QName(PackageNamespace("_-6Pi"), "ExtensionView")
+
+    debugfile           "k"
+    debugline           8
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-6Pi"), "ExtensionView")
+  #include "ExtensionView.class.asasm"
+ end ; trait
+end ; script

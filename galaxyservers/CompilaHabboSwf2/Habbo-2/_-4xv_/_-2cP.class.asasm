@@ -1,0 +1,177 @@
+class
+ refid "_-4xv:_-2cP"
+ instance QName(PackageNamespace("_-4xv"), "_-2cP")
+  extends QName(PackageNamespace("_-2Bg"), "DefaultPlaylistItem")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2O5")
+  iinit
+   refid "_-4xv:_-2cP/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           66
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "toString") flag OVERRIDE
+   method
+    refid "_-4xv:_-2cP/toString"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional False()
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 51
+      debug               1, "k", 1, 52
+      debugline           52
+      findpropstrict      QName(PackageNamespace(""), "String")
+      constructprop       QName(PackageNamespace(""), "String"), 0
+      coerce_s
+      setlocal2
+
+      debugline           53
+      getlocal2
+      pushstring          "<item>"
+      add
+      setlocal2
+
+      debugline           54
+      getlocal2
+      pushstring          "<title>"
+      getlex              QName(PackageNamespace(""), "title")
+      add
+      pushstring          "</title>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           55
+      getlocal2
+      pushstring          "<link>"
+      getlex              QName(PackageNamespace(""), "link")
+      add
+      pushstring          "</link>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           56
+      getlocal2
+      pushstring          "<description>"
+      getlex              QName(PackageNamespace(""), "description")
+      add
+      pushstring          "</description>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           57
+      getlocal2
+      pushstring          "<guid>"
+      getlex              QName(PackageNamespace(""), "guid")
+      add
+      pushstring          "</guid>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           58
+      getlocal2
+      pushstring          "<media:content url=\""
+      getlex              QName(PackageNamespace(""), "url")
+      add
+      pushstring          "\" duration=\""
+      add
+      getlex              QName(PackageNamespace("_-1Ta"), "Timestamp")
+      getlex              QName(PackageNamespace(""), "duration")
+      callproperty        QName(PackageNamespace(""), "timestampToSeconds"), 1
+      add
+      pushstring          "\" type=\""
+      add
+      getlex              QName(PackageNamespace(""), "mimeType")
+      add
+      pushstring          "\"/>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           59
+      getlocal2
+      pushstring          "<media:title>"
+      getlex              QName(PackageNamespace(""), "filename")
+      add
+      pushstring          "</media:title>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           60
+      getlocal2
+      pushstring          "<media:credit role=\"author\">"
+      findpropstrict      QName(PackageNamespace(""), "_-2AS")
+      callproperty        QName(PackageNamespace(""), "_-2AS"), 0
+      add
+      pushstring          "</media:credit>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           61
+      getlocal2
+      pushstring          "</item>"
+      add
+      setlocal2
+
+      debugline           62
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4xv:_-2cP/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

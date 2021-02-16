@@ -1,0 +1,648 @@
+class
+ refid "_-3ea:AdNetworkResource"
+ instance QName(PackageNamespace("_-3ea"), "AdNetworkResource")
+  extends QName(PackageNamespace("_-1Ta"), "NetworkResource")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-56x")
+  iinit
+   refid "_-3ea:AdNetworkResource/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           33
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 33
+     debug               1, "k", 1, 33
+     debug               1, "k", 2, 33
+     debugline           34
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           35
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-56x"), "_-4oa") type QName(PackageNamespace(""), "Array") value Null() end
+  trait slot QName(ProtectedNamespace("_-56x"), "_-4SW") type QName(PackageNamespace("_-0fF"), "AdStreamerConfig") value Null() end
+  trait slot QName(ProtectedNamespace("_-56x"), "_-0Gb") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(ProtectedNamespace("_-56x"), "_-3T9") type QName(PackageNamespace(""), "String") value Null() end
+  trait method QName(PackageNamespace(""), "_-6Df")
+   method
+    refid "_-3ea:AdNetworkResource/_-6Df"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debugline           38
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-4oa")
+      pushnull
+      equals
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-56x"), "_-5lT")
+   method
+    refid "_-3ea:AdNetworkResource/_-56x:_-5lT"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal1
+
+      debugline           42
+      getlex              QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L59
+
+      debugline           43
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-4SW")
+      pushnull
+      ifne                L57
+
+      debugline           44
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-4oa")
+      pushnull
+      ifeq                L57
+
+      debug               1, "k", 0, 45
+      debugline           45
+      pushbyte            0
+      setlocal1
+
+      jump                L52
+
+L25:
+      label
+      debugline           46
+      getlex              QName(ProtectedNamespace("_-6is"), "_-4M3")
+      findpropstrict      QName(PackageNamespace("_-0fF"), "AdStreamerConfig")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-4oa")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-56x", "_-3ea:AdNetworkResource#1"), PackageNamespace(""), ProtectedNamespace("_-56x"), PrivateNamespace("AdNetworkResource.as$4982", "_-3ea:AdNetworkResource#0"), PackageNamespace("_-3ea"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-56x"), StaticProtectedNs("_-6is"), StaticProtectedNs("_-1bs")])
+      callproperty        QName(PackageNamespace("_-0fF"), "AdStreamerConfig"), 1
+      getproperty         QName(PackageNamespace(""), "netConnectionAddress")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifngt               L51
+
+      debugline           48
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-0fF"), "AdStreamerConfig")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-4oa")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-56x", "_-3ea:AdNetworkResource#1"), PackageNamespace(""), ProtectedNamespace("_-56x"), PrivateNamespace("AdNetworkResource.as$4982", "_-3ea:AdNetworkResource#0"), PackageNamespace("_-3ea"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-56x"), StaticProtectedNs("_-6is"), StaticProtectedNs("_-1bs")])
+      callproperty        QName(PackageNamespace("_-0fF"), "AdStreamerConfig"), 1
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-4SW")
+
+      debugline           49
+      pushtrue
+      returnvalue
+
+      debugline           45
+L51:
+      inclocal_i          1
+L52:
+      getlocal1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-4oa")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L25
+
+L57:
+      jump                L63
+
+      debugline           55
+L59:
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-4SW")
+
+      debugline           57
+L63:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "streamers")
+   method
+    refid "_-3ea:AdNetworkResource/streamers/setter"
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           60
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 60
+      debugline           61
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-4oa")
+
+      debugline           62
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-4SW")
+
+      debugline           63
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "netConnectionAddress") flag OVERRIDE
+   method
+    refid "_-3ea:AdNetworkResource/netConnectionAddress/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           65
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal1
+
+      debugline           66
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-3T9")
+      pushnull
+      ifeq                L17
+
+      debugline           67
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-3T9")
+      returnvalue
+
+      debugline           69
+L17:
+      getlocal0
+      callproperty        QName(ProtectedNamespace("_-56x"), "_-5lT"), 0
+      iffalse             L27
+
+      debugline           70
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-4SW")
+      getproperty         QName(PackageNamespace(""), "netConnectionAddress")
+      returnvalue
+
+      debug               1, "k", 0, 73
+      debugline           73
+L27:
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "netConnectionAddress")
+      coerce_s
+      setlocal1
+
+      debugline           74
+      getlocal1
+      pushnull
+      ifeq                L39
+
+      debugline           75
+      getlocal1
+      returnvalue
+
+      debugline           77
+L39:
+      getlocal0
+      callproperty        QName(ProtectedNamespace("_-56x"), "_-2PI"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-56x"), "_-2PI")
+   method
+    refid "_-3ea:AdNetworkResource/_-56x:_-2PI"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           81
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           82
+      findpropstrict      QName(PackageNamespace(""), "isRTMP")
+      callproperty        QName(PackageNamespace(""), "isRTMP"), 0
+      iffalse             L56
+
+      debug               1, "k", 0, 83
+      debug               1, "k", 1, 84
+      debugline           83
+      getlex              QName(ProtectedNamespace("_-6is"), "_-4M3")
+      getlex              QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "rtmp://"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            7
+      add
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+      coerce_s
+      setlocal1
+
+      debugline           84
+      getlocal1
+      pushstring          "/"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           85
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            2
+      ifngt               L56
+
+      debugline           86
+      getlocal0
+      pushstring          "rtmp://"
+      getlocal2
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-56x", "_-3ea:AdNetworkResource#1"), PackageNamespace(""), ProtectedNamespace("_-56x"), PrivateNamespace("AdNetworkResource.as$4982", "_-3ea:AdNetworkResource#0"), PackageNamespace("_-3ea"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-56x"), StaticProtectedNs("_-6is"), StaticProtectedNs("_-1bs")])
+      add
+      pushstring          "/"
+      add
+      getlocal2
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-56x", "_-3ea:AdNetworkResource#1"), PackageNamespace(""), ProtectedNamespace("_-56x"), PrivateNamespace("AdNetworkResource.as$4982", "_-3ea:AdNetworkResource#0"), PackageNamespace("_-3ea"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-56x"), StaticProtectedNs("_-6is"), StaticProtectedNs("_-1bs")])
+      add
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-3T9")
+
+      debugline           88
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-3T9")
+      returnvalue
+
+      debugline           91
+L56:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2pz")
+   method
+    refid "_-3ea:AdNetworkResource/_-2pz"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      pushbyte            0
+      setlocal3
+
+      debugline           95
+      findpropstrict      QName(PackageNamespace(""), "isRTMP")
+      callproperty        QName(PackageNamespace(""), "isRTMP"), 0
+      iffalse             L207
+
+      debugline           96
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-0Gb")
+      pushnull
+      ifne                L203
+
+      debugline           98
+      getlocal0
+      callproperty        QName(ProtectedNamespace("_-56x"), "_-5lT"), 0
+      iffalse             L35
+
+      debugline           99
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-4SW")
+      getlex              QName(ProtectedNamespace("_-6is"), "_-4M3")
+      getlex              QName(ProtectedNamespace("_-6is"), "_-3-b")
+      callproperty        QName(PackageNamespace(""), "_-5ek"), 2
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+      jump                L203
+
+      debugline           102
+L35:
+      findpropstrict      QName(PackageNamespace(""), "_-2oM")
+      callproperty        QName(PackageNamespace(""), "_-2oM"), 0
+      iffalse             L46
+
+      debugline           103
+      getlocal0
+      findpropstrict      QName(PackageNamespace(""), "_-1ZB")
+      pushstring          "mp4:"
+      callproperty        QName(PackageNamespace(""), "_-1ZB"), 1
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+      jump                L203
+
+      debugline           106
+L46:
+      findpropstrict      QName(PackageNamespace(""), "_-0nn")
+      callproperty        QName(PackageNamespace(""), "_-0nn"), 0
+      iffalse             L70
+
+      debugline           107
+      getlocal0
+      findpropstrict      QName(PackageNamespace(""), "_-1ZB")
+      pushstring          "flv:"
+      callproperty        QName(PackageNamespace(""), "_-1ZB"), 1
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+      debugline           108
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-0Gb")
+      findpropstrict      QName(PackageNamespace(""), "RegExp")
+      pushstring          "flv:"
+      pushstring          "g"
+      constructprop       QName(PackageNamespace(""), "RegExp"), 2
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+      jump                L203
+
+      debug               1, "k", 0, 113
+      debug               1, "k", 1, 114
+      debugline           113
+L70:
+      getlex              QName(ProtectedNamespace("_-6is"), "_-4M3")
+      getlex              QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "rtmp://"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            7
+      add
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+      coerce_s
+      setlocal1
+
+      debugline           114
+      getlocal1
+      pushstring          "/"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           115
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            2
+      ifngt               L199
+
+      debug               1, "k", 2, 117
+      debugline           116
+      getlocal0
+      pushstring          ""
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+      debugline           117
+      pushbyte            2
+      setlocal3
+
+      jump                L113
+
+L99:
+      label
+      debugline           118
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-0Gb")
+      pushstring          "/"
+      getlocal2
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-56x", "_-3ea:AdNetworkResource#1"), PackageNamespace(""), ProtectedNamespace("_-56x"), PrivateNamespace("AdNetworkResource.as$4982", "_-3ea:AdNetworkResource#0"), PackageNamespace("_-3ea"), PackageInternalNs("_-3ea"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-56x"), StaticProtectedNs("_-6is"), StaticProtectedNs("_-1bs")])
+      add
+      add
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+      debugline           117
+      inclocal_i          3
+L113:
+      getlocal3
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L99
+
+      debugline           120
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-0Gb")
+      pushbyte            1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+      debugline           121
+      findpropstrict      QName(PackageNamespace(""), "isMimeType")
+      pushstring          "video/x-mp4"
+      callproperty        QName(PackageNamespace(""), "isMimeType"), 1
+      convert_b
+      dup
+      iftrue              L136
+
+      pop
+      findpropstrict      QName(PackageNamespace(""), "isMimeType")
+      pushstring          "video/mp4"
+      callproperty        QName(PackageNamespace(""), "isMimeType"), 1
+      convert_b
+L136:
+      dup
+      iftrue              L143
+
+      pop
+      findpropstrict      QName(PackageNamespace(""), "isMimeType")
+      pushstring          "mp4"
+      callproperty        QName(PackageNamespace(""), "isMimeType"), 1
+      convert_b
+L143:
+      dup
+      iftrue              L150
+
+      pop
+      findpropstrict      QName(PackageNamespace(""), "_-1eX")
+      pushstring          ".mp4"
+      callproperty        QName(PackageNamespace(""), "_-1eX"), 1
+      convert_b
+L150:
+      iffalse             L160
+
+      debugline           122
+      getlocal0
+      pushstring          "mp4:"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-0Gb")
+      add
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+      jump                L197
+
+      debugline           124
+L160:
+      findpropstrict      QName(PackageNamespace(""), "isMimeType")
+      pushstring          "video/x-flv"
+      callproperty        QName(PackageNamespace(""), "isMimeType"), 1
+      convert_b
+      dup
+      iftrue              L171
+
+      pop
+      findpropstrict      QName(PackageNamespace(""), "isMimeType")
+      pushstring          "video/flv"
+      callproperty        QName(PackageNamespace(""), "isMimeType"), 1
+      convert_b
+L171:
+      dup
+      iftrue              L178
+
+      pop
+      findpropstrict      QName(PackageNamespace(""), "isMimeType")
+      pushstring          "flv"
+      callproperty        QName(PackageNamespace(""), "isMimeType"), 1
+      convert_b
+L178:
+      dup
+      iftrue              L185
+
+      pop
+      findpropstrict      QName(PackageNamespace(""), "_-1eX")
+      pushstring          ".flv"
+      callproperty        QName(PackageNamespace(""), "_-1eX"), 1
+      convert_b
+L185:
+      iffalse             L197
+
+      debugline           125
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-0Gb")
+      findpropstrict      QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\.flv"
+      pushstring          "g"
+      constructprop       QName(PackageNamespace(""), "RegExp"), 2
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+L197:
+      jump                L203
+
+      debugline           128
+L199:
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-6is"), "_-4M3")
+      initproperty        QName(ProtectedNamespace("_-56x"), "_-0Gb")
+
+      debugline           132
+L203:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-56x"), "_-0Gb")
+      returnvalue
+
+      debugline           134
+L207:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3ea:AdNetworkResource/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,136 @@
+class
+ refid "_-4qf:XMLPropertyArrayParser"
+ instance QName(PackageNamespace("_-4qf"), "XMLPropertyArrayParser")
+  extends QName(PackageNamespace("_-07U"), "XMLVariableParser")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5P6")
+  iinit
+   refid "_-4qf:XMLPropertyArrayParser/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debugline           12
+     getlocal0
+     constructsuper      0
+
+     debugline           14
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-4qf:XMLPropertyArrayParser/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "parse") flag FINAL dispid 3
+  method
+   refid "_-4qf:XMLPropertyArrayParser/parse"
+   param QName(PackageNamespace(""), "XMLList")
+   returns QName(PackageNamespace(""), "Array")
+   body
+    maxstack 6
+    localcount 7
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           21
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     setlocal            5
+
+     debug               1, "k", 0, 21
+     debug               1, "k", 1, 23
+     debug               1, "k", 2, 24
+     debug               1, "k", 3, 25
+     debug               1, "k", 4, 26
+     debug               1, "k", 5, 30
+     debugline           23
+     findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+     constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+     coerce              QName(PackageNamespace("_-07U"), "Map")
+     setlocal2
+
+     debugline           24
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal3
+
+     debugline           25
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            4
+
+     debugline           28
+     getlex              QName(PackageNamespace("_-07U"), "XMLVariableParser")
+     getlocal1
+     getlocal2
+     getlocal3
+     callproperty        QName(PackageNamespace(""), "parseVariableList"), 3
+     convert_i
+     setlocal            5
+
+     debugline           30
+     pushbyte            0
+     setlocal            6
+
+     jump                L57
+
+L39:
+     label
+     debugline           31
+     getlocal            4
+     findpropstrict      QName(PackageNamespace("_-4qf"), "PropertyStruct")
+     getlocal2
+     getlocal            6
+     callproperty        QName(PackageNamespace(""), "_-3FN"), 1
+     getlocal2
+     getlocal            6
+     callproperty        QName(PackageNamespace(""), "_-17N"), 1
+     getlocal3
+     getlocal            6
+     getproperty         MultinameL([PrivateNamespace("_-5P6", "_-4qf:XMLPropertyArrayParser/parse#1"), PackageNamespace(""), PackageNamespace("_-4qf"), PrivateNamespace("XMLPropertyArrayParser.as$2460", "_-4qf:XMLPropertyArrayParser/parse#0"), PackageInternalNs("_-4qf"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5P6"), StaticProtectedNs("_-5P6"), StaticProtectedNs("_-NR")])
+     pushtrue
+     constructprop       QName(PackageNamespace("_-4qf"), "PropertyStruct"), 4
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     debugline           30
+     inclocal_i          6
+L57:
+     getlocal            6
+     getlocal            5
+     iflt                L39
+
+     debugline           33
+     getlocal            4
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

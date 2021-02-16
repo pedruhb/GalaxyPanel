@@ -1,0 +1,33 @@
+script ; 132
+ sinit
+  refid "mx.utils:NameUtil.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           31
+    findpropstrict      Multiname("NameUtil", [PackageNamespace("mx.utils")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "mx.utils:NameUtil"
+    popscope
+    initproperty        QName(PackageNamespace("mx.utils"), "NameUtil")
+
+    debugfile           "k"
+    debugline           12
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("mx.utils"), "NameUtil")
+  #include "NameUtil.class.asasm"
+ end ; trait
+end ; script

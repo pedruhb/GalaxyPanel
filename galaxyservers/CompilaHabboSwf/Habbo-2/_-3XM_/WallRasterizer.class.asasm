@@ -1,0 +1,558 @@
+class
+ refid "_-3XM:WallRasterizer"
+ instance QName(PackageNamespace("_-3XM"), "WallRasterizer")
+  extends QName(PackageNamespace("_-3XM"), "PlaneRasterizer")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4ft")
+  iinit
+   refid "_-3XM:WallRasterizer/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           21
+     getlocal0
+     pushscope
+
+     debugline           21
+     getlocal0
+     constructsuper      0
+
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("_-4ft"), "initializePlanes") flag OVERRIDE
+   method
+    refid "_-3XM:WallRasterizer/_-4ft:initializePlanes"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           27
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 33
+      debugline           30
+      getlex              QName(ProtectedNamespace("_-2DH"), "data")
+      pushnull
+      ifne                L11
+
+      returnvoid
+
+      debugline           33
+L11:
+      getlex              QName(ProtectedNamespace("_-2DH"), "data")
+      getproperty         Multiname("walls", [PrivateNamespace("_-4ft", "_-3XM:WallRasterizer/_-4ft#1"), PrivateNamespace("WallRasterizer.as$5252", "_-3XM:WallRasterizer/_-4ft#0"), PackageNamespace(""), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4ft"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal1
+
+      debugline           34
+      getlocal1
+      callproperty        Multiname("length", [PrivateNamespace("_-4ft", "_-3XM:WallRasterizer/_-4ft#1"), PrivateNamespace("WallRasterizer.as$5252", "_-3XM:WallRasterizer/_-4ft#0"), PackageNamespace(""), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4ft"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")]), 0
+      pushbyte            0
+      ifngt               L27
+
+      debugline           35
+      getlocal0
+      getlocal1
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-4ft", "_-3XM:WallRasterizer/_-4ft#1"), PrivateNamespace("WallRasterizer.as$5252", "_-3XM:WallRasterizer/_-4ft#0"), PackageNamespace(""), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4ft"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      callpropvoid        QName(ProtectedNamespace("_-4ft"), "parseWalls"), 1
+
+      debugline           37
+L27:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4ft"), "parseWalls")
+   method
+    refid "_-3XM:WallRasterizer/_-4ft:parseWalls"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            4
+
+      pushnull
+      coerce_s
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            6
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3XM"), "_-2xw")
+      setlocal            7
+
+      debug               1, "k", 0, 43
+      debug               1, "k", 1, 48
+      debug               1, "k", 2, 49
+      debugline           45
+      getlocal1
+      pushnull
+      ifne                L25
+
+      returnvoid
+
+      debugline           48
+L25:
+      getlocal1
+      getproperty         Multiname("wall", [PrivateNamespace("_-4ft", "_-3XM:WallRasterizer/_-4ft#1"), PrivateNamespace("WallRasterizer.as$5252", "_-3XM:WallRasterizer/_-4ft#0"), PackageNamespace(""), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4ft"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal2
+
+      debugline           49
+      pushbyte            0
+      setlocal3
+
+      jump                L82
+
+L33:
+      label
+      debug               1, "k", 3, 50
+      debugline           50
+      getlocal2
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-4ft", "_-3XM:WallRasterizer/_-4ft#1"), PrivateNamespace("WallRasterizer.as$5252", "_-3XM:WallRasterizer/_-4ft#0"), PackageNamespace(""), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4ft"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            4
+
+      debugline           51
+      getlex              QName(PackageNamespace("_-453"), "XMLValidator")
+      getlocal            4
+      pushstring          "id"
+      newarray            1
+      callproperty        QName(PackageNamespace(""), "_-2f9"), 2
+      iffalse             L81
+
+      debug               1, "k", 4, 53
+      debug               1, "k", 5, 54
+      debug               1, "k", 6, 57
+      debugline           53
+      getlocal            4
+      getproperty         MultinameA("id", [PrivateNamespace("_-4ft", "_-3XM:WallRasterizer/_-4ft#1"), PrivateNamespace("WallRasterizer.as$5252", "_-3XM:WallRasterizer/_-4ft#0"), PackageNamespace(""), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4ft"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce_s
+      setlocal            5
+
+      debugline           54
+      getlocal            4
+      getproperty         Multiname("visualization", [PrivateNamespace("_-4ft", "_-3XM:WallRasterizer/_-4ft#1"), PrivateNamespace("WallRasterizer.as$5252", "_-3XM:WallRasterizer/_-4ft#0"), PackageNamespace(""), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4ft"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            6
+
+      debugline           57
+      findpropstrict      QName(PackageNamespace("_-3XM"), "_-2xw")
+      constructprop       QName(PackageNamespace("_-3XM"), "_-2xw"), 0
+      coerce              QName(PackageNamespace("_-3XM"), "_-2xw")
+      setlocal            7
+
+      debugline           60
+      findpropstrict      QName(ProtectedNamespace("_-2DH"), "_-2I7")
+      getlocal            7
+      getlocal            6
+      callpropvoid        QName(ProtectedNamespace("_-2DH"), "_-2I7"), 2
+
+      debugline           63
+      findpropstrict      QName(ProtectedNamespace("_-2DH"), "_-3ak")
+      getlocal            5
+      getlocal            7
+      callproperty        QName(ProtectedNamespace("_-2DH"), "_-3ak"), 2
+      iftrue              L81
+
+      debugline           64
+      getlocal            7
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           49
+L81:
+      inclocal_i          3
+L82:
+      getlocal3
+      getlocal2
+      callproperty        Multiname("length", [PrivateNamespace("_-4ft", "_-3XM:WallRasterizer/_-4ft#1"), PrivateNamespace("WallRasterizer.as$5252", "_-3XM:WallRasterizer/_-4ft#0"), PackageNamespace(""), PackageNamespace("_-3XM"), PackageInternalNs("_-3XM"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4ft"), StaticProtectedNs("_-4ft"), StaticProtectedNs("_-2DH")]), 0
+      iflt                L33
+
+      debugline           68
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "render") flag OVERRIDE
+   method
+    refid "_-3XM:WallRasterizer/render"
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace("_-453"), "_-19A")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-1IT"), "_-2bx")
+    flag NEED_ACTIVATION
+    flag HAS_OPTIONAL
+    optional Integer(0)
+    optional Integer(0)
+    optional Integer(0)
+    optional Integer(0)
+    optional Integer(0)
+    body
+     maxstack 8
+     localcount 15
+     initscopedepth 6
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           88
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal            13
+
+      pushscope
+
+      debug               1, "k", 12, 88
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setslot             14
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      getscopeobject      1
+      getlocal2
+      setslot             2
+
+      getscopeobject      1
+      getlocal3
+      setslot             3
+
+      getscopeobject      1
+      getlocal            4
+      setslot             4
+
+      getscopeobject      1
+      getlocal            5
+      setslot             5
+
+      getscopeobject      1
+      getlocal            6
+      setslot             6
+
+      getscopeobject      1
+      getlocal            7
+      setslot             7
+
+      getscopeobject      1
+      getlocal            8
+      setslot             8
+
+      getscopeobject      1
+      getlocal            9
+      setslot             9
+
+      getscopeobject      1
+      getlocal            10
+      setslot             10
+
+      getscopeobject      1
+      getlocal            11
+      setslot             11
+
+      getscopeobject      1
+      getlocal            12
+      setslot             12
+
+      debug               1, "k", 0, 88
+      debug               1, "k", 1, 88
+      debug               1, "k", 2, 88
+      debug               1, "k", 3, 88
+      debug               1, "k", 4, 88
+      debug               1, "k", 5, 88
+      debug               1, "k", 6, 88
+      debug               1, "k", 7, 88
+      debug               1, "k", 8, 88
+      debug               1, "k", 9, 88
+      debug               1, "k", 10, 88
+      debug               1, "k", 11, 88
+      debugline           93
+      getscopeobject      1
+      findpropstrict      QName(ProtectedNamespace("_-2DH"), "_-0B9")
+      getscopeobject      1
+      getslot             2
+      callproperty        QName(ProtectedNamespace("_-2DH"), "_-0B9"), 1
+      getlex              QName(PackageNamespace("_-3XM"), "_-2xw")
+      astypelate
+      coerce              QName(PackageNamespace("_-3XM"), "_-2xw")
+      setslot             13
+
+      debugline           94
+      getscopeobject      1
+      getslot             13
+      pushnull
+      ifne                L86
+
+      debugline           96
+      getscopeobject      1
+      findpropstrict      QName(ProtectedNamespace("_-2DH"), "_-0B9")
+      getlex              QName(StaticProtectedNs("_-2DH"), "_-3nE")
+      callproperty        QName(ProtectedNamespace("_-2DH"), "_-0B9"), 1
+      getlex              QName(PackageNamespace("_-3XM"), "_-2xw")
+      astypelate
+      coerce              QName(PackageNamespace("_-3XM"), "_-2xw")
+      setslot             13
+
+      debugline           99
+L86:
+      getscopeobject      1
+      getslot             13
+      pushnull
+      ifne                L93
+
+      pushnull
+      returnvalue
+
+      debugline           102
+L93:
+      getscopeobject      1
+      getslot             1
+      pushnull
+      ifeq                L106
+
+      debugline           103
+      getscopeobject      1
+      getslot             1
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "rect")
+      pushint             16777215
+      callpropvoid        QName(PackageNamespace(""), "fillRect"), 2
+
+      debugline           106
+L106:
+      getscopeobject      1
+      getscopeobject      1
+      getslot             13
+      getscopeobject      1
+      getslot             1
+      getscopeobject      1
+      getslot             3
+      getscopeobject      1
+      getslot             4
+      getscopeobject      1
+      getslot             5
+      getscopeobject      1
+      getslot             6
+      getscopeobject      1
+      getslot             7
+      callproperty        QName(PackageNamespace(""), "render"), 6
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setslot             14
+
+      debugline           107
+      getscopeobject      1
+      getslot             14
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L139
+
+      pop
+      getscopeobject      1
+      getslot             14
+      getscopeobject      1
+      getslot             1
+      equals
+      not
+L139:
+      iffalse             L173
+
+      debugline           110
+L141:
+      getscopeobject      1
+      getscopeobject      1
+      getslot             14
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setslot             14
+
+      debugline           111
+L148:
+      jump                L173
+
+L149:
+      getlocal0
+      pushscope
+
+      getlocal            13
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal            14
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           112
+      getscopeobject      1
+      getslot             14
+      iffalse             L168
+
+      getscopeobject      1
+      getslot             14
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           113
+L168:
+      pushnull
+      returnvalue
+
+      popscope
+      kill                14
+      debugline           118
+L173:
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("_-1IT"), "_-2bx")
+      getscopeobject      1
+      getslot             14
+      pushbyte            255
+      constructprop       QName(PackageNamespace("_-1IT"), "_-2bx"), 2
+      coerce              QName(PackageNamespace("_-1IT"), "_-2bx")
+      setslot             15
+
+      debugline           119
+      getscopeobject      1
+      getslot             15
+      returnvalue
+     end ; code
+     try from L141 to L148 target L149 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+     trait slot QName(PackageInternalNs("_-3XM"), "canvas") slotid 1 type QName(PackageNamespace("flash.display"), "BitmapData") end
+     trait slot QName(PackageInternalNs("_-3XM"), "id") slotid 2 type QName(PackageNamespace(""), "String") end
+     trait slot QName(PackageInternalNs("_-3XM"), "width") slotid 3 type QName(PackageNamespace(""), "Number") end
+     trait slot QName(PackageInternalNs("_-3XM"), "height") slotid 4 type QName(PackageNamespace(""), "Number") end
+     trait slot QName(PackageInternalNs("_-3XM"), "scale") slotid 5 type QName(PackageNamespace(""), "Number") end
+     trait slot QName(PackageInternalNs("_-3XM"), "normal") slotid 6 type QName(PackageNamespace("_-453"), "_-19A") end
+     trait slot QName(PackageInternalNs("_-3XM"), "useTexture") slotid 7 type QName(PackageNamespace(""), "Boolean") end
+     trait slot QName(PackageInternalNs("_-3XM"), "offsetX") slotid 8 type QName(PackageNamespace(""), "Number") value Integer(0) end
+     trait slot QName(PackageInternalNs("_-3XM"), "offsetY") slotid 9 type QName(PackageNamespace(""), "Number") value Integer(0) end
+     trait slot QName(PackageInternalNs("_-3XM"), "maxX") slotid 10 type QName(PackageNamespace(""), "Number") value Integer(0) end
+     trait slot QName(PackageInternalNs("_-3XM"), "maxY") slotid 11 type QName(PackageNamespace(""), "Number") value Integer(0) end
+     trait slot QName(PackageInternalNs("_-3XM"), "timeSinceStartMs") slotid 12 type QName(PackageNamespace(""), "int") value Integer(0) end
+     trait slot QName(PackageInternalNs("_-3XM"), "wall") slotid 13 type QName(PackageNamespace("_-3XM"), "_-2xw") end
+     trait slot QName(PackageInternalNs("_-3XM"), "bitmapData") slotid 14 type QName(PackageNamespace("flash.display"), "BitmapData") end
+     trait slot QName(PackageInternalNs("_-3XM"), "planeBitmapData") slotid 15 type QName(PackageNamespace("_-1IT"), "_-2bx") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getTextureIdentifier") flag OVERRIDE
+   method
+    refid "_-3XM:WallRasterizer/getTextureIdentifier"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace("_-453"), "_-19A")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           130
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 130
+      debug               1, "k", 1, 130
+      debugline           131
+      getlocal2
+      pushnull
+      ifeq                L31
+
+      debugline           132
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal1
+      pushstring          "_"
+      add
+      getlocal2
+      getproperty         QName(Namespace("_-1lr"), "x")
+      add
+      pushstring          "_"
+      add
+      getlocal2
+      getproperty         QName(Namespace("_-1lr"), "y")
+      add
+      pushstring          "_"
+      add
+      getlocal2
+      getproperty         QName(Namespace("_-1lr"), "z")
+      add
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      returnvalue
+
+      debugline           134
+L31:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(PackageNamespace(""), "getTextureIdentifier"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3XM:WallRasterizer/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

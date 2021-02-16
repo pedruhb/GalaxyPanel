@@ -1,0 +1,397 @@
+class
+ refid "_-eg:_-1Ge"
+ instance QName(PackageNamespace("_-eg"), "_-1Ge")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-4ct", [PackageNamespace("_-eg")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4JK")
+  iinit
+   refid "_-eg:_-1Ge/iinit"
+   param QName(PackageNamespace("_-eg"), "_-0bU")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           33
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 33
+     debug               1, "k", 1, 33
+     debugline           33
+     getlocal0
+     constructsuper      0
+
+     debugline           35
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-4JK"), "_-6F3")
+
+     debugline           36
+     getlocal0
+     getlocal2
+     initproperty        QName(ProtectedNamespace("_-4JK"), "_-4M3")
+
+     debugline           37
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "url")
+   method
+    refid "_-eg:_-1Ge/url/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           7
+      getlocal0
+      pushscope
+
+      debugline           8
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_-4M3")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "content")
+   method
+    refid "_-eg:_-1Ge/content/getter"
+    returns QName(PackageNamespace(""), "Object")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           11
+      getlocal0
+      pushscope
+
+      debugline           12
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_content")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-eg:_-1Ge/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           15
+      getlocal0
+      pushscope
+
+      debugline           16
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-6Ck")
+   method
+    refid "_-eg:_-1Ge/_-6Ck/getter"
+    returns QName(PackageNamespace("_-eg"), "_-0bU")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      debugline           20
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_-6F3")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(ProtectedNamespace("_-4JK"), "_-4M3") type QName(PackageNamespace(""), "String") end
+  trait slot QName(ProtectedNamespace("_-4JK"), "_content") type QName(PackageNamespace("flash.display"), "DisplayObject") end
+  trait slot QName(ProtectedNamespace("_-4JK"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(ProtectedNamespace("_-4JK"), "_-6F3") type QName(PackageNamespace("_-eg"), "_-0bU") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-eg:_-1Ge/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debugline           44
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_disposed")
+      iftrue              L44
+
+      debugline           45
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_content")
+      getproperty         QName(PackageNamespace(""), "loaderInfo")
+      pushnull
+      ifeq                L28
+
+      debugline           46
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_content")
+      getproperty         QName(PackageNamespace(""), "loaderInfo")
+      getproperty         QName(PackageNamespace(""), "loader")
+      pushnull
+      ifeq                L28
+
+      debugline           47
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_content")
+      getproperty         QName(PackageNamespace(""), "loaderInfo")
+      getproperty         QName(PackageNamespace(""), "loader")
+      callpropvoid        QName(PackageNamespace(""), "unload"), 0
+
+      debugline           51
+L28:
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4JK"), "_content")
+
+      debugline           52
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4JK"), "_-6F3")
+
+      debugline           53
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-4JK"), "_disposed")
+
+      debugline           54
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4JK"), "_-4M3")
+
+      debugline           56
+L44:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4M4")
+   method
+    refid "_-eg:_-1Ge/_-4M4"
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           67
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 67
+      debugline           71
+      getlocal1
+      getlex              QName(PackageNamespace("flash.display"), "DisplayObject")
+      istypelate
+      iffalse             L29
+
+      debugline           72
+      getlocal0
+      getlocal1
+      getlex              QName(PackageNamespace("flash.display"), "DisplayObject")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-4JK"), "_content")
+
+      debugline           73
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_content")
+      pushnull
+      ifeq                L24
+
+      debugline           74
+      returnvoid
+
+      debugline           76
+L24:
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Failed to convert DisplayObject to DisplayAsset!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           82
+L29:
+      getlocal1
+      getglobalscope
+      getslot             1
+      istypelate
+      iffalse             L60
+
+      debugline           83
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-eg"), "_-1Ge")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-eg"), "_-1Ge"), 1
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_content")
+      initproperty        QName(ProtectedNamespace("_-4JK"), "_content")
+
+      debugline           84
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-eg"), "_-1Ge")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-eg"), "_-1Ge"), 1
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_-6F3")
+      initproperty        QName(ProtectedNamespace("_-4JK"), "_-6F3")
+
+      debugline           85
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_content")
+      pushnull
+      ifeq                L55
+
+      jump                L60
+
+      debugline           87
+L55:
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Failed to read content from DisplayAsset!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           90
+L60:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4xC")
+   method
+    refid "_-eg:_-1Ge/_-4xC"
+    param QName(PackageNamespace("_-eg"), "_-4ct")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           96
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 96
+      debugline           98
+      getlocal1
+      getglobalscope
+      getslot             1
+      istypelate
+      iffalse             L27
+
+      debugline           99
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-eg"), "_-1Ge")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-eg"), "_-1Ge"), 1
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_content")
+      initproperty        QName(ProtectedNamespace("_-4JK"), "_content")
+
+      debugline           100
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-eg"), "_-1Ge")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-eg"), "_-1Ge"), 1
+      getproperty         QName(ProtectedNamespace("_-4JK"), "_-6F3")
+      initproperty        QName(ProtectedNamespace("_-4JK"), "_-6F3")
+
+      jump                L32
+
+      debugline           102
+L27:
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Provided asset should be of type DisplayAsset!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           104
+L32:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4le")
+   method
+    refid "_-eg:_-1Ge/_-4le"
+    param QName(PackageNamespace(""), "XMLList")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           109
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 109
+      debugline           111
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-eg:_-1Ge/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

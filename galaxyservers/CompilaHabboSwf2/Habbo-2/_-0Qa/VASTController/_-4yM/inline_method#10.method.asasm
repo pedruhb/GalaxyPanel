@@ -1,0 +1,73 @@
+method
+ refid "_-0Qa:VASTController/_-4yM/inline_method#10"
+ param QName(PackageNamespace("_-3nB"), "_-3Op")
+ returns QName(PackageNamespace(""), "void")
+ flag HAS_OPTIONAL
+ optional Null()
+ body
+  maxstack 7
+  localcount 2
+  initscopedepth 7
+  maxscopedepth 7
+  code
+   debug               1, "k", 0, 950
+   debugfile           "k"
+   debugline           951
+   getlex              QName(StaticProtectedNs("_-6Ez"), "_-1Hj")
+   pushnull
+   equals
+   not
+   dup
+   iffalse             L14
+
+   pop
+   getlex              QName(PackageInternalNs("_-0Qa"), "ad")
+   pushnull
+   equals
+   not
+L14:
+   iffalse             L25
+
+   debugline           952
+   getlex              QName(StaticProtectedNs("_-6Ez"), "_-1Hj")
+   getlex              QName(PackageNamespace("_-1L6"), "_-4zY")
+   getproperty         QName(PackageNamespace(""), "CLOSE")
+   getlex              QName(PackageInternalNs("_-0Qa"), "adSlot")
+   getlex              QName(PackageInternalNs("_-0Qa"), "ad")
+   findpropstrict      QName(ProtectedNamespace("_-6Ez"), "_-E5")
+   callproperty        QName(ProtectedNamespace("_-6Ez"), "_-E5"), 0
+   callpropvoid        QName(PackageNamespace(""), "_-2CX"), 4
+
+   debugline           954
+L25:
+   findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+   findpropstrict      QName(PackageNamespace("_-GW"), "_-0vu")
+   getlex              QName(PackageInternalNs("_-0Qa"), "adSlot")
+   callproperty        QName(PackageNamespace(""), "isLinear"), 0
+   iffalse             L34
+
+   getlex              QName(PackageNamespace("_-GW"), "_-0vu")
+   getproperty         QName(PackageNamespace(""), "_-5dN")
+   coerce_s
+   jump                L37
+
+L34:
+   getlex              QName(PackageNamespace("_-GW"), "_-0vu")
+   getproperty         QName(PackageNamespace(""), "_-LN")
+   coerce_s
+L37:
+   getlex              QName(PackageInternalNs("_-0Qa"), "adSlot")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "data")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "bubbles")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "cancelable")
+   constructprop       QName(PackageNamespace("_-GW"), "_-0vu"), 5
+   callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+   debugline           955
+   returnvoid
+  end ; code
+ end ; body
+end ; method

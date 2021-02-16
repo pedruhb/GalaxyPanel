@@ -1,0 +1,331 @@
+class
+ refid "_-1Ta:_-fz"
+ instance QName(PackageNamespace("_-1Ta"), "_-fz")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4EM")
+  iinit
+   refid "_-1Ta:_-fz/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           69
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-1Ta:_-fz/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PrivateNamespace("_-4EM", "_-1Ta:_-fz"), "getUA") flag FINAL dispid 3
+  method
+   refid "_-1Ta:_-fz/getUA"
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           28
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce_s
+     setlocal1
+
+     debugline           29
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     getproperty         QName(PackageNamespace(""), "available")
+     iffalse             L102
+
+     debugline           31
+     debug               1, "k", 0, 31
+L13:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "function getBrowser(){return navigator.userAgent;}"
+     callproperty        QName(PackageNamespace(""), "call"), 1
+     coerce_s
+     setlocal1
+
+     debugline           33
+     getlocal1
+     pushnull
+     equals
+     not
+     dup
+     iffalse             L31
+
+     pop
+     getlocal1
+     pushstring          "Firefox"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     greaterequals
+L31:
+     iffalse             L37
+
+     pushstring          "FIREFOX"
+     debugline           34
+     returnvalue
+
+     jump                L90
+
+     debugline           36
+L37:
+     getlocal1
+     pushnull
+     equals
+     not
+     dup
+     iffalse             L49
+
+     pop
+     getlocal1
+     pushstring          "Safari"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     greaterequals
+L49:
+     iffalse             L55
+
+     pushstring          "SAFARI"
+     debugline           37
+     returnvalue
+
+     jump                L90
+
+     debugline           39
+L55:
+     getlocal1
+     pushnull
+     equals
+     not
+     dup
+     iffalse             L67
+
+     pop
+     getlocal1
+     pushstring          "MSIE"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     greaterequals
+L67:
+     iffalse             L73
+
+     pushstring          "IE"
+     debugline           40
+     returnvalue
+
+     jump                L90
+
+     debugline           42
+L73:
+     getlocal1
+     pushnull
+     equals
+     not
+     dup
+     iffalse             L85
+
+     pop
+     getlocal1
+     pushstring          "Opera"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     greaterequals
+L85:
+     iffalse             L90
+
+     pushstring          "OPERA"
+     debugline           43
+     returnvalue
+
+     debugline           46
+L90:
+     jump                L102
+
+L91:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal2
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                2
+L102:
+     pushstring          "UNDEFINED"
+     debugline           48
+     returnvalue
+    end ; code
+    try from L13 to L90 target L91 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-562") flag FINAL dispid 4
+  method
+   refid "_-1Ta:_-fz/_-562"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_OPTIONAL
+   optional Utf8("_blank")
+   optional Utf8("")
+   body
+    maxstack 3
+    localcount 6
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           51
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 51
+     debug               1, "k", 1, 51
+     debug               1, "k", 2, 51
+     debug               1, "k", 3, 52
+     debugline           52
+     getglobalscope
+     getslot             1
+     callproperty        QName(PrivateNamespace("_-4EM", "_-1Ta:_-fz"), "getUA"), 0
+     coerce_s
+     setlocal            4
+
+     jump                L47
+
+L15:
+     label
+     debugline           56
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "function setWMWindow() {window.open('"
+     getlocal1
+     add
+     pushstring          "', '"
+     add
+     getlocal2
+     add
+     pushstring          "', '"
+     add
+     getlocal3
+     add
+     pushstring          "');}"
+     add
+     callpropvoid        QName(PackageNamespace(""), "call"), 1
+
+     debugline           57
+     jump                L80
+
+L34:
+     label
+L35:
+     label
+     debugline           63
+     findpropstrict      QName(PackageNamespace("flash.net"), "navigateToURL")
+     findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+     getlocal1
+     constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+     getlocal2
+     callpropvoid        QName(PackageNamespace("flash.net"), "navigateToURL"), 2
+
+     debugline           64
+     jump                L80
+
+     jump                L80
+
+     debugline           53
+L47:
+     getlocal            4
+     setlocal            5
+
+     pushstring          "IE"
+     debugline           54
+     getlocal            5
+     ifstrictne          L55
+
+     pushbyte            0
+     jump                L77
+
+L55:
+     pushstring          "FIREFOX"
+     debugline           58
+     getlocal            5
+     ifstrictne          L61
+
+     pushbyte            1
+     jump                L77
+
+L61:
+     pushstring          "SAFARI"
+     debugline           59
+     getlocal            5
+     ifstrictne          L67
+
+     pushbyte            2
+     jump                L77
+
+L67:
+     pushstring          "OPERA"
+     debugline           60
+     getlocal            5
+     ifstrictne          L73
+
+     pushbyte            3
+     jump                L77
+
+L73:
+     jump                L76
+
+     pushbyte            4
+     jump                L77
+
+L76:
+     pushbyte            4
+L77:
+     kill                5
+     lookupswitch        L35, [L15, L34, L34, L34, L35]
+
+     debugline           66
+L80:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

@@ -1,0 +1,115 @@
+class
+ refid "_-29k:_-2xk"
+ instance QName(PackageNamespace("_-29k"), "_-2xk")
+  extends QName(PackageNamespace("_-177"), "AdServerConfig")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1UW")
+  iinit
+   refid "_-29k:_-2xk/iinit"
+   param QName(PackageNamespace(""), "Object")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debugline           28
+     getlocal0
+     pushtrue
+     initproperty        QName(PackageNamespace(""), "oneAdPerRequest")
+
+     debugline           29
+     getlocal0
+     pushstring          "Adify"
+     getlocal1
+     constructsuper      2
+
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(ProtectedNamespace("_-1UW"), "defaultTemplate") flag OVERRIDE
+   method
+    refid "_-29k:_-2xk/_-1UW:defaultTemplate/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      pushstring          "__api-address__/ad?enc=__enc__&asId=__zone__&sf=__sf__&ct=__ct__"
+      debugline           37
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(ProtectedNamespace("_-1UW"), "defaultCustomProperties") flag OVERRIDE
+   method
+    refid "_-29k:_-2xk/_-1UW:defaultCustomProperties/getter"
+    returns QName(PackageNamespace("_-177"), "CustomProperties")
+    body
+     maxstack 7
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debugline           41
+      findpropstrict      QName(PackageNamespace("_-177"), "CustomProperties")
+      pushstring          "enc"
+      debugline           43
+      convert_s
+      pushstring          "4"
+      pushstring          "sf"
+      debugline           44
+      convert_s
+      pushstring          "0"
+      pushstring          "ct"
+      debugline           45
+      convert_s
+      pushstring          "256"
+      newobject           3
+      constructprop       QName(PackageNamespace("_-177"), "CustomProperties"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-29k:_-2xk/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

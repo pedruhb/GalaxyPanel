@@ -1,0 +1,113 @@
+method
+ refid "_-1M6:Component/_-0ZV/inline_method#0"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 5
+  initscopedepth 8
+  maxscopedepth 8
+  code
+   debugfile           "k"
+   debugline           143
+   pushundefined
+   coerce_a
+   setlocal1
+
+   pushundefined
+   coerce_a
+   setlocal2
+
+   debugline           145
+   getlex              QName(PackageNamespace(""), "_-1Hb")
+   pushstring          "Releasing "
+   getlex              QName(PackageInternalNs("_-1M6"), "identifier")
+   add
+   pushstring          " from "
+   add
+   getlex              QName(PackageInternalNs("_-1M6"), "componentName")
+   add
+   callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+   debugline           147
+   getlex              QName(PackageInternalNs("_-1M6"), "listeners")
+   pushnull
+   ifeq                L68
+
+   debug               1, "k", 0, 148
+   debugline           148
+   findpropstrict      QName(PackageNamespace("_-1M6"), "Component")
+   getlex              QName(PackageInternalNs("_-1M6"), "component")
+   callproperty        QName(PackageNamespace("_-1M6"), "Component"), 1
+   getproperty         QName(PackageNamespace(""), "events")
+   coerce_a
+   setlocal1
+
+   debugline           149
+   getlocal1
+   pushnull
+   ifeq                L68
+
+   debug               1, "k", 1, 150
+   debugline           150
+   pushbyte            0
+   setlocal3
+
+   getlex              QName(PackageInternalNs("_-1M6"), "listeners")
+   coerce_a
+   setlocal            4
+
+   jump                L63
+
+L42:
+   label
+   getlocal            4
+   getlocal3
+   nextvalue
+   coerce_a
+   setlocal2
+
+   debugline           152
+   getlex              QName(PackageNamespace(""), "_-1Hb")
+   pushstring          "Removing event listener for "
+   getlocal2
+   getproperty         Multiname("type", [PrivateNamespace("_-6iR", "_-1M6:Component#0"), PackageNamespace(""), StaticProtectedNs("_-6iR"), PackageInternalNs("_-1M6"), PackageNamespace("_-1M6"), PrivateNamespace("Component.as$257", "_-1M6:Component#1"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-42"), ProtectedNamespace("_-6iR")])
+   add
+   callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+   debugline           154
+   getlocal1
+   getlocal2
+   getproperty         Multiname("type", [PrivateNamespace("_-6iR", "_-1M6:Component#0"), PackageNamespace(""), StaticProtectedNs("_-6iR"), PackageInternalNs("_-1M6"), PackageNamespace("_-1M6"), PrivateNamespace("Component.as$257", "_-1M6:Component#1"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-42"), ProtectedNamespace("_-6iR")])
+   getlocal2
+   getproperty         Multiname("callback", [PrivateNamespace("_-6iR", "_-1M6:Component#0"), PackageNamespace(""), StaticProtectedNs("_-6iR"), PackageInternalNs("_-1M6"), PackageNamespace("_-1M6"), PrivateNamespace("Component.as$257", "_-1M6:Component#1"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-42"), ProtectedNamespace("_-6iR")])
+   callpropvoid        Multiname("removeEventListener", [PrivateNamespace("_-6iR", "_-1M6:Component#0"), PackageNamespace(""), StaticProtectedNs("_-6iR"), PackageInternalNs("_-1M6"), PackageNamespace("_-1M6"), PrivateNamespace("Component.as$257", "_-1M6:Component#1"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-42"), ProtectedNamespace("_-6iR")]), 2
+
+   debugline           150
+L63:
+   hasnext2            4, 3
+   iftrue              L42
+
+   kill                4
+   kill                3
+   debugline           158
+L68:
+   getlex              QName(PackageInternalNs("_-1M6"), "setter")
+   pushnull
+   ifeq                L77
+
+   debugline           159
+   findpropstrict      QName(PackageInternalNs("_-1M6"), "setter")
+   pushnull
+   callproplex         QName(PackageInternalNs("_-1M6"), "setter"), 1
+   pop
+   debugline           161
+L77:
+   getlex              QName(PackageInternalNs("_-1M6"), "component")
+   getlex              QName(PackageInternalNs("_-1M6"), "iid")
+   callpropvoid        QName(Namespace("_-XP"), "release"), 1
+
+   debugline           162
+   returnvoid
+  end ; code
+ end ; body
+end ; method

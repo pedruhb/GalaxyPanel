@@ -1,0 +1,149 @@
+class
+ refid "_-1Ai:ChatColours"
+ instance QName(PackageNamespace("_-1Ai"), "ChatColours")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2IU")
+  iinit
+   refid "_-1Ai:ChatColours/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           29
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-1Ai:ChatColours/cinit"
+  body
+   maxstack 7
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 10
+    findproperty        QName(PackageNamespace(""), "COLOUR_ARRAY")
+    pushstring          "@red@"
+    pushint             9115929
+    newarray            2
+    pushstring          "@cyan@"
+    pushshort           32639
+    newarray            2
+    pushstring          "@blue@"
+    pushshort           19609
+    newarray            2
+    pushstring          "@green@"
+    pushint             32768
+    newarray            2
+    pushstring          "@purple@"
+    pushint             4980812
+    newarray            2
+    newarray            5
+    initproperty        QName(PackageNamespace(""), "COLOUR_ARRAY")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "COLOUR_ARRAY") slotid 1 type QName(PackageNamespace(""), "Array") end
+ trait method QName(PackageNamespace(""), "_-1R1") flag FINAL dispid 3
+  method
+   refid "_-1Ai:ChatColours/_-1R1"
+   param QName(PackageNamespace("_-kf"), "_-1SU")
+   param QName(PackageNamespace("_-1MY"), "_-4UU")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 4
+    localcount 6
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           19
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal3
+
+     debug               1, "k", 0, 19
+     debug               1, "k", 1, 19
+     debug               1, "k", 2, 20
+     debugline           20
+     pushbyte            0
+     setlocal            4
+
+     getlex              QName(PackageNamespace(""), "COLOUR_ARRAY")
+     coerce_a
+     setlocal            5
+
+     jump                L50
+
+L17:
+     label
+     getlocal            5
+     getlocal            4
+     nextvalue
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal3
+
+     debugline           21
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "text")
+     getlocal3
+     pushbyte            0
+     getproperty         MultinameL([PrivateNamespace("_-2IU", "_-1Ai:ChatColours/_-1R1#1"), PackageNamespace(""), PrivateNamespace("ChatColours.as$5050", "_-1Ai:ChatColours/_-1R1#0"), PackageNamespace("_-1Ai"), PackageInternalNs("_-1Ai"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2IU"), StaticProtectedNs("_-2IU")])
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     ifne                L50
+
+     debugline           22
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "_-0Gm")
+     getlocal3
+     pushbyte            1
+     getproperty         MultinameL([PrivateNamespace("_-2IU", "_-1Ai:ChatColours/_-1R1#1"), PackageNamespace(""), PrivateNamespace("ChatColours.as$5050", "_-1Ai:ChatColours/_-1R1#0"), PackageNamespace("_-1Ai"), PackageInternalNs("_-1Ai"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2IU"), StaticProtectedNs("_-2IU")])
+     setproperty         QName(PackageNamespace(""), "color")
+
+     debugline           23
+     getlocal1
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "text")
+     getlocal3
+     pushbyte            0
+     getproperty         MultinameL([PrivateNamespace("_-2IU", "_-1Ai:ChatColours/_-1R1#1"), PackageNamespace(""), PrivateNamespace("ChatColours.as$5050", "_-1Ai:ChatColours/_-1R1#0"), PackageNamespace("_-1Ai"), PackageInternalNs("_-1Ai"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2IU"), StaticProtectedNs("_-2IU")])
+     getproperty         Multiname("length", [PrivateNamespace("_-2IU", "_-1Ai:ChatColours/_-1R1#1"), PackageNamespace(""), PrivateNamespace("ChatColours.as$5050", "_-1Ai:ChatColours/_-1R1#0"), PackageNamespace("_-1Ai"), PackageInternalNs("_-1Ai"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2IU"), StaticProtectedNs("_-2IU")])
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+     setproperty         QName(PackageNamespace(""), "text")
+
+     debugline           20
+L50:
+     hasnext2            5, 4
+     iftrue              L17
+
+     kill                5
+     kill                4
+     debugline           26
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

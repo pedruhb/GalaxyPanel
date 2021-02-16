@@ -1,0 +1,140 @@
+class
+ refid "_-ur:FirstProductSelectorCatalogWidget"
+ instance QName(PackageNamespace("_-ur"), "FirstProductSelectorCatalogWidget")
+  extends QName(PackageNamespace("_-ur"), "CatalogWidget")
+  implements Multiname("_-0su", [PackageNamespace("_-ur")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3CD")
+  iinit
+   refid "_-ur:FirstProductSelectorCatalogWidget/iinit"
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           14
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 14
+     debugline           15
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           16
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-ur:FirstProductSelectorCatalogWidget/init"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      debugline           19
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L12
+
+      debugline           20
+      pushfalse
+      returnvalue
+
+      debugline           23
+L12:
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "WIDGETS_INITIALIZED")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3CD", "_-ur:FirstProductSelectorCatalogWidget"), "_-0i")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           24
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3CD", "_-ur:FirstProductSelectorCatalogWidget"), "_-0i")
+   method
+    refid "_-ur:FirstProductSelectorCatalogWidget/_-0i"
+    param QName(PackageNamespace("_-09G"), "_-5R8")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           27
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 27
+      debug               1, "k", 1, 30
+      debugline           28
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifne                L15
+
+      debugline           29
+      returnvoid
+
+      debugline           30
+L15:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-3CD", "_-ur:FirstProductSelectorCatalogWidget"), PackageNamespace(""), PrivateNamespace("FirstProductSelectorCatalogWidget.as$3381", "_-ur:FirstProductSelectorCatalogWidget/_-0i"), PackageNamespace("_-ur"), PackageInternalNs("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-3CD"), StaticProtectedNs("_-3CD"), StaticProtectedNs("_-5qb")])
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debugline           31
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-6Lx")
+      getlocal2
+      constructprop       QName(PackageNamespace("_-09G"), "_-6Lx"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           32
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ur:FirstProductSelectorCatalogWidget/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

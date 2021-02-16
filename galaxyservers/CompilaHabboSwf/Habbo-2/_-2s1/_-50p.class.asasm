@@ -1,0 +1,145 @@
+class
+ refid "_-2s1:_-50p"
+ instance QName(PackageNamespace("_-2s1"), "_-50p")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-57K")
+  iinit
+   refid "_-2s1:_-50p/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           25
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-2s1:_-50p/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 7
+    findproperty        QName(PackageNamespace(""), "_-39j")
+    pushbyte            1
+    initproperty        QName(PackageNamespace(""), "_-39j")
+
+    debug               1, "k", 1, 8
+    findproperty        QName(PackageNamespace(""), "_-Tl")
+    pushbyte            2
+    initproperty        QName(PackageNamespace(""), "_-Tl")
+
+    debug               1, "k", 2, 9
+    findproperty        QName(PackageNamespace(""), "_-68r")
+    pushbyte            3
+    initproperty        QName(PackageNamespace(""), "_-68r")
+
+    debug               1, "k", 3, 10
+    findproperty        QName(PackageNamespace(""), "_-6-Q")
+    pushbyte            4
+    initproperty        QName(PackageNamespace(""), "_-6-Q")
+
+    debug               1, "k", 4, 11
+    findproperty        QName(PackageNamespace(""), "_-6d9")
+    pushbyte            5
+    initproperty        QName(PackageNamespace(""), "_-6d9")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-39j") slotid 1 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "_-Tl") slotid 2 type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "_-68r") slotid 3 type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "_-6-Q") slotid 4 type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "_-6d9") slotid 5 type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait method QName(PackageNamespace(""), "_-5lL") flag FINAL dispid 3
+  method
+   refid "_-2s1:_-50p/_-5lL"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace("_-1aC"), "AvatarVisualization")
+   returns QName(PackageNamespace("_-2s1"), "_-59d")
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           14
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 14
+     debug               1, "k", 1, 14
+     debug               1, "k", 2, 14
+     jump                L25
+
+L8:
+     label
+     debugline           18
+     findpropstrict      QName(PackageNamespace("_-2s1"), "_-2jq")
+     getlocal1
+     getlex              QName(PackageNamespace(""), "_-Tl")
+     getlocal3
+     constructprop       QName(PackageNamespace("_-2s1"), "_-2jq"), 3
+     returnvalue
+
+L16:
+     label
+     debugline           20
+     findpropstrict      QName(PackageNamespace("_-2s1"), "_-3yN")
+     getlocal1
+     getlocal2
+     getlocal3
+     constructprop       QName(PackageNamespace("_-2s1"), "_-3yN"), 3
+     returnvalue
+
+     debugline           16
+L25:
+     getlocal2
+     setlocal            4
+
+     debugline           17
+     getlex              QName(PackageNamespace(""), "_-Tl")
+     getlocal            4
+     ifstrictne          L33
+
+     pushbyte            0
+     jump                L37
+
+L33:
+     jump                L36
+
+     pushbyte            1
+     jump                L37
+
+L36:
+     pushbyte            1
+L37:
+     kill                4
+     lookupswitch        L16, [L8, L16]
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

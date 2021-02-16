@@ -1,0 +1,384 @@
+class
+ refid "_-22X:MapStuffData"
+ instance QName(PackageNamespace("_-22X"), "MapStuffData")
+  extends QName(PackageNamespace("_-22X"), "StuffDataBase")
+  implements Multiname("_-5hX", [PackageNamespace("_-1KZ")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-Sc")
+  iinit
+   refid "_-22X:MapStuffData/iinit"
+   param QName(PackageNamespace("_-07U"), "Map")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           22
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 22
+     debugline           22
+     getlocal0
+     constructsuper      0
+
+     debugline           23
+     getlocal1
+     iffalse             L16
+
+     debugline           24
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+
+     debugline           26
+L16:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6") type QName(PackageNamespace("_-07U"), "Map") end
+  trait method QName(PackageNamespace(""), "initializeFromIncomingMessage") flag OVERRIDE
+   method
+    refid "_-22X:MapStuffData/initializeFromIncomingMessage"
+    param QName(PackageNamespace("_-6Wd"), "_-5nh")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      pushnull
+      coerce_s
+      setlocal            5
+
+      debug               1, "k", 0, 28
+      debug               1, "k", 1, 30
+      debug               1, "k", 2, 31
+      debugline           29
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+      constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+      initproperty        QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+
+      debugline           30
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "_-1u3"), 0
+      convert_i
+      setlocal2
+
+      debugline           31
+      pushbyte            0
+      setlocal3
+
+      jump                L48
+
+L27:
+      label
+      debug               1, "k", 3, 32
+      debug               1, "k", 4, 33
+      debugline           32
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "readString"), 0
+      coerce_s
+      setlocal            4
+
+      debugline           33
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "readString"), 0
+      coerce_s
+      setlocal            5
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+      getlocal            4
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           31
+      inclocal_i          3
+L48:
+      getlocal3
+      getlocal2
+      iflt                L27
+
+      debugline           36
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "initializeFromIncomingMessage"), 1
+      debugline           37
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initializeFromRoomObjectModel") flag OVERRIDE
+   method
+    refid "_-22X:MapStuffData/initializeFromRoomObjectModel"
+    param QName(PackageNamespace("_-1JH"), "_-4Bx")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 39
+      debugline           40
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "initializeFromRoomObjectModel"), 1
+      debugline           41
+      getlocal0
+      getlocal1
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3uB")
+      callproperty        QName(Namespace("_-65g"), "_-65O"), 1
+      initproperty        QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+
+      debugline           42
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "writeRoomObjectModel") flag OVERRIDE
+   method
+    refid "_-22X:MapStuffData/writeRoomObjectModel"
+    param QName(PackageNamespace("_-1JH"), "_-3Ek")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 44
+      debugline           45
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "writeRoomObjectModel"), 1
+      debugline           46
+      getlocal1
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-47q")
+      getlex              QName(PackageNamespace(""), "_-2Jc")
+      callpropvoid        QName(Namespace("_-MD"), "setNumber"), 2
+
+      debugline           47
+      getlocal1
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3uB")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+      callpropvoid        QName(Namespace("_-MD"), "_-0oM"), 2
+
+      debugline           48
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getLegacyString") flag OVERRIDE
+   method
+    refid "_-22X:MapStuffData/getLegacyString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debugline           51
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+      convert_b
+      dup
+      iffalse             L18
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+      getlex              QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-3M1")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      pushnull
+      equals
+      not
+L18:
+      iffalse             L25
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+      getlex              QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-3M1")
+      getproperty         MultinameL([PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), PackageNamespace(""), PackageNamespace("_-22X"), PackageNamespace("_-5y1"), PrivateNamespace("MapStuffData.as$2787", "_-22X:MapStuffData#1"), PackageInternalNs("_-22X"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-1KZ"), ProtectedNamespace("_-Sc"), StaticProtectedNs("_-Sc"), StaticProtectedNs("_-2zn")])
+      returnvalue
+
+L25:
+      pushstring          ""
+      debugline           54
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getValue")
+   method
+    refid "_-22X:MapStuffData/getValue"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           58
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 58
+      debugline           59
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), PackageNamespace(""), PackageNamespace("_-22X"), PackageNamespace("_-5y1"), PrivateNamespace("MapStuffData.as$2787", "_-22X:MapStuffData#1"), PackageInternalNs("_-22X"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-1KZ"), ProtectedNamespace("_-Sc"), StaticProtectedNs("_-Sc"), StaticProtectedNs("_-2zn")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "compare") flag OVERRIDE
+   method
+    refid "_-22X:MapStuffData/compare"
+    param QName(PackageNamespace("_-1KZ"), "_-5hX")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 62
+      debugline           64
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "rarityLevel") flag OVERRIDE
+   method
+    refid "_-22X:MapStuffData/rarityLevel/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           67
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 68
+      debugline           68
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-4T6")
+      getlex              QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-5zD")
+      getproperty         MultinameL([PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), PackageNamespace(""), PackageNamespace("_-22X"), PackageNamespace("_-5y1"), PrivateNamespace("MapStuffData.as$2787", "_-22X:MapStuffData#1"), PackageInternalNs("_-22X"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-1KZ"), ProtectedNamespace("_-Sc"), StaticProtectedNs("_-Sc"), StaticProtectedNs("_-2zn")])
+      coerce_s
+      setlocal1
+
+      debugline           69
+      getlocal1
+      iffalse             L21
+
+      debugline           70
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      returnvalue
+
+      debugline           72
+L21:
+      pushbyte            255
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-22X:MapStuffData/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 16
+    findproperty        QName(PackageNamespace(""), "_-2Jc")
+    getlex              QName(PackageNamespace("_-22X"), "_-14b")
+    getproperty         QName(PackageNamespace(""), "_-Vq")
+    initproperty        QName(PackageNamespace(""), "_-2Jc")
+
+    debug               1, "k", 1, 17
+    findproperty        QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-3M1")
+    pushstring          "state"
+    initproperty        QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-3M1")
+
+    debug               1, "k", 2, 18
+    findproperty        QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-5zD")
+    pushstring          "rarity"
+    initproperty        QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-5zD")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-2Jc") slotid 1 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-3M1") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("state") end
+ trait const QName(PrivateNamespace("_-Sc", "_-22X:MapStuffData#0"), "_-5zD") slotid 3 type QName(PackageNamespace(""), "String") value Utf8("rarity") end
+end ; class

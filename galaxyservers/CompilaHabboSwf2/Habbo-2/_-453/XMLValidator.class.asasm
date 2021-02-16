@@ -1,0 +1,206 @@
+class
+ refid "_-453:XMLValidator"
+ instance QName(PackageNamespace("_-453"), "XMLValidator")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-d3")
+  iinit
+   refid "_-453:XMLValidator/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           40
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-453:XMLValidator/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-2f9") flag FINAL dispid 3
+  method
+   refid "_-453:XMLValidator/_-2f9"
+   param QName(PackageNamespace(""), "Object")
+   param QName(PackageNamespace(""), "Array")
+   returns QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 4
+    localcount 6
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           13
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "XML")
+     setlocal            4
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "XMLList")
+     setlocal            5
+
+     debug               1, "k", 0, 13
+     debug               1, "k", 1, 13
+     debug               1, "k", 2, 18
+     debugline           16
+     getlocal1
+     pushnull
+     equals
+     dup
+     iftrue              L23
+
+     pop
+     getlocal2
+     pushnull
+     equals
+L23:
+     iffalse             L27
+
+     pushfalse
+     returnvalue
+
+     debugline           18
+L27:
+     pushbyte            0
+     setlocal3
+
+     debugline           20
+     getlocal1
+     getlex              QName(PackageNamespace(""), "XML")
+     istypelate
+     iffalse             L68
+
+     debug               1, "k", 3, 21
+     debugline           21
+     getlocal1
+     getlex              QName(PackageNamespace(""), "XML")
+     astypelate
+     coerce              QName(PackageNamespace(""), "XML")
+     setlocal            4
+
+     debugline           22
+     pushbyte            0
+     setlocal3
+
+     jump                L62
+
+L45:
+     label
+     debugline           23
+     getlocal            4
+     findpropstrict      QName(PackageNamespace(""), "String")
+     getlocal2
+     getlocal3
+     getproperty         MultinameL([PrivateNamespace("_-d3", "_-453:XMLValidator/_-2f9#1"), PackageNamespace(""), PrivateNamespace("XMLValidator.as$2617", "_-453:XMLValidator/_-2f9#0"), PackageNamespace("_-453"), PackageInternalNs("_-453"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-d3"), StaticProtectedNs("_-d3")])
+     callproperty        QName(PackageNamespace(""), "String"), 1
+     callproperty        Multiname("attribute", [PrivateNamespace("_-d3", "_-453:XMLValidator/_-2f9#1"), PackageNamespace(""), PrivateNamespace("XMLValidator.as$2617", "_-453:XMLValidator/_-2f9#0"), PackageNamespace("_-453"), PackageInternalNs("_-453"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-d3"), StaticProtectedNs("_-d3")]), 1
+     callproperty        Multiname("length", [PrivateNamespace("_-d3", "_-453:XMLValidator/_-2f9#1"), PackageNamespace(""), PrivateNamespace("XMLValidator.as$2617", "_-453:XMLValidator/_-2f9#0"), PackageNamespace("_-453"), PackageInternalNs("_-453"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-d3"), StaticProtectedNs("_-d3")]), 0
+     pushbyte            0
+     ifne                L61
+
+     debugline           24
+     pushfalse
+     returnvalue
+
+     debugline           22
+L61:
+     inclocal_i          3
+L62:
+     getlocal3
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L45
+
+     jump                L109
+
+     debugline           26
+L68:
+     getlocal1
+     getlex              QName(PackageNamespace(""), "XMLList")
+     istypelate
+     iffalse             L106
+
+     debug               1, "k", 4, 27
+     debugline           27
+     getlocal1
+     getlex              QName(PackageNamespace(""), "XMLList")
+     astypelate
+     coerce              QName(PackageNamespace(""), "XMLList")
+     setlocal            5
+
+     debugline           28
+     pushbyte            0
+     setlocal3
+
+     jump                L100
+
+L83:
+     label
+     debugline           29
+     getlocal            4
+     findpropstrict      QName(PackageNamespace(""), "String")
+     getlocal2
+     getlocal3
+     getproperty         MultinameL([PrivateNamespace("_-d3", "_-453:XMLValidator/_-2f9#1"), PackageNamespace(""), PrivateNamespace("XMLValidator.as$2617", "_-453:XMLValidator/_-2f9#0"), PackageNamespace("_-453"), PackageInternalNs("_-453"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-d3"), StaticProtectedNs("_-d3")])
+     callproperty        QName(PackageNamespace(""), "String"), 1
+     callproperty        Multiname("attribute", [PrivateNamespace("_-d3", "_-453:XMLValidator/_-2f9#1"), PackageNamespace(""), PrivateNamespace("XMLValidator.as$2617", "_-453:XMLValidator/_-2f9#0"), PackageNamespace("_-453"), PackageInternalNs("_-453"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-d3"), StaticProtectedNs("_-d3")]), 1
+     callproperty        Multiname("length", [PrivateNamespace("_-d3", "_-453:XMLValidator/_-2f9#1"), PackageNamespace(""), PrivateNamespace("XMLValidator.as$2617", "_-453:XMLValidator/_-2f9#0"), PackageNamespace("_-453"), PackageInternalNs("_-453"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-d3"), StaticProtectedNs("_-d3")]), 0
+     pushbyte            0
+     ifne                L99
+
+     debugline           30
+     pushfalse
+     returnvalue
+
+     debugline           28
+L99:
+     inclocal_i          3
+L100:
+     getlocal3
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L83
+
+     jump                L109
+
+     debugline           32
+L106:
+     pushfalse
+     returnvalue
+
+     debugline           35
+L109:
+     pushtrue
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

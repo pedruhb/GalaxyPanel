@@ -1,0 +1,127 @@
+class
+ refid "_-3Sc:_-1lV"
+ instance QName(PackageNamespace("_-3Sc"), "_-1lV")
+  extends QName(PackageNamespace("_-3Sc"), "FurnitureLogic")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5EE")
+  iinit
+   refid "_-3Sc:_-1lV/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           13
+     getlocal0
+     pushscope
+
+     debugline           14
+     getlocal0
+     constructsuper      0
+
+     debugline           15
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "processUpdateMessage") flag OVERRIDE
+   method
+    refid "_-3Sc:_-1lV/processUpdateMessage"
+    param QName(PackageNamespace("_-1gb"), "_-2PZ")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal2
+
+      pushbyte            0
+      setlocal3
+
+      debug               1, "k", 0, 23
+      debugline           26
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           28
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      ifne                L20
+
+      returnvoid
+
+      debugline           30
+L20:
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3FT")
+      callproperty        QName(Namespace("_-65g"), "getNumber"), 1
+      pushbyte            1
+      ifne                L54
+
+      debug               1, "k", 1, 33
+      debug               1, "k", 2, 34
+      debugline           33
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3GF")
+      callproperty        QName(Namespace("_-65g"), "getString"), 1
+      coerce_s
+      setlocal2
+
+      debugline           34
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      convert_i
+      setlocal3
+
+      debugline           35
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-154"), "getModelController"), 0
+      getlex              QName(PackageNamespace("_-5St"), "_-3Y0")
+      getproperty         QName(PackageNamespace(""), "_-41R")
+      getlex              QName(PackageNamespace("_-5St"), "_-3Y0")
+      getproperty         QName(PackageNamespace(""), "_-3DW")
+      getlocal3
+      add
+      callpropvoid        QName(Namespace("_-MD"), "setString"), 2
+
+      debugline           37
+L54:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3Sc:_-1lV/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

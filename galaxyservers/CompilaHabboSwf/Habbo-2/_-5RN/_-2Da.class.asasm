@@ -1,0 +1,99 @@
+class
+ refid "_-5RN:_-2Da"
+ instance QName(PackageNamespace("_-5RN"), "_-2Da")
+  extends QName(PackageNamespace("_-5RN"), "_-1fE")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5Ho")
+  iinit
+   refid "_-5RN:_-2Da/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_OPTIONAL
+   optional Integer(-1)
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 17
+     debug               1, "k", 1, 17
+     debugline           19
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           20
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-5Ho", "_-5RN:_-2Da"), "_-0UE")
+
+     debugline           21
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-5Ho", "_-5RN:_-2Da"), "_-0UE") type QName(PackageNamespace(""), "int") end
+  trait getter QName(PackageNamespace(""), "effectType")
+   method
+    refid "_-5RN:_-2Da/effectType/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           10
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5Ho", "_-5RN:_-2Da"), "_-0UE")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5RN:_-2Da/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 5
+    findproperty        QName(PackageNamespace(""), "_-4MF")
+    pushstring          "RWCM_MESSAGE_SELECT_EFFECT"
+    initproperty        QName(PackageNamespace(""), "_-4MF")
+
+    debug               1, "k", 1, 6
+    findproperty        QName(PackageNamespace(""), "_-37J")
+    pushstring          "RWCM_MESSAGE_UNSELECT_EFFECT"
+    initproperty        QName(PackageNamespace(""), "_-37J")
+
+    debug               1, "k", 2, 7
+    findproperty        QName(PackageNamespace(""), "_-4fR")
+    pushstring          "RWCM_MESSAGE_UNSELECT_ALL_EFFECTS"
+    initproperty        QName(PackageNamespace(""), "_-4fR")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-4MF") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("RWCM_MESSAGE_SELECT_EFFECT") end
+ trait const QName(PackageNamespace(""), "_-37J") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("RWCM_MESSAGE_UNSELECT_EFFECT") end
+ trait const QName(PackageNamespace(""), "_-4fR") slotid 3 type QName(PackageNamespace(""), "String") value Utf8("RWCM_MESSAGE_UNSELECT_ALL_EFFECTS") end
+end ; class

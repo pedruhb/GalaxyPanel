@@ -1,0 +1,33 @@
+script ; 5087
+ sinit
+  refid "_-xy:AchievementCategories.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           6
+    findpropstrict      Multiname("AchievementCategories", [PackageNamespace("_-xy")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-xy:AchievementCategories"
+    popscope
+    initproperty        QName(PackageNamespace("_-xy"), "AchievementCategories")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-xy"), "AchievementCategories")
+  #include "AchievementCategories.class.asasm"
+ end ; trait
+end ; script

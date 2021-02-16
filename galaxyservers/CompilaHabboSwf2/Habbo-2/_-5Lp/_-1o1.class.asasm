@@ -1,0 +1,254 @@
+class
+ refid "_-5Lp:_-1o1"
+ instance QName(PackageNamespace("_-5Lp"), "_-1o1")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3Jf")
+  iinit
+   refid "_-5Lp:_-1o1/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           53
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-5Lp:_-1o1/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-5Jj") flag FINAL dispid 3
+  method
+   refid "_-5Lp:_-1o1/_-5Jj"
+   param QName(PackageNamespace("_-647"), "_-6kP")
+   param QName(PackageNamespace(""), "uint")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 5
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           11
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 11
+     debug               1, "k", 1, 11
+     debug               1, "k", 2, 12
+     debugline           12
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     pushbyte            60
+     divide
+     pushbyte            60
+     divide
+     callproperty        QName(PackageNamespace(""), "floor"), 1
+     convert_i
+     setlocal3
+
+     debugline           14
+     getlocal3
+     pushbyte            24
+     ifngt               L30
+
+     debugline           16
+     getlex              QName(PackageNamespace("_-2-E"), "_-67")
+     getlocal1
+     getlocal2
+     pushstring          ""
+     pushbyte            1
+     callproperty        QName(PackageNamespace(""), "_-2Gi"), 4
+     returnvalue
+
+     debugline           17
+L30:
+     getlocal3
+     pushbyte            0
+     ifngt               L41
+
+     debugline           18
+     getlex              QName(PackageNamespace("_-2-E"), "_-67")
+     getlocal1
+     pushstring          "friendlytime.hours.short"
+     getlocal3
+     callproperty        QName(PackageNamespace(""), "getLocalization"), 3
+     returnvalue
+
+     debugline           20
+L41:
+     findpropstrict      QName(PackageNamespace(""), "_-4wM")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "_-4wM"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-4wM") flag FINAL dispid 4
+  method
+   refid "_-5Lp:_-1o1/_-4wM"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 4
+    localcount 6
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           29
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 29
+     debug               1, "k", 1, 31
+     debug               1, "k", 2, 32
+     debug               1, "k", 3, 33
+     debug               1, "k", 4, 35
+     debugline           31
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     pushbyte            60
+     divide
+     pushbyte            60
+     divide
+     callproperty        QName(PackageNamespace(""), "floor"), 1
+     convert_i
+     setlocal2
+
+     debugline           32
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     getlocal2
+     pushbyte            60
+     multiply
+     pushbyte            60
+     multiply
+     subtract
+     pushbyte            60
+     divide
+     callproperty        QName(PackageNamespace(""), "floor"), 1
+     convert_i
+     setlocal3
+
+     debugline           33
+     getlocal1
+     getlocal2
+     pushbyte            60
+     multiply
+     pushbyte            60
+     multiply
+     subtract
+     getlocal3
+     pushbyte            60
+     multiply
+     subtract
+     convert_i
+     setlocal            4
+
+     pushstring          ""
+     debugline           35
+     coerce_s
+     setlocal            5
+
+     debugline           38
+     getlocal2
+     pushbyte            0
+     ifngt               L60
+
+     getlocal2
+     pushstring          ":"
+     add
+     setlocal            5
+
+     debugline           41
+L60:
+     getlocal3
+     pushbyte            10
+     ifnlt               L70
+
+     getlocal            5
+     pushstring          "0"
+     add
+     getlocal3
+     add
+     coerce_s
+     jump                L74
+
+L70:
+     getlocal            5
+     getlocal3
+     add
+     coerce_s
+L74:
+     coerce_s
+     setlocal            5
+
+     debugline           43
+     getlocal2
+     pushbyte            0
+     ifne                L103
+
+     debugline           44
+     getlocal            5
+     pushstring          ":"
+     add
+     setlocal            5
+
+     debugline           45
+     getlocal            4
+     pushbyte            10
+     ifnlt               L96
+
+     getlocal            5
+     pushstring          "0"
+     add
+     getlocal            4
+     add
+     coerce_s
+     jump                L100
+
+L96:
+     getlocal            5
+     getlocal            4
+     add
+     coerce_s
+L100:
+     coerce_s
+     setlocal            5
+
+     debugline           48
+L103:
+     getlocal            5
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

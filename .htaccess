@@ -1,0 +1,22 @@
+﻿RewriteEngine On
+RewriteRule ^editar-emblema/([a-zA-Z0-9_-]+)(|/)$ editar-emblema.php?cod=$1
+RewriteRule ^editar-comando/([a-zA-Z0-9_-]+)(|/)$ editar-comando.php?comando=$1
+RewriteRule ^edita-catalogo/([a-zA-Z0-9_-]+)(|/)$ edita-catalogo.php?id=$1
+RewriteRule ^explorar-catalogo/([a-zA-Z0-9_-]+)(|/)$ explorar-catalogo.php?id=$1
+RewriteRule ^edita-raro/([a-zA-Z0-9_-]+)(|/)$ edita-raro.php?id=$1
+RewriteRule ^edita-mobi/([a-zA-Z0-9_-]+)(|/)$ edita-mobi.php?id=$1
+RewriteRule ^edita-subconta/([a-zA-Z0-9_-]+)(|/)$ edita-subconta.php?id=$1
+RewriteRule ^editar-moedas/(.*)/(.*)$ editar-moedas.php?tipo=$1&rank=$2
+RewriteRule ^api_habbos/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)(|/)$ api_habbos.php?ordem=$1&limite=$2
+RewriteRule ^editar-usuario/([^/.]+) editar-usuario.php?user=$1
+RewriteRule ^editar-rank/([^/.]+) editar-rank.php?id=$1
+RewriteRule ^contas-ip/([^/]+) contas-ip.php?ip=$1
+RewriteRule ^api_hk/([^/]+)/([^/]+) api_hk.php?r=$1&api=$2
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# error log do painel
+php_value error_reporting -1
+php_flag log_errors on
+php_value error_log c:/xampp/htdocs/galaxyservers/error_log

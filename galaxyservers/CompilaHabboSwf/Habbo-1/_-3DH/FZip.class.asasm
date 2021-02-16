@@ -1,0 +1,2142 @@
+class
+ refid "_-3DH:FZip"
+ instance QName(PackageNamespace("_-3DH"), "FZip")
+  extends QName(PackageNamespace("flash.events"), "EventDispatcher")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-63p")
+  iinit
+   refid "_-3DH:FZip/iinit"
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("utf-8")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           147
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 147
+     debugline           148
+     getlocal0
+     constructsuper      0
+
+     debugline           149
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-63p"), "_-fF")
+
+     debugline           150
+     getlocal0
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-63p"), "_-1sX")
+     initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+     debugline           151
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-63p"), "_-3UP") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(ProtectedNamespace("_-63p"), "_-3Sv") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait slot QName(ProtectedNamespace("_-63p"), "_-6al") type QName(PackageNamespace("flash.net"), "URLStream") end
+  trait slot QName(ProtectedNamespace("_-63p"), "_-fF") type QName(PackageNamespace(""), "String") end
+  trait slot QName(ProtectedNamespace("_-63p"), "_-di") type QName(PackageNamespace(""), "Function") end
+  trait slot QName(ProtectedNamespace("_-63p"), "_-3lJ") type QName(PackageNamespace("_-3DH"), "FZipFile") end
+  trait slot QName(ProtectedNamespace("_-63p"), "_-0ze") type QName(PackageNamespace("flash.utils"), "ByteArray") end
+  trait slot QName(ProtectedNamespace("_-63p"), "_-3Q-") type QName(PackageNamespace(""), "uint") end
+  trait slot QName(ProtectedNamespace("_-63p"), "_-1IC") type QName(PackageNamespace(""), "uint") end
+  trait getter QName(PackageNamespace(""), "active")
+   method
+    refid "_-3DH:FZip/active/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           156
+      getlocal0
+      pushscope
+
+      debugline           157
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-di")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1sX")
+      strictequals
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "load")
+   method
+    refid "_-3DH:FZip/load"
+    param QName(PackageNamespace("flash.net"), "URLRequest")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           170
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 170
+      debugline           171
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      not
+      dup
+      iffalse             L17
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-di")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1sX")
+      equals
+L17:
+      iffalse             L52
+
+      debugline           172
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLStream")
+      constructprop       QName(PackageNamespace("flash.net"), "URLStream"), 0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-6al")
+
+      debugline           173
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.utils"), "Endian")
+      getproperty         QName(PackageNamespace(""), "LITTLE_ENDIAN")
+      setproperty         QName(PackageNamespace(""), "endian")
+
+      debugline           174
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-63p"), "_-2iv"), 0
+
+      debugline           175
+      getlocal0
+      newarray            0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3UP")
+
+      debugline           176
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+      constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3Sv")
+
+      debugline           177
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-2pi")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           178
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      debugline           180
+L52:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "loadBytes")
+   method
+    refid "_-3DH:FZip/loadBytes"
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           187
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 187
+      debugline           188
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      not
+      dup
+      iffalse             L17
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-di")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1sX")
+      equals
+L17:
+      iffalse             L68
+
+      debugline           189
+      getlocal0
+      newarray            0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3UP")
+
+      debugline           190
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+      constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3Sv")
+
+      debugline           191
+      getlocal1
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "position")
+
+      debugline           192
+      getlocal1
+      getlex              QName(PackageNamespace("flash.utils"), "Endian")
+      getproperty         QName(PackageNamespace(""), "LITTLE_ENDIAN")
+      setproperty         QName(PackageNamespace(""), "endian")
+
+      debugline           193
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-2pi")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           194
+      getlocal0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-63p"), "parse"), 1
+      iffalse             L60
+
+      debugline           195
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1sX")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           196
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      jump                L68
+
+      debugline           198
+L60:
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("_-3DH"), "_-1Rb")
+      getlex              QName(PackageNamespace("_-3DH"), "_-1Rb")
+      getproperty         QName(PackageNamespace(""), "_-Qh")
+      pushstring          "EOF"
+      constructprop       QName(PackageNamespace("_-3DH"), "_-1Rb"), 2
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           201
+L68:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "close")
+   method
+    refid "_-3DH:FZip/close"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           208
+      getlocal0
+      pushscope
+
+      debugline           209
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      iffalse             L25
+
+      debugline           210
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1sX")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           211
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-63p"), "_-6I9"), 0
+
+      debugline           212
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           213
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-6al")
+
+      debugline           215
+L25:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-692")
+   method
+    refid "_-3DH:FZip/_-692"
+    param QName(PackageNamespace("flash.utils"), "IDataOutput")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional False()
+    body
+     maxstack 5
+     localcount 10
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           228
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            4
+
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      pushbyte            0
+      convert_u
+      setlocal            6
+
+      pushbyte            0
+      setlocal            7
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+      setlocal            8
+
+      debug               1, "k", 0, 228
+      debug               1, "k", 1, 228
+      debugline           229
+      getlocal1
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L36
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      greaterthan
+L36:
+      iffalse             L165
+
+      debug               1, "k", 2, 230
+      debug               1, "k", 3, 231
+      debug               1, "k", 4, 233
+      debug               1, "k", 5, 234
+      debug               1, "k", 6, 235
+      debugline           230
+      getlocal1
+      getproperty         QName(Namespace("flash.utils:IDataOutput"), "endian")
+      coerce_s
+      setlocal3
+
+      debugline           231
+      findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+      constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal            4
+
+      debugline           232
+      getlocal1
+      getlocal            4
+      getlex              QName(PackageNamespace("flash.utils"), "Endian")
+      getproperty         QName(PackageNamespace(""), "LITTLE_ENDIAN")
+      dup
+      setlocal            9
+
+      setproperty         QName(PackageNamespace(""), "endian")
+
+      getlocal            9
+      kill                9
+      setproperty         QName(Namespace("flash.utils:IDataOutput"), "endian")
+
+      debugline           233
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      debugline           234
+      pushbyte            0
+      convert_u
+      setlocal            6
+
+      debugline           235
+      pushbyte            0
+      setlocal            7
+
+      jump                L113
+
+L75:
+      label
+      debug               1, "k", 7, 236
+      debugline           236
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getlocal            7
+      getproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace("_-3DH"), "FZipFile")
+      astypelate
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+      setlocal            8
+
+      debugline           237
+      getlocal            8
+      pushnull
+      ifeq                L112
+
+      debugline           240
+      getlocal            8
+      getlocal            4
+      getlocal2
+      pushtrue
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "_-692"), 4
+
+      debugline           243
+      getlocal            5
+      getlocal            8
+      getlocal1
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-692"), 2
+      add
+      convert_u
+      setlocal            5
+
+      debugline           245
+      getlocal            6
+      increment
+      convert_u
+      setlocal            6
+
+      debugline           235
+L112:
+      inclocal_i          7
+L113:
+      getlocal            7
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L75
+
+      debugline           248
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L128
+
+      debugline           250
+      getlocal1
+      getlocal            4
+      callpropvoid        QName(Namespace("flash.utils:IDataOutput"), "writeBytes"), 1
+
+      debugline           254
+L128:
+      getlocal1
+      getlex              QName(PackageInternalNs("_-3DH"), "_-5lK")
+      callpropvoid        QName(Namespace("flash.utils:IDataOutput"), "writeUnsignedInt"), 1
+
+      debugline           256
+      getlocal1
+      pushbyte            0
+      callpropvoid        QName(Namespace("flash.utils:IDataOutput"), "writeShort"), 1
+
+      debugline           258
+      getlocal1
+      pushbyte            0
+      callpropvoid        QName(Namespace("flash.utils:IDataOutput"), "writeShort"), 1
+
+      debugline           260
+      getlocal1
+      getlocal            6
+      callpropvoid        QName(Namespace("flash.utils:IDataOutput"), "writeShort"), 1
+
+      debugline           262
+      getlocal1
+      getlocal            6
+      callpropvoid        QName(Namespace("flash.utils:IDataOutput"), "writeShort"), 1
+
+      debugline           264
+      getlocal1
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "length")
+      callpropvoid        QName(Namespace("flash.utils:IDataOutput"), "writeUnsignedInt"), 1
+
+      debugline           266
+      getlocal1
+      getlocal            5
+      callpropvoid        QName(Namespace("flash.utils:IDataOutput"), "writeUnsignedInt"), 1
+
+      debugline           268
+      getlocal1
+      pushbyte            0
+      callpropvoid        QName(Namespace("flash.utils:IDataOutput"), "writeShort"), 1
+
+      debugline           270
+      getlocal1
+      getlocal3
+      setproperty         QName(Namespace("flash.utils:IDataOutput"), "endian")
+
+      debugline           272
+L165:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0pE")
+   method
+    refid "_-3DH:FZip/_-0pE"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           279
+      getlocal0
+      pushscope
+
+      debugline           280
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      iffalse             L13
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_u
+      jump                L15
+
+L13:
+      pushbyte            0
+      convert_u
+L15:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4U0")
+   method
+    refid "_-3DH:FZip/_-4U0"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace("_-3DH"), "FZipFile")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           289
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 289
+      debugline           290
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      iffalse             L17
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace("_-3DH"), "FZipFile")
+      astypelate
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+      jump                L19
+
+L17:
+      pushnull
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+L19:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1")
+   method
+    refid "_-3DH:FZip/_-1"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-3DH"), "FZipFile")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           299
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 299
+      debugline           300
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+      iffalse             L19
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace("_-3DH"), "FZipFile")
+      astypelate
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+      jump                L21
+
+L19:
+      pushnull
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+L21:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3XK")
+   method
+    refid "_-3DH:FZip/_-3XK"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("_-3DH"), "FZipFile")
+    flag HAS_OPTIONAL
+    optional Null()
+    optional True()
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           312
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 312
+      debug               1, "k", 1, 312
+      debug               1, "k", 2, 312
+      debugline           313
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      iffalse             L17
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_u
+      jump                L19
+
+L17:
+      pushbyte            0
+      convert_u
+L19:
+      getlocal1
+      getlocal2
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "_-3bC"), 4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-09o")
+   method
+    refid "_-3DH:FZip/_-09o"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("_-3DH"), "FZipFile")
+    flag HAS_OPTIONAL
+    optional Utf8("utf-8")
+    optional True()
+    body
+     maxstack 6
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           326
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 326
+      debug               1, "k", 1, 326
+      debug               1, "k", 2, 326
+      debug               1, "k", 3, 326
+      debugline           327
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      iffalse             L18
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_u
+      jump                L20
+
+L18:
+      pushbyte            0
+      convert_u
+L20:
+      getlocal1
+      getlocal2
+      getlocal3
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-aB"), 5
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3bC")
+   method
+    refid "_-3DH:FZip/_-3bC"
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("_-3DH"), "FZipFile")
+    flag HAS_OPTIONAL
+    optional Null()
+    optional True()
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           340
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 340
+      debug               1, "k", 1, 340
+      debug               1, "k", 2, 340
+      debug               1, "k", 3, 340
+      debug               1, "k", 4, 349
+      debugline           341
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      pushnull
+      ifne                L19
+
+      debugline           342
+      getlocal0
+      newarray            0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3UP")
+
+      debugline           344
+L19:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      pushnull
+      ifne                L30
+
+      debugline           345
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+      constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3Sv")
+
+      jump                L45
+
+      debugline           346
+L30:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+      iffalse             L45
+
+      debugline           347
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "File already exists: "
+      getlocal2
+      add
+      pushstring          ". Please remove first."
+      add
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           349
+L45:
+      findpropstrict      QName(PackageNamespace("_-3DH"), "FZipFile")
+      constructprop       QName(PackageNamespace("_-3DH"), "FZipFile"), 0
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+      setlocal            5
+
+      debugline           350
+      getlocal            5
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "filename")
+
+      debugline           351
+      getlocal            5
+      getlocal3
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "_-2Wz"), 2
+
+      debugline           352
+      getlocal1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getproperty         QName(PackageNamespace(""), "length")
+      ifnge               L71
+
+      debugline           353
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getlocal            5
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      jump                L78
+
+      debugline           355
+L71:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getlocal1
+      pushbyte            0
+      getlocal            5
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 3
+
+      debugline           357
+L78:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      getlocal2
+      getlocal            5
+      setproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+      debugline           358
+      getlocal            5
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-aB")
+   method
+    refid "_-3DH:FZip/_-aB"
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("_-3DH"), "FZipFile")
+    flag HAS_OPTIONAL
+    optional Utf8("utf-8")
+    optional True()
+    body
+     maxstack 4
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           372
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 372
+      debug               1, "k", 1, 372
+      debug               1, "k", 2, 372
+      debug               1, "k", 3, 372
+      debug               1, "k", 4, 372
+      debug               1, "k", 5, 381
+      debugline           373
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      pushnull
+      ifne                L20
+
+      debugline           374
+      getlocal0
+      newarray            0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3UP")
+
+      debugline           376
+L20:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      pushnull
+      ifne                L31
+
+      debugline           377
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+      constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3Sv")
+
+      jump                L46
+
+      debugline           378
+L31:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+      iffalse             L46
+
+      debugline           379
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "File already exists: "
+      getlocal2
+      add
+      pushstring          ". Please remove first."
+      add
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           381
+L46:
+      findpropstrict      QName(PackageNamespace("_-3DH"), "FZipFile")
+      constructprop       QName(PackageNamespace("_-3DH"), "FZipFile"), 0
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+      setlocal            6
+
+      debugline           382
+      getlocal            6
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "filename")
+
+      debugline           383
+      getlocal            6
+      getlocal3
+      getlocal            4
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "_-2dq"), 3
+
+      debugline           384
+      getlocal1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getproperty         QName(PackageNamespace(""), "length")
+      ifnge               L73
+
+      debugline           385
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getlocal            6
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      jump                L80
+
+      debugline           387
+L73:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getlocal1
+      pushbyte            0
+      getlocal            6
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 3
+
+      debugline           389
+L80:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      getlocal2
+      getlocal            6
+      setproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+      debugline           390
+      getlocal            6
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-Zt")
+   method
+    refid "_-3DH:FZip/_-Zt"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace("_-3DH"), "FZipFile")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           399
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+      setlocal2
+
+      debug               1, "k", 0, 399
+      debugline           400
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L22
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      pushnull
+      equals
+      not
+L22:
+      dup
+      iffalse             L30
+
+      pop
+      getlocal1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getproperty         QName(PackageNamespace(""), "length")
+      lessthan
+L30:
+      iffalse             L62
+
+      debug               1, "k", 1, 401
+      debugline           401
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace("_-3DH"), "FZipFile")
+      astypelate
+      coerce              QName(PackageNamespace("_-3DH"), "FZipFile")
+      setlocal2
+
+      debugline           402
+      getlocal2
+      pushnull
+      ifeq                L62
+
+      debugline           403
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getlocal1
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           404
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "filename")
+      deleteproperty      MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+      pop
+      debugline           405
+      getlocal2
+      returnvalue
+
+      debugline           408
+L62:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "parse")
+   method
+    refid "_-3DH:FZip/_-63p:parse"
+    param QName(PackageNamespace("flash.utils"), "IDataInput")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           414
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 414
+      jump                L8
+
+L6:
+      label
+      debugline           415
+L8:
+      getlocal0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-63p"), "_-di"), 1
+      iftrue              L6
+
+      debugline           416
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-di")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1sX")
+      strictequals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-1sX")
+   method
+    refid "_-3DH:FZip/_-63p:_-1sX"
+    param QName(PackageNamespace("flash.utils"), "IDataInput")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           422
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 422
+      debugline           423
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-2pi")
+   method
+    refid "_-3DH:FZip/_-63p:_-2pi"
+    param QName(PackageNamespace("flash.utils"), "IDataInput")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           429
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      convert_u
+      setlocal2
+
+      debug               1, "k", 0, 429
+      debugline           430
+      getlocal1
+      getproperty         QName(Namespace("flash.utils:IDataInput"), "bytesAvailable")
+      pushbyte            4
+      ifnge               L127
+
+      debug               1, "k", 1, 431
+      debugline           431
+      getlocal1
+      callproperty        QName(Namespace("flash.utils:IDataInput"), "readUnsignedInt"), 0
+      convert_u
+      setlocal2
+
+      jump                L55
+
+L20:
+      label
+      debugline           434
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-445")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           435
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-3DH"), "FZipFile")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-fF")
+      constructprop       QName(PackageNamespace("_-3DH"), "FZipFile"), 1
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3lJ")
+
+      debugline           436
+      jump                L124
+
+L35:
+      label
+      debugline           446
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1sX")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           447
+      jump                L124
+
+L43:
+      label
+      debugline           449
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Unknown record signature: 0x"
+      getlocal2
+      pushbyte            16
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 1
+      add
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      jump                L124
+
+      debugline           432
+L55:
+      getlocal2
+      setlocal3
+
+      debugline           433
+      getlex              QName(PackageInternalNs("_-3DH"), "_-2-X")
+      getlocal3
+      ifstrictne          L64
+
+      pushbyte            0
+      jump                L121
+
+      debugline           437
+L64:
+      getlex              QName(PackageInternalNs("_-3DH"), "_-39B")
+      getlocal3
+      ifstrictne          L70
+
+      pushbyte            1
+      jump                L121
+
+      debugline           438
+L70:
+      getlex              QName(PackageInternalNs("_-3DH"), "_-5lK")
+      getlocal3
+      ifstrictne          L76
+
+      pushbyte            2
+      jump                L121
+
+      debugline           439
+L76:
+      getlex              QName(PackageInternalNs("_-3DH"), "_-11i")
+      getlocal3
+      ifstrictne          L82
+
+      pushbyte            3
+      jump                L121
+
+      debugline           440
+L82:
+      getlex              QName(PackageInternalNs("_-3DH"), "_-92")
+      getlocal3
+      ifstrictne          L88
+
+      pushbyte            4
+      jump                L121
+
+      debugline           441
+L88:
+      getlex              QName(PackageInternalNs("_-3DH"), "SIG_ZIP64_END_OF_CENTRAL_DIRECTORY")
+      getlocal3
+      ifstrictne          L94
+
+      pushbyte            5
+      jump                L121
+
+      debugline           442
+L94:
+      getlex              QName(PackageInternalNs("_-3DH"), "SIG_ZIP64_END_OF_CENTRAL_DIRECTORY_LOCATOR")
+      getlocal3
+      ifstrictne          L100
+
+      pushbyte            6
+      jump                L121
+
+      debugline           443
+L100:
+      getlex              QName(PackageInternalNs("_-3DH"), "_-6Il")
+      getlocal3
+      ifstrictne          L106
+
+      pushbyte            7
+      jump                L121
+
+      debugline           444
+L106:
+      getlex              QName(PackageInternalNs("_-3DH"), "_-2Hs")
+      getlocal3
+      ifstrictne          L112
+
+      pushbyte            8
+      jump                L121
+
+      debugline           445
+L112:
+      getlex              QName(PackageInternalNs("_-3DH"), "_-5PX")
+      getlocal3
+      ifstrictne          L117
+
+      pushbyte            9
+      jump                L121
+
+L117:
+      jump                L120
+
+      pushbyte            10
+      jump                L121
+
+L120:
+      pushbyte            10
+L121:
+      kill                3
+      lookupswitch        L43, [L20, L35, L35, L35, L35, L35, L35, L35, L35, L35, L43]
+
+      debugline           452
+L124:
+      pushtrue
+      returnvalue
+
+      debugline           454
+L127:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-445")
+   method
+    refid "_-3DH:FZip/_-63p:_-445"
+    param QName(PackageNamespace("flash.utils"), "IDataInput")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           460
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 460
+      debugline           461
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      getlocal1
+      callproperty        QName(PackageInternalNs("_-3DH"), "parse"), 1
+      iffalse             L55
+
+      debugline           462
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      getproperty         QName(PackageInternalNs("_-3DH"), "_-3TP")
+      iffalse             L38
+
+      debugline           478
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-32t")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           479
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+      constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-0ze")
+
+      debugline           480
+      getlocal0
+      pushbyte            0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3Q-")
+
+      debugline           481
+      getlocal0
+      pushbyte            0
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-1IC")
+
+      debugline           482
+      pushtrue
+      returnvalue
+
+      debugline           486
+L38:
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-63p"), "_-0Ys"), 0
+
+      debugline           488
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-di")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1sX")
+      ifeq                L55
+
+      debugline           489
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-2pi")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           490
+      pushtrue
+      returnvalue
+
+      debugline           494
+L55:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-32t")
+   method
+    refid "_-3DH:FZip/_-63p:_-32t"
+    param QName(PackageNamespace("flash.utils"), "IDataInput")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           500
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      convert_u
+      setlocal2
+
+      debug               1, "k", 0, 500
+      jump                L55
+
+L9:
+      label
+      debug               1, "k", 1, 502
+      debugline           502
+      getlocal1
+      callproperty        QName(Namespace("flash.utils:IDataInput"), "readUnsignedByte"), 0
+      convert_u
+      setlocal2
+
+      debugline           503
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Q-")
+      pushbyte            8
+      urshift
+      getlocal2
+      pushbyte            24
+      lshift
+      bitor
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3Q-")
+
+      debugline           504
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Q-")
+      getlex              QName(PackageInternalNs("_-3DH"), "_-6Il")
+      ifne                L50
+
+      debugline           507
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-0ze")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-0ze")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            3
+      subtract
+      setproperty         QName(PackageNamespace(""), "length")
+
+      debugline           508
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-56k")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           509
+      pushtrue
+      returnvalue
+
+      debugline           511
+L50:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-0ze")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "writeByte"), 1
+
+      debugline           501
+L55:
+      getlocal1
+      getproperty         QName(Namespace("flash.utils:IDataInput"), "bytesAvailable")
+      pushbyte            0
+      ifgt                L9
+
+      debugline           513
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-56k")
+   method
+    refid "_-3DH:FZip/_-63p:_-56k"
+    param QName(PackageNamespace("flash.utils"), "IDataInput")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           519
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      convert_u
+      setlocal2
+
+      pushbyte            0
+      convert_u
+      setlocal3
+
+      pushbyte            0
+      convert_u
+      setlocal            4
+
+      debug               1, "k", 0, 519
+      debugline           523
+      getlocal1
+      getproperty         QName(Namespace("flash.utils:IDataInput"), "bytesAvailable")
+      pushbyte            12
+      ifnge               L102
+
+      debug               1, "k", 1, 525
+      debug               1, "k", 2, 526
+      debug               1, "k", 3, 527
+      debugline           525
+      getlocal1
+      callproperty        QName(Namespace("flash.utils:IDataInput"), "readUnsignedInt"), 0
+      convert_u
+      setlocal2
+
+      debugline           526
+      getlocal1
+      callproperty        QName(Namespace("flash.utils:IDataInput"), "readUnsignedInt"), 0
+      convert_u
+      setlocal3
+
+      debugline           527
+      getlocal1
+      callproperty        QName(Namespace("flash.utils:IDataInput"), "readUnsignedInt"), 0
+      convert_u
+      setlocal            4
+
+      debugline           530
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-0ze")
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal3
+      ifne                L79
+
+      debugline           531
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-0ze")
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "position")
+
+      debugline           533
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      getlocal2
+      setproperty         QName(PackageInternalNs("_-3DH"), "_-00T")
+
+      debugline           534
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      getlocal3
+      setproperty         QName(PackageInternalNs("_-3DH"), "_-3JM")
+
+      debugline           535
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      getlocal            4
+      setproperty         QName(PackageInternalNs("_-3DH"), "_-2Gn")
+
+      debugline           537
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-0ze")
+      callpropvoid        QName(PackageInternalNs("_-3DH"), "_-OV"), 1
+
+      debugline           539
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-63p"), "_-0Ys"), 0
+
+      debugline           541
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-2pi")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      jump                L99
+
+      debugline           544
+L79:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-0ze")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "writeUnsignedInt"), 1
+
+      debugline           545
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-0ze")
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "writeUnsignedInt"), 1
+
+      debugline           546
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-0ze")
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "writeUnsignedInt"), 1
+
+      debugline           547
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-32t")
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-di")
+
+      debugline           549
+L99:
+      pushtrue
+      returnvalue
+
+      debugline           551
+L102:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-0Ys")
+   method
+    refid "_-3DH:FZip/_-63p:_-0Ys"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           557
+      getlocal0
+      pushscope
+
+      debugline           558
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3UP")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           559
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      getproperty         QName(PackageNamespace(""), "filename")
+      iffalse             L25
+
+      debugline           560
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3Sv")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      getproperty         QName(PackageNamespace(""), "filename")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      setproperty         MultinameL([PrivateNamespace("_-63p", "_-3DH:FZip#1"), PackageInternalNs("_-3DH"), ProtectedNamespace("_-63p"), PackageNamespace(""), PackageNamespace("flash.utils"), PackageNamespace("flash.events"), PackageNamespace("_-3DH"), PrivateNamespace("FZip.as$426", "_-3DH:FZip#0"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-63p"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+      debugline           562
+L25:
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("_-3DH"), "_-5HD")
+      getlex              QName(PackageNamespace("_-3DH"), "_-5HD")
+      getproperty         QName(PackageNamespace(""), "_-51v")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3lJ")
+      constructprop       QName(PackageNamespace("_-3DH"), "_-5HD"), 2
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           563
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-63p"), "_-3lJ")
+
+      debugline           564
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-1bV")
+   method
+    refid "_-3DH:FZip/_-63p:_-1bV"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           569
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 569
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 569
+      debugline           570
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      getscopeobject      1
+      getslot             1
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           572
+L20:
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      callproperty        QName(ProtectedNamespace("_-63p"), "parse"), 1
+      iffalse             L36
+
+      debugline           573
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           574
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           576
+L36:
+      jump                L71
+
+L37:
+      getlocal0
+      pushscope
+
+      getlocal2
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           577
+      findpropstrict      QName(PackageNamespace(""), "close")
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           578
+      findpropstrict      QName(PackageNamespace(""), "hasEventListener")
+      getlex              QName(PackageNamespace("_-3DH"), "_-1Rb")
+      getproperty         QName(PackageNamespace(""), "_-Qh")
+      callproperty        QName(PackageNamespace(""), "hasEventListener"), 1
+      iffalse             L68
+
+      debugline           579
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("_-3DH"), "_-1Rb")
+      getlex              QName(PackageNamespace("_-3DH"), "_-1Rb")
+      getproperty         QName(PackageNamespace(""), "_-Qh")
+      getscopeobject      2
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "message")
+      constructprop       QName(PackageNamespace("_-3DH"), "_-1Rb"), 2
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      jump                L68
+
+L68:
+      popscope
+      kill                3
+      debugline           585
+L71:
+      returnvoid
+     end ; code
+     try from L20 to L36 target L37 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+     trait slot QName(PackageInternalNs("_-3DH"), "evt") slotid 1 type QName(PackageNamespace("flash.events"), "Event") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-5zm")
+   method
+    refid "_-3DH:FZip/_-63p:_-5zm"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           590
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 590
+      debugline           591
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           592
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-3CT")
+   method
+    refid "_-3DH:FZip/_-63p:_-3CT"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           597
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 597
+      debugline           598
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           599
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "clone"), 0
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           600
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-2iv")
+   method
+    refid "_-3DH:FZip/_-63p:_-2iv"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           605
+      getlocal0
+      pushscope
+
+      debugline           606
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-5zm")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           607
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "OPEN")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-5zm")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           608
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "HTTPStatusEvent")
+      getproperty         QName(PackageNamespace(""), "HTTP_STATUS")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-5zm")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           609
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace(""), "IO_ERROR")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3CT")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           610
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "SecurityErrorEvent")
+      getproperty         QName(PackageNamespace(""), "SECURITY_ERROR")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3CT")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           611
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "ProgressEvent")
+      getproperty         QName(PackageNamespace(""), "PROGRESS")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1bV")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           612
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-63p"), "_-6I9")
+   method
+    refid "_-3DH:FZip/_-63p:_-6I9"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           617
+      getlocal0
+      pushscope
+
+      debugline           618
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-5zm")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           619
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "OPEN")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-5zm")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           620
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "HTTPStatusEvent")
+      getproperty         QName(PackageNamespace(""), "HTTP_STATUS")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-5zm")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           621
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace(""), "IO_ERROR")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3CT")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           622
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "SecurityErrorEvent")
+      getproperty         QName(PackageNamespace(""), "SECURITY_ERROR")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-3CT")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           623
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-6al")
+      getlex              QName(PackageNamespace("flash.events"), "ProgressEvent")
+      getproperty         QName(PackageNamespace(""), "PROGRESS")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-63p"), "_-1bV")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           624
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3DH:FZip/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 127
+    findproperty        QName(PackageInternalNs("_-3DH"), "_-39B")
+    pushint             33639248
+    initproperty        QName(PackageInternalNs("_-3DH"), "_-39B")
+
+    debug               1, "k", 1, 128
+    findproperty        QName(PackageInternalNs("_-3DH"), "_-11i")
+    pushint             808471376
+    initproperty        QName(PackageInternalNs("_-3DH"), "_-11i")
+
+    debug               1, "k", 2, 129
+    findproperty        QName(PackageInternalNs("_-3DH"), "_-2-X")
+    pushint             67324752
+    initproperty        QName(PackageInternalNs("_-3DH"), "_-2-X")
+
+    debug               1, "k", 3, 130
+    findproperty        QName(PackageInternalNs("_-3DH"), "_-92")
+    pushint             84233040
+    initproperty        QName(PackageInternalNs("_-3DH"), "_-92")
+
+    debug               1, "k", 4, 131
+    findproperty        QName(PackageInternalNs("_-3DH"), "_-5lK")
+    pushint             101010256
+    initproperty        QName(PackageInternalNs("_-3DH"), "_-5lK")
+
+    debug               1, "k", 5, 132
+    findproperty        QName(PackageInternalNs("_-3DH"), "SIG_ZIP64_END_OF_CENTRAL_DIRECTORY")
+    pushint             101075792
+    initproperty        QName(PackageInternalNs("_-3DH"), "SIG_ZIP64_END_OF_CENTRAL_DIRECTORY")
+
+    debug               1, "k", 6, 133
+    findproperty        QName(PackageInternalNs("_-3DH"), "SIG_ZIP64_END_OF_CENTRAL_DIRECTORY_LOCATOR")
+    pushint             117853008
+    initproperty        QName(PackageInternalNs("_-3DH"), "SIG_ZIP64_END_OF_CENTRAL_DIRECTORY_LOCATOR")
+
+    debug               1, "k", 7, 134
+    findproperty        QName(PackageInternalNs("_-3DH"), "_-6Il")
+    pushint             134695760
+    initproperty        QName(PackageInternalNs("_-3DH"), "_-6Il")
+
+    debug               1, "k", 8, 135
+    findproperty        QName(PackageInternalNs("_-3DH"), "_-2Hs")
+    pushint             134630224
+    initproperty        QName(PackageInternalNs("_-3DH"), "_-2Hs")
+
+    debug               1, "k", 9, 136
+    findproperty        QName(PackageInternalNs("_-3DH"), "_-5PX")
+    pushint             134695760
+    initproperty        QName(PackageInternalNs("_-3DH"), "_-5PX")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageInternalNs("_-3DH"), "_-39B") slotid 1 type QName(PackageNamespace(""), "uint") value Integer(33639248) end
+ trait const QName(PackageInternalNs("_-3DH"), "_-11i") slotid 2 type QName(PackageNamespace(""), "uint") value Integer(808471376) end
+ trait const QName(PackageInternalNs("_-3DH"), "_-2-X") slotid 3 type QName(PackageNamespace(""), "uint") value Integer(67324752) end
+ trait const QName(PackageInternalNs("_-3DH"), "_-92") slotid 4 type QName(PackageNamespace(""), "uint") value Integer(84233040) end
+ trait const QName(PackageInternalNs("_-3DH"), "_-5lK") slotid 5 type QName(PackageNamespace(""), "uint") value Integer(101010256) end
+ trait const QName(PackageInternalNs("_-3DH"), "SIG_ZIP64_END_OF_CENTRAL_DIRECTORY") slotid 6 type QName(PackageNamespace(""), "uint") value Integer(101075792) end
+ trait const QName(PackageInternalNs("_-3DH"), "SIG_ZIP64_END_OF_CENTRAL_DIRECTORY_LOCATOR") slotid 7 type QName(PackageNamespace(""), "uint") value Integer(117853008) end
+ trait const QName(PackageInternalNs("_-3DH"), "_-6Il") slotid 8 type QName(PackageNamespace(""), "uint") value Integer(134695760) end
+ trait const QName(PackageInternalNs("_-3DH"), "_-2Hs") slotid 9 type QName(PackageNamespace(""), "uint") value Integer(134630224) end
+ trait const QName(PackageInternalNs("_-3DH"), "_-5PX") slotid 10 type QName(PackageNamespace(""), "uint") value Integer(134695760) end
+end ; class

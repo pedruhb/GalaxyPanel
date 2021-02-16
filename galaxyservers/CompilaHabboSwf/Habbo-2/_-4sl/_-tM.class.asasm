@@ -1,0 +1,697 @@
+class
+ refid "_-4sl:_-tM"
+ instance QName(PackageNamespace("_-4sl"), "_-tM")
+  extends QName(PackageNamespace("_-4sl"), "FurnitureVisualization")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4CX")
+  iinit
+   refid "_-4sl:_-tM/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           9
+     getlocal0
+     pushscope
+
+     debugline           10
+     getlocal0
+     constructsuper      0
+
+     debugline           11
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4wj") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait slot QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait method QName(ProtectedNamespace("_-4CX"), "updateModel") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:updateModel"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 6
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           13
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 13
+      debug               1, "k", 1, 14
+      debug               1, "k", 2, 15
+      debug               1, "k", 3, 16
+      debug               1, "k", 4, 17
+      debugline           14
+      getlocal0
+      getlocal1
+      callsuper           QName(ProtectedNamespace("_-1E4"), "updateModel"), 1
+      convert_b
+      setlocal2
+
+      debugline           15
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getModel"), 0
+      coerce              QName(PackageNamespace("_-1JH"), "_-4Bx")
+      setlocal3
+
+      debugline           16
+      getlocal3
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-5tc")
+      callproperty        QName(Namespace("_-65g"), "getNumber"), 1
+      convert_i
+      setlocal            4
+
+      debugline           17
+      getlocal3
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-2ib")
+      callproperty        QName(Namespace("_-65g"), "getNumber"), 1
+      convert_i
+      setlocal            5
+
+      debugline           18
+      getlocal            4
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4wj")
+      equals
+      not
+      dup
+      iftrue              L48
+
+      pop
+      getlocal            5
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy")
+      equals
+      not
+L48:
+      iffalse             L62
+
+      debugline           19
+      getlocal0
+      getlocal            4
+      initproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4wj")
+
+      debugline           20
+      getlocal0
+      getlocal            5
+      initproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy")
+
+      debugline           21
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1jg"), 1
+
+      debugline           23
+L62:
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1jg")
+   method
+    refid "_-4sl:_-tM/_-1jg"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           26
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 26
+      debugline           27
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-1E4"), "data")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getLayerCount"), 1
+      callpropvoid        QName(ProtectedNamespace("_-4CX"), "updateLayerCount"), 1
+
+      debugline           28
+      findpropstrict      QName(ProtectedNamespace("_-M1"), "_-5oH")
+      getlex              QName(ProtectedNamespace("_-1E4"), "data")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getLayerCount"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4wj")
+      multiply
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy")
+      multiply
+      callpropvoid        QName(ProtectedNamespace("_-M1"), "_-5oH"), 1
+
+      debugline           29
+      findpropstrict      QName(ProtectedNamespace("_-1E4"), "updateSprites")
+      getlocal1
+      pushtrue
+      pushbyte            0
+      callpropvoid        QName(ProtectedNamespace("_-1E4"), "updateSprites"), 3
+
+      debugline           30
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "updateLayerCount") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:updateLayerCount"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 32
+      debugline           33
+      findproperty        QName(ProtectedNamespace("_-1E4"), "_-0a7")
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-1E4"), "_-0a7")
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4wj")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy")
+      multiply
+      pushbyte            1
+      ifngt               L28
+
+      debugline           35
+      findproperty        QName(ProtectedNamespace("_-1E4"), "_-0a7")
+      getlex              QName(ProtectedNamespace("_-1E4"), "_-0a7")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4wj")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy")
+      multiply
+      multiply
+      initproperty        QName(ProtectedNamespace("_-1E4"), "_-0a7")
+
+      debugline           37
+L28:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getAdditionalSpriteCount") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getAdditionalSpriteCount"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debugline           40
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getSpriteTag") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getSpriteTag"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 43
+      debug               1, "k", 1, 43
+      debug               1, "k", 2, 43
+      debugline           44
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal0
+      getlocal1
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE"), 2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteTag"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getSpriteAlpha") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getSpriteAlpha"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 47
+      debug               1, "k", 1, 47
+      debug               1, "k", 2, 47
+      debugline           48
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal0
+      getlocal1
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE"), 2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteAlpha"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getSpriteColor") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getSpriteColor"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           51
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 51
+      debug               1, "k", 1, 51
+      debug               1, "k", 2, 51
+      debugline           52
+      getlocal0
+      getlocal1
+      getlocal0
+      getlocal1
+      getlocal2
+      callproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE"), 2
+      getlocal3
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteColor"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getSpriteAssetName") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getSpriteAssetName"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 55
+      debug               1, "k", 1, 55
+      debugline           56
+      getlocal0
+      getlocal1
+      getlocal0
+      getlocal1
+      getlocal2
+      callproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE"), 2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteAssetName"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getSpriteXOffset") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getSpriteXOffset"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 6
+     localcount 8
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           59
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 59
+      debug               1, "k", 1, 59
+      debug               1, "k", 2, 59
+      debug               1, "k", 3, 60
+      debug               1, "k", 4, 61
+      debug               1, "k", 5, 62
+      debug               1, "k", 6, 63
+      debugline           60
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal0
+      getlocal1
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE"), 2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteXOffset"), 3
+      convert_i
+      setlocal            4
+
+      debugline           61
+      getlocal3
+      getlex              QName(ProtectedNamespace("_-1E4"), "data")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getLayerCount"), 1
+      divide
+      convert_i
+      setlocal            5
+
+      debugline           62
+      getlocal            5
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy")
+      modulo
+      convert_i
+      setlocal            6
+
+      debugline           63
+      getlocal            5
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy")
+      divide
+      convert_i
+      setlocal            7
+
+      debugline           64
+      getlocal            4
+      getlocal            6
+      getlocal            7
+      subtract
+      getlocal1
+      multiply
+      pushbyte            2
+      divide
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getSpriteYOffset") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getSpriteYOffset"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 6
+     localcount 8
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           67
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 67
+      debug               1, "k", 1, 67
+      debug               1, "k", 2, 67
+      debug               1, "k", 3, 68
+      debug               1, "k", 4, 69
+      debug               1, "k", 5, 70
+      debug               1, "k", 6, 71
+      debugline           68
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal0
+      getlocal1
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE"), 2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteYOffset"), 3
+      convert_i
+      setlocal            4
+
+      debugline           69
+      getlocal3
+      getlex              QName(ProtectedNamespace("_-1E4"), "data")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getLayerCount"), 1
+      divide
+      convert_i
+      setlocal            5
+
+      debugline           70
+      getlocal            5
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy")
+      modulo
+      convert_i
+      setlocal            6
+
+      debugline           71
+      getlocal            5
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-4Hy")
+      divide
+      convert_i
+      setlocal            7
+
+      debugline           72
+      getlocal            4
+      getlocal            6
+      getlocal            7
+      add
+      getlocal1
+      multiply
+      pushbyte            4
+      divide
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getSpriteMouseCapture") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getSpriteMouseCapture"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 75
+      debug               1, "k", 1, 75
+      debug               1, "k", 2, 75
+      debugline           76
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal0
+      getlocal1
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE"), 2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteMouseCapture"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getSpriteInk") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getSpriteInk"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           79
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 79
+      debug               1, "k", 1, 79
+      debug               1, "k", 2, 79
+      debugline           80
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal0
+      getlocal1
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE"), 2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteInk"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4CX"), "getSpriteZOffset") flag OVERRIDE
+   method
+    refid "_-4sl:_-tM/_-4CX:getSpriteZOffset"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           83
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 83
+      debug               1, "k", 1, 83
+      debug               1, "k", 2, 83
+      debugline           84
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal0
+      getlocal1
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE"), 2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteZOffset"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4CX", "_-4sl:_-tM"), "_-1bE")
+   method
+    refid "_-4sl:_-tM/_-1bE"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           87
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 87
+      debug               1, "k", 1, 87
+      debugline           88
+      getlex              QName(ProtectedNamespace("_-1E4"), "data")
+      pushnull
+      ifeq                L17
+
+      getlocal2
+      getlex              QName(ProtectedNamespace("_-1E4"), "data")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getLayerCount"), 1
+      modulo
+      convert_i
+      jump                L19
+
+L17:
+      getlocal2
+      convert_i
+L19:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4sl:_-tM/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

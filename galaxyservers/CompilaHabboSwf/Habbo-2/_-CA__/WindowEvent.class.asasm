@@ -1,0 +1,852 @@
+class
+ refid "_-CA:WindowEvent"
+ instance QName(PackageNamespace("_-CA"), "WindowEvent")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4yh")
+  iinit
+   refid "_-CA:WindowEvent/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           196
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "type")
+   method
+    refid "_-CA:WindowEvent/type/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           69
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-1E7")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "target")
+   method
+    refid "_-CA:WindowEvent/target/getter"
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           70
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-Fi")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "window")
+   method
+    refid "_-CA:WindowEvent/window/getter"
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           71
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-Fi")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-4l0")
+   method
+    refid "_-CA:WindowEvent/_-4l0/getter"
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           72
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-5UU")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "cancelable")
+   method
+    refid "_-CA:WindowEvent/cancelable/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           73
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-6Vb")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(ProtectedNamespace("_-4yh"), "_-1E7") type QName(PackageNamespace(""), "String") end
+  trait slot QName(ProtectedNamespace("_-4yh"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindow") end
+  trait slot QName(ProtectedNamespace("_-4yh"), "_-5UU") type QName(PackageNamespace("_-X3"), "IWindow") end
+  trait slot QName(ProtectedNamespace("_-4yh"), "_-1By") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(ProtectedNamespace("_-4yh"), "_-6Vb") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(ProtectedNamespace("_-4yh"), "_-1FW") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(ProtectedNamespace("_-4yh"), "_-2yt") type QName(PackageNamespace(""), "Array") end
+  trait method QName(PackageNamespace(""), "recycle")
+   method
+    refid "_-CA:WindowEvent/recycle"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           118
+      getlocal0
+      pushscope
+
+      debugline           120
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-1FW")
+      iffalse             L13
+
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Event already recycled!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           123
+L13:
+      getlocal0
+      getlocal0
+      pushnull
+      dup
+      setlocal1
+
+      initproperty        QName(ProtectedNamespace("_-4yh"), "_-5UU")
+
+      getlocal1
+      kill                1
+      initproperty        QName(ProtectedNamespace("_-4yh"), "_-Fi")
+
+      debugline           124
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-4yh"), "_-1FW")
+
+      debugline           125
+      getlocal0
+      pushfalse
+      initproperty        QName(ProtectedNamespace("_-4yh"), "_-1By")
+
+      debugline           126
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-2yt")
+      getlocal0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           127
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "clone")
+   method
+    refid "_-CA:WindowEvent/clone"
+    returns QName(PackageNamespace("_-CA"), "WindowEvent")
+    body
+     maxstack 5
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           138
+      getlocal0
+      pushscope
+
+      debugline           140
+      findpropstrict      QName(PackageNamespace(""), "_-6Qa")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-1E7")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "window")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4l0")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "cancelable")
+      callproperty        QName(PackageNamespace(""), "_-6Qa"), 4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "preventDefault")
+   method
+    refid "_-CA:WindowEvent/preventDefault"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           143
+      getlocal0
+      pushscope
+
+      debugline           145
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-6Co"), 0
+
+      debugline           146
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isDefaultPrevented")
+   method
+    refid "_-CA:WindowEvent/isDefaultPrevented"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           148
+      getlocal0
+      pushscope
+
+      debugline           150
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-1By")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6Co")
+   method
+    refid "_-CA:WindowEvent/_-6Co"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           157
+      getlocal0
+      pushscope
+
+      debugline           159
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "cancelable")
+      iffalse             L14
+
+      debugline           160
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-4yh"), "_-1By")
+
+      jump                L19
+
+      debugline           162
+L14:
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Attempted to prevent window operation that is not cancelable!"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           164
+L19:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5CO")
+   method
+    refid "_-CA:WindowEvent/_-5CO"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           170
+      getlocal0
+      pushscope
+
+      debugline           172
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-1By")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "stopPropagation")
+   method
+    refid "_-CA:WindowEvent/stopPropagation"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           175
+      getlocal0
+      pushscope
+
+      debugline           177
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-4yh"), "_-1By")
+
+      debugline           178
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "stopImmediatePropagation")
+   method
+    refid "_-CA:WindowEvent/stopImmediatePropagation"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           180
+      getlocal0
+      pushscope
+
+      debugline           183
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-4yh"), "_-1By")
+
+      debugline           184
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "toString")
+   method
+    refid "_-CA:WindowEvent/toString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           190
+      getlocal0
+      pushscope
+
+      pushstring          "WindowEvent { type: "
+      debugline           192
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-1E7")
+      add
+      pushstring          " cancelable: "
+      add
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-6Vb")
+      add
+      pushstring          " window: "
+      add
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4yh"), "_-Fi")
+      add
+      pushstring          " }"
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-CA:WindowEvent/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 13
+    findproperty        QName(PackageNamespace(""), "_-3zY")
+    pushstring          "WE_DESTROY"
+    initproperty        QName(PackageNamespace(""), "_-3zY")
+
+    debug               1, "k", 1, 14
+    findproperty        QName(PackageNamespace(""), "_-0p3")
+    pushstring          "WE_DESTROYED"
+    initproperty        QName(PackageNamespace(""), "_-0p3")
+
+    debug               1, "k", 2, 15
+    findproperty        QName(PackageNamespace(""), "_-3RR")
+    pushstring          "WE_OPEN"
+    initproperty        QName(PackageNamespace(""), "_-3RR")
+
+    debug               1, "k", 3, 16
+    findproperty        QName(PackageNamespace(""), "_-2-d")
+    pushstring          "WE_OPENED"
+    initproperty        QName(PackageNamespace(""), "_-2-d")
+
+    debug               1, "k", 4, 17
+    findproperty        QName(PackageNamespace(""), "_-0je")
+    pushstring          "WE_CLOSE"
+    initproperty        QName(PackageNamespace(""), "_-0je")
+
+    debug               1, "k", 5, 18
+    findproperty        QName(PackageNamespace(""), "_-6a4")
+    pushstring          "WE_CLOSED"
+    initproperty        QName(PackageNamespace(""), "_-6a4")
+
+    debug               1, "k", 6, 19
+    findproperty        QName(PackageNamespace(""), "_-6Lz")
+    pushstring          "WE_FOCUS"
+    initproperty        QName(PackageNamespace(""), "_-6Lz")
+
+    debug               1, "k", 7, 20
+    findproperty        QName(PackageNamespace(""), "_-8E")
+    pushstring          "WE_FOCUSED"
+    initproperty        QName(PackageNamespace(""), "_-8E")
+
+    debug               1, "k", 8, 21
+    findproperty        QName(PackageNamespace(""), "_-66z")
+    pushstring          "WE_UNFOCUS"
+    initproperty        QName(PackageNamespace(""), "_-66z")
+
+    debug               1, "k", 9, 22
+    findproperty        QName(PackageNamespace(""), "_-3K1")
+    pushstring          "WE_UNFOCUSED"
+    initproperty        QName(PackageNamespace(""), "_-3K1")
+
+    debug               1, "k", 10, 23
+    findproperty        QName(PackageNamespace(""), "_-1uC")
+    pushstring          "WE_ACTIVATE"
+    initproperty        QName(PackageNamespace(""), "_-1uC")
+
+    debug               1, "k", 11, 24
+    findproperty        QName(PackageNamespace(""), "_-6bo")
+    pushstring          "WE_ACTIVATED"
+    initproperty        QName(PackageNamespace(""), "_-6bo")
+
+    debug               1, "k", 12, 25
+    findproperty        QName(PackageNamespace(""), "_-2b3")
+    pushstring          "WE_DEACTIVATE"
+    initproperty        QName(PackageNamespace(""), "_-2b3")
+
+    debug               1, "k", 13, 26
+    findproperty        QName(PackageNamespace(""), "_-6QN")
+    pushstring          "WE_DEACTIVATED"
+    initproperty        QName(PackageNamespace(""), "_-6QN")
+
+    debug               1, "k", 14, 27
+    findproperty        QName(PackageNamespace(""), "_-1RS")
+    pushstring          "WE_SELECT"
+    initproperty        QName(PackageNamespace(""), "_-1RS")
+
+    debug               1, "k", 15, 28
+    findproperty        QName(PackageNamespace(""), "_-5cA")
+    pushstring          "WE_SELECTED"
+    initproperty        QName(PackageNamespace(""), "_-5cA")
+
+    debug               1, "k", 16, 29
+    findproperty        QName(PackageNamespace(""), "_-18H")
+    pushstring          "WE_UNSELECT"
+    initproperty        QName(PackageNamespace(""), "_-18H")
+
+    debug               1, "k", 17, 30
+    findproperty        QName(PackageNamespace(""), "_-4et")
+    pushstring          "WE_UNSELECTED"
+    initproperty        QName(PackageNamespace(""), "_-4et")
+
+    debug               1, "k", 18, 31
+    findproperty        QName(PackageNamespace(""), "_-Lz")
+    pushstring          "WE_LOCK"
+    initproperty        QName(PackageNamespace(""), "_-Lz")
+
+    debug               1, "k", 19, 32
+    findproperty        QName(PackageNamespace(""), "_-5wf")
+    pushstring          "WE_LOCKED"
+    initproperty        QName(PackageNamespace(""), "_-5wf")
+
+    debug               1, "k", 20, 33
+    findproperty        QName(PackageNamespace(""), "_-4I3")
+    pushstring          "WE_UNLOCK"
+    initproperty        QName(PackageNamespace(""), "_-4I3")
+
+    debug               1, "k", 21, 34
+    findproperty        QName(PackageNamespace(""), "_-6Dm")
+    pushstring          "WE_UNLOCKED"
+    initproperty        QName(PackageNamespace(""), "_-6Dm")
+
+    debug               1, "k", 22, 35
+    findproperty        QName(PackageNamespace(""), "_-0WJ")
+    pushstring          "WE_ENABLE"
+    initproperty        QName(PackageNamespace(""), "_-0WJ")
+
+    debug               1, "k", 23, 36
+    findproperty        QName(PackageNamespace(""), "_-2O3")
+    pushstring          "WE_ENABLED"
+    initproperty        QName(PackageNamespace(""), "_-2O3")
+
+    debug               1, "k", 24, 37
+    findproperty        QName(PackageNamespace(""), "_-5vY")
+    pushstring          "WE_DISABLE"
+    initproperty        QName(PackageNamespace(""), "_-5vY")
+
+    debug               1, "k", 25, 38
+    findproperty        QName(PackageNamespace(""), "_-2E2")
+    pushstring          "WE_DISABLED"
+    initproperty        QName(PackageNamespace(""), "_-2E2")
+
+    debug               1, "k", 26, 39
+    findproperty        QName(PackageNamespace(""), "_-49S")
+    pushstring          "WE_RELOCATE"
+    initproperty        QName(PackageNamespace(""), "_-49S")
+
+    debug               1, "k", 27, 40
+    findproperty        QName(PackageNamespace(""), "_-315")
+    pushstring          "WE_RELOCATED"
+    initproperty        QName(PackageNamespace(""), "_-315")
+
+    debug               1, "k", 28, 41
+    findproperty        QName(PackageNamespace(""), "_-1A4")
+    pushstring          "WE_RESIZE"
+    initproperty        QName(PackageNamespace(""), "_-1A4")
+
+    debug               1, "k", 29, 42
+    findproperty        QName(PackageNamespace(""), "_-6-a")
+    pushstring          "WE_RESIZED"
+    initproperty        QName(PackageNamespace(""), "_-6-a")
+
+    debug               1, "k", 30, 43
+    findproperty        QName(PackageNamespace(""), "_-558")
+    pushstring          "WE_MINIMIZE"
+    initproperty        QName(PackageNamespace(""), "_-558")
+
+    debug               1, "k", 31, 44
+    findproperty        QName(PackageNamespace(""), "_-0de")
+    pushstring          "WE_MINIMIZED"
+    initproperty        QName(PackageNamespace(""), "_-0de")
+
+    debug               1, "k", 32, 45
+    findproperty        QName(PackageNamespace(""), "_-20q")
+    pushstring          "WE_MAXIMIZE"
+    initproperty        QName(PackageNamespace(""), "_-20q")
+
+    debug               1, "k", 33, 46
+    findproperty        QName(PackageNamespace(""), "_-6Sm")
+    pushstring          "WE_MAXIMIZED"
+    initproperty        QName(PackageNamespace(""), "_-6Sm")
+
+    debug               1, "k", 34, 47
+    findproperty        QName(PackageNamespace(""), "_-5oI")
+    pushstring          "WE_RESTORE"
+    initproperty        QName(PackageNamespace(""), "_-5oI")
+
+    debug               1, "k", 35, 48
+    findproperty        QName(PackageNamespace(""), "_-4MJ")
+    pushstring          "WE_RESTORED"
+    initproperty        QName(PackageNamespace(""), "_-4MJ")
+
+    debug               1, "k", 36, 50
+    findproperty        QName(PackageNamespace(""), "_-1As")
+    pushstring          "WE_CHILD_ADDED"
+    initproperty        QName(PackageNamespace(""), "_-1As")
+
+    debug               1, "k", 37, 51
+    findproperty        QName(PackageNamespace(""), "_-248")
+    pushstring          "WE_CHILD_REMOVED"
+    initproperty        QName(PackageNamespace(""), "_-248")
+
+    debug               1, "k", 38, 52
+    findproperty        QName(PackageNamespace(""), "_-5Yb")
+    pushstring          "WE_CHILD_RELOCATED"
+    initproperty        QName(PackageNamespace(""), "_-5Yb")
+
+    debug               1, "k", 39, 53
+    findproperty        QName(PackageNamespace(""), "_-4oQ")
+    pushstring          "WE_CHILD_RESIZED"
+    initproperty        QName(PackageNamespace(""), "_-4oQ")
+
+    debug               1, "k", 40, 54
+    findproperty        QName(PackageNamespace(""), "_-Qu")
+    pushstring          "WE_CHILD_ACTIVATED"
+    initproperty        QName(PackageNamespace(""), "_-Qu")
+
+    debug               1, "k", 41, 55
+    findproperty        QName(PackageNamespace(""), "_-4Kd")
+    pushstring          "WE_CHILD_VISIBILITY"
+    initproperty        QName(PackageNamespace(""), "_-4Kd")
+
+    debug               1, "k", 42, 57
+    findproperty        QName(PackageNamespace(""), "_-1d3")
+    pushstring          "WE_PARENT_ADDED"
+    initproperty        QName(PackageNamespace(""), "_-1d3")
+
+    debug               1, "k", 43, 58
+    findproperty        QName(PackageNamespace(""), "_-60F")
+    pushstring          "WE_PARENT_REMOVED"
+    initproperty        QName(PackageNamespace(""), "_-60F")
+
+    debug               1, "k", 44, 59
+    findproperty        QName(PackageNamespace(""), "_-5Uk")
+    pushstring          "WE_PARENT_RELOCATED"
+    initproperty        QName(PackageNamespace(""), "_-5Uk")
+
+    debug               1, "k", 45, 60
+    findproperty        QName(PackageNamespace(""), "_-0jG")
+    pushstring          "WE_PARENT_RESIZED"
+    initproperty        QName(PackageNamespace(""), "_-0jG")
+
+    debug               1, "k", 46, 61
+    findproperty        QName(PackageNamespace(""), "_-3B6")
+    pushstring          "WE_PARENT_ACTIVATED"
+    initproperty        QName(PackageNamespace(""), "_-3B6")
+
+    debug               1, "k", 47, 63
+    findproperty        QName(PackageNamespace(""), "_-3Ew")
+    pushstring          "WE_OK"
+    initproperty        QName(PackageNamespace(""), "_-3Ew")
+
+    debug               1, "k", 48, 64
+    findproperty        QName(PackageNamespace(""), "_-4uX")
+    pushstring          "WE_CANCEL"
+    initproperty        QName(PackageNamespace(""), "_-4uX")
+
+    debug               1, "k", 49, 65
+    findproperty        QName(PackageNamespace(""), "_-4aD")
+    pushstring          "WE_CHANGE"
+    initproperty        QName(PackageNamespace(""), "_-4aD")
+
+    debug               1, "k", 50, 66
+    findproperty        QName(PackageNamespace(""), "_-0K2")
+    pushstring          "WE_SCROLL"
+    initproperty        QName(PackageNamespace(""), "_-0K2")
+
+    debug               1, "k", 51, 67
+    findproperty        QName(PackageNamespace(""), "UNKNOWN")
+    pushstring          ""
+    initproperty        QName(PackageNamespace(""), "UNKNOWN")
+
+    debug               1, "k", 52, 85
+    findproperty        QName(PrivateNamespace("_-4yh", "_-CA:WindowEvent"), "_-1Yg")
+    newarray            0
+    initproperty        QName(PrivateNamespace("_-4yh", "_-CA:WindowEvent"), "_-1Yg")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-3zY") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("WE_DESTROY") end
+ trait const QName(PackageNamespace(""), "_-0p3") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("WE_DESTROYED") end
+ trait const QName(PackageNamespace(""), "_-3RR") slotid 3 type QName(PackageNamespace(""), "String") value Utf8("WE_OPEN") end
+ trait const QName(PackageNamespace(""), "_-2-d") slotid 4 type QName(PackageNamespace(""), "String") value Utf8("WE_OPENED") end
+ trait const QName(PackageNamespace(""), "_-0je") slotid 5 type QName(PackageNamespace(""), "String") value Utf8("WE_CLOSE") end
+ trait const QName(PackageNamespace(""), "_-6a4") slotid 6 type QName(PackageNamespace(""), "String") value Utf8("WE_CLOSED") end
+ trait const QName(PackageNamespace(""), "_-6Lz") slotid 7 type QName(PackageNamespace(""), "String") value Utf8("WE_FOCUS") end
+ trait const QName(PackageNamespace(""), "_-8E") slotid 8 type QName(PackageNamespace(""), "String") value Utf8("WE_FOCUSED") end
+ trait const QName(PackageNamespace(""), "_-66z") slotid 9 type QName(PackageNamespace(""), "String") value Utf8("WE_UNFOCUS") end
+ trait const QName(PackageNamespace(""), "_-3K1") slotid 10 type QName(PackageNamespace(""), "String") value Utf8("WE_UNFOCUSED") end
+ trait const QName(PackageNamespace(""), "_-1uC") slotid 11 type QName(PackageNamespace(""), "String") value Utf8("WE_ACTIVATE") end
+ trait const QName(PackageNamespace(""), "_-6bo") slotid 12 type QName(PackageNamespace(""), "String") value Utf8("WE_ACTIVATED") end
+ trait const QName(PackageNamespace(""), "_-2b3") slotid 13 type QName(PackageNamespace(""), "String") value Utf8("WE_DEACTIVATE") end
+ trait const QName(PackageNamespace(""), "_-6QN") slotid 14 type QName(PackageNamespace(""), "String") value Utf8("WE_DEACTIVATED") end
+ trait const QName(PackageNamespace(""), "_-1RS") slotid 15 type QName(PackageNamespace(""), "String") value Utf8("WE_SELECT") end
+ trait const QName(PackageNamespace(""), "_-5cA") slotid 16 type QName(PackageNamespace(""), "String") value Utf8("WE_SELECTED") end
+ trait const QName(PackageNamespace(""), "_-18H") slotid 17 type QName(PackageNamespace(""), "String") value Utf8("WE_UNSELECT") end
+ trait const QName(PackageNamespace(""), "_-4et") slotid 18 type QName(PackageNamespace(""), "String") value Utf8("WE_UNSELECTED") end
+ trait const QName(PackageNamespace(""), "_-Lz") slotid 19 type QName(PackageNamespace(""), "String") value Utf8("WE_LOCK") end
+ trait const QName(PackageNamespace(""), "_-5wf") slotid 20 type QName(PackageNamespace(""), "String") value Utf8("WE_LOCKED") end
+ trait const QName(PackageNamespace(""), "_-4I3") slotid 21 type QName(PackageNamespace(""), "String") value Utf8("WE_UNLOCK") end
+ trait const QName(PackageNamespace(""), "_-6Dm") slotid 22 type QName(PackageNamespace(""), "String") value Utf8("WE_UNLOCKED") end
+ trait const QName(PackageNamespace(""), "_-0WJ") slotid 23 type QName(PackageNamespace(""), "String") value Utf8("WE_ENABLE") end
+ trait const QName(PackageNamespace(""), "_-2O3") slotid 24 type QName(PackageNamespace(""), "String") value Utf8("WE_ENABLED") end
+ trait const QName(PackageNamespace(""), "_-5vY") slotid 25 type QName(PackageNamespace(""), "String") value Utf8("WE_DISABLE") end
+ trait const QName(PackageNamespace(""), "_-2E2") slotid 26 type QName(PackageNamespace(""), "String") value Utf8("WE_DISABLED") end
+ trait const QName(PackageNamespace(""), "_-49S") slotid 27 type QName(PackageNamespace(""), "String") value Utf8("WE_RELOCATE") end
+ trait const QName(PackageNamespace(""), "_-315") slotid 28 type QName(PackageNamespace(""), "String") value Utf8("WE_RELOCATED") end
+ trait const QName(PackageNamespace(""), "_-1A4") slotid 29 type QName(PackageNamespace(""), "String") value Utf8("WE_RESIZE") end
+ trait const QName(PackageNamespace(""), "_-6-a") slotid 30 type QName(PackageNamespace(""), "String") value Utf8("WE_RESIZED") end
+ trait const QName(PackageNamespace(""), "_-558") slotid 31 type QName(PackageNamespace(""), "String") value Utf8("WE_MINIMIZE") end
+ trait const QName(PackageNamespace(""), "_-0de") slotid 32 type QName(PackageNamespace(""), "String") value Utf8("WE_MINIMIZED") end
+ trait const QName(PackageNamespace(""), "_-20q") slotid 33 type QName(PackageNamespace(""), "String") value Utf8("WE_MAXIMIZE") end
+ trait const QName(PackageNamespace(""), "_-6Sm") slotid 34 type QName(PackageNamespace(""), "String") value Utf8("WE_MAXIMIZED") end
+ trait const QName(PackageNamespace(""), "_-5oI") slotid 35 type QName(PackageNamespace(""), "String") value Utf8("WE_RESTORE") end
+ trait const QName(PackageNamespace(""), "_-4MJ") slotid 36 type QName(PackageNamespace(""), "String") value Utf8("WE_RESTORED") end
+ trait const QName(PackageNamespace(""), "_-1As") slotid 37 type QName(PackageNamespace(""), "String") value Utf8("WE_CHILD_ADDED") end
+ trait const QName(PackageNamespace(""), "_-248") slotid 38 type QName(PackageNamespace(""), "String") value Utf8("WE_CHILD_REMOVED") end
+ trait const QName(PackageNamespace(""), "_-5Yb") slotid 39 type QName(PackageNamespace(""), "String") value Utf8("WE_CHILD_RELOCATED") end
+ trait const QName(PackageNamespace(""), "_-4oQ") slotid 40 type QName(PackageNamespace(""), "String") value Utf8("WE_CHILD_RESIZED") end
+ trait const QName(PackageNamespace(""), "_-Qu") slotid 41 type QName(PackageNamespace(""), "String") value Utf8("WE_CHILD_ACTIVATED") end
+ trait const QName(PackageNamespace(""), "_-4Kd") slotid 42 type QName(PackageNamespace(""), "String") value Utf8("WE_CHILD_VISIBILITY") end
+ trait const QName(PackageNamespace(""), "_-1d3") slotid 43 type QName(PackageNamespace(""), "String") value Utf8("WE_PARENT_ADDED") end
+ trait const QName(PackageNamespace(""), "_-60F") slotid 44 type QName(PackageNamespace(""), "String") value Utf8("WE_PARENT_REMOVED") end
+ trait const QName(PackageNamespace(""), "_-5Uk") slotid 45 type QName(PackageNamespace(""), "String") value Utf8("WE_PARENT_RELOCATED") end
+ trait const QName(PackageNamespace(""), "_-0jG") slotid 46 type QName(PackageNamespace(""), "String") value Utf8("WE_PARENT_RESIZED") end
+ trait const QName(PackageNamespace(""), "_-3B6") slotid 47 type QName(PackageNamespace(""), "String") value Utf8("WE_PARENT_ACTIVATED") end
+ trait const QName(PackageNamespace(""), "_-3Ew") slotid 48 type QName(PackageNamespace(""), "String") value Utf8("WE_OK") end
+ trait const QName(PackageNamespace(""), "_-4uX") slotid 49 type QName(PackageNamespace(""), "String") value Utf8("WE_CANCEL") end
+ trait const QName(PackageNamespace(""), "_-4aD") slotid 50 type QName(PackageNamespace(""), "String") value Utf8("WE_CHANGE") end
+ trait const QName(PackageNamespace(""), "_-0K2") slotid 51 type QName(PackageNamespace(""), "String") value Utf8("WE_SCROLL") end
+ trait const QName(PackageNamespace(""), "UNKNOWN") slotid 52 type QName(PackageNamespace(""), "String") value Utf8("") end
+ trait const QName(PrivateNamespace("_-4yh", "_-CA:WindowEvent"), "_-1Yg") slotid 53 type QName(PackageNamespace(""), "Array") end
+ trait method QName(PackageNamespace(""), "_-6Qa") flag FINAL dispid 3
+  method
+   refid "_-CA:WindowEvent/_-6Qa"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("_-X3"), "IWindow")
+   param QName(PackageNamespace("_-X3"), "IWindow")
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace("_-CA"), "WindowEvent")
+   flag HAS_OPTIONAL
+   optional False()
+   body
+    maxstack 2
+    localcount 6
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           100
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 100
+     debug               1, "k", 1, 100
+     debug               1, "k", 2, 100
+     debug               1, "k", 3, 100
+     debug               1, "k", 4, 102
+     debugline           102
+     getlex              QName(PrivateNamespace("_-4yh", "_-CA:WindowEvent"), "_-1Yg")
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            0
+     ifngt               L18
+
+     getlex              QName(PrivateNamespace("_-4yh", "_-CA:WindowEvent"), "_-1Yg")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "pop"), 0
+     coerce              QName(PackageNamespace("_-CA"), "WindowEvent")
+     jump                L21
+
+L18:
+     getlocal0
+     construct           0
+     coerce              QName(PackageNamespace("_-CA"), "WindowEvent")
+L21:
+     coerce              QName(PackageNamespace("_-CA"), "WindowEvent")
+     setlocal            5
+
+     debugline           104
+     getlocal            5
+     getlocal1
+     setproperty         QName(ProtectedNamespace("_-4yh"), "_-1E7")
+
+     debugline           105
+     getlocal            5
+     getlocal2
+     setproperty         QName(ProtectedNamespace("_-4yh"), "_-Fi")
+
+     debugline           106
+     getlocal            5
+     getlocal3
+     setproperty         QName(ProtectedNamespace("_-4yh"), "_-5UU")
+
+     debugline           107
+     getlocal            5
+     getlocal            4
+     setproperty         QName(ProtectedNamespace("_-4yh"), "_-6Vb")
+
+     debugline           108
+     getlocal            5
+     pushfalse
+     setproperty         QName(ProtectedNamespace("_-4yh"), "_-1FW")
+
+     debugline           109
+     getlocal            5
+     getlex              QName(PrivateNamespace("_-4yh", "_-CA:WindowEvent"), "_-1Yg")
+     setproperty         QName(ProtectedNamespace("_-4yh"), "_-2yt")
+
+     debugline           112
+     getlocal            5
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

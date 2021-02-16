@@ -1,0 +1,557 @@
+class
+ refid "_-5kN:MarketplaceChart"
+ instance QName(PackageNamespace("_-5kN"), "MarketplaceChart")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3pJ")
+  iinit
+   refid "_-5kN:MarketplaceChart/iinit"
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Array")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           19
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 19
+     debug               1, "k", 1, 19
+     debugline           19
+     getlocal0
+     constructsuper      0
+
+     debugline           20
+     getlocal0
+     getlocal1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 0
+     initproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_x")
+
+     debugline           21
+     getlocal0
+     getlocal2
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 0
+     initproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_y")
+
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_x") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_y") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-4Pd") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-2K2") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-4pf") type QName(PackageNamespace(""), "int") value Integer(-30) end
+  trait slot QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-5BO") type QName(PackageNamespace(""), "int") end
+  trait method QName(PackageNamespace(""), "draw")
+   method
+    refid "_-5kN:MarketplaceChart/draw"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("flash.display"), "BitmapData")
+    body
+     maxstack 10
+     localcount 13
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           24
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            4
+
+      pushbyte            0
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.text"), "TextField")
+      setlocal            6
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.text"), "TextFormat")
+      setlocal            7
+
+      pushbyte            0
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "Shape")
+      setlocal            9
+
+      pushbyte            0
+      setlocal            10
+
+      debug               1, "k", 0, 24
+      debug               1, "k", 1, 24
+      debug               1, "k", 2, 26
+      debug               1, "k", 3, 31
+      debug               1, "k", 4, 36
+      debug               1, "k", 5, 40
+      debug               1, "k", 6, 41
+      debug               1, "k", 7, 56
+      debug               1, "k", 8, 60
+      debug               1, "k", 9, 67
+      debugline           26
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal1
+      getlocal2
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 2
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal3
+
+      debugline           28
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "available")
+      iftrue              L45
+
+      getlocal3
+      returnvalue
+
+      debugline           30
+L45:
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-5BO")
+
+      debugline           32
+      pushbyte            0
+      setlocal            11
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_y")
+      coerce_a
+      setlocal            12
+
+      jump                L71
+
+L56:
+      label
+      getlocal            12
+      getlocal            11
+      nextvalue
+      convert_i
+      setlocal            4
+
+      debugline           33
+      getlocal            4
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-5BO")
+      ifngt               L71
+
+      getlocal0
+      getlocal            4
+      initproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-5BO")
+
+      debugline           32
+L71:
+      hasnext2            12, 11
+      iftrue              L56
+
+      kill                12
+      kill                11
+      debugline           36
+      getlex              QName(PackageNamespace(""), "Math")
+      pushbyte            10
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-5BO")
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      getproperty         QName(PackageNamespace(""), "length")
+      decrement
+      callproperty        QName(PackageNamespace(""), "pow"), 2
+      convert_i
+      setlocal            5
+
+      debugline           37
+      getlocal0
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-5BO")
+      getlocal            5
+      divide
+      callproperty        QName(PackageNamespace(""), "ceil"), 1
+      getlocal            5
+      multiply
+      initproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-5BO")
+
+      debugline           40
+      findpropstrict      QName(PackageNamespace("flash.text"), "TextField")
+      constructprop       QName(PackageNamespace("flash.text"), "TextField"), 0
+      coerce              QName(PackageNamespace("flash.text"), "TextField")
+      setlocal            6
+
+      debugline           41
+      findpropstrict      QName(PackageNamespace("flash.text"), "TextFormat")
+      constructprop       QName(PackageNamespace("flash.text"), "TextFormat"), 0
+      coerce              QName(PackageNamespace("flash.text"), "TextFormat")
+      setlocal            7
+
+      debugline           42
+      getlocal            6
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "embedFonts")
+
+      debugline           43
+      getlocal            7
+      pushstring          "Volter"
+      setproperty         QName(PackageNamespace(""), "font")
+
+      debugline           44
+      getlocal            7
+      pushbyte            9
+      setproperty         QName(PackageNamespace(""), "size")
+
+      debugline           45
+      getlocal            6
+      getlocal            7
+      setproperty         QName(PackageNamespace(""), "defaultTextFormat")
+
+      debugline           48
+      getlocal            6
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-5BO")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      setproperty         QName(PackageNamespace(""), "text")
+
+      debugline           49
+      getlocal3
+      getlocal            6
+      callpropvoid        QName(PackageNamespace(""), "draw"), 1
+
+      debugline           52
+      getlocal0
+      getlocal1
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "textWidth")
+      subtract
+      pushbyte            2
+      subtract
+      initproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-4Pd")
+
+      debugline           53
+      getlocal0
+      getlocal2
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "textHeight")
+      subtract
+      initproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-2K2")
+
+      debugline           56
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "textWidth")
+      convert_i
+      setlocal            8
+
+      debugline           57
+      getlocal            6
+      pushstring          "0"
+      setproperty         QName(PackageNamespace(""), "text")
+
+      debugline           58
+      getlocal3
+      getlocal            6
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Matrix")
+      pushbyte            1
+      pushbyte            0
+      dup
+      pushbyte            1
+      getlocal            8
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "textWidth")
+      subtract
+      pushbyte            1
+      add
+      getlocal2
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "textHeight")
+      subtract
+      decrement
+      constructprop       QName(PackageNamespace("flash.geom"), "Matrix"), 6
+      callpropvoid        QName(PackageNamespace(""), "draw"), 2
+
+      debugline           60
+      findpropstrict      QName(PackageNamespace("flash.display"), "Shape")
+      constructprop       QName(PackageNamespace("flash.display"), "Shape"), 0
+      coerce              QName(PackageNamespace("flash.display"), "Shape")
+      setlocal            9
+
+      debugline           63
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "graphics")
+      pushbyte            1
+      pushint             13421772
+      callpropvoid        QName(PackageNamespace(""), "lineStyle"), 2
+
+      debugline           64
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "graphics")
+      pushbyte            0
+      dup
+      callpropvoid        QName(PackageNamespace(""), "moveTo"), 2
+
+      debugline           65
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "graphics")
+      pushbyte            0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-2K2")
+      callpropvoid        QName(PackageNamespace(""), "lineTo"), 2
+
+      debugline           68
+      pushbyte            0
+      setlocal            10
+
+      jump                L236
+
+L209:
+      label
+      debugline           69
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-2K2")
+      decrement
+      pushbyte            5
+      divide
+      getlocal            10
+      multiply
+      convert_i
+      setlocal            4
+
+      debugline           70
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "graphics")
+      pushbyte            0
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "moveTo"), 2
+
+      debugline           71
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "graphics")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-4Pd")
+      decrement
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "lineTo"), 2
+
+      debugline           68
+      inclocal_i          10
+L236:
+      getlocal            10
+      pushbyte            5
+      ifle                L209
+
+      debugline           74
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "graphics")
+      pushbyte            2
+      pushshort           255
+      callpropvoid        QName(PackageNamespace(""), "lineStyle"), 2
+
+      debugline           75
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "graphics")
+      getlocal0
+      pushbyte            0
+      callproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "getX"), 1
+      getlocal0
+      pushbyte            0
+      callproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "getY"), 1
+      callpropvoid        QName(PackageNamespace(""), "moveTo"), 2
+
+      debugline           77
+      pushbyte            1
+      setlocal            10
+
+      jump                L272
+
+L259:
+      label
+      debugline           78
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "graphics")
+      getlocal0
+      getlocal            10
+      callproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "getX"), 1
+      getlocal0
+      getlocal            10
+      callproperty        QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "getY"), 1
+      callpropvoid        QName(PackageNamespace(""), "lineTo"), 2
+
+      debugline           77
+      inclocal_i          10
+L272:
+      getlocal            10
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_x")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L259
+
+      debugline           81
+      getlocal3
+      getlocal            9
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Matrix")
+      pushbyte            1
+      pushbyte            0
+      dup
+      pushbyte            1
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-4Pd")
+      subtract
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-2K2")
+      subtract
+      pushbyte            2
+      divide
+      constructprop       QName(PackageNamespace("flash.geom"), "Matrix"), 6
+      callpropvoid        QName(PackageNamespace(""), "draw"), 2
+
+      debugline           83
+      getlocal3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "getX")
+   method
+    refid "_-5kN:MarketplaceChart/getX"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           86
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 86
+      debugline           87
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-4Pd")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-4Pd")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-4pf")
+      negate
+      divide
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_x")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace(""), PrivateNamespace("MarketplaceChart.as$3461", "_-5kN:MarketplaceChart#1"), PackageNamespace("_-5kN"), PackageInternalNs("_-5kN"), ProtectedNamespace("_-3pJ"), StaticProtectedNs("_-3pJ")])
+      multiply
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "getY")
+   method
+    refid "_-5kN:MarketplaceChart/getY"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           90
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 90
+      debugline           91
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-2K2")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-2K2")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_-5BO")
+      divide
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_y")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace(""), PrivateNamespace("MarketplaceChart.as$3461", "_-5kN:MarketplaceChart#1"), PackageNamespace("_-5kN"), PackageInternalNs("_-5kN"), ProtectedNamespace("_-3pJ"), StaticProtectedNs("_-3pJ")])
+      multiply
+      subtract
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "available")
+   method
+    refid "_-5kN:MarketplaceChart/available/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debugline           95
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_x")
+      convert_b
+      dup
+      iffalse             L14
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_y")
+      convert_b
+L14:
+      dup
+      iffalse             L22
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3pJ", "_-5kN:MarketplaceChart#0"), "_x")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      greaterthan
+L22:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5kN:MarketplaceChart/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

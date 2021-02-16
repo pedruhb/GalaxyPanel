@@ -1,0 +1,217 @@
+class
+ refid "_-6Pi:_-3gp"
+ instance QName(PackageNamespace("_-6Pi"), "_-3gp")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-Gs")
+  iinit
+   refid "_-6Pi:_-3gp/iinit"
+   param QName(PackageNamespace("_-6Pi"), "HabboToolbar")
+   body
+    maxstack 4
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 12
+     debugline           12
+     getlocal0
+     constructsuper      0
+
+     debugline           13
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "windowManager")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "assets")
+     pushstring          "bottom_background_border_xml"
+     callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+     getproperty         QName(Namespace("_-6i0"), "content")
+     getlex              QName(PackageNamespace(""), "XML")
+     astypelate
+     callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 1
+     getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-Fi")
+
+     debugline           14
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-Fi")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-4Qv")
+     setproperty         QName(Namespace("_-6q"), "procedure")
+
+     debugline           15
+     getlocal0
+     callpropvoid        QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-4GA"), 0
+
+     debugline           16
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-6Pi:_-3gp/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      debugline           19
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "disposed")
+      iffalse             L11
+
+      debugline           20
+      returnvoid
+
+      debugline           22
+L11:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-4Qv")
+   method
+    refid "_-6Pi:_-3gp/_-4Qv"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           24
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 24
+      debug               1, "k", 1, 24
+      debugline           25
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-0jG")
+      ifne                L15
+
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-4GA"), 0
+
+      debugline           26
+L15:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-4GA")
+   method
+    refid "_-6Pi:_-3gp/_-4GA"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      debugline           29
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-Fi")
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      pushbyte            246
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "desktop")
+      getproperty         QName(Namespace("_-6q"), "height")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "height")
+      pushbyte            3
+      subtract
+      subtract
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      setproperty         QName(Namespace("_-6q"), "position")
+
+      debugline           30
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-Fi")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "desktop")
+      getproperty         QName(Namespace("_-6q"), "width")
+      pushbyte            20
+      add
+      setproperty         QName(Namespace("_-6q"), "width")
+
+      debugline           31
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-6Pi:_-3gp/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-Gs", "_-6Pi:_-3gp"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-6Pi:_-3gp/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

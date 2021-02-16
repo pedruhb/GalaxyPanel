@@ -1,0 +1,1040 @@
+class
+ refid "_-1dC:EventDispatcherWrapper"
+ instance QName(PackageNamespace("_-1dC"), "EventDispatcherWrapper")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("IEventDispatcher", [PackageNamespace("flash.events")])
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5bF")
+  iinit
+   refid "_-1dC:EventDispatcherWrapper/iinit"
+   param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           50
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 50
+     debugline           26
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+
+     debugline           50
+     getlocal0
+     constructsuper      0
+
+     debugline           51
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.events"), "EventDispatcher")
+     getlocal1
+     iffalse             L21
+
+     getlocal1
+     coerce              QName(PackageNamespace("flash.events"), "IEventDispatcher")
+     jump                L23
+
+L21:
+     getlocal0
+     coerce              QName(PackageNamespace("flash.events"), "IEventDispatcher")
+L23:
+     constructprop       QName(PackageNamespace("flash.events"), "EventDispatcher"), 1
+     initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventDispatcher")
+
+     debugline           52
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-5bF"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventDispatcher") type QName(PackageNamespace("flash.events"), "EventDispatcher") end
+  trait slot QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait slot QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_result") type QName(PackageNamespace(""), "uint") end
+  trait slot QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_error") type QName(PackageNamespace(""), "Error") end
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-1dC:EventDispatcherWrapper/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           38
+      getlocal0
+      pushscope
+
+      debugline           39
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5bF"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "error")
+   method
+    refid "_-1dC:EventDispatcherWrapper/error/getter"
+    returns QName(PackageNamespace(""), "Error")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_error")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "addEventListener")
+   method
+    refid "_-1dC:EventDispatcherWrapper/addEventListener"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Function")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional False()
+    optional Integer(0)
+    optional False()
+    body
+     maxstack 5
+     localcount 11
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           66
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setlocal            8
+
+      debug               1, "k", 0, 66
+      debug               1, "k", 1, 66
+      debug               1, "k", 2, 66
+      debug               1, "k", 3, 66
+      debug               1, "k", 4, 66
+      debug               1, "k", 5, 68
+      debug               1, "k", 6, 69
+      debugline           68
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            6
+
+      debugline           69
+      findpropstrict      QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      constructprop       QName(PackageNamespace("_-1dC"), "EventListenerStruct"), 4
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setlocal            7
+
+      debugline           73
+      getlocal            6
+      iftrue              L54
+
+      debugline           75
+      getlocal            7
+      newarray            1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            6
+
+      debugline           76
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getlocal1
+      getlocal            6
+      setproperty         MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+
+      debugline           77
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventDispatcher")
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "eventProcessor")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      jump                L106
+
+      debug               1, "k", 7, 81
+      debugline           81
+L54:
+      pushbyte            0
+      setlocal            9
+
+      getlocal            6
+      coerce_a
+      setlocal            10
+
+      jump                L97
+
+L60:
+      label
+      getlocal            10
+      getlocal            9
+      nextvalue
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setlocal            8
+
+      debugline           85
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "callback")
+      getlocal2
+      equals
+      dup
+      iffalse             L78
+
+      pop
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "_-1zd")
+      getlocal3
+      equals
+L78:
+      iffalse             L82
+
+      debugline           86
+      returnvoid
+
+      debugline           91
+L82:
+      getlocal            4
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "priority")
+      ifngt               L97
+
+      debugline           92
+      getlocal            6
+      getlocal            6
+      getlocal            8
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            0
+      getlocal            7
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 3
+
+      debugline           93
+      returnvoid
+
+      debugline           81
+L97:
+      hasnext2            10, 9
+      iftrue              L60
+
+      kill                10
+      kill                9
+      debugline           97
+      getlocal            6
+      getlocal            7
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           99
+L106:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "removeEventListener")
+   method
+    refid "_-1dC:EventDispatcherWrapper/removeEventListener"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Function")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional False()
+    body
+     maxstack 3
+     localcount 9
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           110
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            4
+
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setlocal            6
+
+      debug               1, "k", 0, 110
+      debug               1, "k", 1, 110
+      debug               1, "k", 2, 110
+      debugline           112
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5bF"), "_disposed")
+      iftrue              L103
+
+      debug               1, "k", 3, 114
+      debugline           114
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            4
+
+      debugline           116
+      getlocal            4
+      iffalse             L103
+
+      debug               1, "k", 4, 118
+      debug               1, "k", 5, 120
+      debugline           118
+      pushbyte            0
+      convert_u
+      setlocal            5
+
+      debugline           120
+      pushbyte            0
+      setlocal            7
+
+      getlocal            4
+      coerce_a
+      setlocal            8
+
+      jump                L98
+
+L44:
+      label
+      getlocal            8
+      getlocal            7
+      nextvalue
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setlocal            6
+
+      debugline           121
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "callback")
+      getlocal2
+      equals
+      dup
+      iffalse             L62
+
+      pop
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "_-1zd")
+      getlocal3
+      equals
+L62:
+      iffalse             L93
+
+      debugline           122
+      getlocal            4
+      getlocal            5
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           123
+      getlocal            6
+      pushnull
+      setproperty         QName(PackageNamespace(""), "callback")
+
+      debugline           127
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifne                L91
+
+      debugline           128
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getlocal1
+      deleteproperty      MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+      pop
+      debugline           129
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventDispatcher")
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "eventProcessor")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           132
+L91:
+      returnvoid
+
+      debugline           134
+L93:
+      getlocal            5
+      increment
+      convert_u
+      setlocal            5
+
+      debugline           120
+L98:
+      hasnext2            8, 7
+      iftrue              L44
+
+      kill                8
+      kill                7
+      debugline           138
+L103:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispatchEvent")
+   method
+    refid "_-1dC:EventDispatcherWrapper/dispatchEvent"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           146
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 146
+      debugline           148
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5bF"), "_disposed")
+      iftrue              L68
+
+      debugline           150
+      getlocal0
+      getlex              QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_TRUE")
+      initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_result")
+
+      debugline           151
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventDispatcher")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           153
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_result")
+      getlex              QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_ERROR")
+      ifne                L62
+
+      debugline           156
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_error")
+      pushnull
+      ifeq                L49
+
+      debugline           157
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      pushstring          "Error caught when handling "
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getQualifiedClassName")
+      getlocal1
+      callproperty        QName(PackageNamespace("flash.utils"), "getQualifiedClassName"), 1
+      add
+      pushstring          ": "
+      add
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_error")
+      getproperty         QName(PackageNamespace(""), "message")
+      add
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_error")
+      getproperty         QName(PackageNamespace(""), "errorID")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_error")
+      callpropvoid        QName(PackageNamespace(""), "_-4k6"), 3
+
+      jump                L62
+
+      debugline           159
+L49:
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      pushstring          "Error caught when handling "
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getQualifiedClassName")
+      getlocal1
+      callproperty        QName(PackageNamespace("flash.utils"), "getQualifiedClassName"), 1
+      add
+      pushstring          ". No error data available!"
+      add
+      pushbyte            0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_error")
+      callpropvoid        QName(PackageNamespace(""), "_-4k6"), 3
+
+      debugline           166
+L62:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_result")
+      getlex              QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_TRUE")
+      equals
+      returnvalue
+
+      debugline           168
+L68:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "hasEventListener")
+   method
+    refid "_-1dC:EventDispatcherWrapper/hasEventListener"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           182
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 182
+      debugline           184
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5bF"), "_disposed")
+      iffalse             L11
+
+      pushfalse
+      jump                L18
+
+L11:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+      pushnull
+      equals
+      not
+L18:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "callEventListeners")
+   method
+    refid "_-1dC:EventDispatcherWrapper/callEventListeners"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           192
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setlocal3
+
+      debug               1, "k", 0, 192
+      debug               1, "k", 1, 194
+      debugline           194
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           196
+      getlocal2
+      iffalse             L43
+
+      debug               1, "k", 2, 197
+      debugline           197
+      pushbyte            0
+      setlocal            4
+
+      getlocal2
+      coerce_a
+      setlocal            5
+
+      jump                L38
+
+L27:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setlocal3
+
+      debugline           198
+      getlocal3
+      pushnull
+      callpropvoid        QName(PackageNamespace(""), "callback"), 1
+
+      debugline           197
+L38:
+      hasnext2            5, 4
+      iftrue              L27
+
+      kill                5
+      kill                4
+      debugline           201
+L43:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "willTrigger")
+   method
+    refid "_-1dC:EventDispatcherWrapper/willTrigger"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           210
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 210
+      debugline           214
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5bF"), "_disposed")
+      iffalse             L11
+
+      pushfalse
+      jump                L18
+
+L11:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+      pushnull
+      equals
+      not
+L18:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "eventProcessor")
+   method
+    refid "_-1dC:EventDispatcherWrapper/eventProcessor"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           226
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 226
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setslot             3
+
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace(""), "Function")
+      setslot             4
+
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setslot             5
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 226
+      debugline           233
+      getscopeobject      1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "type")
+      getproperty         MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+      coerce              QName(PackageNamespace(""), "Array")
+      setslot             2
+
+      debugline           234
+      getscopeobject      1
+      getslot             2
+      iffalse             L127
+
+      debugline           241
+      getscopeobject      1
+      newarray            0
+      coerce              QName(PackageNamespace(""), "Array")
+      setslot             3
+
+      debugline           244
+      pushbyte            0
+      setlocal3
+
+      getscopeobject      1
+      getslot             2
+      coerce_a
+      setlocal            4
+
+      jump                L67
+
+L52:
+      label
+      getscopeobject      1
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setslot             5
+
+      debugline           245
+      getscopeobject      1
+      getslot             3
+      getscopeobject      1
+      getslot             5
+      getproperty         QName(PackageNamespace(""), "callback")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           244
+L67:
+      hasnext2            4, 3
+      iftrue              L52
+
+      kill                4
+      kill                3
+      jump                L121
+
+L72:
+      label
+      debugline           254
+L74:
+      getscopeobject      1
+      getscopeobject      1
+      getslot             3
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "shift"), 0
+      coerce              QName(PackageNamespace(""), "Function")
+      setslot             4
+
+      debugline           255
+      getscopeobject      1
+      getslot             4
+      getglobalscope
+      getscopeobject      1
+      getslot             1
+      call                1
+      pop
+      debugline           256
+L89:
+      jump                L121
+
+L90:
+      getlocal0
+      pushscope
+
+      getlocal2
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           257
+      getlex              QName(PackageNamespace(""), "_-1Hb")
+      getscopeobject      2
+      getslot             1
+      callproperty        QName(PackageNamespace(""), "getStackTrace"), 0
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           258
+      findproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_result")
+      getlex              QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_ERROR")
+      initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_result")
+
+      debugline           259
+      findproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_error")
+      getscopeobject      2
+      getslot             1
+      initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_error")
+
+      debugline           260
+      returnvoid
+
+      popscope
+      kill                3
+      debugline           248
+L121:
+      getscopeobject      1
+      getslot             3
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifgt                L72
+
+      debugline           266
+L127:
+      getlocal0
+      getscopeobject      1
+      getslot             1
+      callproperty        QName(PackageNamespace(""), "isDefaultPrevented"), 0
+      iffalse             L135
+
+      getlex              QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_FALSE")
+      convert_u
+      jump                L137
+
+L135:
+      getlex              QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_TRUE")
+      convert_u
+L137:
+      initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_result")
+
+      debugline           267
+      returnvoid
+     end ; code
+     try from L74 to L89 target L90 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+     trait slot QName(PackageInternalNs("_-1dC"), "event") slotid 1 type QName(PackageNamespace("flash.events"), "Event") end
+     trait slot QName(PackageInternalNs("_-1dC"), "array") slotid 2 type QName(PackageNamespace(""), "Array") end
+     trait slot QName(PackageInternalNs("_-1dC"), "callbacks") slotid 3 type QName(PackageNamespace(""), "Array") end
+     trait slot QName(PackageInternalNs("_-1dC"), "callback") slotid 4 type QName(PackageNamespace(""), "Function") end
+     trait slot QName(PackageInternalNs("_-1dC"), "struct") slotid 5 type QName(PackageNamespace("_-1dC"), "EventListenerStruct") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-1dC:EventDispatcherWrapper/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 8
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           272
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setlocal3
+
+      debugline           274
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5bF"), "_disposed")
+      iftrue              L96
+
+      debug               1, "k", 0, 275
+      debugline           275
+      pushbyte            0
+      setlocal            4
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      coerce_a
+      setlocal            5
+
+      jump                L79
+
+L26:
+      label
+      getlocal            5
+      getlocal            4
+      nextname
+      coerce_s
+      setlocal1
+
+      debug               1, "k", 1, 277
+      debug               1, "k", 2, 279
+      debugline           277
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+      getlex              QName(PackageNamespace(""), "Array")
+      astypelate
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           279
+      pushbyte            0
+      setlocal            6
+
+      getlocal2
+      coerce_a
+      setlocal            7
+
+      jump                L61
+
+L50:
+      label
+      getlocal            7
+      getlocal            6
+      nextvalue
+      coerce              QName(PackageNamespace("_-1dC"), "EventListenerStruct")
+      setlocal3
+
+      debugline           280
+      getlocal3
+      pushnull
+      setproperty         QName(PackageNamespace(""), "callback")
+
+      debugline           279
+L61:
+      hasnext2            7, 6
+      iftrue              L50
+
+      kill                7
+      kill                6
+      debugline           283
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+      getlocal1
+      deleteproperty      MultinameL([PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), ProtectedNamespace("_-5bF"), PackageNamespace(""), PackageNamespace("_-1dC"), PrivateNamespace("EventDispatcherWrapper.as$165", "_-1dC:EventDispatcherWrapper#1"), PackageInternalNs("_-1dC"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5bF")])
+      pop
+      debugline           284
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventDispatcher")
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "eventProcessor")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           275
+L79:
+      hasnext2            5, 4
+      iftrue              L26
+
+      kill                5
+      kill                4
+      debugline           286
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventListenerTable")
+
+      debugline           287
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "_eventDispatcher")
+
+      debugline           288
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-5bF"), "_disposed")
+
+      debugline           290
+L96:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1dC:EventDispatcherWrapper/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 32
+    findproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_TRUE")
+    pushbyte            0
+    initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_TRUE")
+
+    debug               1, "k", 1, 33
+    findproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_FALSE")
+    pushbyte            1
+    initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_FALSE")
+
+    debug               1, "k", 2, 34
+    findproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_ERROR")
+    pushbyte            2
+    initproperty        QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_ERROR")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_TRUE") slotid 1 type QName(PackageNamespace(""), "uint") value Integer(0) end
+ trait const QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_FALSE") slotid 2 type QName(PackageNamespace(""), "uint") value Integer(1) end
+ trait const QName(PrivateNamespace("_-5bF", "_-1dC:EventDispatcherWrapper#0"), "EVENT_RESULT_ERROR") slotid 3 type QName(PackageNamespace(""), "uint") value Integer(2) end
+end ; class

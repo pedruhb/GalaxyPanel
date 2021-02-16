@@ -1,0 +1,729 @@
+class
+ refid "_-2ug:ProfilerAgentTask"
+ instance QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-00o")
+  iinit
+   refid "_-2ug:ProfilerAgentTask/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 12
+     debug               1, "k", 1, 12
+     debugline           12
+     getlocal0
+     constructsuper      0
+
+     debugline           14
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_name")
+
+     debugline           15
+     getlocal0
+     pushbyte            0
+     initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0cG")
+
+     debugline           16
+     getlocal0
+     pushdouble          0
+     initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-2QM")
+
+     debugline           17
+     getlocal0
+     pushfalse
+     initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-Kg")
+
+     debugline           18
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-ys")
+
+     debugline           19
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-3D-")
+
+     debugline           20
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-2ug:ProfilerAgentTask/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           25
+      getlocal0
+      pushscope
+
+      debugline           27
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_disposed")
+      iftrue              L13
+
+      debugline           28
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_disposed")
+
+      debugline           30
+L13:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "start")
+   method
+    refid "_-2ug:ProfilerAgentTask/start"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-Kg")
+      iftrue              L18
+
+      debugline           40
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+      callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+      initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-388")
+
+      debugline           41
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-Kg")
+
+      debugline           43
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "stop")
+   method
+    refid "_-2ug:ProfilerAgentTask/stop"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-Kg")
+      iffalse             L49
+
+      debugline           53
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+      callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-388")
+      subtract
+      initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-3gg")
+
+      debugline           54
+      getlocal0
+      dup
+      setlocal1
+
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0cG")
+      increment
+      setlocal2
+
+      getlocal1
+      getlocal2
+      setproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0cG")
+
+      kill                2
+      kill                1
+      debugline           55
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0Zr")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-3gg")
+      add
+      initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0Zr")
+
+      debugline           56
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0Zr")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0cG")
+      divide
+      initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-2QM")
+
+      debugline           57
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-Kg")
+
+      debugline           59
+L49:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "name")
+   method
+    refid "_-2ug:ProfilerAgentTask/name/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           63
+      getlocal0
+      pushscope
+
+      debugline           64
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_name")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_name") type QName(PackageNamespace(""), "String") end
+  trait getter QName(PackageNamespace(""), "_-6c-")
+   method
+    refid "_-2ug:ProfilerAgentTask/_-6c-/getter"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           71
+      getlocal0
+      pushscope
+
+      debugline           72
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0cG")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0cG") type QName(PackageNamespace(""), "uint") end
+  trait getter QName(PackageNamespace(""), "total")
+   method
+    refid "_-2ug:ProfilerAgentTask/total/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           79
+      getlocal0
+      pushscope
+
+      debugline           80
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0Zr")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-0Zr") type QName(PackageNamespace(""), "int") end
+  trait getter QName(PackageNamespace(""), "_-2S5")
+   method
+    refid "_-2ug:ProfilerAgentTask/_-2S5/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           87
+      getlocal0
+      pushscope
+
+      debugline           88
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-3gg")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-3gg") type QName(PackageNamespace(""), "int") end
+  trait getter QName(PackageNamespace(""), "average")
+   method
+    refid "_-2ug:ProfilerAgentTask/average/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           95
+      getlocal0
+      pushscope
+
+      debugline           96
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-2QM")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-2QM") type QName(PackageNamespace(""), "Number") end
+  trait getter QName(PackageNamespace(""), "caption")
+   method
+    refid "_-2ug:ProfilerAgentTask/caption/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           103
+      getlocal0
+      pushscope
+
+      debugline           104
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-3D-")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "caption")
+   method
+    refid "_-2ug:ProfilerAgentTask/caption/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           107
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 107
+      debugline           108
+      getlocal0
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "caption")
+      initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-3D-")
+
+      debugline           109
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-3D-") type QName(PackageNamespace(""), "String") end
+  trait getter QName(PackageNamespace(""), "running")
+   method
+    refid "_-2ug:ProfilerAgentTask/running/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           115
+      getlocal0
+      pushscope
+
+      debugline           116
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-Kg")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-Kg") type QName(PackageNamespace(""), "Boolean") end
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-2ug:ProfilerAgentTask/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           123
+      getlocal0
+      pushscope
+
+      debugline           124
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-ys") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-388") type QName(PackageNamespace(""), "uint") end
+  trait getter QName(PackageNamespace(""), "paused")
+   method
+    refid "_-2ug:ProfilerAgentTask/paused/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           134
+      getlocal0
+      pushscope
+
+      debugline           135
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-62x")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "paused")
+   method
+    refid "_-2ug:ProfilerAgentTask/paused/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           138
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 138
+      debugline           139
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-62x")
+
+      debugline           140
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-62x") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait getter QName(PackageNamespace(""), "_-5J2")
+   method
+    refid "_-2ug:ProfilerAgentTask/_-5J2/getter"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           146
+      getlocal0
+      pushscope
+
+      debugline           147
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-ys")
+      getproperty         QName(PackageNamespace(""), "length")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0J4")
+   method
+    refid "_-2ug:ProfilerAgentTask/_-0J4"
+    param QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           150
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 150
+      debugline           152
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "name")
+      callproperty        QName(PackageNamespace(""), "_-1SM"), 1
+      pushnull
+      ifeq                L23
+
+      debugline           153
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Component profiler task with name \""
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "name")
+      add
+      pushstring          "\" already exists!"
+      add
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+      debugline           156
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-ys")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           157
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3jD")
+   method
+    refid "_-2ug:ProfilerAgentTask/_-3jD"
+    param QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+    returns QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           159
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 159
+      debug               1, "k", 1, 161
+      debugline           161
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-ys")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal2
+
+      debugline           163
+      getlocal2
+      pushbyte            255
+      ifngt               L24
+
+      debugline           164
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-ys")
+      getlocal2
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           167
+L24:
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3X7")
+   method
+    refid "_-2ug:ProfilerAgentTask/_-3X7"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           170
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 170
+      debugline           172
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-ys")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-2ug"), PrivateNamespace("ProfilerAgentTask.as$625", "_-2ug:ProfilerAgentTask#1"), PackageInternalNs("_-2ug"), ProtectedNamespace("_-00o"), StaticProtectedNs("_-00o")])
+      getlex              QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1SM")
+   method
+    refid "_-2ug:ProfilerAgentTask/_-1SM"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           175
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+      setlocal            4
+
+      debug               1, "k", 0, 175
+      debug               1, "k", 1, 177
+      debug               1, "k", 2, 178
+      debug               1, "k", 3, 179
+      debugline           177
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-ys")
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_u
+      setlocal2
+
+      debugline           178
+      pushbyte            0
+      convert_u
+      setlocal3
+
+      jump                L46
+
+L22:
+      label
+      debugline           182
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), "_-ys")
+      getlocal3
+      convert_d
+      dup
+      increment
+      convert_u
+      setlocal3
+
+      getproperty         MultinameL([PrivateNamespace("_-00o", "_-2ug:ProfilerAgentTask#0"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-2ug"), PrivateNamespace("ProfilerAgentTask.as$625", "_-2ug:ProfilerAgentTask#1"), PackageInternalNs("_-2ug"), ProtectedNamespace("_-00o"), StaticProtectedNs("_-00o")])
+      getlex              QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+      astypelate
+      coerce              QName(PackageNamespace("_-2ug"), "ProfilerAgentTask")
+      setlocal            4
+
+      debugline           183
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "name")
+      getlocal1
+      ifne                L46
+
+      debugline           184
+      getlocal            4
+      returnvalue
+
+      debugline           181
+L46:
+      getlocal3
+      getlocal2
+      iflt                L22
+
+      debugline           188
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2ug:ProfilerAgentTask/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

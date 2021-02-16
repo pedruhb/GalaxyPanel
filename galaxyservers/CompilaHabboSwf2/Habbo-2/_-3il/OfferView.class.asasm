@@ -1,0 +1,409 @@
+class
+ refid "_-3il:OfferView"
+ instance QName(PackageNamespace("_-3il"), "OfferView")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4Vw")
+  iinit
+   refid "_-3il:OfferView/iinit"
+   param QName(PackageNamespace("_-3il"), "_-Jl")
+   param QName(PackageNamespace("_-38t"), "TargetedOffer")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           28
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 28
+     debug               1, "k", 1, 28
+     debugline           28
+     getlocal0
+     constructsuper      0
+
+     debugline           29
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-4Vw"), "_-3bJ")
+
+     debugline           30
+     getlocal0
+     getlocal2
+     initproperty        QName(ProtectedNamespace("_-4Vw"), "_-3Lb")
+
+     debugline           31
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-4Vw"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait slot QName(ProtectedNamespace("_-4Vw"), "_-3bJ") type QName(PackageNamespace("_-3il"), "_-Jl") end
+  trait slot QName(ProtectedNamespace("_-4Vw"), "_-3Lb") type QName(PackageNamespace("_-38t"), "TargetedOffer") end
+  trait slot QName(ProtectedNamespace("_-4Vw"), "_-UH") type QName(PackageNamespace("flash.utils"), "Timer") end
+  trait slot QName(ProtectedNamespace("_-4Vw"), "_disposed") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(ProtectedNamespace("_-4Vw"), "_-6PG") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-3il:OfferView/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_disposed")
+      iffalse             L10
+
+      returnvoid
+
+      debugline           35
+L10:
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-4Vw"), "_disposed")
+
+      debugline           37
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-UH")
+      pushnull
+      ifeq                L27
+
+      debugline           38
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-UH")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           39
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4Vw"), "_-UH")
+
+      debugline           42
+L27:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-Fi")
+      pushnull
+      ifeq                L40
+
+      debugline           43
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-Fi")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           44
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-4Vw"), "_-Fi")
+
+      debugline           46
+L40:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-3il:OfferView/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4Vw"), "_-4fP")
+   method
+    refid "_-3il:OfferView/_-4Vw:_-4fP"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debugline           51
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
+      pushshort           1000
+      constructprop       QName(PackageNamespace("flash.utils"), "Timer"), 1
+      initproperty        QName(ProtectedNamespace("_-4Vw"), "_-UH")
+
+      debugline           52
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-UH")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-3A0")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           53
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-UH")
+      callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+      debugline           55
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-4Vw"), "_-1El"), 0
+
+      debugline           56
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4Vw"), "_-3A0")
+   method
+    refid "_-3il:OfferView/_-4Vw:_-3A0"
+    param QName(PackageNamespace("flash.events"), "TimerEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           58
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 58
+      debugline           59
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-4Vw"), "_-1El"), 0
+
+      debugline           60
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4Vw"), "_-1El")
+   method
+    refid "_-3il:OfferView/_-4Vw:_-1El"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debugline           63
+      getlocal0
+      getlex              QName(PackageNamespace("_-5Lp"), "_-1o1")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-3bJ")
+      getproperty         QName(PackageNamespace(""), "catalog")
+      getproperty         QName(PackageNamespace(""), "localization")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-3Lb")
+      callproperty        QName(PackageNamespace(""), "_-mk"), 0
+      callproperty        QName(PackageNamespace(""), "_-5Jj"), 2
+      callpropvoid        QName(ProtectedNamespace("_-4Vw"), "setTimeLeft"), 1
+
+      debugline           65
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-3Lb")
+      callproperty        QName(PackageNamespace(""), "_-mk"), 0
+      pushbyte            0
+      ifne                L27
+
+      debugline           66
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-3bJ")
+      callpropvoid        QName(PackageNamespace(""), "_-3AA"), 0
+
+      debugline           68
+L27:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4Vw"), "setTimeLeft")
+   method
+    refid "_-3il:OfferView/_-4Vw:setTimeLeft"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           70
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 70
+      debug               1, "k", 1, 71
+      debugline           71
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-Fi")
+      pushstring          "txt_time_left"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ITextWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal2
+
+      debugline           72
+      getlocal2
+      iftrue              L20
+
+      returnvoid
+
+      debugline           74
+L20:
+      getlocal2
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-6PG")
+      pushstring          ""
+      ifeq                L32
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-6PG")
+      pushstring          "%timeleft%"
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      jump                L34
+
+L32:
+      getlocal1
+      coerce_s
+L34:
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           75
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-4Vw"), "getLocalization")
+   method
+    refid "_-3il:OfferView/_-4Vw:getLocalization"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           77
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 77
+      debug               1, "k", 1, 77
+      debug               1, "k", 2, 78
+      debugline           78
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-3bJ")
+      getproperty         QName(PackageNamespace(""), "catalog")
+      getproperty         QName(PackageNamespace(""), "localization")
+      getlocal1
+      getlocal2
+      dup
+      iftrue              L18
+
+      pop
+      getlocal1
+L18:
+      callproperty        Multiname("getLocalization", [PrivateNamespace("_-4Vw", "_-3il:OfferView/_-4Vw:getLocalization#1"), ProtectedNamespace("_-4Vw"), PackageNamespace("_-3il"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OfferView.as$3308", "_-3il:OfferView/_-4Vw:getLocalization#0"), PackageInternalNs("_-3il"), StaticProtectedNs("_-4Vw")]), 2
+      coerce_s
+      setlocal3
+
+      debugline           79
+      getlocal3
+      iftrue              L27
+
+      pushnull
+      returnvalue
+
+      debugline           81
+L27:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-3Lb")
+      iffalse             L40
+
+      debugline           82
+      getlocal3
+      pushstring          "%itemsleft%"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-4Vw"), "_-3Lb")
+      getproperty         QName(PackageNamespace(""), "purchaseLimit")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal3
+
+      debugline           85
+L40:
+      getlocal3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3il:OfferView/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

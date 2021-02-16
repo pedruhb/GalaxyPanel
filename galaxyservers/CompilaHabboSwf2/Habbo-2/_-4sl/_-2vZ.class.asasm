@@ -1,0 +1,414 @@
+class
+ refid "_-4sl:_-2vZ"
+ instance QName(PackageNamespace("_-4sl"), "_-2vZ")
+  extends QName(PackageNamespace("_-4sl"), "_-Qd")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6-K")
+  iinit
+   refid "_-4sl:_-2vZ/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           86
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_color1") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_color2") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-e7") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait slot QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-0Gy") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait method QName(ProtectedNamespace("_-6-K"), "updateModel") flag OVERRIDE
+   method
+    refid "_-4sl:_-2vZ/_-6-K:updateModel"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           25
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            5
+
+      debug               1, "k", 0, 25
+      debug               1, "k", 1, 26
+      debug               1, "k", 2, 38
+      debug               1, "k", 3, 41
+      debugline           26
+      getlocal0
+      getlocal1
+      callsuper           QName(ProtectedNamespace("_-3vN"), "updateModel"), 1
+      convert_b
+      setlocal2
+
+      debugline           29
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-e7")
+      pushstring          ""
+      ifne                L47
+
+      debug               1, "k", 4, 30
+      debugline           30
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getModel"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-5ZI")
+      callproperty        QName(Namespace("_-65g"), "getString"), 1
+      coerce_s
+      setlocal            5
+
+      debugline           31
+      getlocal            5
+      pushnull
+      ifeq                L47
+
+      debugline           32
+      getlocal0
+      getlocal            5
+      initproperty        QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-e7")
+
+      debugline           33
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-e7")
+      pushstring          "_32"
+      add
+      initproperty        QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-0Gy")
+
+      debugline           38
+L47:
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getModel"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "FURNITURE_GUILD_CUSTOMIZED_COLOR_1")
+      callproperty        QName(Namespace("_-65g"), "getNumber"), 1
+      convert_d
+      setlocal3
+
+      debugline           39
+      getlocal0
+      findpropstrict      QName(PackageNamespace(""), "isNaN")
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "isNaN"), 1
+      iffalse             L63
+
+      getlex              QName(PackageNamespace(""), "DEFAULT_COLOR_1")
+      convert_i
+      jump                L67
+
+L63:
+      getlocal3
+      getlex              QName(PackageNamespace(""), "int")
+      astypelate
+      convert_i
+L67:
+      initproperty        QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_color1")
+
+      debugline           41
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getModel"), 0
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "FURNITURE_GUILD_CUSTOMIZED_COLOR_2")
+      callproperty        QName(Namespace("_-65g"), "getNumber"), 1
+      convert_d
+      setlocal            4
+
+      debugline           42
+      getlocal0
+      findpropstrict      QName(PackageNamespace(""), "isNaN")
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "isNaN"), 1
+      iffalse             L85
+
+      getlex              QName(PackageNamespace(""), "DEFAULT_COLOR_2")
+      convert_i
+      jump                L89
+
+L85:
+      getlocal            4
+      getlex              QName(PackageNamespace(""), "int")
+      astypelate
+      convert_i
+L89:
+      initproperty        QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_color2")
+
+      debugline           44
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6-K"), "getSpriteColor") flag OVERRIDE
+   method
+    refid "_-4sl:_-2vZ/_-6-K:getSpriteColor"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 47
+      debug               1, "k", 1, 47
+      debug               1, "k", 2, 47
+      debug               1, "k", 3, 48
+      debugline           48
+      findpropstrict      QName(ProtectedNamespace("_-1E4"), "getSpriteTag")
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-1E4"), "direction")
+      getlocal2
+      callproperty        QName(ProtectedNamespace("_-1E4"), "getSpriteTag"), 3
+      coerce_s
+      setlocal            4
+
+      jump                L30
+
+L17:
+      label
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_color1")
+      returnvalue
+
+L22:
+      label
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_color2")
+      returnvalue
+
+L27:
+      label
+      jump                L51
+
+      debugline           50
+L30:
+      getlocal            4
+      setlocal            5
+
+      debugline           51
+      getlex              QName(PackageNamespace(""), "_-6d")
+      getlocal            5
+      ifstrictne          L39
+
+      pushbyte            0
+      jump                L48
+
+      debugline           54
+L39:
+      getlex              QName(PackageNamespace(""), "_-29o")
+      getlocal            5
+      ifstrictne          L44
+
+      pushbyte            1
+      jump                L48
+
+L44:
+      jump                L47
+
+      pushbyte            2
+      jump                L48
+
+L47:
+      pushbyte            2
+L48:
+      kill                5
+      lookupswitch        L27, [L17, L22, L27]
+
+      debugline           58
+L51:
+      getlocal0
+      getlocal1
+      getlocal2
+      getlocal3
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteColor"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6-K"), "getSpriteAssetName") flag OVERRIDE
+   method
+    refid "_-4sl:_-2vZ/_-6-K:getSpriteAssetName"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 61
+      debug               1, "k", 1, 61
+      debug               1, "k", 2, 62
+      debugline           62
+      findpropstrict      QName(ProtectedNamespace("_-1E4"), "getSpriteTag")
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-1E4"), "direction")
+      getlocal2
+      callproperty        QName(ProtectedNamespace("_-1E4"), "getSpriteTag"), 3
+      coerce_s
+      setlocal3
+
+      debugline           63
+      getlocal3
+      getlex              QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-4gp")
+      ifne                L33
+
+      debugline           64
+      getlocal1
+      pushbyte            32
+      ifne                L28
+
+      debugline           65
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-0Gy")
+      returnvalue
+
+      debugline           67
+L28:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-e7")
+      returnvalue
+
+      jump                L37
+
+      debugline           70
+L33:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getSpriteAssetName"), 2
+L37:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6-K"), "getLibraryAssetNameForSprite") flag OVERRIDE
+   method
+    refid "_-4sl:_-2vZ/_-6-K:getLibraryAssetNameForSprite"
+    param QName(PackageNamespace("_-1Wo"), "_-4V8")
+    param QName(PackageNamespace("_-0Nz"), "_-5KW")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 75
+      debug               1, "k", 1, 75
+      debugline           76
+      getlocal2
+      getproperty         QName(Namespace("_-1nF"), "tag")
+      getlex              QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-4gp")
+      ifne                L21
+
+      pushstring          "%group.badge.url%"
+      debugline           77
+      getlocal2
+      getproperty         QName(Namespace("_-1nF"), "assetName")
+      pushstring          "badge_"
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      add
+      returnvalue
+
+      debugline           80
+L21:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(ProtectedNamespace("_-1E4"), "getLibraryAssetNameForSprite"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4sl:_-2vZ/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 13
+    findproperty        QName(PackageNamespace(""), "_-6d")
+    pushstring          "COLOR1"
+    initproperty        QName(PackageNamespace(""), "_-6d")
+
+    debug               1, "k", 1, 14
+    findproperty        QName(PackageNamespace(""), "_-29o")
+    pushstring          "COLOR2"
+    initproperty        QName(PackageNamespace(""), "_-29o")
+
+    debug               1, "k", 2, 15
+    findproperty        QName(PackageNamespace(""), "DEFAULT_COLOR_1")
+    pushint             15658734
+    initproperty        QName(PackageNamespace(""), "DEFAULT_COLOR_1")
+
+    debug               1, "k", 3, 16
+    findproperty        QName(PackageNamespace(""), "DEFAULT_COLOR_2")
+    pushint             4934475
+    initproperty        QName(PackageNamespace(""), "DEFAULT_COLOR_2")
+
+    debug               1, "k", 4, 18
+    findproperty        QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-4gp")
+    pushstring          "BADGE"
+    initproperty        QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-4gp")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-6d") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("COLOR1") end
+ trait const QName(PackageNamespace(""), "_-29o") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("COLOR2") end
+ trait const QName(PackageNamespace(""), "DEFAULT_COLOR_1") slotid 3 type QName(PackageNamespace(""), "int") value Integer(15658734) end
+ trait const QName(PackageNamespace(""), "DEFAULT_COLOR_2") slotid 4 type QName(PackageNamespace(""), "int") value Integer(4934475) end
+ trait const QName(PrivateNamespace("_-6-K", "_-4sl:_-2vZ"), "_-4gp") slotid 5 type QName(PackageNamespace(""), "String") value Utf8("BADGE") end
+end ; class

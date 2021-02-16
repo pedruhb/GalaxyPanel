@@ -1,0 +1,872 @@
+class
+ refid "_-1WM:HabboWebLogin"
+ instance QName(PackageNamespace("_-1WM"), "HabboWebLogin")
+  extends QName(PackageNamespace("_-1dC"), "EventDispatcherWrapper")
+  implements Multiname("_-0uR", [PackageNamespace("_-1WM")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-36s")
+  iinit
+   refid "_-1WM:HabboWebLogin/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 3
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           32
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 32
+     debug               1, "k", 1, 32
+     debug               1, "k", 2, 32
+     debug               1, "k", 3, 32
+     debugline           33
+     getlocal0
+     getlocal            4
+     constructsuper      1
+
+     debugline           34
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_name")
+
+     debugline           35
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-0Ge")
+
+     debugline           36
+     getlocal0
+     pushstring          "https://"
+     getlocal3
+     add
+     pushstring          "/account/submit"
+     add
+     initproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-0Td")
+
+     debugline           37
+     getlocal0
+     pushstring          "https://"
+     getlocal3
+     add
+     pushstring          "/security_check"
+     add
+     initproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-26j")
+
+     debugline           38
+     getlocal0
+     pushstring          "https://"
+     getlocal3
+     add
+     pushstring          "/account/reauthenticate"
+     add
+     initproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-5h-")
+
+     debugline           43
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ") type QName(PackageNamespace("flash.net"), "URLLoader") end
+  trait slot QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_name") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-0Ge") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-0Td") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-26j") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-5h-") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageNamespace(""), "init")
+   method
+    refid "_-1WM:HabboWebLogin/init"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debugline           49
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-6kq"), 0
+
+      debugline           50
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-6kq")
+   method
+    refid "_-1WM:HabboWebLogin/_-6kq"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 58
+      debug               1, "k", 1, 59
+      pushstring          "credentials.username="
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_name")
+      add
+      pushstring          "&credentials.password="
+      add
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-0Ge")
+      add
+      coerce_s
+      setlocal1
+
+      debugline           59
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-0Td")
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal2
+
+      debugline           60
+      getlocal2
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLVariables")
+      getlocal1
+      constructprop       QName(PackageNamespace("flash.net"), "URLVariables"), 1
+      setproperty         QName(PackageNamespace(""), "data")
+
+      debugline           61
+      getlocal2
+      getlex              QName(PackageNamespace("flash.net"), "URLRequestMethod")
+      getproperty         QName(PackageNamespace(""), "POST")
+      setproperty         QName(PackageNamespace(""), "method")
+
+      debugline           63
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      constructprop       QName(PackageNamespace("flash.net"), "URLLoader"), 0
+      initproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+
+      debugline           64
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-251")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           65
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      callpropvoid        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-6cu"), 1
+
+      debugline           66
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      debugline           67
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-251")
+   method
+    refid "_-1WM:HabboWebLogin/_-251"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           74
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal            5
+
+      debug               1, "k", 0, 74
+      debug               1, "k", 1, 75
+      debug               1, "k", 2, 76
+      debugline           75
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      callproperty        QName(PackageNamespace("flash.net"), "URLLoader"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+      setlocal2
+
+      debugline           76
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "data")
+      coerce_s
+      setlocal3
+
+      debugline           77
+      getlocal3
+      pushstring          "Redirecting"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+      dup
+      iffalse             L40
+
+      pop
+      getlocal3
+      pushstring          "/useOrCreateAvatar/"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+L40:
+      iffalse             L67
+
+      debug               1, "k", 3, 78
+      debug               1, "k", 4, 79
+      debugline           78
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "<meta http-equiv=\"Refresh\" content=\"0;URL=(.*?)\">"
+      construct           1
+      getlocal3
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "exec"), 1
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("HabboWebLogin.as$6485", "_-1WM:HabboWebLogin/_-251"), PackageNamespace("_-1WM"), PackageInternalNs("_-1WM"), ProtectedNamespace("_-36s"), StaticProtectedNs("_-36s"), StaticProtectedNs("_-5bF")])
+      coerce_s
+      setlocal            4
+
+      debugline           79
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal            4
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal            5
+
+      debugline           81
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      debugline           82
+      returnvoid
+
+      debugline           85
+L67:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-251")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           86
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      callpropvoid        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2r0"), 1
+
+      debugline           89
+      getlocal3
+      pushstring          "Redirecting"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifngt               L90
+
+      debugline           91
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-6AC"), 0
+
+      jump                L152
+
+      debugline           93
+L90:
+      getlocal3
+      pushstring          "Habbo ~ Me"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifngt               L104
+
+      debugline           95
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("_-34V"), "_-7c")
+      getproperty         QName(PackageNamespace(""), "_-143")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      jump                L152
+
+      debugline           96
+L104:
+      getlocal3
+      pushstring          "Habbo ~ Home"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifngt               L118
+
+      debugline           97
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("_-34V"), "_-7c")
+      getproperty         QName(PackageNamespace(""), "_-143")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      jump                L152
+
+      debugline           98
+L118:
+      getlocal3
+      pushstring          "Habbo: Home"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifngt               L132
+
+      debugline           99
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("_-34V"), "_-7c")
+      getproperty         QName(PackageNamespace(""), "_-143")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      jump                L152
+
+      debugline           100
+L132:
+      getlocal3
+      pushstring          "document.habboLoggedIn = true"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifngt               L146
+
+      debugline           101
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("_-34V"), "_-7c")
+      getproperty         QName(PackageNamespace(""), "_-143")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      jump                L152
+
+      debugline           103
+L146:
+      getlex              QName(PackageNamespace(""), "_-1Hb")
+      pushstring          "Login failed. Received page:\n"
+      getlocal3
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           105
+L152:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-6AC")
+   method
+    refid "_-1WM:HabboWebLogin/_-6AC"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           110
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 113
+      debugline           113
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-26j")
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal1
+
+      debugline           117
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      constructprop       QName(PackageNamespace("flash.net"), "URLLoader"), 0
+      initproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+
+      debugline           118
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-5Mm")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           119
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      callpropvoid        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-6cu"), 1
+
+      debugline           120
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      debugline           121
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-5Mm")
+   method
+    refid "_-1WM:HabboWebLogin/_-5Mm"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           127
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 127
+      debug               1, "k", 1, 128
+      debug               1, "k", 2, 132
+      debugline           128
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      callproperty        QName(PackageNamespace("flash.net"), "URLLoader"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+      setlocal2
+
+      debugline           130
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-5Mm")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           131
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      callpropvoid        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2r0"), 1
+
+      debugline           132
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "data")
+      coerce_s
+      setlocal3
+
+      debugline           135
+      getlocal3
+      pushstring          "Redirecting"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifngt               L46
+
+      debugline           137
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("_-34V"), "_-7c")
+      getproperty         QName(PackageNamespace(""), "_-143")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      debugline           139
+L46:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2hO")
+   method
+    refid "_-1WM:HabboWebLogin/_-2hO"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           144
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 147
+      debug               1, "k", 1, 148
+      pushstring          "page=%2Fclient&credentials.password="
+      debugline           147
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-0Ge")
+      add
+      coerce_s
+      setlocal1
+
+      debugline           148
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-5h-")
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal2
+
+      debugline           149
+      getlocal2
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLVariables")
+      getlocal1
+      constructprop       QName(PackageNamespace("flash.net"), "URLVariables"), 1
+      setproperty         QName(PackageNamespace(""), "data")
+
+      debugline           150
+      getlocal2
+      getlex              QName(PackageNamespace("flash.net"), "URLRequestMethod")
+      getproperty         QName(PackageNamespace(""), "POST")
+      setproperty         QName(PackageNamespace(""), "method")
+
+      debugline           152
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      constructprop       QName(PackageNamespace("flash.net"), "URLLoader"), 0
+      initproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+
+      debugline           153
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-4jj")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           154
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      callpropvoid        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-6cu"), 1
+
+      debugline           155
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      debugline           156
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-4jj")
+   method
+    refid "_-1WM:HabboWebLogin/_-4jj"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           162
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 162
+      debug               1, "k", 1, 163
+      debug               1, "k", 2, 167
+      debugline           163
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      callproperty        QName(PackageNamespace("flash.net"), "URLLoader"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+      setlocal2
+
+      debugline           165
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-4jj")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           166
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-cZ")
+      callpropvoid        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2r0"), 1
+
+      debugline           167
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "data")
+      coerce_s
+      setlocal3
+
+      debugline           170
+      getlocal3
+      pushstring          "Redirecting"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifngt               L48
+
+      debugline           172
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("_-34V"), "_-7c")
+      getproperty         QName(PackageNamespace(""), "_-143")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+      jump                L48
+
+      debugline           175
+      debugline           182
+L48:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-6cu")
+   method
+    refid "_-1WM:HabboWebLogin/_-6cu"
+    param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           189
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 189
+      debugline           193
+      getlocal1
+      getlex              QName(PackageNamespace("flash.events"), "SecurityErrorEvent")
+      getproperty         QName(PackageNamespace(""), "SECURITY_ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-5wa")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           194
+      getlocal1
+      getlex              QName(PackageNamespace("flash.events"), "HTTPStatusEvent")
+      getproperty         QName(PackageNamespace(""), "HTTP_STATUS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2vS")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           195
+      getlocal1
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace(""), "IO_ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-4Fq")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           196
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2r0")
+   method
+    refid "_-1WM:HabboWebLogin/_-2r0"
+    param QName(PackageNamespace("flash.events"), "IEventDispatcher")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           202
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 202
+      debugline           203
+      getlocal1
+      getlex              QName(PackageNamespace("flash.events"), "SecurityErrorEvent")
+      getproperty         QName(PackageNamespace(""), "SECURITY_ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-5wa")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           204
+      getlocal1
+      getlex              QName(PackageNamespace("flash.events"), "HTTPStatusEvent")
+      getproperty         QName(PackageNamespace(""), "HTTP_STATUS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2vS")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           205
+      getlocal1
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace(""), "IO_ERROR")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-4Fq")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           206
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-4Fq")
+   method
+    refid "_-1WM:HabboWebLogin/_-4Fq"
+    param QName(PackageNamespace("flash.events"), "IOErrorEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           213
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 213
+      debugline           215
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2vS")
+   method
+    refid "_-1WM:HabboWebLogin/_-2vS"
+    param QName(PackageNamespace("flash.events"), "HTTPStatusEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           221
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 221
+      debugline           223
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-5wa")
+   method
+    refid "_-1WM:HabboWebLogin/_-5wa"
+    param QName(PackageNamespace("flash.events"), "SecurityErrorEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           229
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 229
+      debugline           231
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1WM:HabboWebLogin/cinit"
+  body
+   maxstack 4
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 23
+    findproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2K0")
+    findpropstrict      QName(PackageNamespace("flash.net"), "URLRequestHeader")
+    pushstring          "User-Agent"
+    pushstring          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 FirePHP/0.7.1"
+    constructprop       QName(PackageNamespace("flash.net"), "URLRequestHeader"), 2
+    initproperty        QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2K0")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-36s", "_-1WM:HabboWebLogin"), "_-2K0") slotid 1 type QName(PackageNamespace("flash.net"), "URLRequestHeader") end
+end ; class

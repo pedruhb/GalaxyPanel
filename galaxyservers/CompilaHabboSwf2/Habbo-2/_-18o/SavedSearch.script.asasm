@@ -1,0 +1,33 @@
+script ; 3100
+ sinit
+  refid "_-18o:SavedSearch.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           7
+    findpropstrict      Multiname("SavedSearch", [PackageNamespace("_-18o")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-18o:SavedSearch"
+    popscope
+    initproperty        QName(PackageNamespace("_-18o"), "SavedSearch")
+
+    debugfile           "k"
+    debugline           4
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-18o"), "SavedSearch")
+  #include "SavedSearch.class.asasm"
+ end ; trait
+end ; script

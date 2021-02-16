@@ -1,0 +1,227 @@
+class
+ refid "_-1Bv:_-01Y"
+ instance QName(PackageNamespace("_-1Bv"), "_-01Y")
+  extends QName(PackageNamespace("_-1Bv"), "_-1QQ")
+  implements Multiname("ICheckBoxWindow", [PackageNamespace("_-1Bv")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4sT")
+  iinit
+   refid "_-1Bv:_-01Y/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("_-X3"), "WindowContext")
+   param QName(PackageNamespace("flash.geom"), "Rectangle")
+   param QName(PackageNamespace("_-X3"), "IWindow")
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   optional Integer(0)
+   body
+    maxstack 12
+    localcount 12
+    initscopedepth 8
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           22
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 22
+     debug               1, "k", 1, 22
+     debug               1, "k", 2, 22
+     debug               1, "k", 3, 22
+     debug               1, "k", 4, 22
+     debug               1, "k", 5, 22
+     debug               1, "k", 6, 22
+     debug               1, "k", 7, 22
+     debug               1, "k", 8, 22
+     debug               1, "k", 9, 22
+     debug               1, "k", 10, 22
+     debugline           36
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal            6
+     getlocal            7
+     getlocal            8
+     getlocal            9
+     getlocal            10
+     getlocal            11
+     constructsuper      11
+
+     debugline           37
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait setter QName(PackageNamespace(""), "caption") flag OVERRIDE
+   method
+    refid "_-1Bv:_-01Y/caption/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 39
+      debug               1, "k", 1, 42
+      debugline           40
+      getlocal0
+      getlocal1
+      setsuper            QName(PackageNamespace(""), "caption")
+
+      debugline           42
+      findpropstrict      QName(PackageNamespace(""), "getChildByName")
+      getlex              QName(StaticProtectedNs("_-4sT"), "_-2NL")
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           43
+      getlocal2
+      pushnull
+      ifeq                L25
+
+      debugline           44
+      getlocal2
+      getlex              QName(PackageNamespace(""), "caption")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           46
+L25:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update") flag OVERRIDE
+   method
+    refid "_-1Bv:_-01Y/update"
+    param QName(PackageNamespace("_-X3"), "WindowController")
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 53
+      debug               1, "k", 1, 53
+      debugline           55
+      getlocal1
+      getlocal0
+      ifne                L44
+
+      jump                L27
+
+L11:
+      label
+      debugline           58
+      getlex              QName(PackageNamespace(""), "_-4fH")
+      iffalse             L20
+
+      debugline           59
+      findpropstrict      QName(PackageNamespace(""), "_-0jK")
+      callpropvoid        QName(PackageNamespace(""), "_-0jK"), 0
+
+      jump                L23
+
+      debugline           61
+L20:
+      findpropstrict      QName(PackageNamespace(""), "select")
+      callpropvoid        QName(PackageNamespace(""), "select"), 0
+
+      debugline           63
+L23:
+      jump                L44
+
+L24:
+      label
+      jump                L44
+
+      debugline           56
+L27:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal3
+
+      debugline           57
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "UP")
+      getlocal3
+      ifstrictne          L37
+
+      pushbyte            0
+      jump                L41
+
+L37:
+      jump                L40
+
+      pushbyte            1
+      jump                L41
+
+L40:
+      pushbyte            1
+L41:
+      kill                3
+      lookupswitch        L24, [L11, L24]
+
+      debugline           66
+L44:
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(PackageNamespace(""), "update"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Bv:_-01Y/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 7
+   maxscopedepth 8
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 17
+    findproperty        QName(StaticProtectedNs("_-4sT"), "_-2NL")
+    pushstring          "_CAPTION_TEXT"
+    initproperty        QName(StaticProtectedNs("_-4sT"), "_-2NL")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(StaticProtectedNs("_-4sT"), "_-2NL") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("_CAPTION_TEXT") end
+end ; class

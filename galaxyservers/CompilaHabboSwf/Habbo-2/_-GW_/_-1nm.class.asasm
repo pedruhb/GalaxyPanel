@@ -1,0 +1,188 @@
+class
+ refid "_-GW:_-1nm"
+ instance QName(PackageNamespace("_-GW"), "_-1nm")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-38z")
+  iinit
+   refid "_-GW:_-1nm/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace("_-lv"), "Stream")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   optional False()
+   optional False()
+   body
+    maxstack 4
+    localcount 6
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           34
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 34
+     debug               1, "k", 1, 34
+     debug               1, "k", 2, 34
+     debug               1, "k", 3, 34
+     debug               1, "k", 4, 34
+     debugline           35
+     getlocal0
+     getlocal1
+     getlocal            4
+     getlocal            5
+     constructsuper      3
+
+     debugline           36
+     getlocal0
+     getlocal2
+     initproperty        QName(ProtectedNamespace("_-38z"), "_-2tu")
+
+     debugline           37
+     getlocal0
+     getlocal3
+     initproperty        QName(ProtectedNamespace("_-38z"), "_-63b")
+
+     debugline           38
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-38z"), "_-63b") type QName(PackageNamespace("_-lv"), "Stream") value Null() end
+  trait slot QName(ProtectedNamespace("_-38z"), "_-2tu") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait setter QName(PackageNamespace(""), "_-2Z5")
+   method
+    refid "_-GW:_-1nm/_-2Z5/setter"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 40
+      debugline           41
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-38z"), "_-2tu")
+
+      debugline           42
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-2Z5")
+   method
+    refid "_-GW:_-1nm/_-2Z5/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debugline           45
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-38z"), "_-2tu")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "stream")
+   method
+    refid "_-GW:_-1nm/stream/setter"
+    param QName(PackageNamespace("_-lv"), "Stream")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 48
+      debugline           49
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-38z"), "_-63b")
+
+      debugline           50
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "stream")
+   method
+    refid "_-GW:_-1nm/stream/getter"
+    returns QName(PackageNamespace("_-lv"), "Stream")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           52
+      getlocal0
+      pushscope
+
+      debugline           53
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-38z"), "_-63b")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-GW:_-1nm/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 28
+    findproperty        QName(PackageNamespace(""), "_-0QV")
+    pushstring          "schedule-stream"
+    initproperty        QName(PackageNamespace(""), "_-0QV")
+
+    debug               1, "k", 1, 29
+    findproperty        QName(PackageNamespace(""), "_-5jH")
+    pushstring          "remove-stream"
+    initproperty        QName(PackageNamespace(""), "_-5jH")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-0QV") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("schedule-stream") end
+ trait const QName(PackageNamespace(""), "_-5jH") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("remove-stream") end
+end ; class

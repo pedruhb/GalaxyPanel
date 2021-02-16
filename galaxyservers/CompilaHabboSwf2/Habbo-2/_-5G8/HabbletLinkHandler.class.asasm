@@ -1,0 +1,250 @@
+class
+ refid "_-5G8:HabbletLinkHandler"
+ instance QName(PackageNamespace("_-5G8"), "HabbletLinkHandler")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-2YF", [PackageNamespace("_-1dC")])
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5Iu")
+  iinit
+   refid "_-5G8:HabbletLinkHandler/iinit"
+   param QName(PackageNamespace("_-01n"), "HabboWindowManagerComponent")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           12
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 12
+     debugline           12
+     getlocal0
+     constructsuper      0
+
+     debugline           13
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-5Iu", "_-5G8:HabbletLinkHandler"), "_-5OC")
+
+     debugline           14
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-5Iu", "_-5G8:HabbletLinkHandler"), "_-5OC") type QName(PackageNamespace("_-01n"), "HabboWindowManagerComponent") end
+  trait getter QName(PackageNamespace(""), "_-01A")
+   method
+    refid "_-5G8:HabbletLinkHandler/_-01A/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           16
+      getlocal0
+      pushscope
+
+      pushstring          "habblet/"
+      debugline           17
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0Yu")
+   method
+    refid "_-5G8:HabbletLinkHandler/_-0Yu"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal3
+
+      debug               1, "k", 0, 20
+      debug               1, "k", 1, 21
+      debugline           21
+      getlocal1
+      pushstring          "/"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           22
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            2
+      ifnlt               L22
+
+      debugline           23
+      returnvoid
+
+L22:
+      jump                L58
+
+L23:
+      label
+      debugline           27
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            2
+      ifngt               L54
+
+      debug               1, "k", 2, 28
+      debugline           28
+      getlocal2
+      pushbyte            2
+      getproperty         MultinameL([PrivateNamespace("_-5Iu", "_-5G8:HabbletLinkHandler"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("HabbletLinkHandler.as$2236", "_-5G8:HabbletLinkHandler/_-0Yu"), PackageNamespace("_-5G8"), PackageInternalNs("_-5G8"), ProtectedNamespace("_-5Iu"), StaticProtectedNs("_-5Iu")])
+      coerce_s
+      setlocal3
+
+      debugline           29
+      getlocal3
+      pushstring          "credits"
+      ifne                L50
+
+      debugline           30
+      getlex              QName(PackageNamespace("_-2-E"), "_-0jA")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5Iu", "_-5G8:HabbletLinkHandler"), "_-5OC")
+      getlex              QName(PackageNamespace("_-4tU"), "_-13x")
+      getproperty         QName(PackageNamespace(""), "_-2uT")
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      callpropvoid        QName(PackageNamespace(""), "openWebPageAndMinimizeClient"), 1
+
+      jump                L54
+
+      debugline           32
+L50:
+      getlex              QName(PackageNamespace("_-2-E"), "_-0jA")
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "_-6hK"), 1
+
+      debugline           35
+L54:
+      jump                L75
+
+L55:
+      label
+      jump                L75
+
+      debugline           25
+L58:
+      getlocal2
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("_-5Iu", "_-5G8:HabbletLinkHandler"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("HabbletLinkHandler.as$2236", "_-5G8:HabbletLinkHandler/_-0Yu"), PackageNamespace("_-5G8"), PackageInternalNs("_-5G8"), ProtectedNamespace("_-5Iu"), StaticProtectedNs("_-5Iu")])
+      setlocal            4
+
+      pushstring          "open"
+      debugline           26
+      getlocal            4
+      ifstrictne          L68
+
+      pushbyte            0
+      jump                L72
+
+L68:
+      jump                L71
+
+      pushbyte            1
+      jump                L72
+
+L71:
+      pushbyte            1
+L72:
+      kill                4
+      lookupswitch        L55, [L23, L55]
+
+      debugline           38
+L75:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5G8:HabbletLinkHandler/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debugline           41
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5Iu", "_-5G8:HabbletLinkHandler"), "_-5OC")
+
+      debugline           42
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-5G8:HabbletLinkHandler/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5Iu", "_-5G8:HabbletLinkHandler"), "_-5OC")
+      pushnull
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5G8:HabbletLinkHandler/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

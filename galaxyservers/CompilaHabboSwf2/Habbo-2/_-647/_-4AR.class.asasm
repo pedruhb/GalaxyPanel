@@ -1,0 +1,276 @@
+class
+ refid "_-647:_-4AR"
+ instance QName(PackageNamespace("_-647"), "_-4AR")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6PD")
+  iinit
+   refid "_-647:_-4AR/iinit"
+   param QName(PackageNamespace(""), "String")
+   body
+    maxstack 5
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           5
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 5
+     debugline           5
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 1, 6
+     debug               1, "k", 2, 11
+     debugline           6
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     decrement
+     convert_i
+     setlocal2
+
+     jump                L23
+
+L17:
+     label
+     debugline           8
+     getlocal2
+     decrement_i
+     setlocal2
+
+     debugline           7
+L23:
+     getlocal2
+     pushbyte            0
+     greaterthan
+     dup
+     iffalse             L35
+
+     pop
+     getlocal0
+     getlocal1
+     getlocal2
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+     callproperty        QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "_-4iC"), 1
+     convert_b
+L35:
+     iftrue              L17
+
+     debugline           10
+     getlocal0
+     getlocal1
+     pushbyte            0
+     getlocal2
+     pushbyte            1
+     add
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substring"), 2
+     initproperty        QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "each")
+
+     debugline           11
+     getlocal1
+     getlocal2
+     pushbyte            1
+     add
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substring"), 2
+     coerce_s
+     setlocal3
+
+     debugline           12
+     getlocal3
+     pushnull
+     equals
+     not
+     dup
+     iffalse             L67
+
+     pop
+     getlocal3
+     pushstring          ""
+     equals
+     not
+L67:
+     iffalse             L75
+
+     debugline           13
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "int")
+     getlocal3
+     callproperty        QName(PackageNamespace(""), "int"), 1
+     initproperty        QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "_-68X")
+
+     debugline           15
+L75:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "each") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait slot QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "_-68X") type QName(PackageNamespace(""), "int") value Integer(1) end
+  trait method QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "_-4iC")
+   method
+    refid "_-647:_-4AR/_-4iC"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           17
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 17
+      debug               1, "k", 1, 18
+      debugline           18
+      getlocal1
+      pushbyte            0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charCodeAt"), 1
+      convert_i
+      setlocal2
+
+      debugline           19
+      getlocal2
+      pushbyte            48
+      greaterequals
+      dup
+      iffalse             L22
+
+      pop
+      getlocal2
+      pushbyte            57
+      lessequals
+L22:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "base")
+   method
+    refid "_-647:_-4AR/base/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           22
+      getlocal0
+      pushscope
+
+      debugline           23
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "each")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "level")
+   method
+    refid "_-647:_-4AR/level/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           26
+      getlocal0
+      pushscope
+
+      debugline           27
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "_-68X")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "level")
+   method
+    refid "_-647:_-4AR/level/setter"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           31
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 31
+      debugline           32
+      getlocal0
+      getlex              QName(PackageNamespace(""), "Math")
+      pushbyte            1
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      initproperty        QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "_-68X")
+
+      debugline           33
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "badgeId")
+   method
+    refid "_-647:_-4AR/badgeId/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      debugline           36
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "each")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6PD", "_-647:_-4AR"), "_-68X")
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-647:_-4AR/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

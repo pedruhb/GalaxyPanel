@@ -1,0 +1,33 @@
+script ; 4590
+ sinit
+  refid "_-1yo:_-5yu.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           2
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-1yo:_-5yu"
+    popscope
+    initproperty        QName(PackageNamespace("_-1yo"), "_-5yu")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-1yo"), "_-5yu") slotid 1
+  #include "_-5yu.class.asasm"
+ end ; trait
+end ; script

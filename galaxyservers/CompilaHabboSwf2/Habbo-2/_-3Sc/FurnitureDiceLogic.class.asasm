@@ -1,0 +1,385 @@
+class
+ refid "_-3Sc:FurnitureDiceLogic"
+ instance QName(PackageNamespace("_-3Sc"), "FurnitureDiceLogic")
+  extends QName(PackageNamespace("_-3Sc"), "FurnitureLogic")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4D1")
+  iinit
+   refid "_-3Sc:FurnitureDiceLogic/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debugline           21
+     getlocal0
+     constructsuper      0
+
+     debugline           22
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), "_-5L2") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), "_-0me") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "getEventTypes") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureDiceLogic/getEventTypes"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           15
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 16
+      debugline           16
+      getlex              QName(PackageNamespace("_-4mE"), "_-2QE")
+      getproperty         QName(PackageNamespace(""), "_-HA")
+      getlex              QName(PackageNamespace("_-4mE"), "_-2QE")
+      getproperty         QName(PackageNamespace(""), "_-2v2")
+      newarray            2
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal1
+
+      debugline           17
+      findpropstrict      QName(ProtectedNamespace("_-dZ"), "_-02U")
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "getEventTypes"), 0
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-dZ"), "_-02U"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initialize") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureDiceLogic/initialize"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           24
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 24
+      debug               1, "k", 1, 29
+      debugline           25
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "initialize"), 1
+      debugline           26
+      getlocal1
+      pushnull
+      ifne                L16
+
+      returnvoid
+
+      debugline           29
+L16:
+      getlocal1
+      getproperty         Multiname("allspritesactivate", [PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), PackageNamespace(""), PrivateNamespace("FurnitureDiceLogic.as$2594", "_-3Sc:FurnitureDiceLogic/initialize"), PackageNamespace("_-3Sc"), PackageInternalNs("_-3Sc"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4D1"), StaticProtectedNs("_-4D1"), StaticProtectedNs("_-RJ"), StaticProtectedNs("_-4sD"), StaticProtectedNs("_-dZ")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal2
+
+      debugline           30
+      getlocal2
+      callproperty        Multiname("length", [PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), PackageNamespace(""), PrivateNamespace("FurnitureDiceLogic.as$2594", "_-3Sc:FurnitureDiceLogic/initialize"), PackageNamespace("_-3Sc"), PackageInternalNs("_-3Sc"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4D1"), StaticProtectedNs("_-4D1"), StaticProtectedNs("_-RJ"), StaticProtectedNs("_-4sD"), StaticProtectedNs("_-dZ")]), 0
+      pushbyte            0
+      ifne                L31
+
+      debugline           31
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), "_-5L2")
+
+      jump                L35
+
+      debugline           33
+L31:
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), "_-5L2")
+
+      debugline           36
+L35:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "mouseEvent") flag OVERRIDE
+   method
+    refid "_-3Sc:FurnitureDiceLogic/mouseEvent"
+    param QName(PackageNamespace("_-3CZ"), "_-034")
+    param QName(PackageNamespace("_-453"), "_-0kz")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal3
+
+      debug               1, "k", 0, 43
+      debug               1, "k", 1, 43
+      debugline           45
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L19
+
+      pop
+      getlocal2
+      pushnull
+      equals
+L19:
+      iffalse             L22
+
+      returnvoid
+
+      debugline           47
+L22:
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      ifne                L26
+
+      returnvoid
+
+L26:
+      jump                L148
+
+L27:
+      label
+      debugline           54
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      pushnull
+      ifeq                L137
+
+      debug               1, "k", 2, 56
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), "_-5L2")
+      iffalse             L85
+
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), "_-0me")
+      not
+      dup
+      iftrue              L49
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushbyte            0
+      callproperty        QName(Namespace("_-2Q9"), "getState"), 1
+      pushbyte            0
+      equals
+L49:
+      dup
+      iftrue              L57
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushbyte            0
+      callproperty        QName(Namespace("_-2Q9"), "getState"), 1
+      pushbyte            100
+      equals
+L57:
+      iffalse             L72
+
+      debugline           61
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-2QE")
+      getlex              QName(PackageNamespace("_-4mE"), "_-2QE")
+      getproperty         QName(PackageNamespace(""), "_-HA")
+      getlex              QName(PackageNamespace(""), "object")
+      constructprop       QName(PackageNamespace("_-4mE"), "_-2QE"), 2
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal3
+
+      debugline           62
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), "_-0me")
+
+      jump                L83
+
+      debugline           64
+L72:
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-2QE")
+      getlex              QName(PackageNamespace("_-4mE"), "_-2QE")
+      getproperty         QName(PackageNamespace(""), "_-2v2")
+      getlex              QName(PackageNamespace(""), "object")
+      constructprop       QName(PackageNamespace("_-4mE"), "_-2QE"), 2
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal3
+
+      debugline           65
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-4D1", "_-3Sc:FurnitureDiceLogic"), "_-0me")
+
+L83:
+      jump                L129
+
+      debugline           69
+L85:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-3vG")
+      pushstring          "activate"
+      equals
+      dup
+      iftrue              L97
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushbyte            0
+      callproperty        QName(Namespace("_-2Q9"), "getState"), 1
+      pushbyte            0
+      equals
+L97:
+      dup
+      iftrue              L105
+
+      pop
+      getlex              QName(PackageNamespace(""), "object")
+      pushbyte            0
+      callproperty        QName(Namespace("_-2Q9"), "getState"), 1
+      pushbyte            100
+      equals
+L105:
+      iffalse             L116
+
+      debugline           70
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-2QE")
+      getlex              QName(PackageNamespace("_-4mE"), "_-2QE")
+      getproperty         QName(PackageNamespace(""), "_-HA")
+      getlex              QName(PackageNamespace(""), "object")
+      constructprop       QName(PackageNamespace("_-4mE"), "_-2QE"), 2
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal3
+
+      jump                L129
+
+      debugline           71
+L116:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-3vG")
+      pushstring          "deactivate"
+      ifne                L129
+
+      debugline           72
+      findpropstrict      QName(PackageNamespace("_-4mE"), "_-2QE")
+      getlex              QName(PackageNamespace("_-4mE"), "_-2QE")
+      getproperty         QName(PackageNamespace(""), "_-2v2")
+      getlex              QName(PackageNamespace(""), "object")
+      constructprop       QName(PackageNamespace("_-4mE"), "_-2QE"), 2
+      coerce              QName(PackageNamespace("_-3CZ"), "_-02a")
+      setlocal3
+
+      debugline           76
+L129:
+      getlocal3
+      pushnull
+      ifeq                L137
+
+      debugline           77
+      getlex              QName(PackageNamespace(""), "eventDispatcher")
+      getlocal3
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           80
+L137:
+      jump                L165
+
+L138:
+      label
+      debugline           84
+      getlocal0
+      getlocal1
+      getlocal2
+      callsupervoid       QName(PackageNamespace(""), "mouseEvent"), 2
+      debugline           85
+      jump                L165
+
+      jump                L165
+
+      debugline           49
+L148:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      setlocal            4
+
+      debugline           51
+      getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+      getproperty         QName(PackageNamespace(""), "DOUBLE_CLICK")
+      getlocal            4
+      ifstrictne          L158
+
+      pushbyte            0
+      jump                L162
+
+L158:
+      jump                L161
+
+      pushbyte            1
+      jump                L162
+
+L161:
+      pushbyte            1
+L162:
+      kill                4
+      lookupswitch        L138, [L27, L138]
+
+      debugline           87
+L165:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3Sc:FurnitureDiceLogic/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

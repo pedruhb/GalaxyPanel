@@ -1,0 +1,158 @@
+class
+ refid "_-0FK:_-2Nd"
+ instance QName(PackageNamespace("_-0FK"), "_-2Nd")
+  extends QName(PackageNamespace("_-0FK"), "_-4bB")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3FV")
+  iinit
+   refid "_-0FK:_-2Nd/iinit"
+   param QName(PackageNamespace(""), "int")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           20
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 20
+     debugline           22
+     getlocal0
+     pushnull
+     constructsuper      1
+
+     debugline           23
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-3FV", "_-0FK:_-2Nd"), "_-3x2")
+
+     debugline           24
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "running") flag OVERRIDE
+   method
+    refid "_-0FK:_-2Nd/running/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           11
+      getlocal0
+      pushscope
+
+      getlex              QName(ProtectedNamespace("_-41m"), "_-Kg")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-3FV", "_-0FK:_-2Nd"), "_-1vA") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("_-3FV", "_-0FK:_-2Nd"), "_-3x2") type QName(PackageNamespace(""), "int") end
+  trait method QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "start") flag OVERRIDE
+   method
+    refid "_-0FK:_-2Nd/com.sulake.core.window.motion:friend:start"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debugline           31
+      getlocal0
+      callsupervoid       QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "start"), 0
+      debugline           32
+      findproperty        QName(ProtectedNamespace("_-41m"), "_-541")
+      pushfalse
+      initproperty        QName(ProtectedNamespace("_-41m"), "_-541")
+
+      debugline           33
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "getTimer")
+      callproperty        QName(PackageNamespace("flash.utils"), "getTimer"), 0
+      initproperty        QName(PrivateNamespace("_-3FV", "_-0FK:_-2Nd"), "_-1vA")
+
+      debugline           34
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "tick") flag OVERRIDE
+   method
+    refid "_-0FK:_-2Nd/com.sulake.core.window.motion:friend:tick"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 40
+      debugline           42
+      findproperty        QName(ProtectedNamespace("_-41m"), "_-541")
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3FV", "_-0FK:_-2Nd"), "_-1vA")
+      subtract
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3FV", "_-0FK:_-2Nd"), "_-3x2")
+      greaterequals
+      initproperty        QName(ProtectedNamespace("_-41m"), "_-541")
+
+      debugline           43
+      getlex              QName(ProtectedNamespace("_-41m"), "_-541")
+      iffalse             L21
+
+      findpropstrict      QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "stop")
+      callpropvoid        QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "stop"), 0
+
+      debugline           44
+L21:
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageInternalNs("com.sulake.core.window.motion:friend"), "tick"), 1
+      debugline           45
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-0FK:_-2Nd/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

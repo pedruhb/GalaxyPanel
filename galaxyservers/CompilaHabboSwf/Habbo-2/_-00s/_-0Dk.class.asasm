@@ -1,0 +1,64 @@
+class
+ refid "_-00s:_-0Dk"
+ instance QName(PackageNamespace("_-00s"), "_-0Dk")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1Hk")
+  iinit
+   refid "_-00s:_-0Dk/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           9
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-00s:_-0Dk/cinit"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 3
+    findproperty        QName(PackageNamespace(""), "_-60o")
+    pushstring          "position"
+    initproperty        QName(PackageNamespace(""), "_-60o")
+
+    debug               1, "k", 1, 4
+    findproperty        QName(PackageNamespace(""), "PROGRESS")
+    pushstring          "progress"
+    initproperty        QName(PackageNamespace(""), "PROGRESS")
+
+    debug               1, "k", 2, 6
+    findproperty        QName(PackageNamespace(""), "ALL")
+    getlex              QName(PackageNamespace(""), "_-60o")
+    getlex              QName(PackageNamespace(""), "PROGRESS")
+    newarray            2
+    initproperty        QName(PackageNamespace(""), "ALL")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-60o") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("position") end
+ trait const QName(PackageNamespace(""), "PROGRESS") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("progress") end
+ trait const QName(PackageNamespace(""), "ALL") slotid 3 type QName(PackageNamespace(""), "Array") end
+end ; class

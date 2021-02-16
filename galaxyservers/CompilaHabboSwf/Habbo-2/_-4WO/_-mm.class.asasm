@@ -1,0 +1,158 @@
+class
+ refid "_-4WO:_-mm"
+ instance QName(PackageNamespace("_-4WO"), "_-mm")
+  extends QName(PackageNamespace("_-4WO"), "_-0g4")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0SS")
+  iinit
+   refid "_-4WO:_-mm/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace("_-1d5"), "_-5D5")
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   body
+    maxstack 5
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debug               1, "k", 1, 15
+     debug               1, "k", 2, 15
+     debugline           16
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlex              QName(PackageNamespace("_-4WO"), "_-0g4")
+     getproperty         QName(PackageNamespace(""), "PANE_VIEW_LEVEL_MODAL")
+     constructsuper      4
+
+     debugline           17
+     getlex              QName(ProtectedNamespace("_-2U9"), "_-Fi")
+     pushstring          "info_ok"
+     callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-1Bv"), "IContainerButtonWindow")
+     astypelate
+     getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+     getproperty         QName(PackageNamespace(""), "CLICK")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0SS", "_-4WO:_-mm"), "_-GY")
+     callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+     debugline           18
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-4WO:_-mm/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "IContainerButtonWindow")
+      setlocal1
+
+      debugline           21
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           22
+      getlex              QName(ProtectedNamespace("_-2U9"), "_-Fi")
+      iffalse             L37
+
+      debug               1, "k", 0, 23
+      debugline           23
+      getlex              QName(ProtectedNamespace("_-2U9"), "_-Fi")
+      pushstring          "info_ok"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IContainerButtonWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IContainerButtonWindow")
+      setlocal1
+
+      debugline           24
+      getlocal1
+      iffalse             L37
+
+      debugline           25
+      getlocal1
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0SS", "_-4WO:_-mm"), "_-GY")
+      callpropvoid        QName(Namespace("_-6q"), "removeEventListener"), 2
+
+      debugline           26
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "IContainerButtonWindow")
+      setlocal1
+
+      debugline           29
+L37:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0SS", "_-4WO:_-mm"), "_-GY")
+   method
+    refid "_-4WO:_-mm/_-GY"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           31
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 31
+      debugline           32
+      getlex              QName(ProtectedNamespace("_-2U9"), "_-4vP")
+      getlex              QName(PackageNamespace("_-4WO"), "_-0g4")
+      getproperty         QName(PackageNamespace(""), "PANE_VIEW_LEVEL_MODAL")
+      callpropvoid        QName(PackageNamespace(""), "closePaneLevel"), 1
+
+      debugline           34
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4WO:_-mm/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

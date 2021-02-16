@@ -1,0 +1,976 @@
+class
+ refid "_-1ZY:PlaneMaskManager"
+ instance QName(PackageNamespace("_-1ZY"), "PlaneMaskManager")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-N8")
+  iinit
+   refid "_-1ZY:PlaneMaskManager/iinit"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           35
+     getlocal0
+     pushscope
+
+     debugline           35
+     getlocal0
+     constructsuper      0
+
+     debugline           36
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+     constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+     initproperty        QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks")
+
+     debugline           37
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-0jR") type QName(PackageNamespace("_-1Wo"), "_-1YR") value Null() end
+  trait slot QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks") type QName(PackageNamespace("_-07U"), "Map") value Null() end
+  trait slot QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-4T6") type QName(PackageNamespace(""), "XML") value Null() end
+  trait getter QName(PackageNamespace(""), "data")
+   method
+    refid "_-1ZY:PlaneMaskManager/data/getter"
+    returns QName(PackageNamespace(""), "XML")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-4T6")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-1ZY:PlaneMaskManager/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1ZY"), "PlaneMask")
+      setlocal2
+
+      debugline           43
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-0jR")
+
+      debugline           44
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-4T6")
+
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks")
+      pushnull
+      ifeq                L57
+
+      debug               1, "k", 0, 47
+      debugline           47
+      pushbyte            0
+      setlocal1
+
+      jump                L47
+
+L27:
+      label
+      debug               1, "k", 1, 48
+      debugline           48
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      getlex              QName(PackageNamespace("_-1ZY"), "PlaneMask")
+      astypelate
+      coerce              QName(PackageNamespace("_-1ZY"), "PlaneMask")
+      setlocal2
+
+      debugline           49
+      getlocal2
+      pushnull
+      ifeq                L46
+
+      debugline           50
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           47
+L46:
+      inclocal_i          1
+L47:
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L27
+
+      debugline           53
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           55
+L57:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initialize")
+   method
+    refid "_-1ZY:PlaneMaskManager/initialize"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 61
+      debugline           63
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-4T6")
+
+      debugline           64
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-jI")
+   method
+    refid "_-1ZY:PlaneMaskManager/_-jI"
+    param QName(PackageNamespace("_-1Wo"), "_-1YR")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           70
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 70
+      debugline           72
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "data")
+      pushnull
+      ifne                L12
+
+      returnvoid
+
+      debugline           75
+L12:
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-0jR")
+
+      debugline           78
+      getlocal0
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "data")
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-5Gc"), 2
+
+      debugline           79
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-5Gc")
+   method
+    refid "_-1ZY:PlaneMaskManager/_-5Gc"
+    param QName(PackageNamespace(""), "XML")
+    param QName(PackageNamespace("_-1Wo"), "_-1YR")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 17
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           86
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            7
+
+      pushnull
+      coerce_s
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1ZY"), "PlaneMask")
+      setlocal            9
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            10
+
+      pushbyte            0
+      setlocal            11
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            12
+
+      pushbyte            0
+      setlocal            13
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1ZY"), "PlaneMaskVisualization")
+      setlocal            14
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            15
+
+      pushnull
+      coerce_s
+      setlocal            16
+
+      debug               1, "k", 0, 86
+      debug               1, "k", 1, 86
+      debug               1, "k", 2, 90
+      debug               1, "k", 3, 91
+      debug               1, "k", 4, 94
+      debug               1, "k", 5, 95
+      debugline           88
+      getlocal1
+      pushnull
+      equals
+      dup
+      iftrue              L48
+
+      pop
+      getlocal2
+      pushnull
+      equals
+L48:
+      iffalse             L50
+
+      returnvoid
+
+L50:
+      pushstring          "id"
+      debugline           90
+      newarray            1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      pushstring          "size"
+      debugline           91
+      newarray            1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            4
+
+      debugline           94
+      getlocal1
+      getproperty         Multiname("mask", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            5
+
+      debugline           95
+      pushbyte            0
+      setlocal            6
+
+      jump                L180
+
+L69:
+      label
+      debug               1, "k", 6, 96
+      debugline           96
+      getlocal            5
+      getlocal            6
+      getproperty         MultinameL([PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            7
+
+      debugline           97
+      getlex              QName(PackageNamespace("_-453"), "XMLValidator")
+      getlocal            7
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "_-2f9"), 2
+      iffalse             L179
+
+      debug               1, "k", 7, 99
+      debugline           99
+      getlocal            7
+      getproperty         MultinameA("id", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      coerce_s
+      setlocal            8
+
+      debugline           102
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks")
+      getlocal            8
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      pushnull
+      ifne                L179
+
+      debug               1, "k", 8, 104
+      debug               1, "k", 9, 107
+      debug               1, "k", 10, 108
+      debugline           104
+      findpropstrict      QName(PackageNamespace("_-1ZY"), "PlaneMask")
+      constructprop       QName(PackageNamespace("_-1ZY"), "PlaneMask"), 0
+      coerce              QName(PackageNamespace("_-1ZY"), "PlaneMask")
+      setlocal            9
+
+      debugline           107
+      getlocal            7
+      getproperty         Multiname("maskVisualization", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            10
+
+      debugline           108
+      pushbyte            0
+      setlocal            11
+
+      jump                L168
+
+L113:
+      label
+      debug               1, "k", 11, 109
+      debugline           109
+      getlocal            10
+      getlocal            11
+      getproperty         MultinameL([PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            12
+
+      debugline           110
+      getlex              QName(PackageNamespace("_-453"), "XMLValidator")
+      getlocal            12
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-2f9"), 2
+      iffalse             L167
+
+      debug               1, "k", 12, 112
+      debug               1, "k", 13, 115
+      debugline           112
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            12
+      getproperty         MultinameA("size", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      callproperty        QName(PackageNamespace(""), "parseInt"), 1
+      convert_i
+      setlocal            13
+
+      debugline           115
+      getlocal            9
+      getlocal            13
+      callproperty        QName(PackageNamespace(""), "_-3ZD"), 1
+      coerce              QName(PackageNamespace("_-1ZY"), "PlaneMaskVisualization")
+      setlocal            14
+
+      debugline           116
+      getlocal            14
+      pushnull
+      ifeq                L167
+
+      debug               1, "k", 14, 118
+      debug               1, "k", 15, 121
+      debugline           118
+      getlocal            12
+      getproperty         Multiname("bitmap", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            15
+
+      debugline           121
+      getlocal0
+      getlocal            15
+      getlocal            14
+      getlocal2
+      callproperty        QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-33Y"), 3
+      coerce_s
+      setlocal            16
+
+      debugline           122
+      getlocal            9
+      getlocal            13
+      getlocal            16
+      callpropvoid        QName(PackageNamespace(""), "_-19E"), 2
+
+      debugline           108
+L167:
+      inclocal_i          11
+L168:
+      getlocal            11
+      getlocal            10
+      callproperty        Multiname("length", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")]), 0
+      iflt                L113
+
+      debugline           128
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks")
+      getlocal            8
+      getlocal            9
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           95
+L179:
+      inclocal_i          6
+L180:
+      getlocal            6
+      getlocal            5
+      callproperty        Multiname("length", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")]), 0
+      iflt                L69
+
+      debugline           132
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_-33Y")
+   method
+    refid "_-1ZY:PlaneMaskManager/_-33Y"
+    param QName(PackageNamespace(""), "XMLList")
+    param QName(PackageNamespace("_-1ZY"), "PlaneMaskVisualization")
+    param QName(PackageNamespace("_-1Wo"), "_-1YR")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 6
+     localcount 13
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           141
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            6
+
+      pushnan
+      setlocal            7
+
+      pushnan
+      setlocal            8
+
+      pushnan
+      setlocal            9
+
+      pushnan
+      setlocal            10
+
+      pushnull
+      coerce_s
+      setlocal            11
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Wo"), "_-4V8")
+      setlocal            12
+
+      debug               1, "k", 0, 141
+      debug               1, "k", 1, 141
+      debug               1, "k", 2, 141
+      debug               1, "k", 3, 146
+      debug               1, "k", 4, 149
+      debugline           144
+      getlocal1
+      pushnull
+      ifne                L33
+
+      pushnull
+      returnvalue
+
+      debugline           146
+L33:
+      pushnull
+      coerce_s
+      setlocal            4
+
+      debugline           149
+      pushbyte            0
+      setlocal            5
+
+      jump                L165
+
+L40:
+      label
+      debug               1, "k", 5, 150
+      debugline           150
+      getlocal1
+      getlocal            5
+      getproperty         MultinameL([PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            6
+
+      debugline           151
+      getlex              QName(PackageNamespace("_-453"), "XMLValidator")
+      getlocal            6
+      pushstring          "assetName"
+      newarray            1
+      callproperty        QName(PackageNamespace(""), "_-2f9"), 2
+      iffalse             L164
+
+      debug               1, "k", 6, 153
+      debug               1, "k", 7, 154
+      debug               1, "k", 8, 155
+      debug               1, "k", 9, 156
+      debug               1, "k", 10, 162
+      debug               1, "k", 11, 164
+      debugline           153
+      getlex              QName(PackageNamespace("_-1ZY"), "PlaneMaskVisualization")
+      getproperty         QName(PackageNamespace(""), "_-6Z-")
+      convert_d
+      setlocal            7
+
+      debugline           154
+      getlex              QName(PackageNamespace("_-1ZY"), "PlaneMaskVisualization")
+      getproperty         QName(PackageNamespace(""), "_-4QF")
+      convert_d
+      setlocal            8
+
+      debugline           155
+      getlex              QName(PackageNamespace("_-1ZY"), "PlaneMaskVisualization")
+      getproperty         QName(PackageNamespace(""), "_-6Z-")
+      convert_d
+      setlocal            9
+
+      debugline           156
+      getlex              QName(PackageNamespace("_-1ZY"), "PlaneMaskVisualization")
+      getproperty         QName(PackageNamespace(""), "_-4QF")
+      convert_d
+      setlocal            10
+
+      debugline           157
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal            6
+      getproperty         MultinameA("normalMinX", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      pushstring          ""
+      ifeq                L95
+
+      findpropstrict      QName(PackageNamespace(""), "parseFloat")
+      getlocal            6
+      getproperty         MultinameA("normalMinX", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      callproperty        QName(PackageNamespace(""), "parseFloat"), 1
+      convert_d
+      setlocal            7
+
+      debugline           158
+L95:
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal            6
+      getproperty         MultinameA("normalMaxX", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      pushstring          ""
+      ifeq                L108
+
+      findpropstrict      QName(PackageNamespace(""), "parseFloat")
+      getlocal            6
+      getproperty         MultinameA("normalMaxX", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      callproperty        QName(PackageNamespace(""), "parseFloat"), 1
+      convert_d
+      setlocal            8
+
+      debugline           159
+L108:
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal            6
+      getproperty         MultinameA("normalMinY", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      pushstring          ""
+      ifeq                L121
+
+      findpropstrict      QName(PackageNamespace(""), "parseFloat")
+      getlocal            6
+      getproperty         MultinameA("normalMinY", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      callproperty        QName(PackageNamespace(""), "parseFloat"), 1
+      convert_d
+      setlocal            9
+
+      debugline           160
+L121:
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal            6
+      getproperty         MultinameA("normalMaxY", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      pushstring          ""
+      ifeq                L134
+
+      findpropstrict      QName(PackageNamespace(""), "parseFloat")
+      getlocal            6
+      getproperty         MultinameA("normalMaxY", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      callproperty        QName(PackageNamespace(""), "parseFloat"), 1
+      convert_d
+      setlocal            10
+
+      debugline           162
+L134:
+      getlocal            6
+      getproperty         MultinameA("assetName", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")])
+      coerce_s
+      setlocal            11
+
+      debugline           164
+      getlocal3
+      getlocal            11
+      callproperty        QName(Namespace("_-62-"), "getAsset"), 1
+      coerce              QName(PackageNamespace("_-1Wo"), "_-4V8")
+      setlocal            12
+
+      debugline           165
+      getlocal            12
+      pushnull
+      ifeq                L164
+
+      debugline           166
+      getlocal            12
+      getproperty         QName(Namespace("_-67C"), "flipH")
+      iftrue              L156
+
+      getlocal            11
+      coerce_s
+      setlocal            4
+
+      debugline           182
+L156:
+      getlocal2
+      getlocal            12
+      getlocal            7
+      getlocal            8
+      getlocal            9
+      getlocal            10
+      callpropvoid        QName(PackageNamespace(""), "_-52a"), 5
+
+      debugline           149
+L164:
+      inclocal_i          5
+L165:
+      getlocal            5
+      getlocal1
+      callproperty        Multiname("length", [PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), PackageNamespace(""), PackageNamespace("_-1ZY"), PrivateNamespace("PlaneMaskManager.as$5216", "_-1ZY:PlaneMaskManager#1"), PackageInternalNs("_-1ZY"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-N8"), StaticProtectedNs("_-N8")]), 0
+      iflt                L40
+
+      debugline           187
+      getlocal            4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2X")
+   method
+    refid "_-1ZY:PlaneMaskManager/_-2X"
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace("_-453"), "_-19A")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 17
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           200
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Wo"), "_-4V8")
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            9
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            10
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            11
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Matrix")
+      setlocal            12
+
+      pushnan
+      setlocal            13
+
+      pushnan
+      setlocal            14
+
+      pushnan
+      setlocal            15
+
+      pushnan
+      setlocal            16
+
+      debug               1, "k", 0, 200
+      debug               1, "k", 1, 200
+      debug               1, "k", 2, 200
+      debug               1, "k", 3, 200
+      debug               1, "k", 4, 200
+      debug               1, "k", 5, 200
+      debug               1, "k", 6, 204
+      debugline           204
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      getlex              QName(PackageNamespace("_-1ZY"), "PlaneMask")
+      astypelate
+      coerce              QName(PackageNamespace("_-1ZY"), "PlaneMask")
+      setlocal            7
+
+      debugline           205
+      getlocal            7
+      pushnull
+      ifeq                L171
+
+      debug               1, "k", 7, 207
+      debugline           207
+      getlocal            7
+      getlocal3
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-5EB"), 2
+      coerce              QName(PackageNamespace("_-1Wo"), "_-4V8")
+      setlocal            8
+
+      debugline           208
+      getlocal            8
+      pushnull
+      ifeq                L171
+
+      debug               1, "k", 8, 209
+      debugline           209
+      getlocal            8
+      getproperty         QName(Namespace("_-67C"), "asset")
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            9
+
+      debugline           210
+      getlocal            9
+      pushnull
+      ifeq                L171
+
+      debug               1, "k", 9, 211
+      debugline           211
+      getlocal            9
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            10
+
+      debugline           212
+      getlocal            10
+      pushnull
+      ifeq                L171
+
+      debug               1, "k", 10, 214
+      debug               1, "k", 11, 217
+      debug               1, "k", 12, 218
+      debug               1, "k", 13, 219
+      debug               1, "k", 14, 220
+      debug               1, "k", 15, 221
+      debugline           214
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal            5
+      getlocal            8
+      getproperty         QName(Namespace("_-67C"), "offsetX")
+      add
+      getlocal            6
+      getlocal            8
+      getproperty         QName(Namespace("_-67C"), "offsetY")
+      add
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            11
+
+      debugline           217
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Matrix")
+      constructprop       QName(PackageNamespace("flash.geom"), "Matrix"), 0
+      coerce              QName(PackageNamespace("flash.geom"), "Matrix")
+      setlocal            12
+
+      debugline           218
+      pushbyte            1
+      convert_d
+      setlocal            13
+
+      debugline           219
+      pushbyte            1
+      convert_d
+      setlocal            14
+
+      debugline           220
+      pushbyte            0
+      convert_d
+      setlocal            15
+
+      debugline           221
+      pushbyte            0
+      convert_d
+      setlocal            16
+
+      debugline           222
+      getlocal            8
+      getproperty         QName(Namespace("_-67C"), "flipH")
+      iffalse             L137
+
+      debugline           223
+      pushbyte            255
+      convert_d
+      setlocal            13
+
+      debugline           224
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "width")
+      convert_d
+      setlocal            15
+
+      debugline           226
+L137:
+      getlocal            8
+      getproperty         QName(Namespace("_-67C"), "flipV")
+      iffalse             L150
+
+      debugline           227
+      pushbyte            255
+      convert_d
+      setlocal            14
+
+      debugline           228
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "height")
+      convert_d
+      setlocal            16
+
+      debugline           231
+L150:
+      getlocal            12
+      getlocal            13
+      getlocal            14
+      callpropvoid        QName(PackageNamespace(""), "scale"), 2
+
+      debugline           232
+      getlocal            12
+      getlocal            11
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            15
+      add
+      getlocal            11
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            16
+      add
+      callpropvoid        QName(PackageNamespace(""), "translate"), 2
+
+      debugline           234
+      getlocal1
+      getlocal            10
+      getlocal            12
+      callpropvoid        QName(PackageNamespace(""), "draw"), 2
+
+      debugline           245
+L171:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-000")
+   method
+    refid "_-1ZY:PlaneMaskManager/_-000"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-1ZY"), "PlaneMask")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           251
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 251
+      debugline           252
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-N8", "_-1ZY:PlaneMaskManager#0"), "_masks")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      getlex              QName(PackageNamespace("_-1ZY"), "PlaneMask")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1ZY:PlaneMaskManager/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

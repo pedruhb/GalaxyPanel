@@ -1,0 +1,2092 @@
+class
+ refid "_-3zL:RoomInfoPopup"
+ instance QName(PackageNamespace("_-3zL"), "RoomInfoPopup")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-VL")
+  iinit
+   refid "_-3zL:RoomInfoPopup/iinit"
+   param QName(PackageNamespace("_-2i1"), "HabboNewNavigator")
+   body
+    maxstack 4
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           42
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 42
+     debugline           38
+     getlocal0
+     getlex              Multiname("Vector", [PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), PrivateNamespace("RoomInfoPopup.as$1829", "_-3zL:RoomInfoPopup#1"), PackageNamespace(""), PackageNamespace("_-3zL"), PackageInternalNs("_-3zL"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-VL"), StaticProtectedNs("_-VL"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace(""), "String")
+     applytype           1
+     pushbyte            0
+     construct           1
+     initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5GL")
+
+     debugline           40
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+     pushbyte            255
+     pushbyte            255
+     constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+     initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-2WC")
+
+     debugline           42
+     getlocal0
+     constructsuper      0
+
+     debugline           43
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+
+     debugline           44
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on") type QName(PackageNamespace("_-2i1"), "HabboNewNavigator") end
+  trait slot QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5GL") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "String")>) end
+  trait slot QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM") type QName(PackageNamespace("_-Ce"), "_-0AJ") value Null() end
+  trait slot QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-2WC") type QName(PackageNamespace("flash.geom"), "Point") end
+  trait method QName(PackageNamespace(""), "show")
+   method
+    refid "_-3zL:RoomInfoPopup/show"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 46
+      debugline           47
+      getlocal1
+      iffalse             L33
+
+      debugline           48
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      iftrue              L16
+
+      debugline           49
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "createWindow"), 0
+
+      debugline           51
+L16:
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "populate"), 0
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           53
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-45y")
+
+      debugline           54
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-0XT")
+
+      jump                L42
+
+      debugline           56
+L33:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      iffalse             L42
+
+      debugline           57
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           60
+L42:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "visible")
+   method
+    refid "_-3zL:RoomInfoPopup/visible/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debugline           63
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      iftrue              L11
+
+      pushfalse
+      returnvalue
+
+      debugline           64
+L11:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "visible")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2o6")
+   method
+    refid "_-3zL:RoomInfoPopup/_-2o6"
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           67
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            5
+
+      debug               1, "k", 0, 67
+      debug               1, "k", 1, 67
+      debug               1, "k", 2, 67
+      debug               1, "k", 3, 68
+      debugline           68
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "visible")
+      not
+      setlocal            4
+
+      debugline           69
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "show"), 1
+
+      debugline           70
+      getlocal1
+      iffalse             L78
+
+      debug               1, "k", 4, 71
+      debugline           71
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal2
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "height")
+      pushbyte            2
+      divide
+      subtract
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal            5
+
+      debugline           72
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-2WC")
+      getlocal            5
+      ifeq                L70
+
+      debugline           73
+      getlocal            4
+      convert_b
+      dup
+      iffalse             L50
+
+      pop
+      getlocal1
+      convert_b
+L50:
+      dup
+      iffalse             L56
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      convert_b
+L56:
+      iffalse             L70
+
+      debugline           74
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      pushstring          "browse.openroominfo"
+      pushstring          "Results"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "roomName")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      callpropvoid        QName(PackageNamespace(""), "trackEventLog"), 4
+
+      debugline           77
+L70:
+      getlocal0
+      getlocal            5
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "position")
+
+      debugline           78
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      callpropvoid        QName(Namespace("_-6q"), "activate"), 0
+
+      debugline           80
+L78:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3Q5")
+   method
+    refid "_-3zL:RoomInfoPopup/_-3Q5"
+    param QName(PackageNamespace("_-Ce"), "_-0AJ")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           82
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 82
+      debugline           83
+      getlocal0
+      getlocal1
+      setproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+
+      debugline           84
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getGlobalRectangle")
+   method
+    refid "_-3zL:RoomInfoPopup/getGlobalRectangle"
+    param QName(PackageNamespace("flash.geom"), "Rectangle")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           86
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 86
+      debugline           87
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      getlocal1
+      callpropvoid        QName(Namespace("_-6q"), "getGlobalRectangle"), 1
+
+      debugline           88
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "position")
+   method
+    refid "_-3zL:RoomInfoPopup/position/setter"
+    param QName(PackageNamespace("flash.geom"), "Point")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           90
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 90
+      debugline           91
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      getlocal1
+      setproperty         QName(Namespace("_-6q"), "position")
+
+      debugline           92
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-2WC")
+
+      debugline           93
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-45y") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-08Z") type QName(PackageNamespace(""), "Boolean") end
+  trait getter QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4YF")
+   method
+    refid "_-3zL:RoomInfoPopup/_-4YF/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           97
+      getlocal0
+      pushscope
+
+      debugline           98
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-45y")
+      iffalse             L12
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-08Z")
+      returnvalue
+
+      debugline           99
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "_-3Do")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      callproperty        QName(Namespace("_-4Xf"), "_-4EU"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4YF")
+   method
+    refid "_-3zL:RoomInfoPopup/_-4YF/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           102
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 102
+      debugline           103
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-45y")
+
+      debugline           104
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-08Z")
+
+      debugline           105
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-0XT") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-0n6") type QName(PackageNamespace(""), "Boolean") end
+  trait getter QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5w8")
+   method
+    refid "_-3zL:RoomInfoPopup/_-5w8/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           109
+      getlocal0
+      pushscope
+
+      debugline           110
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-0XT")
+      iffalse             L12
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-0n6")
+      returnvalue
+
+      debugline           111
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "_-3Do")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      callproperty        QName(Namespace("_-4Xf"), "_-26x"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5w8")
+   method
+    refid "_-3zL:RoomInfoPopup/_-5w8/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           114
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 114
+      debugline           115
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-0XT")
+
+      debugline           116
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-0n6")
+
+      debugline           117
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "populate")
+   method
+    refid "_-3zL:RoomInfoPopup/populate"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 11
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           119
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2gX"), "_-x1")
+      setlocal            8
+
+      pushnull
+      coerce_s
+      setlocal            9
+
+      pushnull
+      coerce_s
+      setlocal            10
+
+      debug               1, "k", 0, 124
+      debug               1, "k", 1, 125
+      debug               1, "k", 2, 126
+      debug               1, "k", 3, 159
+      debug               1, "k", 4, 194
+      debug               1, "k", 5, 207
+      debug               1, "k", 6, 209
+      debugline           120
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      pushnull
+      ifne                L28
+
+      debugline           121
+      returnvoid
+
+      debugline           124
+L28:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "main_content"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      setlocal1
+
+      debugline           125
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "header_content"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      setlocal2
+
+      debugline           126
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "bottom_itemlist"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      setlocal3
+
+      debugline           128
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_owner_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-0L7")
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           129
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_group_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-3lo")
+      pushstring          ""
+      equals
+      not
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           131
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_name"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "roomName")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           132
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_desc"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "description")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           133
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "owner_name"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "ownerName")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           134
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_owner_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-3Vr")
+      setproperty         QName(Namespace("_-6q"), "id")
+
+      debugline           136
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_owner_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5Q8")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           137
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "favorite_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-51P")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           138
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "home_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5aB")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           140
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "settings_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4sf")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           141
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "settings_container"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "ownerName")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "_-5BF")
+      getproperty         QName(Namespace("_-0wj"), "userName")
+      equals
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           143
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "context")
+      getproperty         QName(Namespace("_-s9"), "configuration")
+      pushstring          "room.report.enabled"
+      callproperty        QName(Namespace("_-37g"), "getBoolean"), 1
+      convert_b
+      dup
+      iffalse             L177
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "ownerName")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "_-5BF")
+      getproperty         QName(Namespace("_-0wj"), "userName")
+      equals
+      not
+L177:
+      iffalse             L211
+
+      debugline           144
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "report_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-3Vr")
+      setproperty         QName(Namespace("_-6q"), "id")
+
+      debugline           145
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "report_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1BJ")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           146
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "report_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           147
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "report_container"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      jump                L225
+
+      debugline           150
+L211:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "report_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           151
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "report_container"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           154
+L225:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "midBottom_itemlist"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IItemListWindow"), 1
+      callpropvoid        QName(Namespace("_-0Pj"), "arrangeListItems"), 0
+
+      debugline           156
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "favorite_icon"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushstring          "newnavigator_icon_fav_"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5w8")
+      iffalse             L246
+
+      pushstring          "yes"
+      coerce_a
+      jump                L248
+
+L246:
+      pushstring          "no"
+      coerce_a
+L248:
+      add
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           157
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "home_icon"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushstring          "newnavigator_icon_home_"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4YF")
+      iffalse             L264
+
+      pushstring          "yes"
+      coerce_a
+      jump                L266
+
+L264:
+      pushstring          "no"
+      coerce_a
+L266:
+      add
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           159
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-3lo")
+      pushstring          ""
+      equals
+      not
+      setlocal            4
+
+      debugline           160
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_group_badge"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            4
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           161
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_owner_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-0L7")
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           162
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_group_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            4
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           164
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_group_owner_container"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            4
+      convert_b
+      dup
+      iftrue              L313
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-0L7")
+      convert_b
+L313:
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           166
+      getlocal            4
+      iffalse             L447
+
+      debug               1, "k", 7, 173
+      debugline           167
+      findpropstrict      QName(PackageNamespace("_-02H"), "_-Hp")
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Hn")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_group_badge"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Hn"), 1
+      getproperty         QName(Namespace("_-19d"), "widget")
+      callproperty        QName(PackageNamespace("_-02H"), "_-Hp"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-3lo")
+      setproperty         QName(Namespace("_-66n"), "badgeId")
+
+      debugline           168
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_name"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "groupName")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           169
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_name"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-6h1")
+      setproperty         QName(Namespace("_-6q"), "id")
+
+      debugline           170
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_group_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-6h1")
+      setproperty         QName(Namespace("_-6q"), "id")
+
+      debugline           171
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_group_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5vc")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           173
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-6h1")
+      callproperty        QName(PackageNamespace(""), "_-1Di"), 1
+      coerce              QName(PackageNamespace("_-2gX"), "_-x1")
+      setlocal            8
+
+      debugline           174
+      getlocal            8
+      iffalse             L445
+
+      debugline           175
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "_-5x1")
+      iffalse             L394
+
+      debugline           176
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_mode_admin"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushstring          "newnavigator_icon_group_owner"
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      jump                L417
+
+      debugline           178
+L394:
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "_-1ol")
+      iffalse             L408
+
+      debugline           179
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_mode_admin"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushstring          "newnavigator_icon_group_admin"
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      jump                L417
+
+      debugline           182
+L408:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_mode_admin"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushnull
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           184
+L417:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_mode_size"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushstring          "${image.library.url}guilds/grouptype_icon_"
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "type")
+      add
+      pushstring          ".png"
+      add
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           185
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_mode_furnish"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "_-3zw")
+      iftrue              L443
+
+      pushnull
+      coerce_s
+      jump                L444
+
+L443:
+      pushstring          "${image.library.url}guilds/group_decorate_icon.png"
+L444:
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+L445:
+      jump                L474
+
+      debugline           189
+L447:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_mode_admin"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushnull
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           190
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_mode_size"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushnull
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           191
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "group_mode_furnish"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushnull
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           194
+L474:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-0eH")
+      pushbyte            0
+      greaterthan
+      setlocal            5
+
+      debugline           195
+      getlocal            5
+      iffalse             L550
+
+      debug               1, "k", 8, 196
+      debug               1, "k", 9, 197
+      debugline           196
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "localization")
+      pushstring          "navigator.eventsettings.name"
+      callproperty        QName(Namespace("_-0o7"), "getLocalizationWithParams"), 1
+      pushstring          ": "
+      add
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-61g")
+      add
+      coerce_s
+      setlocal            9
+
+      debugline           197
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "localization")
+      pushstring          "navigator.eventsettings.desc"
+      callproperty        QName(Namespace("_-0o7"), "getLocalizationWithParams"), 1
+      pushstring          ": "
+      add
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-5la")
+      add
+      pushstring          "\n"
+      add
+      setlocal            10
+
+      debugline           198
+      getlocal            10
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "localization")
+      pushstring          "roomad.event.expiration_time"
+      callproperty        QName(Namespace("_-0o7"), "getLocalizationWithParams"), 1
+      getlex              QName(PackageNamespace("_-2-E"), "_-67")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "localization")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-0eH")
+      pushbyte            60
+      multiply
+      callproperty        QName(PackageNamespace(""), "_-2Gi"), 2
+      add
+      add
+      coerce_s
+      setlocal            10
+
+      debugline           200
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "event_name"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            9
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           201
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "event_desc"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            10
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           203
+L550:
+      getlocal3
+      pushstring          "event_info"
+      callproperty        QName(Namespace("_-0Pj"), "getListItemByName"), 1
+      getlocal            5
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           204
+      getlocal2
+      callpropvoid        QName(Namespace("_-0Pj"), "arrangeListItems"), 0
+
+      debugline           206
+      getlocal0
+      getlex              Multiname("Vector", [PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), PrivateNamespace("RoomInfoPopup.as$1829", "_-3zL:RoomInfoPopup#1"), PackageNamespace(""), PackageNamespace("_-3zL"), PackageInternalNs("_-3zL"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-VL"), StaticProtectedNs("_-VL"), PackageNamespace("__AS3__.vec")])
+      getlex              QName(PackageNamespace(""), "String")
+      applytype           1
+      pushbyte            0
+      construct           1
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5GL")
+
+      debugline           207
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "tag_list"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      setlocal            6
+
+      debugline           208
+      getlocal            6
+      callpropvoid        QName(Namespace("_-0Pj"), "_-1En"), 0
+
+      debugline           209
+      pushbyte            0
+      setlocal            7
+
+      jump                L605
+
+L582:
+      label
+      debugline           210
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5GL")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "tags")
+      getlocal            7
+      getproperty         MultinameL([PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), PrivateNamespace("RoomInfoPopup.as$1829", "_-3zL:RoomInfoPopup#1"), PackageNamespace(""), PackageNamespace("_-3zL"), PackageInternalNs("_-3zL"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-VL"), StaticProtectedNs("_-VL")])
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           211
+      getlocal            6
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "tags")
+      getlocal            7
+      getproperty         MultinameL([PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), PrivateNamespace("RoomInfoPopup.as$1829", "_-3zL:RoomInfoPopup#1"), PackageNamespace(""), PackageNamespace("_-3zL"), PackageInternalNs("_-3zL"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-VL"), StaticProtectedNs("_-VL")])
+      getlocal            7
+      callproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-6bb"), 2
+      callpropvoid        QName(Namespace("_-0Pj"), "addListItem"), 1
+
+      debugline           209
+      inclocal_i          7
+L605:
+      getlocal            7
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "tags")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L582
+
+      debugline           213
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4lZ"), 0
+
+      debugline           215
+      getlocal0
+      pushstring          "properties"
+      pushstring          "${navigator.roompopup.property.trading}"
+      getlex              QName(PackageNamespace("_-1N4"), "_-5h5")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-3sg")
+      callproperty        QName(PackageNamespace(""), "_-1qN"), 1
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-36R"), 3
+
+      debugline           217
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "context")
+      getproperty         QName(Namespace("_-s9"), "configuration")
+      pushstring          "room.ranking.enabled"
+      callproperty        QName(Namespace("_-37g"), "getBoolean"), 1
+      iffalse             L642
+
+      debugline           218
+      getlocal0
+      pushstring          "properties"
+      pushstring          "${navigator.roompopup.property.ranking}"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "ranking")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-36R"), 3
+
+      debugline           221
+L642:
+      getlocal0
+      pushstring          "properties"
+      pushstring          "${navigator.roompopup.property.max_users}"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-1QU")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-36R"), 3
+
+      debugline           223
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_thumbnail"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushstring          "newnavigator_default_room"
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           225
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "_-5BF")
+      getlex              QName(PackageNamespace("_-5U8"), "_-2Tr")
+      getproperty         QName(PackageNamespace(""), "NAVIGATOR_ROOM_THUMBNAIL_CAMERA")
+      callproperty        QName(Namespace("_-0wj"), "isPerkAllowed"), 1
+      iffalse             L734
+
+      debugline           226
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "officialRoomPicRef")
+      pushnull
+      ifeq                L716
+
+      debugline           227
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      pushstring          "new.navigator.official.room.thumbnails.in.amazon"
+      callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+      iffalse             L699
+
+      debugline           228
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_thumbnail"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      pushstring          "navigator.thumbnail.url_base"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      add
+      pushstring          ".png"
+      add
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      jump                L714
+
+      debugline           230
+L699:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_thumbnail"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      pushstring          "image.library.url"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "officialRoomPicRef")
+      add
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+L714:
+      jump                L734
+
+      debugline           233
+L716:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "room_thumbnail"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      pushstring          "navigator.thumbnail.url_base"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      add
+      pushstring          ".png"
+      add
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           237
+L734:
+      getlocal3
+      callpropvoid        QName(Namespace("_-0Pj"), "arrangeListItems"), 0
+
+      debugline           238
+      getlocal1
+      callpropvoid        QName(Namespace("_-0Pj"), "arrangeListItems"), 0
+
+      debugline           239
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4lZ")
+   method
+    refid "_-3zL:RoomInfoPopup/_-4lZ"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           241
+      getlocal0
+      pushscope
+
+      debugline           242
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "properties"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IItemListWindow"), 1
+      callpropvoid        QName(Namespace("_-0Pj"), "_-1En"), 0
+
+      debugline           243
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-36R")
+   method
+    refid "_-3zL:RoomInfoPopup/_-36R"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           245
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 245
+      debug               1, "k", 1, 245
+      debug               1, "k", 2, 245
+      debug               1, "k", 3, 246
+      debug               1, "k", 4, 247
+      debugline           246
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      getlocal1
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IItemListWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "IItemListWindow")
+      setlocal            4
+
+      debugline           247
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      findpropstrict      QName(PackageNamespace(""), "XML")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "assets")
+      pushstring          "property_xml"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getproperty         QName(Namespace("_-6i0"), "content")
+      callproperty        QName(PackageNamespace(""), "XML"), 1
+      callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 1
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            5
+
+      debugline           248
+      getlocal            5
+      pushstring          "property_name"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal2
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           249
+      getlocal            5
+      pushstring          "property_value"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal3
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           250
+      getlocal            4
+      getlocal            5
+      callpropvoid        QName(Namespace("_-0Pj"), "addListItem"), 1
+
+      debugline           251
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-6bb")
+   method
+    refid "_-3zL:RoomInfoPopup/_-6bb"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           253
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 253
+      debug               1, "k", 1, 253
+      debug               1, "k", 2, 254
+      debug               1, "k", 3, 255
+      debugline           254
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      findpropstrict      QName(PackageNamespace(""), "XML")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "assets")
+      pushstring          "tag_xml"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getproperty         QName(Namespace("_-6i0"), "content")
+      callproperty        QName(PackageNamespace(""), "XML"), 1
+      callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 1
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal3
+
+      debugline           255
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IRegionWindow")
+      getlocal3
+      pushstring          "tag_region"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IRegionWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "IRegionWindow")
+      setlocal            4
+
+      debugline           256
+      getlocal            4
+      getlocal2
+      setproperty         QName(Namespace("_-6q"), "id")
+
+      debugline           257
+      getlocal            4
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4cJ")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           258
+      getlocal            4
+      pushstring          "tag_text"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushstring          "#"
+      getlocal1
+      add
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           259
+      getlocal            4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "createWindow")
+   method
+    refid "_-3zL:RoomInfoPopup/createWindow"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           262
+      getlocal0
+      pushscope
+
+      debugline           263
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      findpropstrict      QName(PackageNamespace(""), "XML")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "assets")
+      pushstring          "room_info_popup_bubble_xml"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getproperty         QName(Namespace("_-6i0"), "content")
+      callproperty        QName(PackageNamespace(""), "XML"), 1
+      callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 1
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+
+      debugline           264
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5Q8")
+   method
+    refid "_-3zL:RoomInfoPopup/_-5Q8"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           266
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 266
+      debug               1, "k", 1, 266
+      debugline           267
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L22
+
+      debugline           268
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "id")
+      callpropvoid        QName(PackageNamespace(""), "_-6X"), 1
+
+      debugline           269
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "destroy"), 0
+
+      debugline           271
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5vc")
+   method
+    refid "_-3zL:RoomInfoPopup/_-5vc"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           273
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 273
+      debug               1, "k", 1, 273
+      debugline           274
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L22
+
+      debugline           275
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "id")
+      callpropvoid        QName(PackageNamespace(""), "_-3cL"), 1
+
+      debugline           276
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "destroy"), 0
+
+      debugline           278
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1BJ")
+   method
+    refid "_-3zL:RoomInfoPopup/_-1BJ"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           280
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 280
+      debug               1, "k", 1, 280
+      debugline           281
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L30
+
+      debugline           282
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "_-64R")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "roomName")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "description")
+      callpropvoid        QName(Namespace("_-Gd"), "reportRoom"), 3
+
+      debugline           283
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "destroy"), 0
+
+      debugline           285
+L30:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4cJ")
+   method
+    refid "_-3zL:RoomInfoPopup/_-4cJ"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           287
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 287
+      debug               1, "k", 1, 287
+      debugline           288
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L25
+
+      debugline           289
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5GL")
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "id")
+      getproperty         MultinameL([PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), PrivateNamespace("RoomInfoPopup.as$1829", "_-3zL:RoomInfoPopup#1"), PackageNamespace(""), PackageNamespace("_-3zL"), PackageInternalNs("_-3zL"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-VL"), StaticProtectedNs("_-VL")])
+      callpropvoid        QName(PackageNamespace(""), "performTagSearch"), 1
+
+      debugline           290
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "destroy"), 0
+
+      debugline           292
+L25:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4sf")
+   method
+    refid "_-3zL:RoomInfoPopup/_-4sf"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           294
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2Gb"), "RoomSettingsCtrl")
+      setlocal3
+
+      debug               1, "k", 0, 294
+      debug               1, "k", 1, 294
+      debugline           295
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L38
+
+      debug               1, "k", 2, 296
+      debugline           296
+      findpropstrict      QName(PackageNamespace("_-3cB"), "_-0yp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "_-3Do")
+      callproperty        QName(PackageNamespace("_-3cB"), "_-0yp"), 1
+      getproperty         QName(PackageNamespace(""), "_-0Kz")
+      coerce              QName(PackageNamespace("_-2Gb"), "RoomSettingsCtrl")
+      setlocal3
+
+      debugline           297
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "_-6h1")
+      callpropvoid        QName(PackageNamespace(""), "_-34P"), 2
+
+      debugline           298
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "destroy"), 0
+
+      debugline           300
+L38:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-51P")
+   method
+    refid "_-3zL:RoomInfoPopup/_-51P"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           302
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 302
+      debug               1, "k", 1, 302
+      debugline           303
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L66
+
+      debugline           304
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5w8")
+      iftrue              L33
+
+      debugline           305
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "communication")
+      getproperty         QName(Namespace("_-mI"), "connection")
+      findpropstrict      QName(PackageNamespace("_-1sV"), "_-1QW")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      constructprop       QName(PackageNamespace("_-1sV"), "_-1QW"), 1
+      callpropvoid        QName(Namespace("_-6NY"), "send"), 1
+
+      debugline           306
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5w8")
+
+      jump                L48
+
+      debugline           308
+L33:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "communication")
+      getproperty         QName(Namespace("_-mI"), "connection")
+      findpropstrict      QName(PackageNamespace("_-1sV"), "_-3sP")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      constructprop       QName(PackageNamespace("_-1sV"), "_-3sP"), 1
+      callpropvoid        QName(Namespace("_-6NY"), "send"), 1
+
+      debugline           309
+      getlocal0
+      pushfalse
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5w8")
+
+      debugline           311
+L48:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "favorite_icon"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushstring          "newnavigator_icon_fav_"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5w8")
+      iffalse             L61
+
+      pushstring          "yes"
+      coerce_a
+      jump                L63
+
+L61:
+      pushstring          "no"
+      coerce_a
+L63:
+      add
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           313
+L66:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-5aB")
+   method
+    refid "_-3zL:RoomInfoPopup/_-5aB"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           315
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 315
+      debug               1, "k", 1, 315
+      debugline           316
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L50
+
+      debugline           317
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4YF")
+      iftrue              L32
+
+      debugline           318
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "communication")
+      getproperty         QName(Namespace("_-mI"), "connection")
+      findpropstrict      QName(PackageNamespace("_-1sV"), "_-4ef")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-3iM")
+      getproperty         QName(PackageNamespace(""), "flatId")
+      constructprop       QName(PackageNamespace("_-1sV"), "_-4ef"), 1
+      callpropvoid        QName(Namespace("_-6NY"), "send"), 1
+
+      debugline           319
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4YF")
+
+      debugline           321
+L32:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      pushstring          "home_icon"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "_-1Vp"), 1
+      pushstring          "newnavigator_icon_home_"
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-4YF")
+      iffalse             L45
+
+      pushstring          "yes"
+      coerce_a
+      jump                L47
+
+L45:
+      pushstring          "no"
+      coerce_a
+L47:
+      add
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           323
+L50:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "destroy")
+   method
+    refid "_-3zL:RoomInfoPopup/destroy"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           325
+      getlocal0
+      pushscope
+
+      debugline           326
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      iffalse             L13
+
+      debugline           327
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+      callpropvoid        QName(Namespace("_-6q"), "destroy"), 0
+
+      debugline           329
+L13:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-VL", "_-3zL:RoomInfoPopup#0"), "_-Fi")
+
+      debugline           330
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3zL:RoomInfoPopup/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

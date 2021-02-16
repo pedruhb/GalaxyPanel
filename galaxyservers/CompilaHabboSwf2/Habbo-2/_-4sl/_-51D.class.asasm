@@ -1,0 +1,234 @@
+class
+ refid "_-4sl:_-51D"
+ instance QName(PackageNamespace("_-4sl"), "_-51D")
+  extends QName(PackageNamespace("_-4sl"), "_-Qd")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6Wx")
+  iinit
+   refid "_-4sl:_-51D/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           51
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "animationId") flag OVERRIDE
+   method
+    refid "_-4sl:_-51D/animationId/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           12
+      getlocal0
+      pushscope
+
+      debugline           14
+      pushbyte            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6Wx"), "getFrameNumber") flag OVERRIDE
+   method
+    refid "_-4sl:_-51D/_-6Wx:getFrameNumber"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 23
+      debug               1, "k", 1, 23
+      debug               1, "k", 2, 24
+      debug               1, "k", 3, 25
+      debugline           24
+      findpropstrict      QName(ProtectedNamespace("_-1E4"), "getSpriteTag")
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-1E4"), "direction")
+      getlocal2
+      callproperty        QName(ProtectedNamespace("_-1E4"), "getSpriteTag"), 3
+      coerce_s
+      setlocal3
+
+      debugline           25
+      getlocal0
+      getsuper            QName(PackageNamespace(""), "animationId")
+      convert_i
+      setlocal            4
+
+      jump                L64
+
+L22:
+      label
+      debugline           28
+      getlocal            4
+      pushbyte            60
+      modulo
+      pushbyte            10
+      modulo
+      returnvalue
+
+L30:
+      label
+      debugline           31
+      getlocal            4
+      pushbyte            60
+      modulo
+      pushbyte            10
+      divide
+      returnvalue
+
+L38:
+      label
+      debugline           35
+      getlocal            4
+      pushbyte            60
+      divide
+      pushbyte            10
+      modulo
+      returnvalue
+
+L46:
+      label
+      debugline           39
+      getlocal            4
+      pushbyte            60
+      divide
+      pushbyte            10
+      divide
+      pushbyte            10
+      modulo
+      returnvalue
+
+L56:
+      label
+      debugline           43
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(ProtectedNamespace("_-3vN"), "getFrameNumber"), 2
+      returnvalue
+
+      debugline           26
+L64:
+      getlocal3
+      setlocal            5
+
+      debugline           27
+      getlex              QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-v9")
+      getlocal            5
+      ifstrictne          L73
+
+      pushbyte            0
+      jump                L94
+
+      debugline           30
+L73:
+      getlex              QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-3Wl")
+      getlocal            5
+      ifstrictne          L79
+
+      pushbyte            1
+      jump                L94
+
+      debugline           34
+L79:
+      getlex              QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-07B")
+      getlocal            5
+      ifstrictne          L85
+
+      pushbyte            2
+      jump                L94
+
+      debugline           38
+L85:
+      getlex              QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-1j-")
+      getlocal            5
+      ifstrictne          L90
+
+      pushbyte            3
+      jump                L94
+
+L90:
+      jump                L93
+
+      pushbyte            4
+      jump                L94
+
+L93:
+      pushbyte            4
+L94:
+      kill                5
+      lookupswitch        L56, [L22, L30, L38, L46, L56]
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4sl:_-51D/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 6
+    findproperty        QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-v9")
+    pushstring          "seconds_sprite"
+    initproperty        QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-v9")
+
+    debug               1, "k", 1, 7
+    findproperty        QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-3Wl")
+    pushstring          "ten_seconds_sprite"
+    initproperty        QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-3Wl")
+
+    debug               1, "k", 2, 8
+    findproperty        QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-07B")
+    pushstring          "minutes_sprite"
+    initproperty        QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-07B")
+
+    debug               1, "k", 3, 9
+    findproperty        QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-1j-")
+    pushstring          "ten_minutes_sprite"
+    initproperty        QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-1j-")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-v9") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("seconds_sprite") end
+ trait const QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-3Wl") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("ten_seconds_sprite") end
+ trait const QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-07B") slotid 3 type QName(PackageNamespace(""), "String") value Utf8("minutes_sprite") end
+ trait const QName(PrivateNamespace("_-6Wx", "_-4sl:_-51D"), "_-1j-") slotid 4 type QName(PackageNamespace(""), "String") value Utf8("ten_minutes_sprite") end
+end ; class

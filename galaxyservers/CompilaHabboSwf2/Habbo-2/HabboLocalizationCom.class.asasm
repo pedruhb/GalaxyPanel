@@ -1,0 +1,63 @@
+class
+ refid "HabboLocalizationCom"
+ instance QName(PackageNamespace(""), "HabboLocalizationCom")
+  extends QName(PackageNamespace("mx.core"), "SimpleApplication")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("HabboLocalizationCom")
+  iinit
+   refid "HabboLocalizationCom/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 11
+    maxscopedepth 12
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           32
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "HabboLocalizationCom/cinit"
+  body
+   maxstack 8
+   localcount 1
+   initscopedepth 10
+   maxscopedepth 11
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 14
+    findproperty        QName(PackageNamespace(""), "requiredClasses")
+    findpropstrict      QName(PackageNamespace(""), "Array")
+    getlex              QName(PackageNamespace("com.sulake.bootstrap"), "HabboLocalizationManagerBootstrap")
+    getlex              QName(PackageNamespace("com.sulake.iid"), "IIDCoreLocalizationManager")
+    getlex              QName(PackageNamespace("com.sulake.iid"), "IIDHabboLocalizationManager")
+    getlex              QName(PackageNamespace("_-5WN"), "ICoreLocalizationManager")
+    getlex              QName(PackageNamespace("_-647"), "_-6kP")
+    getlex              QName(PackageNamespace("_-647"), "HabboLocalizationManager")
+    constructprop       QName(PackageNamespace(""), "Array"), 6
+    setproperty         QName(PackageNamespace(""), "requiredClasses")
+
+    debug               1, "k", 1, 23
+    findproperty        QName(PackageNamespace(""), "manifest")
+    getlex              QName(PackageNamespace(""), "_-2id")
+    setproperty         QName(PackageNamespace(""), "manifest")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "requiredClasses") slotid 1 type QName(PackageNamespace(""), "Array") end
+ trait slot QName(PackageNamespace(""), "manifest") slotid 2 type QName(PackageNamespace(""), "Class") end
+end ; class

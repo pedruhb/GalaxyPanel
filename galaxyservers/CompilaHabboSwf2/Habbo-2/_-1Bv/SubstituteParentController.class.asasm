@@ -1,0 +1,887 @@
+class
+ refid "_-1Bv:SubstituteParentController"
+ instance QName(PackageNamespace("_-1Bv"), "SubstituteParentController")
+  extends QName(PackageNamespace("_-X3"), "WindowController")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4iw")
+  iinit
+   refid "_-1Bv:SubstituteParentController/iinit"
+   param QName(PackageNamespace("_-X3"), "WindowContext")
+   body
+    maxstack 12
+    localcount 2
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           18
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 18
+     debugline           20
+     getlocal0
+     pushstring          "_CONTEXT_SUBSTITUTE_PARENT"
+     debugline           22
+     pushbyte            0
+     debugline           23
+     pushbyte            0
+     debugline           24
+     getlex              QName(PackageNamespace("_-0DF"), "WindowParam")
+     getproperty         QName(PackageNamespace(""), "_-5qa")
+     debugline           25
+     getlocal1
+     debugline           26
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+     pushbyte            0
+     dup
+     pushshort           2000
+     pushshort           2000
+     constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 4
+     debugline           27
+     pushnull
+     debugline           28
+     pushnull
+     debugline           29
+     pushnull
+     debugline           30
+     pushnull
+     debugline           31
+     pushbyte            0
+     constructsuper      11
+
+     debugline           33
+     findproperty        QName(ProtectedNamespace("_-9E"), "_-ys")
+     getlex              Multiname("Vector", [PrivateNamespace("_-4iw", "_-1Bv:SubstituteParentController#0"), PackageNamespace(""), PrivateNamespace("SubstituteParentController.as$2839", "_-1Bv:SubstituteParentController#1"), PackageNamespace("_-1Bv"), PackageInternalNs("_-1Bv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4iw"), StaticProtectedNs("_-4iw"), StaticProtectedNs("_-9E"), StaticProtectedNs("_-0ba"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace("_-X3"), "IWindow")
+     applytype           1
+     construct           0
+     initproperty        QName(ProtectedNamespace("_-9E"), "_-ys")
+
+     debugline           34
+     findproperty        QName(ProtectedNamespace("_-9E"), "_-2ij")
+     pushfalse
+     initproperty        QName(ProtectedNamespace("_-9E"), "_-2ij")
+
+     debugline           35
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "getGraphicContext") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/getGraphicContext"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("_-20W"), "IGraphicContext")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 41
+      debugline           43
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "setupGraphicsContext") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/setupGraphicsContext"
+    returns QName(PackageNamespace("_-20W"), "IGraphicContext")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           50
+      getlocal0
+      pushscope
+
+      debugline           52
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4iw", "_-1Bv:SubstituteParentController#0"), "_-0rq")
+   method
+    refid "_-1Bv:SubstituteParentController/_-0rq"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           59
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 59
+      debug               1, "k", 1, 61
+      debugline           61
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "window")
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           63
+      findpropstrict      QName(PackageNamespace(""), "getChildIndex")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getChildIndex"), 1
+      pushbyte            255
+      ifne                L19
+
+      jump                L30
+
+      debugline           66
+L19:
+      getlocal2
+      getlex              QName(PackageNamespace("_-0DF"), "WindowParam")
+      getproperty         QName(PackageNamespace(""), "_-5qa")
+      callproperty        QName(Namespace("_-6q"), "_-rL"), 1
+      iftrue              L30
+
+      debugline           67
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "desktop")
+      getlocal2
+      callpropvoid        QName(Namespace("_-3si"), "addChild"), 1
+
+      debugline           69
+L30:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "addChild") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/addChild"
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           76
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 76
+      debugline           78
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           79
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "addChildAt") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/addChildAt"
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           87
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 87
+      debug               1, "k", 1, 87
+      debug               1, "k", 2, 89
+      debugline           89
+      findpropstrict      QName(PackageNamespace("_-X3"), "WindowController")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-X3"), "WindowController"), 1
+      coerce              QName(PackageNamespace("_-X3"), "WindowController")
+      setlocal3
+
+      debugline           91
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "parent")
+      pushnull
+      ifeq                L26
+
+      debugline           92
+      findpropstrict      QName(PackageNamespace("_-X3"), "WindowController")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "parent")
+      callproperty        QName(PackageNamespace("_-X3"), "WindowController"), 1
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+      debugline           94
+L26:
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal2
+      pushbyte            0
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 3
+
+      debugline           95
+      getlocal3
+      getlocal0
+      setproperty         QName(PackageNamespace(""), "parent")
+
+      debugline           98
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getChildAt") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/getChildAt"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           106
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 106
+      debugline           108
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      iffalse             L21
+
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getproperty         QName(PackageNamespace(""), "length")
+      lessthan
+      iffalse             L18
+
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-4iw", "_-1Bv:SubstituteParentController#0"), PackageNamespace(""), PrivateNamespace("SubstituteParentController.as$2839", "_-1Bv:SubstituteParentController#1"), PackageNamespace("_-1Bv"), PackageInternalNs("_-1Bv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4iw"), StaticProtectedNs("_-4iw"), StaticProtectedNs("_-9E"), StaticProtectedNs("_-0ba")])
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      jump                L20
+
+L18:
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+L20:
+      jump                L23
+
+L21:
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+L23:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getChildByID") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/getChildByID"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           116
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debug               1, "k", 0, 116
+      debugline           118
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      iffalse             L39
+
+      debug               1, "k", 1, 119
+      debugline           119
+      pushbyte            0
+      setlocal3
+
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      coerce_a
+      setlocal            4
+
+      jump                L34
+
+L19:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           120
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "id")
+      getlocal1
+      ifne                L34
+
+      debugline           121
+      getlocal2
+      returnvalue
+
+      debugline           119
+L34:
+      hasnext2            4, 3
+      iftrue              L19
+
+      kill                4
+      kill                3
+      debugline           123
+L39:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getChildByName") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/getChildByName"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           131
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debug               1, "k", 0, 131
+      debugline           133
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      iffalse             L39
+
+      debug               1, "k", 1, 134
+      debugline           134
+      pushbyte            0
+      setlocal3
+
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      coerce_a
+      setlocal            4
+
+      jump                L34
+
+L19:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           135
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "name")
+      getlocal1
+      ifne                L34
+
+      debugline           136
+      getlocal2
+      returnvalue
+
+      debugline           134
+L34:
+      hasnext2            4, 3
+      iftrue              L19
+
+      kill                4
+      kill                3
+      debugline           138
+L39:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "findChildByName") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/findChildByName"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           148
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "WindowController")
+      setlocal2
+
+      debug               1, "k", 0, 148
+      debug               1, "k", 1, 150
+      debugline           152
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      iffalse             L73
+
+      debugline           153
+      pushbyte            0
+      setlocal3
+
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      coerce_a
+      setlocal            4
+
+      jump                L34
+
+L19:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-X3"), "WindowController")
+      setlocal2
+
+      debugline           154
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "name")
+      getlocal1
+      ifne                L34
+
+      debugline           155
+      getlocal2
+      returnvalue
+
+      debugline           153
+L34:
+      hasnext2            4, 3
+      iftrue              L19
+
+      kill                4
+      kill                3
+      debugline           157
+      pushbyte            0
+      setlocal3
+
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      coerce_a
+      setlocal            4
+
+      jump                L68
+
+L45:
+      label
+      getlocal            4
+      getlocal3
+      nextvalue
+      coerce              QName(PackageNamespace("_-X3"), "WindowController")
+      setlocal2
+
+      debugline           158
+      getlocal2
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-X3"), "WindowController")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "WindowController")
+      setlocal2
+
+      debugline           159
+      getlocal2
+      iffalse             L68
+
+      debugline           160
+      getlocal2
+      getlex              QName(PackageNamespace("_-X3"), "IWindow")
+      astypelate
+      returnvalue
+
+      debugline           157
+L68:
+      hasnext2            4, 3
+      iftrue              L45
+
+      kill                4
+      kill                3
+      debugline           162
+L73:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "removeChild") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/removeChild"
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace("_-X3"), "IWindow")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           170
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 170
+      debug               1, "k", 1, 172
+      debugline           172
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal2
+
+      debugline           174
+      getlocal2
+      pushbyte            255
+      ifngt               L29
+
+      debugline           175
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal2
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           177
+      getlocal1
+      pushnull
+      setproperty         QName(Namespace("_-6q"), "parent")
+
+      debugline           178
+      getlocal1
+      returnvalue
+
+      debugline           180
+L29:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "setChildIndex") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/setChildIndex"
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           188
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 188
+      debug               1, "k", 1, 188
+      debug               1, "k", 2, 190
+      debugline           190
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal3
+
+      debugline           192
+      getlocal3
+      pushbyte            255
+      greaterthan
+      dup
+      iffalse             L24
+
+      pop
+      getlocal2
+      getlocal3
+      equals
+      not
+L24:
+      iffalse             L37
+
+      debugline           193
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal3
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           194
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal2
+      pushbyte            0
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 3
+
+      debugline           196
+L37:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "swapChildren") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/swapChildren"
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 7
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           204
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal3
+
+      pushbyte            0
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal            5
+
+      pushbyte            0
+      setlocal            6
+
+      debug               1, "k", 0, 204
+      debug               1, "k", 1, 204
+      debugline           208
+      getlocal1
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L27
+
+      pop
+      getlocal2
+      pushnull
+      equals
+      not
+L27:
+      dup
+      iffalse             L34
+
+      pop
+      getlocal1
+      getlocal2
+      equals
+      not
+L34:
+      iffalse             L112
+
+      debug               1, "k", 2, 212
+      debug               1, "k", 3, 215
+      debugline           212
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal3
+
+      debugline           213
+      getlocal3
+      pushbyte            0
+      ifnlt               L49
+
+      returnvoid
+
+      debugline           215
+L49:
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal            4
+
+      debugline           216
+      getlocal            4
+      pushbyte            0
+      ifnlt               L60
+
+      returnvoid
+
+      debugline           220
+L60:
+      getlocal            4
+      getlocal3
+      ifnlt               L90
+
+      debug               1, "k", 4, 221
+      debug               1, "k", 5, 224
+      debugline           221
+      getlocal1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal            5
+
+      debugline           222
+      getlocal2
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal1
+
+      debugline           223
+      getlocal            5
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           224
+      getlocal3
+      convert_i
+      setlocal            6
+
+      debugline           225
+      getlocal            4
+      convert_i
+      setlocal3
+
+      debugline           226
+      getlocal            6
+      convert_i
+      setlocal            4
+
+      debugline           230
+L90:
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal            4
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           231
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal3
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           235
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal3
+      pushbyte            0
+      getlocal2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 3
+
+      debugline           236
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal            4
+      pushbyte            0
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 3
+
+      debugline           238
+L112:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "swapChildrenAt") flag OVERRIDE
+   method
+    refid "_-1Bv:SubstituteParentController/swapChildrenAt"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           246
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 246
+      debug               1, "k", 1, 246
+      debugline           248
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-4iw", "_-1Bv:SubstituteParentController#0"), PackageNamespace(""), PrivateNamespace("SubstituteParentController.as$2839", "_-1Bv:SubstituteParentController#1"), PackageNamespace("_-1Bv"), PackageInternalNs("_-1Bv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4iw"), StaticProtectedNs("_-4iw"), StaticProtectedNs("_-9E"), StaticProtectedNs("_-0ba")])
+      getlex              QName(ProtectedNamespace("_-9E"), "_-ys")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-4iw", "_-1Bv:SubstituteParentController#0"), PackageNamespace(""), PrivateNamespace("SubstituteParentController.as$2839", "_-1Bv:SubstituteParentController#1"), PackageNamespace("_-1Bv"), PackageInternalNs("_-1Bv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4iw"), StaticProtectedNs("_-4iw"), StaticProtectedNs("_-9E"), StaticProtectedNs("_-0ba")])
+      callpropvoid        QName(PackageNamespace(""), "swapChildren"), 2
+
+      debugline           249
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Bv:SubstituteParentController/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

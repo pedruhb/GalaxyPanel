@@ -1,0 +1,175 @@
+class
+ refid "_-qa:_-0sx"
+ instance QName(PackageNamespace("_-qa"), "_-0sx")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6ej")
+  iinit
+   refid "_-qa:_-0sx/iinit"
+   param QName(PackageNamespace("_-47b"), "HabboCatalog")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           16
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 16
+     debugline           16
+     getlocal0
+     constructsuper      0
+
+     debugline           17
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "utils")
+     pushstring          "vip_benefits"
+     callproperty        QName(PackageNamespace(""), "createWindow"), 1
+     getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+     astypelate
+     initproperty        QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_-Fi")
+
+     debugline           18
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_-Fi")
+     pushstring          "header_button_close"
+     callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+     getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+     getproperty         QName(PackageNamespace(""), "CLICK")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_-5ob")
+     callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+     debugline           19
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_-Fi")
+     callpropvoid        QName(Namespace("_-6q"), "center"), 0
+
+     debugline           20
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_disposed") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-qa:_-0sx/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           22
+      getlocal0
+      pushscope
+
+      debugline           23
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_disposed")
+      iftrue              L22
+
+      debugline           24
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_-Fi")
+      pushnull
+      ifeq                L22
+
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_-Fi")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           26
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_-Fi")
+
+      debugline           30
+L22:
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_disposed")
+
+      debugline           31
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-qa:_-0sx/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_disposed")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-6ej", "_-qa:_-0sx"), "_-5ob")
+   method
+    refid "_-qa:_-0sx/_-5ob"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 37
+      debugline           38
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           39
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-qa:_-0sx/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

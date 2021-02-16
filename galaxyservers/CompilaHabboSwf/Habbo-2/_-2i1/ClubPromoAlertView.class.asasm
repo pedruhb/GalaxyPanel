@@ -1,0 +1,218 @@
+class
+ refid "_-2i1:ClubPromoAlertView"
+ instance QName(PackageNamespace("_-2i1"), "ClubPromoAlertView")
+  extends QName(PackageNamespace("_-2i1"), "AlertView")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0aK")
+  iinit
+   refid "_-2i1:ClubPromoAlertView/iinit"
+   param QName(PackageNamespace("_-2i1"), "_-42O")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           22
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 22
+     debug               1, "k", 1, 22
+     debug               1, "k", 2, 22
+     debug               1, "k", 3, 22
+     debugline           23
+     getlocal0
+     getlocal1
+     pushstring          "nav_promo_alert"
+     getlocal2
+     constructsuper      3
+
+     debugline           24
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_text")
+
+     debugline           25
+     getlocal0
+     getlocal            4
+     initproperty        QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_-5nu")
+
+     debugline           26
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_text") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_-5nu") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageInternalNs("_-2i1"), "setupAlertWindow") flag OVERRIDE
+   method
+    refid "_-2i1:ClubPromoAlertView/_-2i1:setupAlertWindow"
+    param QName(PackageNamespace("_-1Bv"), "IFrameWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 28
+      debug               1, "k", 1, 29
+      debug               1, "k", 2, 33
+      debug               1, "k", 3, 37
+      debugline           29
+      getlocal1
+      getproperty         QName(Namespace("_-jF"), "content")
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal2
+
+      debugline           31
+      getlocal2
+      pushstring          "body_text"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_text")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           32
+      getlocal2
+      pushstring          "promo_text"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_-5nu")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           33
+      getlocal2
+      pushstring          "ok"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal3
+
+      debugline           34
+      getlocal3
+      pushnull
+      ifeq                L45
+
+      debugline           35
+      getlocal3
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_-2W")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           37
+L45:
+      getlocal2
+      pushstring          "promo_container"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal            4
+
+      debugline           38
+      getlocal            4
+      pushnull
+      ifeq                L62
+
+      debugline           39
+      getlocal            4
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_-5mF")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           41
+L62:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_-2W")
+   method
+    refid "_-2i1:ClubPromoAlertView/_-2W"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 43
+      debugline           44
+      findpropstrict      QName(PackageNamespace(""), "dispose")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           45
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0aK", "_-2i1:ClubPromoAlertView"), "_-5mF")
+   method
+    refid "_-2i1:ClubPromoAlertView/_-5mF"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           47
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 47
+      debugline           48
+      getlex              QName(PackageNamespace(""), "navigator")
+      pushstring          "ClubPromoAlertView"
+      callpropvoid        QName(Namespace("_-0Vt"), "openCatalogClubPage"), 1
+
+      debugline           49
+      findpropstrict      QName(PackageNamespace(""), "dispose")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           50
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2i1:ClubPromoAlertView/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,614 @@
+class
+ refid "_-1Ei:FloorHeightMapMessageParser"
+ instance QName(PackageNamespace("_-1Ei"), "FloorHeightMapMessageParser")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-1SB", [PackageNamespace("_-6Wd")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-MU")
+  iinit
+   refid "_-1Ei:FloorHeightMapMessageParser/iinit"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     debugfile           "k"
+     debugline           14
+     getlocal0
+     newarray            0
+     initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-0uf")
+
+     getlocal0
+     constructsuper      0
+
+     debugline           116
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_text") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait slot QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-0uf") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-9r") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_height") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-36g") type QName(PackageNamespace(""), "Number") value Double(0) end
+  trait slot QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-6W0") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait getter QName(PackageNamespace(""), "width")
+   method
+    refid "_-1Ei:FloorHeightMapMessageParser/width/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-9r")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "height")
+   method
+    refid "_-1Ei:FloorHeightMapMessageParser/height/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           21
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_height")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "fixedWallsHeight")
+   method
+    refid "_-1Ei:FloorHeightMapMessageParser/fixedWallsHeight/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           22
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-6W0")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "scale")
+   method
+    refid "_-1Ei:FloorHeightMapMessageParser/scale/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-36g")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-327")
+   method
+    refid "_-1Ei:FloorHeightMapMessageParser/_-327"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 29
+      debug               1, "k", 1, 29
+      debug               1, "k", 2, 31
+      debugline           30
+      getlocal1
+      pushbyte            0
+      lessthan
+      dup
+      iftrue              L18
+
+      pop
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "width")
+      greaterequals
+L18:
+      dup
+      iftrue              L24
+
+      pop
+      getlocal2
+      pushbyte            0
+      lessthan
+L24:
+      dup
+      iftrue              L31
+
+      pop
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "height")
+      greaterequals
+L31:
+      iffalse             L36
+
+      getlex              QName(PackageNamespace("_-5y1"), "RoomPlaneParser")
+      getproperty         QName(PackageNamespace(""), "_-3DT")
+      returnvalue
+
+      debugline           31
+L36:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-0uf")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), PackageNamespace(""), PrivateNamespace("FloorHeightMapMessageParser.as$2427", "_-1Ei:FloorHeightMapMessageParser#1"), PackageNamespace("_-1Ei"), PackageInternalNs("_-1Ei"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-MU"), StaticProtectedNs("_-MU")])
+      getlex              QName(PackageNamespace(""), "Array")
+      astypelate
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      debugline           32
+      getlocal3
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), PackageNamespace(""), PrivateNamespace("FloorHeightMapMessageParser.as$2427", "_-1Ei:FloorHeightMapMessageParser#1"), PackageNamespace("_-1Ei"), PackageInternalNs("_-1Ei"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-MU"), StaticProtectedNs("_-MU")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "flush")
+   method
+    refid "_-1Ei:FloorHeightMapMessageParser/flush"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      debugline           36
+      getlocal0
+      newarray            0
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-0uf")
+
+      debugline           37
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-9r")
+
+      debugline           38
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_height")
+
+      debugline           39
+      getlocal0
+      pushstring          ""
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_text")
+
+      debugline           40
+      getlocal0
+      pushbyte            255
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-6W0")
+
+      debugline           42
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "parse")
+   method
+    refid "_-1Ei:FloorHeightMapMessageParser/parse"
+    param QName(PackageNamespace("_-6Wd"), "_-5nh")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 12
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           45
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            11
+
+      debug               1, "k", 0, 45
+      debug               1, "k", 1, 48
+      debug               1, "k", 2, 51
+      debug               1, "k", 3, 53
+      debug               1, "k", 4, 54
+      debug               1, "k", 5, 56
+      debug               1, "k", 6, 57
+      debug               1, "k", 7, 59
+      debug               1, "k", 8, 60
+      debug               1, "k", 9, 61
+      debugline           46
+      getlocal1
+      pushnull
+      ifne                L24
+
+      pushfalse
+      returnvalue
+
+      debugline           48
+L24:
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "readBoolean"), 0
+      convert_b
+      setlocal2
+
+      debugline           49
+      getlocal0
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "_-1u3"), 0
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-6W0")
+
+      debugline           50
+      getlocal0
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "readString"), 0
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_text")
+
+      debugline           51
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_text")
+      pushstring          "\r"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      debugline           53
+      pushbyte            0
+      setlocal            4
+
+      debugline           54
+      pushbyte            0
+      setlocal            5
+
+      debugline           56
+      pushbyte            0
+      setlocal            6
+
+      debugline           57
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            7
+
+      debugline           59
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_i
+      setlocal            8
+
+      debugline           60
+      pushbyte            0
+      setlocal            9
+
+      debugline           61
+      pushnull
+      coerce_s
+      setlocal            10
+
+      debugline           64
+      pushbyte            0
+      setlocal            5
+
+      jump                L95
+
+L74:
+      label
+      debugline           65
+      getlocal3
+      getlocal            5
+      getproperty         MultinameL([PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), PackageNamespace(""), PrivateNamespace("FloorHeightMapMessageParser.as$2427", "_-1Ei:FloorHeightMapMessageParser#1"), PackageNamespace("_-1Ei"), PackageInternalNs("_-1Ei"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-MU"), StaticProtectedNs("_-MU")])
+      getlex              QName(PackageNamespace(""), "String")
+      astypelate
+      coerce_s
+      setlocal            10
+
+      debugline           66
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "length")
+      getlocal            9
+      ifngt               L94
+
+      debugline           67
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "length")
+      convert_i
+      setlocal            9
+
+      debugline           64
+L94:
+      inclocal_i          5
+L95:
+      getlocal            5
+      getlocal            8
+      iflt                L74
+
+      debugline           71
+      getlocal0
+      newarray            0
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-0uf")
+
+      debugline           72
+      pushbyte            0
+      setlocal            5
+
+      jump                L133
+
+L106:
+      label
+      debugline           73
+      newarray            0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            7
+
+      debugline           74
+      pushbyte            0
+      setlocal            4
+
+      jump                L123
+
+L115:
+      label
+      debugline           75
+      getlocal            7
+      getlex              QName(PackageNamespace("_-5y1"), "RoomPlaneParser")
+      getproperty         QName(PackageNamespace(""), "_-3DT")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           74
+      inclocal_i          4
+L123:
+      getlocal            4
+      getlocal            9
+      iflt                L115
+
+      debugline           78
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-0uf")
+      getlocal            7
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           72
+      inclocal_i          5
+L133:
+      getlocal            5
+      getlocal            8
+      iflt                L106
+
+      debugline           82
+      getlocal0
+      getlocal            9
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-9r")
+
+      debugline           83
+      getlocal0
+      getlocal            8
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_height")
+
+      debugline           86
+      pushbyte            0
+      setlocal            5
+
+      jump                L222
+
+L148:
+      label
+      debugline           88
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-0uf")
+      getlocal            5
+      getproperty         MultinameL([PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), PackageNamespace(""), PrivateNamespace("FloorHeightMapMessageParser.as$2427", "_-1Ei:FloorHeightMapMessageParser#1"), PackageNamespace("_-1Ei"), PackageInternalNs("_-1Ei"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-MU"), StaticProtectedNs("_-MU")])
+      getlex              QName(PackageNamespace(""), "Array")
+      astypelate
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            7
+
+      debugline           91
+      getlocal3
+      getlocal            5
+      getproperty         MultinameL([PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), PackageNamespace(""), PrivateNamespace("FloorHeightMapMessageParser.as$2427", "_-1Ei:FloorHeightMapMessageParser#1"), PackageNamespace("_-1Ei"), PackageInternalNs("_-1Ei"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-MU"), StaticProtectedNs("_-MU")])
+      getlex              QName(PackageNamespace(""), "String")
+      astypelate
+      coerce_s
+      setlocal            10
+
+      debugline           92
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L221
+
+      debugline           93
+      pushbyte            0
+      setlocal            4
+
+      jump                L216
+
+L175:
+      label
+      debug               1, "k", 10, 94
+      debugline           94
+      getlocal            10
+      getlocal            4
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+      coerce_s
+      setlocal            11
+
+      debugline           95
+      getlocal            11
+      pushstring          "x"
+      equals
+      not
+      dup
+      iffalse             L195
+
+      pop
+      getlocal            11
+      pushstring          "X"
+      equals
+      not
+L195:
+      iffalse             L205
+
+      debugline           97
+      findpropstrict      QName(PackageNamespace(""), "parseInt")
+      getlocal            11
+      pushbyte            36
+      callproperty        QName(PackageNamespace(""), "parseInt"), 2
+      convert_i
+      setlocal            6
+
+      jump                L210
+
+      debugline           99
+L205:
+      getlex              QName(PackageNamespace("_-5y1"), "RoomPlaneParser")
+      getproperty         QName(PackageNamespace(""), "_-3DT")
+      convert_i
+      setlocal            6
+
+      debugline           102
+L210:
+      getlocal            7
+      getlocal            4
+      getlocal            6
+      setproperty         MultinameL([PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), PackageNamespace(""), PrivateNamespace("FloorHeightMapMessageParser.as$2427", "_-1Ei:FloorHeightMapMessageParser#1"), PackageNamespace("_-1Ei"), PackageInternalNs("_-1Ei"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-MU"), StaticProtectedNs("_-MU")])
+
+      debugline           93
+      inclocal_i          4
+L216:
+      getlocal            4
+      getlocal            10
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L175
+
+      debugline           86
+L221:
+      inclocal_i          5
+L222:
+      getlocal            5
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L148
+
+      debugline           107
+      getlocal0
+      getlocal2
+      iffalse             L233
+
+      pushbyte            32
+      convert_d
+      jump                L235
+
+L233:
+      pushbyte            64
+      convert_d
+L235:
+      initproperty        QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_-36g")
+
+      debugline           108
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "text")
+   method
+    refid "_-1Ei:FloorHeightMapMessageParser/text/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           111
+      getlocal0
+      pushscope
+
+      debugline           112
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-MU", "_-1Ei:FloorHeightMapMessageParser#0"), "_text")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Ei:FloorHeightMapMessageParser/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

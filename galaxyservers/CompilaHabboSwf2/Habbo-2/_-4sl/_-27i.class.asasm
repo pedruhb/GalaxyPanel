@@ -1,0 +1,218 @@
+class
+ refid "_-4sl:_-27i"
+ instance QName(PackageNamespace("_-4sl"), "_-27i")
+  extends QName(PackageNamespace("_-4sl"), "_-Qd")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-54Q")
+  iinit
+   refid "_-4sl:_-27i/iinit"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     pushscope
+
+     debugline           5
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     constructprop       QName(PackageNamespace(""), "Array"), 0
+     initproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6l")
+
+     debugline           19
+     getlocal0
+     constructsuper      0
+
+     debugline           20
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6l") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-4Ru") type QName(PackageNamespace(""), "int") end
+  trait method QName(ProtectedNamespace("_-54Q"), "setAnimation") flag OVERRIDE
+   method
+    refid "_-4sl:_-27i/_-54Q:setAnimation"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           26
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 26
+      debugline           30
+      getlocal1
+      getlex              QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-0-2")
+      ifne                L24
+
+      debugline           33
+      getlocal0
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      initproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6l")
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6l")
+      getlex              QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-0AS")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           35
+      getlocal0
+      getlex              QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6C7")
+      initproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-4Ru")
+
+      debugline           38
+L24:
+      getlocal0
+      getlocal1
+      callsupervoid       QName(ProtectedNamespace("_-3vN"), "setAnimation"), 1
+      debugline           39
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-54Q"), "updateAnimation") flag OVERRIDE
+   method
+    refid "_-4sl:_-27i/_-54Q:updateAnimation"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 46
+      debugline           48
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-4Ru")
+      pushbyte            0
+      ifngt               L23
+
+      debugline           49
+      getlocal0
+      dup
+      setlocal2
+
+      getproperty         QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-4Ru")
+      decrement_i
+      setlocal3
+
+      getlocal2
+      getlocal3
+      setproperty         QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-4Ru")
+
+      kill                3
+      kill                2
+      debugline           52
+L23:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-4Ru")
+      pushbyte            0
+      ifne                L40
+
+      debugline           54
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6l")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L40
+
+      debugline           56
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6l")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "shift"), 0
+      callsupervoid       QName(ProtectedNamespace("_-3vN"), "setAnimation"), 1
+      debugline           60
+L40:
+      getlocal0
+      getlocal1
+      callsuper           QName(ProtectedNamespace("_-3vN"), "updateAnimation"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-54Q"), "usesAnimationResetting") flag OVERRIDE
+   method
+    refid "_-4sl:_-27i/_-54Q:usesAnimationResetting"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           63
+      getlocal0
+      pushscope
+
+      debugline           64
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4sl:_-27i/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 8
+    findproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-57f")
+    pushbyte            3
+    initproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-57f")
+
+    debug               1, "k", 1, 9
+    findproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-0-2")
+    pushbyte            2
+    initproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-0-2")
+
+    debug               1, "k", 2, 10
+    findproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-0AS")
+    pushbyte            1
+    initproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-0AS")
+
+    debug               1, "k", 3, 12
+    findproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6C7")
+    pushbyte            15
+    initproperty        QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6C7")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-57f") slotid 1 type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-0-2") slotid 2 type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-0AS") slotid 3 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PrivateNamespace("_-54Q", "_-4sl:_-27i"), "_-6C7") slotid 4 type QName(PackageNamespace(""), "int") value Integer(15) end
+end ; class

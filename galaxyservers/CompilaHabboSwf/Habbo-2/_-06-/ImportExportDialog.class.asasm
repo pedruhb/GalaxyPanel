@@ -1,0 +1,381 @@
+class
+ refid "_-06-:ImportExportDialog"
+ instance QName(PackageNamespace("_-06-"), "ImportExportDialog")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0Wr")
+  iinit
+   refid "_-06-:ImportExportDialog/iinit"
+   param QName(PackageNamespace("_-06-"), "BCFloorPlanEditor")
+   param QName(PackageNamespace(""), "XML")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           18
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 18
+     debug               1, "k", 1, 18
+     debugline           18
+     getlocal0
+     constructsuper      0
+
+     debugline           19
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+
+     debugline           20
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-3cP")
+
+     debugline           21
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX") type QName(PackageNamespace("_-06-"), "BCFloorPlanEditor") end
+  trait slot QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-3cP") type QName(PackageNamespace(""), "XML") end
+  trait slot QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi") type QName(PackageNamespace("_-1Bv"), "IFrameWindow") value Null() end
+  trait setter QName(PackageNamespace(""), "visible")
+   method
+    refid "_-06-:ImportExportDialog/visible/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           23
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 23
+      debugline           24
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      pushnull
+      ifne                L32
+
+      debugline           25
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IFrameWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-3cP")
+      callproperty        QName(PackageNamespace(""), "buildFromXML"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IFrameWindow"), 1
+      initproperty        QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+
+      debugline           26
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      callpropvoid        QName(Namespace("_-6q"), "center"), 0
+
+      debugline           27
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-12r")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           29
+L32:
+      getlocal1
+      iffalse             L86
+
+      debugline           30
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           31
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      pushstring          "data"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "_-1oy")
+      callproperty        QName(PackageNamespace(""), "_-0wT"), 0
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           32
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "_-2N4")
+      pushbyte            0
+      greaterthan
+      dup
+      iftrue              L66
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      getproperty         QName(PackageNamespace(""), "sessionDataManager")
+      getlex              QName(PackageNamespace("_-5u3"), "_-yj")
+      getproperty         QName(PackageNamespace(""), "_-sc")
+      callproperty        Multiname("hasSecurity", [PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), PackageNamespace("_-06-"), PackageNamespace(""), PrivateNamespace("ImportExportDialog.as$2321", "_-06-:ImportExportDialog#1"), PackageInternalNs("_-06-"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Wr"), StaticProtectedNs("_-0Wr")]), 1
+      convert_b
+L66:
+      iffalse             L75
+
+      debugline           33
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      pushstring          "save"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callpropvoid        QName(Namespace("_-6q"), "enable"), 0
+
+      jump                L81
+
+      debugline           35
+L75:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      pushstring          "save"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callpropvoid        QName(Namespace("_-6q"), "disable"), 0
+
+      debugline           37
+L81:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      callpropvoid        QName(Namespace("_-6q"), "activate"), 0
+
+      jump                L91
+
+      debugline           39
+L86:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           41
+L91:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "visible")
+   method
+    refid "_-06-:ImportExportDialog/visible/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      iftrue              L11
+
+      pushfalse
+      returnvalue
+
+      debugline           45
+L11:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      getproperty         QName(Namespace("_-6q"), "visible")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-12r")
+   method
+    refid "_-06-:ImportExportDialog/_-12r"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 9
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 48
+      debug               1, "k", 1, 48
+      debugline           49
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L108
+
+      jump                L80
+
+L13:
+      label
+      debugline           52
+      getlocal0
+      pushfalse
+      initproperty        QName(PackageNamespace(""), "visible")
+
+      debugline           53
+      jump                L108
+
+L20:
+      label
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      pushstring          "data"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "_-3mm")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           56
+      jump                L108
+
+L32:
+      label
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      getproperty         QName(PackageNamespace(""), "communication")
+      getproperty         Multiname("connection", [PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), PackageNamespace("_-06-"), PackageNamespace(""), PrivateNamespace("ImportExportDialog.as$2321", "_-06-:ImportExportDialog#1"), PackageInternalNs("_-06-"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Wr"), StaticProtectedNs("_-0Wr")])
+      findpropstrict      QName(PackageNamespace("_-41v"), "_-4tj")
+      debugline           58
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-Fi")
+      pushstring          "data"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getproperty         QName(Namespace("_-6q"), "caption")
+      debugline           59
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "_-1oy")
+      getproperty         QName(PackageNamespace(""), "_-xD")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "_-1oy")
+      getproperty         QName(PackageNamespace(""), "_-xD")
+      getproperty         QName(PackageNamespace(""), "y")
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "_-1oy")
+      getproperty         QName(PackageNamespace(""), "_-3KR")
+      getlex              QName(PackageNamespace("_-06-"), "BCFloorPlanEditor")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "_-1aW")
+      callproperty        QName(PackageNamespace(""), "_-3vz"), 1
+      debugline           61
+      getlex              QName(PackageNamespace("_-06-"), "BCFloorPlanEditor")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), "_-1RX")
+      getproperty         QName(PackageNamespace(""), "_-1Jl")
+      callproperty        QName(PackageNamespace(""), "_-3vz"), 1
+      constructprop       QName(PackageNamespace("_-41v"), "_-4tj"), 6
+      callpropvoid        Multiname("send", [PrivateNamespace("_-0Wr", "_-06-:ImportExportDialog#0"), PackageNamespace("_-06-"), PackageNamespace(""), PrivateNamespace("ImportExportDialog.as$2321", "_-06-:ImportExportDialog#1"), PackageInternalNs("_-06-"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0Wr"), StaticProtectedNs("_-0Wr")]), 1
+
+      debugline           62
+      jump                L108
+
+L77:
+      label
+      jump                L108
+
+      debugline           50
+L80:
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "name")
+      setlocal3
+
+      pushstring          "header_button_close"
+      debugline           51
+      getlocal3
+      ifstrictne          L89
+
+      pushbyte            0
+      jump                L105
+
+L89:
+      pushstring          "revert"
+      debugline           54
+      getlocal3
+      ifstrictne          L95
+
+      pushbyte            1
+      jump                L105
+
+L95:
+      pushstring          "save"
+      debugline           57
+      getlocal3
+      ifstrictne          L101
+
+      pushbyte            2
+      jump                L105
+
+L101:
+      jump                L104
+
+      pushbyte            3
+      jump                L105
+
+L104:
+      pushbyte            3
+L105:
+      kill                3
+      lookupswitch        L77, [L13, L20, L32, L77]
+
+      debugline           65
+L108:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-06-:ImportExportDialog/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

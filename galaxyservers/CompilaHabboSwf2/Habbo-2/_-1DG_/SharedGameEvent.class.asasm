@@ -1,0 +1,159 @@
+class
+ refid "_-1DG:SharedGameEvent"
+ instance QName(PackageNamespace("_-1DG"), "SharedGameEvent")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-S3")
+  iinit
+   refid "_-1DG:SharedGameEvent/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "String")
+   param null
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 2
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           38
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 38
+     debug               1, "k", 1, 38
+     debug               1, "k", 2, 38
+     debug               1, "k", 3, 38
+     debugline           39
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           40
+     getlocal0
+     getlocal2
+     initproperty        QName(PackageNamespace(""), "api")
+
+     debugline           41
+     getlocal0
+     getlocal3
+     initproperty        QName(PackageNamespace(""), "name")
+
+     debugline           42
+     getlocal0
+     getlocal            4
+     initproperty        QName(PackageNamespace(""), "content")
+
+     debugline           43
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "api") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "name") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "content") end
+ end ; instance
+ cinit
+  refid "_-1DG:SharedGameEvent/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 15
+    findproperty        QName(PackageNamespace(""), "API_VERSION")
+    pushbyte            1
+    initproperty        QName(PackageNamespace(""), "API_VERSION")
+
+    debug               1, "k", 1, 20
+    findproperty        QName(PackageNamespace(""), "EVENT_TYPE_TO_HABBO")
+    pushstring          "HabboGameAPIEventToHabbo"
+    initproperty        QName(PackageNamespace(""), "EVENT_TYPE_TO_HABBO")
+
+    debug               1, "k", 2, 21
+    findproperty        QName(PackageNamespace(""), "EVENT_TYPE_TO_GAME")
+    pushstring          "HabboGameAPIEventToGame"
+    initproperty        QName(PackageNamespace(""), "EVENT_TYPE_TO_GAME")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "API_VERSION") slotid 1 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "EVENT_TYPE_TO_HABBO") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("HabboGameAPIEventToHabbo") end
+ trait const QName(PackageNamespace(""), "EVENT_TYPE_TO_GAME") slotid 3 type QName(PackageNamespace(""), "String") value Utf8("HabboGameAPIEventToGame") end
+ trait method QName(PackageNamespace(""), "createToHabbo") flag FINAL dispid 3
+  method
+   refid "_-1DG:SharedGameEvent/createToHabbo"
+   param QName(PackageNamespace(""), "String")
+   param null
+   returns QName(PackageNamespace("_-1DG"), "SharedGameEvent")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 5
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           45
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 45
+     debug               1, "k", 1, 45
+     debugline           46
+     getlocal0
+     getlex              QName(PackageNamespace(""), "EVENT_TYPE_TO_HABBO")
+     getlex              QName(PackageNamespace(""), "API_VERSION")
+     getlocal1
+     getlocal2
+     construct           4
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "createToGame") flag FINAL dispid 4
+  method
+   refid "_-1DG:SharedGameEvent/createToGame"
+   param QName(PackageNamespace(""), "String")
+   param null
+   returns QName(PackageNamespace("_-1DG"), "SharedGameEvent")
+   flag HAS_OPTIONAL
+   optional Null()
+   body
+    maxstack 5
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           49
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 49
+     debug               1, "k", 1, 49
+     debugline           50
+     getlocal0
+     getlex              QName(PackageNamespace(""), "EVENT_TYPE_TO_GAME")
+     getlex              QName(PackageNamespace(""), "API_VERSION")
+     getlocal1
+     getlocal2
+     construct           4
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

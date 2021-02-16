@@ -1,0 +1,231 @@
+class
+ refid "_-5u3:_-06Z"
+ instance QName(PackageNamespace("_-5u3"), "_-06Z")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0JU")
+  iinit
+   refid "_-5u3:_-06Z/iinit"
+   param QName(PackageNamespace("_-5u3"), "SessionDataManager")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           14
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 14
+     debugline           14
+     getlocal0
+     constructsuper      0
+
+     debugline           15
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-6Lc")
+
+     debugline           16
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+     constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+     initproperty        QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-0cd")
+
+     debugline           17
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-0cd") type QName(PackageNamespace("_-07U"), "Map") end
+  trait slot QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-6Lc") type QName(PackageNamespace("_-5u3"), "SessionDataManager") end
+  trait method QName(PackageNamespace(""), "_-1B3")
+   method
+    refid "_-5u3:_-06Z/_-1B3"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-12d"), "_-5NC")
+      setlocal3
+
+      debug               1, "k", 0, 19
+      debug               1, "k", 1, 20
+      debugline           20
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-0cd")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      getlex              QName(PackageNamespace(""), "Array")
+      astypelate
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           21
+      getlocal2
+      pushnull
+      ifeq                L27
+
+      debugline           22
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 0
+      returnvalue
+
+      debugline           24
+L27:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-6Lc")
+      getproperty         QName(PackageNamespace(""), "communication")
+      iffalse             L49
+
+      debug               1, "k", 2, 25
+      debugline           25
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-6Lc")
+      getproperty         QName(PackageNamespace(""), "communication")
+      getproperty         QName(Namespace("_-mI"), "connection")
+      coerce              QName(PackageNamespace("_-12d"), "_-5NC")
+      setlocal3
+
+      debugline           26
+      getlocal3
+      iffalse             L49
+
+      debugline           27
+      getlocal3
+      findpropstrict      QName(PackageNamespace("_-1yG"), "_-qR")
+      getlocal1
+      constructprop       QName(PackageNamespace("_-1yG"), "_-qR"), 1
+      callpropvoid        QName(Namespace("_-6NY"), "send"), 1
+
+      debugline           30
+L49:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5u3:_-06Z/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "disposed")
+      iffalse             L11
+
+      debugline           35
+      returnvoid
+
+      debugline           37
+L11:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-6Lc")
+
+      debugline           38
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-5u3:_-06Z/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debugline           41
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-6Lc")
+      pushnull
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-BJ")
+   method
+    refid "_-5u3:_-06Z/_-BJ"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 44
+      debug               1, "k", 1, 44
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0JU", "_-5u3:_-06Z"), "_-0cd")
+      getlocal1
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           46
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5u3:_-06Z/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

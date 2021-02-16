@@ -1,0 +1,492 @@
+class
+ refid "_-1Ta:Timestamp"
+ instance QName(PackageNamespace("_-1Ta"), "Timestamp")
+  extends QName(PackageNamespace("_-4cF"), "Debuggable")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6GU")
+  iinit
+   refid "_-1Ta:Timestamp/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           26
+     getlocal0
+     pushscope
+
+     debugline           26
+     getlocal0
+     constructsuper      0
+
+     debugline           27
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-1Ta:Timestamp/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "validate") flag FINAL dispid 3
+  method
+   refid "_-1Ta:Timestamp/validate"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           29
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 29
+     debug               1, "k", 1, 33
+     debugline           30
+     getlocal1
+     pushnull
+     ifne                L14
+
+     debugline           31
+     pushfalse
+     returnvalue
+
+     debugline           33
+L14:
+     getlocal1
+     pushstring          ":"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal2
+
+     debugline           34
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            3
+     equals
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-3HX") flag FINAL dispid 4
+  method
+   refid "_-1Ta:Timestamp/_-3HX"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           37
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 37
+     debugline           38
+     getlocal1
+     pushnull
+     ifne                L13
+
+     pushstring          "00:00:00"
+     debugline           39
+     returnvalue
+
+     debugline           41
+L13:
+     findpropstrict      QName(PackageNamespace(""), "_-0ce")
+     findpropstrict      QName(PackageNamespace(""), "int")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "int"), 1
+     callproperty        QName(PackageNamespace(""), "_-0ce"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-1F") flag FINAL dispid 5
+  method
+   refid "_-1Ta:Timestamp/_-1F"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           44
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 44
+     debugline           45
+     getlocal1
+     pushbyte            10
+     ifnlt               L14
+
+     pushstring          "0"
+     debugline           46
+     getlocal1
+     add
+     returnvalue
+
+L14:
+     pushstring          ""
+     debugline           48
+     getlocal1
+     add
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-2ZI") flag FINAL dispid 6
+  method
+   refid "_-1Ta:Timestamp/_-2ZI"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           51
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     setlocal3
+
+     debug               1, "k", 0, 51
+     debug               1, "k", 1, 51
+     debugline           52
+     getlocal2
+     pushbyte            0
+     ifngt               L27
+
+     debug               1, "k", 2, 53
+     debugline           53
+     findpropstrict      QName(PackageNamespace(""), "timestampToSeconds")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "timestampToSeconds"), 1
+     convert_i
+     setlocal3
+
+     debugline           54
+     findpropstrict      QName(PackageNamespace(""), "_-0ce")
+     getlocal3
+     getlocal2
+     add
+     callproperty        QName(PackageNamespace(""), "_-0ce"), 1
+     returnvalue
+
+     debugline           56
+L27:
+     getlocal1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-0ce") flag FINAL dispid 7
+  method
+   refid "_-1Ta:Timestamp/_-0ce"
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 4
+    localcount 8
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           59
+     getlocal0
+     pushscope
+
+     pushnan
+     setlocal2
+
+     pushnan
+     setlocal3
+
+     pushnan
+     setlocal            4
+
+     pushnull
+     coerce_s
+     setlocal            5
+
+     pushnull
+     coerce_s
+     setlocal            6
+
+     pushnull
+     coerce_s
+     setlocal            7
+
+     debug               1, "k", 0, 59
+     debugline           60
+     getlocal1
+     pushbyte            0
+     ifngt               L90
+
+     debug               1, "k", 1, 61
+     debug               1, "k", 2, 62
+     debug               1, "k", 3, 63
+     debug               1, "k", 4, 65
+     debug               1, "k", 5, 66
+     debug               1, "k", 6, 67
+     debugline           61
+     getlocal1
+     pushbyte            60
+     modulo
+     convert_d
+     setlocal2
+
+     debugline           62
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     pushshort           3600
+     modulo
+     pushbyte            60
+     divide
+     callproperty        QName(PackageNamespace(""), "floor"), 1
+     convert_d
+     setlocal3
+
+     debugline           63
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     pushbyte            60
+     dup
+     multiply
+     divide
+     callproperty        QName(PackageNamespace(""), "floor"), 1
+     convert_d
+     setlocal            4
+
+     debugline           65
+     getlocal            4
+     pushbyte            0
+     ifne                L63
+
+     pushstring          "00"
+     coerce_a
+     jump                L67
+
+L63:
+     findpropstrict      QName(PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), "_-5Zb")
+     getlocal            4
+     callproperty        QName(PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), "_-5Zb"), 1
+     coerce_a
+L67:
+     pushstring          ":"
+     add
+     setlocal            5
+
+     debugline           66
+     findpropstrict      QName(PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), "_-5Zb")
+     getlocal3
+     callproperty        QName(PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), "_-5Zb"), 1
+     pushstring          ":"
+     add
+     setlocal            6
+
+     debugline           67
+     findpropstrict      QName(PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), "_-5Zb")
+     getlocal2
+     callproperty        QName(PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), "_-5Zb"), 1
+     coerce_s
+     setlocal            7
+
+     debugline           69
+     getlocal            5
+     getlocal            6
+     add
+     getlocal            7
+     add
+     returnvalue
+
+L90:
+     pushstring          "00:00:00"
+     debugline           71
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), "_-5Zb") flag FINAL dispid 8
+  method
+   refid "_-1Ta:Timestamp/_-5Zb"
+   param QName(PackageNamespace(""), "uint")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           74
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 74
+     debugline           75
+     getlocal1
+     pushbyte            10
+     ifnlt               L15
+
+     pushstring          "0"
+     debugline           76
+     getlocal1
+     add
+     returnvalue
+
+     debugline           78
+L15:
+     findpropstrict      QName(PackageNamespace(""), "String")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "String"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "timestampToSeconds") flag FINAL dispid 9
+  method
+   refid "_-1Ta:Timestamp/timestampToSeconds"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "int")
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           81
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal2
+
+     debug               1, "k", 0, 81
+     debugline           82
+     getlocal1
+     pushnull
+     ifeq                L53
+
+     debug               1, "k", 1, 83
+     debugline           83
+     getlocal1
+     pushstring          ":"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal2
+
+     debugline           84
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            3
+     ifne                L48
+
+     debugline           85
+     findpropstrict      QName(PackageNamespace(""), "parseInt")
+     getlocal2
+     pushbyte            0
+     getproperty         MultinameL([PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace(""), PrivateNamespace("Timestamp.as$4951", "_-1Ta:Timestamp/timestampToSeconds"), PackageNamespace("_-1Ta"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-6GU"), StaticProtectedNs("_-6GU"), StaticProtectedNs("_-1bs")])
+     callproperty        QName(PackageNamespace(""), "parseInt"), 1
+     pushshort           3600
+     multiply
+     findpropstrict      QName(PackageNamespace(""), "parseInt")
+     getlocal2
+     pushbyte            1
+     getproperty         MultinameL([PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace(""), PrivateNamespace("Timestamp.as$4951", "_-1Ta:Timestamp/timestampToSeconds"), PackageNamespace("_-1Ta"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-6GU"), StaticProtectedNs("_-6GU"), StaticProtectedNs("_-1bs")])
+     callproperty        QName(PackageNamespace(""), "parseInt"), 1
+     pushbyte            60
+     multiply
+     add
+     findpropstrict      QName(PackageNamespace(""), "parseInt")
+     getlocal2
+     pushbyte            2
+     getproperty         MultinameL([PrivateNamespace("_-6GU", "_-1Ta:Timestamp"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace(""), PrivateNamespace("Timestamp.as$4951", "_-1Ta:Timestamp/timestampToSeconds"), PackageNamespace("_-1Ta"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-6GU"), StaticProtectedNs("_-6GU"), StaticProtectedNs("_-1bs")])
+     callproperty        QName(PackageNamespace(""), "parseInt"), 1
+     add
+     returnvalue
+
+     debugline           87
+L48:
+     findpropstrict      QName(PackageNamespace(""), "parseInt")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "parseInt"), 1
+     returnvalue
+
+     debugline           89
+L53:
+     pushbyte            0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-2Iw") flag FINAL dispid 10
+  method
+   refid "_-1Ta:Timestamp/_-2Iw"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           92
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 92
+     debugline           93
+     findpropstrict      QName(PackageNamespace(""), "String")
+     getglobalscope
+     getslot             1
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "timestampToSeconds"), 1
+     constructprop       QName(PackageNamespace(""), "String"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

@@ -1,0 +1,109 @@
+class
+ refid "_-5h8:_-3C5"
+ instance QName(PackageNamespace("_-5h8"), "_-3C5")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-3Xf")
+  iinit
+   refid "_-5h8:_-3C5/iinit"
+   param QName(PackageNamespace("_-5h8"), "ModerationManager")
+   param QName(PackageNamespace("_-X3"), "IWindow")
+   param QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           13
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 13
+     debug               1, "k", 1, 13
+     debug               1, "k", 2, 13
+     debugline           13
+     getlocal0
+     constructsuper      0
+
+     debugline           14
+     getlocal2
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-3Xf", "_-5h8:_-3C5"), "onClick")
+     setproperty         QName(Namespace("_-6q"), "procedure")
+
+     debugline           15
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-3Xf", "_-5h8:_-3C5"), "_-4M3")
+
+     debugline           16
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-3Xf", "_-5h8:_-3C5"), "_-4M3") type QName(PackageNamespace(""), "String") end
+  trait method QName(PrivateNamespace("_-3Xf", "_-5h8:_-3C5"), "onClick")
+   method
+    refid "_-5h8:_-3C5/onClick"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 18
+      debug               1, "k", 1, 18
+      debugline           19
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifeq                L15
+
+      debugline           20
+      returnvoid
+
+      debugline           22
+L15:
+      findpropstrict      QName(PackageNamespace("flash.net"), "navigateToURL")
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-3Xf", "_-5h8:_-3C5"), "_-4M3")
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      pushstring          "_blank"
+      callpropvoid        QName(PackageNamespace("flash.net"), "navigateToURL"), 2
+
+      debugline           23
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5h8:_-3C5/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

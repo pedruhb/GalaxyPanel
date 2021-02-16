@@ -1,0 +1,441 @@
+class
+ refid "_-4xv:MediaRSSPlaylist"
+ instance QName(PackageNamespace("_-4xv"), "MediaRSSPlaylist")
+  extends QName(PackageNamespace("_-2Bg"), "DefaultPlaylist")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1zD")
+  iinit
+   refid "_-4xv:MediaRSSPlaylist/iinit"
+   param QName(PackageNamespace("_-lv"), "StreamSequence")
+   param QName(PackageNamespace("_-0fF"), "ProvidersConfigGroup")
+   param QName(PackageNamespace("_-0fF"), "ProvidersConfigGroup")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           53
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 53
+     debug               1, "k", 1, 53
+     debug               1, "k", 2, 53
+     debugline           54
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           55
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-1zD"), "_-4rU") type QName(PackageNamespace(""), "String") value Utf8("Not available") end
+  trait slot QName(ProtectedNamespace("_-1zD"), "_-0it") type QName(PackageNamespace(""), "String") value Utf8("") end
+  trait slot QName(ProtectedNamespace("_-1zD"), "_-6B3") type QName(PackageNamespace(""), "String") value Utf8("Not available") end
+  trait method QName(PackageNamespace(""), "loadFromString") flag OVERRIDE
+   method
+    refid "_-4xv:MediaRSSPlaylist/loadFromString"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 7
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           57
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-4xv"), "_-2cP")
+      setlocal            6
+
+      debug               1, "k", 0, 57
+      debug               1, "k", 1, 58
+      debug               1, "k", 2, 61
+      debugline           58
+      findpropstrict      QName(PackageNamespace(""), "Namespace")
+      pushstring          "http://search.yahoo.com/mrss/"
+      constructprop       QName(PackageNamespace(""), "Namespace"), 1
+      coerce              QName(PackageNamespace(""), "Namespace")
+      setlocal2
+
+      debugline           60
+      getlex              QName(PackageNamespace(""), "XML")
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "ignoreWhitespace")
+
+      debugline           61
+      findpropstrict      QName(PackageNamespace(""), "XML")
+      getlocal1
+      constructprop       QName(PackageNamespace(""), "XML"), 1
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal3
+
+      debugline           63
+      getlocal3
+      callproperty        Multiname("length", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")]), 0
+      pushbyte            0
+      ifngt               L161
+
+      debug               1, "k", 3, 67
+      debugline           64
+      getlocal3
+      getproperty         Multiname("channel", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getproperty         Multiname("description", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      pushnull
+      ifeq                L50
+
+      getlocal0
+      getlocal3
+      getproperty         Multiname("channel", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getproperty         Multiname("description", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      callproperty        Multiname("text", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")]), 0
+      initproperty        QName(ProtectedNamespace("_-1zD"), "_-4rU")
+
+      debugline           65
+L50:
+      getlocal3
+      getproperty         Multiname("channel", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getproperty         Multiname("title", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      pushnull
+      ifeq                L62
+
+      getlocal0
+      getlocal3
+      getproperty         Multiname("channel", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getproperty         Multiname("title", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      callproperty        Multiname("text", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")]), 0
+      initproperty        QName(ProtectedNamespace("_-1zD"), "_-0it")
+
+      debugline           66
+L62:
+      getlocal3
+      getproperty         Multiname("channel", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getproperty         Multiname("link", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      pushnull
+      ifeq                L74
+
+      getlocal0
+      getlocal3
+      getproperty         Multiname("channel", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getproperty         Multiname("link", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      callproperty        Multiname("text", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")]), 0
+      initproperty        QName(ProtectedNamespace("_-1zD"), "_-6B3")
+
+      debugline           67
+L74:
+      pushbyte            0
+      setlocal            4
+
+      jump                L152
+
+L77:
+      label
+      debug               1, "k", 4, 68
+      debug               1, "k", 5, 69
+      debugline           68
+      getlocal3
+      getproperty         Multiname("channel", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getproperty         Multiname("item", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getlocal            4
+      getproperty         MultinameL([PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            5
+
+      debugline           69
+      findpropstrict      QName(PackageNamespace("_-4xv"), "_-2cP")
+      constructprop       QName(PackageNamespace("_-4xv"), "_-2cP"), 0
+      coerce              QName(PackageNamespace("_-4xv"), "_-2cP")
+      setlocal            6
+
+      debugline           70
+      getlocal            6
+      getlocal            5
+      getproperty         Multiname("description", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      setproperty         QName(PackageNamespace(""), "description")
+
+      debugline           71
+      getlocal            6
+      getlocal            5
+      getproperty         Multiname("guid", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      setproperty         QName(PackageNamespace(""), "guid")
+
+      debugline           72
+      getlocal            6
+      getlocal            5
+      getproperty         Multiname("link", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      setproperty         QName(PackageNamespace(""), "link")
+
+      debugline           73
+      getlocal            6
+      getlocal            5
+      getproperty         Multiname("pubDate", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      setproperty         QName(PackageNamespace(""), "_-0IG")
+
+      debugline           74
+      getlocal            6
+      getlocal            5
+      getlocal2
+      coerce              QName(PackageNamespace(""), "Namespace")
+      getproperty         RTQName("content")
+      getproperty         MultinameA("url", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      setproperty         QName(PackageNamespace(""), "url")
+
+      debugline           75
+      getlocal            6
+      getlocal            5
+      getlocal2
+      coerce              QName(PackageNamespace(""), "Namespace")
+      getproperty         RTQName("content")
+      getproperty         MultinameA("type", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      setproperty         QName(PackageNamespace(""), "mimeType")
+
+      debugline           76
+      getlocal            6
+      getlocal            5
+      getlocal2
+      coerce              QName(PackageNamespace(""), "Namespace")
+      getproperty         RTQName("title")
+      setproperty         QName(PackageNamespace(""), "filename")
+
+      debugline           77
+      getlocal            6
+      getlex              QName(PackageNamespace("_-1Ta"), "Timestamp")
+      getlocal            5
+      getlocal2
+      coerce              QName(PackageNamespace(""), "Namespace")
+      getproperty         RTQName("content")
+      getproperty         MultinameA("duration", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      callproperty        QName(PackageNamespace(""), "_-0ce"), 1
+      setproperty         QName(PackageNamespace(""), "duration")
+
+      debugline           79
+      getlex              QName(ProtectedNamespace("_-24A"), "_-2BB")
+      getlocal            6
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           67
+      inclocal_i          4
+L152:
+      getlocal            4
+      getlocal3
+      getproperty         Multiname("channel", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getproperty         Multiname("item", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      callproperty        Multiname("length", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")]), 0
+      iflt                L77
+
+      jump                L161
+
+      debugline           84
+      debugline           86
+L161:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "newPlaylistItem") flag OVERRIDE
+   method
+    refid "_-4xv:MediaRSSPlaylist/newPlaylistItem"
+    returns QName(PackageNamespace("_-2Bg"), "_-5Er")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           88
+      getlocal0
+      pushscope
+
+      debugline           89
+      findpropstrict      QName(PackageNamespace("_-4xv"), "_-2cP")
+      constructprop       QName(PackageNamespace("_-4xv"), "_-2cP"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getModel") flag OVERRIDE
+   method
+    refid "_-4xv:MediaRSSPlaylist/getModel"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           92
+      getlocal0
+      pushscope
+
+      debugline           93
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "toString") flag OVERRIDE
+   method
+    refid "_-4xv:MediaRSSPlaylist/toString"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional False()
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           96
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 96
+      debug               1, "k", 1, 97
+      debug               1, "k", 2, 103
+      debugline           97
+      findpropstrict      QName(PackageNamespace(""), "String")
+      constructprop       QName(PackageNamespace(""), "String"), 0
+      coerce_s
+      setlocal2
+
+      debugline           98
+      getlocal2
+      pushstring          "<rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\">"
+      add
+      setlocal2
+
+      debugline           99
+      getlocal2
+      pushstring          "<channel>"
+      add
+      setlocal2
+
+      debugline           100
+      getlocal2
+      pushstring          "<description>"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1zD"), "_-4rU")
+      add
+      pushstring          "</description>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           101
+      getlocal2
+      pushstring          "<title>"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1zD"), "_-0it")
+      add
+      pushstring          "</title>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           102
+      getlocal2
+      pushstring          "<link>"
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-1zD"), "_-6B3")
+      add
+      pushstring          "</link>"
+      add
+      add
+      coerce_s
+      setlocal2
+
+      debugline           103
+      pushbyte            0
+      setlocal3
+
+      jump                L72
+
+L59:
+      label
+      debugline           104
+      getlocal2
+      getlex              QName(ProtectedNamespace("_-24A"), "_-2BB")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")])
+      getlocal1
+      callproperty        Multiname("toString", [PrivateNamespace("_-1zD", "_-4xv:MediaRSSPlaylist#1"), PackageNamespace(""), PackageNamespace("_-4xv"), PrivateNamespace("MediaRSSPlaylist.as$5215", "_-4xv:MediaRSSPlaylist#0"), PackageInternalNs("_-4xv"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1zD"), StaticProtectedNs("_-1zD"), StaticProtectedNs("_-24A"), StaticProtectedNs("_-1bs")]), 1
+      add
+      coerce_s
+      setlocal2
+
+      debugline           103
+      inclocal_i          3
+L72:
+      getlocal3
+      getlex              QName(ProtectedNamespace("_-24A"), "_-2BB")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L59
+
+      debugline           106
+      getlocal2
+      pushstring          "</channel>"
+      add
+      setlocal2
+
+      debugline           107
+      getlocal2
+      pushstring          "</rss>"
+      add
+      setlocal2
+
+      debugline           108
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4xv:MediaRSSPlaylist/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

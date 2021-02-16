@@ -1,0 +1,149 @@
+class
+ refid "_-2nX:_-MO"
+ instance QName(PackageNamespace("_-2nX"), "_-MO")
+  extends QName(PackageNamespace("_-2nX"), "TriggerPeriodically")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1s5")
+  iinit
+   refid "_-2nX:_-MO/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           30
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "code") flag OVERRIDE
+   method
+    refid "_-2nX:_-MO/code/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           13
+      getlocal0
+      pushscope
+
+      debugline           14
+      getlex              QName(PackageNamespace("_-2nX"), "_-hL")
+      getproperty         QName(PackageNamespace(""), "_-5Sw")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-1s5"), "onSliderChange") flag OVERRIDE
+   method
+    refid "_-2nX:_-MO/_-1s5:onSliderChange"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           17
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-6Nh"), "_-1Jq")
+      setlocal2
+
+      pushnan
+      setlocal3
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      debug               1, "k", 0, 17
+      debugline           18
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "CHANGE")
+      ifne                L55
+
+      debug               1, "k", 1, 19
+      debugline           19
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-6Nh"), "_-1Jq")
+      astypelate
+      coerce              QName(PackageNamespace("_-6Nh"), "_-1Jq")
+      setlocal2
+
+      debugline           20
+      getlocal2
+      iffalse             L55
+
+      debug               1, "k", 2, 21
+      debug               1, "k", 3, 22
+      debugline           21
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getValue"), 0
+      convert_d
+      setlocal3
+
+      debugline           22
+      getlex              QName(PackageNamespace("_-2-E"), "_-67")
+      getlex              QName(ProtectedNamespace("_-0E3"), "_-6Tf")
+      getproperty         QName(PackageNamespace(""), "localization")
+      getlocal3
+      pushbyte            5
+      multiply
+      callproperty        QName(PackageNamespace(""), "_-2Gi"), 2
+      coerce_s
+      setlocal            4
+
+      debugline           23
+      getlex              QName(ProtectedNamespace("_-0E3"), "_-6Tf")
+      getproperty         QName(PackageNamespace(""), "localization")
+      pushstring          "wiredfurni.params.setlongtime"
+      pushstring          "time"
+      getlocal            4
+      callpropvoid        QName(Namespace("_-US"), "registerParameter"), 3
+
+      debugline           26
+L55:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2nX:_-MO/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

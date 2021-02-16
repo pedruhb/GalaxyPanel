@@ -1,0 +1,1663 @@
+class
+ refid "_-ur:TrophyCatalogWidget"
+ instance QName(PackageNamespace("_-ur"), "TrophyCatalogWidget")
+  extends QName(PackageNamespace("_-ur"), "CatalogWidget")
+  implements Multiname("_-0su", [PackageNamespace("_-ur")])
+  implements Multiname("_-0oN", [PackageNamespace("_-1KZ")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-03")
+  iinit
+   refid "_-ur:TrophyCatalogWidget/iinit"
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   param QName(PackageNamespace("_-47b"), "HabboCatalog")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           51
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 51
+     debug               1, "k", 1, 51
+     debugline           53
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           54
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-2--")
+
+     debugline           55
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5") type QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow") end
+  trait slot QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H") type QName(PackageNamespace("_-07U"), "Map") end
+  trait slot QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4P5") type QName(PackageNamespace(""), "String") value Utf8("g") end
+  trait slot QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-2--") type QName(PackageNamespace("_-47b"), "HabboCatalog") end
+  trait slot QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4lK") type QName(PackageNamespace("_-X3"), "IWindow") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-ur:TrophyCatalogWidget/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           60
+      getlocal0
+      pushscope
+
+      debugline           62
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      pushnull
+      ifeq                L14
+
+      debugline           63
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           65
+L14:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+
+      debugline           66
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-2--")
+
+      debugline           67
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4lK")
+
+      debugline           69
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           70
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-ur:TrophyCatalogWidget/init"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 10
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           75
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      pushnull
+      coerce_s
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-07U"), "Map")
+      setlocal            6
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            7
+
+      debug               1, "k", 0, 90
+      debug               1, "k", 1, 91
+      debug               1, "k", 2, 98
+      debugline           77
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L27
+
+      debugline           78
+      pushfalse
+      returnvalue
+
+      debugline           82
+L27:
+      getlocal0
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "ctlg_teaserimg_1"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+
+      debugline           85
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "SELECT_PRODUCT")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-2Ox")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           86
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "COLOUR_INDEX")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-20Y")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           87
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "TEXT_INPUT")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-2Fp")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           90
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "ctlg_nextmodel_button"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IContainerButtonWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IContainerButtonWindow")
+      setlocal1
+
+      debugline           91
+      getlex              QName(PackageNamespace(""), "window")
+      pushstring          "ctlg_prevmodel_button"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IContainerButtonWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IContainerButtonWindow")
+      setlocal2
+
+      debugline           93
+      getlocal1
+      pushnull
+      ifeq                L82
+
+      getlocal1
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-50R")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           94
+L82:
+      getlocal2
+      pushnull
+      ifeq                L92
+
+      getlocal2
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-3fL")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           97
+L92:
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+      constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+
+      debugline           98
+      pushnull
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debugline           99
+      pushbyte            0
+      setlocal            8
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            9
+
+      jump                L160
+
+L108:
+      label
+      getlocal            9
+      getlocal            8
+      nextvalue
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debug               1, "k", 3, 100
+      debug               1, "k", 4, 101
+      debug               1, "k", 5, 106
+      debugline           100
+      getlocal0
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "_-0VV")
+      callproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4oz"), 1
+      coerce_s
+      setlocal            4
+
+      debugline           101
+      getlocal0
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "_-0VV")
+      callproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-EM"), 1
+      coerce_s
+      setlocal            5
+
+      debugline           103
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      pushnull
+      ifne                L146
+
+      debugline           104
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      getlocal            4
+      findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+      constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           106
+L146:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      getlex              QName(PackageNamespace("_-07U"), "Map")
+      astypelate
+      coerce              QName(PackageNamespace("_-07U"), "Map")
+      setlocal            6
+
+      debugline           107
+      getlocal            6
+      getlocal            5
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           99
+L160:
+      hasnext2            9, 8
+      iftrue              L108
+
+      kill                9
+      kill                8
+      debugline           111
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      ifne                L214
+
+      debugline           112
+      getlocal1
+      getlocal2
+      pushfalse
+      dup
+      setlocal            8
+
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      getlocal            8
+      kill                8
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           114
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), PackageNamespace(""), PrivateNamespace("TrophyCatalogWidget.as$3413", "_-ur:TrophyCatalogWidget#1"), PackageNamespace("_-ur"), PackageInternalNs("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-03"), StaticProtectedNs("_-03"), StaticProtectedNs("_-5qb")])
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      getproperty         QName(Namespace("_-1YH"), "isColorable")
+      pushfalse
+      ifne                L214
+
+      debugline           115
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6q"), "parent")
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      iffalse             L214
+
+      debug               1, "k", 6, 116
+      debugline           116
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-6q"), "parent")
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      pushstring          "colourGridWidget"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            7
+
+      debugline           117
+      getlocal            7
+      iffalse             L214
+
+      getlocal            7
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           123
+L214:
+      getlex              QName(PackageNamespace(""), "events")
+      getlex              QName(PackageNamespace("_-09G"), "_-hD")
+      getproperty         QName(PackageNamespace(""), "WIDGETS_INITIALIZED")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0i")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           125
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0i")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-0i"
+    param QName(PackageNamespace("_-09G"), "_-5R8")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           132
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal            4
+
+      debug               1, "k", 0, 132
+      debug               1, "k", 1, 135
+      debug               1, "k", 2, 141
+      debugline           135
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           136
+      getlocal2
+      getlex              QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "gold")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           137
+      getlocal2
+      getlex              QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "silver")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           138
+      getlocal2
+      getlex              QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-12H")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           141
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      coerce              QName(PackageNamespace("_-07U"), "Map")
+      setlocal3
+
+      debugline           142
+      getlocal3
+      pushnull
+      ifeq                L68
+
+      debug               1, "k", 3, 143
+      debugline           143
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4P5")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal            4
+
+      debugline           144
+      getlocal            4
+      pushnull
+      ifne                L58
+
+      debugline           145
+      getlocal3
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal            4
+
+      debugline           148
+L58:
+      getlocal            4
+      pushnull
+      ifeq                L68
+
+      debugline           149
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-6Lx")
+      getlocal            4
+      constructprop       QName(PackageNamespace("_-09G"), "_-6Lx"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           153
+L68:
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-Jb")
+      getlocal2
+      pushstring          "ctlg_clr_40x32_1"
+      pushstring          "ctlg_clr_40x32_2"
+      pushstring          "ctlg_clr_40x32_3"
+      constructprop       QName(PackageNamespace("_-09G"), "_-Jb"), 4
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           154
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-2Ox")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-2Ox"
+    param QName(PackageNamespace("_-09G"), "_-6Lx")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 9
+     localcount 7
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           162
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-k3"), "_-3r9")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1KZ"), "_-1uJ")
+      setlocal            6
+
+      debug               1, "k", 0, 162
+      debug               1, "k", 1, 165
+      debug               1, "k", 2, 167
+      debugline           163
+      getlocal1
+      pushnull
+      ifne                L22
+
+      returnvoid
+
+      debugline           165
+L22:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "offer")
+      coerce              QName(PackageNamespace("_-47b"), "_-37l")
+      setlocal2
+
+      debugline           167
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "_-0VV")
+      callproperty        QName(Namespace("_-5AO"), "getProductData"), 1
+      coerce              QName(PackageNamespace("_-68k"), "_-41I")
+      setlocal3
+
+      debugline           170
+      getlex              QName(PackageNamespace("_-k3"), "ProductImageConfiguration")
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "_-0VV")
+      callproperty        QName(PackageNamespace(""), "_-4UI"), 1
+      iffalse             L54
+
+      debugline           172
+      getlocal0
+      getlex              QName(PackageNamespace("_-k3"), "ProductImageConfiguration")
+      getproperty         QName(PackageNamespace(""), "_-0wh")
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "_-0VV")
+      getproperty         MultinameL([PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), PackageNamespace(""), PrivateNamespace("TrophyCatalogWidget.as$3413", "_-ur:TrophyCatalogWidget#1"), PackageNamespace("_-ur"), PackageInternalNs("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-03"), StaticProtectedNs("_-03"), StaticProtectedNs("_-5qb")])
+      callpropvoid        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-sW"), 1
+
+      jump                L97
+
+      debug               1, "k", 3, 175
+      debug               1, "k", 4, 176
+      debug               1, "k", 5, 177
+      debugline           176
+L54:
+      getlocal2
+      getproperty         QName(Namespace("_-6Vz"), "product")
+      coerce              QName(PackageNamespace("_-k3"), "_-3r9")
+      setlocal            5
+
+      debugline           178
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "roomEngine")
+      getlocal            5
+      getproperty         QName(Namespace("_-1YH"), "_-2S4")
+      findpropstrict      QName(PackageNamespace("_-453"), "_-3bP")
+      pushbyte            2
+      pushbyte            0
+      dup
+      constructprop       QName(PackageNamespace("_-453"), "_-3bP"), 3
+      pushbyte            64
+      getlocal0
+      pushbyte            0
+      getlocal            5
+      getproperty         QName(Namespace("_-1YH"), "_-0YI")
+      callproperty        QName(Namespace("_-5e-"), "getFurnitureImage"), 6
+      coerce              QName(PackageNamespace("_-1KZ"), "_-1uJ")
+      setlocal            6
+
+      debugline           179
+      getlocal2
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "id")
+      setproperty         QName(Namespace("_-6Vz"), " each")
+
+      debugline           180
+      getlocal            6
+      pushnull
+      ifeq                L92
+
+      debugline           181
+      getlocal            6
+      getproperty         QName(PackageNamespace(""), "data")
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            4
+
+      debugline           184
+L92:
+      getlocal0
+      getlocal            4
+      pushtrue
+      callpropvoid        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4N5"), 2
+
+      debugline           187
+L97:
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-2--")
+      getproperty         QName(PackageNamespace(""), "utils")
+      getlocal2
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4lK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      pushbyte            0
+      pushfalse
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "_-1Pz"), 7
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4lK")
+
+      debugline           188
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-20Y")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-20Y"
+    param QName(PackageNamespace("_-09G"), "_-1Fn")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 9
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           194
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debug               1, "k", 0, 194
+      debug               1, "k", 1, 200
+      debugline           196
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "index")
+      pushbyte            0
+      ifne                L18
+
+      getlocal0
+      pushstring          "g"
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4P5")
+
+      debugline           197
+L18:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "index")
+      pushbyte            1
+      ifne                L26
+
+      getlocal0
+      pushstring          "s"
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4P5")
+
+      debugline           198
+L26:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "index")
+      pushbyte            2
+      ifne                L34
+
+      getlocal0
+      pushstring          "b"
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4P5")
+
+      debugline           200
+L34:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      coerce              QName(PackageNamespace("_-07U"), "Map")
+      setlocal2
+
+      debugline           201
+      getlocal2
+      pushnull
+      ifeq                L74
+
+      debug               1, "k", 2, 202
+      debugline           202
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4P5")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debugline           203
+      getlocal3
+      pushnull
+      ifne                L64
+
+      debugline           204
+      getlocal2
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debugline           207
+L64:
+      getlocal3
+      pushnull
+      ifeq                L74
+
+      debugline           208
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-6Lx")
+      getlocal3
+      constructprop       QName(PackageNamespace("_-09G"), "_-6Lx"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           212
+L74:
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-2--")
+      getproperty         QName(PackageNamespace(""), "utils")
+      getlocal3
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4lK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      pushbyte            0
+      pushfalse
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "_-1Pz"), 7
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4lK")
+
+      debugline           213
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2Fp")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-2Fp"
+    param QName(PackageNamespace("_-09G"), "_-1YF")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           219
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 219
+      debugline           220
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-1BD")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "text")
+      constructprop       QName(PackageNamespace("_-09G"), "_-1BD"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           221
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "imageReady")
+   method
+    refid "_-ur:TrophyCatalogWidget/imageReady"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           228
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debug               1, "k", 0, 228
+      debug               1, "k", 1, 228
+      debug               1, "k", 2, 233
+      debugline           229
+      getlex              QName(PackageNamespace(""), "disposed")
+      convert_b
+      dup
+      iftrue              L19
+
+      pop
+      getlex              QName(PackageNamespace(""), "page")
+      pushnull
+      equals
+L19:
+      dup
+      iftrue              L26
+
+      pop
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      pushnull
+      equals
+L26:
+      iffalse             L30
+
+      debugline           230
+      returnvoid
+
+      debugline           233
+L30:
+      pushbyte            0
+      setlocal            4
+
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "offers")
+      coerce_a
+      setlocal            5
+
+      jump                L60
+
+L37:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debugline           234
+      getlocal3
+      getproperty         QName(PackageNamespace(""), " each")
+      getlocal1
+      ifne                L60
+
+      debugline           236
+      getlocal3
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), " each")
+
+      debugline           238
+      getlocal0
+      getlocal2
+      pushtrue
+      callpropvoid        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4N5"), 2
+
+      debugline           239
+      jump                L62
+
+      debugline           233
+L60:
+      hasnext2            5, 4
+      iftrue              L37
+
+L62:
+      kill                5
+      kill                4
+      debugline           242
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2Gr")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-2Gr"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           244
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 244
+      debugline           246
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4oz")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-4oz"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           253
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 253
+      debug               1, "k", 1, 258
+      debugline           258
+      getlocal0
+      getlocal1
+      callproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-EM"), 1
+      coerce_s
+      setlocal2
+
+      debugline           259
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L29
+
+      debugline           260
+      getlocal1
+      pushbyte            0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      decrement
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      subtract
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+      returnvalue
+
+      debugline           262
+L29:
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-EM")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-EM"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           271
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 271
+      debug               1, "k", 1, 273
+      debug               1, "k", 2, 278
+      debug               1, "k", 3, 283
+      debugline           273
+      getlocal1
+      pushstring          "prizetrophy_2011_"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal2
+
+      debugline           274
+      getlocal2
+      pushbyte            255
+      ifeq                L22
+
+      pushstring          ""
+      debugline           275
+      returnvalue
+
+      debugline           278
+L22:
+      getlocal1
+      pushstring          "_"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "lastIndexOf"), 1
+      pushbyte            1
+      add
+      convert_i
+      setlocal3
+
+      debugline           279
+      getlocal3
+      pushbyte            0
+      ifnle               L37
+
+      pushstring          ""
+      debugline           280
+      returnvalue
+
+      debugline           283
+L37:
+      getlocal1
+      getlocal3
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+      coerce_s
+      setlocal            4
+
+      debugline           284
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      greaterthan
+      dup
+      iftrue              L68
+
+      pop
+      getlocal            4
+      pushstring          "g"
+      equals
+      not
+      dup
+      iffalse             L61
+
+      pop
+      getlocal            4
+      pushstring          "s"
+      equals
+      not
+L61:
+      dup
+      iffalse             L68
+
+      pop
+      getlocal            4
+      pushstring          "b"
+      equals
+      not
+L68:
+      iffalse             L73
+
+      pushstring          ""
+      debugline           285
+      returnvalue
+
+      debugline           288
+L73:
+      getlocal            4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-50R")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-50R"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           295
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debug               1, "k", 0, 295
+      debug               1, "k", 1, 299
+      debugline           296
+      getlocal0
+      dup
+      setlocal            4
+
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+      increment_i
+      setlocal            5
+
+      getlocal            4
+      getlocal            5
+      setproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+
+      kill                5
+      kill                4
+      debugline           297
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      getproperty         QName(PackageNamespace(""), "length")
+      ifnge               L32
+
+      getlocal0
+      pushbyte            0
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+
+      debugline           299
+L32:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      coerce              QName(PackageNamespace("_-07U"), "Map")
+      setlocal2
+
+      debugline           300
+      getlocal2
+      pushnull
+      ifeq                L72
+
+      debug               1, "k", 2, 301
+      debugline           301
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4P5")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debugline           302
+      getlocal3
+      pushnull
+      ifne                L62
+
+      debugline           303
+      getlocal2
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debugline           306
+L62:
+      getlocal3
+      pushnull
+      ifeq                L72
+
+      debugline           307
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-6Lx")
+      getlocal3
+      constructprop       QName(PackageNamespace("_-09G"), "_-6Lx"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           310
+L72:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-3fL")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-3fL"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           316
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debug               1, "k", 0, 316
+      debug               1, "k", 1, 320
+      debugline           317
+      getlocal0
+      dup
+      setlocal            4
+
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+      decrement_i
+      setlocal            5
+
+      getlocal            4
+      getlocal            5
+      setproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+
+      kill                5
+      kill                4
+      debugline           318
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+      pushbyte            0
+      ifnlt               L33
+
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      getproperty         QName(PackageNamespace(""), "length")
+      decrement
+      initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+
+      debugline           320
+L33:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-63H")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-0Rz")
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      coerce              QName(PackageNamespace("_-07U"), "Map")
+      setlocal2
+
+      debugline           321
+      getlocal2
+      pushnull
+      ifeq                L73
+
+      debug               1, "k", 2, 322
+      debugline           322
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4P5")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debugline           323
+      getlocal3
+      pushnull
+      ifne                L63
+
+      debugline           324
+      getlocal2
+      pushbyte            0
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      coerce              QName(PackageNamespace("_-k3"), "Offer")
+      setlocal3
+
+      debugline           327
+L63:
+      getlocal3
+      pushnull
+      ifeq                L73
+
+      debugline           328
+      getlex              QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-6Lx")
+      getlocal3
+      constructprop       QName(PackageNamespace("_-09G"), "_-6Lx"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           332
+L73:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4N5")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-4N5"
+    param QName(PackageNamespace("flash.display"), "BitmapData")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           338
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal3
+
+      debug               1, "k", 0, 338
+      debug               1, "k", 1, 338
+      debugline           340
+      getlex              QName(PackageNamespace(""), "window")
+      getproperty         QName(Namespace("_-2W2"), "disposed")
+      not
+      dup
+      iffalse             L21
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      pushnull
+      equals
+      not
+L21:
+      iffalse             L105
+
+      debug               1, "k", 2, 350
+      debugline           341
+      getlocal1
+      pushnull
+      ifne                L38
+
+      debugline           342
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      pushbyte            1
+      dup
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 2
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal1
+
+      debugline           343
+      pushtrue
+      setlocal2
+
+      debugline           346
+L38:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      getproperty         QName(Namespace("_-5Rl"), "bitmap")
+      pushnull
+      ifne                L58
+
+      debugline           347
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      findpropstrict      QName(PackageNamespace("flash.display"), "BitmapData")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      getproperty         QName(Namespace("_-6q"), "width")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      getproperty         QName(Namespace("_-6q"), "height")
+      pushtrue
+      pushint             16777215
+      constructprop       QName(PackageNamespace("flash.display"), "BitmapData"), 4
+      setproperty         QName(Namespace("_-5Rl"), "bitmap")
+
+      debugline           349
+L58:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      getproperty         QName(Namespace("_-5Rl"), "bitmap")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      getproperty         QName(Namespace("_-5Rl"), "bitmap")
+      getproperty         QName(PackageNamespace(""), "rect")
+      pushint             16777215
+      callpropvoid        QName(PackageNamespace(""), "fillRect"), 2
+
+      debugline           350
+      findpropstrict      QName(PackageNamespace("flash.geom"), "Point")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      getproperty         QName(Namespace("_-6q"), "width")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "width")
+      subtract
+      pushbyte            2
+      divide
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      getproperty         QName(Namespace("_-6q"), "height")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "height")
+      subtract
+      pushbyte            2
+      divide
+      constructprop       QName(PackageNamespace("flash.geom"), "Point"), 2
+      coerce              QName(PackageNamespace("flash.geom"), "Point")
+      setlocal3
+
+      debugline           351
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      getproperty         QName(Namespace("_-5Rl"), "bitmap")
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "rect")
+      getlocal3
+      pushnull
+      pushnull
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "copyPixels"), 6
+
+      debugline           352
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-5L5")
+      callpropvoid        QName(Namespace("_-6q"), "invalidate"), 0
+
+      debugline           355
+L105:
+      getlocal2
+      convert_b
+      dup
+      iffalse             L114
+
+      pop
+      getlocal1
+      pushnull
+      equals
+      not
+L114:
+      iffalse             L119
+
+      debugline           356
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           358
+L119:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-sW")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-sW"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           364
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 364
+      debug               1, "k", 1, 365
+      debugline           365
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      getlocal1
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal2
+
+      debugline           367
+      getlocal2
+      pushnull
+      ifne                L28
+
+      debugline           368
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-25e"), 1
+
+      debugline           369
+      returnvoid
+
+      debugline           372
+L28:
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      pushfalse
+      callpropvoid        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-4N5"), 2
+
+      debugline           373
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-25e")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-25e"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           379
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 379
+      debug               1, "k", 1, 380
+      debug               1, "k", 2, 382
+      debug               1, "k", 3, 383
+      debugline           380
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "imageGalleryHost")
+      getlocal1
+      add
+      pushstring          ".gif"
+      add
+      setlocal2
+
+      debugline           381
+      getlex              QName(PackageNamespace(""), "_-1Hb")
+      pushstring          "[TrophyCatalogWidget] Retrieve Product Preview Asset: "
+      getlocal2
+      add
+      callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+      debugline           382
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal2
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal3
+
+      debugline           383
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "assets")
+      getlocal1
+      getlocal3
+      pushstring          "image/gif"
+      callproperty        QName(Namespace("_-0LM"), "loadAssetFromFile"), 3
+      coerce              QName(PackageNamespace("_-eg"), "_-2YV")
+      setlocal            4
+
+      debugline           384
+      getlocal            4
+      getlex              QName(PackageNamespace("_-ll"), "AssetLoaderEvent")
+      getproperty         QName(PackageNamespace(""), "_-50U")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-tl")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           385
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-tl")
+   method
+    refid "_-ur:TrophyCatalogWidget/_-tl"
+    param QName(PackageNamespace("_-ll"), "AssetLoaderEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           391
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 391
+      debug               1, "k", 1, 392
+      debugline           392
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-eg"), "_-2YV")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "_-2YV")
+      setlocal2
+
+      debugline           394
+      getlocal2
+      pushnull
+      ifeq                L23
+
+      debugline           395
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "assetName")
+      callpropvoid        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-sW"), 1
+
+      debugline           397
+L23:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ur:TrophyCatalogWidget/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 36
+    findproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "gold")
+    pushint             16763904
+    initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "gold")
+
+    debug               1, "k", 1, 37
+    findproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "silver")
+    pushint             13421772
+    initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "silver")
+
+    debug               1, "k", 2, 38
+    findproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-12H")
+    pushint             13395456
+    initproperty        QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-12H")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "gold") slotid 1 type QName(PackageNamespace(""), "int") value Integer(16763904) end
+ trait const QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "silver") slotid 2 type QName(PackageNamespace(""), "int") value Integer(13421772) end
+ trait const QName(PrivateNamespace("_-03", "_-ur:TrophyCatalogWidget#0"), "_-12H") slotid 3 type QName(PackageNamespace(""), "int") value Integer(13395456) end
+end ; class

@@ -1,0 +1,231 @@
+class
+ refid "_-1Ta:Animator"
+ instance QName(PackageNamespace("_-1Ta"), "Animator")
+  extends QName(PackageNamespace("_-4cF"), "Debuggable")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-pY")
+  iinit
+   refid "_-1Ta:Animator/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           34
+     getlocal0
+     pushscope
+
+     debugline           34
+     getlocal0
+     constructsuper      0
+
+     debugline           35
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-pY"), "_-081") type QName(PackageNamespace("flash.display"), "Sprite") value Null() end
+  trait slot QName(ProtectedNamespace("_-pY"), "_-3Nb") type QName(PackageNamespace("flash.utils"), "Timer") value Null() end
+  trait slot QName(ProtectedNamespace("_-pY"), "_-1WV") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait method QName(PackageNamespace(""), "stop")
+   method
+    refid "_-1Ta:Animator/stop"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debugline           38
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-pY"), "_-3Nb")
+      pushnull
+      ifeq                L18
+
+      debugline           39
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-pY"), "_-3Nb")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           40
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-pY"), "_-3Nb")
+
+      debugline           42
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "fade")
+   method
+    refid "_-1Ta:Animator/fade"
+    param QName(PackageNamespace("flash.display"), "Sprite")
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 6
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal3
+
+      pushscope
+
+      debug               1, "k", 2, 44
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      getscopeobject      1
+      getlocal2
+      setslot             2
+
+      debug               1, "k", 0, 44
+      debug               1, "k", 1, 44
+      debugline           45
+      getscopeobject      1
+      getslot             1
+      pushnull
+      ifeq                L105
+
+      debugline           46
+      getscopeobject      1
+      getslot             2
+      pushnull
+      ifeq                L105
+
+      debugline           47
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-pY"), "_-3Nb")
+      pushnull
+      ifeq                L37
+
+      debugline           48
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-pY"), "_-3Nb")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           50
+L37:
+      getlocal0
+      getscopeobject      1
+      getslot             1
+      initproperty        QName(ProtectedNamespace("_-pY"), "_-081")
+
+      debugline           51
+      getlocal0
+      getscopeobject      1
+      getslot             2
+      getproperty         Multiname("alpha", [PrivateNamespace("_-pY", "_-1Ta:Animator/fade#1"), ProtectedNamespace("_-pY"), PackageNamespace(""), PackageInternalNs("_-1Ta"), PrivateNamespace("Animator.as$5200", "_-1Ta:Animator/fade#0"), PackageNamespace("_-1Ta"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-pY"), StaticProtectedNs("_-1bs")])
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "alpha")
+      subtract
+      getscopeobject      1
+      getslot             2
+      getproperty         Multiname("times", [PrivateNamespace("_-pY", "_-1Ta:Animator/fade#1"), ProtectedNamespace("_-pY"), PackageNamespace(""), PackageInternalNs("_-1Ta"), PrivateNamespace("Animator.as$5200", "_-1Ta:Animator/fade#0"), PackageNamespace("_-1Ta"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-pY"), StaticProtectedNs("_-1bs")])
+      divide
+      initproperty        QName(ProtectedNamespace("_-pY"), "_-1WV")
+
+      debugline           52
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
+      getscopeobject      1
+      getslot             2
+      getproperty         Multiname("rate", [PrivateNamespace("_-pY", "_-1Ta:Animator/fade#1"), ProtectedNamespace("_-pY"), PackageNamespace(""), PackageInternalNs("_-1Ta"), PrivateNamespace("Animator.as$5200", "_-1Ta:Animator/fade#0"), PackageNamespace("_-1Ta"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-pY"), StaticProtectedNs("_-1bs")])
+      getscopeobject      1
+      getslot             2
+      getproperty         Multiname("times", [PrivateNamespace("_-pY", "_-1Ta:Animator/fade#1"), ProtectedNamespace("_-pY"), PackageNamespace(""), PackageInternalNs("_-1Ta"), PrivateNamespace("Animator.as$5200", "_-1Ta:Animator/fade#0"), PackageNamespace("_-1Ta"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-pY"), StaticProtectedNs("_-1bs")])
+      constructprop       QName(PackageNamespace("flash.utils"), "Timer"), 2
+      initproperty        QName(ProtectedNamespace("_-pY"), "_-3Nb")
+
+      debugline           53
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-pY"), "_-3Nb")
+      debugline           53
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      debugfile           "k"
+      debugline           54
+      newobject           0
+      pushwith
+      newfunction         "_-1Ta:Animator/fade/inline_method#1"
+      dup
+      getscopeobject      2
+      swap
+      setproperty         QName(PackageNamespace(""), "onTimer")
+
+      popscope
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           58
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-pY"), "_-3Nb")
+      debugline           58
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER_COMPLETE")
+      debugfile           "k"
+      debugline           59
+      newobject           0
+      pushwith
+      newfunction         "_-1Ta:Animator/fade/inline_method#0"
+      dup
+      getscopeobject      2
+      swap
+      setproperty         QName(PackageNamespace(""), "onTimerComplete")
+
+      popscope
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           66
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-pY"), "_-3Nb")
+      callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+      debugline           69
+L105:
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs("_-1Ta"), "target") slotid 1 type QName(PackageNamespace("flash.display"), "Sprite") end
+     trait slot QName(PackageInternalNs("_-1Ta"), "properties") slotid 2 type QName(PackageNamespace(""), "Object") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Ta:Animator/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

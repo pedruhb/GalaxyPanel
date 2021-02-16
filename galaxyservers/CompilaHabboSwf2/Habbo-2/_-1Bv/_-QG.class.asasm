@@ -1,0 +1,252 @@
+class
+ refid "_-1Bv:_-QG"
+ instance QName(PackageNamespace("_-1Bv"), "_-QG")
+  extends QName(PackageNamespace("_-1Bv"), "TextController")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-37a")
+  iinit
+   refid "_-1Bv:_-QG/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace("_-X3"), "WindowContext")
+   param QName(PackageNamespace("flash.geom"), "Rectangle")
+   param QName(PackageNamespace("_-X3"), "IWindow")
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "uint")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   optional Integer(0)
+   body
+    maxstack 12
+    localcount 12
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           16
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 16
+     debug               1, "k", 1, 16
+     debug               1, "k", 2, 16
+     debug               1, "k", 3, 16
+     debug               1, "k", 4, 16
+     debug               1, "k", 5, 16
+     debug               1, "k", 6, 16
+     debug               1, "k", 7, 16
+     debug               1, "k", 8, 16
+     debug               1, "k", 9, 16
+     debug               1, "k", 10, 16
+     debugline           17
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal            6
+     getlocal            7
+     getlocal            8
+     getlocal            9
+     getlocal            10
+     getlocal            11
+     constructsuper      11
+
+     debugline           18
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait setter QName(PackageNamespace(""), "text") flag OVERRIDE
+   method
+    refid "_-1Bv:_-QG/text/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           20
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 20
+      debugline           21
+      getlocal1
+      pushnull
+      ifne                L12
+
+      debugline           22
+      returnvoid
+
+      debugline           25
+L12:
+      getlex              QName(ProtectedNamespace("_-1UV"), "_-5oT")
+      iffalse             L29
+
+      debugline           26
+      getlex              QName(PackageNamespace(""), "context")
+      getlex              QName(ProtectedNamespace("_-0ba"), "_-3D-")
+      pushbyte            2
+      getlex              QName(ProtectedNamespace("_-0ba"), "_-3D-")
+      pushstring          "}"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+      getlocal0
+      callpropvoid        QName(Namespace("_-2jA"), "removeLocalizationListener"), 2
+
+      debugline           27
+      findproperty        QName(ProtectedNamespace("_-1UV"), "_-5oT")
+      pushfalse
+      initproperty        QName(ProtectedNamespace("_-1UV"), "_-5oT")
+
+      debugline           30
+L29:
+      findproperty        QName(ProtectedNamespace("_-0ba"), "_-3D-")
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-0ba"), "_-3D-")
+
+      debugline           32
+      getlex              QName(ProtectedNamespace("_-1UV"), "_-0qM")
+      not
+      dup
+      iffalse             L43
+
+      pop
+      getlex              QName(ProtectedNamespace("_-0ba"), "_-3D-")
+      pushbyte            0
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+      pushstring          "$"
+      equals
+L43:
+      dup
+      iffalse             L51
+
+      pop
+      getlex              QName(ProtectedNamespace("_-0ba"), "_-3D-")
+      pushbyte            1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+      pushstring          "{"
+      equals
+L51:
+      iffalse             L68
+
+      debugline           33
+      findproperty        QName(ProtectedNamespace("_-1UV"), "_-5oT")
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-1UV"), "_-5oT")
+
+      debugline           34
+      getlex              QName(PackageNamespace(""), "context")
+      getlex              QName(ProtectedNamespace("_-0ba"), "_-3D-")
+      pushbyte            2
+      getlex              QName(ProtectedNamespace("_-0ba"), "_-3D-")
+      pushstring          "}"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+      getlocal0
+      callpropvoid        QName(Namespace("_-2jA"), "registerLocalizationListener"), 2
+
+      jump                L79
+
+      debugline           35
+L68:
+      getlex              QName(ProtectedNamespace("_-1UV"), "_-37w")
+      pushnull
+      ifeq                L79
+
+      debugline           36
+      getlex              QName(ProtectedNamespace("_-1UV"), "_-37w")
+      getlex              QName(ProtectedNamespace("_-0ba"), "_-3D-")
+      setproperty         QName(PackageNamespace(""), "htmlText")
+
+      debugline           37
+      findpropstrict      QName(ProtectedNamespace("_-1UV"), "refreshTextImage")
+      callpropvoid        QName(ProtectedNamespace("_-1UV"), "refreshTextImage"), 0
+
+      debugline           39
+L79:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "localization") flag OVERRIDE
+   method
+    refid "_-1Bv:_-QG/localization/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 41
+      debugline           42
+      getlocal1
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L17
+
+      pop
+      getlex              QName(ProtectedNamespace("_-1UV"), "_-37w")
+      pushnull
+      equals
+      not
+L17:
+      iffalse             L28
+
+      debugline           43
+      getlex              QName(ProtectedNamespace("_-1UV"), "_-37w")
+      findpropstrict      QName(ProtectedNamespace("_-1UV"), "_-4CS")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-1UV"), "_-4CS"), 1
+      setproperty         QName(PackageNamespace(""), "htmlText")
+
+      debugline           44
+      findpropstrict      QName(ProtectedNamespace("_-1UV"), "refreshTextImage")
+      callpropvoid        QName(ProtectedNamespace("_-1UV"), "refreshTextImage"), 0
+
+      debugline           46
+L28:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Bv:_-QG/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

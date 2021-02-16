@@ -1,0 +1,648 @@
+class
+ refid "_-1nE:_-4wv"
+ instance QName(PackageNamespace("_-1nE"), "_-4wv")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5XD")
+  iinit
+   refid "_-1nE:_-4wv/iinit"
+   param QName(PackageNamespace("_-6Pi"), "HabboToolbar")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           24
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 24
+     debugline           24
+     getlocal0
+     constructsuper      0
+
+     debugline           25
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+
+     debugline           26
+     getlocal0
+     callpropvoid        QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "createWindow"), 0
+
+     debugline           27
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK") type QName(PackageNamespace("_-6Pi"), "HabboToolbar") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-1nE:_-4wv/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           32
+      getlocal0
+      pushscope
+
+      debugline           33
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushnull
+      ifne                L12
+
+      debugline           34
+      returnvoid
+
+      debugline           37
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           38
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+
+      debugline           39
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "createWindow")
+   method
+    refid "_-1nE:_-4wv/createWindow"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 11
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 42
+      debug               1, "k", 1, 45
+      debug               1, "k", 2, 45
+      debug               1, "k", 3, 59
+      debug               1, "k", 4, 60
+      debug               1, "k", 5, 61
+      debug               1, "k", 6, 62
+      debug               1, "k", 7, 63
+      debug               1, "k", 8, 64
+      debugline           42
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "assets")
+      pushstring          "me_menu_other_settings_xml"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "XmlAsset")
+      setlocal1
+
+      debugline           43
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "windowManager")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+
+      debugline           45
+      pushbyte            0
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal3
+
+      jump                L60
+
+L43:
+      label
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      getlocal2
+      callproperty        QName(Namespace("_-3si"), "getChildAt"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal3
+
+      debugline           47
+      getlocal3
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Yn")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           45
+      inclocal_i          2
+L60:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      getproperty         QName(Namespace("_-3si"), "numChildren")
+      iflt                L43
+
+      debugline           50
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "prefer_old_chat_checkbox"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "freeFlowChat")
+      getproperty         QName(Namespace("_-5Ng"), "isDisabledInPreferences")
+      setproperty         QName(Namespace("_-6XJ"), "_-4fH")
+
+      debugline           51
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "ignore_room_invites_checkbox"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "messenger")
+      callproperty        QName(Namespace("_-0sK"), "_-3Xz"), 0
+      setproperty         QName(Namespace("_-6XJ"), "_-4fH")
+
+      debugline           53
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "disable_room_camera_follow_checkbox"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "disable_room_camera_follow_label"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      pushstring          "room.camera.follow_user"
+      callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+      dup
+      setlocal            10
+
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      getlocal            10
+      kill                10
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      pushstring          "room.camera.follow_user"
+      callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+      iffalse             L127
+
+      debugline           56
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "disable_room_camera_follow_checkbox"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "sessionDataManager")
+      getproperty         QName(Namespace("_-0wj"), "_-1jk")
+      setproperty         QName(Namespace("_-6XJ"), "_-4fH")
+
+      debugline           59
+L127:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      pushstring          "sms.identity.verification.enabled"
+      callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+      convert_b
+      setlocal            4
+
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      pushstring          "phone.verification.status"
+      getlex              QName(PackageNamespace("_-3VD"), "_-0lD")
+      getproperty         QName(PackageNamespace(""), "_-3hC")
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      getlex              QName(PackageNamespace("_-3VD"), "_-0lD")
+      getproperty         QName(PackageNamespace(""), "_-1RK")
+      equals
+      setlocal            5
+
+      debugline           61
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      pushstring          "phone.collection.status"
+      getlex              QName(PackageNamespace("_-3VD"), "_-6UY")
+      getproperty         QName(PackageNamespace(""), "_-3hC")
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      getlex              QName(PackageNamespace("_-3VD"), "_-6UY")
+      getproperty         QName(PackageNamespace(""), "_-4A9")
+      equals
+      setlocal            6
+
+      debugline           62
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      pushstring          "sms.identity.verification.button.enabled"
+      callproperty        QName(PackageNamespace(""), "getBoolean"), 1
+      convert_b
+      setlocal            7
+
+      debugline           63
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      pushstring          "phone.collection.status"
+      getlex              QName(PackageNamespace("_-3VD"), "_-6UY")
+      getproperty         QName(PackageNamespace(""), "_-3hC")
+      callproperty        QName(PackageNamespace(""), "getInteger"), 2
+      getlex              QName(PackageNamespace("_-3VD"), "_-6UY")
+      getproperty         QName(PackageNamespace(""), "_-3hC")
+      equals
+      setlocal            8
+
+      debugline           64
+      getlocal            4
+      convert_b
+      dup
+      iffalse             L181
+
+      pop
+      getlocal            5
+      not
+L181:
+      dup
+      iffalse             L196
+
+      pop
+      getlocal            6
+      convert_b
+      dup
+      iftrue              L196
+
+      pop
+      getlocal            7
+      convert_b
+      dup
+      iffalse             L196
+
+      pop
+      getlocal            8
+      convert_b
+L196:
+      convert_b
+      setlocal            9
+
+      debugline           65
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "btn_reset_phone_number_collection"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal            9
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           66
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Yn")
+   method
+    refid "_-1nE:_-4wv/_-Yn"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           68
+      getlocal0
+      pushscope
+
+      pushfalse
+      setlocal            4
+
+      debug               1, "k", 0, 68
+      debug               1, "k", 1, 70
+      debug               1, "k", 2, 71
+      debugline           70
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("_-X3"), "IWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           71
+      getlocal2
+      getproperty         QName(Namespace("_-6q"), "name")
+      coerce_s
+      setlocal3
+
+      jump                L158
+
+      debug               1, "k", 3, 94
+L23:
+      label
+      debugline           74
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           75
+      jump                L197
+
+L29:
+      label
+      debugline           77
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "freeFlowChat")
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "prefer_old_chat_checkbox"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow"), 1
+      getproperty         QName(Namespace("_-6XJ"), "_-4fH")
+      setproperty         QName(Namespace("_-5Ng"), "isDisabledInPreferences")
+
+      debugline           78
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "freeFlowChat")
+      getproperty         QName(Namespace("_-5Ng"), "isDisabledInPreferences")
+      iftrue              L79
+
+      debugline           81
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "_-3Fv")
+      getproperty         QName(Namespace("_-6Nc"), "_-0wA")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L66
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "freeFlowChat")
+      getproperty         QName(Namespace("_-5Ng"), "displayObject")
+      pushnull
+      equals
+      not
+L66:
+      iffalse             L77
+
+      debugline           82
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "_-3Fv")
+      getproperty         QName(Namespace("_-6Nc"), "_-0wA")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "freeFlowChat")
+      getproperty         QName(Namespace("_-5Ng"), "displayObject")
+      callpropvoid        QName(Namespace("_-3rS"), "setDisplayObject"), 1
+
+L77:
+      jump                L84
+
+      debugline           86
+L79:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "freeFlowChat")
+      callpropvoid        QName(Namespace("_-5Ng"), "clear"), 0
+
+      debugline           88
+L84:
+      jump                L197
+
+L85:
+      label
+      debugline           90
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "messenger")
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "ignore_room_invites_checkbox"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow"), 1
+      getproperty         QName(Namespace("_-6XJ"), "_-4fH")
+      callpropvoid        QName(Namespace("_-0sK"), "_-4lU"), 1
+
+      debugline           91
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "connection")
+      findpropstrict      QName(PackageNamespace("_-2o7"), "_-3QC")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "messenger")
+      callproperty        QName(Namespace("_-0sK"), "_-3Xz"), 0
+      constructprop       QName(PackageNamespace("_-2o7"), "_-3QC"), 1
+      callpropvoid        QName(Namespace("_-6NY"), "send"), 1
+
+      debugline           92
+      jump                L197
+
+L111:
+      label
+      debugline           94
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "disable_room_camera_follow_checkbox"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ICheckBoxWindow"), 1
+      getproperty         QName(Namespace("_-6XJ"), "_-4fH")
+      convert_b
+      setlocal            4
+
+      debugline           95
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "connection")
+      findpropstrict      QName(PackageNamespace("_-2o7"), "_-0m")
+      getlocal            4
+      constructprop       QName(PackageNamespace("_-2o7"), "_-0m"), 1
+      callpropvoid        QName(Namespace("_-6NY"), "send"), 1
+
+      debugline           96
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "sessionDataManager")
+      getlocal            4
+      callpropvoid        QName(Namespace("_-0wj"), "_-bT"), 1
+
+      debugline           97
+      jump                L197
+
+L138:
+      label
+      debugline           99
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      pushstring          "btn_reset_phone_number_collection"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           100
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-0hK")
+      getproperty         QName(PackageNamespace(""), "connection")
+      findpropstrict      QName(PackageNamespace("_-24Z"), "_-0O6")
+      constructprop       QName(PackageNamespace("_-24Z"), "_-0O6"), 0
+      callpropvoid        QName(Namespace("_-6NY"), "send"), 1
+
+      debugline           102
+      jump                L197
+
+L155:
+      label
+      jump                L197
+
+      debugline           72
+L158:
+      getlocal3
+      setlocal            5
+
+      pushstring          "back_btn"
+      debugline           73
+      getlocal            5
+      ifstrictne          L166
+
+      pushbyte            0
+      jump                L194
+
+L166:
+      pushstring          "prefer_old_chat_checkbox"
+      debugline           76
+      getlocal            5
+      ifstrictne          L172
+
+      pushbyte            1
+      jump                L194
+
+L172:
+      pushstring          "ignore_room_invites_checkbox"
+      debugline           89
+      getlocal            5
+      ifstrictne          L178
+
+      pushbyte            2
+      jump                L194
+
+L178:
+      pushstring          "disable_room_camera_follow_checkbox"
+      debugline           93
+      getlocal            5
+      ifstrictne          L184
+
+      pushbyte            3
+      jump                L194
+
+L184:
+      pushstring          "btn_reset_phone_number_collection"
+      debugline           98
+      getlocal            5
+      ifstrictne          L190
+
+      pushbyte            4
+      jump                L194
+
+L190:
+      jump                L193
+
+      pushbyte            5
+      jump                L194
+
+L193:
+      pushbyte            5
+L194:
+      kill                5
+      lookupswitch        L155, [L23, L29, L85, L111, L138, L155]
+
+      debugline           104
+L197:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "window")
+   method
+    refid "_-1nE:_-4wv/window/getter"
+    returns QName(PackageNamespace("_-X3"), "IWindowContainer")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           106
+      getlocal0
+      pushscope
+
+      debugline           107
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5XD", "_-1nE:_-4wv"), "_-Fi")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1nE:_-4wv/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

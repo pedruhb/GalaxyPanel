@@ -1,0 +1,191 @@
+class
+ refid "_-4OT:_-4VV"
+ instance QName(PackageNamespace("_-4OT"), "_-4VV")
+  extends QName(PackageNamespace("_-67V"), "_-6IA")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1mM")
+  iinit
+   refid "_-4OT:_-4VV/iinit"
+   param QName(PackageNamespace("_-ur"), "_-5jA")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace("_-67V"), "_-45P")
+   param QName(PackageNamespace("_-47b"), "HabboCatalog")
+   body
+    maxstack 6
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           24
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 24
+     debug               1, "k", 1, 24
+     debug               1, "k", 2, 24
+     debug               1, "k", 3, 24
+     debugline           25
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlex              QName(PackageNamespace("_-67V"), "_-6IA")
+     getproperty         QName(PackageNamespace(""), "ALIGN_OVERLAY")
+     pushtrue
+     constructsuper      5
+
+     debugline           26
+     getlocal0
+     getlocal            4
+     initproperty        QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-2--")
+
+     debugline           27
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-5dD")
+
+     debugline           28
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-2--") type QName(PackageNamespace("_-47b"), "HabboCatalog") end
+  trait slot QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-5dD") type QName(PackageNamespace("_-ur"), "_-5jA") end
+  trait method QName(PackageNamespace(""), "getRenderedWindow") flag OVERRIDE
+   method
+    refid "_-4OT:_-4VV/getRenderedWindow"
+    returns QName(PackageNamespace("_-X3"), "IWindowContainer")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           30
+      getlocal0
+      pushscope
+
+      debugline           31
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-Fi")
+      pushnull
+      ifne                L13
+
+      debugline           32
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "createWindow"), 0
+
+      debugline           34
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-Fi")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "createWindow")
+   method
+    refid "_-4OT:_-4VV/createWindow"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      debugline           38
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-2--")
+      getproperty         QName(PackageNamespace(""), "utils")
+      pushstring          "bundlesInfoItem"
+      callproperty        QName(PackageNamespace(""), "createWindow"), 1
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      initproperty        QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-Fi")
+
+      debugline           39
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-Fi")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-12r")
+      setproperty         QName(Namespace("_-6q"), "procedure")
+
+      debugline           40
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-12r")
+   method
+    refid "_-4OT:_-4VV/_-12r"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           42
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 42
+      debug               1, "k", 1, 42
+      debugline           43
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      ifne                L24
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1mM", "_-4OT:_-4VV"), "_-5dD")
+      getproperty         QName(PackageNamespace(""), "events")
+      findpropstrict      QName(PackageNamespace("_-09G"), "_-4IC")
+      getlex              QName(PackageNamespace("_-09G"), "_-4IC")
+      getproperty         QName(PackageNamespace(""), "_-5Cg")
+      getlex              QName(PackageNamespace(""), "data")
+      getlex              QName(PackageNamespace(""), "id")
+      constructprop       QName(PackageNamespace("_-09G"), "_-4IC"), 3
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           46
+L24:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4OT:_-4VV/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

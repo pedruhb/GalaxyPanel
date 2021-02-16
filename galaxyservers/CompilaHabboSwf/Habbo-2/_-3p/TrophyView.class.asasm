@@ -1,0 +1,464 @@
+class
+ refid "_-3p:TrophyView"
+ instance QName(PackageNamespace("_-3p"), "TrophyView")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-5ri", [PackageNamespace("_-3p")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4SL")
+  iinit
+   refid "_-3p:TrophyView/iinit"
+   param QName(PackageNamespace("_-3p"), "_-3Ny")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           25
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 25
+     debugline           25
+     getlocal0
+     constructsuper      0
+
+     debugline           26
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+
+     debugline           27
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD") type QName(PackageNamespace("_-3p"), "_-3Ny") end
+  trait slot QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-3p:TrophyView/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debugline           30
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      iffalse             L17
+
+      debugline           31
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           32
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+
+      debugline           34
+L17:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+
+      debugline           35
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6BV")
+   method
+    refid "_-3p:TrophyView/_-6BV"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 5
+     localcount 11
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            6
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            7
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            8
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            9
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      setlocal            10
+
+      debug               1, "k", 0, 42
+      debug               1, "k", 1, 43
+      debug               1, "k", 2, 52
+      debug               1, "k", 3, 58
+      debug               1, "k", 4, 64
+      debug               1, "k", 5, 70
+      debug               1, "k", 6, 76
+      debug               1, "k", 7, 82
+      debug               1, "k", 8, 83
+      debug               1, "k", 9, 84
+      debugline           42
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+      getproperty         QName(Namespace("_-1me"), "assets")
+      pushstring          "trophy"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      coerce              QName(PackageNamespace("_-eg"), "_-4ct")
+      setlocal1
+
+      debugline           43
+      findpropstrict      QName(PackageNamespace("_-eg"), "XmlAsset")
+      getlocal1
+      callproperty        QName(PackageNamespace("_-eg"), "XmlAsset"), 1
+      coerce              QName(PackageNamespace("_-eg"), "XmlAsset")
+      setlocal2
+
+      debugline           44
+      getlocal2
+      pushnull
+      ifne                L59
+
+      pushfalse
+      returnvalue
+
+      debugline           46
+L59:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      pushnull
+      ifne                L77
+
+      debugline           47
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+      getproperty         QName(Namespace("_-1me"), "windowManager")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+
+      debugline           49
+L77:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      callpropvoid        QName(Namespace("_-6q"), "center"), 0
+
+      debugline           53
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      pushstring          "close"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal3
+
+      debugline           54
+      getlocal3
+      pushnull
+      ifeq                L99
+
+      debugline           55
+      getlocal3
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-dO")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           59
+L99:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      pushstring          "title_bg"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            4
+
+      debugline           60
+      getlocal            4
+      pushnull
+      ifeq                L120
+
+      debugline           61
+      getlocal            4
+      getlex              QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-1Tv")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+      getproperty         QName(Namespace("_-1me"), "color")
+      getproperty         MultinameL([PrivateNamespace("_-4SL", "_-3p:TrophyView"), PackageNamespace(""), PackageNamespace("_-3p"), PrivateNamespace("TrophyView.as$4892", "_-3p:TrophyView/_-6BV"), PackageInternalNs("_-3p"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4SL"), StaticProtectedNs("_-4SL")])
+      setproperty         QName(Namespace("_-6q"), "color")
+
+      debugline           65
+L120:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      pushstring          "greeting"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            5
+
+      debugline           66
+      getlocal            5
+      pushnull
+      ifeq                L145
+
+      debugline           67
+      getlocal            5
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+      getproperty         QName(Namespace("_-1me"), "message")
+      getlex              QName(PackageNamespace(""), "RegExp")
+      pushstring          "\\\\r"
+      pushstring          "g"
+      construct           2
+      pushstring          "\n"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           71
+L145:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      pushstring          "date"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            6
+
+      debugline           72
+      getlocal            6
+      pushnull
+      ifeq                L164
+
+      debugline           73
+      getlocal            6
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+      getproperty         QName(Namespace("_-1me"), "date")
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           77
+L164:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      pushstring          "name"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            7
+
+      debugline           78
+      getlocal            7
+      pushnull
+      ifeq                L183
+
+      debugline           79
+      getlocal            7
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+      getproperty         QName(Namespace("_-1me"), "name")
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           87
+L183:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+      getproperty         QName(Namespace("_-1me"), "assets")
+      getlex              QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-1q6")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-5dD")
+      getproperty         QName(Namespace("_-1me"), "color")
+      getproperty         MultinameL([PrivateNamespace("_-4SL", "_-3p:TrophyView"), PackageNamespace(""), PackageNamespace("_-3p"), PrivateNamespace("TrophyView.as$4892", "_-3p:TrophyView/_-6BV"), PackageInternalNs("_-3p"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-4SL"), StaticProtectedNs("_-4SL")])
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "BitmapDataAsset")
+      setlocal            8
+
+      debugline           88
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      pushstring          "trophy_bg"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      setlocal            10
+
+      debugline           89
+      getlocal            8
+      pushnull
+      ifeq                L221
+
+      debugline           90
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace("flash.display"), "BitmapData")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "BitmapData")
+      setlocal            9
+
+      debugline           91
+      getlocal            10
+      getlocal            9
+      setproperty         QName(Namespace("_-5Rl"), "bitmap")
+
+      debugline           94
+L221:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2Eh")
+   method
+    refid "_-3p:TrophyView/_-2Eh"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           100
+      getlocal0
+      pushscope
+
+      debugline           101
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      pushnull
+      ifeq                L18
+
+      debugline           102
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           103
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-Fi")
+
+      debugline           105
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-dO")
+   method
+    refid "_-3p:TrophyView/_-dO"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           111
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 111
+      debugline           112
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-2Eh"), 0
+
+      debugline           113
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3p:TrophyView/cinit"
+  body
+   maxstack 5
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 19
+    findproperty        QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-1q6")
+    findpropstrict      QName(PackageNamespace(""), "Array")
+    pushstring          "trophy_bg_gold"
+    pushstring          "trophy_bg_silver"
+    pushstring          "trophy_bg_bronze"
+    constructprop       QName(PackageNamespace(""), "Array"), 3
+    initproperty        QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-1q6")
+
+    debug               1, "k", 1, 20
+    findproperty        QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-1Tv")
+    findpropstrict      QName(PackageNamespace(""), "Array")
+    pushdouble          4293707079
+    pushdouble          4291411404
+    pushdouble          4290279476
+    constructprop       QName(PackageNamespace(""), "Array"), 3
+    initproperty        QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-1Tv")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-1q6") slotid 1 type QName(PackageNamespace(""), "Array") end
+ trait const QName(PrivateNamespace("_-4SL", "_-3p:TrophyView"), "_-1Tv") slotid 2 type QName(PackageNamespace(""), "Array") end
+end ; class

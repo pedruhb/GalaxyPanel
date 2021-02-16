@@ -1,0 +1,133 @@
+class
+ refid "_-k3:_-3uG"
+ instance QName(PackageNamespace("_-k3"), "_-3uG")
+  extends QName(PackageNamespace("_-k3"), "_-0H-")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0vP")
+  iinit
+   refid "_-k3:_-3uG/iinit"
+   param QName(PackageNamespace("_-47b"), "_-37l")
+   param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-k3"), "_-3r9")>)
+   param QName(PackageNamespace("_-47b"), "HabboCatalog")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 7
+    maxscopedepth 8
+    code
+     debugfile           "k"
+     debugline           10
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 10
+     debug               1, "k", 1, 10
+     debug               1, "k", 2, 10
+     debugline           11
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           12
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "initProductIcon") flag OVERRIDE
+   method
+    refid "_-k3:_-3uG/initProductIcon"
+    param QName(PackageNamespace("_-1KZ"), "_-1DI")
+    param QName(PackageNamespace("_-1KZ"), "_-5hX")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 7
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           14
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 14
+      debug               1, "k", 1, 14
+      debug               1, "k", 2, 17
+      debug               1, "k", 3, 22
+      debugline           15
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "initProductIcon"), 1
+      debugline           17
+      getlex              QName(ProtectedNamespace("_-1Nj"), "_-0q1")
+      pushstring          "multiContainer"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal3
+
+      debugline           18
+      getlocal3
+      iffalse             L26
+
+      debugline           19
+      getlocal3
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           22
+L26:
+      getlex              QName(ProtectedNamespace("_-1Nj"), "_-0q1")
+      pushstring          "multiCounter"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            4
+
+      debugline           23
+      getlocal            4
+      iffalse             L44
+
+      debugline           24
+      getlocal            4
+      pushstring          "x"
+      getlex              QName(PackageNamespace(""), "_-4zc")
+      getproperty         QName(Namespace("_-1YH"), "productCount")
+      add
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           27
+L44:
+      getlocal0
+      getlex              QName(PackageNamespace(""), "offer")
+      getproperty         QName(Namespace("_-6Vz"), "clubLevel")
+      callpropvoid        QName(PackageNamespace(""), "_-0gv"), 1
+
+      debugline           28
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-k3:_-3uG/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 6
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

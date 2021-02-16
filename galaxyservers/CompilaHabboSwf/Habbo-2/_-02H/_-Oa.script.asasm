@@ -1,0 +1,33 @@
+script ; 4381
+ sinit
+  refid "_-02H:_-Oa.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           20
+    findpropstrict      Multiname("_-Oa", [PackageNamespace("_-02H")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-02H:_-Oa"
+    popscope
+    initproperty        QName(PackageNamespace("_-02H"), "_-Oa")
+
+    debugfile           "k"
+    debugline           8
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-02H"), "_-Oa")
+  #include "_-Oa.class.asasm"
+ end ; trait
+end ; script

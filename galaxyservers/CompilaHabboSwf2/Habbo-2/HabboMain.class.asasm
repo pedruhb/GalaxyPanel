@@ -1,0 +1,1335 @@
+class
+ refid "HabboMain"
+ instance QName(PackageNamespace(""), "HabboMain")
+  extends QName(PackageNamespace("flash.display"), "Sprite")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("HabboMain")
+  iinit
+   refid "HabboMain/iinit"
+   param QName(PackageNamespace(""), "IHabboLoadingScreen")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 9
+    maxscopedepth 10
+    code
+     debugfile           "k"
+     debugline           41
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 41
+     debugline           41
+     getlocal0
+     constructsuper      0
+
+     debugline           42
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadingScreen")
+
+     debugline           43
+     findpropstrict      QName(PackageNamespace(""), "addEventListener")
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "ADDED_TO_STAGE")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("HabboMain"), "onAddedToStage")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           44
+     findpropstrict      QName(PackageNamespace(""), "addEventListener")
+     getlex              QName(PackageNamespace("flash.events"), "Event")
+     getproperty         QName(PackageNamespace(""), "EXIT_FRAME")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("HabboMain"), "onExitFrame")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     debugline           45
+     getlex              QName(PackageNamespace(""), "_-1Hb")
+     findpropstrict      QName(PackageNamespace("flash.utils"), "getQualifiedClassName")
+     getlex              QName(PackageNamespace("_-3EH"), "Core")
+     callproperty        QName(PackageNamespace("flash.utils"), "getQualifiedClassName"), 1
+     pushstring          " version: "
+     add
+     getlex              QName(PackageNamespace("_-3EH"), "Core")
+     getproperty         QName(PackageNamespace(""), "version")
+     add
+     callpropvoid        QName(PackageNamespace(""), "log"), 1
+
+     debugline           46
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core") type QName(PackageNamespace("_-1M6"), "_-65o") end
+  trait slot QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadingScreen") type QName(PackageNamespace(""), "IHabboLoadingScreen") end
+  trait slot QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_totalSteps") type QName(PackageNamespace(""), "int") value Integer(3) end
+  trait slot QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadedFiles") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_completedInitSteps") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("HabboMain", "HabboMain#0"), "roomEngineReady") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("HabboMain", "HabboMain#0"), "coreRunning") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "dispose")
+   method
+    refid "HabboMain/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debugline           49
+      findpropstrict      QName(PackageNamespace(""), "removeEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "ProgressEvent")
+      getproperty         QName(PackageNamespace(""), "PROGRESS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onProgressEvent")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           50
+      findpropstrict      QName(PackageNamespace(""), "removeEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onCompleteEvent")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           51
+      findpropstrict      QName(PackageNamespace(""), "removeEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "ADDED_TO_STAGE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("HabboMain"), "onAddedToStage")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           52
+      findpropstrict      QName(PackageNamespace(""), "removeEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "EXIT_FRAME")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("HabboMain"), "onExitFrame")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           54
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadingScreen")
+      iffalse             L45
+
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadingScreen")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           56
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadingScreen")
+
+      debugline           59
+L45:
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      pushnull
+      ifeq                L59
+
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getproperty         QName(Namespace("_-s9"), "events")
+      getlex              QName(PackageNamespace("_-1M6"), "Component")
+      getproperty         QName(PackageNamespace(""), "COMPONENT_EVENT_RUNNING")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onCoreRunning")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "removeEventListener"), 2
+
+      debugline           63
+L59:
+      getlex              QName(PackageNamespace(""), "parent")
+      iffalse             L66
+
+      debugline           64
+      getlex              QName(PackageNamespace(""), "parent")
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+      debugline           66
+L66:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "unloading")
+   method
+    refid "HabboMain/unloading"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 15
+     code
+      debugfile           "k"
+      debugline           71
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 71
+      debugline           73
+L10:
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      convert_b
+      dup
+      iffalse             L20
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getproperty         QName(Namespace("_-2W2"), "disposed")
+      not
+L20:
+      iffalse             L36
+
+      debugline           74
+      getlex              QName(PackageNamespace("_-07U"), "ErrorReportStorage")
+      pushstring          "Unload"
+      pushstring          "Client unloading started"
+      callpropvoid        QName(PackageNamespace(""), "_-5M8"), 2
+
+      debugline           75
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getproperty         QName(Namespace("_-s9"), "events")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "UNLOAD")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "dispatchEvent"), 1
+
+      debugline           78
+L36:
+      jump                L52
+
+L37:
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           80
+      popscope
+      kill                2
+      debugline           83
+L52:
+      returnvoid
+     end ; code
+     try from L10 to L36 target L37 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "error") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("HabboMain"), "onAddedToStage")
+   method
+    refid "HabboMain/HabboMain:onAddedToStage"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 10
+     maxscopedepth 15
+     code
+      debugfile           "k"
+      debugline           85
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      debug               1, "k", 1, 85
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      debug               1, "k", 0, 85
+      debugline           91
+L14:
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "prepareCore"), 0
+
+      debugline           93
+L17:
+      jump                L53
+
+L18:
+      getlocal0
+      pushscope
+
+      getlocal2
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal3
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           94
+      getlex              QName(PackageNamespace(""), "Habbo")
+      getlex              QName(PackageNamespace(""), "_-5Vm")
+      getproperty         QName(PackageNamespace(""), "_-2Vz")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           96
+      getlex              QName(PackageNamespace(""), "Habbo")
+      pushstring          "Failed to prepare the core: "
+      getscopeobject      2
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "message")
+      add
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      getproperty         QName(PackageNamespace(""), "_-0k7")
+      pushtrue
+      getscopeobject      2
+      getslot             1
+      callpropvoid        QName(PackageNamespace(""), "reportCrash"), 4
+
+      debugline           97
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      popscope
+      kill                3
+      debugline           100
+L53:
+      returnvoid
+     end ; code
+     try from L14 to L17 target L18 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "error") end
+     trait slot QName(PackageInternalNs(""), "event") slotid 1 type QName(PackageNamespace("flash.events"), "Event") value Null() end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("HabboMain"), "onExitFrame")
+   method
+    refid "HabboMain/HabboMain:onExitFrame"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           102
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 102
+      debugline           106
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "roomEngineReady")
+      convert_b
+      dup
+      iffalse             L15
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "coreRunning")
+      convert_b
+L15:
+      iffalse             L20
+
+      debugline           110
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "dispose"), 0
+
+      debugline           112
+L20:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "prepareCore")
+   method
+    refid "HabboMain/prepareCore"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           114
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 115
+      debug               1, "k", 1, 124
+      debugline           115
+      getlex              QName(PackageNamespace("flash.system"), "Capabilities")
+      getproperty         QName(PackageNamespace(""), "playerType")
+      pushstring          "StandAlone"
+      ifeq                L15
+
+      findpropstrict      QName(PrivateNamespace("HabboMain.as$0", "HabboMain#1"), "HabboCoreErrorReporter")
+      constructprop       QName(PrivateNamespace("HabboMain.as$0", "HabboMain#1"), "HabboCoreErrorReporter"), 0
+      coerce              QName(PackageNamespace("_-1M6"), "_-nG")
+      jump                L17
+
+L15:
+      pushnull
+      coerce              QName(PackageNamespace("_-1M6"), "_-nG")
+L17:
+      coerce              QName(PackageNamespace("_-1M6"), "_-nG")
+      setlocal1
+
+      debugline           116
+      getlocal0
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      getlex              QName(PackageNamespace(""), "stage")
+      jump                L28
+
+      getlex              QName(PackageNamespace("com.sulake.core"), "Core")
+      getproperty         QName(PackageNamespace(""), "CORE_SETUP_DEBUG")
+      convert_u
+      jump                L31
+
+L28:
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      getproperty         QName(PackageNamespace(""), "_-1qn")
+      convert_u
+L31:
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-6GW"), 3
+      initproperty        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+
+      debugline           119
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboTrackingLib")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           121
+      findpropstrict      QName(PackageNamespace(""), "addEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "ProgressEvent")
+      getproperty         QName(PackageNamespace(""), "PROGRESS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onProgressEvent")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           122
+      findpropstrict      QName(PackageNamespace(""), "addEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onCompleteEvent")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           131
+      getlex              QName(PackageNamespace(""), "XML")
+      pushstring          "<config>\r\n\x09\x09\x09\x09<asset-libraries>\r\n\x09\x09\x09\x09\x09<library url=\"hh_human_body.swf\"/>\r\n\x09\x09\x09\x09\x09<library url=\"hh_human_item.swf\"/>\r\n\x09\x09\x09\x09</asset-libraries>\r\n\x09\x09\x09\x09<service-libraries/>\r\n\x09\x09\x09\x09<component-libraries/>\r\n\x09\x09\x09</config>"
+      construct           1
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal2
+
+      debugline           133
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlocal2
+      getlocal0
+      callpropvoid        QName(Namespace("_-4gK"), "_-1TW"), 2
+
+      debugline           134
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      callproperty        QName(Namespace("_-4gK"), "_-2UC"), 0
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      callproperty        QName(Namespace("_-4gK"), "_-186"), 0
+      add
+      getlex              QName(PrivateNamespace("HabboMain", "HabboMain#0"), "INIT_STEPS")
+      add
+      initproperty        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_totalSteps")
+
+      debugline           137
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "CoreCommunicationFrameworkLib")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           138
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboRoomObjectLogicLib")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           139
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboRoomObjectVisualizationLib")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           140
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "RoomManagerLib")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           141
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "RoomSpriteRendererLib")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           142
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboRoomSessionManagerLib")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           143
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboAvatarRenderLib")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           144
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboSessionDataManagerLib")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           147
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboConfigurationCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           148
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboLocalizationCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           149
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboWindowManagerCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           150
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboCommunicationCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           151
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboCommunicationDemoCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           152
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboNavigatorCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           153
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboFriendListCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           154
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboMessengerCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           155
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboInventoryCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           156
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboToolbarCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           157
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboCatalogCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           158
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboRoomEngineCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           159
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboRoomUICom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           160
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboAvatarEditorCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           161
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboNotificationsCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           162
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboHelpCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           163
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboAdManagerCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           164
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboModerationCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           165
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboUserDefinedRoomEventsCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           166
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboSoundManagerFlash10Com")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           167
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboQuestEngineCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           168
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboFriendBarCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           169
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboGroupsCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           170
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboGamesCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           171
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboFreeFlowChatCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           172
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlex              QName(PackageNamespace(""), "HabboNewNavigatorCom")
+      callpropvoid        QName(Namespace("_-s9"), "_-05H"), 1
+
+      debugline           174
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "addInitializationProgressListeners"), 0
+
+      debugline           175
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "updateProgressBar")
+   method
+    refid "HabboMain/updateProgressBar"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           178
+      getlocal0
+      pushscope
+
+      pushnan
+      setlocal1
+
+      debugline           179
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadingScreen")
+      pushnull
+      ifeq                L35
+
+      debug               1, "k", 0, 180
+      debugline           180
+      getlex              QName(PackageNamespace(""), "CORE_RATIO")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_completedInitSteps")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadedFiles")
+      add
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_totalSteps")
+      divide
+      pushbyte            1
+      getlex              QName(PackageNamespace(""), "CORE_RATIO")
+      subtract
+      multiply
+      add
+      convert_d
+      setlocal1
+
+      debugline           184
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadingScreen")
+      getlocal1
+      callpropvoid        QName(Namespace("IHabboLoadingScreen"), "_-0b9"), 1
+
+      debugline           186
+L35:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onProgressEvent")
+   method
+    refid "HabboMain/onProgressEvent"
+    param QName(PackageNamespace("flash.events"), "ProgressEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           188
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 188
+      debugline           189
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      callproperty        QName(Namespace("_-4gK"), "_-186"), 0
+      initproperty        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_loadedFiles")
+
+      debugline           190
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "updateProgressBar"), 0
+
+      debugline           191
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onCompleteEvent")
+   method
+    refid "HabboMain/onCompleteEvent"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           193
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 193
+      debugline           194
+      findpropstrict      QName(PackageNamespace(""), "removeEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "ProgressEvent")
+      getproperty         QName(PackageNamespace(""), "PROGRESS")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onProgressEvent")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           195
+      findpropstrict      QName(PackageNamespace(""), "removeEventListener")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onCompleteEvent")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      debugline           197
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "initializeCore"), 0
+
+      debugline           198
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "initializeCore")
+   method
+    refid "HabboMain/initializeCore"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 15
+     code
+      debugfile           "k"
+      debugline           200
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 200
+      debugline           201
+      getlex              QName(PackageNamespace(""), "Habbo")
+      getlex              QName(PackageNamespace(""), "_-5Vm")
+      getproperty         QName(PackageNamespace(""), "_-6W8")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           204
+L15:
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      callpropvoid        QName(Namespace("_-4gK"), "initialize"), 0
+
+      debugline           205
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      getproperty         QName(PackageNamespace(""), "available")
+      iffalse             L29
+
+      debugline           206
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "unloading"
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "unloading")
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      debugline           209
+L29:
+      jump                L61
+
+L30:
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      debugline           210
+      getlex              QName(PackageNamespace(""), "Habbo")
+      getlex              QName(PackageNamespace(""), "_-5Vm")
+      getproperty         QName(PackageNamespace(""), "_-2Vz")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           211
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      pushstring          "Failed to initialize the core: "
+      getscopeobject      2
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "message")
+      add
+      getlex              QName(PackageNamespace("_-3EH"), "Core")
+      getproperty         QName(PackageNamespace(""), "_-0k7")
+      getscopeobject      2
+      getslot             1
+      callpropvoid        QName(PackageNamespace(""), "_-4k6"), 3
+
+      popscope
+      kill                2
+      debugline           213
+L61:
+      returnvoid
+     end ; code
+     try from L15 to L29 target L30 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "error") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "simpleQueueInterface")
+   method
+    refid "HabboMain/simpleQueueInterface"
+    param QName(PackageNamespace("_-1M6"), "_-32K")
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           218
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 218
+      debug               1, "k", 1, 218
+      debug               1, "k", 2, 219
+      debugline           219
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getlocal1
+      getlocal2
+      callproperty        QName(Namespace("_-XP"), "queueInterface"), 2
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal3
+
+      debugline           220
+      getlocal3
+      pushnull
+      ifeq                L27
+
+      debugline           221
+      getlocal2
+      getglobalscope
+      getlocal1
+      getlocal3
+      call                2
+      pop
+      debugline           223
+L27:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "addInitializationProgressListeners")
+   method
+    refid "HabboMain/addInitializationProgressListeners"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 12
+     code
+      debugfile           "k"
+      debugline           225
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 225
+      debugline           226
+      getlocal0
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboLocalizationManager")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboLocalizationManager"), 0
+      newfunction         "HabboMain/addInitializationProgressListeners/inline_method#1"
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "simpleQueueInterface"), 2
+
+      debugfile           "k"
+      debugline           230
+      getlocal0
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDHabboConfigurationManager")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDHabboConfigurationManager"), 0
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onConfigurationComplete")
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "simpleQueueInterface"), 2
+
+      debugline           232
+      getlocal0
+      findpropstrict      QName(PackageNamespace("com.sulake.iid"), "IIDRoomEngine")
+      constructprop       QName(PackageNamespace("com.sulake.iid"), "IIDRoomEngine"), 0
+      newfunction         "HabboMain/addInitializationProgressListeners/inline_method#0"
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "simpleQueueInterface"), 2
+
+      debugfile           "k"
+      debugline           236
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      getproperty         QName(Namespace("_-s9"), "events")
+      getlex              QName(PackageNamespace("_-1M6"), "Component")
+      getproperty         QName(PackageNamespace(""), "COMPONENT_EVENT_RUNNING")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onCoreRunning")
+      callpropvoid        QName(Namespace("flash.events:IEventDispatcher"), "addEventListener"), 2
+
+      debugline           237
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onLocalizationComplete")
+   method
+    refid "HabboMain/onLocalizationComplete"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           239
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 239
+      debugline           240
+      getlex              QName(PackageNamespace(""), "Habbo")
+      getlex              QName(PackageNamespace(""), "_-5Vm")
+      getproperty         QName(PackageNamespace(""), "_-3O7")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           242
+      getlocal0
+      dup
+      setlocal2
+
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_completedInitSteps")
+      increment_i
+      setlocal3
+
+      getlocal2
+      getlocal3
+      setproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_completedInitSteps")
+
+      kill                3
+      kill                2
+      debugline           243
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "updateProgressBar"), 0
+
+      debugline           244
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onConfigurationComplete")
+   method
+    refid "HabboMain/onConfigurationComplete"
+    param QName(PackageNamespace("_-1M6"), "_-32K")
+    param QName(PackageNamespace("_-1M6"), "Component")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           246
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 246
+      debug               1, "k", 1, 246
+      debugline           247
+      getlex              QName(PackageNamespace(""), "Habbo")
+      getlex              QName(PackageNamespace(""), "_-5Vm")
+      getproperty         QName(PackageNamespace(""), "_-2rA")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           249
+      getlocal0
+      dup
+      setlocal3
+
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_completedInitSteps")
+      increment_i
+      setlocal            4
+
+      getlocal3
+      getlocal            4
+      setproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_completedInitSteps")
+
+      kill                4
+      kill                3
+      debugline           250
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "updateProgressBar"), 0
+
+      debugline           251
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onRoomEngineReady")
+   method
+    refid "HabboMain/onRoomEngineReady"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           253
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 253
+      debugline           254
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "roomEngineReady")
+
+      debugline           256
+      getlex              QName(PackageNamespace(""), "Habbo")
+      getlex              QName(PackageNamespace(""), "_-5Vm")
+      getproperty         QName(PackageNamespace(""), "_-0SB")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           258
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_core")
+      pushstring          "spaweb"
+      pushbyte            0
+      callproperty        QName(Namespace("_-37g"), "getInteger"), 2
+      pushbyte            1
+      ifne                L26
+
+      debugline           259
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "startSendingHeartBeat"), 0
+
+      debugline           261
+L26:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "startSendingHeartBeat")
+   method
+    refid "HabboMain/startSendingHeartBeat"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           263
+      getlocal0
+      pushscope
+
+      debugline           264
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "sendHeartBeat"), 0
+
+      debugline           265
+      findpropstrict      QName(PackageNamespace("flash.utils"), "setInterval")
+      getlocal0
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "sendHeartBeat")
+      pushshort           10000
+      callpropvoid        QName(PackageNamespace("flash.utils"), "setInterval"), 2
+
+      debugline           266
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "sendHeartBeat")
+   method
+    refid "HabboMain/sendHeartBeat"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           268
+      getlocal0
+      pushscope
+
+      debugline           269
+      getlex              QName(PackageNamespace("_-2-E"), "_-0jA")
+      callpropvoid        QName(PackageNamespace(""), "sendHeartBeat"), 0
+
+      debugline           270
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("HabboMain", "HabboMain#0"), "onCoreRunning")
+   method
+    refid "HabboMain/onCoreRunning"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      debugfile           "k"
+      debugline           272
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 272
+      debugline           273
+      getlocal0
+      pushtrue
+      initproperty        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "coreRunning")
+
+      debugline           275
+      getlex              QName(PackageNamespace(""), "Habbo")
+      getlex              QName(PackageNamespace(""), "_-5Vm")
+      getproperty         QName(PackageNamespace(""), "_-3jW")
+      callpropvoid        QName(PackageNamespace(""), "trackLoginStep"), 1
+
+      debugline           277
+      getlocal0
+      dup
+      setlocal2
+
+      getproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_completedInitSteps")
+      increment_i
+      setlocal3
+
+      getlocal2
+      getlocal3
+      setproperty         QName(PrivateNamespace("HabboMain", "HabboMain#0"), "_completedInitSteps")
+
+      kill                3
+      kill                2
+      debugline           278
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "updateProgressBar"), 0
+
+      debugline           279
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "HabboMain/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 8
+   maxscopedepth 9
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 28
+    findproperty        QName(PackageNamespace(""), "CORE_RATIO")
+    getlex              QName(PackageNamespace(""), "Habbo")
+    getproperty         QName(PackageNamespace(""), "CORE_RATIO")
+    initproperty        QName(PackageNamespace(""), "CORE_RATIO")
+
+    debug               1, "k", 1, 29
+    findproperty        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "INIT_STEPS")
+    pushbyte            3
+    initproperty        QName(PrivateNamespace("HabboMain", "HabboMain#0"), "INIT_STEPS")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "CORE_RATIO") slotid 1 type QName(PackageNamespace(""), "Number") value Double(0.6) end
+ trait const QName(PrivateNamespace("HabboMain", "HabboMain#0"), "INIT_STEPS") slotid 2 type QName(PackageNamespace(""), "int") value Integer(3) end
+end ; class

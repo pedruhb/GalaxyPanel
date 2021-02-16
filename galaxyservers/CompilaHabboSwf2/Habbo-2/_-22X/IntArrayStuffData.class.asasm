@@ -1,0 +1,406 @@
+class
+ refid "_-22X:IntArrayStuffData"
+ instance QName(PackageNamespace("_-22X"), "IntArrayStuffData")
+  extends QName(PackageNamespace("_-22X"), "StuffDataBase")
+  implements Multiname("_-5hX", [PackageNamespace("_-1KZ")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4FF")
+  iinit
+   refid "_-22X:IntArrayStuffData/iinit"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     getlocal0
+     pushscope
+
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     newarray            0
+     initproperty        QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+
+     getlocal0
+     constructsuper      0
+
+     debugline           80
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6") type QName(PackageNamespace(""), "Array") end
+  trait method QName(PackageNamespace(""), "initializeFromIncomingMessage") flag OVERRIDE
+   method
+    refid "_-22X:IntArrayStuffData/initializeFromIncomingMessage"
+    param QName(PackageNamespace("_-6Wd"), "_-5nh")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            4
+
+      debug               1, "k", 0, 19
+      debug               1, "k", 1, 21
+      debug               1, "k", 2, 22
+      debugline           20
+      getlocal0
+      findpropstrict      QName(PackageNamespace(""), "Array")
+      constructprop       QName(PackageNamespace(""), "Array"), 0
+      initproperty        QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+
+      debugline           21
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "_-1u3"), 0
+      convert_i
+      setlocal2
+
+      debugline           22
+      pushbyte            0
+      setlocal3
+
+      jump                L37
+
+L23:
+      label
+      debug               1, "k", 3, 23
+      debugline           23
+      getlocal1
+      callproperty        QName(Namespace("_-1U7"), "_-1u3"), 0
+      convert_i
+      setlocal            4
+
+      debugline           24
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+      getlocal            4
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           22
+      inclocal_i          3
+L37:
+      getlocal3
+      getlocal2
+      iflt                L23
+
+      debugline           26
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "initializeFromIncomingMessage"), 1
+      debugline           27
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initializeFromRoomObjectModel") flag OVERRIDE
+   method
+    refid "_-22X:IntArrayStuffData/initializeFromRoomObjectModel"
+    param QName(PackageNamespace("_-1JH"), "_-4Bx")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           29
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 29
+      debugline           30
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "initializeFromRoomObjectModel"), 1
+      debugline           31
+      getlocal0
+      getlocal1
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3uB")
+      callproperty        QName(Namespace("_-65g"), "getNumberArray"), 1
+      initproperty        QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+
+      debugline           32
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "writeRoomObjectModel") flag OVERRIDE
+   method
+    refid "_-22X:IntArrayStuffData/writeRoomObjectModel"
+    param QName(PackageNamespace("_-1JH"), "_-3Ek")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           34
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 34
+      debugline           35
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "writeRoomObjectModel"), 1
+      debugline           36
+      getlocal1
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-47q")
+      getlex              QName(PackageNamespace(""), "_-2Jc")
+      callpropvoid        QName(Namespace("_-MD"), "setNumber"), 2
+
+      debugline           37
+      getlocal1
+      getlex              QName(PackageNamespace("_-5y1"), "_-2EH")
+      getproperty         QName(PackageNamespace(""), "_-3uB")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+      callpropvoid        QName(Namespace("_-MD"), "setNumberArray"), 2
+
+      debugline           38
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getLegacyString") flag OVERRIDE
+   method
+    refid "_-22X:IntArrayStuffData/getLegacyString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debugline           41
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+      iftrue              L11
+
+      pushstring          ""
+      returnvalue
+
+      debugline           42
+L11:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+      getlex              QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-2G0")
+      getproperty         MultinameL([PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), PackageNamespace(""), PackageNamespace("_-22X"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("IntArrayStuffData.as$2789", "_-22X:IntArrayStuffData#1"), PackageInternalNs("_-22X"), ProtectedNamespace("_-4FF"), StaticProtectedNs("_-4FF"), StaticProtectedNs("_-2zn")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getValue")
+   method
+    refid "_-22X:IntArrayStuffData/getValue"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           45
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 45
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+      convert_b
+      dup
+      iffalse             L17
+
+      pop
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "length")
+      lessthan
+L17:
+      iffalse             L25
+
+      debugline           47
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), PackageNamespace(""), PackageNamespace("_-22X"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("IntArrayStuffData.as$2789", "_-22X:IntArrayStuffData#1"), PackageInternalNs("_-22X"), ProtectedNamespace("_-4FF"), StaticProtectedNs("_-4FF"), StaticProtectedNs("_-2zn")])
+      returnvalue
+
+      debugline           49
+L25:
+      pushbyte            255
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-Ev")
+   method
+    refid "_-22X:IntArrayStuffData/_-Ev"
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           52
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 52
+      debugline           53
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+
+      debugline           54
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "compare") flag OVERRIDE
+   method
+    refid "_-22X:IntArrayStuffData/compare"
+    param QName(PackageNamespace("_-1KZ"), "_-5hX")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           61
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 61
+      debug               1, "k", 1, 63
+      debug               1, "k", 2, 68
+      debugline           63
+      getlocal1
+      getlex              QName(PackageNamespace("_-22X"), "IntArrayStuffData")
+      astypelate
+      coerce              QName(PackageNamespace("_-22X"), "IntArrayStuffData")
+      setlocal2
+
+      debugline           64
+      getlocal2
+      iftrue              L20
+
+      debugline           65
+      pushfalse
+      returnvalue
+
+      debugline           68
+L20:
+      pushbyte            0
+      setlocal3
+
+      jump                L44
+
+L23:
+      label
+      debugline           69
+      getlocal3
+      getlex              QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-2G0")
+      ifne                L31
+
+      debugline           70
+      jump                L43
+
+      debugline           72
+L31:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), PackageNamespace(""), PackageNamespace("_-22X"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("IntArrayStuffData.as$2789", "_-22X:IntArrayStuffData#1"), PackageInternalNs("_-22X"), ProtectedNamespace("_-4FF"), StaticProtectedNs("_-4FF"), StaticProtectedNs("_-2zn")])
+      getlocal2
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      ifeq                L43
+
+      debugline           73
+      pushfalse
+      returnvalue
+
+      debugline           68
+L43:
+      inclocal_i          3
+L44:
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-4T6")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L23
+
+      debugline           76
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-22X:IntArrayStuffData/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 14
+    findproperty        QName(PackageNamespace(""), "_-2Jc")
+    getlex              QName(PackageNamespace("_-22X"), "_-14b")
+    getproperty         QName(PackageNamespace(""), "_-0FG")
+    initproperty        QName(PackageNamespace(""), "_-2Jc")
+
+    debug               1, "k", 1, 15
+    findproperty        QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-2G0")
+    pushbyte            0
+    initproperty        QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-2G0")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-2Jc") slotid 1 type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PrivateNamespace("_-4FF", "_-22X:IntArrayStuffData#0"), "_-2G0") slotid 2 type QName(PackageNamespace(""), "int") value Integer(0) end
+end ; class

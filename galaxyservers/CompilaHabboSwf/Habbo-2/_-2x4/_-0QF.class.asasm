@@ -1,0 +1,331 @@
+class
+ refid "_-2x4:_-0QF"
+ instance QName(PackageNamespace("_-2x4"), "_-0QF")
+  extends QName(PackageNamespace("_-2g1"), "_-5BQ")
+  implements Multiname("_-3ry", [PackageNamespace("_-2g1")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-MM")
+  iinit
+   refid "_-2x4:_-0QF/iinit"
+   param QName(PackageNamespace("_-2g1"), "_-2ww")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           17
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 17
+     debugline           18
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           19
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-2x4:_-0QF/init"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           21
+      getlocal0
+      pushscope
+
+      debugline           22
+      getlex              QName(ProtectedNamespace("_-44T"), "_-Fi")
+      iftrue              L23
+
+      debugline           23
+      findproperty        QName(ProtectedNamespace("_-44T"), "_-Fi")
+      getlex              QName(ProtectedNamespace("_-44T"), "_-1-f")
+      getproperty         QName(Namespace("_-1lN"), "controller")
+      getproperty         QName(PackageNamespace(""), "view")
+      getlex              QName(PackageNamespace("_-3WJ"), "_-sx")
+      getproperty         QName(PackageNamespace(""), "_-3mK")
+      callproperty        QName(PackageNamespace(""), "getCategoryContainer"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      initproperty        QName(ProtectedNamespace("_-44T"), "_-Fi")
+
+      debugline           24
+      getlex              QName(ProtectedNamespace("_-44T"), "_-Fi")
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           28
+L23:
+      getlex              QName(ProtectedNamespace("_-44T"), "_-1-f")
+      convert_b
+      dup
+      iffalse             L31
+
+      pop
+      getlex              QName(ProtectedNamespace("_-44T"), "_-5fM")
+      pushstring          ""
+      equals
+L31:
+      iffalse             L38
+
+      debugline           29
+      getlex              QName(ProtectedNamespace("_-44T"), "_-1-f")
+      getlex              QName(PackageNamespace("_-2x4"), "EffectsModel")
+      getproperty         QName(PackageNamespace(""), "_-4uP")
+      callpropvoid        QName(Namespace("_-1lN"), "switchCategory"), 1
+
+      debugline           32
+L38:
+      findproperty        QName(ProtectedNamespace("_-44T"), "_-1Qx")
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-44T"), "_-1Qx")
+
+      debugline           33
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-44T"), "_-5fM")
+      callpropvoid        QName(ProtectedNamespace("_-MM"), "updateGridView"), 1
+
+      debugline           34
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "reset") flag OVERRIDE
+   method
+    refid "_-2x4:_-0QF/reset"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           36
+      getlocal0
+      pushscope
+
+      debugline           37
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-44T"), "_-5fM")
+      callpropvoid        QName(ProtectedNamespace("_-MM"), "updateGridView"), 1
+
+      debugline           38
+      getlex              QName(ProtectedNamespace("_-44T"), "_-1-f")
+      getlex              QName(ProtectedNamespace("_-44T"), "_-5fM")
+      pushbyte            255
+      callpropvoid        QName(Namespace("_-1lN"), "selectPart"), 2
+
+      debugline           39
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "switchCategory")
+   method
+    refid "_-2x4:_-0QF/switchCategory"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           41
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 41
+      debugline           42
+      getlex              QName(ProtectedNamespace("_-44T"), "_-Fi")
+      pushnull
+      ifne                L11
+
+      returnvoid
+
+      debugline           43
+L11:
+      getlex              QName(ProtectedNamespace("_-44T"), "_-Fi")
+      getproperty         QName(Namespace("_-2W2"), "disposed")
+      iffalse             L16
+
+      returnvoid
+
+      debugline           44
+L16:
+      getlocal1
+      pushstring          ""
+      equals
+      iffalse             L23
+
+      getlex              QName(ProtectedNamespace("_-44T"), "_-5fM")
+      coerce_s
+      jump                L25
+
+L23:
+      getlocal1
+      coerce_s
+L25:
+      coerce_s
+      setlocal1
+
+      debugline           46
+      findproperty        QName(ProtectedNamespace("_-44T"), "_-5fM")
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-44T"), "_-5fM")
+
+      debugline           48
+      getlex              QName(ProtectedNamespace("_-44T"), "_-1Qx")
+      iftrue              L38
+
+      debugline           49
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "init"), 0
+
+      debugline           51
+L38:
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-44T"), "_-5fM")
+      callpropvoid        QName(ProtectedNamespace("_-MM"), "updateGridView"), 1
+
+      debugline           52
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5WZ")
+   method
+    refid "_-2x4:_-0QF/_-5WZ"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           54
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 54
+      debug               1, "k", 1, 54
+      debug               1, "k", 2, 54
+      debugline           55
+      findpropstrict      QName(PackageNamespace("_-2x4"), "AvatarEditorGridViewEffects")
+      getlex              QName(ProtectedNamespace("_-44T"), "_-1-f")
+      getproperty         QName(Namespace("_-1lN"), "controller")
+      getproperty         QName(PackageNamespace(""), "view")
+      getproperty         QName(PackageNamespace(""), "effectsGridView")
+      callproperty        QName(PackageNamespace("_-2x4"), "AvatarEditorGridViewEffects"), 1
+      getlocal2
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "_-4Cp"), 2
+
+      debugline           56
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3TD")
+   method
+    refid "_-2x4:_-0QF/_-3TD"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           58
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 58
+      debugline           59
+      findpropstrict      QName(PackageNamespace("_-2x4"), "AvatarEditorGridViewEffects")
+      getlex              QName(ProtectedNamespace("_-44T"), "_-1-f")
+      getproperty         QName(Namespace("_-1lN"), "controller")
+      getproperty         QName(PackageNamespace(""), "view")
+      getproperty         QName(PackageNamespace(""), "effectsGridView")
+      callproperty        QName(PackageNamespace("_-2x4"), "AvatarEditorGridViewEffects"), 1
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-3TD"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-MM"), "updateGridView") flag OVERRIDE
+   method
+    refid "_-2x4:_-0QF/_-MM:updateGridView"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 62
+      debugline           63
+      getlex              QName(ProtectedNamespace("_-44T"), "_-1-f")
+      getproperty         QName(Namespace("_-1lN"), "controller")
+      getproperty         QName(PackageNamespace(""), "view")
+      getproperty         QName(PackageNamespace(""), "effectsGridView")
+      getlex              QName(ProtectedNamespace("_-44T"), "_-1-f")
+      getlocal1
+      callpropvoid        QName(Namespace("_-1rS"), "initFromList"), 2
+
+      debugline           64
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2x4:_-0QF/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

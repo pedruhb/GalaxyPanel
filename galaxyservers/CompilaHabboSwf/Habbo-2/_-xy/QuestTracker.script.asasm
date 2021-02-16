@@ -1,0 +1,33 @@
+script ; 5081
+ sinit
+  refid "_-xy:QuestTracker.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           17
+    findpropstrict      Multiname("QuestTracker", [PackageNamespace("_-xy")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-xy:QuestTracker"
+    popscope
+    initproperty        QName(PackageNamespace("_-xy"), "QuestTracker")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-xy"), "QuestTracker")
+  #include "QuestTracker.class.asasm"
+ end ; trait
+end ; script

@@ -1,0 +1,147 @@
+class
+ refid "_-GW:_-2Ft"
+ instance QName(PackageNamespace("_-GW"), "_-2Ft")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0Uw")
+  iinit
+   refid "_-GW:_-2Ft/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   optional False()
+   optional False()
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           30
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 30
+     debug               1, "k", 1, 30
+     debug               1, "k", 2, 30
+     debug               1, "k", 3, 30
+     debugline           31
+     getlocal0
+     getlocal1
+     getlocal3
+     getlocal            4
+     constructsuper      3
+
+     debugline           32
+     getlocal0
+     getlocal2
+     initproperty        QName(ProtectedNamespace("_-0Uw"), "_-3PR")
+
+     debugline           33
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-0Uw"), "_-3PR") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "_-3tN")
+   method
+    refid "_-GW:_-2Ft/_-3tN"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      debugline           36
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Uw"), "_-3PR")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-55X")
+   method
+    refid "_-GW:_-2Ft/_-55X"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debugline           40
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-3tN"), 0
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "clone") flag OVERRIDE
+   method
+    refid "_-GW:_-2Ft/clone"
+    returns QName(PackageNamespace("flash.events"), "Event")
+    body
+     maxstack 5
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debugline           44
+      findpropstrict      QName(PackageNamespace("_-GW"), "_-2Ft")
+      getlex              QName(PackageNamespace(""), "type")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Uw"), "_-3PR")
+      getlex              QName(PackageNamespace(""), "bubbles")
+      getlex              QName(PackageNamespace(""), "cancelable")
+      constructprop       QName(PackageNamespace("_-GW"), "_-2Ft"), 4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-GW:_-2Ft/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 26
+    findproperty        QName(PackageNamespace(""), "TOGGLE")
+    pushstring          "toggle"
+    initproperty        QName(PackageNamespace(""), "TOGGLE")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "TOGGLE") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("toggle") end
+end ; class

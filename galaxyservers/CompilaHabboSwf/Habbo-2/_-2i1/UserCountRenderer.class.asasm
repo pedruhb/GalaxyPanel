@@ -1,0 +1,472 @@
+class
+ refid "_-2i1:UserCountRenderer"
+ instance QName(PackageNamespace("_-2i1"), "UserCountRenderer")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1v6")
+  iinit
+   refid "_-2i1:UserCountRenderer/iinit"
+   param QName(PackageNamespace("_-2i1"), "_-42O")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           10
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 10
+     debugline           10
+     getlocal0
+     constructsuper      0
+
+     debugline           11
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-1on")
+
+     debugline           12
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-1on") type QName(PackageNamespace("_-2i1"), "_-42O") end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-2i1:UserCountRenderer/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           14
+      getlocal0
+      pushscope
+
+      debugline           15
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-1on")
+
+      debugline           16
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "refreshUserCount")
+   method
+    refid "_-2i1:UserCountRenderer/refreshUserCount"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace("_-X3"), "IWindowContainer")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 10
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           18
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 18
+      debug               1, "k", 1, 18
+      debug               1, "k", 2, 18
+      debug               1, "k", 3, 18
+      debug               1, "k", 4, 18
+      debug               1, "k", 5, 18
+      debug               1, "k", 6, 19
+      debug               1, "k", 7, 30
+      debug               1, "k", 8, 33
+      debugline           19
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlocal2
+      getlex              QName(PackageNamespace(""), "_-6GX")
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            7
+
+      debugline           20
+      getlocal            7
+      pushnull
+      ifne                L51
+
+      debugline           21
+      findpropstrict      QName(PackageNamespace("_-X3"), "IWindowContainer")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-1on")
+      pushstring          "grs_usercount"
+      callproperty        QName(Namespace("_-0Vt"), "getXmlWindow"), 1
+      callproperty        QName(PackageNamespace("_-X3"), "IWindowContainer"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal            7
+
+      debugline           22
+      getlocal            7
+      getlex              QName(PackageNamespace(""), "_-6GX")
+      setproperty         QName(Namespace("_-6q"), "name")
+
+      debugline           23
+      getlocal            7
+      getlocal            5
+      setproperty         QName(Namespace("_-6q"), "x")
+
+      debugline           24
+      getlocal            7
+      getlocal            6
+      setproperty         QName(Namespace("_-6q"), "y")
+
+      debugline           25
+      getlocal2
+      getlocal            7
+      callpropvoid        QName(Namespace("_-3si"), "addChild"), 1
+
+      debugline           28
+L51:
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IInteractiveWindow")
+      getlocal            7
+      callproperty        QName(PackageNamespace("_-1Bv"), "IInteractiveWindow"), 1
+      getlocal            4
+      setproperty         QName(Namespace("_-5AP"), "_-0c4")
+
+      debugline           30
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      getlocal            7
+      pushstring          "txt"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ITextWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      setlocal            8
+
+      debugline           31
+      getlocal            8
+      pushstring          ""
+      getlocal3
+      add
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           33
+      getlocal0
+      getlocal1
+      getlocal3
+      callproperty        QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "getBgColor"), 2
+      coerce_s
+      setlocal            9
+
+      debugline           34
+      getlocal0
+      getlocal            7
+      getlocal            9
+      callpropvoid        QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-3sv"), 2
+
+      debugline           36
+      getlocal            7
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           37
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "getBgColor")
+   method
+    refid "_-2i1:UserCountRenderer/getBgColor"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           39
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 39
+      debug               1, "k", 1, 39
+      debugline           40
+      getlocal2
+      pushbyte            0
+      ifne                L14
+
+      pushstring          "b"
+      debugline           41
+      returnvalue
+
+      debugline           42
+L14:
+      getlocal0
+      getlocal1
+      getlocal2
+      pushstring          "red"
+      pushbyte            92
+      callproperty        QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-0uh"), 4
+      iffalse             L25
+
+      pushstring          "r"
+      debugline           43
+      returnvalue
+
+      debugline           44
+L25:
+      getlocal0
+      getlocal1
+      getlocal2
+      pushstring          "orange"
+      pushbyte            80
+      callproperty        QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-0uh"), 4
+      iffalse             L36
+
+      pushstring          "o"
+      debugline           45
+      returnvalue
+
+      debugline           46
+L36:
+      getlocal0
+      getlocal1
+      getlocal2
+      pushstring          "yellow"
+      pushbyte            50
+      callproperty        QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-0uh"), 4
+      iffalse             L46
+
+      pushstring          "y"
+      debugline           47
+      returnvalue
+
+L46:
+      pushstring          "g"
+      debugline           49
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-0uh")
+   method
+    refid "_-2i1:UserCountRenderer/_-0uh"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 8
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           53
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 53
+      debug               1, "k", 1, 53
+      debug               1, "k", 2, 53
+      debug               1, "k", 3, 53
+      debug               1, "k", 4, 54
+      debug               1, "k", 5, 55
+      debug               1, "k", 6, 56
+      pushstring          "navigator.colorlimit."
+      debugline           54
+      getlocal3
+      add
+      coerce_s
+      setlocal            5
+
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-1on")
+      getlocal            5
+      getlocal            4
+      callproperty        QName(Namespace("_-0Vt"), "getInteger"), 2
+      convert_i
+      setlocal            6
+
+      debugline           56
+      getlocal1
+      getlocal            6
+      multiply
+      pushbyte            100
+      divide
+      convert_i
+      setlocal            7
+
+      debugline           57
+      getlocal2
+      getlocal            7
+      greaterequals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-3sv")
+   method
+    refid "_-2i1:UserCountRenderer/_-3sv"
+    param QName(PackageNamespace("_-X3"), "IWindowContainer")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           60
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      debug               1, "k", 0, 60
+      debug               1, "k", 1, 60
+      debug               1, "k", 2, 61
+      debugline           61
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      getlocal1
+      pushstring          "usercount_bg"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow"), 1
+      coerce              QName(PackageNamespace("_-1Bv"), "IBitmapWrapperWindow")
+      setlocal3
+
+      debugline           62
+      getlocal3
+      getproperty         QName(Namespace("_-6q"), "tags")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), PackageNamespace(""), PackageNamespace("_-2i1"), PackageNamespace("_-X3"), PackageNamespace("_-1Bv"), PrivateNamespace("UserCountRenderer.as$2306", "_-2i1:UserCountRenderer/_-3sv"), PackageInternalNs("_-2i1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1v6"), StaticProtectedNs("_-1v6")])
+      getlocal2
+      ifeq                L60
+
+      debug               1, "k", 3, 66
+      debugline           64
+      getlocal3
+      getproperty         QName(Namespace("_-6q"), "tags")
+      pushbyte            0
+      getlocal3
+      getproperty         QName(Namespace("_-6q"), "tags")
+      getproperty         QName(PackageNamespace(""), "length")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      debugline           65
+      getlocal3
+      getproperty         QName(Namespace("_-6q"), "tags")
+      getlocal2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      pushstring          "usercount_fixed_"
+      debugline           66
+      getlocal2
+      add
+      coerce_s
+      setlocal            4
+
+      debugline           67
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-1on")
+      getlocal            4
+      callproperty        QName(Namespace("_-0Vt"), "_-0rx"), 1
+      setproperty         QName(Namespace("_-5Rl"), "bitmap")
+
+      debugline           68
+      getlocal3
+      pushfalse
+      setproperty         QName(Namespace("_-5Rl"), "_-2fc")
+
+      debugline           69
+      getlocal3
+      callpropvoid        QName(Namespace("_-6q"), "invalidate"), 0
+
+      debugline           71
+L60:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-6cH")
+   method
+    refid "_-2i1:UserCountRenderer/_-6cH"
+    param QName(PackageNamespace("_-X3"), "IWindowContainer")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           73
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 73
+      debug               1, "k", 1, 73
+      debug               1, "k", 2, 73
+      debugline           74
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1v6", "_-2i1:UserCountRenderer"), "_-1on")
+      getlocal1
+      getlocal2
+      getlocal3
+      pushnull
+      pushbyte            0
+      callpropvoid        QName(Namespace("_-0Vt"), "refreshButton"), 5
+
+      debugline           75
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2i1:UserCountRenderer/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 7
+    findproperty        QName(PackageNamespace(""), "_-6GX")
+    pushstring          "usercount"
+    initproperty        QName(PackageNamespace(""), "_-6GX")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-6GX") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("usercount") end
+end ; class

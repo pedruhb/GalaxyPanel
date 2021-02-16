@@ -1,0 +1,512 @@
+class
+ refid "_-54D:PartSetsData"
+ instance QName(PackageNamespace("_-54D"), "PartSetsData")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-0kj", [PackageNamespace("_-54D")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0RB")
+  iinit
+   refid "_-54D:PartSetsData/iinit"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debugline           15
+     getlocal0
+     constructsuper      0
+
+     debugline           16
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     initproperty        QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-0we")
+
+     debugline           17
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     initproperty        QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-1D2")
+
+     debugline           18
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-0we") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait slot QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-1D2") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait method QName(PackageNamespace(""), "parse")
+   method
+    refid "_-54D:PartSetsData/parse"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           25
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal3
+
+      debug               1, "k", 0, 25
+      debug               1, "k", 1, 27
+      debug               1, "k", 2, 31
+      debugline           26
+      getlocal1
+      pushnull
+      ifne                L20
+
+      pushfalse
+      returnvalue
+
+      debugline           27
+L20:
+      pushbyte            0
+      setlocal            4
+
+      getlocal1
+      getproperty         Multiname("partSet", [PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      getproperty         Multiname("part", [PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      coerce_a
+      setlocal            5
+
+      jump                L49
+
+L30:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal2
+
+      debugline           28
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-0we")
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal2
+      pushstring          "set-type"
+      getproperty         MultinameLA([PackageInternalNs("_-54D")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      findpropstrict      QName(PackageNamespace("_-5Sp"), "_-4vg")
+      getlocal2
+      constructprop       QName(PackageNamespace("_-5Sp"), "_-4vg"), 1
+      setproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+
+      debugline           27
+L49:
+      hasnext2            5, 4
+      iftrue              L30
+
+      kill                5
+      kill                4
+      debugline           31
+      pushbyte            0
+      setlocal            4
+
+      getlocal1
+      getproperty         Multiname("activePartSet", [PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      coerce_a
+      setlocal            5
+
+      jump                L79
+
+L61:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal3
+
+      debugline           32
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-1D2")
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal3
+      getproperty         MultinameA("id", [PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      findpropstrict      QName(PackageNamespace("_-5Sp"), "ActivePartSet")
+      getlocal3
+      constructprop       QName(PackageNamespace("_-5Sp"), "ActivePartSet"), 1
+      setproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+
+      debugline           31
+L79:
+      hasnext2            5, 4
+      iftrue              L61
+
+      kill                5
+      kill                4
+      debugline           36
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1Ek")
+   method
+    refid "_-54D:PartSetsData/_-1Ek"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           44
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal3
+
+      debug               1, "k", 0, 44
+      debug               1, "k", 1, 46
+      debug               1, "k", 2, 50
+      debugline           45
+      getlocal1
+      pushnull
+      ifne                L20
+
+      pushfalse
+      returnvalue
+
+      debugline           46
+L20:
+      pushbyte            0
+      setlocal            4
+
+      getlocal1
+      getproperty         Multiname("partSet", [PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      getproperty         Multiname("part", [PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      coerce_a
+      setlocal            5
+
+      jump                L49
+
+L30:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal2
+
+      debugline           47
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-0we")
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal2
+      pushstring          "set-type"
+      getproperty         MultinameLA([PackageInternalNs("_-54D")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      findpropstrict      QName(PackageNamespace("_-5Sp"), "_-4vg")
+      getlocal2
+      constructprop       QName(PackageNamespace("_-5Sp"), "_-4vg"), 1
+      setproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+
+      debugline           46
+L49:
+      hasnext2            5, 4
+      iftrue              L30
+
+      kill                5
+      kill                4
+      debugline           50
+      pushbyte            0
+      setlocal            4
+
+      getlocal1
+      getproperty         Multiname("activePartSet", [PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      coerce_a
+      setlocal            5
+
+      jump                L79
+
+L61:
+      label
+      getlocal            5
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal3
+
+      debugline           51
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-1D2")
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal3
+      getproperty         MultinameA("id", [PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      findpropstrict      QName(PackageNamespace("_-5Sp"), "ActivePartSet")
+      getlocal3
+      constructprop       QName(PackageNamespace("_-5Sp"), "ActivePartSet"), 1
+      setproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+
+      debugline           50
+L79:
+      hasnext2            5, 4
+      iftrue              L61
+
+      kill                5
+      kill                4
+      debugline           54
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4X7")
+   method
+    refid "_-54D:PartSetsData/_-4X7"
+    param QName(PackageNamespace("_-Bw"), "_-3dr")
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 62
+      debug               1, "k", 1, 63
+      debugline           63
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-1D2")
+      getlocal1
+      getproperty         QName(Namespace("_-6Fi"), "activePartSet")
+      getproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      coerce              QName(PackageNamespace("_-5Sp"), "ActivePartSet")
+      setlocal2
+
+      debugline           65
+      getlocal2
+      pushnull
+      ifeq                L23
+
+      debugline           66
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-3bX")
+      returnvalue
+
+      debugline           68
+L23:
+      newarray            0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5i9")
+   method
+    refid "_-54D:PartSetsData/_-5i9"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-5Sp"), "_-4vg")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           76
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 76
+      debugline           77
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-0we")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      getlex              QName(PackageNamespace("_-5Sp"), "_-4vg")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-hB")
+   method
+    refid "_-54D:PartSetsData/_-hB"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace("_-5Sp"), "_-4vg")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           85
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 85
+      debug               1, "k", 1, 86
+      debugline           86
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal1
+      pushstring          "set-type"
+      getproperty         MultinameLA([PackageInternalNs("_-54D")])
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      coerce_s
+      setlocal2
+
+      debugline           88
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-0we")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      pushnull
+      ifne                L30
+
+      debugline           89
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-0we")
+      getlocal2
+      findpropstrict      QName(PackageNamespace("_-5Sp"), "_-4vg")
+      getlocal1
+      constructprop       QName(PackageNamespace("_-5Sp"), "_-4vg"), 1
+      setproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+
+      debugline           91
+L30:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-0we")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-3bX")
+   method
+    refid "_-54D:PartSetsData/_-3bX/getter"
+    returns QName(PackageNamespace("flash.utils"), "Dictionary")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debugline           95
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-0we")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-5OZ")
+   method
+    refid "_-54D:PartSetsData/_-5OZ/getter"
+    returns QName(PackageNamespace("flash.utils"), "Dictionary")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           98
+      getlocal0
+      pushscope
+
+      debugline           99
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-1D2")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-C8")
+   method
+    refid "_-54D:PartSetsData/_-C8"
+    param QName(PackageNamespace("_-Bw"), "ActionDefinition")
+    returns QName(PackageNamespace("_-5Sp"), "ActivePartSet")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           107
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 107
+      debugline           108
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), "_-1D2")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "activePartSet")
+      getproperty         MultinameL([PrivateNamespace("_-0RB", "_-54D:PartSetsData#0"), PackageNamespace(""), PrivateNamespace("PartSetsData.as$589", "_-54D:PartSetsData#1"), PackageNamespace("_-54D"), PackageInternalNs("_-54D"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("_-5Sp"), ProtectedNamespace("_-0RB"), StaticProtectedNs("_-0RB")])
+      getlex              QName(PackageNamespace("_-5Sp"), "ActivePartSet")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-54D:PartSetsData/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,179 @@
+class
+ refid "_-yA:_-2aV"
+ instance QName(PackageNamespace("_-yA"), "_-2aV")
+  extends QName(PackageNamespace("_-yA"), "_-2gS")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5Qu")
+  iinit
+   refid "_-yA:_-2aV/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Utf8("flash")
+   optional Null()
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 6
+    maxscopedepth 7
+    code
+     debugfile           "k"
+     debugline           29
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 29
+     debug               1, "k", 1, 29
+     debugline           30
+     getlocal0
+     debugline           31
+     getlocal1
+     debugline           32
+     getlocal2
+     pushnull
+     ifeq                L19
+
+     debugline           33
+     getlocal2
+     coerce_s
+     jump                L52
+
+     debugline           34
+L19:
+     getlocal1
+     pushstring          "flash"
+     equals
+     iffalse             L38
+
+     pushstring          "<body>"
+     pushstring          "<p align='left' class='title'>_title_</p>"
+     debugline           36
+     add
+     pushstring          "<p align='left' class='description'>_description_</p>"
+     debugline           37
+     add
+     pushstring          "<p align='left' class='callToActionTitle'>_callToActionTitle_</p>"
+     debugline           38
+     add
+     pushstring          "</body>"
+     debugline           39
+     add
+     coerce_s
+     jump                L52
+
+L38:
+     pushstring          "<div class='textAdContainer'>"
+     pushstring          "<div class='textAdTitle'>_title_</div>"
+     debugline           41
+     add
+     pushstring          "<div class='textAdDescription'>_description_</div>"
+     debugline           42
+     add
+     pushstring          "<div class='textAdCallToActionTitle'>_callToActionTitle_</div>"
+     debugline           43
+     add
+     pushstring          "</div>"
+     debugline           44
+     add
+     coerce_s
+L52:
+     constructsuper      2
+
+     debugline           47
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "getContent") flag OVERRIDE
+   method
+    refid "_-yA:_-2aV/getContent"
+    param QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 6
+     maxscopedepth 7
+     code
+      debugfile           "k"
+      debugline           49
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal2
+
+      debug               1, "k", 0, 49
+      debugline           50
+      getlocal1
+      pushnull
+      ifeq                L49
+
+      debug               1, "k", 1, 51
+      debugline           51
+      findpropstrict      QName(ProtectedNamespace("_-ay"), "replace")
+      getlex              QName(ProtectedNamespace("_-ay"), "_-2ZN")
+      pushstring          "title"
+      getlocal1
+      getlex              QName(PackageNamespace("_-3ea"), "NonLinearTextAd")
+      astypelate
+      getproperty         QName(PackageNamespace(""), "title")
+      callproperty        QName(ProtectedNamespace("_-ay"), "replace"), 3
+      coerce_s
+      setlocal2
+
+      debugline           52
+      findpropstrict      QName(ProtectedNamespace("_-ay"), "replace")
+      getlocal2
+      pushstring          "description"
+      getlocal1
+      getlex              QName(PackageNamespace("_-3ea"), "NonLinearTextAd")
+      astypelate
+      getproperty         QName(PackageNamespace(""), "description")
+      callproperty        QName(ProtectedNamespace("_-ay"), "replace"), 3
+      coerce_s
+      setlocal2
+
+      debugline           53
+      findpropstrict      QName(ProtectedNamespace("_-ay"), "replace")
+      getlocal2
+      pushstring          "callToActionTitle"
+      getlocal1
+      getlex              QName(PackageNamespace("_-3ea"), "NonLinearTextAd")
+      astypelate
+      getproperty         QName(PackageNamespace(""), "callToActionTitle")
+      callproperty        QName(ProtectedNamespace("_-ay"), "replace"), 3
+      coerce_s
+      setlocal2
+
+      debugline           54
+      getlocal2
+      returnvalue
+
+L49:
+      pushstring          "Non-linear video ad not available"
+      debugline           56
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-yA:_-2aV/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 5
+   maxscopedepth 6
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

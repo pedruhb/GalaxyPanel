@@ -1,0 +1,866 @@
+class
+ refid "_-5y1:RoomPlaneBitmapMaskParser"
+ instance QName(PackageNamespace("_-5y1"), "RoomPlaneBitmapMaskParser")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-hU")
+  iinit
+   refid "_-5y1:RoomPlaneBitmapMaskParser/iinit"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           26
+     getlocal0
+     pushscope
+
+     debugline           26
+     getlocal0
+     constructsuper      0
+
+     debugline           27
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+     constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+     initproperty        QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+
+     debugline           28
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks") type QName(PackageNamespace("_-07U"), "Map") value Null() end
+  trait getter QName(PackageNamespace(""), "_-4oF")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/_-4oF/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           19
+      getlocal0
+      pushscope
+
+      debugline           20
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getproperty         QName(PackageNamespace(""), "length")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      pushnull
+      ifeq                L21
+
+      debugline           35
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "reset"), 0
+
+      debugline           36
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           37
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+
+      debugline           39
+L21:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initialize")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/initialize"
+    param QName(PackageNamespace(""), "XML")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 5
+     localcount 15
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           46
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            7
+
+      pushnull
+      coerce_s
+      setlocal            8
+
+      pushnull
+      coerce_s
+      setlocal            9
+
+      pushnull
+      coerce              QName(PackageNamespace("_-453"), "_-3bP")
+      setlocal            10
+
+      pushnull
+      coerce_s
+      setlocal            11
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            12
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            13
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5y1"), "_-1oK")
+      setlocal            14
+
+      debug               1, "k", 0, 46
+      debug               1, "k", 1, 53
+      debug               1, "k", 2, 54
+      debug               1, "k", 3, 55
+      debug               1, "k", 4, 58
+      debug               1, "k", 5, 59
+      debugline           48
+      getlocal1
+      pushnull
+      ifne                L41
+
+      pushfalse
+      returnvalue
+
+      debugline           51
+L41:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      callpropvoid        QName(PackageNamespace(""), "reset"), 0
+
+      pushstring          "id"
+      pushstring          "type"
+      pushstring          "category"
+      debugline           53
+      newarray            3
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      pushstring          "x"
+      pushstring          "y"
+      pushstring          "z"
+      debugline           54
+      newarray            3
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      debugline           55
+      pushnull
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            4
+
+      debugline           58
+      getlocal1
+      getproperty         Multiname("planeMask", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            5
+
+      debugline           59
+      pushbyte            0
+      setlocal            6
+
+      jump                L173
+
+L71:
+      label
+      debug               1, "k", 6, 61
+      debug               1, "k", 7, 69
+      debug               1, "k", 8, 70
+      debug               1, "k", 9, 71
+      debug               1, "k", 10, 72
+      debug               1, "k", 11, 75
+      debug               1, "k", 12, 77
+      debug               1, "k", 13, 82
+      debugline           61
+      getlocal            5
+      getlocal            6
+      getproperty         MultinameL([PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            7
+
+      debugline           64
+      getlex              QName(PackageNamespace("_-453"), "XMLValidator")
+      getlocal            7
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-2f9"), 2
+      iftrue              L96
+
+      debugline           65
+      pushfalse
+      returnvalue
+
+      debugline           69
+L96:
+      getlocal            7
+      getproperty         MultinameA("id", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      coerce_s
+      setlocal            8
+
+      debugline           70
+      getlocal            7
+      getproperty         MultinameA("type", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      coerce_s
+      setlocal            9
+
+      debugline           71
+      pushnull
+      coerce              QName(PackageNamespace("_-453"), "_-3bP")
+      setlocal            10
+
+      debugline           72
+      getlocal            7
+      getproperty         MultinameA("category", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      coerce_s
+      setlocal            11
+
+      debugline           75
+      getlocal            7
+      getproperty         Multiname("location", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      coerce              QName(PackageNamespace(""), "XMLList")
+      setlocal            12
+
+      debugline           76
+      getlocal            12
+      callproperty        Multiname("length", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")]), 0
+      pushbyte            1
+      ifeq                L127
+
+      pushfalse
+      returnvalue
+
+      debugline           77
+L127:
+      getlocal            12
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            13
+
+      debugline           78
+      getlex              QName(PackageNamespace("_-453"), "XMLValidator")
+      getlocal            13
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "_-2f9"), 2
+      iftrue              L141
+
+      pushfalse
+      returnvalue
+
+      debugline           79
+L141:
+      findpropstrict      QName(PackageNamespace("_-453"), "_-3bP")
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal            13
+      getproperty         MultinameA("x", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal            13
+      getproperty         MultinameA("y", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      findpropstrict      QName(PackageNamespace(""), "Number")
+      getlocal            13
+      getproperty         MultinameA("z", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")])
+      callproperty        QName(PackageNamespace(""), "Number"), 1
+      constructprop       QName(PackageNamespace("_-453"), "_-3bP"), 3
+      coerce              QName(PackageNamespace("_-453"), "_-3bP")
+      setlocal            10
+
+      debugline           82
+      findpropstrict      QName(PackageNamespace("_-5y1"), "_-1oK")
+      getlocal            9
+      getlocal            10
+      getlocal            11
+      constructprop       QName(PackageNamespace("_-5y1"), "_-1oK"), 3
+      coerce              QName(PackageNamespace("_-5y1"), "_-1oK")
+      setlocal            14
+
+      debugline           83
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getlocal            8
+      getlocal            14
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           59
+      inclocal_i          6
+L173:
+      getlocal            6
+      getlocal            5
+      callproperty        Multiname("length", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")]), 0
+      iflt                L71
+
+      debugline           86
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "reset")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/reset"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           92
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-5y1"), "_-1oK")
+      setlocal2
+
+      debug               1, "k", 0, 93
+      debugline           93
+      pushbyte            0
+      setlocal1
+
+      jump                L32
+
+L12:
+      label
+      debug               1, "k", 1, 94
+      debugline           94
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      getlex              QName(PackageNamespace("_-5y1"), "_-1oK")
+      astypelate
+      coerce              QName(PackageNamespace("_-5y1"), "_-1oK")
+      setlocal2
+
+      debugline           95
+      getlocal2
+      pushnull
+      ifeq                L31
+
+      debugline           96
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           93
+L31:
+      inclocal_i          1
+L32:
+      getlocal1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L12
+
+      debugline           100
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      callpropvoid        QName(PackageNamespace(""), "reset"), 0
+
+      debugline           101
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "addMask")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/addMask"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace("_-453"), "_-19A")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           110
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 110
+      debug               1, "k", 1, 110
+      debug               1, "k", 2, 110
+      debug               1, "k", 3, 110
+      debug               1, "k", 4, 111
+      debugline           111
+      findpropstrict      QName(PackageNamespace("_-5y1"), "_-1oK")
+      getlocal2
+      getlocal3
+      getlocal            4
+      constructprop       QName(PackageNamespace("_-5y1"), "_-1oK"), 3
+      coerce              QName(PackageNamespace("_-5y1"), "_-1oK")
+      setlocal            5
+
+      debugline           114
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "remove"), 1
+
+      debugline           115
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getlocal1
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           116
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6IW")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/_-6IW"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           123
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 123
+      debug               1, "k", 1, 124
+      debugline           124
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "remove"), 1
+      getlex              QName(PackageNamespace("_-5y1"), "_-1oK")
+      astypelate
+      coerce              QName(PackageNamespace("_-5y1"), "_-1oK")
+      setlocal2
+
+      debugline           125
+      getlocal2
+      pushnull
+      ifeq                L26
+
+      debugline           126
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           127
+      pushtrue
+      returnvalue
+
+      debugline           130
+L26:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5Ou")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/_-5Ou"
+    returns QName(PackageNamespace(""), "XML")
+    body
+     maxstack 4
+     localcount 7
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           137
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal3
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-453"), "_-19A")
+      setlocal            6
+
+      debug               1, "k", 0, 138
+      debug               1, "k", 1, 140
+      debugline           138
+      getlex              QName(PackageNamespace(""), "XML")
+      pushstring          "<planeMasks/>"
+      construct           1
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal1
+
+      debugline           140
+      pushbyte            0
+      setlocal2
+
+      jump                L106
+
+L28:
+      label
+      debug               1, "k", 2, 141
+      debug               1, "k", 3, 142
+      debug               1, "k", 4, 143
+      debug               1, "k", 5, 144
+      debugline           141
+      getlocal0
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-0jk"), 1
+      coerce_s
+      setlocal3
+
+      debugline           142
+      getlocal0
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-6ac"), 1
+      coerce_s
+      setlocal            4
+
+      debugline           143
+      getlex              QName(PackageNamespace(""), "XML")
+      pushstring          "<planeMask id=\""
+      getlocal2
+      esc_xattr
+      add
+      pushstring          "\" type=\""
+      add
+      getlocal3
+      esc_xattr
+      add
+      pushstring          "\" category=\""
+      add
+      getlocal            4
+      esc_xattr
+      add
+      pushstring          "\"/>"
+      add
+      construct           1
+      coerce              QName(PackageNamespace(""), "XML")
+      setlocal            5
+
+      debugline           144
+      getlocal0
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-18R"), 1
+      coerce              QName(PackageNamespace("_-453"), "_-19A")
+      setlocal            6
+
+      debugline           145
+      getlocal            6
+      pushnull
+      ifeq                L105
+
+      debugline           146
+      getlocal            5
+      getlex              QName(PackageNamespace(""), "XML")
+      pushstring          "<location x=\""
+      getlocal            6
+      getproperty         QName(Namespace("_-1lr"), "x")
+      esc_xattr
+      add
+      pushstring          "\" y=\""
+      add
+      getlocal            6
+      getproperty         QName(Namespace("_-1lr"), "y")
+      esc_xattr
+      add
+      pushstring          "\" z=\""
+      add
+      getlocal            6
+      getproperty         QName(Namespace("_-1lr"), "z")
+      esc_xattr
+      add
+      pushstring          "\"/>"
+      add
+      construct           1
+      callpropvoid        Multiname("appendChild", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")]), 1
+
+      debugline           147
+      getlocal1
+      getlocal            5
+      callpropvoid        Multiname("appendChild", [PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), PackageNamespace(""), PackageNamespace("_-5y1"), PrivateNamespace("RoomPlaneBitmapMaskParser.as$2474", "_-5y1:RoomPlaneBitmapMaskParser#1"), PackageInternalNs("_-5y1"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-hU"), StaticProtectedNs("_-hU")]), 1
+
+      debugline           140
+L105:
+      inclocal_i          2
+L106:
+      getlocal2
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4oF")
+      iflt                L28
+
+      debugline           151
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-18R")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/_-18R"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("_-453"), "_-19A")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           159
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 159
+      debug               1, "k", 1, 161
+      debugline           160
+      getlocal1
+      pushbyte            0
+      lessthan
+      dup
+      iftrue              L17
+
+      pop
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4oF")
+      greaterequals
+L17:
+      iffalse             L21
+
+      pushnull
+      returnvalue
+
+      debugline           161
+L21:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      getlex              QName(PackageNamespace("_-5y1"), "_-1oK")
+      astypelate
+      coerce              QName(PackageNamespace("_-5y1"), "_-1oK")
+      setlocal2
+
+      debugline           162
+      getlocal2
+      pushnull
+      ifeq                L38
+
+      debugline           163
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "loc")
+      returnvalue
+
+      debugline           166
+L38:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0jk")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/_-0jk"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           174
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 174
+      debug               1, "k", 1, 176
+      debugline           175
+      getlocal1
+      pushbyte            0
+      lessthan
+      dup
+      iftrue              L17
+
+      pop
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4oF")
+      greaterequals
+L17:
+      iffalse             L21
+
+      pushnull
+      returnvalue
+
+      debugline           176
+L21:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      getlex              QName(PackageNamespace("_-5y1"), "_-1oK")
+      astypelate
+      coerce              QName(PackageNamespace("_-5y1"), "_-1oK")
+      setlocal2
+
+      debugline           177
+      getlocal2
+      pushnull
+      ifeq                L38
+
+      debugline           178
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "type")
+      returnvalue
+
+      debugline           181
+L38:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6ac")
+   method
+    refid "_-5y1:RoomPlaneBitmapMaskParser/_-6ac"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           189
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 189
+      debug               1, "k", 1, 191
+      debugline           190
+      getlocal1
+      pushbyte            0
+      lessthan
+      dup
+      iftrue              L17
+
+      pop
+      getlocal1
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "_-4oF")
+      greaterequals
+L17:
+      iffalse             L21
+
+      pushnull
+      returnvalue
+
+      debugline           191
+L21:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-hU", "_-5y1:RoomPlaneBitmapMaskParser#0"), "_masks")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      getlex              QName(PackageNamespace("_-5y1"), "_-1oK")
+      astypelate
+      coerce              QName(PackageNamespace("_-5y1"), "_-1oK")
+      setlocal2
+
+      debugline           192
+      getlocal2
+      pushnull
+      ifeq                L38
+
+      debugline           193
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "category")
+      returnvalue
+
+      debugline           196
+L38:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-5y1:RoomPlaneBitmapMaskParser/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

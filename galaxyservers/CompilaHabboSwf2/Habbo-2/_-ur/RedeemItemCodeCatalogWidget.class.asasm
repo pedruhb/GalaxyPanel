@@ -1,0 +1,370 @@
+class
+ refid "_-ur:RedeemItemCodeCatalogWidget"
+ instance QName(PackageNamespace("_-ur"), "RedeemItemCodeCatalogWidget")
+  extends QName(PackageNamespace("_-ur"), "CatalogWidget")
+  implements Multiname("_-0su", [PackageNamespace("_-ur")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5dM")
+  iinit
+   refid "_-ur:RedeemItemCodeCatalogWidget/iinit"
+   param QName(PackageNamespace("_-X3"), "IWindowContainer")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           23
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 23
+     debugline           24
+     getlocal0
+     getlocal1
+     constructsuper      1
+
+     debugline           26
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-1Wc") type QName(PackageNamespace("_-1Bv"), "IButtonWindow") end
+  trait slot QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-61n") type QName(PackageNamespace("_-1Bv"), "ITextFieldWindow") end
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-ur:RedeemItemCodeCatalogWidget/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           31
+      getlocal0
+      pushscope
+
+      debugline           32
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           34
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-1Wc")
+      pushnull
+      ifeq                L25
+
+      debugline           35
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-1Wc")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-2Gz")
+      callpropvoid        QName(Namespace("_-6q"), "removeEventListener"), 2
+
+      debugline           36
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-1Wc")
+
+      debugline           39
+L25:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-61n")
+      pushnull
+      ifeq                L42
+
+      debugline           40
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-61n")
+      getlex              QName(PackageNamespace("_-CA"), "WindowKeyboardEvent")
+      getproperty         QName(PackageNamespace(""), "_-65u")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-0O4")
+      callpropvoid        QName(Namespace("_-6q"), "removeEventListener"), 2
+
+      debugline           41
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-61n")
+
+      debugline           43
+L42:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    refid "_-ur:RedeemItemCodeCatalogWidget/init"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debugline           49
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "init"), 0
+      iftrue              L12
+
+      debugline           50
+      pushfalse
+      returnvalue
+
+      debugline           52
+L12:
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushstring          "redeem"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "IButtonWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-1Wc")
+
+      debugline           54
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-1Wc")
+      pushnull
+      ifeq                L33
+
+      debugline           55
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-1Wc")
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-2Gz")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           58
+L33:
+      getlocal0
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushstring          "voucher_code"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "ITextFieldWindow")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-61n")
+
+      debugline           59
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-61n")
+      pushnull
+      ifeq                L54
+
+      debugline           60
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-61n")
+      getlex              QName(PackageNamespace("_-CA"), "WindowKeyboardEvent")
+      getproperty         QName(PackageNamespace(""), "_-65u")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-0O4")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           62
+L54:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-2Gz")
+   method
+    refid "_-ur:RedeemItemCodeCatalogWidget/_-2Gz"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           69
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 69
+      debugline           70
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "redeem"), 0
+
+      debugline           71
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "_-0O4")
+   method
+    refid "_-ur:RedeemItemCodeCatalogWidget/_-0O4"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    param QName(PackageNamespace("_-X3"), "IWindow")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    optional Null()
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           73
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 73
+      debug               1, "k", 1, 73
+      debug               1, "k", 2, 74
+      debugline           74
+      getlocal1
+      getlex              QName(PackageNamespace("_-CA"), "WindowKeyboardEvent")
+      astypelate
+      coerce              QName(PackageNamespace("_-CA"), "WindowKeyboardEvent")
+      setlocal3
+
+      debugline           77
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "charCode")
+      getlex              QName(PackageNamespace("flash.ui"), "Keyboard")
+      getproperty         QName(PackageNamespace(""), "ENTER")
+      ifne                L23
+
+      debugline           78
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "redeem"), 0
+
+      debugline           80
+L23:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), "redeem")
+   method
+    refid "_-ur:RedeemItemCodeCatalogWidget/redeem"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 6
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           82
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      debug               1, "k", 0, 82
+      getscopeobject      1
+      pushnull
+      coerce_s
+      setslot             2
+
+      debugline           83
+      getscopeobject      1
+      getlex              QName(ProtectedNamespace("_-5qb"), "_-Fi")
+      pushstring          "voucher_code"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setslot             1
+
+      debugline           85
+      getscopeobject      1
+      getslot             1
+      pushnull
+      ifeq                L63
+
+      debugline           86
+      getscopeobject      1
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(Namespace("_-6q"), "caption")
+      coerce_s
+      setslot             2
+
+      debugline           88
+      getscopeobject      1
+      getslot             2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L52
+
+      debugline           89
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getscopeobject      1
+      getslot             2
+      callpropvoid        QName(Namespace("_-5AO"), "redeemVoucher"), 1
+
+      debugline           90
+      getscopeobject      1
+      getslot             1
+      pushstring          ""
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      jump                L63
+
+      debugline           92
+L52:
+      getlex              QName(PackageNamespace(""), "page")
+      getproperty         QName(Namespace("_-52h"), "viewer")
+      getproperty         QName(Namespace("_-BT"), "catalog")
+      getproperty         QName(Namespace("_-5AO"), "windowManager")
+      pushstring          "${catalog.voucher.empty.title}"
+      pushstring          "${catalog.voucher.empty.desc}"
+      pushbyte            0
+      newfunction         "_-ur:RedeemItemCodeCatalogWidget/redeem/inline_method"
+      callpropvoid        Multiname("alert", [PrivateNamespace("_-5dM", "_-ur:RedeemItemCodeCatalogWidget"), PackageNamespace(""), PrivateNamespace("RedeemItemCodeCatalogWidget.as$3400", "_-ur:RedeemItemCodeCatalogWidget/redeem"), PackageNamespace("_-ur"), PackageInternalNs("_-ur"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-5dM"), StaticProtectedNs("_-5dM"), StaticProtectedNs("_-5qb")]), 4
+
+      debugfile           "k"
+      debugline           97
+L63:
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs("_-ur"), "input") slotid 1 type QName(PackageNamespace("_-X3"), "IWindow") end
+     trait slot QName(PackageInternalNs("_-ur"), "voucher") slotid 2 type QName(PackageNamespace(""), "String") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-ur:RedeemItemCodeCatalogWidget/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

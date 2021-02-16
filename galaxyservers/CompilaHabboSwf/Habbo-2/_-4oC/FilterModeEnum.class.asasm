@@ -1,0 +1,147 @@
+class
+ refid "_-4oC:FilterModeEnum"
+ instance QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1t8")
+  iinit
+   refid "_-4oC:FilterModeEnum/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           25
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-4oC:FilterModeEnum/cinit"
+  body
+   maxstack 7
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 6
+    findproperty        QName(PackageNamespace(""), "DEFAULT")
+    pushbyte            0
+    initproperty        QName(PackageNamespace(""), "DEFAULT")
+
+    debug               1, "k", 1, 7
+    findproperty        QName(PackageNamespace(""), "_-5Rq")
+    pushbyte            1
+    initproperty        QName(PackageNamespace(""), "_-5Rq")
+
+    debug               1, "k", 2, 8
+    findproperty        QName(PackageNamespace(""), "_-7X")
+    pushbyte            2
+    initproperty        QName(PackageNamespace(""), "_-7X")
+
+    debug               1, "k", 3, 9
+    findproperty        QName(PackageNamespace(""), "_-2wO")
+    pushbyte            3
+    initproperty        QName(PackageNamespace(""), "_-2wO")
+
+    debug               1, "k", 4, 10
+    findproperty        QName(PackageNamespace(""), "_-5BV")
+    pushbyte            4
+    initproperty        QName(PackageNamespace(""), "_-5BV")
+
+    debug               1, "k", 5, 11
+    findproperty        QName(PackageNamespace(""), "_-2C8")
+    pushbyte            5
+    initproperty        QName(PackageNamespace(""), "_-2C8")
+
+    debug               1, "k", 6, 13
+    findproperty        QName(PackageNamespace(""), "_-gA")
+    pushstring          ""
+    pushstring          "owner:"
+    pushstring          "roomname:"
+    pushstring          "tag:"
+    pushstring          "group:"
+    pushstring          ""
+    newarray            6
+    initproperty        QName(PackageNamespace(""), "_-gA")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "DEFAULT") slotid 1 type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "_-5Rq") slotid 2 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "_-7X") slotid 3 type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "_-2wO") slotid 4 type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "_-5BV") slotid 5 type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "_-2C8") slotid 6 type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PackageNamespace(""), "_-gA") slotid 7 type QName(PackageNamespace(""), "Array") end
+ trait method QName(PackageNamespace(""), "_-4-H") flag FINAL dispid 3
+  method
+   refid "_-4oC:FilterModeEnum/_-4-H"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "int")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debug               1, "k", 1, 16
+     debugline           16
+     pushbyte            1
+     setlocal2
+
+     jump                L24
+
+L10:
+     label
+     debugline           17
+     getlocal1
+     getlex              QName(PackageNamespace(""), "_-gA")
+     getlocal2
+     getproperty         MultinameL([PrivateNamespace("_-1t8", "_-4oC:FilterModeEnum/_-4-H#1"), PackageNamespace(""), PrivateNamespace("FilterModeEnum.as$1919", "_-4oC:FilterModeEnum/_-4-H#0"), PackageNamespace("_-4oC"), PackageInternalNs("_-4oC"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-1t8"), StaticProtectedNs("_-1t8")])
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     ifne                L23
+
+     debugline           18
+     getlocal2
+     returnvalue
+
+     debugline           16
+L23:
+     inclocal_i          2
+L24:
+     getlocal2
+     getlex              QName(PackageNamespace(""), "_-gA")
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L10
+
+     debugline           21
+     getlex              QName(PackageNamespace(""), "DEFAULT")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

@@ -1,0 +1,218 @@
+class
+ refid "_-1Ta:NumberUtils"
+ instance QName(PackageNamespace("_-1Ta"), "NumberUtils")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0Qo")
+  iinit
+   refid "_-1Ta:NumberUtils/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           53
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-1Ta:NumberUtils/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), "_-4Fs") flag FINAL dispid 3
+  method
+   refid "_-1Ta:NumberUtils/_-4Fs"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "Number")
+   body
+    maxstack 5
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           25
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 25
+     debug               1, "k", 1, 25
+     debugline           26
+     getlocal2
+     getlocal1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     ifnle               L16
+
+     debugline           27
+     getlex              QName(PackageNamespace(""), "NaN")
+     returnvalue
+
+     debugline           29
+L16:
+     findpropstrict      QName(PackageNamespace(""), "Number")
+     getlocal2
+     pushbyte            0
+     getlocal2
+     getlocal1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substring"), 2
+     callproperty        QName(PackageNamespace(""), "Number"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-Mj") flag FINAL dispid 4
+  method
+   refid "_-1Ta:NumberUtils/_-Mj"
+   param null
+   returns QName(PackageNamespace(""), "Number")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           32
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 32
+     debug               1, "k", 1, 37
+     debugline           33
+     getlocal1
+     getlex              QName(PackageNamespace(""), "Number")
+     istypelate
+     iffalse             L16
+
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     returnvalue
+
+     debugline           34
+L16:
+     getlocal1
+     pushstring          "px"
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace(""), PrivateNamespace("NumberUtils.as$5034", "_-1Ta:NumberUtils#1"), PackageNamespace("_-1Ta"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-0Qo"), StaticProtectedNs("_-0Qo")]), 1
+     pushbyte            0
+     ifnlt               L28
+
+     debugline           35
+     getlocal1
+     pushstring          "px"
+     add
+     coerce_a
+     setlocal1
+
+     debugline           37
+L28:
+     findpropstrict      QName(PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), "_-4Fs")
+     pushstring          "px"
+     getlocal1
+     callproperty        QName(PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), "_-4Fs"), 2
+     convert_d
+     setlocal2
+
+     debugline           38
+     findpropstrict      QName(PackageNamespace(""), "isNaN")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "isNaN"), 1
+     iffalse             L47
+
+     debugline           39
+     getlocal1
+     pushbyte            0
+     callproperty        Multiname("substr", [PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace(""), PrivateNamespace("NumberUtils.as$5034", "_-1Ta:NumberUtils#1"), PackageNamespace("_-1Ta"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-0Qo"), StaticProtectedNs("_-0Qo")]), 1
+     getlex              QName(PackageNamespace(""), "Number")
+     astypelate
+     returnvalue
+
+     debugline           41
+L47:
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-09p") flag FINAL dispid 5
+  method
+   refid "_-1Ta:NumberUtils/_-09p"
+   param null
+   returns QName(PackageNamespace(""), "Number")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           44
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 44
+     debugline           45
+     getlocal1
+     getlex              QName(PackageNamespace(""), "Number")
+     istypelate
+     iffalse             L13
+
+     getlocal1
+     returnvalue
+
+     debugline           46
+L13:
+     getlocal1
+     pushstring          "pct"
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace(""), PrivateNamespace("NumberUtils.as$5034", "_-1Ta:NumberUtils#1"), PackageNamespace("_-1Ta"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-0Qo"), StaticProtectedNs("_-0Qo")]), 1
+     pushbyte            255
+     ifngt               L25
+
+     debugline           47
+     findpropstrict      QName(PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), "_-4Fs")
+     pushstring          "pct"
+     getlocal1
+     callproperty        QName(PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), "_-4Fs"), 2
+     returnvalue
+
+     debugline           49
+L25:
+     findpropstrict      QName(PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), "_-4Fs")
+     pushstring          "%"
+     getlocal1
+     callproperty        QName(PrivateNamespace("_-0Qo", "_-1Ta:NumberUtils#0"), "_-4Fs"), 2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

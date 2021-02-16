@@ -1,0 +1,1350 @@
+class
+ refid "_-40q:ChatBubbleSimulationEntity"
+ instance QName(PackageNamespace("_-40q"), "ChatBubbleSimulationEntity")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0Xr")
+  iinit
+   refid "_-40q:ChatBubbleSimulationEntity/iinit"
+   param QName(PackageNamespace("_-3tm"), "PooledChatBubble")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   optional False()
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debug               1, "k", 1, 27
+     debugline           18
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+     constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 0
+     initproperty        QName(ProtectedNamespace("_-0Xr"), "_-1G")
+
+     debugline           24
+     getlocal0
+     getlex              Multiname("Vector", [PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), PackageNamespace(""), ProtectedNamespace("_-0Xr"), PrivateNamespace("ChatBubbleSimulationEntity.as$5052", "_-40q:ChatBubbleSimulationEntity#1"), PackageNamespace("_-40q"), PackageInternalNs("_-40q"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-0Xr"), PackageNamespace("__AS3__.vec")])
+     getlex              QName(PackageNamespace("_-40q"), "ChatBubbleSimulationEntity")
+     applytype           1
+     pushbyte            0
+     construct           1
+     initproperty        QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-20x")
+
+     debugline           27
+     getlocal0
+     constructsuper      0
+
+     debug               1, "k", 2, 29
+     debugline           28
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-0Xr"), "_visualization")
+
+     debugline           29
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "overlap")
+     coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+     setlocal3
+
+     debugline           30
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "x")
+     getlocal3
+     iffalse             L42
+
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "x")
+     coerce_a
+     jump                L44
+
+L42:
+     pushbyte            0
+     coerce_a
+L44:
+     add
+     initproperty        QName(ProtectedNamespace("_-0Xr"), "_x")
+
+     debugline           31
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "y")
+     getlocal3
+     iffalse             L56
+
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "y")
+     coerce_a
+     jump                L58
+
+L56:
+     pushbyte            0
+     coerce_a
+L58:
+     add
+     initproperty        QName(ProtectedNamespace("_-0Xr"), "_y")
+
+     debugline           32
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_x")
+     setproperty         QName(PackageNamespace(""), "x")
+
+     debugline           33
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_y")
+     setproperty         QName(PackageNamespace(""), "y")
+
+     debugline           34
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+     getproperty         QName(PackageNamespace(""), "width")
+     getlocal3
+     iffalse             L87
+
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "x")
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "width")
+     add
+     coerce_a
+     jump                L89
+
+L87:
+     pushbyte            0
+     coerce_a
+L89:
+     subtract
+     setproperty         QName(PackageNamespace(""), "width")
+
+     debugline           35
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+     getproperty         QName(PackageNamespace(""), "_-6bU")
+     getlex              QName(PackageNamespace(""), "_-5vy")
+     subtract
+     getlocal3
+     iffalse             L108
+
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "y")
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "height")
+     add
+     coerce_a
+     jump                L110
+
+L108:
+     pushbyte            0
+     coerce_a
+L110:
+     subtract
+     setproperty         QName(PackageNamespace(""), "height")
+
+     debugline           36
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+     getproperty         QName(PackageNamespace(""), "minHeight")
+     pushbyte            255
+     ifeq                L126
+
+     debugline           37
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+     getproperty         QName(PackageNamespace(""), "minHeight")
+     setproperty         QName(PackageNamespace(""), "height")
+
+     debugline           39
+L126:
+     getlocal2
+     iffalse             L183
+
+     debugline           40
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.geom"), "Rectangle")
+     constructprop       QName(PackageNamespace("flash.geom"), "Rectangle"), 0
+     initproperty        QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+
+     debugline           41
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+     getproperty         QName(PackageNamespace(""), "width")
+     pushbyte            2
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-0BV")
+     multiply
+     add
+     setproperty         QName(PackageNamespace(""), "width")
+
+     debugline           42
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+     getproperty         QName(PackageNamespace(""), "minHeight")
+     pushbyte            255
+     ifeq                L158
+
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+     getproperty         QName(PackageNamespace(""), "minHeight")
+     convert_d
+     jump                L164
+
+L158:
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+     getproperty         QName(PackageNamespace(""), "height")
+     pushbyte            2
+     divide
+     convert_d
+L164:
+     setproperty         QName(PackageNamespace(""), "height")
+
+     debugline           43
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+     getproperty         QName(PackageNamespace(""), "x")
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-0BV")
+     subtract
+     setproperty         QName(PackageNamespace(""), "x")
+
+     debugline           44
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+     getlocal0
+     getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+     getproperty         QName(PackageNamespace(""), "y")
+     setproperty         QName(PackageNamespace(""), "y")
+
+     debugline           46
+L183:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait const QName(ProtectedNamespace("_-0Xr"), "_-4Lq") type QName(PackageNamespace(""), "Number") value Double(0.1) end
+  trait slot QName(ProtectedNamespace("_-0Xr"), "_visualization") type QName(PackageNamespace("_-3tm"), "PooledChatBubble") end
+  trait slot QName(ProtectedNamespace("_-0Xr"), "_x") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(ProtectedNamespace("_-0Xr"), "_y") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(ProtectedNamespace("_-0Xr"), "_-1G") type QName(PackageNamespace("flash.geom"), "Rectangle") end
+  trait slot QName(ProtectedNamespace("_-0Xr"), "_-ZF") type QName(PackageNamespace("flash.geom"), "Rectangle") value Null() end
+  trait slot QName(ProtectedNamespace("_-0Xr"), "_-1V6") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(ProtectedNamespace("_-0Xr"), "_-6U4") type QName(PackageNamespace(""), "Number") end
+  trait const QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-0BV") type QName(PackageNamespace(""), "int") value Integer(2500) end
+  trait slot QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-20x") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("_-40q"), "ChatBubbleSimulationEntity")>) end
+  trait slot QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-4yA") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debugline           49
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      iffalse             L14
+
+      debugline           50
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "_-6H3")
+
+      debugline           52
+L14:
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_visualization")
+
+      debugline           53
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_-1G")
+
+      debugline           54
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-20x")
+
+      debugline           55
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+
+      debugline           56
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "y")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/y/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           58
+      getlocal0
+      pushscope
+
+      debugline           59
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_y")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "y")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/y/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 62
+      debugline           63
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_y")
+
+      debugline           64
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_y")
+      setproperty         QName(PackageNamespace(""), "y")
+
+      debugline           65
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      iffalse             L27
+
+      debugline           66
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getproperty         QName(PackageNamespace(""), "y")
+      setproperty         QName(PackageNamespace(""), "y")
+
+      debugline           68
+L27:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "x")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/x/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           70
+      getlocal0
+      pushscope
+
+      debugline           71
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_x")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "x")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/x/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           74
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 74
+      debugline           75
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_x")
+      getlocal1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_x")
+      subtract
+      pushbyte            1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-4Lq")
+      subtract
+      multiply
+      add
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_x")
+
+      debugline           76
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_x")
+      setproperty         QName(PackageNamespace(""), "x")
+
+      debugline           77
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      iffalse             L41
+
+      debugline           78
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-0BV")
+      subtract
+      setproperty         QName(PackageNamespace(""), "x")
+
+      debugline           80
+L41:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-5Mn")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-5Mn/getter"
+    returns QName(PackageNamespace("flash.geom"), "Rectangle")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           82
+      getlocal0
+      pushscope
+
+      debugline           83
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-4GN")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-4GN/getter"
+    returns QName(PackageNamespace("flash.geom"), "Rectangle")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           86
+      getlocal0
+      pushscope
+
+      debugline           87
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      iffalse             L12
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      jump                L15
+
+L12:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+L15:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-3VK")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-3VK/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           90
+      getlocal0
+      pushscope
+
+      debugline           91
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      pushnull
+      equals
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-4ob")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-4ob/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           94
+      getlocal0
+      pushscope
+
+      debugline           95
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_x")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getproperty         QName(PackageNamespace(""), "width")
+      pushbyte            2
+      divide
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initializePosition")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/initializePosition"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           98
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 98
+      debug               1, "k", 1, 98
+      debug               1, "k", 2, 99
+      debugline           99
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      getproperty         QName(PackageNamespace(""), "overlap")
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      setlocal3
+
+      debugline           100
+      getlocal0
+      getlocal1
+      getlocal3
+      iffalse             L22
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "x")
+      coerce_a
+      jump                L24
+
+L22:
+      pushbyte            0
+      coerce_a
+L24:
+      add
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_x")
+
+      debugline           101
+      getlocal0
+      getlocal2
+      getlocal3
+      iffalse             L35
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "y")
+      coerce_a
+      jump                L37
+
+L35:
+      pushbyte            0
+      coerce_a
+L37:
+      add
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_y")
+
+      debugline           102
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_x")
+      setproperty         QName(PackageNamespace(""), "x")
+
+      debugline           103
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_y")
+      setproperty         QName(PackageNamespace(""), "y")
+
+      debugline           104
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      iffalse             L73
+
+      debugline           105
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-0BV")
+      subtract
+      setproperty         QName(PackageNamespace(""), "x")
+
+      debugline           106
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getproperty         QName(PackageNamespace(""), "y")
+      setproperty         QName(PackageNamespace(""), "y")
+
+      debugline           108
+L73:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0q7")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-0q7"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           110
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 110
+      debugline           111
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1V6")
+      getlocal1
+      add
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_-1V6")
+
+      debugline           112
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5Ri")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-5Ri"
+    param QName(PackageNamespace("_-40q"), "ChatBubbleSimulationEntity")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           114
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 114
+      debugline           115
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-20x")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           116
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4nU")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-4nU"
+    param QName(PackageNamespace("_-40q"), "ChatBubbleSimulationEntity")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           118
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 118
+      debugline           119
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-20x")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      equals
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5rE")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-5rE"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           122
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 122
+      debugline           123
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-6U4")
+      getlocal1
+      add
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_-6U4")
+
+      debugline           124
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2iO")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-2iO"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           126
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 126
+      debugline           127
+      getlocal0
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1V6")
+      add
+      initproperty        QName(PackageNamespace(""), "x")
+
+      debugline           128
+      getlocal0
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-6U4")
+      getlocal1
+      negate
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      add
+      initproperty        QName(PackageNamespace(""), "y")
+
+      debugline           129
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5uZ")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-5uZ"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           131
+      getlocal0
+      pushscope
+
+      debugline           132
+      getlocal0
+      pushdouble          0
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_-1V6")
+
+      debugline           133
+      getlocal0
+      pushdouble          0
+      initproperty        QName(ProtectedNamespace("_-0Xr"), "_-6U4")
+
+      debugline           134
+      getlocal0
+      getlex              Multiname("Vector", [PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), PackageNamespace(""), ProtectedNamespace("_-0Xr"), PrivateNamespace("ChatBubbleSimulationEntity.as$5052", "_-40q:ChatBubbleSimulationEntity#1"), PackageNamespace("_-40q"), PackageInternalNs("_-40q"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-0Xr"), PackageNamespace("__AS3__.vec")])
+      getlex              QName(PackageNamespace("_-40q"), "ChatBubbleSimulationEntity")
+      applytype           1
+      pushbyte            0
+      construct           1
+      initproperty        QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-20x")
+
+      debugline           135
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4Mb")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-4Mb"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional False()
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           137
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 137
+      debug               1, "k", 1, 138
+      debugline           138
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      getproperty         QName(PackageNamespace(""), "overlap")
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      setlocal2
+
+      debugline           139
+      getlocal1
+      iftrue              L47
+
+      debugline           140
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_x")
+      getlocal2
+      iffalse             L27
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "x")
+      coerce_a
+      jump                L29
+
+L27:
+      pushbyte            0
+      coerce_a
+L29:
+      subtract
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_y")
+      getlocal2
+      iffalse             L40
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "y")
+      coerce_a
+      jump                L42
+
+L40:
+      pushbyte            0
+      coerce_a
+L42:
+      subtract
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      callpropvoid        QName(PackageNamespace(""), "moveTo"), 2
+
+      jump                L77
+
+      debugline           142
+L47:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_x")
+      getlocal2
+      iffalse             L58
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "x")
+      coerce_a
+      jump                L60
+
+L58:
+      pushbyte            0
+      coerce_a
+L60:
+      subtract
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      findpropstrict      QName(PackageNamespace(""), "int")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_y")
+      getlocal2
+      iffalse             L71
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "y")
+      coerce_a
+      jump                L73
+
+L71:
+      pushbyte            0
+      coerce_a
+L73:
+      subtract
+      callproperty        QName(PackageNamespace(""), "int"), 1
+      callpropvoid        QName(PackageNamespace(""), "_-1VV"), 2
+
+      debugline           144
+L77:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "fullHeightCollision")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/fullHeightCollision/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           146
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 146
+      debugline           147
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      iffalse             L27
+
+      debugline           148
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      getlocal1
+      iffalse             L19
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getproperty         QName(PackageNamespace(""), "height")
+      convert_d
+      jump                L25
+
+L19:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getproperty         QName(PackageNamespace(""), "height")
+      pushbyte            2
+      divide
+      convert_d
+L25:
+      setproperty         QName(PackageNamespace(""), "height")
+
+      debugline           150
+L27:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-2UL")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-2UL/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           152
+      getlocal0
+      pushscope
+
+      debugline           153
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      getproperty         QName(PackageNamespace(""), "_-3g9")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "_-6H3")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-6H3/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           156
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 156
+      debugline           157
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "_-6H3")
+
+      debugline           158
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-6H3")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-6H3/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           160
+      getlocal0
+      pushscope
+
+      debugline           161
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      getproperty         QName(PackageNamespace(""), "_-6H3")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "timeStamp")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/timeStamp/getter"
+    returns QName(PackageNamespace(""), "uint")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           164
+      getlocal0
+      pushscope
+
+      debugline           165
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_visualization")
+      getproperty         QName(PackageNamespace(""), "timeStamp")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "isSpacer")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/isSpacer/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           168
+      getlocal0
+      pushscope
+
+      debugline           169
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-4yA")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "isSpacer")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/isSpacer/setter"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           172
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 172
+      debugline           173
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-0Xr", "_-40q:ChatBubbleSimulationEntity#0"), "_-4yA")
+
+      debugline           174
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4Fa")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-4Fa"
+    param QName(PackageNamespace("_-40q"), "ChatBubbleSimulationEntity")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           176
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 176
+      debugline           177
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      iffalse             L27
+
+      debugline           178
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getlocal1
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      callproperty        QName(PackageNamespace(""), "intersects"), 1
+      convert_b
+      dup
+      iftrue              L25
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-4GN")
+      callproperty        QName(PackageNamespace(""), "intersects"), 1
+      convert_b
+L25:
+      returnvalue
+
+      debugline           179
+L27:
+      getlocal1
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      iffalse             L48
+
+      debugline           180
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getlocal1
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      callproperty        QName(PackageNamespace(""), "intersects"), 1
+      convert_b
+      dup
+      iftrue              L46
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getlocal1
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-ZF")
+      callproperty        QName(PackageNamespace(""), "intersects"), 1
+      convert_b
+L46:
+      returnvalue
+
+      debugline           182
+L48:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getlocal1
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      callproperty        QName(PackageNamespace(""), "intersects"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-34A")
+   method
+    refid "_-40q:ChatBubbleSimulationEntity/_-34A"
+    param QName(PackageNamespace("_-40q"), "ChatBubbleSimulationEntity")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           186
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 186
+      debugline           187
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      getlocal1
+      getproperty         QName(ProtectedNamespace("_-0Xr"), "_-1G")
+      callproperty        QName(PackageNamespace(""), "intersects"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-40q:ChatBubbleSimulationEntity/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 12
+    findproperty        QName(PackageNamespace(""), "_-5vy")
+    pushbyte            10
+    initproperty        QName(PackageNamespace(""), "_-5vy")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "_-5vy") slotid 1 type QName(PackageNamespace(""), "int") value Integer(10) end
+end ; class

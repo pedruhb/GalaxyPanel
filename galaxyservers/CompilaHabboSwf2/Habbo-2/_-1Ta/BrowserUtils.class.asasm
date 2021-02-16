@@ -1,0 +1,600 @@
+class
+ refid "_-1Ta:BrowserUtils"
+ instance QName(PackageNamespace("_-1Ta"), "BrowserUtils")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-5r")
+  iinit
+   refid "_-1Ta:BrowserUtils/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           23
+     getlocal0
+     pushscope
+
+     debugline           23
+     getlocal0
+     constructsuper      0
+
+     debugline           24
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "_-1Ta:BrowserUtils/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(StaticProtectedNs("_-5r"), "_-3YW") flag FINAL dispid 3
+  method
+   refid "_-1Ta:BrowserUtils/_-5r:_-3YW"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional False()
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           26
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 26
+     debug               1, "k", 1, 26
+     debug               1, "k", 2, 27
+     debugline           27
+     getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "trim"), 1
+     coerce_s
+     setlocal3
+
+     debugline           28
+     getlocal2
+     iffalse             L22
+
+     debugline           29
+     findpropstrict      QName(PackageNamespace(""), "encodeURIComponent")
+     getlocal3
+     callproperty        QName(PackageNamespace(""), "encodeURIComponent"), 1
+     returnvalue
+
+     debugline           32
+L22:
+     getlocal3
+     pushstring          "&"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            255
+     greaterthan
+     dup
+     iftrue              L35
+
+     pop
+     getlocal3
+     pushstring          "?"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            255
+     greaterthan
+L35:
+     iffalse             L42
+
+     debugline           33
+     findpropstrict      QName(PackageNamespace(""), "encodeURIComponent")
+     getlocal3
+     callproperty        QName(PackageNamespace(""), "encodeURIComponent"), 1
+     returnvalue
+
+     debugline           36
+L42:
+     getlocal3
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-4qT") flag FINAL dispid 4
+  method
+   refid "_-1Ta:BrowserUtils/_-4qT"
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional True()
+   optional False()
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           39
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 39
+     debug               1, "k", 1, 39
+     debugline           41
+L7:
+     getlocal1
+     convert_b
+     dup
+     iftrue              L14
+
+     pop
+     getlocal2
+     convert_b
+L14:
+     iffalse             L25
+
+     debugline           42
+     findpropstrict      QName(StaticProtectedNs("_-5r"), "_-3YW")
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "function(){ return document.location.href.toString();}"
+     callproperty        QName(PackageNamespace(""), "call"), 1
+     getlocal2
+     callproperty        QName(StaticProtectedNs("_-5r"), "_-3YW"), 2
+     returnvalue
+
+     jump                L30
+
+     debugline           44
+L25:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "function(){ return document.location.href.toString();}"
+     callproperty        QName(PackageNamespace(""), "call"), 1
+     returnvalue
+
+     debugline           46
+L30:
+     jump                L43
+
+L31:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                3
+     debugline           48
+L43:
+     pushnull
+     returnvalue
+    end ; code
+    try from L7 to L30 target L31 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-53h") flag FINAL dispid 5
+  method
+   refid "_-1Ta:BrowserUtils/_-53h"
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional True()
+   optional False()
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           51
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 51
+     debug               1, "k", 1, 51
+     debugline           53
+L7:
+     getlocal1
+     convert_b
+     dup
+     iftrue              L14
+
+     pop
+     getlocal2
+     convert_b
+L14:
+     iffalse             L25
+
+     debugline           54
+     findpropstrict      QName(StaticProtectedNs("_-5r"), "_-3YW")
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "function(){ return document.referrer; }"
+     callproperty        QName(PackageNamespace(""), "call"), 1
+     getlocal2
+     callproperty        QName(StaticProtectedNs("_-5r"), "_-3YW"), 2
+     returnvalue
+
+     jump                L30
+
+     debugline           56
+L25:
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "function(){ return document.referrer; }"
+     callproperty        QName(PackageNamespace(""), "call"), 1
+     returnvalue
+
+     debugline           58
+L30:
+     jump                L43
+
+L31:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                3
+     debugline           60
+L43:
+     pushnull
+     returnvalue
+    end ; code
+    try from L7 to L30 target L31 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-0Rt") flag FINAL dispid 6
+  method
+   refid "_-1Ta:BrowserUtils/_-0Rt"
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional True()
+   optional False()
+   body
+    maxstack 5
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           63
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 63
+     debug               1, "k", 1, 63
+     debugline           65
+L7:
+     getlocal1
+     convert_b
+     dup
+     iftrue              L14
+
+     pop
+     getlocal2
+     convert_b
+L14:
+     iffalse             L28
+
+     debugline           66
+     findpropstrict      QName(StaticProtectedNs("_-5r"), "_-3YW")
+     getlex              QName(PackageNamespace("_-1Ta"), "NetworkResource")
+     findpropstrict      QName(PackageNamespace(""), "_-4qT")
+     pushfalse
+     pushfalse
+     callproperty        QName(PackageNamespace(""), "_-4qT"), 2
+     callproperty        QName(PackageNamespace(""), "_-0Rt"), 1
+     getlocal2
+     callproperty        QName(StaticProtectedNs("_-5r"), "_-3YW"), 2
+     returnvalue
+
+     jump                L36
+
+     debugline           68
+L28:
+     getlex              QName(PackageNamespace("_-1Ta"), "NetworkResource")
+     findpropstrict      QName(PackageNamespace(""), "_-4qT")
+     pushfalse
+     pushfalse
+     callproperty        QName(PackageNamespace(""), "_-4qT"), 2
+     callproperty        QName(PackageNamespace(""), "_-0Rt"), 1
+     returnvalue
+
+     debugline           70
+L36:
+     jump                L49
+
+L37:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                3
+     debugline           72
+L49:
+     pushnull
+     returnvalue
+    end ; code
+    try from L7 to L36 target L37 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "getBrowserDetails") flag FINAL dispid 7
+  method
+   refid "_-1Ta:BrowserUtils/getBrowserDetails"
+   returns QName(PackageNamespace(""), "Object")
+   body
+    maxstack 14
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           75
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "Object")
+     setlocal1
+
+     debugline           77
+     debug               1, "k", 0, 77
+L9:
+     pushstring          "userAgentString"
+     debugline           78
+     pushnull
+     pushstring          "IE"
+     debugline           79
+     pushfalse
+     pushstring          "Safari"
+     debugline           80
+     pushfalse
+     pushstring          "Firefox"
+     debugline           81
+     pushfalse
+     pushstring          "Chrome"
+     debugline           82
+     pushfalse
+     pushstring          "Opera"
+     debugline           83
+     pushfalse
+     pushstring          "version"
+     debugline           84
+     pushnull
+     newobject           7
+     coerce              QName(PackageNamespace(""), "Object")
+     setlocal1
+
+     debugline           87
+     getlocal1
+     getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+     pushstring          "window.navigator.userAgent.toString"
+     callproperty        QName(PackageNamespace(""), "call"), 1
+     setproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+
+     debugline           89
+     getlocal1
+     getproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushstring          "Safari"
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")]), 1
+     pushbyte            255
+     ifeq                L52
+
+     debugline           90
+     getlocal1
+     pushtrue
+     setproperty         Multiname("Safari", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+
+     jump                L124
+
+     debugline           92
+L52:
+     getlocal1
+     getproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushstring          "Firefox"
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")]), 1
+     pushbyte            255
+     ifeq                L64
+
+     debugline           93
+     getlocal1
+     pushtrue
+     setproperty         Multiname("Firefox", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+
+     jump                L124
+
+     debugline           95
+L64:
+     getlocal1
+     getproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushstring          "Chrome"
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")]), 1
+     pushbyte            255
+     ifeq                L76
+
+     debugline           96
+     getlocal1
+     pushtrue
+     setproperty         Multiname("Chrome", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+
+     jump                L124
+
+     debugline           98
+L76:
+     getlocal1
+     getproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushstring          "MSIE"
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")]), 1
+     pushbyte            255
+     ifeq                L113
+
+     debugline           99
+     getlocal1
+     pushtrue
+     setproperty         Multiname("IE", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+
+     debugline           100
+     getlocal1
+     findpropstrict      QName(PackageNamespace(""), "parseInt")
+     debugline           101
+     getlocal1
+     getproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     debugline           102
+     getlocal1
+     getproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushstring          "MSIE"
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")]), 1
+     pushbyte            5
+     add
+     debugline           103
+     getlocal1
+     getproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushstring          "."
+     getlocal1
+     getproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushstring          "MSIE"
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")]), 1
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")]), 2
+     callproperty        Multiname("substr", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")]), 2
+     callproperty        QName(PackageNamespace(""), "parseInt"), 1
+     setproperty         Multiname("version", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+
+     jump                L124
+
+     debugline           113
+L113:
+     getlocal1
+     getproperty         Multiname("userAgent", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushstring          "Opera"
+     callproperty        Multiname("indexOf", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")]), 1
+     pushbyte            255
+     ifeq                L124
+
+     debugline           114
+     getlocal1
+     pushtrue
+     setproperty         Multiname("Opera", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+
+     debugline           117
+L124:
+     jump                L137
+
+L125:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal2
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                2
+     debugline           119
+L137:
+     getlocal1
+     returnvalue
+    end ; code
+    try from L9 to L124 target L125 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-6hQ") flag FINAL dispid 8
+  method
+   refid "_-1Ta:BrowserUtils/_-6hQ"
+   returns QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     debugfile           "k"
+     debugline           122
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 123
+     debugline           123
+     getglobalscope
+     getslot             1
+     callproperty        QName(PackageNamespace(""), "getBrowserDetails"), 0
+     coerce              QName(PackageNamespace(""), "Object")
+     setlocal1
+
+     debugline           124
+     getlocal1
+     getproperty         Multiname("IE", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushtrue
+     ifstrictne          L23
+
+     debugline           125
+     getlocal1
+     getproperty         Multiname("version", [PrivateNamespace("_-5r", "_-1Ta:BrowserUtils#1"), PackageNamespace("_-1Ta"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("_-5r"), PrivateNamespace("BrowserUtils.as$4953", "_-1Ta:BrowserUtils#0"), PackageInternalNs("_-1Ta"), ProtectedNamespace("_-5r")])
+     pushbyte            6
+     equals
+     returnvalue
+
+     debugline           127
+L23:
+     pushfalse
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

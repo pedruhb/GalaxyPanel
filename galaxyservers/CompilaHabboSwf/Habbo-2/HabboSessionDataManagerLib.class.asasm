@@ -1,0 +1,65 @@
+class
+ refid "HabboSessionDataManagerLib"
+ instance QName(PackageNamespace(""), "HabboSessionDataManagerLib")
+  extends QName(PackageNamespace("mx.core"), "SimpleApplication")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("HabboSessionDataManagerLib")
+  iinit
+   refid "HabboSessionDataManagerLib/iinit"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 11
+    maxscopedepth 12
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     debugfile           "k"
+     debugline           25
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "HabboSessionDataManagerLib/cinit"
+  body
+   maxstack 4
+   localcount 1
+   initscopedepth 10
+   maxscopedepth 11
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 12
+    findproperty        QName(PackageNamespace(""), "requiredClasses")
+    findpropstrict      QName(PackageNamespace(""), "Array")
+    getlex              QName(PackageNamespace("com.sulake.bootstrap"), "SessionDataManagerBootstrap")
+    getlex              QName(PackageNamespace("com.sulake.iid"), "IIDSessionDataManager")
+    constructprop       QName(PackageNamespace(""), "Array"), 2
+    setproperty         QName(PackageNamespace(""), "requiredClasses")
+
+    debug               1, "k", 1, 18
+    findproperty        QName(PackageNamespace(""), "manifest")
+    getlex              QName(PackageNamespace(""), "_-2bY")
+    setproperty         QName(PackageNamespace(""), "manifest")
+
+    debug               1, "k", 2, 21
+    findproperty        QName(PackageNamespace(""), "loading_icon")
+    getlex              QName(PackageNamespace(""), "_-ya")
+    setproperty         QName(PackageNamespace(""), "loading_icon")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "requiredClasses") slotid 1 type QName(PackageNamespace(""), "Array") end
+ trait slot QName(PackageNamespace(""), "manifest") slotid 2 type QName(PackageNamespace(""), "Class") end
+ trait slot QName(PackageNamespace(""), "loading_icon") slotid 3 type QName(PackageNamespace(""), "Class") end
+end ; class

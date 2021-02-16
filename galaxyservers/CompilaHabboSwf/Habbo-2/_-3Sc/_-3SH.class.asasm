@@ -1,0 +1,537 @@
+class
+ refid "_-3Sc:_-3SH"
+ instance QName(PackageNamespace("_-3Sc"), "_-3SH")
+  extends QName(PackageNamespace("_-3Sc"), "_-2uX")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-1iy")
+  iinit
+   refid "_-3Sc:_-3SH/iinit"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 8
+    maxscopedepth 9
+    code
+     debugfile           "k"
+     debugline           23
+     getlocal0
+     pushscope
+
+     debugline           24
+     getlocal0
+     constructsuper      0
+
+     debugline           25
+     findproperty        QName(ProtectedNamespace("_-4sD"), "_-5Oh")
+     getlex              QName(PackageNamespace(""), "_-2VP")
+     initproperty        QName(ProtectedNamespace("_-4sD"), "_-5Oh")
+
+     debugline           26
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-453"), "_-3bP")
+     constructprop       QName(PackageNamespace("_-453"), "_-3bP"), 0
+     initproperty        QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-1Ku")
+
+     debugline           27
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-1Ku") type QName(PackageNamespace("_-453"), "_-3bP") value Null() end
+  trait method QName(PackageNamespace(""), "processUpdateMessage") flag OVERRIDE
+   method
+    refid "_-3Sc:_-3SH/processUpdateMessage"
+    param QName(PackageNamespace("_-1gb"), "_-2PZ")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 7
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-453"), "_-19A")
+      setlocal            4
+
+      pushnull
+      coerce              QName(PackageNamespace("_-453"), "_-19A")
+      setlocal            5
+
+      pushnull
+      coerce              QName(PackageNamespace("_-453"), "_-19A")
+      setlocal            6
+
+      debug               1, "k", 0, 33
+      debug               1, "k", 1, 37
+      debug               1, "k", 2, 66
+      debugline           35
+      getlocal1
+      pushnull
+      ifne                L22
+
+      returnvoid
+
+      debugline           37
+L22:
+      getlocal1
+      getlex              QName(PackageNamespace("_-5Ik"), "_-1C3")
+      astypelate
+      coerce              QName(PackageNamespace("_-5Ik"), "_-1C3")
+      setlocal2
+
+      debugline           40
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L38
+
+      pop
+      getlocal2
+      pushnull
+      equals
+L38:
+      iffalse             L129
+
+      debugline           42
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "loc")
+      pushnull
+      ifeq                L129
+
+      debug               1, "k", 3, 43
+      debug               1, "k", 4, 44
+      debugline           43
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getLocation"), 0
+      coerce              QName(PackageNamespace("_-453"), "_-19A")
+      setlocal            4
+
+      debugline           44
+      getlex              QName(PackageNamespace("_-453"), "_-3bP")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "loc")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-1or"), 2
+      coerce              QName(PackageNamespace("_-453"), "_-19A")
+      setlocal            5
+
+      debugline           45
+      getlocal            5
+      pushnull
+      ifeq                L129
+
+      debugline           46
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            5
+      getproperty         QName(Namespace("_-1lr"), "x")
+      callproperty        QName(PackageNamespace(""), "abs"), 1
+      pushbyte            2
+      lessthan
+      dup
+      iffalse             L79
+
+      pop
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            5
+      getproperty         QName(Namespace("_-1lr"), "y")
+      callproperty        QName(PackageNamespace(""), "abs"), 1
+      pushbyte            2
+      lessthan
+L79:
+      iffalse             L129
+
+      debug               1, "k", 5, 47
+      debugline           47
+      getlocal            4
+      coerce              QName(PackageNamespace("_-453"), "_-19A")
+      setlocal            6
+
+      debugline           48
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            5
+      getproperty         QName(Namespace("_-1lr"), "x")
+      callproperty        QName(PackageNamespace(""), "abs"), 1
+      pushbyte            1
+      greaterthan
+      dup
+      iftrue              L101
+
+      pop
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            5
+      getproperty         QName(Namespace("_-1lr"), "y")
+      callproperty        QName(PackageNamespace(""), "abs"), 1
+      pushbyte            1
+      greaterthan
+L101:
+      iffalse             L113
+
+      debugline           50
+      getlex              QName(PackageNamespace("_-453"), "_-3bP")
+      getlocal            4
+      getlex              QName(PackageNamespace("_-453"), "_-3bP")
+      getlocal            5
+      pushdouble          0.5
+      callproperty        QName(PackageNamespace(""), "product"), 2
+      callproperty        QName(PackageNamespace(""), "sum"), 2
+      coerce              QName(PackageNamespace("_-453"), "_-19A")
+      setlocal            6
+
+      debugline           53
+L113:
+      findpropstrict      QName(PackageNamespace("_-5Ik"), "_-1C3")
+      getlocal            6
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "loc")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "dir")
+      constructprop       QName(PackageNamespace("_-5Ik"), "_-1C3"), 3
+      coerce              QName(PackageNamespace("_-5Ik"), "_-1C3")
+      setlocal2
+
+      debugline           54
+      getlocal0
+      getlocal2
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           55
+      returnvoid
+
+      debugline           61
+L129:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "loc")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L140
+
+      pop
+      getlocal2
+      pushnull
+      equals
+L140:
+      iffalse             L157
+
+      debugline           62
+      findpropstrict      QName(PackageNamespace("_-5Ik"), "_-1C3")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "loc")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "loc")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "dir")
+      constructprop       QName(PackageNamespace("_-5Ik"), "_-1C3"), 3
+      coerce              QName(PackageNamespace("_-5Ik"), "_-1C3")
+      setlocal2
+
+      debugline           63
+      getlocal0
+      getlocal2
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           66
+L157:
+      getlocal1
+      getlex              QName(PackageNamespace("_-5Ik"), "_-dY")
+      astypelate
+      coerce              QName(PackageNamespace("_-5Ik"), "_-dY")
+      setlocal3
+
+      debugline           67
+      getlocal3
+      pushnull
+      ifeq                L192
+
+      debugline           69
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "state")
+      pushbyte            0
+      ifngt               L182
+
+      debugline           70
+      findproperty        QName(ProtectedNamespace("_-4sD"), "_-5Oh")
+      getlex              QName(PackageNamespace(""), "_-2VP")
+      getlocal0
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "state")
+      callproperty        QName(ProtectedNamespace("_-1iy"), "_-2Ph"), 1
+      divide
+      initproperty        QName(ProtectedNamespace("_-4sD"), "_-5Oh")
+
+      jump                L186
+
+      debugline           72
+L182:
+      findproperty        QName(ProtectedNamespace("_-4sD"), "_-5Oh")
+      pushbyte            1
+      initproperty        QName(ProtectedNamespace("_-4sD"), "_-5Oh")
+
+      debugline           75
+L186:
+      getlocal0
+      getlocal3
+      callpropvoid        QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-33a"), 1
+
+      debugline           76
+      returnvoid
+
+      debugline           78
+L192:
+      getlocal2
+      convert_b
+      dup
+      iffalse             L200
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-09X")
+      convert_b
+L200:
+      iffalse             L206
+
+      debugline           81
+      findproperty        QName(ProtectedNamespace("_-4sD"), "_-5Oh")
+      getlex              QName(PackageNamespace(""), "_-2VP")
+      initproperty        QName(ProtectedNamespace("_-4sD"), "_-5Oh")
+
+      debugline           84
+L206:
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           85
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-1iy"), "_-2Ph")
+   method
+    refid "_-3Sc:_-3SH/_-1iy:_-2Ph"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           87
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 87
+      debugline           88
+      getlocal1
+      getlex              QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-5DX")
+      divide
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-1iy"), "_-1OO")
+   method
+    refid "_-3Sc:_-3SH/_-1iy:_-1OO"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           91
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 91
+      debugline           92
+      getlocal1
+      getlex              QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-5DX")
+      modulo
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-33a")
+   method
+    refid "_-3Sc:_-3SH/_-33a"
+    param QName(PackageNamespace("_-5Ik"), "_-dY")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           95
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-22X"), "_-3Qq")
+      setlocal3
+
+      debug               1, "k", 0, 95
+      debug               1, "k", 1, 96
+      debugline           96
+      getlocal0
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "state")
+      callproperty        QName(ProtectedNamespace("_-1iy"), "_-1OO"), 1
+      convert_i
+      setlocal2
+
+      debugline           97
+      getlocal2
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "state")
+      ifeq                L43
+
+      debug               1, "k", 2, 98
+      debugline           98
+      findpropstrict      QName(PackageNamespace("_-22X"), "_-3Qq")
+      constructprop       QName(PackageNamespace("_-22X"), "_-3Qq"), 0
+      coerce              QName(PackageNamespace("_-22X"), "_-3Qq")
+      setlocal3
+
+      debugline           99
+      getlocal3
+      findpropstrict      QName(PackageNamespace(""), "String")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "String"), 1
+      callpropvoid        QName(PackageNamespace(""), "setString"), 1
+
+      debugline           100
+      findpropstrict      QName(PackageNamespace("_-5Ik"), "_-dY")
+      getlocal2
+      getlocal3
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-0Fd")
+      constructprop       QName(PackageNamespace("_-5Ik"), "_-dY"), 3
+      coerce              QName(PackageNamespace("_-5Ik"), "_-dY")
+      setlocal1
+
+      debugline           103
+L43:
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "processUpdateMessage"), 1
+      debugline           104
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update") flag OVERRIDE
+   method
+    refid "_-3Sc:_-3SH/update"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 8
+     maxscopedepth 9
+     code
+      debugfile           "k"
+      debugline           111
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 111
+      debugline           112
+      getlex              QName(PackageNamespace(""), "object")
+      pushnull
+      ifeq                L41
+
+      debugline           113
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-1Ku")
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getLocation"), 0
+      callpropvoid        QName(PackageNamespace(""), "_-2Ku"), 1
+
+      debugline           114
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "update"), 1
+      debugline           115
+      getlex              QName(PackageNamespace("_-453"), "_-3bP")
+      getlex              QName(PackageNamespace(""), "object")
+      callproperty        QName(Namespace("_-2Q9"), "getLocation"), 0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-1Ku")
+      callproperty        QName(PackageNamespace(""), "_-1or"), 2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushdouble          0
+      ifne                L41
+
+      debugline           116
+      getlex              QName(PackageNamespace(""), "object")
+      pushbyte            0
+      callproperty        QName(Namespace("_-2Q9"), "getState"), 1
+      getlex              QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-51j")
+      ifeq                L41
+
+      debugline           117
+      getlex              QName(PackageNamespace(""), "object")
+      getlex              QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-51j")
+      pushbyte            0
+      callpropvoid        QName(Namespace("_-154"), "setState"), 2
+
+      debugline           121
+L41:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-3Sc:_-3SH/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 7
+   maxscopedepth 8
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 17
+    findproperty        QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-51j")
+    pushbyte            0
+    initproperty        QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-51j")
+
+    debug               1, "k", 1, 18
+    findproperty        QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-0Oa")
+    pushbyte            1
+    initproperty        QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-0Oa")
+
+    debug               1, "k", 2, 19
+    findproperty        QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-5DX")
+    pushbyte            10
+    initproperty        QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-5DX")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-51j") slotid 1 type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-0Oa") slotid 2 type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PrivateNamespace("_-1iy", "_-3Sc:_-3SH"), "_-5DX") slotid 3 type QName(PackageNamespace(""), "int") value Integer(10) end
+end ; class

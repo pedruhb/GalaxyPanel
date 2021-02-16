@@ -1,0 +1,1920 @@
+class
+ refid "_-1Ta:NetworkResource"
+ instance QName(PackageNamespace("_-1Ta"), "NetworkResource")
+  extends QName(PackageNamespace("_-4cF"), "Debuggable")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-6is")
+  iinit
+   refid "_-1Ta:NetworkResource/iinit"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   optional Null()
+   optional Null()
+   optional Null()
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           36
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 36
+     debug               1, "k", 1, 36
+     debug               1, "k", 2, 36
+     debugline           33
+     getlocal0
+     findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+     constructprop       QName(PackageNamespace("flash.net"), "URLLoader"), 0
+     initproperty        QName(ProtectedNamespace("_-6is"), "_-cZ")
+
+     debugline           37
+     getlocal0
+     constructsuper      0
+
+     debugline           38
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-6is"), "_-3GO")
+
+     debugline           39
+     getlocal0
+     getlocal2
+     initproperty        QName(PackageNamespace(""), "url")
+
+     debugline           40
+     getlocal0
+     getlocal3
+     initproperty        QName(ProtectedNamespace("_-6is"), "_-3-b")
+
+     debugline           41
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-6is"), "_-3GO") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(ProtectedNamespace("_-6is"), "_-4M3") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(ProtectedNamespace("_-6is"), "_-3-b") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(ProtectedNamespace("_-6is"), "_-cZ") type QName(PackageNamespace("flash.net"), "URLLoader") end
+  trait slot QName(ProtectedNamespace("_-6is"), "_-6dB") type QName(PackageNamespace("flash.utils"), "Timer") value Null() end
+  trait method QName(PackageNamespace(""), "close")
+   method
+    refid "_-1Ta:NetworkResource/close"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 8
+     code
+      debugfile           "k"
+      debugline           43
+      getlocal0
+      pushscope
+
+      debugline           44
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      pushnull
+      ifeq                L31
+
+      debugline           46
+L10:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           47
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-6is"), "_-cZ")
+
+      debugline           49
+L18:
+      jump                L31
+
+L19:
+      getlocal0
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal1
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      popscope
+      kill                1
+      debugline           52
+L31:
+      returnvoid
+     end ; code
+     try from L10 to L18 target L19 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "e") end
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "id")
+   method
+    refid "_-1Ta:NetworkResource/id/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           54
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 54
+      debugline           55
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-6is"), "_-3GO")
+
+      debugline           56
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "id")
+   method
+    refid "_-1Ta:NetworkResource/id/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           58
+      getlocal0
+      pushscope
+
+      debugline           59
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-3GO")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "url")
+   method
+    refid "_-1Ta:NetworkResource/url/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           62
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 62
+      debugline           63
+      getlocal0
+      getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+      getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "trim"), 1
+      callproperty        QName(PackageNamespace(""), "_-6Xt"), 1
+      initproperty        QName(ProtectedNamespace("_-6is"), "_-4M3")
+
+      debugline           64
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "url")
+   method
+    refid "_-1Ta:NetworkResource/url/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           66
+      getlocal0
+      pushscope
+
+      debugline           67
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-52J")
+   method
+    refid "_-1Ta:NetworkResource/_-52J"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           70
+      getlocal0
+      pushscope
+
+      debugline           71
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L19
+
+      debugline           72
+      getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      callproperty        QName(PackageNamespace(""), "trim"), 1
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      greaterthan
+      returnvalue
+
+      debugline           74
+L19:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4Rj")
+   method
+    refid "_-1Ta:NetworkResource/_-4Rj"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           77
+      getlocal0
+      pushscope
+
+      debugline           78
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-3-b")
+      pushnull
+      equals
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "mimeType")
+   method
+    refid "_-1Ta:NetworkResource/mimeType/setter"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           81
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 81
+      debugline           82
+      getlocal0
+      getlocal1
+      initproperty        QName(ProtectedNamespace("_-6is"), "_-3-b")
+
+      debugline           83
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "mimeType")
+   method
+    refid "_-1Ta:NetworkResource/mimeType/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           85
+      getlocal0
+      pushscope
+
+      debugline           86
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-3-b")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isMimeType")
+   method
+    refid "_-1Ta:NetworkResource/isMimeType"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           89
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 89
+      debugline           90
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-3-b")
+      pushnull
+      ifeq                L18
+
+      debugline           91
+      getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+      getlocal1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-3-b")
+      callproperty        QName(PackageNamespace(""), "_-4pC"), 2
+      returnvalue
+
+      debugline           93
+L18:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1eX")
+   method
+    refid "_-1Ta:NetworkResource/_-1eX"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           96
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal2
+
+      debug               1, "k", 0, 96
+      debugline           97
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L30
+
+      debug               1, "k", 1, 98
+      debugline           98
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "."
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "lastIndexOf"), 1
+      convert_i
+      setlocal2
+
+      debugline           99
+      getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-4pC"), 2
+      returnvalue
+
+      debugline           101
+L30:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "qualifiedHTTPUrl")
+   method
+    refid "_-1Ta:NetworkResource/qualifiedHTTPUrl/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           104
+      getlocal0
+      pushscope
+
+      debugline           105
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-1LW"), 0
+      iftrue              L17
+
+      pushstring          "http://"
+      debugline           106
+      getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      callproperty        QName(PackageNamespace(""), "trim"), 1
+      add
+      returnvalue
+
+      debugline           109
+L17:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "qualifiedUrl")
+   method
+    refid "_-1Ta:NetworkResource/qualifiedUrl/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           113
+      getlocal0
+      pushscope
+
+      debugline           114
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "qualifiedHTTPUrl")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2oM")
+   method
+    refid "_-1Ta:NetworkResource/_-2oM"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           117
+      getlocal0
+      pushscope
+
+      debugline           118
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L18
+
+      debugline           119
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "mp4:"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+      returnvalue
+
+      debugline           121
+L18:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0nn")
+   method
+    refid "_-1Ta:NetworkResource/_-0nn"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           124
+      getlocal0
+      pushscope
+
+      debugline           125
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L18
+
+      debugline           126
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "flv:"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+      returnvalue
+
+      debugline           128
+L18:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0TS")
+   method
+    refid "_-1Ta:NetworkResource/_-0TS"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           131
+      getlocal0
+      pushscope
+
+      debugline           132
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L21
+
+      debugline           133
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-2oM"), 0
+      convert_b
+      dup
+      iftrue              L19
+
+      pop
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-0nn"), 0
+      convert_b
+L19:
+      returnvalue
+
+      debugline           135
+L21:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "data")
+   method
+    refid "_-1Ta:NetworkResource/data/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           138
+      getlocal0
+      pushscope
+
+      debugline           139
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      getproperty         QName(PackageNamespace(""), "data")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1LW")
+   method
+    refid "_-1Ta:NetworkResource/_-1LW"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           142
+      getlocal0
+      pushscope
+
+      debugline           143
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L36
+
+      debugline           144
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "http://"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+      dup
+      iftrue              L25
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "https://"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+L25:
+      dup
+      iftrue              L34
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "rtmp://"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+L34:
+      returnvalue
+
+      debugline           146
+L36:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getQualifiedStreamAddress")
+   method
+    refid "_-1Ta:NetworkResource/getQualifiedStreamAddress"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           149
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 149
+      debugline           150
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-1LW"), 0
+      iffalse             L14
+
+      debugline           151
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      returnvalue
+
+      debugline           154
+L14:
+      getlocal1
+      pushnull
+      ifeq                L24
+
+      debugline           155
+      getlocal1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      add
+      returnvalue
+
+      debugline           157
+L24:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1ZB")
+   method
+    refid "_-1Ta:NetworkResource/_-1ZB"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           161
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal2
+
+      pushbyte            0
+      setlocal3
+
+      debug               1, "k", 0, 161
+      debugline           162
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L67
+
+      debugline           163
+      getlocal1
+      pushnull
+      ifeq                L43
+
+      debug               1, "k", 1, 164
+      debugline           164
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      convert_i
+      setlocal2
+
+      debugline           165
+      getlocal2
+      pushbyte            255
+      ifne                L35
+
+      debugline           166
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      returnvalue
+
+      debugline           168
+L35:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+      returnvalue
+
+      jump                L65
+
+      debug               1, "k", 2, 171
+      debugline           171
+L43:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "/"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "lastIndexOf"), 1
+      convert_i
+      setlocal3
+
+      debugline           172
+      getlocal3
+      pushbyte            255
+      ifne                L58
+
+      debugline           173
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      returnvalue
+
+      debugline           176
+L58:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      getlocal3
+      pushbyte            1
+      add
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+      returnvalue
+
+L65:
+      jump                L69
+
+      debugline           180
+L67:
+      pushnull
+      returnvalue
+L69:
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "netConnectionAddress")
+   method
+    refid "_-1Ta:NetworkResource/netConnectionAddress/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           183
+      getlocal0
+      pushscope
+
+      debugline           184
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L44
+
+      debugline           185
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "mp4:"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            0
+      ifngt               L27
+
+      debugline           186
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushbyte            0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "mp4:"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+      returnvalue
+
+      debugline           188
+L27:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "flv:"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            0
+      ifngt               L44
+
+      debugline           189
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushbyte            0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "flv:"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+      returnvalue
+
+      debugline           192
+L44:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isRTMP")
+   method
+    refid "_-1Ta:NetworkResource/isRTMP"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           195
+      getlocal0
+      pushscope
+
+      debugline           196
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L18
+
+      debugline           197
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "rtmp"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+      returnvalue
+
+      debugline           199
+L18:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6Ad")
+   method
+    refid "_-1Ta:NetworkResource/_-6Ad"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           202
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal1
+
+      debugline           203
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L36
+
+      debug               1, "k", 0, 204
+      debugline           204
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "/"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "lastIndexOf"), 1
+      convert_i
+      setlocal1
+
+      debugline           205
+      getlocal1
+      pushbyte            255
+      ifne                L27
+
+      debugline           206
+      pushnull
+      returnvalue
+
+      debugline           209
+L27:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushbyte            0
+      getlocal1
+      pushbyte            1
+      add
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+      returnvalue
+
+      debugline           212
+L36:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isStream")
+   method
+    refid "_-1Ta:NetworkResource/isStream"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           215
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 216
+      debug               1, "k", 1, 217
+      debugline           216
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-1ZB"), 0
+      coerce_s
+      setlocal1
+
+      debugline           217
+      findpropstrict      QName(PackageNamespace(""), "RegExp")
+      pushstring          "(?i).*\\.(mp4|flv|wmv|mp3|3g2|3gp|aac|f4b|f4p|f4v|m4a|m4v|mov|sdp)"
+      constructprop       QName(PackageNamespace(""), "RegExp"), 1
+      coerce              QName(PackageNamespace(""), "RegExp")
+      setlocal2
+
+      debugline           218
+      getlocal1
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "match"), 1
+      pushnull
+      equals
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5IB")
+   method
+    refid "_-1Ta:NetworkResource/_-5IB"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           221
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 222
+      debugline           222
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-1ZB"), 0
+      coerce_s
+      setlocal1
+
+      debugline           223
+      getlocal1
+      pushnull
+      ifeq                L22
+
+      debugline           224
+      getlocal1
+      pushstring          "(live)"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      greaterthan
+      returnvalue
+
+      debugline           226
+L22:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2op")
+   method
+    refid "_-1Ta:NetworkResource/_-2op"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           249
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal1
+
+      debugline           250
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-5IB"), 0
+      iffalse             L27
+
+      debug               1, "k", 0, 251
+      debugline           251
+      getlocal0
+      callproperty        QName(PackageNamespace(""), "_-1ZB"), 0
+      coerce_s
+      setlocal1
+
+      debugline           252
+      getlocal1
+      getlocal1
+      pushstring          "(live)"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "lastIndexOf"), 1
+      pushbyte            6
+      add
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
+      returnvalue
+
+      debugline           254
+L27:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "call")
+   method
+    refid "_-1Ta:NetworkResource/call"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Integer(-1)
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           284
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 284
+      debugline           285
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushnull
+      ifeq                L86
+
+      debugline           286
+      getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      callproperty        QName(PackageNamespace(""), "trim"), 1
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L83
+
+      debugline           288
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      constructprop       QName(PackageNamespace("flash.net"), "URLLoader"), 0
+      initproperty        QName(ProtectedNamespace("_-6is"), "_-cZ")
+
+      debugline           289
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-2b6")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           290
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "ErrorEvent")
+      getproperty         QName(PackageNamespace(""), "ERROR")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "errorHandler")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           291
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "AsyncErrorEvent")
+      getproperty         QName(PackageNamespace(""), "ASYNC_ERROR")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "errorHandler")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           292
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "SecurityErrorEvent")
+      getproperty         QName(PackageNamespace(""), "SECURITY_ERROR")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "errorHandler")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           293
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace(""), "IO_ERROR")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "errorHandler")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           294
+      getlocal1
+      pushbyte            0
+      ifngt               L74
+
+      debugline           295
+      getlocal0
+      getlocal1
+      pushshort           1000
+      multiply
+      callpropvoid        QName(ProtectedNamespace("_-6is"), "_-3hi"), 1
+
+      debugline           297
+L74:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      jump                L83
+
+      debugline           300
+L83:
+      jump                L86
+
+      debugline           304
+      debugline           306
+L86:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6is"), "_-3hi")
+   method
+    refid "_-1Ta:NetworkResource/_-6is:_-3hi"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           308
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 308
+      debugline           309
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-6dB")
+      pushnull
+      ifeq                L13
+
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-6is"), "_-3zJ"), 0
+
+      debugline           310
+L13:
+      getlocal1
+      pushbyte            0
+      ifngt               L36
+
+      debugline           312
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
+      getlocal1
+      pushbyte            1
+      constructprop       QName(PackageNamespace("flash.utils"), "Timer"), 2
+      initproperty        QName(ProtectedNamespace("_-6is"), "_-6dB")
+
+      debugline           313
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-6dB")
+      getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+      getproperty         QName(PackageNamespace(""), "TIMER")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4T")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      debugline           314
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-6dB")
+      callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+      debugline           316
+L36:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6is"), "_-3zJ")
+   method
+    refid "_-1Ta:NetworkResource/_-6is:_-3zJ"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           318
+      getlocal0
+      pushscope
+
+      debugline           319
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-6dB")
+      pushnull
+      ifeq                L18
+
+      debugline           320
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-6dB")
+      callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+      debugline           321
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-6is"), "_-6dB")
+
+      debugline           323
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6is"), "_-4T")
+   method
+    refid "_-1Ta:NetworkResource/_-6is:_-4T"
+    param QName(PackageNamespace("flash.events"), "TimerEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           325
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 325
+      debugline           326
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-6is"), "_-3zJ"), 0
+
+      debugline           328
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           329
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6is"), "_-2b6")
+   method
+    refid "_-1Ta:NetworkResource/_-6is:_-2b6"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           331
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 331
+      debugline           332
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      pushnull
+      ifeq                L19
+
+      debugline           334
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-cZ")
+      getproperty         QName(PackageNamespace(""), "data")
+      callpropvoid        QName(ProtectedNamespace("_-6is"), "loadComplete"), 1
+
+      jump                L19
+
+      debugline           337
+      debugline           339
+L19:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6is"), "errorHandler")
+   method
+    refid "_-1Ta:NetworkResource/_-6is:errorHandler"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           341
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 341
+      debugline           343
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           344
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-6is"), "loadComplete")
+   method
+    refid "_-1Ta:NetworkResource/_-6is:loadComplete"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           346
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 346
+      debugline           347
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "close"), 0
+
+      debugline           348
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "clone")
+   method
+    refid "_-1Ta:NetworkResource/clone"
+    returns QName(PackageNamespace("_-1Ta"), "NetworkResource")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           357
+      getlocal0
+      pushscope
+
+      debugline           358
+      findpropstrict      QName(PackageNamespace("_-1Ta"), "NetworkResource")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-3GO")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      constructprop       QName(PackageNamespace("_-1Ta"), "NetworkResource"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "toJSObject") flag OVERRIDE
+   method
+    refid "_-1Ta:NetworkResource/toJSObject"
+    returns QName(PackageNamespace(""), "Object")
+    body
+     maxstack 8
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           361
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 362
+      debugline           362
+      findpropstrict      QName(PackageNamespace(""), "Object")
+      constructprop       QName(PackageNamespace(""), "Object"), 0
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal1
+
+      pushstring          "id"
+      debugline           364
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-3GO")
+      pushstring          "uid"
+      debugline           365
+      getlex              QName(ProtectedNamespace("_-1bs"), "_-3qL")
+      pushstring          "url"
+      debugline           366
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-4M3")
+      pushstring          "mimeType"
+      debugline           367
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-6is"), "_-3-b")
+      newobject           4
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal1
+
+      debugline           369
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Ta:NetworkResource/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "_-0Rt") flag FINAL dispid 3
+  method
+   refid "_-1Ta:NetworkResource/_-0Rt"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           229
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal2
+
+     debug               1, "k", 0, 229
+     debugline           230
+     getlocal1
+     pushnull
+     ifeq                L51
+
+     debug               1, "k", 1, 234
+     debugline           231
+     getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+     getlocal1
+     pushstring          "http://localhost"
+     callproperty        QName(PackageNamespace(""), "_-28W"), 2
+     iffalse             L23
+
+     pushstring          "localhost"
+     debugline           232
+     returnvalue
+
+     debugline           234
+L23:
+     getlocal1
+     pushstring          "/"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal2
+
+     debugline           235
+     getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+     getlocal1
+     pushstring          "http"
+     callproperty        QName(PackageNamespace(""), "_-28W"), 2
+     iffalse             L46
+
+     debugline           237
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            3
+     ifnge               L44
+
+     debugline           238
+     getlocal2
+     pushbyte            2
+     getproperty         MultinameL([PrivateNamespace("_-6is", "_-1Ta:NetworkResource/_-0Rt#1"), PackageNamespace(""), PackageNamespace("_-1Ta"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("NetworkResource.as$4916", "_-1Ta:NetworkResource/_-0Rt#0"), PackageInternalNs("_-1Ta"), PackageNamespace("flash.events"), PackageNamespace("flash.net"), ProtectedNamespace("_-6is"), StaticProtectedNs("_-6is"), StaticProtectedNs("_-1bs")])
+     returnvalue
+
+L44:
+     jump                L51
+
+     debugline           243
+L46:
+     getlocal2
+     pushbyte            0
+     getproperty         MultinameL([PrivateNamespace("_-6is", "_-1Ta:NetworkResource/_-0Rt#1"), PackageNamespace(""), PackageNamespace("_-1Ta"), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("NetworkResource.as$4916", "_-1Ta:NetworkResource/_-0Rt#0"), PackageInternalNs("_-1Ta"), PackageNamespace("flash.events"), PackageNamespace("flash.net"), ProtectedNamespace("_-6is"), StaticProtectedNs("_-6is"), StaticProtectedNs("_-1bs")])
+     returnvalue
+
+     debugline           246
+L51:
+     pushnull
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-2yr") flag FINAL dispid 4
+  method
+   refid "_-1Ta:NetworkResource/_-2yr"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           257
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 257
+     debug               1, "k", 1, 257
+     debugline           258
+     getlocal2
+     pushnull
+     ifne                L13
+
+     pushnull
+     returnvalue
+
+     debugline           260
+L13:
+     findpropstrict      QName(PackageNamespace(""), "_-06J")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "_-06J"), 1
+     iffalse             L20
+
+     getlocal2
+     returnvalue
+
+     debugline           261
+L20:
+     getlocal2
+     pushstring          "/"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     ifne                L28
+
+     getlocal2
+     returnvalue
+
+     debugline           263
+L28:
+     getlocal1
+     pushstring          ""
+     equals
+     dup
+     iftrue              L37
+
+     pop
+     getlocal1
+     pushnull
+     equals
+L37:
+     dup
+     iftrue              L43
+
+     pop
+     getlocal1
+     pushstring          "null"
+     equals
+L43:
+     iffalse             L48
+
+     debugline           264
+     getlocal2
+     returnvalue
+
+     debugline           266
+L48:
+     getlocal1
+     pushnull
+     ifeq                L72
+
+     debugline           267
+     getlocal1
+     pushstring          "/"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "lastIndexOf"), 1
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "length")
+     decrement
+     ifne                L65
+
+     debugline           268
+     getlocal1
+     getlocal2
+     add
+     returnvalue
+
+     debugline           269
+L65:
+     getlocal1
+     pushstring          "/"
+     add
+     getlocal2
+     add
+     returnvalue
+
+     debugline           271
+L72:
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-0pm") flag FINAL dispid 5
+  method
+   refid "_-1Ta:NetworkResource/_-0pm"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           274
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 274
+     debug               1, "k", 1, 274
+     debugline           275
+     getlex              QName(PackageNamespace("_-1Ta"), "StringUtils")
+     getlocal1
+     pushstring          "/"
+     callproperty        QName(PackageNamespace(""), "_-38m"), 2
+     iffalse             L17
+
+     getlocal1
+     getlocal2
+     add
+     returnvalue
+
+     debugline           276
+L17:
+     getlocal1
+     pushstring          "/"
+     add
+     getlocal2
+     add
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-06J") flag FINAL dispid 6
+  method
+   refid "_-1Ta:NetworkResource/_-06J"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "Boolean")
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           279
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 279
+     debugline           280
+     getlocal1
+     iftrue              L11
+
+     pushfalse
+     returnvalue
+
+     debugline           281
+L11:
+     getlocal1
+     pushstring          "://"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     greaterthan
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "_-B-") flag FINAL dispid 7
+  method
+   refid "_-1Ta:NetworkResource/_-B-"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           350
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 350
+     debug               1, "k", 1, 350
+     debugline           351
+     getlocal1
+     pushstring          "?"
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+     pushbyte            0
+     ifngt               L20
+
+     debugline           352
+     getlocal1
+     pushstring          "&"
+     add
+     getlocal2
+     add
+     returnvalue
+
+     debugline           354
+L20:
+     getlocal1
+     pushstring          "?"
+     add
+     getlocal2
+     add
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

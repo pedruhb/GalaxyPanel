@@ -1,0 +1,3733 @@
+class
+ refid "_-1Mw:OverlayController"
+ instance QName(PackageNamespace("_-1Mw"), "OverlayController")
+  extends QName(PackageNamespace("_-97"), "RegionController")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0NX")
+  iinit
+   refid "_-1Mw:OverlayController/iinit"
+   param QName(PackageNamespace("_-0Qa"), "VASTController")
+   param QName(PackageNamespace("_-1Ta"), "_-4EG")
+   param QName(PackageNamespace("_-0fF"), "_-0Qv")
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 10
+    maxscopedepth 11
+    code
+     debugfile           "k"
+     debugline           61
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 61
+     debug               1, "k", 1, 61
+     debug               1, "k", 2, 61
+     debugline           62
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+
+     debugline           63
+     getlocal0
+     getlocal2
+     getlocal3
+     constructsuper      2
+
+     debugline           64
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("_-0NX"), "_-1SJ") type QName(PackageNamespace("_-0Qa"), "VASTController") end
+  trait slot QName(ProtectedNamespace("_-0NX"), "_-ed") type QName(PackageNamespace("_-1Mw"), "_-1HM") value Null() end
+  trait slot QName(ProtectedNamespace("_-0NX"), "_-40z") type QName(PackageNamespace("_-51k"), "_-1v4") value Null() end
+  trait slot QName(ProtectedNamespace("_-0NX"), "_-FX") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(ProtectedNamespace("_-0NX"), "_-2UY") type QName(PackageNamespace("_-1Mw"), "_-2-Q") value Null() end
+  trait slot QName(ProtectedNamespace("_-0NX"), "_-66Y") type QName(PackageNamespace("_-3ea"), "_-6Yg") value Null() end
+  trait method QName(ProtectedNamespace("_-0NX"), "newRegion") flag OVERRIDE
+   method
+    refid "_-1Mw:OverlayController/_-0NX:newRegion"
+    param QName(PackageNamespace("_-97"), "RegionController")
+    param QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+    param QName(PackageNamespace("_-1Ta"), "_-4EG")
+    returns QName(PackageNamespace("_-0F1"), "RegionView")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           66
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 66
+      debug               1, "k", 1, 66
+      debug               1, "k", 2, 66
+      debugline           67
+      findpropstrict      QName(PackageNamespace("_-1Mw"), "OverlayView")
+      getlocal1
+      getlocal2
+      getlocal3
+      constructprop       QName(PackageNamespace("_-1Mw"), "OverlayView"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-0NX"), "createPredefinedRegion") flag OVERRIDE
+   method
+    refid "_-1Mw:OverlayController/_-0NX:createPredefinedRegion"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("_-0F1"), "RegionView")
+    body
+     maxstack 22
+     localcount 4
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           70
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 70
+      debug               1, "k", 1, 72
+      debugline           72
+      pushnull
+      coerce              QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      setlocal2
+
+      jump                L659
+
+L11:
+      label
+      debugline           75
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-system-message"
+      pushstring          "verticalAlign"
+      pushstring          "bottom:-2"
+      pushstring          "backgroundColor"
+      debugline           79
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "height"
+      debugline           80
+      pushbyte            20
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "style"
+      pushstring          ".normaltext { font-family: \"sans-serif\"; font-size: 12pt; font-style: normal; color:#CCCCCC } "
+      pushstring          ".smalltext { font-family: \"sans-serif\"; font-size: 10pt; color:#CCCCCC }"
+      debugline           83
+      add
+      pushstring          "closeButton"
+      debugline           84
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      pushstring          "useOverrideMargin"
+      debugline           85
+      pushtrue
+      newobject           8
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L45:
+      label
+      debugline           90
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-top"
+      pushstring          "verticalAlign"
+      pushstring          "top"
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      pushstring          "50"
+      pushstring          "closeButton"
+      debugline           96
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           5
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L65:
+      label
+      debugline           101
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-fullscreen"
+      pushstring          "verticalAlign"
+      debugline           104
+      pushbyte            0
+      pushstring          "horizontalAlign"
+      debugline           105
+      pushbyte            0
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      pushstring          "100pct"
+      pushstring          "backgroundColor"
+      debugline           108
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "#000000"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "closeButton"
+      debugline           109
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           7
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L94:
+      label
+      debugline           114
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-fullscreen-black-no-close-button-non-clickable"
+      pushstring          "verticalAlign"
+      debugline           117
+      pushbyte            0
+      pushstring          "horizontalAlign"
+      debugline           118
+      pushbyte            0
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      pushstring          "100pct"
+      pushstring          "backgroundColor"
+      debugline           121
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "#000000"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "clickable"
+      debugline           122
+      pushfalse
+      pushstring          "closeButton"
+      debugline           123
+      findpropstrict      QName(PackageNamespace("_-1fP"), "CloseButtonConfig")
+      pushstring          "enabled"
+      pushfalse
+      newobject           1
+      constructprop       QName(PackageNamespace("_-1fP"), "CloseButtonConfig"), 1
+      newobject           8
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L129:
+      label
+      debugline           128
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-fullscreen-black-no-close-button-non-clickable-minimize-rules"
+      pushstring          "verticalAlign"
+      debugline           131
+      pushbyte            0
+      pushstring          "horizontalAlign"
+      debugline           132
+      pushbyte            0
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      pushstring          "100pct"
+      pushstring          "backgroundColor"
+      debugline           135
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "#000000"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "clickable"
+      debugline           136
+      pushfalse
+      pushstring          "closeButton"
+      debugline           137
+      findpropstrict      QName(PackageNamespace("_-1fP"), "CloseButtonConfig")
+      pushstring          "enabled"
+      pushfalse
+      newobject           1
+      constructprop       QName(PackageNamespace("_-1fP"), "CloseButtonConfig"), 1
+      pushstring          "minimizedHeight"
+      pushstring          "controls-ypos-when-visible-all-modes"
+      debugline           138
+      newobject           9
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L167:
+      label
+      debugline           143
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-fullscreen-black-no-close-button-non-clickable-with-cb-height"
+      pushstring          "verticalAlign"
+      debugline           146
+      pushbyte            0
+      pushstring          "horizontalAlign"
+      debugline           147
+      pushbyte            0
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      pushstring          "100pct"
+      pushstring          "backgroundColor"
+      debugline           150
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "#000000"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "clickable"
+      debugline           151
+      pushfalse
+      pushstring          "closeButton"
+      debugline           152
+      findpropstrict      QName(PackageNamespace("_-1fP"), "CloseButtonConfig")
+      pushstring          "enabled"
+      pushfalse
+      newobject           1
+      constructprop       QName(PackageNamespace("_-1fP"), "CloseButtonConfig"), 1
+      pushstring          "additionalHeight"
+      pushstring          "controls-height-when-normal"
+      pushstring          "minimizedHeight"
+      pushstring          "controls-ypos-when-visible-fullscreen"
+      debugline           154
+      newobject           10
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L207:
+      label
+      debugline           159
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-fullscreen-black-no-close-button-non-clickable"
+      pushstring          "verticalAlign"
+      debugline           162
+      pushbyte            0
+      pushstring          "horizontalAlign"
+      debugline           163
+      pushbyte            0
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      pushstring          "100pct"
+      pushstring          "backgroundColor"
+      debugline           166
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "clickable"
+      debugline           167
+      pushtrue
+      pushstring          "closeButton"
+      debugline           168
+      findpropstrict      QName(PackageNamespace("_-1fP"), "CloseButtonConfig")
+      pushstring          "enabled"
+      pushfalse
+      newobject           1
+      constructprop       QName(PackageNamespace("_-1fP"), "CloseButtonConfig"), 1
+      pushstring          "autoHide"
+      debugline           169
+      pushfalse
+      newobject           9
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L245:
+      label
+      debugline           174
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-fullscreen-transparent-no-close-button-non-clickable-bottom-margin-adjusted"
+      pushstring          "verticalAlign"
+      debugline           177
+      pushbyte            0
+      pushstring          "horizontalAlign"
+      debugline           178
+      pushbyte            0
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      pushstring          "100pct"
+      pushstring          "backgroundColor"
+      debugline           181
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "clickable"
+      debugline           182
+      pushtrue
+      pushstring          "closeButton"
+      debugline           183
+      findpropstrict      QName(PackageNamespace("_-1fP"), "CloseButtonConfig")
+      pushstring          "enabled"
+      pushfalse
+      newobject           1
+      constructprop       QName(PackageNamespace("_-1fP"), "CloseButtonConfig"), 1
+      pushstring          "autoHide"
+      debugline           184
+      pushfalse
+      newobject           9
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L283:
+      label
+      debugline           189
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           190
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-w100pct-h78px-000000-o50"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "backgroundColor"
+      debugline           194
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "#000000"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "opacity"
+      debugline           195
+      pushdouble          0.5
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      debugline           197
+      pushbyte            78
+      pushstring          "padding"
+      pushstring          "5 5 5 5"
+      pushstring          "style"
+      debugline           199
+      getlex              QName(StaticProtectedNs("_-0NX"), "_-3Fl")
+      pushstring          "closeButton"
+      debugline           200
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           9
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L318:
+      label
+      debugline           206
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           207
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-w100pct-h50px-000000-o50"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "backgroundColor"
+      debugline           211
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "#000000"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "opacity"
+      debugline           212
+      pushdouble          0.5
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      debugline           214
+      pushbyte            50
+      pushstring          "closeButton"
+      debugline           215
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           7
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L348:
+      label
+      debugline           221
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           222
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-w100pct-h50px-transparent-0m"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "backgroundColor"
+      debugline           226
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      debugline           228
+      pushbyte            50
+      pushstring          "padding"
+      pushstring          "-10 -10 -10 -10"
+      pushstring          "closeButton"
+      debugline           230
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           7
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L377:
+      label
+      debugline           236
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           237
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-w450px-h50px-000000-o50"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "backgroundColor"
+      debugline           241
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "#000000"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "opacity"
+      debugline           242
+      pushdouble          0.5
+      pushstring          "width"
+      debugline           243
+      pushshort           450
+      pushstring          "height"
+      debugline           244
+      pushbyte            50
+      pushstring          "closeButton"
+      debugline           245
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           7
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L408:
+      label
+      debugline           251
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           252
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-w450px-h50px-transparent"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "backgroundColor"
+      debugline           256
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "width"
+      debugline           257
+      pushshort           450
+      pushstring          "height"
+      debugline           258
+      pushbyte            50
+      pushstring          "closeButton"
+      debugline           259
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           6
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L436:
+      label
+      debugline           265
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           266
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-w450px-h50px-transparent-0m"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "backgroundColor"
+      debugline           270
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "width"
+      debugline           271
+      pushshort           450
+      pushstring          "height"
+      debugline           272
+      pushbyte            50
+      pushstring          "padding"
+      pushstring          "-10 -10 -10 -10"
+      pushstring          "closeButton"
+      debugline           274
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           7
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L466:
+      label
+      debugline           280
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           281
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-center-w450px-h50px-000000-o50"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "backgroundColor"
+      debugline           285
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "#000000"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "horizontalAlign"
+      pushstring          "center"
+      pushstring          "opacity"
+      debugline           287
+      pushdouble          0.5
+      pushstring          "width"
+      debugline           288
+      pushshort           450
+      pushstring          "height"
+      debugline           289
+      pushbyte            50
+      pushstring          "closeButton"
+      debugline           290
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           8
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L499:
+      label
+      debugline           296
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           297
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-center-w450px-h50px-transparent"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "horizontalAlign"
+      pushstring          "center"
+      pushstring          "backgroundColor"
+      debugline           302
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "width"
+      debugline           303
+      pushshort           450
+      pushstring          "height"
+      debugline           304
+      pushbyte            50
+      pushstring          "closeButton"
+      debugline           305
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           7
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L529:
+      label
+      debugline           311
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           312
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-center-w450px-h50px-transparent-0m"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "horizontalAlign"
+      pushstring          "center"
+      pushstring          "backgroundColor"
+      debugline           317
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "width"
+      debugline           318
+      pushshort           450
+      pushstring          "height"
+      debugline           319
+      pushbyte            50
+      pushstring          "padding"
+      pushstring          "-10 -10 -10 -10"
+      pushstring          "closeButton"
+      debugline           321
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           8
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L561:
+      label
+      debugline           327
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           328
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-center-w300px-h50px-000000-o50"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "backgroundColor"
+      debugline           332
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "#000000"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "horizontalAlign"
+      pushstring          "center"
+      pushstring          "opacity"
+      debugline           334
+      pushdouble          0.5
+      pushstring          "width"
+      debugline           335
+      pushshort           300
+      pushstring          "height"
+      debugline           336
+      pushbyte            50
+      pushstring          "closeButton"
+      debugline           337
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           8
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L594:
+      label
+      debugline           343
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           344
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-center-w300px-h50px-transparent"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "horizontalAlign"
+      pushstring          "center"
+      pushstring          "backgroundColor"
+      debugline           349
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "width"
+      debugline           350
+      pushshort           300
+      pushstring          "height"
+      debugline           351
+      pushbyte            50
+      pushstring          "closeButton"
+      debugline           352
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           7
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L624:
+      label
+      debugline           358
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           359
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-center-w300px-h50px-transparent-0m"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "horizontalAlign"
+      pushstring          "center"
+      pushstring          "backgroundColor"
+      debugline           364
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "width"
+      debugline           365
+      pushshort           300
+      pushstring          "height"
+      debugline           366
+      pushbyte            50
+      pushstring          "padding"
+      pushstring          "-10 -10 -10 -10"
+      pushstring          "closeButton"
+      debugline           368
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           8
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      returnvalue
+
+L656:
+      label
+      jump                L788
+
+      debugline           73
+L659:
+      getlocal1
+      setlocal3
+
+      pushstring          "reserved-system-message"
+      debugline           74
+      getlocal3
+      ifstrictne          L667
+
+      pushbyte            0
+      jump                L785
+
+L667:
+      pushstring          "reserved-top"
+      debugline           89
+      getlocal3
+      ifstrictne          L673
+
+      pushbyte            1
+      jump                L785
+
+L673:
+      pushstring          "reserved-fullscreen"
+      debugline           100
+      getlocal3
+      ifstrictne          L679
+
+      pushbyte            2
+      jump                L785
+
+L679:
+      pushstring          "reserved-fullscreen-black-no-close-button-non-clickable"
+      debugline           113
+      getlocal3
+      ifstrictne          L685
+
+      pushbyte            3
+      jump                L785
+
+L685:
+      pushstring          "reserved-fullscreen-black-no-close-button-non-clickable-minimize-rules"
+      debugline           127
+      getlocal3
+      ifstrictne          L691
+
+      pushbyte            4
+      jump                L785
+
+L691:
+      pushstring          "reserved-fullscreen-black-no-close-button-non-clickable-with-cb-height"
+      debugline           142
+      getlocal3
+      ifstrictne          L697
+
+      pushbyte            5
+      jump                L785
+
+L697:
+      pushstring          "reserved-fullscreen-transparent-no-close-button-non-clickable"
+      debugline           158
+      getlocal3
+      ifstrictne          L703
+
+      pushbyte            6
+      jump                L785
+
+L703:
+      pushstring          "reserved-fullscreen-transparent-no-close-button-non-clickable-bottom-margin-adjusted"
+      debugline           173
+      getlocal3
+      ifstrictne          L709
+
+      pushbyte            7
+      jump                L785
+
+L709:
+      pushstring          "reserved-bottom-w100pct-h78px-000000-o50"
+      debugline           188
+      getlocal3
+      ifstrictne          L715
+
+      pushbyte            8
+      jump                L785
+
+L715:
+      pushstring          "reserved-bottom-w100pct-h50px-000000-o50"
+      debugline           205
+      getlocal3
+      ifstrictne          L721
+
+      pushbyte            9
+      jump                L785
+
+L721:
+      pushstring          "reserved-bottom-w100pct-h50px-transparent-0m"
+      debugline           220
+      getlocal3
+      ifstrictne          L727
+
+      pushbyte            10
+      jump                L785
+
+L727:
+      pushstring          "reserved-bottom-w450px-h50px-000000-o50"
+      debugline           235
+      getlocal3
+      ifstrictne          L733
+
+      pushbyte            11
+      jump                L785
+
+L733:
+      pushstring          "reserved-bottom-w450px-h50px-transparent"
+      debugline           250
+      getlocal3
+      ifstrictne          L739
+
+      pushbyte            12
+      jump                L785
+
+L739:
+      pushstring          "reserved-bottom-w450px-h50px-transparent-0m"
+      debugline           264
+      getlocal3
+      ifstrictne          L745
+
+      pushbyte            13
+      jump                L785
+
+L745:
+      pushstring          "reserved-bottom-center-w450px-h50px-000000-o50"
+      debugline           279
+      getlocal3
+      ifstrictne          L751
+
+      pushbyte            14
+      jump                L785
+
+L751:
+      pushstring          "reserved-bottom-center-w450px-h50px-transparent"
+      debugline           295
+      getlocal3
+      ifstrictne          L757
+
+      pushbyte            15
+      jump                L785
+
+L757:
+      pushstring          "reserved-bottom-center-w450px-h50px-transparent-0m"
+      debugline           310
+      getlocal3
+      ifstrictne          L763
+
+      pushbyte            16
+      jump                L785
+
+L763:
+      pushstring          "reserved-bottom-center-w300px-h50px-000000-o50"
+      debugline           326
+      getlocal3
+      ifstrictne          L769
+
+      pushbyte            17
+      jump                L785
+
+L769:
+      pushstring          "reserved-bottom-center-w300px-h50px-transparent"
+      debugline           342
+      getlocal3
+      ifstrictne          L775
+
+      pushbyte            18
+      jump                L785
+
+L775:
+      pushstring          "reserved-bottom-center-w300px-h50px-transparent-0m"
+      debugline           357
+      getlocal3
+      ifstrictne          L781
+
+      pushbyte            19
+      jump                L785
+
+L781:
+      jump                L784
+
+      pushbyte            20
+      jump                L785
+
+L784:
+      pushbyte            20
+L785:
+      kill                3
+      lookupswitch        L656, [L11, L45, L65, L94, L129, L167, L207, L245, L283, L318, L348, L377, L408, L436, L466, L499, L529, L561, L594, L624, L656]
+
+      debugline           374
+L788:
+      getlex              QName(PackageNamespace(""), "_-4gj")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-0NX"), "createRegionViews") flag OVERRIDE
+   method
+    refid "_-1Mw:OverlayController/_-0NX:createRegionViews"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 24
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           377
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      setlocal2
+
+      debugline           378
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "visuallyCueLinearAdClickThrough")
+      iffalse             L83
+
+      debugline           379
+      getlocal0
+      debugline           380
+      findpropstrict      QName(PackageNamespace("_-1Mw"), "_-1HM")
+      debugline           381
+      getlocal0
+      debugline           382
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-clickable-click-through"
+      pushstring          "verticalAlign"
+      debugline           385
+      pushbyte            0
+      pushstring          "horizontalAlign"
+      debugline           386
+      pushbyte            0
+      pushstring          "scaleRate"
+      debugline           387
+      pushdouble          0.75
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      pushstring          "100pct"
+      pushstring          "clickable"
+      debugline           390
+      pushtrue
+      pushstring          "closeButton"
+      pushstring          "enabled"
+      debugline           391
+      pushfalse
+      newobject           1
+      pushstring          "backgroundColor"
+      debugline           392
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "autoHide"
+      debugline           393
+      pushfalse
+      newobject           10
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      debugline           396
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "clickSignConfig")
+      debugline           397
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-0Hw")
+      constructprop       QName(PackageNamespace("_-1Mw"), "_-1HM"), 4
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-ed")
+
+      debugline           398
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-1zM")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           399
+      findpropstrict      QName(PackageNamespace(""), "addChild")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      debugline           400
+      findpropstrict      QName(PackageNamespace(""), "setChildIndex")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "setChildIndex"), 2
+
+      debugline           405
+L83:
+      findproperty        QName(PackageNamespace(""), "_-4gj")
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      debugline           406
+      findpropstrict      QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      pushstring          "id"
+      pushstring          "reserved-bottom-w100pct-h50px-transparent"
+      pushstring          "verticalAlign"
+      pushstring          "bottom"
+      pushstring          "backgroundColor"
+      debugline           410
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-4C-")
+      pushstring          "transparent"
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-4C-"), 1
+      pushstring          "width"
+      pushstring          "100pct"
+      pushstring          "height"
+      debugline           412
+      pushbyte            50
+      pushstring          "closeButton"
+      debugline           413
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-5oB"), "_-4cd")
+      newobject           6
+      constructprop       QName(PackageNamespace("_-1fP"), "RegionViewConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+      initproperty        QName(PackageNamespace(""), "_-4gj")
+
+      debugline           418
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-27H")
+      pushnull
+      ifeq                L138
+
+      debugline           419
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-27H")
+      callproperty        QName(PackageNamespace(""), "hasRegionDefinitions"), 0
+      iffalse             L138
+
+      debug               1, "k", 0, 421
+      debugline           421
+      pushbyte            0
+      setlocal1
+
+      jump                L132
+
+L122:
+      label
+      debugline           422
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-1fo")
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "regions")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      callpropvoid        QName(ProtectedNamespace("_-5oB"), "_-1fo"), 1
+
+      debugline           421
+      inclocal_i          1
+L132:
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-27H")
+      getproperty         QName(PackageNamespace(""), "regions")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L122
+
+      debugline           429
+L138:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      callproperty        QName(PackageNamespace(""), "canSkipOnLinearAd"), 0
+      iffalse             L250
+
+      debug               1, "k", 1, 430
+      debugline           430
+      pushnull
+      coerce              QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      setlocal2
+
+      debugline           431
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "skipAdConfig")
+      callproperty        QName(PackageNamespace(""), "isHtmlButton"), 0
+      iffalse             L167
+
+      debugline           432
+      findpropstrict      QName(PackageNamespace("_-51k"), "_-0EY")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "skipAdConfig")
+      constructprop       QName(PackageNamespace("_-51k"), "_-0EY"), 1
+      coerce              QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      setlocal2
+
+      jump                L204
+
+      debugline           435
+L167:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "skipAdConfig")
+      callproperty        QName(PackageNamespace(""), "isStandardImageButton"), 0
+      iffalse             L186
+
+      debugline           436
+      findpropstrict      QName(PackageNamespace("_-51k"), "_-16d")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "skipAdConfig")
+      constructprop       QName(PackageNamespace("_-51k"), "_-16d"), 1
+      coerce              QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      setlocal2
+
+      jump                L204
+
+      debugline           439
+L186:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "skipAdConfig")
+      callproperty        QName(PackageNamespace(""), "isCustomImageButton"), 0
+      iffalse             L204
+
+      debugline           440
+      findpropstrict      QName(PackageNamespace("_-51k"), "LoadableImageSkipAdButton")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "skipAdConfig")
+      constructprop       QName(PackageNamespace("_-51k"), "LoadableImageSkipAdButton"), 1
+      coerce              QName(PackageNamespace("_-1fP"), "RegionViewConfig")
+      setlocal2
+
+      debugline           443
+L204:
+      getlocal2
+      pushnull
+      ifeq                L250
+
+      debugline           445
+      getlocal0
+      debugline           446
+      findpropstrict      QName(PackageNamespace("_-51k"), "_-1v4")
+      debugline           447
+      getlocal0
+      debugline           448
+      getlocal2
+      debugline           449
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-0Hw")
+      debugline           450
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "skipAdConfig")
+      getproperty         QName(PackageNamespace(""), "width")
+      debugline           451
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "skipAdConfig")
+      getproperty         QName(PackageNamespace(""), "height")
+      constructprop       QName(PackageNamespace("_-51k"), "_-1v4"), 5
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-40z")
+
+      debugline           453
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-1zM")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           454
+      findpropstrict      QName(PackageNamespace(""), "addChild")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      debugline           455
+      findpropstrict      QName(PackageNamespace(""), "setChildIndex")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "setChildIndex"), 2
+
+      debugline           459
+L250:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1D1")
+   method
+    refid "_-1Mw:OverlayController/_-1D1"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           461
+      getlocal0
+      pushscope
+
+      debugline           462
+      getlocal0
+      callproperty        QName(ProtectedNamespace("_-0NX"), "_-3z-"), 0
+      iffalse             L23
+
+      debugline           463
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callproperty        QName(Namespace("_-2pb"), "_-1OD"), 0
+      iffalse             L23
+
+      debugline           464
+      findpropstrict      QName(PackageNamespace(""), "_-3GS")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callproperty        QName(Namespace("_-2pb"), "_-2ql"), 0
+      newarray            1
+      callpropvoid        QName(PackageNamespace(""), "_-3GS"), 1
+
+      debugline           465
+      returnvoid
+
+      debugline           468
+L23:
+      findpropstrict      QName(PackageNamespace(""), "_-42j")
+      callpropvoid        QName(PackageNamespace(""), "_-42j"), 0
+
+      debugline           469
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-5HC")
+   method
+    refid "_-1Mw:OverlayController/_-5HC"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           471
+      getlocal0
+      pushscope
+
+      debugline           472
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-3ox"), 0
+
+      debugline           473
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      pushnull
+      ifeq                L17
+
+      debugline           474
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           476
+L17:
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-0QA"), 0
+
+      debugline           477
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-69W")
+   method
+    refid "_-1Mw:OverlayController/_-69W"
+    param QName(PackageNamespace("_-29W"), "AdSlot")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           479
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 479
+      debugline           481
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "_-6Ui")
+
+      debugline           482
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+      debugline           483
+      getlocal0
+      pushfalse
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-FX")
+
+      debugline           484
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0QA")
+   method
+    refid "_-1Mw:OverlayController/_-0QA"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           486
+      getlocal0
+      pushscope
+
+      debugline           488
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      pushnull
+      setproperty         QName(PackageNamespace(""), "_-6Ui")
+
+      debugline           489
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           490
+      getlocal0
+      pushfalse
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-FX")
+
+      debugline           491
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2kE")
+   method
+    refid "_-1Mw:OverlayController/_-2kE"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           493
+      getlocal0
+      pushscope
+
+      debugline           495
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      getproperty         QName(PackageNamespace(""), "visible")
+      iffalse             L18
+
+      debugline           496
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           497
+      getlocal0
+      pushtrue
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-FX")
+
+      debugline           499
+L18:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      callproperty        QName(PackageNamespace(""), "canSkipOnLinearAd"), 0
+      convert_b
+      dup
+      iffalse             L30
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      pushnull
+      equals
+      not
+L30:
+      iffalse             L36
+
+      debugline           500
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           502
+L36:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      pushnull
+      ifeq                L45
+
+      debugline           503
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           505
+L45:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0TV")
+   method
+    refid "_-1Mw:OverlayController/_-0TV"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           507
+      getlocal0
+      pushscope
+
+      debugline           509
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-FX")
+      iffalse             L17
+
+      debugline           510
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+      debugline           511
+      getlocal0
+      pushfalse
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-FX")
+
+      debugline           513
+L17:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      callproperty        QName(PackageNamespace(""), "canSkipOnLinearAd"), 0
+      convert_b
+      dup
+      iffalse             L29
+
+      pop
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      pushnull
+      equals
+      not
+L29:
+      iffalse             L40
+
+      debugline           514
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      getproperty         QName(PackageNamespace(""), "active")
+      iffalse             L40
+
+      debugline           515
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+      debugline           518
+L40:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      pushnull
+      ifeq                L49
+
+      debugline           519
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+      debugline           521
+L49:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-6Xe")
+   method
+    refid "_-1Mw:OverlayController/_-6Xe"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           523
+      getlocal0
+      pushscope
+
+      debugline           524
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-ed")
+      getproperty         QName(PackageNamespace(""), "visible")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "clearOverlay")
+   method
+    refid "_-1Mw:OverlayController/clearOverlay"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           527
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 527
+      debug               1, "k", 1, 528
+      debugline           528
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-3jq")
+      getlocal1
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-3jq"), 1
+      getlex              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      setlocal2
+
+      debugline           529
+      getlocal2
+      pushnull
+      ifeq                L30
+
+      debugline           531
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           532
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "_-5rv"), 0
+
+      debugline           533
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "_-0gR"), 0
+
+      jump                L30
+
+      debugline           536
+      debugline           538
+L30:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-0NX"), "_-0mi")
+   method
+    refid "_-1Mw:OverlayController/_-0NX:_-0mi"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           540
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 540
+      debugline           541
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-0Hw")
+      pushnull
+      ifeq                L19
+
+      debugline           542
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-0Hw")
+      getproperty         QName(PackageNamespace(""), "displayWidth")
+      getlocal1
+      ifnlt               L19
+
+      debugline           543
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-0Hw")
+      getproperty         QName(PackageNamespace(""), "displayWidth")
+      returnvalue
+
+      debugline           546
+L19:
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-0NX"), "_-2Ia")
+   method
+    refid "_-1Mw:OverlayController/_-0NX:_-2Ia"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           549
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 549
+      debugline           550
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-0Hw")
+      pushnull
+      ifeq                L19
+
+      debugline           551
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-0Hw")
+      getproperty         QName(PackageNamespace(""), "displayHeight")
+      getlocal1
+      ifnlt               L19
+
+      debugline           552
+      getlex              QName(ProtectedNamespace("_-5oB"), "_-0Hw")
+      getproperty         QName(PackageNamespace(""), "displayHeight")
+      returnvalue
+
+      debugline           555
+L19:
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-0NX"), "_-hw")
+   method
+    refid "_-1Mw:OverlayController/_-0NX:_-hw"
+    param QName(PackageNamespace("_-29W"), "AdSlot")
+    param QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace("_-1fP"), "CloseButtonConfig")
+    returns QName(PackageNamespace("_-1Mw"), "OverlayView")
+    flag HAS_OPTIONAL
+    optional Utf8("bottom")
+    optional Null()
+    body
+     maxstack 13
+     localcount 10
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           558
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 558
+      debug               1, "k", 1, 558
+      debug               1, "k", 2, 558
+      debug               1, "k", 3, 558
+      debug               1, "k", 4, 559
+      debug               1, "k", 5, 560
+      debug               1, "k", 6, 561
+      debug               1, "k", 7, 562
+      debug               1, "k", 8, 563
+      debugline           559
+      pushbyte            255
+      convert_d
+      setlocal            5
+
+      debugline           560
+      pushbyte            255
+      convert_d
+      setlocal            6
+
+      debugline           561
+      pushbyte            255
+      convert_d
+      setlocal            7
+
+      debugline           562
+      pushbyte            255
+      convert_d
+      setlocal            8
+
+      debugline           563
+      pushnull
+      coerce_s
+      setlocal            9
+
+      debugline           565
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "isInteractive"), 0
+      iffalse             L65
+
+      debugline           567
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "width")
+      convert_d
+      setlocal            5
+
+      debugline           568
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "height")
+      convert_d
+      setlocal            6
+
+      debugline           569
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-9J"), 0
+      iffalse             L63
+
+      debugline           570
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "expandedWidth")
+      convert_d
+      setlocal            7
+
+      debugline           571
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "expandedHeight")
+      convert_d
+      setlocal            8
+
+      jump                L63
+
+      debugline           575
+L63:
+      jump                L114
+
+      debugline           579
+L65:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      callproperty        QName(PackageNamespace(""), "hasSize"), 0
+      iffalse             L83
+
+      debugline           580
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      getproperty         QName(PackageNamespace(""), "width")
+      convert_d
+      setlocal            5
+
+      debugline           581
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      getproperty         QName(PackageNamespace(""), "height")
+      convert_d
+      setlocal            6
+
+      jump                L97
+
+      debugline           585
+L83:
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "width")
+      callproperty        QName(ProtectedNamespace("_-0NX"), "_-0mi"), 1
+      convert_d
+      setlocal            5
+
+      debugline           586
+      getlocal0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "height")
+      callproperty        QName(ProtectedNamespace("_-0NX"), "_-2Ia"), 1
+      convert_d
+      setlocal            6
+
+      debugline           589
+L97:
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-Qp"), 0
+      convert_b
+      dup
+      iftrue              L106
+
+      pop
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "_-5tw"), 0
+      convert_b
+L106:
+      iffalse             L109
+
+      pushstring          "5 5 5 5"
+      jump                L111
+
+L109:
+      pushnull
+      coerce_s
+L111:
+      coerce_s
+      setlocal            9
+
+      debugline           592
+L114:
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-24X")
+      debugline           593
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "uid")
+      debugline           594
+      getlocal            5
+      debugline           595
+      getlocal            6
+      debugline           596
+      getlocal3
+      debugline           597
+      getlocal            4
+      debugline           598
+      pushtrue
+      debugline           599
+      getlex              QName(StaticProtectedNs("_-0NX"), "_-3Fl")
+      debugline           600
+      getlocal            9
+      debugline           601
+      getlocal            7
+      debugline           602
+      getlocal            8
+      debugline           603
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "scale")
+      debugline           604
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "isInteractive"), 0
+      not
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-24X"), 12
+      debugline           605
+      getlex              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "displayNonLinearAd")
+   method
+    refid "_-1Mw:OverlayController/displayNonLinearAd"
+    param QName(PackageNamespace("_-GW"), "_-4mx")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 6
+     localcount 8
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           608
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      setlocal            4
+
+      pushnull
+      coerce_s
+      setlocal            5
+
+      pushnull
+      coerce_s
+      setlocal            6
+
+      pushnull
+      coerce_s
+      setlocal            7
+
+      debug               1, "k", 0, 608
+      debug               1, "k", 1, 609
+      debugline           609
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "adSlot")
+      coerce              QName(PackageNamespace("_-29W"), "AdSlot")
+      setlocal2
+
+      debugline           610
+      getlocal2
+      pushnull
+      ifeq                L286
+
+      debug               1, "k", 2, 612
+      debugline           612
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      coerce              QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+      setlocal3
+
+      debugline           613
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "hasActiveDisplayRegion"), 0
+      iffalse             L283
+
+      debug               1, "k", 3, 618
+      debug               1, "k", 4, 619
+      debugline           614
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "isInteractive"), 0
+      iffalse             L49
+
+      debugline           616
+      returnvoid
+
+      debugline           618
+L49:
+      pushnull
+      coerce              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      setlocal            4
+
+      debugline           619
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      callproperty        QName(PackageNamespace(""), "getActiveDisplayRegionID"), 0
+      coerce_s
+      setlocal            5
+
+      debugline           620
+      findpropstrict      QName(PackageNamespace(""), "_-4kv")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "_-4kv"), 1
+      iffalse             L75
+
+      debugline           621
+      getlocal0
+      getlocal2
+      getlocal3
+      findpropstrict      QName(PackageNamespace(""), "_-1iJ")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "_-1iJ"), 1
+      callproperty        QName(ProtectedNamespace("_-0NX"), "_-hw"), 3
+      coerce              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      setlocal            4
+
+      jump                L99
+
+      debugline           624
+L75:
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-3jq")
+      getlocal            5
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-3jq"), 1
+      getlex              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      setlocal            4
+
+      debugline           625
+      getlocal            4
+      pushnull
+      ifeq                L89
+
+      debugline           626
+      jump                L99
+
+      debugline           630
+L89:
+      getlocal0
+      getlocal2
+      getlocal3
+      findpropstrict      QName(PackageNamespace(""), "_-1iJ")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "_-1iJ"), 1
+      callproperty        QName(ProtectedNamespace("_-0NX"), "_-hw"), 3
+      coerce              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      setlocal            4
+
+      debugline           633
+L99:
+      getlocal            4
+      pushnull
+      ifeq                L279
+
+      debugline           634
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           635
+      getlocal            4
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "_-6Ui")
+
+      debugline           636
+      getlocal            4
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      getproperty         QName(PackageNamespace(""), "keepVisibleAfterClick")
+      not
+      setproperty         QName(PackageNamespace(""), "autoHide")
+
+      debugline           637
+      getlocal            4
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      getproperty         QName(PackageNamespace(""), "enableScaling")
+      setproperty         QName(PackageNamespace(""), "scalable")
+
+      debugline           638
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "_-2Ci"), 0
+      iffalse             L158
+
+      debugline           639
+      getlocal            4
+      debugline           640
+      getlocal3
+      getlex              QName(PackageNamespace("_-0F1"), "_-Rm")
+      astypelate
+      debugline           641
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "vpaidConfig")
+      debugline           642
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "allowDomains")
+      debugline           643
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "_-3hv"), 0
+      iffalse             L152
+
+      pushtrue
+      jump                L155
+
+L152:
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "hasAccompanyingVideoAd"), 0
+      convert_b
+L155:
+      callpropvoid        QName(PackageNamespace(""), "_-2lP"), 4
+
+      jump                L275
+
+      debugline           646
+L158:
+      getlocal3
+      getlex              QName(PackageNamespace("_-3ea"), "_-6eg")
+      istypelate
+      dup
+      iffalse             L167
+
+      pop
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "scale")
+      convert_b
+L167:
+      dup
+      iffalse             L175
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      getproperty         QName(PackageNamespace(""), "enableScaling")
+      convert_b
+L175:
+      iffalse             L230
+
+      debugline           648
+      getlocal            4
+      debugline           649
+      getlocal3
+      getlex              QName(PackageNamespace("_-3ea"), "_-6eg")
+      astypelate
+      debugline           650
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      callproperty        QName(PackageNamespace(""), "hasWidthSpecified"), 0
+      iffalse             L194
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      getproperty         QName(PackageNamespace(""), "width")
+      convert_d
+      jump                L199
+
+L194:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "playerWidth")
+      convert_d
+      debugline           651
+L199:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      callproperty        QName(PackageNamespace(""), "hasHeightSpecified"), 0
+      iffalse             L210
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      getproperty         QName(PackageNamespace(""), "height")
+      convert_d
+      jump                L215
+
+L210:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "playerHeight")
+      convert_d
+      debugline           652
+L215:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      getproperty         QName(PackageNamespace(""), "activeDisplayRegion")
+      callproperty        QName(PackageNamespace(""), "hasSize"), 0
+      debugline           653
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "allowDomains")
+      callpropvoid        QName(PackageNamespace(""), "_-5X6"), 5
+
+      jump                L275
+
+      debug               1, "k", 5, 658
+      debug               1, "k", 6, 659
+      debugline           658
+L230:
+      pushnull
+      coerce_s
+      setlocal            6
+
+      debugline           659
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      callproperty        QName(PackageNamespace(""), "getContent"), 0
+      coerce_s
+      setlocal            7
+
+      debugline           660
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "_-3hv"), 0
+      iffalse             L267
+
+      pushstring          "<a href=\""
+      debugline           661
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "clickThroughs")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getproperty         Multiname("url", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      add
+      pushstring          "\" target=\"_blank\">"
+      add
+      setlocal            6
+
+      debugline           662
+      getlocal            6
+      getlocal            7
+      add
+      coerce_s
+      setlocal            6
+
+      debugline           663
+      getlocal            6
+      pushstring          "</a>"
+      add
+      setlocal            6
+
+      jump                L271
+
+      debugline           665
+L267:
+      getlocal            7
+      coerce_s
+      setlocal            6
+
+      debugline           666
+L271:
+      getlocal            4
+      getlocal            6
+      setproperty         QName(PackageNamespace(""), "html")
+
+      debugline           668
+L275:
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+      jump                L281
+
+      debugline           671
+L279:
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "clearActiveDisplayRegion"), 0
+
+L281:
+      jump                L283
+
+      debugline           676
+L283:
+      jump                L286
+
+      debugline           680
+      debugline           682
+L286:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "hideNonLinearAd")
+   method
+    refid "_-1Mw:OverlayController/hideNonLinearAd"
+    param QName(PackageNamespace("_-GW"), "_-4mx")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           684
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+      setlocal3
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      debug               1, "k", 0, 684
+      debug               1, "k", 1, 685
+      debugline           685
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "adSlot")
+      coerce              QName(PackageNamespace("_-29W"), "AdSlot")
+      setlocal2
+
+      debugline           686
+      getlocal2
+      pushnull
+      ifeq                L49
+
+      debug               1, "k", 2, 687
+      debug               1, "k", 3, 688
+      debugline           687
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      coerce              QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+      setlocal3
+
+      debugline           688
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "nonLinearVideoAd")
+      callproperty        QName(PackageNamespace(""), "getActiveDisplayRegionID"), 0
+      coerce_s
+      setlocal            4
+
+      debugline           689
+      findpropstrict      QName(PackageNamespace(""), "_-4kv")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-4kv"), 1
+      iffalse             L45
+
+      debugline           690
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "uid")
+      coerce_s
+      setlocal            4
+
+      debugline           692
+L45:
+      getlocal0
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "clearOverlay"), 1
+
+      debugline           694
+L49:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1tr")
+   method
+    refid "_-1Mw:OverlayController/_-1tr"
+    param QName(PackageNamespace("_-GW"), "_-Qi")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           696
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-0F1"), "RegionView")
+      setlocal2
+
+      debug               1, "k", 0, 696
+      debugline           697
+      getlocal1
+      pushnull
+      ifeq                L49
+
+      debugline           698
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "notice")
+      getproperty         Multiname("region", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace(""), "undefined")
+      ifeq                L49
+
+      debug               1, "k", 1, 699
+      debugline           699
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-3jq")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "notice")
+      getproperty         Multiname("region", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-3jq"), 1
+      coerce              QName(PackageNamespace("_-0F1"), "RegionView")
+      setlocal2
+
+      debugline           700
+      getlocal2
+      pushnull
+      ifeq                L49
+
+      debugline           701
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-1Mw"), "_-2-Q")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "notice")
+      getproperty         Multiname("message", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "duration")
+      getlocal2
+      constructprop       QName(PackageNamespace("_-1Mw"), "_-2-Q"), 3
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-2UY")
+
+      debugline           702
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      callpropvoid        QName(PackageNamespace(""), "show"), 0
+
+      jump                L49
+
+      debugline           705
+      debugline           709
+L49:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-0tQ")
+   method
+    refid "_-1Mw:OverlayController/_-0tQ"
+    param QName(PackageNamespace("_-GW"), "_-Qi")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           711
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 711
+      debugline           712
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      pushnull
+      ifne                L16
+
+      debugline           713
+      getlocal0
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "_-1tr"), 1
+
+      jump                L22
+
+      debugline           715
+L16:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "duration")
+      callpropvoid        QName(PackageNamespace(""), "_-43Y"), 1
+
+      debugline           716
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3ox")
+   method
+    refid "_-1Mw:OverlayController/_-3ox"
+    param QName(PackageNamespace("_-GW"), "_-Qi")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           718
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 718
+      debugline           719
+      getlocal1
+      pushnull
+      ifeq                L30
+
+      debugline           720
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "notice")
+      getproperty         Multiname("region", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace(""), "undefined")
+      ifeq                L28
+
+      debugline           721
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      pushnull
+      ifeq                L28
+
+      debugline           722
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           723
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-2UY")
+
+L28:
+      jump                L43
+
+      debugline           728
+L30:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      pushnull
+      ifeq                L43
+
+      debugline           729
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-2UY")
+      callpropvoid        QName(PackageNamespace(""), "hide"), 0
+
+      debugline           730
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-2UY")
+
+      debugline           733
+L43:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "activateLinearAdSkipButton")
+   method
+    refid "_-1Mw:OverlayController/activateLinearAdSkipButton"
+    param QName(PackageNamespace("_-51k"), "_-11G")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           737
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 737
+      debugline           739
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      pushnull
+      ifeq                L28
+
+      debugline           740
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "_-1W9")
+      callpropvoid        QName(PackageNamespace(""), "_-4GV"), 1
+
+      debugline           741
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      callpropvoid        QName(PackageNamespace(""), "activate"), 0
+
+      debugline           742
+      findpropstrict      QName(PackageNamespace(""), "setChildIndex")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      getlex              QName(PackageNamespace(""), "numChildren")
+      decrement
+      callpropvoid        QName(PackageNamespace(""), "setChildIndex"), 2
+
+      debugline           744
+L28:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "deactivateLinearAdSkipButton")
+   method
+    refid "_-1Mw:OverlayController/deactivateLinearAdSkipButton"
+    param QName(PackageNamespace("_-51k"), "_-11G")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           746
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 746
+      debugline           748
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      pushnull
+      ifeq                L15
+
+      debugline           749
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-40z")
+      callpropvoid        QName(PackageNamespace(""), "deactivate"), 0
+
+      debugline           751
+L15:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-VE")
+   method
+    refid "_-1Mw:OverlayController/_-VE"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           755
+      getlocal0
+      pushscope
+
+      debugline           756
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      pushnull
+      equals
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3sE")
+   method
+    refid "_-1Mw:OverlayController/_-3sE"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           759
+      getlocal0
+      pushscope
+
+      debugline           760
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      pushnull
+      ifeq                L15
+
+      debugline           761
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callproperty        QName(Namespace("_-2pb"), "_-5O6"), 0
+      returnvalue
+
+      debugline           763
+L15:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-3tK")
+   method
+    refid "_-1Mw:OverlayController/_-3tK"
+    returns QName(PackageNamespace("_-3nB"), "_-5iF")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           766
+      getlocal0
+      pushscope
+
+      debugline           767
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      pushnull
+      ifeq                L15
+
+      debugline           768
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callproperty        QName(Namespace("_-2pb"), "getVPAID"), 0
+      returnvalue
+
+      debugline           770
+L15:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-4yM")
+   method
+    refid "_-1Mw:OverlayController/_-4yM"
+    param QName(PackageNamespace("_-29W"), "AdSlot")
+    param QName(PackageNamespace(""), "Object")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional False()
+    optional Integer(-1)
+    optional False()
+    optional True()
+    body
+     maxstack 8
+     localcount 7
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           773
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 773
+      debug               1, "k", 1, 773
+      debug               1, "k", 2, 773
+      debug               1, "k", 3, 773
+      debug               1, "k", 4, 773
+      debug               1, "k", 5, 773
+      debugline           774
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "_-5G-"), 0
+
+      debugline           775
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "isInteractive"), 0
+      iffalse             L56
+
+      debugline           776
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "_-116"), 0
+
+      debugline           777
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "isLinear"), 0
+      iffalse             L42
+
+      debugline           778
+      getlocal0
+      getlocal1
+      getlex              QName(ProtectedNamespace("_-5oB"), "displayWidth")
+      getlex              QName(ProtectedNamespace("_-5oB"), "displayHeight")
+      pushtrue
+      callproperty        QName(PackageNamespace(""), "getFlashMediaToPlay"), 3
+      getlex              QName(PackageNamespace("_-3ea"), "_-6Yg")
+      astypelate
+      getlocal1
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      getlocal            6
+      callpropvoid        QName(PackageNamespace(""), "_-2pt"), 7
+
+      jump                L54
+
+      debugline           781
+L42:
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-51O"), 0
+      getlex              QName(PackageNamespace("_-3ea"), "_-6Yg")
+      astypelate
+      getlocal1
+      getlocal2
+      getlocal3
+      getlocal            4
+      pushfalse
+      getlocal            6
+      callpropvoid        QName(PackageNamespace(""), "_-2pt"), 7
+
+L54:
+      jump                L64
+
+      debugline           784
+L56:
+      getlocal2
+      findpropstrict      QName(PackageNamespace("_-3nB"), "_-3Op")
+      getlex              QName(PackageNamespace("_-3nB"), "_-3Op")
+      getproperty         QName(PackageNamespace(""), "AdError")
+      pushstring          "Ad is not a VPAID SWF"
+      constructprop       QName(PackageNamespace("_-3nB"), "_-3Op"), 2
+      callpropvoid        Multiname("onError", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 1
+
+      debugline           785
+L64:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-20G")
+   method
+    refid "_-1Mw:OverlayController/_-20G"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           787
+      getlocal0
+      pushscope
+
+      debugline           788
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      pushnull
+      ifeq                L14
+
+      debugline           789
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callpropvoid        QName(Namespace("_-2pb"), "pause"), 0
+
+      debugline           791
+L14:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-380")
+   method
+    refid "_-1Mw:OverlayController/_-380"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           793
+      getlocal0
+      pushscope
+
+      debugline           794
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      pushnull
+      ifeq                L14
+
+      debugline           795
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callpropvoid        QName(Namespace("_-2pb"), "resume"), 0
+
+      debugline           797
+L14:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-0NX"), "_-3z-")
+   method
+    refid "_-1Mw:OverlayController/_-0NX:_-3z-"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           799
+      getlocal0
+      pushscope
+
+      debugline           800
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      pushnull
+      equals
+      not
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("_-0NX"), "_-2rc")
+   method
+    refid "_-1Mw:OverlayController/_-0NX:_-2rc"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           803
+      getlocal0
+      pushscope
+
+      debugline           804
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      pushnull
+      ifeq                L18
+
+      debugline           805
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callpropvoid        QName(Namespace("_-2pb"), "unload"), 0
+
+      debugline           806
+      getlocal0
+      pushnull
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-66Y")
+
+      debugline           808
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-116")
+   method
+    refid "_-1Mw:OverlayController/_-116"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           810
+      getlocal0
+      pushscope
+
+      debugline           811
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-0NX"), "_-2rc"), 0
+
+      debugline           812
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-2pt")
+   method
+    refid "_-1Mw:OverlayController/_-2pt"
+    param QName(PackageNamespace("_-3ea"), "_-6Yg")
+    param QName(PackageNamespace("_-29W"), "AdSlot")
+    param QName(PackageNamespace(""), "Object")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    flag HAS_OPTIONAL
+    optional False()
+    optional Integer(-1)
+    optional False()
+    optional True()
+    body
+     maxstack 9
+     localcount 9
+     initscopedepth 11
+     maxscopedepth 13
+     code
+      debugfile           "k"
+      debugline           814
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal            8
+
+      pushscope
+
+      debug               1, "k", 7, 814
+      getscopeobject      1
+      pushfalse
+      setslot             8
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      getscopeobject      1
+      getlocal2
+      setslot             2
+
+      getscopeobject      1
+      getlocal3
+      setslot             3
+
+      getscopeobject      1
+      getlocal            4
+      setslot             4
+
+      getscopeobject      1
+      getlocal            5
+      setslot             5
+
+      getscopeobject      1
+      getlocal            6
+      setslot             6
+
+      getscopeobject      1
+      getlocal            7
+      setslot             7
+
+      debug               1, "k", 0, 814
+      debug               1, "k", 1, 814
+      debug               1, "k", 2, 814
+      debug               1, "k", 3, 814
+      debug               1, "k", 4, 814
+      debug               1, "k", 5, 814
+      debug               1, "k", 6, 814
+      debugline           815
+      getscopeobject      1
+      getslot             1
+      pushnull
+      ifeq                L415
+
+      debugline           816
+      getscopeobject      1
+      getslot             2
+      callproperty        QName(PackageNamespace(""), "isNonLinear"), 0
+      convert_b
+      dup
+      iffalse             L57
+
+      pop
+      getscopeobject      1
+      getslot             7
+      pushfalse
+      equals
+L57:
+      iffalse             L66
+
+      debugline           819
+      findpropstrict      QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+      getscopeobject      1
+      getslot             1
+      callproperty        QName(PackageNamespace("_-3ea"), "NonLinearVideoAd"), 1
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "scale")
+
+      debugline           822
+L66:
+      getscopeobject      1
+      getscopeobject      1
+      getslot             2
+      callproperty        QName(PackageNamespace(""), "isLinear"), 0
+      convert_b
+      setslot             8
+
+      debugline           824
+      getlocal0
+      callproperty        QName(ProtectedNamespace("_-0NX"), "_-3z-"), 0
+      iffalse             L80
+
+      debugline           825
+      getlocal0
+      callpropvoid        QName(ProtectedNamespace("_-0NX"), "_-2rc"), 0
+
+      debugline           827
+L80:
+      getlocal0
+      getscopeobject      1
+      getslot             1
+      initproperty        QName(ProtectedNamespace("_-0NX"), "_-66Y")
+
+      debugline           830
+      getscopeobject      1
+      getslot             2
+      getproperty         QName(PackageNamespace(""), "config")
+      callproperty        QName(PackageNamespace(""), "vpaidMaxDurationTimeoutEnabled"), 0
+      iffalse             L104
+
+      debugline           831
+      getscopeobject      1
+      getslot             1
+      getscopeobject      1
+      getslot             2
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "vpaidMaxDurationTimeout")
+      callpropvoid        QName(Namespace("_-2pb"), "_-5HX"), 1
+
+      debugline           832
+      getscopeobject      1
+      getslot             1
+      callpropvoid        QName(Namespace("_-2pb"), "enableMaxDurationTimeout"), 0
+
+      jump                L108
+
+      debugline           834
+L104:
+      getscopeobject      1
+      getslot             1
+      callpropvoid        QName(Namespace("_-2pb"), "_-1iq"), 0
+
+      debugline           838
+L108:
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           839
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#24"
+      callpropvoid        QName(Namespace("_-2pb"), "_-1v-"), 1
+
+      debugline           847
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           848
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#23"
+      callpropvoid        QName(Namespace("_-2pb"), "_-0c0"), 1
+
+      debugline           857
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           858
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#22"
+      callpropvoid        QName(Namespace("_-2pb"), "_-4Et"), 1
+
+      debugline           882
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           883
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#21"
+      callpropvoid        QName(Namespace("_-2pb"), "_-6NN"), 1
+
+      debugline           892
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           893
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#20"
+      callpropvoid        QName(Namespace("_-2pb"), "_-3Fj"), 1
+
+      debugline           927
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           928
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#19"
+      callpropvoid        QName(Namespace("_-2pb"), "_-42o"), 1
+
+      debugline           935
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           936
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#18"
+      callpropvoid        QName(Namespace("_-2pb"), "_-AY"), 1
+
+      debugline           949
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           950
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#17"
+      callpropvoid        QName(Namespace("_-2pb"), "_-68I"), 1
+
+      debugline           963
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           964
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#16"
+      callpropvoid        QName(Namespace("_-2pb"), "_-4j"), 1
+
+      debugline           968
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           969
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#15"
+      callpropvoid        QName(Namespace("_-2pb"), "_-2ko"), 1
+
+      debugline           973
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           974
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#14"
+      callpropvoid        QName(Namespace("_-2pb"), "_-3Ab"), 1
+
+      debugline           978
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           979
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#13"
+      callpropvoid        QName(Namespace("_-2pb"), "_-3mo"), 1
+
+      debugline           983
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           984
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#12"
+      callpropvoid        QName(Namespace("_-2pb"), "_-2uP"), 1
+
+      debugline           988
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           989
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#11"
+      callpropvoid        QName(Namespace("_-2pb"), "_-G5"), 1
+
+      debugline           993
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           994
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#10"
+      callpropvoid        QName(Namespace("_-2pb"), "_-6VI"), 1
+
+      debugline           998
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           999
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#9"
+      callpropvoid        QName(Namespace("_-2pb"), "_-2hq"), 1
+
+      debugline           1003
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           1004
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#8"
+      callpropvoid        QName(Namespace("_-2pb"), "_-2YA"), 1
+
+      debugline           1008
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           1009
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#7"
+      callpropvoid        QName(Namespace("_-2pb"), "_-5s4"), 1
+
+      debugline           1013
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           1014
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#6"
+      callpropvoid        QName(Namespace("_-2pb"), "_-3UU"), 1
+
+      debugline           1018
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           1019
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#5"
+      callpropvoid        QName(Namespace("_-2pb"), "_-Ge"), 1
+
+      debugline           1023
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           1024
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#4"
+      callpropvoid        QName(Namespace("_-2pb"), "_-5Re"), 1
+
+      debugline           1028
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           1029
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#3"
+      callpropvoid        QName(Namespace("_-2pb"), "_-6JN"), 1
+
+      debugline           1033
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           1034
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#2"
+      callpropvoid        QName(Namespace("_-2pb"), "_-3lt"), 1
+
+      debugline           1038
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           1039
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#1"
+      callpropvoid        QName(Namespace("_-2pb"), "_-4dO"), 1
+
+      debugline           1043
+      getscopeobject      1
+      getslot             1
+      debugfile           "k"
+      debugline           1044
+      newfunction         "_-1Mw:OverlayController/_-2pt/inline_method#0"
+      callpropvoid        QName(Namespace("_-2pb"), "_-5pQ"), 1
+
+      debugline           1059
+      getscopeobject      1
+      getslot             8
+      iffalse             L300
+
+      debugline           1061
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-3jq")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      callproperty        QName(PackageNamespace(""), "getLinearVPAIDRegionID"), 0
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-3jq"), 1
+      getlex              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      astypelate
+      callpropvoid        QName(Namespace("_-2pb"), "_-30k"), 1
+
+      jump                L340
+
+      debugline           1064
+L300:
+      findpropstrict      QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+      getscopeobject      1
+      getslot             1
+      callproperty        QName(PackageNamespace("_-3ea"), "NonLinearVideoAd"), 1
+      callproperty        QName(PackageNamespace(""), "_-9J"), 0
+      iffalse             L327
+
+      debugline           1066
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      debugline           1067
+      getlocal0
+      getscopeobject      1
+      getslot             2
+      findpropstrict      QName(PackageNamespace("_-3ea"), "NonLinearVideoAd")
+      getscopeobject      1
+      getslot             1
+      callproperty        QName(PackageNamespace("_-3ea"), "NonLinearVideoAd"), 1
+      pushstring          "bottom"
+      findpropstrict      QName(PackageNamespace("_-1fP"), "CloseButtonConfig")
+      pushstring          "enabled"
+      pushfalse
+      newobject           1
+      constructprop       QName(PackageNamespace("_-1fP"), "CloseButtonConfig"), 1
+      callproperty        QName(ProtectedNamespace("_-0NX"), "_-hw"), 4
+      callpropvoid        QName(Namespace("_-2pb"), "_-30k"), 1
+
+      jump                L340
+
+      debugline           1072
+L327:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      debugline           1073
+      findpropstrict      QName(ProtectedNamespace("_-5oB"), "_-3jq")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      callproperty        QName(PackageNamespace(""), "getNonLinearVPAIDRegionID"), 0
+      callproperty        QName(ProtectedNamespace("_-5oB"), "_-3jq"), 1
+      getlex              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      astypelate
+      callpropvoid        QName(Namespace("_-2pb"), "_-30k"), 1
+
+      debugline           1077
+L340:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callproperty        QName(Namespace("_-2pb"), "_-2ql"), 0
+      pushnull
+      ifeq                L400
+
+      debugline           1078
+      getscopeobject      1
+      getslot             3
+      getproperty         Multiname("onLoading", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace(""), "undefined")
+      ifeq                L355
+
+      getscopeobject      1
+      getslot             3
+      callpropvoid        Multiname("onLoading", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 0
+
+      debugline           1079
+L355:
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callproperty        QName(Namespace("_-2pb"), "_-2ql"), 0
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "numChildren")
+      decrement
+      callpropvoid        QName(PackageNamespace(""), "setChildIndex"), 2
+
+      debugline           1080
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callproperty        QName(Namespace("_-2pb"), "_-2ql"), 0
+      getscopeobject      1
+      getslot             2
+      setproperty         QName(PackageNamespace(""), "_-6Ui")
+
+      debugline           1081
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-66Y")
+      callproperty        QName(Namespace("_-2pb"), "_-2ql"), 0
+      getscopeobject      1
+      getslot             1
+      getlex              QName(PackageNamespace("_-0F1"), "_-Rm")
+      astypelate
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "vpaidConfig")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getproperty         QName(PackageNamespace(""), "config")
+      getproperty         QName(PackageNamespace(""), "adsConfig")
+      getproperty         QName(PackageNamespace(""), "allowDomains")
+      pushfalse
+      getscopeobject      1
+      getslot             4
+      getscopeobject      1
+      getslot             6
+      getscopeobject      1
+      getslot             8
+      getscopeobject      1
+      getslot             5
+      callpropvoid        QName(PackageNamespace(""), "_-2lP"), 8
+
+      jump                L413
+
+      debugline           1084
+L400:
+      getscopeobject      1
+      getslot             3
+      getproperty         Multiname("onError", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace(""), "undefined")
+      ifeq                L413
+
+      getscopeobject      1
+      getslot             3
+      findpropstrict      QName(PackageNamespace("_-3nB"), "_-3Op")
+      getlex              QName(PackageNamespace("_-3nB"), "_-3Op")
+      getproperty         QName(PackageNamespace(""), "AdError")
+      pushstring          "Could not create the overlay region"
+      constructprop       QName(PackageNamespace("_-3nB"), "_-3Op"), 2
+      callpropvoid        Multiname("onError", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 1
+
+L413:
+      jump                L429
+
+      debugline           1088
+L415:
+      getscopeobject      1
+      getslot             3
+      getproperty         Multiname("onError", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlex              QName(PackageNamespace(""), "undefined")
+      ifeq                L429
+
+      getscopeobject      1
+      getslot             3
+      findpropstrict      QName(PackageNamespace("_-3nB"), "_-3Op")
+      getlex              QName(PackageNamespace("_-3nB"), "_-3Op")
+      getproperty         QName(PackageNamespace(""), "AdError")
+      pushstring          "Could not find a suitable Flash Ad in this Ad Slot"
+      constructprop       QName(PackageNamespace("_-3nB"), "_-3Op"), 2
+      callpropvoid        Multiname("onError", [PrivateNamespace("_-0NX", "_-1Mw:OverlayController#1"), StaticProtectedNs("_-0NX"), ProtectedNamespace("_-0NX"), PackageNamespace("_-1Mw"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("OverlayController.as$5118", "_-1Mw:OverlayController#0"), PackageInternalNs("_-1Mw"), StaticProtectedNs("_-5oB"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 1
+
+      debugline           1090
+L429:
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs("_-1Mw"), "vpaidMedia") slotid 1 type QName(PackageNamespace("_-3ea"), "_-6Yg") end
+     trait slot QName(PackageInternalNs("_-1Mw"), "adSlot") slotid 2 type QName(PackageNamespace("_-29W"), "AdSlot") end
+     trait slot QName(PackageInternalNs("_-1Mw"), "eventCallbackFunctions") slotid 3 type QName(PackageNamespace(""), "Object") end
+     trait slot QName(PackageInternalNs("_-1Mw"), "muteOnStartup") slotid 4 type QName(PackageNamespace(""), "Boolean") value False() end
+     trait slot QName(PackageInternalNs("_-1Mw"), "playerVolume") slotid 5 type QName(PackageNamespace(""), "Number") value Integer(-1) end
+     trait slot QName(PackageInternalNs("_-1Mw"), "reduceVPAIDAdHeightByBottomMargin") slotid 6 type QName(PackageNamespace(""), "Boolean") value False() end
+     trait slot QName(PackageInternalNs("_-1Mw"), "enableScaling") slotid 7 type QName(PackageNamespace(""), "Boolean") value True() end
+     trait slot QName(PackageInternalNs("_-1Mw"), "adIsLinear") slotid 8 type QName(PackageNamespace(""), "Boolean") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "onRegionCloseClicked") flag OVERRIDE
+   method
+    refid "_-1Mw:OverlayController/onRegionCloseClicked"
+    param QName(PackageNamespace("_-0F1"), "RegionView")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           1094
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 1094
+      debugline           1095
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getlocal1
+      getlex              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      astypelate
+      callpropvoid        QName(PackageNamespace(""), "_-0Ov"), 1
+
+      debugline           1096
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "onRegionClicked") flag OVERRIDE
+   method
+    refid "_-1Mw:OverlayController/onRegionClicked"
+    param QName(PackageNamespace("_-0F1"), "RegionView")
+    param QName(PackageNamespace("flash.events"), "MouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           1098
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 1098
+      debug               1, "k", 1, 1098
+      debugline           1099
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getlocal1
+      getlex              QName(PackageNamespace("_-1Mw"), "OverlayView")
+      astypelate
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "_-14V"), 2
+
+      debugline           1100
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1V")
+   method
+    refid "_-1Mw:OverlayController/_-1V"
+    param QName(PackageNamespace("_-29W"), "AdSlot")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 10
+     maxscopedepth 11
+     code
+      debugfile           "k"
+      debugline           1102
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 1102
+      debugline           1103
+      getlocal0
+      getproperty         QName(ProtectedNamespace("_-0NX"), "_-1SJ")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "_-1V"), 1
+
+      debugline           1104
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-1Mw:OverlayController/cinit"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 9
+   maxscopedepth 10
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 56
+    findproperty        QName(StaticProtectedNs("_-0NX"), "_-3Fl")
+    pushstring          ".title { font-family: \"sans-serif\"; font-size: 18pt; font-style: bold; color:#FAF8CC; leading:5px; } "
+    pushstring          ".description { font-family: \"sans-serif\"; font-size: 15pt; leading:3px; } "
+    add
+    pushstring          ".callToActionTitle { font-family: \"sans-serif\"; font-size: 15pt; font-style: bold; color:#FBB917; }"
+    add
+    initproperty        QName(StaticProtectedNs("_-0NX"), "_-3Fl")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(StaticProtectedNs("_-0NX"), "_-3Fl") slotid 1 type QName(PackageNamespace(""), "String") end
+end ; class

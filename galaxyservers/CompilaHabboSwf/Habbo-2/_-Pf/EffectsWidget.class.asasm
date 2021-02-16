@@ -1,0 +1,628 @@
+class
+ refid "_-Pf:EffectsWidget"
+ instance QName(PackageNamespace("_-Pf"), "EffectsWidget")
+  extends QName(PackageNamespace("_-4u8"), "_-0hZ")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-2u1")
+  iinit
+   refid "_-Pf:EffectsWidget/iinit"
+   param QName(PackageNamespace("_-5yk"), "_-3JI")
+   param QName(PackageNamespace("_-01n"), "_-8m")
+   param QName(PackageNamespace("_-eg"), "_-6Pl")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           27
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 27
+     debug               1, "k", 1, 27
+     debug               1, "k", 2, 27
+     debugline           28
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     debugline           29
+     getlocal0
+     getproperty         QName(PackageNamespace(""), "handler")
+     getlocal0
+     setproperty         QName(PackageNamespace(""), "widget")
+
+     debugline           30
+     getlocal0
+     findpropstrict      QName(PackageNamespace("_-07U"), "Map")
+     constructprop       QName(PackageNamespace("_-07U"), "Map"), 0
+     initproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+
+     debugline           31
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-078") type QName(PackageNamespace("_-1Bv"), "_-kd") end
+  trait slot QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE") type QName(PackageNamespace("_-07U"), "Map") end
+  trait getter QName(PackageNamespace(""), "handler")
+   method
+    refid "_-Pf:EffectsWidget/handler/getter"
+    returns QName(PackageNamespace("_-35o"), "_-1Jz")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           33
+      getlocal0
+      pushscope
+
+      debugline           34
+      getlex              QName(ProtectedNamespace("include"), "_-26B")
+      getlex              QName(PackageNamespace("_-35o"), "_-1Jz")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose") flag OVERRIDE
+   method
+    refid "_-Pf:EffectsWidget/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           37
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-Pf"), "_-5Vt")
+      setlocal1
+
+      debugline           38
+      getlex              QName(PackageNamespace(""), "disposed")
+      iffalse             L13
+
+      debugline           39
+      returnvoid
+
+      debugline           42
+L13:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+      iffalse             L48
+
+      debug               1, "k", 0, 43
+      debugline           43
+      pushbyte            0
+      setlocal2
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+      coerce_a
+      setlocal3
+
+      jump                L35
+
+L25:
+      label
+      getlocal3
+      getlocal2
+      nextvalue
+      coerce              QName(PackageNamespace("_-Pf"), "_-5Vt")
+      setlocal1
+
+      debugline           44
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           43
+L35:
+      hasnext2            3, 2
+      iftrue              L25
+
+      kill                3
+      kill                2
+      debugline           46
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           47
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+
+      debugline           50
+L48:
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-078")
+
+      debugline           52
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      iffalse             L64
+
+      debugline           53
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      callpropvoid        QName(Namespace("_-2W2"), "dispose"), 0
+
+      debugline           54
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+
+      debugline           57
+L64:
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "dispose"), 0
+      debugline           58
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "open")
+   method
+    refid "_-Pf:EffectsWidget/open"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           60
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-eg"), "XmlAsset")
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      setlocal2
+
+      pushnull
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal3
+
+      debugline           61
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      iftrue              L89
+
+      debug               1, "k", 0, 62
+      debug               1, "k", 1, 65
+      debug               1, "k", 2, 71
+      debugline           62
+      getlex              QName(PackageNamespace(""), "assets")
+      pushstring          "effects_widget"
+      callproperty        QName(Namespace("_-0LM"), "getAssetByName"), 1
+      getlex              QName(PackageNamespace("_-eg"), "XmlAsset")
+      astypelate
+      coerce              QName(PackageNamespace("_-eg"), "XmlAsset")
+      setlocal1
+
+      debugline           63
+      getlocal0
+      getlex              QName(PackageNamespace(""), "windowManager")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "content")
+      getlex              QName(PackageNamespace(""), "XML")
+      astypelate
+      callproperty        QName(Namespace("_-1lf"), "buildFromXML"), 1
+      getlex              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+
+      debugline           65
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "toolbar")
+      callproperty        Multiname("getRect", [PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), PackageNamespace(""), PackageNamespace("_-Pf"), PrivateNamespace("EffectsWidget.as$4679", "_-Pf:EffectsWidget#1"), PackageInternalNs("_-Pf"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2u1"), StaticProtectedNs("_-2u1"), StaticProtectedNs("include")]), 0
+      coerce              QName(PackageNamespace("flash.geom"), "Rectangle")
+      setlocal2
+
+      debugline           66
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "right")
+      getlex              QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-lu")
+      add
+      setproperty         QName(Namespace("_-6q"), "x")
+
+      debugline           67
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "bottom")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      getproperty         QName(Namespace("_-6q"), "height")
+      subtract
+      setproperty         QName(Namespace("_-6q"), "y")
+
+      debugline           69
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      pushstring          "list"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "_-kd")
+      astypelate
+      initproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-078")
+
+      debugline           71
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      pushstring          "close"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal3
+
+      debugline           72
+      getlocal3
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-5ob")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           75
+L89:
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "update"), 0
+
+      debugline           77
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           78
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "update")
+   method
+    refid "_-Pf:EffectsWidget/update"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 8
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           80
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-Pf"), "_-5Vt")
+      setlocal1
+
+      pushnull
+      coerce              QName(PackageNamespace("_-2bw"), "_-3R5")
+      setlocal3
+
+      pushbyte            0
+      setlocal            4
+
+      debug               1, "k", 0, 82
+      debug               1, "k", 1, 83
+      debug               1, "k", 2, 84
+      debug               1, "k", 3, 95
+      debug               1, "k", 4, 104
+      debugline           83
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "inventory")
+      callproperty        Multiname("getAvatarEffects", [PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), PackageNamespace(""), PackageNamespace("_-Pf"), PrivateNamespace("EffectsWidget.as$4679", "_-Pf:EffectsWidget#1"), PackageInternalNs("_-Pf"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2u1"), StaticProtectedNs("_-2u1"), StaticProtectedNs("include")]), 0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      debugline           84
+      pushbyte            0
+      setlocal            6
+
+      getlocal2
+      coerce_a
+      setlocal            7
+
+      jump                L76
+
+L32:
+      label
+      getlocal            7
+      getlocal            6
+      nextvalue
+      coerce              QName(PackageNamespace("_-2bw"), "_-3R5")
+      setlocal3
+
+      debugline           85
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+      getlocal3
+      getproperty         QName(Namespace("_-5jt"), "type")
+      callproperty        QName(PackageNamespace(""), "getValue"), 1
+      getlex              QName(PackageNamespace("_-Pf"), "_-5Vt")
+      astypelate
+      coerce              QName(PackageNamespace("_-Pf"), "_-5Vt")
+      setlocal1
+
+      debugline           86
+      getlocal1
+      iffalse             L56
+
+      debugline           87
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "update"), 0
+
+      jump                L76
+
+      debugline           89
+L56:
+      findpropstrict      QName(PackageNamespace("_-Pf"), "_-5Vt")
+      getlocal0
+      getlocal3
+      constructprop       QName(PackageNamespace("_-Pf"), "_-5Vt"), 2
+      coerce              QName(PackageNamespace("_-Pf"), "_-5Vt")
+      setlocal1
+
+      debugline           90
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+      getlocal3
+      getproperty         QName(Namespace("_-5jt"), "type")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "add"), 2
+
+      debugline           91
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-078")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "window")
+      callpropvoid        QName(Namespace("_-0Pj"), "addListItem"), 1
+
+      debugline           84
+L76:
+      hasnext2            7, 6
+      iftrue              L32
+
+      kill                7
+      kill                6
+      debugline           95
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+      getproperty         QName(PackageNamespace(""), "length")
+      decrement
+      convert_i
+      setlocal            4
+
+      jump                L124
+
+L88:
+      label
+      debugline           96
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-17N"), 1
+      coerce              QName(PackageNamespace("_-Pf"), "_-5Vt")
+      setlocal1
+
+      debugline           97
+      getlocal2
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "effect")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            255
+      ifne                L121
+
+      debugline           98
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-078")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "window")
+      callpropvoid        QName(Namespace("_-0Pj"), "removeListItem"), 1
+
+      debugline           99
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-6TE")
+      getlocal            4
+      callproperty        QName(PackageNamespace(""), "_-3FN"), 1
+      callpropvoid        QName(PackageNamespace(""), "remove"), 1
+
+      debugline           100
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           95
+L121:
+      getlocal            4
+      decrement_i
+      setlocal            4
+
+L124:
+      getlocal            4
+      pushbyte            0
+      ifge                L88
+
+      debugline           104
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-078")
+      getproperty         QName(Namespace("_-2YL"), "_-nF")
+      getproperty         QName(PackageNamespace(""), "height")
+      convert_i
+      setlocal            5
+
+      debugline           105
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-078")
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            5
+      getlex              QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-54N")
+      callproperty        QName(PackageNamespace(""), "min"), 2
+      getlex              QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-24L")
+      callproperty        QName(PackageNamespace(""), "max"), 2
+      setproperty         QName(Namespace("_-6q"), "height")
+
+      debugline           107
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      pushstring          "no_effects"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      equals
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           109
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-14y")
+   method
+    refid "_-Pf:EffectsWidget/_-14y"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           111
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 111
+      debug               1, "k", 1, 111
+      debugline           112
+      getlocal2
+      iffalse             L18
+
+      debugline           113
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "inventory")
+      getlocal1
+      callpropvoid        Multiname("setEffectDeselected", [PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), PackageNamespace(""), PackageNamespace("_-Pf"), PrivateNamespace("EffectsWidget.as$4679", "_-Pf:EffectsWidget#1"), PackageInternalNs("_-Pf"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2u1"), StaticProtectedNs("_-2u1"), StaticProtectedNs("include")]), 1
+
+      jump                L25
+
+      debugline           115
+L18:
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "handler")
+      getproperty         QName(PackageNamespace(""), "container")
+      getproperty         QName(Namespace("_-6cm"), "inventory")
+      getlocal1
+      callpropvoid        Multiname("setEffectSelected", [PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), PackageNamespace(""), PackageNamespace("_-Pf"), PrivateNamespace("EffectsWidget.as$4679", "_-Pf:EffectsWidget#1"), PackageInternalNs("_-Pf"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-2u1"), StaticProtectedNs("_-2u1"), StaticProtectedNs("include")]), 1
+
+      debugline           117
+L25:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-5ob")
+   method
+    refid "_-Pf:EffectsWidget/_-5ob"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           119
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 119
+      debugline           120
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-0q1")
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           121
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-Pf:EffectsWidget/cinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 23
+    findproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-54N")
+    pushshort           320
+    initproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-54N")
+
+    debug               1, "k", 1, 24
+    findproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-24L")
+    pushbyte            48
+    initproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-24L")
+
+    debug               1, "k", 2, 25
+    findproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-lu")
+    pushbyte            2
+    initproperty        QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-lu")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-54N") slotid 1 type QName(PackageNamespace(""), "int") value Integer(320) end
+ trait const QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-24L") slotid 2 type QName(PackageNamespace(""), "int") value Integer(48) end
+ trait const QName(PrivateNamespace("_-2u1", "_-Pf:EffectsWidget#0"), "_-lu") slotid 3 type QName(PackageNamespace(""), "int") value Integer(2) end
+end ; class

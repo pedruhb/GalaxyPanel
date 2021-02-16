@@ -1,0 +1,283 @@
+class
+ refid "_-4zu:InstantMessageEventHandler"
+ instance QName(PackageNamespace("_-4zu"), "InstantMessageEventHandler")
+  extends QName(PackageNamespace(""), "Object")
+  implements Multiname("_-6jQ", [PackageNamespace("_-1M6")])
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-4cP")
+  iinit
+   refid "_-4zu:InstantMessageEventHandler/iinit"
+   param QName(PackageNamespace("_-39i"), "HabboHelp")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           15
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 15
+     debugline           15
+     getlocal0
+     constructsuper      0
+
+     debugline           16
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK")
+
+     debugline           17
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK")
+     findpropstrict      QName(PackageNamespace("_-e5"), "_-FV")
+     getlocal0
+     getproperty         QName(PackageNamespace(""), "_-1QD")
+     constructprop       QName(PackageNamespace("_-e5"), "_-FV"), 1
+     callpropvoid        QName(PackageNamespace(""), "addMessageEvent"), 1
+
+     debugline           18
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK")
+     findpropstrict      QName(PackageNamespace("_-e5"), "_-2tp")
+     getlocal0
+     getproperty         QName(PackageNamespace(""), "_-1E-")
+     constructprop       QName(PackageNamespace("_-e5"), "_-2tp"), 1
+     callpropvoid        QName(PackageNamespace(""), "addMessageEvent"), 1
+
+     debugline           19
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK") type QName(PackageNamespace("_-39i"), "HabboHelp") end
+  trait method QName(PackageNamespace(""), "_-1QD")
+   method
+    refid "_-4zu:InstantMessageEventHandler/_-1QD"
+    param QName(PackageNamespace("_-e5"), "_-FV")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           21
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal3
+
+      pushnull
+      coerce_s
+      setlocal            4
+
+      debug               1, "k", 0, 21
+      debug               1, "k", 1, 22
+      debugline           22
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-6g5"), 0
+      coerce              QName(PackageNamespace("_-543"), "_-5Jo")
+      setlocal2
+
+      debugline           24
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "senderId")
+      pushbyte            0
+      lessthan
+      dup
+      iffalse             L30
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "extraData")
+      pushnull
+      equals
+      not
+L30:
+      iffalse             L67
+
+      debug               1, "k", 2, 25
+      debug               1, "k", 3, 26
+      debugline           25
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "extraData")
+      pushstring          "/"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      pushbyte            2
+      getproperty         MultinameL([PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("InstantMessageEventHandler.as$6171", "_-4zu:InstantMessageEventHandler/_-1QD"), PackageNamespace("_-4zu"), PackageInternalNs("_-4zu"), ProtectedNamespace("_-4cP"), StaticProtectedNs("_-4cP")])
+      coerce_s
+      setlocal3
+
+      debugline           26
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "extraData")
+      pushstring          "/"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("InstantMessageEventHandler.as$6171", "_-4zu:InstantMessageEventHandler/_-1QD"), PackageNamespace("_-4zu"), PackageInternalNs("_-4zu"), ProtectedNamespace("_-4cP"), StaticProtectedNs("_-4cP")])
+      coerce_s
+      setlocal            4
+
+      debugline           28
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK")
+      getproperty         QName(PackageNamespace(""), "_-4zR")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "senderId")
+      getlocal3
+      pushstring          ":"
+      add
+      getlocal            4
+      add
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-48u")
+      callpropvoid        QName(PackageNamespace(""), "_-2zT"), 3
+
+      jump                L77
+
+      debugline           31
+L67:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK")
+      getproperty         QName(PackageNamespace(""), "_-4zR")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "senderId")
+      pushstring          ""
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-48u")
+      callpropvoid        QName(PackageNamespace(""), "_-2zT"), 3
+
+      debugline           33
+L77:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-1E-")
+   method
+    refid "_-4zu:InstantMessageEventHandler/_-1E-"
+    param QName(PackageNamespace("_-e5"), "_-2tp")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           35
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 35
+      debug               1, "k", 1, 36
+      debugline           36
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-6g5"), 0
+      coerce              QName(PackageNamespace("_-543"), "_-07m")
+      setlocal2
+
+      debugline           37
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK")
+      getproperty         QName(PackageNamespace(""), "_-4zR")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "senderId")
+      pushstring          ""
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "_-48u")
+      callpropvoid        QName(PackageNamespace(""), "_-2zT"), 3
+
+      debugline           38
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "dispose")
+   method
+    refid "_-4zu:InstantMessageEventHandler/dispose"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debugline           41
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "disposed")
+      iftrue              L17
+
+      debugline           42
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK")
+      iffalse             L17
+
+      debugline           43
+      getlocal0
+      pushnull
+      initproperty        QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK")
+
+      debugline           46
+L17:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "disposed")
+   method
+    refid "_-4zu:InstantMessageEventHandler/disposed/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           48
+      getlocal0
+      pushscope
+
+      debugline           49
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-4cP", "_-4zu:InstantMessageEventHandler"), "_-1vK")
+      pushnull
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4zu:InstantMessageEventHandler/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

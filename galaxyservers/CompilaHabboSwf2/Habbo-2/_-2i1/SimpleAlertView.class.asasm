@@ -1,0 +1,156 @@
+class
+ refid "_-2i1:SimpleAlertView"
+ instance QName(PackageNamespace("_-2i1"), "SimpleAlertView")
+  extends QName(PackageNamespace("_-2i1"), "AlertView")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-14v")
+  iinit
+   refid "_-2i1:SimpleAlertView/iinit"
+   param QName(PackageNamespace("_-2i1"), "_-42O")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 5
+    maxscopedepth 6
+    code
+     debugfile           "k"
+     debugline           23
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 23
+     debug               1, "k", 1, 23
+     debug               1, "k", 2, 23
+     debugline           24
+     getlocal0
+     getlocal1
+     pushstring          "nav_simple_alert"
+     getlocal2
+     constructsuper      3
+
+     debugline           25
+     getlocal0
+     getlocal3
+     initproperty        QName(PrivateNamespace("_-14v", "_-2i1:SimpleAlertView"), "_text")
+
+     debugline           26
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-14v", "_-2i1:SimpleAlertView"), "_text") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageInternalNs("_-2i1"), "setupAlertWindow") flag OVERRIDE
+   method
+    refid "_-2i1:SimpleAlertView/_-2i1:setupAlertWindow"
+    param QName(PackageNamespace("_-1Bv"), "IFrameWindow")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           28
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 28
+      debug               1, "k", 1, 29
+      debug               1, "k", 2, 32
+      debugline           29
+      getlocal1
+      getproperty         QName(Namespace("_-jF"), "content")
+      coerce              QName(PackageNamespace("_-X3"), "IWindowContainer")
+      setlocal2
+
+      debugline           31
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ITextWindow")
+      getlocal2
+      pushstring          "body_text"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ITextWindow"), 1
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-14v", "_-2i1:SimpleAlertView"), "_text")
+      setproperty         QName(Namespace("_-3oN"), "text")
+
+      debugline           32
+      getlocal2
+      pushstring          "ok"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal3
+
+      debugline           33
+      getlocal3
+      pushnull
+      ifeq                L39
+
+      debugline           34
+      getlocal3
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-14v", "_-2i1:SimpleAlertView"), "_-2W")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           37
+L39:
+      getlocal1
+      getproperty         QName(Namespace("_-6q"), "tags")
+      pushstring          "SimpleAlertView"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      debugline           38
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-14v", "_-2i1:SimpleAlertView"), "_-2W")
+   method
+    refid "_-2i1:SimpleAlertView/_-2W"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 5
+     maxscopedepth 6
+     code
+      debugfile           "k"
+      debugline           40
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 40
+      debugline           41
+      findpropstrict      QName(PackageNamespace(""), "dispose")
+      callpropvoid        QName(PackageNamespace(""), "dispose"), 0
+
+      debugline           42
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-2i1:SimpleAlertView/cinit"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 4
+   maxscopedepth 5
+   code
+    getlocal0
+    pushscope
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

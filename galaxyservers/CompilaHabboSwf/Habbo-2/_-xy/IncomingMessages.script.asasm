@@ -1,0 +1,33 @@
+script ; 3208
+ sinit
+  refid "_-xy:IncomingMessages.sinit"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    debugfile           "k"
+    debugline           53
+    findpropstrict      Multiname("IncomingMessages", [PackageNamespace("_-xy")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "_-xy:IncomingMessages"
+    popscope
+    initproperty        QName(PackageNamespace("_-xy"), "IncomingMessages")
+
+    debugfile           "k"
+    debugline           1
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("_-xy"), "IncomingMessages")
+  #include "IncomingMessages.class.asasm"
+ end ; trait
+end ; script

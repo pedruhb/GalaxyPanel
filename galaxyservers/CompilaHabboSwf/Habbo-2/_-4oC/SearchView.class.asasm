@@ -1,0 +1,769 @@
+class
+ refid "_-4oC:SearchView"
+ instance QName(PackageNamespace("_-4oC"), "SearchView")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("_-0o-")
+  iinit
+   refid "_-4oC:SearchView/iinit"
+   param QName(PackageNamespace("_-2i1"), "HabboNewNavigator")
+   body
+    maxstack 4
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     debugfile           "k"
+     debugline           33
+     getlocal0
+     pushscope
+
+     debug               1, "k", 0, 33
+     debugline           33
+     getlocal0
+     constructsuper      0
+
+     debugline           34
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1on")
+
+     debugline           35
+     getlocal0
+     getlocal0
+     getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1on")
+     getproperty         QName(PackageNamespace(""), "localization")
+     pushstring          "navigator.filter.input.placeholder"
+     pushstring          "filter rooms by..."
+     callproperty        QName(Namespace("_-0o7"), "getLocalizationWithParams"), 2
+     initproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-2n5")
+
+     debugline           36
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1on") type QName(PackageNamespace("_-2i1"), "HabboNewNavigator") end
+  trait slot QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container") type QName(PackageNamespace("_-X3"), "IWindowContainer") end
+  trait slot QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep") type QName(PackageNamespace("_-1Bv"), "ITextFieldWindow") end
+  trait slot QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-0gr") type QName(PackageNamespace("_-1Bv"), "IDropMenuWindow") end
+  trait slot QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-2n5") type QName(PackageNamespace(""), "String") end
+  trait setter QName(PackageNamespace(""), "container")
+   method
+    refid "_-4oC:SearchView/container/setter"
+    param QName(PackageNamespace("_-X3"), "IWindowContainer")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           38
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 38
+      debug               1, "k", 1, 47
+      debugline           39
+      getlocal0
+      getlocal1
+      initproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+
+      debugline           40
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "IDropMenuWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+      pushstring          "filter_type_drop_menu"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "IDropMenuWindow"), 1
+      initproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-0gr")
+
+      debugline           42
+      getlocal0
+      findpropstrict      QName(PackageNamespace("_-1Bv"), "ITextFieldWindow")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+      pushstring          "search_input"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      callproperty        QName(PackageNamespace("_-1Bv"), "ITextFieldWindow"), 1
+      initproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+
+      debugline           43
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getlex              QName(PackageNamespace("_-CA"), "WindowKeyboardEvent")
+      getproperty         QName(PackageNamespace(""), "_-1Rc")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-3G3")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           44
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getlex              QName(PackageNamespace("_-CA"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-4aD")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-5N7")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           45
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getlex              QName(PackageNamespace("_-CA"), "WindowEvent")
+      getproperty         QName(PackageNamespace(""), "_-8E")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-3ko")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           47
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+      pushstring          "clear_search_button"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      coerce              QName(PackageNamespace("_-X3"), "IWindow")
+      setlocal2
+
+      debugline           48
+      getlocal2
+      iffalse             L70
+
+      debugline           49
+      getlocal2
+      getlex              QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+      getproperty         QName(PackageNamespace(""), "CLICK")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-6Rc")
+      callpropvoid        QName(Namespace("_-6q"), "addEventListener"), 2
+
+      debugline           52
+L70:
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "clear"), 0
+
+      debugline           53
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-6Rc")
+   method
+    refid "_-4oC:SearchView/_-6Rc"
+    param QName(PackageNamespace("_-CA"), "WindowMouseEvent")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Null()
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           55
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 55
+      debug               1, "k", 1, 59
+      debugline           56
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      callpropvoid        QName(Namespace("_-3MH"), "focus"), 0
+
+      debugline           57
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      pushstring          ""
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           59
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+      pushstring          "search.clear.icon"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      setlocal2
+
+      debugline           60
+      getlocal2
+      pushstring          "common_small_pen"
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           61
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "clear")
+   method
+    refid "_-4oC:SearchView/clear"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           63
+      getlocal0
+      pushscope
+
+      debugline           64
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-17o"), 0
+
+      debugline           65
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-0gr")
+      getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+      getproperty         QName(PackageNamespace(""), "DEFAULT")
+      setproperty         QName(Namespace("_-2Uu"), "selection")
+
+      debugline           66
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+      pushstring          "refreshButtonContainer"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           67
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "_-42i")
+   method
+    refid "_-4oC:SearchView/_-42i"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    optional Utf8("")
+    body
+     maxstack 6
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           69
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      setlocal            4
+
+      debug               1, "k", 0, 69
+      debug               1, "k", 1, 69
+      debug               1, "k", 2, 70
+      debugline           70
+      getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "_-4-H"), 1
+      convert_i
+      setlocal3
+
+      debugline           71
+      getlocal3
+      pushbyte            0
+      ifeq                L48
+
+      debugline           72
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-0gr")
+      getlex              QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-3qh")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), PackageNamespace("_-4oC"), PackageNamespace(""), PrivateNamespace("SearchView.as$1834", "_-4oC:SearchView#1"), PackageInternalNs("_-4oC"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0o-"), StaticProtectedNs("_-0o-")])
+      setproperty         QName(Namespace("_-2Uu"), "selection")
+
+      debugline           73
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getlocal1
+      getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+      getproperty         QName(PackageNamespace(""), "_-gA")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), PackageNamespace("_-4oC"), PackageNamespace(""), PrivateNamespace("SearchView.as$1834", "_-4oC:SearchView#1"), PackageInternalNs("_-4oC"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0o-"), StaticProtectedNs("_-0o-")])
+      getproperty         Multiname("length", [PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), PackageNamespace("_-4oC"), PackageNamespace(""), PrivateNamespace("SearchView.as$1834", "_-4oC:SearchView#1"), PackageInternalNs("_-4oC"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0o-"), StaticProtectedNs("_-0o-")])
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+      getproperty         QName(PackageNamespace(""), "_-gA")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), PackageNamespace("_-4oC"), PackageNamespace(""), PrivateNamespace("SearchView.as$1834", "_-4oC:SearchView#1"), PackageInternalNs("_-4oC"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0o-"), StaticProtectedNs("_-0o-")])
+      getproperty         Multiname("length", [PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), PackageNamespace("_-4oC"), PackageNamespace(""), PrivateNamespace("SearchView.as$1834", "_-4oC:SearchView#1"), PackageInternalNs("_-4oC"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0o-"), StaticProtectedNs("_-0o-")])
+      subtract
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      jump                L59
+
+      debugline           75
+L48:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getlocal1
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           76
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-0gr")
+      getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+      getproperty         QName(PackageNamespace(""), "DEFAULT")
+      setproperty         QName(Namespace("_-2Uu"), "selection")
+
+      debugline           79
+L59:
+      getlocal2
+      pushstring          ""
+      equals
+      not
+      dup
+      iffalse             L71
+
+      pop
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-2n5")
+      equals
+      not
+L71:
+      iffalse             L83
+
+      debugline           80
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getlocal2
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           81
+      getlocal0
+      pushtrue
+      callpropvoid        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1ct"), 1
+
+      jump                L96
+
+      debugline           83
+L83:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getproperty         QName(Namespace("_-6q"), "caption")
+      pushstring          ""
+      ifne                L92
+
+      getlocal0
+      callpropvoid        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-17o"), 0
+
+      jump                L96
+
+      debugline           84
+L92:
+      getlocal0
+      pushfalse
+      callpropvoid        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1ct"), 1
+
+      debugline           87
+L96:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getproperty         QName(Namespace("_-6q"), "caption")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      equals
+      not
+      dup
+      iffalse             L113
+
+      pop
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getproperty         QName(Namespace("_-6q"), "caption")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-2n5")
+      equals
+      not
+L113:
+      iffalse             L138
+
+      debug               1, "k", 3, 90
+      debugline           88
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+      pushstring          "refreshButtonContainer"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushtrue
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           90
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+      pushstring          "search.clear.icon"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      setlocal            4
+
+      debugline           91
+      getlocal            4
+      pushstring          "icons_close"
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      jump                L158
+
+      debug               1, "k", 3, 96
+      debugline           94
+L138:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+      pushstring          "refreshButtonContainer"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      pushfalse
+      setproperty         QName(Namespace("_-6q"), "visible")
+
+      debugline           96
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_container")
+      pushstring          "search.clear.icon"
+      callproperty        QName(Namespace("_-3si"), "findChildByName"), 1
+      getlex              QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      astypelate
+      coerce              QName(PackageNamespace("_-1Bv"), "_-1Vp")
+      setlocal            4
+
+      debugline           97
+      getlocal            4
+      pushstring          "common_small_pen"
+      setproperty         QName(Namespace("_-Ib"), "assetUri")
+
+      debugline           99
+L158:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-3G3")
+   method
+    refid "_-4oC:SearchView/_-3G3"
+    param QName(PackageNamespace("_-CA"), "WindowKeyboardEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           101
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 101
+      debugline           102
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "keyCode")
+      getlex              QName(PackageNamespace("flash.ui"), "Keyboard")
+      getproperty         QName(PackageNamespace(""), "ENTER")
+      ifne                L22
+
+      debugline           103
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1on")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1on")
+      getproperty         QName(PackageNamespace(""), "_-1Fd")
+      getproperty         QName(PackageNamespace(""), "_-1VC")
+      getlocal0
+      callproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-5MU"), 0
+      callpropvoid        QName(PackageNamespace(""), "_-yK"), 2
+
+      debugline           105
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-5MU")
+   method
+    refid "_-4oC:SearchView/_-5MU"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           107
+      getlocal0
+      pushscope
+
+      debugline           108
+      getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+      getproperty         QName(PackageNamespace(""), "_-gA")
+      getlex              QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-6P9")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-0gr")
+      getproperty         QName(Namespace("_-2Uu"), "selection")
+      getproperty         MultinameL([PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), PackageNamespace("_-4oC"), PackageNamespace(""), PrivateNamespace("SearchView.as$1834", "_-4oC:SearchView#1"), PackageInternalNs("_-4oC"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0o-"), StaticProtectedNs("_-0o-")])
+      getproperty         MultinameL([PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), PackageNamespace("_-4oC"), PackageNamespace(""), PrivateNamespace("SearchView.as$1834", "_-4oC:SearchView#1"), PackageInternalNs("_-4oC"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("_-0o-"), StaticProtectedNs("_-0o-")])
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getproperty         QName(Namespace("_-6q"), "caption")
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-17o")
+   method
+    refid "_-4oC:SearchView/_-17o"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           111
+      getlocal0
+      pushscope
+
+      debugline           112
+      getlocal0
+      pushtrue
+      callpropvoid        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1ct"), 1
+
+      debugline           113
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-2n5")
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           114
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-3ko")
+   method
+    refid "_-4oC:SearchView/_-3ko"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           116
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 116
+      debugline           117
+      getlocal0
+      pushfalse
+      callpropvoid        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1ct"), 1
+
+      debugline           118
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getproperty         QName(Namespace("_-6q"), "caption")
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-2n5")
+      ifne                L22
+
+      debugline           119
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      pushstring          ""
+      setproperty         QName(Namespace("_-6q"), "caption")
+
+      debugline           121
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-1ct")
+   method
+    refid "_-4oC:SearchView/_-1ct"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           123
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 123
+      debugline           124
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getlocal1
+      iffalse             L13
+
+      getlex              QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-5JQ")
+      convert_u
+      jump                L15
+
+L13:
+      getlex              QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-4EK")
+      convert_u
+L15:
+      setproperty         QName(Namespace("_-3oN"), "textColor")
+
+      debugline           125
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getlocal1
+      setproperty         QName(Namespace("_-3oN"), "italic")
+
+      debugline           126
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-5N7")
+   method
+    refid "_-4oC:SearchView/_-5N7"
+    param QName(PackageNamespace("_-CA"), "WindowEvent")
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           128
+      getlocal0
+      pushscope
+
+      debug               1, "k", 0, 128
+      debugline           130
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "_-4Ct")
+   method
+    refid "_-4oC:SearchView/_-4Ct/getter"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      debugfile           "k"
+      debugline           132
+      getlocal0
+      pushscope
+
+      debugline           133
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      pushnull
+      ifeq                L15
+
+      debugline           134
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-Ep")
+      getproperty         QName(Namespace("_-6q"), "caption")
+      returnvalue
+
+      debugline           136
+L15:
+      getlocal0
+      getproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-2n5")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "_-4oC:SearchView/cinit"
+  body
+   maxstack 7
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    debug               1, "k", 0, 21
+    findproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-6P9")
+    getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+    getproperty         QName(PackageNamespace(""), "_-2C8")
+    getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+    getproperty         QName(PackageNamespace(""), "_-7X")
+    getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+    getproperty         QName(PackageNamespace(""), "_-5Rq")
+    getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+    getproperty         QName(PackageNamespace(""), "_-2wO")
+    getlex              QName(PackageNamespace("_-4oC"), "FilterModeEnum")
+    getproperty         QName(PackageNamespace(""), "_-5BV")
+    newarray            5
+    setproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-6P9")
+
+    debug               1, "k", 1, 22
+    findproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-3qh")
+    pushbyte            0
+    pushbyte            2
+    pushbyte            1
+    pushbyte            3
+    pushbyte            4
+    pushbyte            0
+    newarray            6
+    setproperty         QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-3qh")
+
+    debug               1, "k", 2, 23
+    findproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-5JQ")
+    pushint             10461087
+    initproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-5JQ")
+
+    debug               1, "k", 3, 24
+    findproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-4EK")
+    pushbyte            0
+    initproperty        QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-4EK")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-6P9") slotid 1 type QName(PackageNamespace(""), "Array") end
+ trait slot QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-3qh") slotid 2 type QName(PackageNamespace(""), "Array") end
+ trait const QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-5JQ") slotid 3 type QName(PackageNamespace(""), "uint") value Integer(10461087) end
+ trait const QName(PrivateNamespace("_-0o-", "_-4oC:SearchView#0"), "_-4EK") slotid 4 type QName(PackageNamespace(""), "uint") value Integer(0) end
+end ; class
